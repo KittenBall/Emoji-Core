@@ -1,0 +1,23 @@
+## Interface: 110007
+## Author: KittenBall
+## Version: 0.0.1
+## Title: Emoji-Core
+## Notes: Displaying emojis in game.
+## Notes-zhCN: 在游戏内显示emoji表情
+## DefaultState: enabled
+
+Lib\LibStub.lua
+Lib\AceLocale-3.0.lua
+
+Locales\enUS.lua
+Locales\zhCN.lua
+
+Indexes\enUS.lua
+Indexes\zhCN.lua
+
+Emojis.lua
+CodePoints.lua
+Core.lua
+EmojiPack.lua
+
+Api.lua

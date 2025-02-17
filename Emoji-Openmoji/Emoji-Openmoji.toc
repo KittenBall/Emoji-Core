@@ -1,0 +1,11 @@
+## Interface: 110007
+## Author: KittenBall
+## Version: 20250217200584
+## Notes: EmojiPack: Openmoji
+## Notes-zhCN: Emoji表情包：Openmoji
+## DefaultState: enabled
+## Dependencies: Emoji-Core
+
+Locales\enUS.lua
+Locales\zhCN.lua
+Emoji-Openmoji.lua
