@@ -1,0 +1,6 @@
+package-as: Emoji-Core
+
+ignore:
+  - README.md
+  - .vscode
+  - .gitattributes

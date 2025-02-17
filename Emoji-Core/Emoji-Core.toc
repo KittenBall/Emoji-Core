@@ -1,6 +1,6 @@
 ## Interface: 110007
 ## Author: KittenBall
-## Version: 0.0.1
+## Version: 0.0.2
 ## Title: Emoji-Core
 ## Notes: Displaying emojis in game.
 ## Notes-zhCN: 在游戏内显示emoji表情
