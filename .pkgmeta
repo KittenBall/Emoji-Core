@@ -5,6 +5,7 @@ ignore:
   - .vscode
   - .gitattributes
 
+
 move-folders:
   Emoji-Core/Emoji-Core: Emoji-Core
   Emoji-Core/Emoji-Openmoji: Emoji-Openmoji
