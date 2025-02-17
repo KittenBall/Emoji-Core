@@ -4,3 +4,7 @@ ignore:
   - README.md
   - .vscode
   - .gitattributes
+
+move-folders:
+  Emoji-Core/Emoji-Core: Emoji-Core
+  Emoji-Core/Emoji-Openmoji: Emoji-Openmoji
