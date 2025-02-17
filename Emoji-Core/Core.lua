@@ -209,12 +209,12 @@ do
         'YELL'
     }
 
-    local function replaceEmojiToName(chatFrame, event, text, ...)
+    local function replaceEmojiToIcon(chatFrame, event, text, ...)
         return false, addon:ReplaceEmojiToIcon(text), ...
     end
 
     for _, msgType in pairs(CHAT_MSG_TYPES) do
-        ChatFrame_AddMessageEventFilter('CHAT_MSG_' .. msgType, replaceEmojiToName)
+        ChatFrame_AddMessageEventFilter('CHAT_MSG_' .. msgType, replaceEmojiToIcon)
     end
 end
 
@@ -227,12 +227,38 @@ do
         end
     end
 
-    IMECandidatesFrame.timer = 0
+    IMECandidatesFrame.EmojiTimer = 0
     IMECandidatesFrame:HookScript("OnUpdate", function(self, elapsed)
-        self.timer = self.timer + elapsed
-        if self.timer > 0.2 then
-            self.timer = 0
+        self.EmojiTimer = self.EmojiTimer + elapsed
+        if self.EmojiTimer > 0.2 then
+            self.EmojiTimer = 0
             replaceIMEEmojiToName(self)
         end
     end)
+end
+
+do
+    -- 支持聊天气泡
+    local function replaceChatBubbleEmojiToIcon(self)
+        local text = self.String
+        if not text then return end
+
+        text:SetText(addon:ReplaceEmojiToIcon(text:GetText()))
+    end
+
+    local function onChatBubbleFrameLoad(self)
+        if self.layoutType ~= "ChatBubble" then return end
+        if not self.String then return end
+
+        self.EmojiTimer = 0
+        self:HookScript("OnUpdate", function(self, elapsed)
+            self.EmojiTimer = self.EmojiTimer + elapsed
+            if self.EmojiTimer > 0.05 then
+                self.EmojiTimer = 0
+                replaceChatBubbleEmojiToIcon(self)
+            end
+        end)
+    end
+    
+    hooksecurefunc(NineSlicePanelMixin, "OnLoad", onChatBubbleFrameLoad)
 end
