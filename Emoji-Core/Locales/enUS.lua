@@ -7,78 +7,173 @@ if not L then return end
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128512"] = "grinning face"
+-- emoji:😀; unicode = 1f600 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😀, 1f600
+-- format: unicodeKey = tts
+L["128512_65039"] = "grinning face"
 -- emoji:😃; unicode = 1f603
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128515"] = "grinning face with big eyes"
+-- emoji:😃; unicode = 1f603 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😃, 1f603
+-- format: unicodeKey = tts
+L["128515_65039"] = "grinning face with big eyes"
 -- emoji:😄; unicode = 1f604
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128516"] = "grinning face with smiling eyes"
+-- emoji:😄; unicode = 1f604 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😄, 1f604
+-- format: unicodeKey = tts
+L["128516_65039"] = "grinning face with smiling eyes"
 -- emoji:😁; unicode = 1f601
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128513"] = "beaming face with smiling eyes"
+-- emoji:😁; unicode = 1f601 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😁, 1f601
+-- format: unicodeKey = tts
+L["128513_65039"] = "beaming face with smiling eyes"
 -- emoji:😆; unicode = 1f606
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128518"] = "grinning squinting face"
+-- emoji:😆; unicode = 1f606 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😆, 1f606
+-- format: unicodeKey = tts
+L["128518_65039"] = "grinning squinting face"
 -- emoji:😅; unicode = 1f605
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128517"] = "grinning face with sweat"
+-- emoji:😅; unicode = 1f605 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😅, 1f605
+-- format: unicodeKey = tts
+L["128517_65039"] = "grinning face with sweat"
 -- emoji:🤣; unicode = 1f923
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129315"] = "rolling on the floor laughing"
+-- emoji:🤣; unicode = 1f923 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤣, 1f923
+-- format: unicodeKey = tts
+L["129315_65039"] = "rolling on the floor laughing"
 -- emoji:😂; unicode = 1f602
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128514"] = "face with tears of joy"
+-- emoji:😂; unicode = 1f602 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😂, 1f602
+-- format: unicodeKey = tts
+L["128514_65039"] = "face with tears of joy"
 -- emoji:🙂; unicode = 1f642
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128578"] = "slightly smiling face"
+-- emoji:🙂; unicode = 1f642 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙂, 1f642
+-- format: unicodeKey = tts
+L["128578_65039"] = "slightly smiling face"
 -- emoji:🙃; unicode = 1f643
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128579"] = "upside-down face"
+-- emoji:🙃; unicode = 1f643 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙃, 1f643
+-- format: unicodeKey = tts
+L["128579_65039"] = "upside-down face"
 -- emoji:🫠; unicode = 1fae0
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129760"] = "melting face"
+-- emoji:🫠; unicode = 1fae0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫠, 1fae0
+-- format: unicodeKey = tts
+L["129760_65039"] = "melting face"
 -- emoji:😉; unicode = 1f609
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128521"] = "winking face"
+-- emoji:😉; unicode = 1f609 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😉, 1f609
+-- format: unicodeKey = tts
+L["128521_65039"] = "winking face"
 -- emoji:😊; unicode = 1f60a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128522"] = "smiling face with smiling eyes"
+-- emoji:😊; unicode = 1f60a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😊, 1f60a
+-- format: unicodeKey = tts
+L["128522_65039"] = "smiling face with smiling eyes"
 -- emoji:😇; unicode = 1f607
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128519"] = "smiling face with halo"
+-- emoji:😇; unicode = 1f607 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😇, 1f607
+-- format: unicodeKey = tts
+L["128519_65039"] = "smiling face with halo"
 -- emoji:🥰; unicode = 1f970
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129392"] = "smiling face with hearts"
+-- emoji:🥰; unicode = 1f970 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥰, 1f970
+-- format: unicodeKey = tts
+L["129392_65039"] = "smiling face with hearts"
 -- emoji:😍; unicode = 1f60d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128525"] = "smiling face with heart-eyes"
+-- emoji:😍; unicode = 1f60d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😍, 1f60d
+-- format: unicodeKey = tts
+L["128525_65039"] = "smiling face with heart-eyes"
 -- emoji:🤩; unicode = 1f929
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129321"] = "star-struck"
+-- emoji:🤩; unicode = 1f929 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤩, 1f929
+-- format: unicodeKey = tts
+L["129321_65039"] = "star-struck"
 -- emoji:😘; unicode = 1f618
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128536"] = "face blowing a kiss"
+-- emoji:😘; unicode = 1f618 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😘, 1f618
+-- format: unicodeKey = tts
+L["128536_65039"] = "face blowing a kiss"
 -- emoji:😗; unicode = 1f617
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128535"] = "kissing face"
+-- emoji:😗; unicode = 1f617 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😗, 1f617
+-- format: unicodeKey = tts
+L["128535_65039"] = "kissing face"
 -- emoji:☺️; unicode = 263a fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -92,90 +187,200 @@ L["9786"] = "smiling face"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128538"] = "kissing face with closed eyes"
+-- emoji:😚; unicode = 1f61a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😚, 1f61a
+-- format: unicodeKey = tts
+L["128538_65039"] = "kissing face with closed eyes"
 -- emoji:😙; unicode = 1f619
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128537"] = "kissing face with smiling eyes"
+-- emoji:😙; unicode = 1f619 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😙, 1f619
+-- format: unicodeKey = tts
+L["128537_65039"] = "kissing face with smiling eyes"
 -- emoji:🥲; unicode = 1f972
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129394"] = "smiling face with tear"
+-- emoji:🥲; unicode = 1f972 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥲, 1f972
+-- format: unicodeKey = tts
+L["129394_65039"] = "smiling face with tear"
 -- emoji:😋; unicode = 1f60b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128523"] = "face savoring food"
+-- emoji:😋; unicode = 1f60b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😋, 1f60b
+-- format: unicodeKey = tts
+L["128523_65039"] = "face savoring food"
 -- emoji:😛; unicode = 1f61b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128539"] = "face with tongue"
+-- emoji:😛; unicode = 1f61b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😛, 1f61b
+-- format: unicodeKey = tts
+L["128539_65039"] = "face with tongue"
 -- emoji:😜; unicode = 1f61c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128540"] = "winking face with tongue"
+-- emoji:😜; unicode = 1f61c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😜, 1f61c
+-- format: unicodeKey = tts
+L["128540_65039"] = "winking face with tongue"
 -- emoji:🤪; unicode = 1f92a
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129322"] = "zany face"
+-- emoji:🤪; unicode = 1f92a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤪, 1f92a
+-- format: unicodeKey = tts
+L["129322_65039"] = "zany face"
 -- emoji:😝; unicode = 1f61d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128541"] = "squinting face with tongue"
+-- emoji:😝; unicode = 1f61d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😝, 1f61d
+-- format: unicodeKey = tts
+L["128541_65039"] = "squinting face with tongue"
 -- emoji:🤑; unicode = 1f911
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129297"] = "money-mouth face"
+-- emoji:🤑; unicode = 1f911 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤑, 1f911
+-- format: unicodeKey = tts
+L["129297_65039"] = "money-mouth face"
 -- emoji:🤗; unicode = 1f917
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129303"] = "smiling face with open hands"
+-- emoji:🤗; unicode = 1f917 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤗, 1f917
+-- format: unicodeKey = tts
+L["129303_65039"] = "smiling face with open hands"
 -- emoji:🤭; unicode = 1f92d
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129325"] = "face with hand over mouth"
+-- emoji:🤭; unicode = 1f92d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤭, 1f92d
+-- format: unicodeKey = tts
+L["129325_65039"] = "face with hand over mouth"
 -- emoji:🫢; unicode = 1fae2
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129762"] = "face with open eyes and hand over mouth"
+-- emoji:🫢; unicode = 1fae2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫢, 1fae2
+-- format: unicodeKey = tts
+L["129762_65039"] = "face with open eyes and hand over mouth"
 -- emoji:🫣; unicode = 1fae3
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129763"] = "face with peeking eye"
+-- emoji:🫣; unicode = 1fae3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫣, 1fae3
+-- format: unicodeKey = tts
+L["129763_65039"] = "face with peeking eye"
 -- emoji:🤫; unicode = 1f92b
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129323"] = "shushing face"
+-- emoji:🤫; unicode = 1f92b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤫, 1f92b
+-- format: unicodeKey = tts
+L["129323_65039"] = "shushing face"
 -- emoji:🤔; unicode = 1f914
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129300"] = "thinking face"
+-- emoji:🤔; unicode = 1f914 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤔, 1f914
+-- format: unicodeKey = tts
+L["129300_65039"] = "thinking face"
 -- emoji:🫡; unicode = 1fae1
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129761"] = "saluting face"
+-- emoji:🫡; unicode = 1fae1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫡, 1fae1
+-- format: unicodeKey = tts
+L["129761_65039"] = "saluting face"
 -- emoji:🤐; unicode = 1f910
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129296"] = "zipper-mouth face"
+-- emoji:🤐; unicode = 1f910 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤐, 1f910
+-- format: unicodeKey = tts
+L["129296_65039"] = "zipper-mouth face"
 -- emoji:🤨; unicode = 1f928
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129320"] = "face with raised eyebrow"
+-- emoji:🤨; unicode = 1f928 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤨, 1f928
+-- format: unicodeKey = tts
+L["129320_65039"] = "face with raised eyebrow"
 -- emoji:😐; unicode = 1f610
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128528"] = "neutral face"
+-- emoji:😐; unicode = 1f610 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😐, 1f610
+-- format: unicodeKey = tts
+L["128528_65039"] = "neutral face"
 -- emoji:😑; unicode = 1f611
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128529"] = "expressionless face"
+-- emoji:😑; unicode = 1f611 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😑, 1f611
+-- format: unicodeKey = tts
+L["128529_65039"] = "expressionless face"
 -- emoji:😶; unicode = 1f636
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128566"] = "face without mouth"
+-- emoji:😶; unicode = 1f636 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😶, 1f636
+-- format: unicodeKey = tts
+L["128566_65039"] = "face without mouth"
 -- emoji:🫥; unicode = 1fae5
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129765"] = "dotted line face"
+-- emoji:🫥; unicode = 1fae5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫥, 1fae5
+-- format: unicodeKey = tts
+L["129765_65039"] = "dotted line face"
 -- emoji:😶‍🌫️; unicode = 1f636 200d 1f32b fe0f
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -189,18 +394,38 @@ L["128566_8205_127787"] = "face in clouds"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128527"] = "smirking face"
+-- emoji:😏; unicode = 1f60f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😏, 1f60f
+-- format: unicodeKey = tts
+L["128527_65039"] = "smirking face"
 -- emoji:😒; unicode = 1f612
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128530"] = "unamused face"
+-- emoji:😒; unicode = 1f612 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😒, 1f612
+-- format: unicodeKey = tts
+L["128530_65039"] = "unamused face"
 -- emoji:🙄; unicode = 1f644
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128580"] = "face with rolling eyes"
+-- emoji:🙄; unicode = 1f644 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙄, 1f644
+-- format: unicodeKey = tts
+L["128580_65039"] = "face with rolling eyes"
 -- emoji:😬; unicode = 1f62c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128556"] = "grimacing face"
+-- emoji:😬; unicode = 1f62c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😬, 1f62c
+-- format: unicodeKey = tts
+L["128556_65039"] = "grimacing face"
 -- emoji:😮‍💨; unicode = 1f62e 200d 1f4a8
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -209,10 +434,20 @@ L["128558_8205_128168"] = "face exhaling"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129317"] = "lying face"
+-- emoji:🤥; unicode = 1f925 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤥, 1f925
+-- format: unicodeKey = tts
+L["129317_65039"] = "lying face"
 -- emoji:🫨; unicode = 1fae8
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129768"] = "shaking face"
+-- emoji:🫨; unicode = 1fae8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫨, 1fae8
+-- format: unicodeKey = tts
+L["129768_65039"] = "shaking face"
 -- emoji:🙂‍↔️; unicode = 1f642 200d 2194 fe0f
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -235,66 +470,146 @@ L["128578_8205_8597"] = "head shaking vertically"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128524"] = "relieved face"
+-- emoji:😌; unicode = 1f60c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😌, 1f60c
+-- format: unicodeKey = tts
+L["128524_65039"] = "relieved face"
 -- emoji:😔; unicode = 1f614
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128532"] = "pensive face"
+-- emoji:😔; unicode = 1f614 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😔, 1f614
+-- format: unicodeKey = tts
+L["128532_65039"] = "pensive face"
 -- emoji:😪; unicode = 1f62a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128554"] = "sleepy face"
+-- emoji:😪; unicode = 1f62a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😪, 1f62a
+-- format: unicodeKey = tts
+L["128554_65039"] = "sleepy face"
 -- emoji:🤤; unicode = 1f924
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129316"] = "drooling face"
+-- emoji:🤤; unicode = 1f924 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤤, 1f924
+-- format: unicodeKey = tts
+L["129316_65039"] = "drooling face"
 -- emoji:😴; unicode = 1f634
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128564"] = "sleeping face"
+-- emoji:😴; unicode = 1f634 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😴, 1f634
+-- format: unicodeKey = tts
+L["128564_65039"] = "sleeping face"
 -- emoji:🫩; unicode = 1fae9
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129769"] = "face with bags under eyes"
+-- emoji:🫩; unicode = 1fae9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫩, 1fae9
+-- format: unicodeKey = tts
+L["129769_65039"] = "face with bags under eyes"
 -- emoji:😷; unicode = 1f637
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128567"] = "face with medical mask"
+-- emoji:😷; unicode = 1f637 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😷, 1f637
+-- format: unicodeKey = tts
+L["128567_65039"] = "face with medical mask"
 -- emoji:🤒; unicode = 1f912
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129298"] = "face with thermometer"
+-- emoji:🤒; unicode = 1f912 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤒, 1f912
+-- format: unicodeKey = tts
+L["129298_65039"] = "face with thermometer"
 -- emoji:🤕; unicode = 1f915
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129301"] = "face with head-bandage"
+-- emoji:🤕; unicode = 1f915 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤕, 1f915
+-- format: unicodeKey = tts
+L["129301_65039"] = "face with head-bandage"
 -- emoji:🤢; unicode = 1f922
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129314"] = "nauseated face"
+-- emoji:🤢; unicode = 1f922 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤢, 1f922
+-- format: unicodeKey = tts
+L["129314_65039"] = "nauseated face"
 -- emoji:🤮; unicode = 1f92e
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129326"] = "face vomiting"
+-- emoji:🤮; unicode = 1f92e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤮, 1f92e
+-- format: unicodeKey = tts
+L["129326_65039"] = "face vomiting"
 -- emoji:🤧; unicode = 1f927
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129319"] = "sneezing face"
+-- emoji:🤧; unicode = 1f927 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤧, 1f927
+-- format: unicodeKey = tts
+L["129319_65039"] = "sneezing face"
 -- emoji:🥵; unicode = 1f975
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129397"] = "hot face"
+-- emoji:🥵; unicode = 1f975 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥵, 1f975
+-- format: unicodeKey = tts
+L["129397_65039"] = "hot face"
 -- emoji:🥶; unicode = 1f976
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129398"] = "cold face"
+-- emoji:🥶; unicode = 1f976 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥶, 1f976
+-- format: unicodeKey = tts
+L["129398_65039"] = "cold face"
 -- emoji:🥴; unicode = 1f974
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129396"] = "woozy face"
+-- emoji:🥴; unicode = 1f974 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥴, 1f974
+-- format: unicodeKey = tts
+L["129396_65039"] = "woozy face"
 -- emoji:😵; unicode = 1f635
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128565"] = "face with crossed-out eyes"
+-- emoji:😵; unicode = 1f635 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😵, 1f635
+-- format: unicodeKey = tts
+L["128565_65039"] = "face with crossed-out eyes"
 -- emoji:😵‍💫; unicode = 1f635 200d 1f4ab
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -303,46 +618,101 @@ L["128565_8205_128171"] = "face with spiral eyes"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129327"] = "exploding head"
+-- emoji:🤯; unicode = 1f92f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤯, 1f92f
+-- format: unicodeKey = tts
+L["129327_65039"] = "exploding head"
 -- emoji:🤠; unicode = 1f920
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129312"] = "cowboy hat face"
+-- emoji:🤠; unicode = 1f920 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤠, 1f920
+-- format: unicodeKey = tts
+L["129312_65039"] = "cowboy hat face"
 -- emoji:🥳; unicode = 1f973
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129395"] = "partying face"
+-- emoji:🥳; unicode = 1f973 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥳, 1f973
+-- format: unicodeKey = tts
+L["129395_65039"] = "partying face"
 -- emoji:🥸; unicode = 1f978
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129400"] = "disguised face"
+-- emoji:🥸; unicode = 1f978 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥸, 1f978
+-- format: unicodeKey = tts
+L["129400_65039"] = "disguised face"
 -- emoji:😎; unicode = 1f60e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128526"] = "smiling face with sunglasses"
+-- emoji:😎; unicode = 1f60e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😎, 1f60e
+-- format: unicodeKey = tts
+L["128526_65039"] = "smiling face with sunglasses"
 -- emoji:🤓; unicode = 1f913
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129299"] = "nerd face"
+-- emoji:🤓; unicode = 1f913 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤓, 1f913
+-- format: unicodeKey = tts
+L["129299_65039"] = "nerd face"
 -- emoji:🧐; unicode = 1f9d0
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129488"] = "face with monocle"
+-- emoji:🧐; unicode = 1f9d0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧐, 1f9d0
+-- format: unicodeKey = tts
+L["129488_65039"] = "face with monocle"
 -- emoji:😕; unicode = 1f615
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128533"] = "confused face"
+-- emoji:😕; unicode = 1f615 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😕, 1f615
+-- format: unicodeKey = tts
+L["128533_65039"] = "confused face"
 -- emoji:🫤; unicode = 1fae4
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129764"] = "face with diagonal mouth"
+-- emoji:🫤; unicode = 1fae4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫤, 1fae4
+-- format: unicodeKey = tts
+L["129764_65039"] = "face with diagonal mouth"
 -- emoji:😟; unicode = 1f61f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128543"] = "worried face"
+-- emoji:😟; unicode = 1f61f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😟, 1f61f
+-- format: unicodeKey = tts
+L["128543_65039"] = "worried face"
 -- emoji:🙁; unicode = 1f641
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128577"] = "slightly frowning face"
+-- emoji:🙁; unicode = 1f641 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙁, 1f641
+-- format: unicodeKey = tts
+L["128577_65039"] = "slightly frowning face"
 -- emoji:☹️; unicode = 2639 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -356,114 +726,254 @@ L["9785"] = "frowning face"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128558"] = "face with open mouth"
+-- emoji:😮; unicode = 1f62e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😮, 1f62e
+-- format: unicodeKey = tts
+L["128558_65039"] = "face with open mouth"
 -- emoji:😯; unicode = 1f62f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128559"] = "hushed face"
+-- emoji:😯; unicode = 1f62f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😯, 1f62f
+-- format: unicodeKey = tts
+L["128559_65039"] = "hushed face"
 -- emoji:😲; unicode = 1f632
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128562"] = "astonished face"
+-- emoji:😲; unicode = 1f632 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😲, 1f632
+-- format: unicodeKey = tts
+L["128562_65039"] = "astonished face"
 -- emoji:😳; unicode = 1f633
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128563"] = "flushed face"
+-- emoji:😳; unicode = 1f633 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😳, 1f633
+-- format: unicodeKey = tts
+L["128563_65039"] = "flushed face"
 -- emoji:🥺; unicode = 1f97a
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129402"] = "pleading face"
+-- emoji:🥺; unicode = 1f97a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥺, 1f97a
+-- format: unicodeKey = tts
+L["129402_65039"] = "pleading face"
 -- emoji:🥹; unicode = 1f979
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129401"] = "face holding back tears"
+-- emoji:🥹; unicode = 1f979 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥹, 1f979
+-- format: unicodeKey = tts
+L["129401_65039"] = "face holding back tears"
 -- emoji:😦; unicode = 1f626
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128550"] = "frowning face with open mouth"
+-- emoji:😦; unicode = 1f626 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😦, 1f626
+-- format: unicodeKey = tts
+L["128550_65039"] = "frowning face with open mouth"
 -- emoji:😧; unicode = 1f627
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128551"] = "anguished face"
+-- emoji:😧; unicode = 1f627 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😧, 1f627
+-- format: unicodeKey = tts
+L["128551_65039"] = "anguished face"
 -- emoji:😨; unicode = 1f628
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128552"] = "fearful face"
+-- emoji:😨; unicode = 1f628 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😨, 1f628
+-- format: unicodeKey = tts
+L["128552_65039"] = "fearful face"
 -- emoji:😰; unicode = 1f630
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128560"] = "anxious face with sweat"
+-- emoji:😰; unicode = 1f630 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😰, 1f630
+-- format: unicodeKey = tts
+L["128560_65039"] = "anxious face with sweat"
 -- emoji:😥; unicode = 1f625
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128549"] = "sad but relieved face"
+-- emoji:😥; unicode = 1f625 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😥, 1f625
+-- format: unicodeKey = tts
+L["128549_65039"] = "sad but relieved face"
 -- emoji:😢; unicode = 1f622
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128546"] = "crying face"
+-- emoji:😢; unicode = 1f622 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😢, 1f622
+-- format: unicodeKey = tts
+L["128546_65039"] = "crying face"
 -- emoji:😭; unicode = 1f62d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128557"] = "loudly crying face"
+-- emoji:😭; unicode = 1f62d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😭, 1f62d
+-- format: unicodeKey = tts
+L["128557_65039"] = "loudly crying face"
 -- emoji:😱; unicode = 1f631
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128561"] = "face screaming in fear"
+-- emoji:😱; unicode = 1f631 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😱, 1f631
+-- format: unicodeKey = tts
+L["128561_65039"] = "face screaming in fear"
 -- emoji:😖; unicode = 1f616
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128534"] = "confounded face"
+-- emoji:😖; unicode = 1f616 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😖, 1f616
+-- format: unicodeKey = tts
+L["128534_65039"] = "confounded face"
 -- emoji:😣; unicode = 1f623
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128547"] = "persevering face"
+-- emoji:😣; unicode = 1f623 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😣, 1f623
+-- format: unicodeKey = tts
+L["128547_65039"] = "persevering face"
 -- emoji:😞; unicode = 1f61e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128542"] = "disappointed face"
+-- emoji:😞; unicode = 1f61e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😞, 1f61e
+-- format: unicodeKey = tts
+L["128542_65039"] = "disappointed face"
 -- emoji:😓; unicode = 1f613
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128531"] = "downcast face with sweat"
+-- emoji:😓; unicode = 1f613 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😓, 1f613
+-- format: unicodeKey = tts
+L["128531_65039"] = "downcast face with sweat"
 -- emoji:😩; unicode = 1f629
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128553"] = "weary face"
+-- emoji:😩; unicode = 1f629 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😩, 1f629
+-- format: unicodeKey = tts
+L["128553_65039"] = "weary face"
 -- emoji:😫; unicode = 1f62b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128555"] = "tired face"
+-- emoji:😫; unicode = 1f62b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😫, 1f62b
+-- format: unicodeKey = tts
+L["128555_65039"] = "tired face"
 -- emoji:🥱; unicode = 1f971
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129393"] = "yawning face"
+-- emoji:🥱; unicode = 1f971 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥱, 1f971
+-- format: unicodeKey = tts
+L["129393_65039"] = "yawning face"
 -- emoji:😤; unicode = 1f624
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128548"] = "face with steam from nose"
+-- emoji:😤; unicode = 1f624 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😤, 1f624
+-- format: unicodeKey = tts
+L["128548_65039"] = "face with steam from nose"
 -- emoji:😡; unicode = 1f621
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128545"] = "enraged face"
+-- emoji:😡; unicode = 1f621 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😡, 1f621
+-- format: unicodeKey = tts
+L["128545_65039"] = "enraged face"
 -- emoji:😠; unicode = 1f620
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128544"] = "angry face"
+-- emoji:😠; unicode = 1f620 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😠, 1f620
+-- format: unicodeKey = tts
+L["128544_65039"] = "angry face"
 -- emoji:🤬; unicode = 1f92c
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129324"] = "face with symbols on mouth"
+-- emoji:🤬; unicode = 1f92c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤬, 1f92c
+-- format: unicodeKey = tts
+L["129324_65039"] = "face with symbols on mouth"
 -- emoji:😈; unicode = 1f608
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128520"] = "smiling face with horns"
+-- emoji:😈; unicode = 1f608 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😈, 1f608
+-- format: unicodeKey = tts
+L["128520_65039"] = "smiling face with horns"
 -- emoji:👿; unicode = 1f47f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128127"] = "angry face with horns"
+-- emoji:👿; unicode = 1f47f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👿, 1f47f
+-- format: unicodeKey = tts
+L["128127_65039"] = "angry face with horns"
 -- emoji:💀; unicode = 1f480
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128128"] = "skull"
+-- emoji:💀; unicode = 1f480 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💀, 1f480
+-- format: unicodeKey = tts
+L["128128_65039"] = "skull"
 -- emoji:☠️; unicode = 2620 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -477,118 +987,263 @@ L["9760"] = "skull and crossbones"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128169"] = "pile of poo"
+-- emoji:💩; unicode = 1f4a9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💩, 1f4a9
+-- format: unicodeKey = tts
+L["128169_65039"] = "pile of poo"
 -- emoji:🤡; unicode = 1f921
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129313"] = "clown face"
+-- emoji:🤡; unicode = 1f921 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤡, 1f921
+-- format: unicodeKey = tts
+L["129313_65039"] = "clown face"
 -- emoji:👹; unicode = 1f479
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128121"] = "ogre"
+-- emoji:👹; unicode = 1f479 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👹, 1f479
+-- format: unicodeKey = tts
+L["128121_65039"] = "ogre"
 -- emoji:👺; unicode = 1f47a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128122"] = "goblin"
+-- emoji:👺; unicode = 1f47a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👺, 1f47a
+-- format: unicodeKey = tts
+L["128122_65039"] = "goblin"
 -- emoji:👻; unicode = 1f47b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128123"] = "ghost"
+-- emoji:👻; unicode = 1f47b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👻, 1f47b
+-- format: unicodeKey = tts
+L["128123_65039"] = "ghost"
 -- emoji:👽; unicode = 1f47d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128125"] = "alien"
+-- emoji:👽; unicode = 1f47d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👽, 1f47d
+-- format: unicodeKey = tts
+L["128125_65039"] = "alien"
 -- emoji:👾; unicode = 1f47e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128126"] = "alien monster"
+-- emoji:👾; unicode = 1f47e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👾, 1f47e
+-- format: unicodeKey = tts
+L["128126_65039"] = "alien monster"
 -- emoji:🤖; unicode = 1f916
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129302"] = "robot"
+-- emoji:🤖; unicode = 1f916 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤖, 1f916
+-- format: unicodeKey = tts
+L["129302_65039"] = "robot"
 -- emoji:😺; unicode = 1f63a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128570"] = "grinning cat"
+-- emoji:😺; unicode = 1f63a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😺, 1f63a
+-- format: unicodeKey = tts
+L["128570_65039"] = "grinning cat"
 -- emoji:😸; unicode = 1f638
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128568"] = "grinning cat with smiling eyes"
+-- emoji:😸; unicode = 1f638 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😸, 1f638
+-- format: unicodeKey = tts
+L["128568_65039"] = "grinning cat with smiling eyes"
 -- emoji:😹; unicode = 1f639
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128569"] = "cat with tears of joy"
+-- emoji:😹; unicode = 1f639 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😹, 1f639
+-- format: unicodeKey = tts
+L["128569_65039"] = "cat with tears of joy"
 -- emoji:😻; unicode = 1f63b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128571"] = "smiling cat with heart-eyes"
+-- emoji:😻; unicode = 1f63b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😻, 1f63b
+-- format: unicodeKey = tts
+L["128571_65039"] = "smiling cat with heart-eyes"
 -- emoji:😼; unicode = 1f63c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128572"] = "cat with wry smile"
+-- emoji:😼; unicode = 1f63c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😼, 1f63c
+-- format: unicodeKey = tts
+L["128572_65039"] = "cat with wry smile"
 -- emoji:😽; unicode = 1f63d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128573"] = "kissing cat"
+-- emoji:😽; unicode = 1f63d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😽, 1f63d
+-- format: unicodeKey = tts
+L["128573_65039"] = "kissing cat"
 -- emoji:🙀; unicode = 1f640
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128576"] = "weary cat"
+-- emoji:🙀; unicode = 1f640 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙀, 1f640
+-- format: unicodeKey = tts
+L["128576_65039"] = "weary cat"
 -- emoji:😿; unicode = 1f63f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128575"] = "crying cat"
+-- emoji:😿; unicode = 1f63f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😿, 1f63f
+-- format: unicodeKey = tts
+L["128575_65039"] = "crying cat"
 -- emoji:😾; unicode = 1f63e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128574"] = "pouting cat"
+-- emoji:😾; unicode = 1f63e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😾, 1f63e
+-- format: unicodeKey = tts
+L["128574_65039"] = "pouting cat"
 -- emoji:🙈; unicode = 1f648
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128584"] = "see-no-evil monkey"
+-- emoji:🙈; unicode = 1f648 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙈, 1f648
+-- format: unicodeKey = tts
+L["128584_65039"] = "see-no-evil monkey"
 -- emoji:🙉; unicode = 1f649
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128585"] = "hear-no-evil monkey"
+-- emoji:🙉; unicode = 1f649 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙉, 1f649
+-- format: unicodeKey = tts
+L["128585_65039"] = "hear-no-evil monkey"
 -- emoji:🙊; unicode = 1f64a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128586"] = "speak-no-evil monkey"
+-- emoji:🙊; unicode = 1f64a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙊, 1f64a
+-- format: unicodeKey = tts
+L["128586_65039"] = "speak-no-evil monkey"
 -- emoji:💌; unicode = 1f48c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128140"] = "love letter"
+-- emoji:💌; unicode = 1f48c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💌, 1f48c
+-- format: unicodeKey = tts
+L["128140_65039"] = "love letter"
 -- emoji:💘; unicode = 1f498
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128152"] = "heart with arrow"
+-- emoji:💘; unicode = 1f498 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💘, 1f498
+-- format: unicodeKey = tts
+L["128152_65039"] = "heart with arrow"
 -- emoji:💝; unicode = 1f49d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128157"] = "heart with ribbon"
+-- emoji:💝; unicode = 1f49d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💝, 1f49d
+-- format: unicodeKey = tts
+L["128157_65039"] = "heart with ribbon"
 -- emoji:💖; unicode = 1f496
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128150"] = "sparkling heart"
+-- emoji:💖; unicode = 1f496 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💖, 1f496
+-- format: unicodeKey = tts
+L["128150_65039"] = "sparkling heart"
 -- emoji:💗; unicode = 1f497
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128151"] = "growing heart"
+-- emoji:💗; unicode = 1f497 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💗, 1f497
+-- format: unicodeKey = tts
+L["128151_65039"] = "growing heart"
 -- emoji:💓; unicode = 1f493
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128147"] = "beating heart"
+-- emoji:💓; unicode = 1f493 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💓, 1f493
+-- format: unicodeKey = tts
+L["128147_65039"] = "beating heart"
 -- emoji:💞; unicode = 1f49e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128158"] = "revolving hearts"
+-- emoji:💞; unicode = 1f49e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💞, 1f49e
+-- format: unicodeKey = tts
+L["128158_65039"] = "revolving hearts"
 -- emoji:💕; unicode = 1f495
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128149"] = "two hearts"
+-- emoji:💕; unicode = 1f495 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💕, 1f495
+-- format: unicodeKey = tts
+L["128149_65039"] = "two hearts"
 -- emoji:💟; unicode = 1f49f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128159"] = "heart decoration"
+-- emoji:💟; unicode = 1f49f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💟, 1f49f
+-- format: unicodeKey = tts
+L["128159_65039"] = "heart decoration"
 -- emoji:❣️; unicode = 2763 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -602,6 +1257,11 @@ L["10083"] = "heart exclamation"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128148"] = "broken heart"
+-- emoji:💔; unicode = 1f494 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💔, 1f494
+-- format: unicodeKey = tts
+L["128148_65039"] = "broken heart"
 -- emoji:❤️‍🔥; unicode = 2764 fe0f 200d 1f525
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -633,74 +1293,164 @@ L["10084"] = "red heart"
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129655"] = "pink heart"
+-- emoji:🩷; unicode = 1fa77 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩷, 1fa77
+-- format: unicodeKey = tts
+L["129655_65039"] = "pink heart"
 -- emoji:🧡; unicode = 1f9e1
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129505"] = "orange heart"
+-- emoji:🧡; unicode = 1f9e1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧡, 1f9e1
+-- format: unicodeKey = tts
+L["129505_65039"] = "orange heart"
 -- emoji:💛; unicode = 1f49b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128155"] = "yellow heart"
+-- emoji:💛; unicode = 1f49b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💛, 1f49b
+-- format: unicodeKey = tts
+L["128155_65039"] = "yellow heart"
 -- emoji:💚; unicode = 1f49a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128154"] = "green heart"
+-- emoji:💚; unicode = 1f49a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💚, 1f49a
+-- format: unicodeKey = tts
+L["128154_65039"] = "green heart"
 -- emoji:💙; unicode = 1f499
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128153"] = "blue heart"
+-- emoji:💙; unicode = 1f499 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💙, 1f499
+-- format: unicodeKey = tts
+L["128153_65039"] = "blue heart"
 -- emoji:🩵; unicode = 1fa75
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129653"] = "light blue heart"
+-- emoji:🩵; unicode = 1fa75 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩵, 1fa75
+-- format: unicodeKey = tts
+L["129653_65039"] = "light blue heart"
 -- emoji:💜; unicode = 1f49c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128156"] = "purple heart"
+-- emoji:💜; unicode = 1f49c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💜, 1f49c
+-- format: unicodeKey = tts
+L["128156_65039"] = "purple heart"
 -- emoji:🤎; unicode = 1f90e
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129294"] = "brown heart"
+-- emoji:🤎; unicode = 1f90e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤎, 1f90e
+-- format: unicodeKey = tts
+L["129294_65039"] = "brown heart"
 -- emoji:🖤; unicode = 1f5a4
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128420"] = "black heart"
+-- emoji:🖤; unicode = 1f5a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🖤, 1f5a4
+-- format: unicodeKey = tts
+L["128420_65039"] = "black heart"
 -- emoji:🩶; unicode = 1fa76
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129654"] = "grey heart"
+-- emoji:🩶; unicode = 1fa76 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩶, 1fa76
+-- format: unicodeKey = tts
+L["129654_65039"] = "grey heart"
 -- emoji:🤍; unicode = 1f90d
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129293"] = "white heart"
+-- emoji:🤍; unicode = 1f90d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤍, 1f90d
+-- format: unicodeKey = tts
+L["129293_65039"] = "white heart"
 -- emoji:💋; unicode = 1f48b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128139"] = "kiss mark"
+-- emoji:💋; unicode = 1f48b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💋, 1f48b
+-- format: unicodeKey = tts
+L["128139_65039"] = "kiss mark"
 -- emoji:💯; unicode = 1f4af
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128175"] = "hundred points"
+-- emoji:💯; unicode = 1f4af fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💯, 1f4af
+-- format: unicodeKey = tts
+L["128175_65039"] = "hundred points"
 -- emoji:💢; unicode = 1f4a2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128162"] = "anger symbol"
+-- emoji:💢; unicode = 1f4a2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💢, 1f4a2
+-- format: unicodeKey = tts
+L["128162_65039"] = "anger symbol"
 -- emoji:💥; unicode = 1f4a5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128165"] = "collision"
+-- emoji:💥; unicode = 1f4a5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💥, 1f4a5
+-- format: unicodeKey = tts
+L["128165_65039"] = "collision"
 -- emoji:💫; unicode = 1f4ab
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128171"] = "dizzy"
+-- emoji:💫; unicode = 1f4ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💫, 1f4ab
+-- format: unicodeKey = tts
+L["128171_65039"] = "dizzy"
 -- emoji:💦; unicode = 1f4a6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128166"] = "sweat droplets"
+-- emoji:💦; unicode = 1f4a6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💦, 1f4a6
+-- format: unicodeKey = tts
+L["128166_65039"] = "sweat droplets"
 -- emoji:💨; unicode = 1f4a8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128168"] = "dashing away"
+-- emoji:💨; unicode = 1f4a8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💨, 1f4a8
+-- format: unicodeKey = tts
+L["128168_65039"] = "dashing away"
 -- emoji:🕳️; unicode = 1f573 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -714,6 +1464,11 @@ L["128371"] = "hole"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128172"] = "speech balloon"
+-- emoji:💬; unicode = 1f4ac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💬, 1f4ac
+-- format: unicodeKey = tts
+L["128172_65039"] = "speech balloon"
 -- emoji:👁️‍🗨️; unicode = 1f441 fe0f 200d 1f5e8 fe0f
 -- status: FULLY_QUALIFIED; since: E2.0
 -- format: unicodeKey = tts
@@ -755,14 +1510,29 @@ L["128495"] = "right anger bubble"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128173"] = "thought balloon"
+-- emoji:💭; unicode = 1f4ad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💭, 1f4ad
+-- format: unicodeKey = tts
+L["128173_65039"] = "thought balloon"
 -- emoji:💤; unicode = 1f4a4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128164"] = "ZZZ"
+-- emoji:💤; unicode = 1f4a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💤, 1f4a4
+-- format: unicodeKey = tts
+L["128164_65039"] = "ZZZ"
 -- emoji:👋; unicode = 1f44b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128075"] = "waving hand"
+-- emoji:👋; unicode = 1f44b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👋, 1f44b
+-- format: unicodeKey = tts
+L["128075_65039"] = "waving hand"
 -- emoji:👋🏻; unicode = 1f44b 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -787,6 +1557,11 @@ L["128075_127999"] = "waving hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129306"] = "raised back of hand"
+-- emoji:🤚; unicode = 1f91a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤚, 1f91a
+-- format: unicodeKey = tts
+L["129306_65039"] = "raised back of hand"
 -- emoji:🤚🏻; unicode = 1f91a 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -840,6 +1615,11 @@ L["128400_127999"] = "hand with fingers splayed: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9995"] = "raised hand"
+-- emoji:✋; unicode = 270b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ✋, 270b
+-- format: unicodeKey = tts
+L["9995_65039"] = "raised hand"
 -- emoji:✋🏻; unicode = 270b 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -864,6 +1644,11 @@ L["9995_127999"] = "raised hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128406"] = "vulcan salute"
+-- emoji:🖖; unicode = 1f596 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🖖, 1f596
+-- format: unicodeKey = tts
+L["128406_65039"] = "vulcan salute"
 -- emoji:🖖🏻; unicode = 1f596 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -888,6 +1673,11 @@ L["128406_127999"] = "vulcan salute: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129777"] = "rightwards hand"
+-- emoji:🫱; unicode = 1faf1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫱, 1faf1
+-- format: unicodeKey = tts
+L["129777_65039"] = "rightwards hand"
 -- emoji:🫱🏻; unicode = 1faf1 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -912,6 +1702,11 @@ L["129777_127999"] = "rightwards hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129778"] = "leftwards hand"
+-- emoji:🫲; unicode = 1faf2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫲, 1faf2
+-- format: unicodeKey = tts
+L["129778_65039"] = "leftwards hand"
 -- emoji:🫲🏻; unicode = 1faf2 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -936,6 +1731,11 @@ L["129778_127999"] = "leftwards hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129779"] = "palm down hand"
+-- emoji:🫳; unicode = 1faf3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫳, 1faf3
+-- format: unicodeKey = tts
+L["129779_65039"] = "palm down hand"
 -- emoji:🫳🏻; unicode = 1faf3 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -960,6 +1760,11 @@ L["129779_127999"] = "palm down hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129780"] = "palm up hand"
+-- emoji:🫴; unicode = 1faf4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫴, 1faf4
+-- format: unicodeKey = tts
+L["129780_65039"] = "palm up hand"
 -- emoji:🫴🏻; unicode = 1faf4 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -984,6 +1789,11 @@ L["129780_127999"] = "palm up hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129783"] = "leftwards pushing hand"
+-- emoji:🫷; unicode = 1faf7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫷, 1faf7
+-- format: unicodeKey = tts
+L["129783_65039"] = "leftwards pushing hand"
 -- emoji:🫷🏻; unicode = 1faf7 1f3fb
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
@@ -1008,6 +1818,11 @@ L["129783_127999"] = "leftwards pushing hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129784"] = "rightwards pushing hand"
+-- emoji:🫸; unicode = 1faf8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫸, 1faf8
+-- format: unicodeKey = tts
+L["129784_65039"] = "rightwards pushing hand"
 -- emoji:🫸🏻; unicode = 1faf8 1f3fb
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
@@ -1032,6 +1847,11 @@ L["129784_127999"] = "rightwards pushing hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128076"] = "OK hand"
+-- emoji:👌; unicode = 1f44c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👌, 1f44c
+-- format: unicodeKey = tts
+L["128076_65039"] = "OK hand"
 -- emoji:👌🏻; unicode = 1f44c 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1056,6 +1876,11 @@ L["128076_127999"] = "OK hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129292"] = "pinched fingers"
+-- emoji:🤌; unicode = 1f90c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤌, 1f90c
+-- format: unicodeKey = tts
+L["129292_65039"] = "pinched fingers"
 -- emoji:🤌🏻; unicode = 1f90c 1f3fb
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
@@ -1080,6 +1905,11 @@ L["129292_127999"] = "pinched fingers: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129295"] = "pinching hand"
+-- emoji:🤏; unicode = 1f90f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤏, 1f90f
+-- format: unicodeKey = tts
+L["129295_65039"] = "pinching hand"
 -- emoji:🤏🏻; unicode = 1f90f 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -1133,6 +1963,11 @@ L["9996_127999"] = "victory hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129310"] = "crossed fingers"
+-- emoji:🤞; unicode = 1f91e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤞, 1f91e
+-- format: unicodeKey = tts
+L["129310_65039"] = "crossed fingers"
 -- emoji:🤞🏻; unicode = 1f91e 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1157,6 +1992,11 @@ L["129310_127999"] = "crossed fingers: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129776"] = "hand with index finger and thumb crossed"
+-- emoji:🫰; unicode = 1faf0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫰, 1faf0
+-- format: unicodeKey = tts
+L["129776_65039"] = "hand with index finger and thumb crossed"
 -- emoji:🫰🏻; unicode = 1faf0 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -1181,6 +2021,11 @@ L["129776_127999"] = "hand with index finger and thumb crossed: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129311"] = "love-you gesture"
+-- emoji:🤟; unicode = 1f91f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤟, 1f91f
+-- format: unicodeKey = tts
+L["129311_65039"] = "love-you gesture"
 -- emoji:🤟🏻; unicode = 1f91f 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -1205,6 +2050,11 @@ L["129311_127999"] = "love-you gesture: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129304"] = "sign of the horns"
+-- emoji:🤘; unicode = 1f918 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤘, 1f918
+-- format: unicodeKey = tts
+L["129304_65039"] = "sign of the horns"
 -- emoji:🤘🏻; unicode = 1f918 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1229,6 +2079,11 @@ L["129304_127999"] = "sign of the horns: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129305"] = "call me hand"
+-- emoji:🤙; unicode = 1f919 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤙, 1f919
+-- format: unicodeKey = tts
+L["129305_65039"] = "call me hand"
 -- emoji:🤙🏻; unicode = 1f919 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1253,6 +2108,11 @@ L["129305_127999"] = "call me hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128072"] = "backhand index pointing left"
+-- emoji:👈; unicode = 1f448 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👈, 1f448
+-- format: unicodeKey = tts
+L["128072_65039"] = "backhand index pointing left"
 -- emoji:👈🏻; unicode = 1f448 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1277,6 +2137,11 @@ L["128072_127999"] = "backhand index pointing left: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128073"] = "backhand index pointing right"
+-- emoji:👉; unicode = 1f449 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👉, 1f449
+-- format: unicodeKey = tts
+L["128073_65039"] = "backhand index pointing right"
 -- emoji:👉🏻; unicode = 1f449 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1301,6 +2166,11 @@ L["128073_127999"] = "backhand index pointing right: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128070"] = "backhand index pointing up"
+-- emoji:👆; unicode = 1f446 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👆, 1f446
+-- format: unicodeKey = tts
+L["128070_65039"] = "backhand index pointing up"
 -- emoji:👆🏻; unicode = 1f446 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1325,6 +2195,11 @@ L["128070_127999"] = "backhand index pointing up: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128405"] = "middle finger"
+-- emoji:🖕; unicode = 1f595 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🖕, 1f595
+-- format: unicodeKey = tts
+L["128405_65039"] = "middle finger"
 -- emoji:🖕🏻; unicode = 1f595 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1349,6 +2224,11 @@ L["128405_127999"] = "middle finger: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128071"] = "backhand index pointing down"
+-- emoji:👇; unicode = 1f447 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👇, 1f447
+-- format: unicodeKey = tts
+L["128071_65039"] = "backhand index pointing down"
 -- emoji:👇🏻; unicode = 1f447 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1402,6 +2282,11 @@ L["9757_127999"] = "index pointing up: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129781"] = "index pointing at the viewer"
+-- emoji:🫵; unicode = 1faf5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫵, 1faf5
+-- format: unicodeKey = tts
+L["129781_65039"] = "index pointing at the viewer"
 -- emoji:🫵🏻; unicode = 1faf5 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -1426,6 +2311,11 @@ L["129781_127999"] = "index pointing at the viewer: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128077"] = "thumbs up"
+-- emoji:👍; unicode = 1f44d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👍, 1f44d
+-- format: unicodeKey = tts
+L["128077_65039"] = "thumbs up"
 -- emoji:👍🏻; unicode = 1f44d 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1450,6 +2340,11 @@ L["128077_127999"] = "thumbs up: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128078"] = "thumbs down"
+-- emoji:👎; unicode = 1f44e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👎, 1f44e
+-- format: unicodeKey = tts
+L["128078_65039"] = "thumbs down"
 -- emoji:👎🏻; unicode = 1f44e 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1474,6 +2369,11 @@ L["128078_127999"] = "thumbs down: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9994"] = "raised fist"
+-- emoji:✊; unicode = 270a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ✊, 270a
+-- format: unicodeKey = tts
+L["9994_65039"] = "raised fist"
 -- emoji:✊🏻; unicode = 270a 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1498,6 +2398,11 @@ L["9994_127999"] = "raised fist: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128074"] = "oncoming fist"
+-- emoji:👊; unicode = 1f44a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👊, 1f44a
+-- format: unicodeKey = tts
+L["128074_65039"] = "oncoming fist"
 -- emoji:👊🏻; unicode = 1f44a 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1522,6 +2427,11 @@ L["128074_127999"] = "oncoming fist: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129307"] = "left-facing fist"
+-- emoji:🤛; unicode = 1f91b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤛, 1f91b
+-- format: unicodeKey = tts
+L["129307_65039"] = "left-facing fist"
 -- emoji:🤛🏻; unicode = 1f91b 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1546,6 +2456,11 @@ L["129307_127999"] = "left-facing fist: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129308"] = "right-facing fist"
+-- emoji:🤜; unicode = 1f91c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤜, 1f91c
+-- format: unicodeKey = tts
+L["129308_65039"] = "right-facing fist"
 -- emoji:🤜🏻; unicode = 1f91c 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1570,6 +2485,11 @@ L["129308_127999"] = "right-facing fist: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128079"] = "clapping hands"
+-- emoji:👏; unicode = 1f44f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👏, 1f44f
+-- format: unicodeKey = tts
+L["128079_65039"] = "clapping hands"
 -- emoji:👏🏻; unicode = 1f44f 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1594,6 +2514,11 @@ L["128079_127999"] = "clapping hands: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128588"] = "raising hands"
+-- emoji:🙌; unicode = 1f64c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙌, 1f64c
+-- format: unicodeKey = tts
+L["128588_65039"] = "raising hands"
 -- emoji:🙌🏻; unicode = 1f64c 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1618,6 +2543,11 @@ L["128588_127999"] = "raising hands: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129782"] = "heart hands"
+-- emoji:🫶; unicode = 1faf6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫶, 1faf6
+-- format: unicodeKey = tts
+L["129782_65039"] = "heart hands"
 -- emoji:🫶🏻; unicode = 1faf6 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -1642,6 +2572,11 @@ L["129782_127999"] = "heart hands: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128080"] = "open hands"
+-- emoji:👐; unicode = 1f450 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👐, 1f450
+-- format: unicodeKey = tts
+L["128080_65039"] = "open hands"
 -- emoji:👐🏻; unicode = 1f450 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1666,6 +2601,11 @@ L["128080_127999"] = "open hands: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129330"] = "palms up together"
+-- emoji:🤲; unicode = 1f932 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤲, 1f932
+-- format: unicodeKey = tts
+L["129330_65039"] = "palms up together"
 -- emoji:🤲🏻; unicode = 1f932 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -1690,6 +2630,11 @@ L["129330_127999"] = "palms up together: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129309"] = "handshake"
+-- emoji:🤝; unicode = 1f91d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤝, 1f91d
+-- format: unicodeKey = tts
+L["129309_65039"] = "handshake"
 -- emoji:🤝🏻; unicode = 1f91d 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -1794,6 +2739,11 @@ L["129777_127999_8205_129778_127998"] = "handshake: dark skin tone, medium-dark 
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128591"] = "folded hands"
+-- emoji:🙏; unicode = 1f64f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙏, 1f64f
+-- format: unicodeKey = tts
+L["128591_65039"] = "folded hands"
 -- emoji:🙏🏻; unicode = 1f64f 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1847,6 +2797,11 @@ L["9997_127999"] = "writing hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128133"] = "nail polish"
+-- emoji:💅; unicode = 1f485 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💅, 1f485
+-- format: unicodeKey = tts
+L["128133_65039"] = "nail polish"
 -- emoji:💅🏻; unicode = 1f485 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1871,6 +2826,11 @@ L["128133_127999"] = "nail polish: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129331"] = "selfie"
+-- emoji:🤳; unicode = 1f933 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤳, 1f933
+-- format: unicodeKey = tts
+L["129331_65039"] = "selfie"
 -- emoji:🤳🏻; unicode = 1f933 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1895,6 +2855,11 @@ L["129331_127999"] = "selfie: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128170"] = "flexed biceps"
+-- emoji:💪; unicode = 1f4aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💪, 1f4aa
+-- format: unicodeKey = tts
+L["128170_65039"] = "flexed biceps"
 -- emoji:💪🏻; unicode = 1f4aa 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1919,14 +2884,29 @@ L["128170_127999"] = "flexed biceps: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129470"] = "mechanical arm"
+-- emoji:🦾; unicode = 1f9be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦾, 1f9be
+-- format: unicodeKey = tts
+L["129470_65039"] = "mechanical arm"
 -- emoji:🦿; unicode = 1f9bf
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129471"] = "mechanical leg"
+-- emoji:🦿; unicode = 1f9bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦿, 1f9bf
+-- format: unicodeKey = tts
+L["129471_65039"] = "mechanical leg"
 -- emoji:🦵; unicode = 1f9b5
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129461"] = "leg"
+-- emoji:🦵; unicode = 1f9b5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦵, 1f9b5
+-- format: unicodeKey = tts
+L["129461_65039"] = "leg"
 -- emoji:🦵🏻; unicode = 1f9b5 1f3fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -1951,6 +2931,11 @@ L["129461_127999"] = "leg: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129462"] = "foot"
+-- emoji:🦶; unicode = 1f9b6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦶, 1f9b6
+-- format: unicodeKey = tts
+L["129462_65039"] = "foot"
 -- emoji:🦶🏻; unicode = 1f9b6 1f3fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -1975,6 +2960,11 @@ L["129462_127999"] = "foot: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128066"] = "ear"
+-- emoji:👂; unicode = 1f442 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👂, 1f442
+-- format: unicodeKey = tts
+L["128066_65039"] = "ear"
 -- emoji:👂🏻; unicode = 1f442 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1999,6 +2989,11 @@ L["128066_127999"] = "ear: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129467"] = "ear with hearing aid"
+-- emoji:🦻; unicode = 1f9bb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦻, 1f9bb
+-- format: unicodeKey = tts
+L["129467_65039"] = "ear with hearing aid"
 -- emoji:🦻🏻; unicode = 1f9bb 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -2023,6 +3018,11 @@ L["129467_127999"] = "ear with hearing aid: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128067"] = "nose"
+-- emoji:👃; unicode = 1f443 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👃, 1f443
+-- format: unicodeKey = tts
+L["128067_65039"] = "nose"
 -- emoji:👃🏻; unicode = 1f443 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2047,26 +3047,56 @@ L["128067_127999"] = "nose: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129504"] = "brain"
+-- emoji:🧠; unicode = 1f9e0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧠, 1f9e0
+-- format: unicodeKey = tts
+L["129504_65039"] = "brain"
 -- emoji:🫀; unicode = 1fac0
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129728"] = "anatomical heart"
+-- emoji:🫀; unicode = 1fac0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫀, 1fac0
+-- format: unicodeKey = tts
+L["129728_65039"] = "anatomical heart"
 -- emoji:🫁; unicode = 1fac1
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129729"] = "lungs"
+-- emoji:🫁; unicode = 1fac1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫁, 1fac1
+-- format: unicodeKey = tts
+L["129729_65039"] = "lungs"
 -- emoji:🦷; unicode = 1f9b7
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129463"] = "tooth"
+-- emoji:🦷; unicode = 1f9b7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦷, 1f9b7
+-- format: unicodeKey = tts
+L["129463_65039"] = "tooth"
 -- emoji:🦴; unicode = 1f9b4
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129460"] = "bone"
+-- emoji:🦴; unicode = 1f9b4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦴, 1f9b4
+-- format: unicodeKey = tts
+L["129460_65039"] = "bone"
 -- emoji:👀; unicode = 1f440
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128064"] = "eyes"
+-- emoji:👀; unicode = 1f440 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👀, 1f440
+-- format: unicodeKey = tts
+L["128064_65039"] = "eyes"
 -- emoji:👁️; unicode = 1f441 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -2080,18 +3110,38 @@ L["128065"] = "eye"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128069"] = "tongue"
+-- emoji:👅; unicode = 1f445 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👅, 1f445
+-- format: unicodeKey = tts
+L["128069_65039"] = "tongue"
 -- emoji:👄; unicode = 1f444
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128068"] = "mouth"
+-- emoji:👄; unicode = 1f444 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👄, 1f444
+-- format: unicodeKey = tts
+L["128068_65039"] = "mouth"
 -- emoji:🫦; unicode = 1fae6
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129766"] = "biting lip"
+-- emoji:🫦; unicode = 1fae6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫦, 1fae6
+-- format: unicodeKey = tts
+L["129766_65039"] = "biting lip"
 -- emoji:👶; unicode = 1f476
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128118"] = "baby"
+-- emoji:👶; unicode = 1f476 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👶, 1f476
+-- format: unicodeKey = tts
+L["128118_65039"] = "baby"
 -- emoji:👶🏻; unicode = 1f476 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2116,6 +3166,11 @@ L["128118_127999"] = "baby: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129490"] = "child"
+-- emoji:🧒; unicode = 1f9d2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧒, 1f9d2
+-- format: unicodeKey = tts
+L["129490_65039"] = "child"
 -- emoji:🧒🏻; unicode = 1f9d2 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -2140,6 +3195,11 @@ L["129490_127999"] = "child: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128102"] = "boy"
+-- emoji:👦; unicode = 1f466 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👦, 1f466
+-- format: unicodeKey = tts
+L["128102_65039"] = "boy"
 -- emoji:👦🏻; unicode = 1f466 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2164,6 +3224,11 @@ L["128102_127999"] = "boy: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128103"] = "girl"
+-- emoji:👧; unicode = 1f467 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👧, 1f467
+-- format: unicodeKey = tts
+L["128103_65039"] = "girl"
 -- emoji:👧🏻; unicode = 1f467 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2188,6 +3253,11 @@ L["128103_127999"] = "girl: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129489"] = "person"
+-- emoji:🧑; unicode = 1f9d1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧑, 1f9d1
+-- format: unicodeKey = tts
+L["129489_65039"] = "person"
 -- emoji:🧑🏻; unicode = 1f9d1 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -2212,6 +3282,11 @@ L["129489_127999"] = "person: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128113"] = "person: blond hair"
+-- emoji:👱; unicode = 1f471 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👱, 1f471
+-- format: unicodeKey = tts
+L["128113_65039"] = "person: blond hair"
 -- emoji:👱🏻; unicode = 1f471 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2236,6 +3311,11 @@ L["128113_127999"] = "person: dark skin tone, blond hair"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128104"] = "man"
+-- emoji:👨; unicode = 1f468 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👨, 1f468
+-- format: unicodeKey = tts
+L["128104_65039"] = "man"
 -- emoji:👨🏻; unicode = 1f468 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2260,6 +3340,11 @@ L["128104_127999"] = "man: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129492"] = "person: beard"
+-- emoji:🧔; unicode = 1f9d4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧔, 1f9d4
+-- format: unicodeKey = tts
+L["129492_65039"] = "person: beard"
 -- emoji:🧔🏻; unicode = 1f9d4 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -2488,6 +3573,11 @@ L["128104_127999_8205_129458"] = "man: dark skin tone, bald"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128105"] = "woman"
+-- emoji:👩; unicode = 1f469 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👩, 1f469
+-- format: unicodeKey = tts
+L["128105_65039"] = "woman"
 -- emoji:👩🏻; unicode = 1f469 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2812,6 +3902,11 @@ L["128113_127999_8205_9794"] = "man: dark skin tone, blond hair"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129491"] = "older person"
+-- emoji:🧓; unicode = 1f9d3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧓, 1f9d3
+-- format: unicodeKey = tts
+L["129491_65039"] = "older person"
 -- emoji:🧓🏻; unicode = 1f9d3 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -2836,6 +3931,11 @@ L["129491_127999"] = "older person: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128116"] = "old man"
+-- emoji:👴; unicode = 1f474 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👴, 1f474
+-- format: unicodeKey = tts
+L["128116_65039"] = "old man"
 -- emoji:👴🏻; unicode = 1f474 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2860,6 +3960,11 @@ L["128116_127999"] = "old man: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128117"] = "old woman"
+-- emoji:👵; unicode = 1f475 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👵, 1f475
+-- format: unicodeKey = tts
+L["128117_65039"] = "old woman"
 -- emoji:👵🏻; unicode = 1f475 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2884,6 +3989,11 @@ L["128117_127999"] = "old woman: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128589"] = "person frowning"
+-- emoji:🙍; unicode = 1f64d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙍, 1f64d
+-- format: unicodeKey = tts
+L["128589_65039"] = "person frowning"
 -- emoji:🙍🏻; unicode = 1f64d 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3016,6 +4126,11 @@ L["128589_127999_8205_9792"] = "woman frowning: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128590"] = "person pouting"
+-- emoji:🙎; unicode = 1f64e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙎, 1f64e
+-- format: unicodeKey = tts
+L["128590_65039"] = "person pouting"
 -- emoji:🙎🏻; unicode = 1f64e 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3148,6 +4263,11 @@ L["128590_127999_8205_9792"] = "woman pouting: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128581"] = "person gesturing NO"
+-- emoji:🙅; unicode = 1f645 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙅, 1f645
+-- format: unicodeKey = tts
+L["128581_65039"] = "person gesturing NO"
 -- emoji:🙅🏻; unicode = 1f645 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3280,6 +4400,11 @@ L["128581_127999_8205_9792"] = "woman gesturing NO: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128582"] = "person gesturing OK"
+-- emoji:🙆; unicode = 1f646 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙆, 1f646
+-- format: unicodeKey = tts
+L["128582_65039"] = "person gesturing OK"
 -- emoji:🙆🏻; unicode = 1f646 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3412,6 +4537,11 @@ L["128582_127999_8205_9792"] = "woman gesturing OK: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128129"] = "person tipping hand"
+-- emoji:💁; unicode = 1f481 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💁, 1f481
+-- format: unicodeKey = tts
+L["128129_65039"] = "person tipping hand"
 -- emoji:💁🏻; unicode = 1f481 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3544,6 +4674,11 @@ L["128129_127999_8205_9792"] = "woman tipping hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128587"] = "person raising hand"
+-- emoji:🙋; unicode = 1f64b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙋, 1f64b
+-- format: unicodeKey = tts
+L["128587_65039"] = "person raising hand"
 -- emoji:🙋🏻; unicode = 1f64b 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3676,6 +4811,11 @@ L["128587_127999_8205_9792"] = "woman raising hand: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129487"] = "deaf person"
+-- emoji:🧏; unicode = 1f9cf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧏, 1f9cf
+-- format: unicodeKey = tts
+L["129487_65039"] = "deaf person"
 -- emoji:🧏🏻; unicode = 1f9cf 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -3808,6 +4948,11 @@ L["129487_127999_8205_9792"] = "deaf woman: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128583"] = "person bowing"
+-- emoji:🙇; unicode = 1f647 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙇, 1f647
+-- format: unicodeKey = tts
+L["128583_65039"] = "person bowing"
 -- emoji:🙇🏻; unicode = 1f647 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3940,6 +5085,11 @@ L["128583_127999_8205_9792"] = "woman bowing: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129318"] = "person facepalming"
+-- emoji:🤦; unicode = 1f926 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤦, 1f926
+-- format: unicodeKey = tts
+L["129318_65039"] = "person facepalming"
 -- emoji:🤦🏻; unicode = 1f926 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -4072,6 +5222,11 @@ L["129318_127999_8205_9792"] = "woman facepalming: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129335"] = "person shrugging"
+-- emoji:🤷; unicode = 1f937 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤷, 1f937
+-- format: unicodeKey = tts
+L["129335_65039"] = "person shrugging"
 -- emoji:🤷🏻; unicode = 1f937 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -5626,6 +6781,11 @@ L["128105_127999_8205_128658"] = "woman firefighter: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128110"] = "police officer"
+-- emoji:👮; unicode = 1f46e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👮, 1f46e
+-- format: unicodeKey = tts
+L["128110_65039"] = "police officer"
 -- emoji:👮🏻; unicode = 1f46e 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -5915,6 +7075,11 @@ L["128373_127999_8205_9792"] = "woman detective: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128130"] = "guard"
+-- emoji:💂; unicode = 1f482 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💂, 1f482
+-- format: unicodeKey = tts
+L["128130_65039"] = "guard"
 -- emoji:💂🏻; unicode = 1f482 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6047,6 +7212,11 @@ L["128130_127999_8205_9792"] = "woman guard: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129399"] = "ninja"
+-- emoji:🥷; unicode = 1f977 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥷, 1f977
+-- format: unicodeKey = tts
+L["129399_65039"] = "ninja"
 -- emoji:🥷🏻; unicode = 1f977 1f3fb
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
@@ -6071,6 +7241,11 @@ L["129399_127999"] = "ninja: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128119"] = "construction worker"
+-- emoji:👷; unicode = 1f477 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👷, 1f477
+-- format: unicodeKey = tts
+L["128119_65039"] = "construction worker"
 -- emoji:👷🏻; unicode = 1f477 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6203,6 +7378,11 @@ L["128119_127999_8205_9792"] = "woman construction worker: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129733"] = "person with crown"
+-- emoji:🫅; unicode = 1fac5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫅, 1fac5
+-- format: unicodeKey = tts
+L["129733_65039"] = "person with crown"
 -- emoji:🫅🏻; unicode = 1fac5 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -6227,6 +7407,11 @@ L["129733_127999"] = "person with crown: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129332"] = "prince"
+-- emoji:🤴; unicode = 1f934 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤴, 1f934
+-- format: unicodeKey = tts
+L["129332_65039"] = "prince"
 -- emoji:🤴🏻; unicode = 1f934 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -6251,6 +7436,11 @@ L["129332_127999"] = "prince: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128120"] = "princess"
+-- emoji:👸; unicode = 1f478 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👸, 1f478
+-- format: unicodeKey = tts
+L["128120_65039"] = "princess"
 -- emoji:👸🏻; unicode = 1f478 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6275,6 +7465,11 @@ L["128120_127999"] = "princess: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128115"] = "person wearing turban"
+-- emoji:👳; unicode = 1f473 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👳, 1f473
+-- format: unicodeKey = tts
+L["128115_65039"] = "person wearing turban"
 -- emoji:👳🏻; unicode = 1f473 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6407,6 +7602,11 @@ L["128115_127999_8205_9792"] = "woman wearing turban: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128114"] = "person with skullcap"
+-- emoji:👲; unicode = 1f472 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👲, 1f472
+-- format: unicodeKey = tts
+L["128114_65039"] = "person with skullcap"
 -- emoji:👲🏻; unicode = 1f472 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6431,6 +7631,11 @@ L["128114_127999"] = "person with skullcap: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129493"] = "woman with headscarf"
+-- emoji:🧕; unicode = 1f9d5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧕, 1f9d5
+-- format: unicodeKey = tts
+L["129493_65039"] = "woman with headscarf"
 -- emoji:🧕🏻; unicode = 1f9d5 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -6455,6 +7660,11 @@ L["129493_127999"] = "woman with headscarf: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129333"] = "person in tuxedo"
+-- emoji:🤵; unicode = 1f935 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤵, 1f935
+-- format: unicodeKey = tts
+L["129333_65039"] = "person in tuxedo"
 -- emoji:🤵🏻; unicode = 1f935 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -6587,6 +7797,11 @@ L["129333_127999_8205_9792"] = "woman in tuxedo: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128112"] = "person with veil"
+-- emoji:👰; unicode = 1f470 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👰, 1f470
+-- format: unicodeKey = tts
+L["128112_65039"] = "person with veil"
 -- emoji:👰🏻; unicode = 1f470 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6719,6 +7934,11 @@ L["128112_127999_8205_9792"] = "woman with veil: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129328"] = "pregnant woman"
+-- emoji:🤰; unicode = 1f930 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤰, 1f930
+-- format: unicodeKey = tts
+L["129328_65039"] = "pregnant woman"
 -- emoji:🤰🏻; unicode = 1f930 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -6743,6 +7963,11 @@ L["129328_127999"] = "pregnant woman: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129731"] = "pregnant man"
+-- emoji:🫃; unicode = 1fac3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫃, 1fac3
+-- format: unicodeKey = tts
+L["129731_65039"] = "pregnant man"
 -- emoji:🫃🏻; unicode = 1fac3 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -6767,6 +7992,11 @@ L["129731_127999"] = "pregnant man: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129732"] = "pregnant person"
+-- emoji:🫄; unicode = 1fac4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫄, 1fac4
+-- format: unicodeKey = tts
+L["129732_65039"] = "pregnant person"
 -- emoji:🫄🏻; unicode = 1fac4 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -6791,6 +8021,11 @@ L["129732_127999"] = "pregnant person: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129329"] = "breast-feeding"
+-- emoji:🤱; unicode = 1f931 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤱, 1f931
+-- format: unicodeKey = tts
+L["129329_65039"] = "breast-feeding"
 -- emoji:🤱🏻; unicode = 1f931 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -6887,6 +8122,11 @@ L["129489_127999_8205_127868"] = "person feeding baby: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128124"] = "baby angel"
+-- emoji:👼; unicode = 1f47c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👼, 1f47c
+-- format: unicodeKey = tts
+L["128124_65039"] = "baby angel"
 -- emoji:👼🏻; unicode = 1f47c 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6911,6 +8151,11 @@ L["128124_127999"] = "baby angel: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127877"] = "Santa Claus"
+-- emoji:🎅; unicode = 1f385 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎅, 1f385
+-- format: unicodeKey = tts
+L["127877_65039"] = "Santa Claus"
 -- emoji:🎅🏻; unicode = 1f385 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6935,6 +8180,11 @@ L["127877_127999"] = "Santa Claus: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129334"] = "Mrs. Claus"
+-- emoji:🤶; unicode = 1f936 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤶, 1f936
+-- format: unicodeKey = tts
+L["129334_65039"] = "Mrs. Claus"
 -- emoji:🤶🏻; unicode = 1f936 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -6983,6 +8233,11 @@ L["129489_127999_8205_127876"] = "Mx Claus: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129464"] = "superhero"
+-- emoji:🦸; unicode = 1f9b8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦸, 1f9b8
+-- format: unicodeKey = tts
+L["129464_65039"] = "superhero"
 -- emoji:🦸🏻; unicode = 1f9b8 1f3fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -7115,6 +8370,11 @@ L["129464_127999_8205_9792"] = "woman superhero: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129465"] = "supervillain"
+-- emoji:🦹; unicode = 1f9b9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦹, 1f9b9
+-- format: unicodeKey = tts
+L["129465_65039"] = "supervillain"
 -- emoji:🦹🏻; unicode = 1f9b9 1f3fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -7247,6 +8507,11 @@ L["129465_127999_8205_9792"] = "woman supervillain: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129497"] = "mage"
+-- emoji:🧙; unicode = 1f9d9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧙, 1f9d9
+-- format: unicodeKey = tts
+L["129497_65039"] = "mage"
 -- emoji:🧙🏻; unicode = 1f9d9 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7379,6 +8644,11 @@ L["129497_127999_8205_9792"] = "woman mage: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129498"] = "fairy"
+-- emoji:🧚; unicode = 1f9da fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧚, 1f9da
+-- format: unicodeKey = tts
+L["129498_65039"] = "fairy"
 -- emoji:🧚🏻; unicode = 1f9da 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7511,6 +8781,11 @@ L["129498_127999_8205_9792"] = "woman fairy: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129499"] = "vampire"
+-- emoji:🧛; unicode = 1f9db fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧛, 1f9db
+-- format: unicodeKey = tts
+L["129499_65039"] = "vampire"
 -- emoji:🧛🏻; unicode = 1f9db 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7643,6 +8918,11 @@ L["129499_127999_8205_9792"] = "woman vampire: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129500"] = "merperson"
+-- emoji:🧜; unicode = 1f9dc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧜, 1f9dc
+-- format: unicodeKey = tts
+L["129500_65039"] = "merperson"
 -- emoji:🧜🏻; unicode = 1f9dc 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7775,6 +9055,11 @@ L["129500_127999_8205_9792"] = "mermaid: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129501"] = "elf"
+-- emoji:🧝; unicode = 1f9dd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧝, 1f9dd
+-- format: unicodeKey = tts
+L["129501_65039"] = "elf"
 -- emoji:🧝🏻; unicode = 1f9dd 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7907,6 +9192,11 @@ L["129501_127999_8205_9792"] = "woman elf: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129502"] = "genie"
+-- emoji:🧞; unicode = 1f9de fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧞, 1f9de
+-- format: unicodeKey = tts
+L["129502_65039"] = "genie"
 -- emoji:🧞‍♂️; unicode = 1f9de 200d 2642 fe0f
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7929,6 +9219,11 @@ L["129502_8205_9792"] = "woman genie"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129503"] = "zombie"
+-- emoji:🧟; unicode = 1f9df fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧟, 1f9df
+-- format: unicodeKey = tts
+L["129503_65039"] = "zombie"
 -- emoji:🧟‍♂️; unicode = 1f9df 200d 2642 fe0f
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7951,10 +9246,20 @@ L["129503_8205_9792"] = "woman zombie"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129484"] = "troll"
+-- emoji:🧌; unicode = 1f9cc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧌, 1f9cc
+-- format: unicodeKey = tts
+L["129484_65039"] = "troll"
 -- emoji:💆; unicode = 1f486
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128134"] = "person getting massage"
+-- emoji:💆; unicode = 1f486 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💆, 1f486
+-- format: unicodeKey = tts
+L["128134_65039"] = "person getting massage"
 -- emoji:💆🏻; unicode = 1f486 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -8087,6 +9392,11 @@ L["128134_127999_8205_9792"] = "woman getting massage: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128135"] = "person getting haircut"
+-- emoji:💇; unicode = 1f487 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💇, 1f487
+-- format: unicodeKey = tts
+L["128135_65039"] = "person getting haircut"
 -- emoji:💇🏻; unicode = 1f487 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -8219,6 +9529,11 @@ L["128135_127999_8205_9792"] = "woman getting haircut: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128694"] = "person walking"
+-- emoji:🚶; unicode = 1f6b6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚶, 1f6b6
+-- format: unicodeKey = tts
+L["128694_65039"] = "person walking"
 -- emoji:🚶🏻; unicode = 1f6b6 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -8633,6 +9948,11 @@ L["128694_127999_8205_9794_8205_10145"] = "man walking: dark skin tone, facing r
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129485"] = "person standing"
+-- emoji:🧍; unicode = 1f9cd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧍, 1f9cd
+-- format: unicodeKey = tts
+L["129485_65039"] = "person standing"
 -- emoji:🧍🏻; unicode = 1f9cd 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -8765,6 +10085,11 @@ L["129485_127999_8205_9792"] = "woman standing: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129486"] = "person kneeling"
+-- emoji:🧎; unicode = 1f9ce fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧎, 1f9ce
+-- format: unicodeKey = tts
+L["129486_65039"] = "person kneeling"
 -- emoji:🧎🏻; unicode = 1f9ce 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -9881,6 +11206,11 @@ L["128105_127999_8205_129469_8205_10145"] = "woman in manual wheelchair: dark sk
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127939"] = "person running"
+-- emoji:🏃; unicode = 1f3c3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏃, 1f3c3
+-- format: unicodeKey = tts
+L["127939_65039"] = "person running"
 -- emoji:🏃🏻; unicode = 1f3c3 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -10295,6 +11625,11 @@ L["127939_127999_8205_9794_8205_10145"] = "man running: dark skin tone, facing r
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128131"] = "woman dancing"
+-- emoji:💃; unicode = 1f483 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💃, 1f483
+-- format: unicodeKey = tts
+L["128131_65039"] = "woman dancing"
 -- emoji:💃🏻; unicode = 1f483 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -10319,6 +11654,11 @@ L["128131_127999"] = "woman dancing: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128378"] = "man dancing"
+-- emoji:🕺; unicode = 1f57a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕺, 1f57a
+-- format: unicodeKey = tts
+L["128378_65039"] = "man dancing"
 -- emoji:🕺🏻; unicode = 1f57a 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -10372,6 +11712,11 @@ L["128372_127999"] = "person in suit levitating: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128111"] = "people with bunny ears"
+-- emoji:👯; unicode = 1f46f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👯, 1f46f
+-- format: unicodeKey = tts
+L["128111_65039"] = "people with bunny ears"
 -- emoji:👯‍♂️; unicode = 1f46f 200d 2642 fe0f
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -10394,6 +11739,11 @@ L["128111_8205_9792"] = "women with bunny ears"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129494"] = "person in steamy room"
+-- emoji:🧖; unicode = 1f9d6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧖, 1f9d6
+-- format: unicodeKey = tts
+L["129494_65039"] = "person in steamy room"
 -- emoji:🧖🏻; unicode = 1f9d6 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -10526,6 +11876,11 @@ L["129494_127999_8205_9792"] = "woman in steamy room: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129495"] = "person climbing"
+-- emoji:🧗; unicode = 1f9d7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧗, 1f9d7
+-- format: unicodeKey = tts
+L["129495_65039"] = "person climbing"
 -- emoji:🧗🏻; unicode = 1f9d7 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -10658,10 +12013,20 @@ L["129495_127999_8205_9792"] = "woman climbing: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129338"] = "person fencing"
+-- emoji:🤺; unicode = 1f93a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤺, 1f93a
+-- format: unicodeKey = tts
+L["129338_65039"] = "person fencing"
 -- emoji:🏇; unicode = 1f3c7
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127943"] = "horse racing"
+-- emoji:🏇; unicode = 1f3c7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏇, 1f3c7
+-- format: unicodeKey = tts
+L["127943_65039"] = "horse racing"
 -- emoji:🏇🏻; unicode = 1f3c7 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -10695,6 +12060,11 @@ L["9975"] = "skier"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127938"] = "snowboarder"
+-- emoji:🏂; unicode = 1f3c2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏂, 1f3c2
+-- format: unicodeKey = tts
+L["127938_65039"] = "snowboarder"
 -- emoji:🏂🏻; unicode = 1f3c2 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -10876,6 +12246,11 @@ L["127948_127999_8205_9792"] = "woman golfing: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127940"] = "person surfing"
+-- emoji:🏄; unicode = 1f3c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏄, 1f3c4
+-- format: unicodeKey = tts
+L["127940_65039"] = "person surfing"
 -- emoji:🏄🏻; unicode = 1f3c4 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11008,6 +12383,11 @@ L["127940_127999_8205_9792"] = "woman surfing: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128675"] = "person rowing boat"
+-- emoji:🚣; unicode = 1f6a3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚣, 1f6a3
+-- format: unicodeKey = tts
+L["128675_65039"] = "person rowing boat"
 -- emoji:🚣🏻; unicode = 1f6a3 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11140,6 +12520,11 @@ L["128675_127999_8205_9792"] = "woman rowing boat: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127946"] = "person swimming"
+-- emoji:🏊; unicode = 1f3ca fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏊, 1f3ca
+-- format: unicodeKey = tts
+L["127946_65039"] = "person swimming"
 -- emoji:🏊🏻; unicode = 1f3ca 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11586,6 +12971,11 @@ L["127947_127999_8205_9792"] = "woman lifting weights: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128692"] = "person biking"
+-- emoji:🚴; unicode = 1f6b4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚴, 1f6b4
+-- format: unicodeKey = tts
+L["128692_65039"] = "person biking"
 -- emoji:🚴🏻; unicode = 1f6b4 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11718,6 +13108,11 @@ L["128692_127999_8205_9792"] = "woman biking: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128693"] = "person mountain biking"
+-- emoji:🚵; unicode = 1f6b5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚵, 1f6b5
+-- format: unicodeKey = tts
+L["128693_65039"] = "person mountain biking"
 -- emoji:🚵🏻; unicode = 1f6b5 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11850,6 +13245,11 @@ L["128693_127999_8205_9792"] = "woman mountain biking: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129336"] = "person cartwheeling"
+-- emoji:🤸; unicode = 1f938 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤸, 1f938
+-- format: unicodeKey = tts
+L["129336_65039"] = "person cartwheeling"
 -- emoji:🤸🏻; unicode = 1f938 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -11982,6 +13382,11 @@ L["129336_127999_8205_9792"] = "woman cartwheeling: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129340"] = "people wrestling"
+-- emoji:🤼; unicode = 1f93c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤼, 1f93c
+-- format: unicodeKey = tts
+L["129340_65039"] = "people wrestling"
 -- emoji:🤼‍♂️; unicode = 1f93c 200d 2642 fe0f
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -12004,6 +13409,11 @@ L["129340_8205_9792"] = "women wrestling"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129341"] = "person playing water polo"
+-- emoji:🤽; unicode = 1f93d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤽, 1f93d
+-- format: unicodeKey = tts
+L["129341_65039"] = "person playing water polo"
 -- emoji:🤽🏻; unicode = 1f93d 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -12136,6 +13546,11 @@ L["129341_127999_8205_9792"] = "woman playing water polo: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129342"] = "person playing handball"
+-- emoji:🤾; unicode = 1f93e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤾, 1f93e
+-- format: unicodeKey = tts
+L["129342_65039"] = "person playing handball"
 -- emoji:🤾🏻; unicode = 1f93e 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -12268,6 +13683,11 @@ L["129342_127999_8205_9792"] = "woman playing handball: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129337"] = "person juggling"
+-- emoji:🤹; unicode = 1f939 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤹, 1f939
+-- format: unicodeKey = tts
+L["129337_65039"] = "person juggling"
 -- emoji:🤹🏻; unicode = 1f939 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -12400,6 +13820,11 @@ L["129337_127999_8205_9792"] = "woman juggling: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129496"] = "person in lotus position"
+-- emoji:🧘; unicode = 1f9d8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧘, 1f9d8
+-- format: unicodeKey = tts
+L["129496_65039"] = "person in lotus position"
 -- emoji:🧘🏻; unicode = 1f9d8 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -12532,6 +13957,11 @@ L["129496_127999_8205_9792"] = "woman in lotus position: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128704"] = "person taking bath"
+-- emoji:🛀; unicode = 1f6c0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛀, 1f6c0
+-- format: unicodeKey = tts
+L["128704_65039"] = "person taking bath"
 -- emoji:🛀🏻; unicode = 1f6c0 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -12556,6 +13986,11 @@ L["128704_127999"] = "person taking bath: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128716"] = "person in bed"
+-- emoji:🛌; unicode = 1f6cc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛌, 1f6cc
+-- format: unicodeKey = tts
+L["128716_65039"] = "person in bed"
 -- emoji:🛌🏻; unicode = 1f6cc 1f3fb
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -12684,6 +14119,11 @@ L["129489_127999_8205_129309_8205_129489_127999"] = "people holding hands: dark 
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128109"] = "women holding hands"
+-- emoji:👭; unicode = 1f46d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👭, 1f46d
+-- format: unicodeKey = tts
+L["128109_65039"] = "women holding hands"
 -- emoji:👭🏻; unicode = 1f46d 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -12788,6 +14228,11 @@ L["128109_127999"] = "women holding hands: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128107"] = "woman and man holding hands"
+-- emoji:👫; unicode = 1f46b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👫, 1f46b
+-- format: unicodeKey = tts
+L["128107_65039"] = "woman and man holding hands"
 -- emoji:👫🏻; unicode = 1f46b 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -12892,6 +14337,11 @@ L["128107_127999"] = "woman and man holding hands: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128108"] = "men holding hands"
+-- emoji:👬; unicode = 1f46c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👬, 1f46c
+-- format: unicodeKey = tts
+L["128108_65039"] = "men holding hands"
 -- emoji:👬🏻; unicode = 1f46c 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -12996,6 +14446,11 @@ L["128108_127999"] = "men holding hands: dark skin tone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128143"] = "kiss"
+-- emoji:💏; unicode = 1f48f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💏, 1f48f
+-- format: unicodeKey = tts
+L["128143_65039"] = "kiss"
 -- emoji:💏🏻; unicode = 1f48f 1f3fb
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -13902,6 +15357,11 @@ L["128105_127999_8205_10084_8205_128139_8205_128105_127999"] = "kiss: woman, wom
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128145"] = "couple with heart"
+-- emoji:💑; unicode = 1f491 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💑, 1f491
+-- format: unicodeKey = tts
+L["128145_65039"] = "couple with heart"
 -- emoji:💑🏻; unicode = 1f491 1f3fb
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -14917,18 +16377,38 @@ L["128483"] = "speaking head"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128100"] = "bust in silhouette"
+-- emoji:👤; unicode = 1f464 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👤, 1f464
+-- format: unicodeKey = tts
+L["128100_65039"] = "bust in silhouette"
 -- emoji:👥; unicode = 1f465
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128101"] = "busts in silhouette"
+-- emoji:👥; unicode = 1f465 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👥, 1f465
+-- format: unicodeKey = tts
+L["128101_65039"] = "busts in silhouette"
 -- emoji:🫂; unicode = 1fac2
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129730"] = "people hugging"
+-- emoji:🫂; unicode = 1fac2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫂, 1fac2
+-- format: unicodeKey = tts
+L["129730_65039"] = "people hugging"
 -- emoji:👪; unicode = 1f46a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128106"] = "family"
+-- emoji:👪; unicode = 1f46a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👪, 1f46a
+-- format: unicodeKey = tts
+L["128106_65039"] = "family"
 -- emoji:🧑‍🧑‍🧒; unicode = 1f9d1 200d 1f9d1 200d 1f9d2
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -14949,10 +16429,20 @@ L["129489_8205_129490_8205_129490"] = "family: adult, child, child"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128099"] = "footprints"
+-- emoji:👣; unicode = 1f463 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👣, 1f463
+-- format: unicodeKey = tts
+L["128099_65039"] = "footprints"
 -- emoji:🫆; unicode = 1fac6
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129734"] = "fingerprint"
+-- emoji:🫆; unicode = 1fac6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫆, 1fac6
+-- format: unicodeKey = tts
+L["129734_65039"] = "fingerprint"
 -- emoji:🏻; unicode = 1f3fb
 -- status: COMPONENT; since: E1.0
 -- format: unicodeKey = tts
@@ -14993,30 +16483,65 @@ L["129458"] = "bald"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128053"] = "monkey face"
+-- emoji:🐵; unicode = 1f435 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐵, 1f435
+-- format: unicodeKey = tts
+L["128053_65039"] = "monkey face"
 -- emoji:🐒; unicode = 1f412
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128018"] = "monkey"
+-- emoji:🐒; unicode = 1f412 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐒, 1f412
+-- format: unicodeKey = tts
+L["128018_65039"] = "monkey"
 -- emoji:🦍; unicode = 1f98d
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129421"] = "gorilla"
+-- emoji:🦍; unicode = 1f98d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦍, 1f98d
+-- format: unicodeKey = tts
+L["129421_65039"] = "gorilla"
 -- emoji:🦧; unicode = 1f9a7
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129447"] = "orangutan"
+-- emoji:🦧; unicode = 1f9a7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦧, 1f9a7
+-- format: unicodeKey = tts
+L["129447_65039"] = "orangutan"
 -- emoji:🐶; unicode = 1f436
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128054"] = "dog face"
+-- emoji:🐶; unicode = 1f436 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐶, 1f436
+-- format: unicodeKey = tts
+L["128054_65039"] = "dog face"
 -- emoji:🐕; unicode = 1f415
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128021"] = "dog"
+-- emoji:🐕; unicode = 1f415 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐕, 1f415
+-- format: unicodeKey = tts
+L["128021_65039"] = "dog"
 -- emoji:🦮; unicode = 1f9ae
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129454"] = "guide dog"
+-- emoji:🦮; unicode = 1f9ae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦮, 1f9ae
+-- format: unicodeKey = tts
+L["129454_65039"] = "guide dog"
 -- emoji:🐕‍🦺; unicode = 1f415 200d 1f9ba
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -15025,26 +16550,56 @@ L["128021_8205_129466"] = "service dog"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128041"] = "poodle"
+-- emoji:🐩; unicode = 1f429 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐩, 1f429
+-- format: unicodeKey = tts
+L["128041_65039"] = "poodle"
 -- emoji:🐺; unicode = 1f43a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128058"] = "wolf"
+-- emoji:🐺; unicode = 1f43a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐺, 1f43a
+-- format: unicodeKey = tts
+L["128058_65039"] = "wolf"
 -- emoji:🦊; unicode = 1f98a
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129418"] = "fox"
+-- emoji:🦊; unicode = 1f98a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦊, 1f98a
+-- format: unicodeKey = tts
+L["129418_65039"] = "fox"
 -- emoji:🦝; unicode = 1f99d
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129437"] = "raccoon"
+-- emoji:🦝; unicode = 1f99d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦝, 1f99d
+-- format: unicodeKey = tts
+L["129437_65039"] = "raccoon"
 -- emoji:🐱; unicode = 1f431
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128049"] = "cat face"
+-- emoji:🐱; unicode = 1f431 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐱, 1f431
+-- format: unicodeKey = tts
+L["128049_65039"] = "cat face"
 -- emoji:🐈; unicode = 1f408
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128008"] = "cat"
+-- emoji:🐈; unicode = 1f408 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐈, 1f408
+-- format: unicodeKey = tts
+L["128008_65039"] = "cat"
 -- emoji:🐈‍⬛; unicode = 1f408 200d 2b1b
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
@@ -15053,150 +16608,335 @@ L["128008_8205_11035"] = "black cat"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129409"] = "lion"
+-- emoji:🦁; unicode = 1f981 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦁, 1f981
+-- format: unicodeKey = tts
+L["129409_65039"] = "lion"
 -- emoji:🐯; unicode = 1f42f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128047"] = "tiger face"
+-- emoji:🐯; unicode = 1f42f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐯, 1f42f
+-- format: unicodeKey = tts
+L["128047_65039"] = "tiger face"
 -- emoji:🐅; unicode = 1f405
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128005"] = "tiger"
+-- emoji:🐅; unicode = 1f405 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐅, 1f405
+-- format: unicodeKey = tts
+L["128005_65039"] = "tiger"
 -- emoji:🐆; unicode = 1f406
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128006"] = "leopard"
+-- emoji:🐆; unicode = 1f406 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐆, 1f406
+-- format: unicodeKey = tts
+L["128006_65039"] = "leopard"
 -- emoji:🐴; unicode = 1f434
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128052"] = "horse face"
+-- emoji:🐴; unicode = 1f434 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐴, 1f434
+-- format: unicodeKey = tts
+L["128052_65039"] = "horse face"
 -- emoji:🫎; unicode = 1face
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129742"] = "moose"
+-- emoji:🫎; unicode = 1face fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫎, 1face
+-- format: unicodeKey = tts
+L["129742_65039"] = "moose"
 -- emoji:🫏; unicode = 1facf
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129743"] = "donkey"
+-- emoji:🫏; unicode = 1facf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫏, 1facf
+-- format: unicodeKey = tts
+L["129743_65039"] = "donkey"
 -- emoji:🐎; unicode = 1f40e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128014"] = "horse"
+-- emoji:🐎; unicode = 1f40e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐎, 1f40e
+-- format: unicodeKey = tts
+L["128014_65039"] = "horse"
 -- emoji:🦄; unicode = 1f984
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129412"] = "unicorn"
+-- emoji:🦄; unicode = 1f984 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦄, 1f984
+-- format: unicodeKey = tts
+L["129412_65039"] = "unicorn"
 -- emoji:🦓; unicode = 1f993
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129427"] = "zebra"
+-- emoji:🦓; unicode = 1f993 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦓, 1f993
+-- format: unicodeKey = tts
+L["129427_65039"] = "zebra"
 -- emoji:🦌; unicode = 1f98c
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129420"] = "deer"
+-- emoji:🦌; unicode = 1f98c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦌, 1f98c
+-- format: unicodeKey = tts
+L["129420_65039"] = "deer"
 -- emoji:🦬; unicode = 1f9ac
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129452"] = "bison"
+-- emoji:🦬; unicode = 1f9ac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦬, 1f9ac
+-- format: unicodeKey = tts
+L["129452_65039"] = "bison"
 -- emoji:🐮; unicode = 1f42e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128046"] = "cow face"
+-- emoji:🐮; unicode = 1f42e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐮, 1f42e
+-- format: unicodeKey = tts
+L["128046_65039"] = "cow face"
 -- emoji:🐂; unicode = 1f402
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128002"] = "ox"
+-- emoji:🐂; unicode = 1f402 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐂, 1f402
+-- format: unicodeKey = tts
+L["128002_65039"] = "ox"
 -- emoji:🐃; unicode = 1f403
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128003"] = "water buffalo"
+-- emoji:🐃; unicode = 1f403 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐃, 1f403
+-- format: unicodeKey = tts
+L["128003_65039"] = "water buffalo"
 -- emoji:🐄; unicode = 1f404
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128004"] = "cow"
+-- emoji:🐄; unicode = 1f404 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐄, 1f404
+-- format: unicodeKey = tts
+L["128004_65039"] = "cow"
 -- emoji:🐷; unicode = 1f437
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128055"] = "pig face"
+-- emoji:🐷; unicode = 1f437 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐷, 1f437
+-- format: unicodeKey = tts
+L["128055_65039"] = "pig face"
 -- emoji:🐖; unicode = 1f416
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128022"] = "pig"
+-- emoji:🐖; unicode = 1f416 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐖, 1f416
+-- format: unicodeKey = tts
+L["128022_65039"] = "pig"
 -- emoji:🐗; unicode = 1f417
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128023"] = "boar"
+-- emoji:🐗; unicode = 1f417 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐗, 1f417
+-- format: unicodeKey = tts
+L["128023_65039"] = "boar"
 -- emoji:🐽; unicode = 1f43d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128061"] = "pig nose"
+-- emoji:🐽; unicode = 1f43d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐽, 1f43d
+-- format: unicodeKey = tts
+L["128061_65039"] = "pig nose"
 -- emoji:🐏; unicode = 1f40f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128015"] = "ram"
+-- emoji:🐏; unicode = 1f40f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐏, 1f40f
+-- format: unicodeKey = tts
+L["128015_65039"] = "ram"
 -- emoji:🐑; unicode = 1f411
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128017"] = "ewe"
+-- emoji:🐑; unicode = 1f411 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐑, 1f411
+-- format: unicodeKey = tts
+L["128017_65039"] = "ewe"
 -- emoji:🐐; unicode = 1f410
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128016"] = "goat"
+-- emoji:🐐; unicode = 1f410 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐐, 1f410
+-- format: unicodeKey = tts
+L["128016_65039"] = "goat"
 -- emoji:🐪; unicode = 1f42a
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128042"] = "camel"
+-- emoji:🐪; unicode = 1f42a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐪, 1f42a
+-- format: unicodeKey = tts
+L["128042_65039"] = "camel"
 -- emoji:🐫; unicode = 1f42b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128043"] = "two-hump camel"
+-- emoji:🐫; unicode = 1f42b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐫, 1f42b
+-- format: unicodeKey = tts
+L["128043_65039"] = "two-hump camel"
 -- emoji:🦙; unicode = 1f999
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129433"] = "llama"
+-- emoji:🦙; unicode = 1f999 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦙, 1f999
+-- format: unicodeKey = tts
+L["129433_65039"] = "llama"
 -- emoji:🦒; unicode = 1f992
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129426"] = "giraffe"
+-- emoji:🦒; unicode = 1f992 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦒, 1f992
+-- format: unicodeKey = tts
+L["129426_65039"] = "giraffe"
 -- emoji:🐘; unicode = 1f418
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128024"] = "elephant"
+-- emoji:🐘; unicode = 1f418 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐘, 1f418
+-- format: unicodeKey = tts
+L["128024_65039"] = "elephant"
 -- emoji:🦣; unicode = 1f9a3
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129443"] = "mammoth"
+-- emoji:🦣; unicode = 1f9a3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦣, 1f9a3
+-- format: unicodeKey = tts
+L["129443_65039"] = "mammoth"
 -- emoji:🦏; unicode = 1f98f
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129423"] = "rhinoceros"
+-- emoji:🦏; unicode = 1f98f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦏, 1f98f
+-- format: unicodeKey = tts
+L["129423_65039"] = "rhinoceros"
 -- emoji:🦛; unicode = 1f99b
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129435"] = "hippopotamus"
+-- emoji:🦛; unicode = 1f99b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦛, 1f99b
+-- format: unicodeKey = tts
+L["129435_65039"] = "hippopotamus"
 -- emoji:🐭; unicode = 1f42d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128045"] = "mouse face"
+-- emoji:🐭; unicode = 1f42d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐭, 1f42d
+-- format: unicodeKey = tts
+L["128045_65039"] = "mouse face"
 -- emoji:🐁; unicode = 1f401
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128001"] = "mouse"
+-- emoji:🐁; unicode = 1f401 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐁, 1f401
+-- format: unicodeKey = tts
+L["128001_65039"] = "mouse"
 -- emoji:🐀; unicode = 1f400
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128000"] = "rat"
+-- emoji:🐀; unicode = 1f400 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐀, 1f400
+-- format: unicodeKey = tts
+L["128000_65039"] = "rat"
 -- emoji:🐹; unicode = 1f439
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128057"] = "hamster"
+-- emoji:🐹; unicode = 1f439 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐹, 1f439
+-- format: unicodeKey = tts
+L["128057_65039"] = "hamster"
 -- emoji:🐰; unicode = 1f430
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128048"] = "rabbit face"
+-- emoji:🐰; unicode = 1f430 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐰, 1f430
+-- format: unicodeKey = tts
+L["128048_65039"] = "rabbit face"
 -- emoji:🐇; unicode = 1f407
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128007"] = "rabbit"
+-- emoji:🐇; unicode = 1f407 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐇, 1f407
+-- format: unicodeKey = tts
+L["128007_65039"] = "rabbit"
 -- emoji:🐿️; unicode = 1f43f fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15210,18 +16950,38 @@ L["128063"] = "chipmunk"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129451"] = "beaver"
+-- emoji:🦫; unicode = 1f9ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦫, 1f9ab
+-- format: unicodeKey = tts
+L["129451_65039"] = "beaver"
 -- emoji:🦔; unicode = 1f994
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129428"] = "hedgehog"
+-- emoji:🦔; unicode = 1f994 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦔, 1f994
+-- format: unicodeKey = tts
+L["129428_65039"] = "hedgehog"
 -- emoji:🦇; unicode = 1f987
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129415"] = "bat"
+-- emoji:🦇; unicode = 1f987 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦇, 1f987
+-- format: unicodeKey = tts
+L["129415_65039"] = "bat"
 -- emoji:🐻; unicode = 1f43b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128059"] = "bear"
+-- emoji:🐻; unicode = 1f43b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐻, 1f43b
+-- format: unicodeKey = tts
+L["128059_65039"] = "bear"
 -- emoji:🐻‍❄️; unicode = 1f43b 200d 2744 fe0f
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
@@ -15235,66 +16995,146 @@ L["128059_8205_10052"] = "polar bear"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128040"] = "koala"
+-- emoji:🐨; unicode = 1f428 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐨, 1f428
+-- format: unicodeKey = tts
+L["128040_65039"] = "koala"
 -- emoji:🐼; unicode = 1f43c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128060"] = "panda"
+-- emoji:🐼; unicode = 1f43c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐼, 1f43c
+-- format: unicodeKey = tts
+L["128060_65039"] = "panda"
 -- emoji:🦥; unicode = 1f9a5
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129445"] = "sloth"
+-- emoji:🦥; unicode = 1f9a5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦥, 1f9a5
+-- format: unicodeKey = tts
+L["129445_65039"] = "sloth"
 -- emoji:🦦; unicode = 1f9a6
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129446"] = "otter"
+-- emoji:🦦; unicode = 1f9a6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦦, 1f9a6
+-- format: unicodeKey = tts
+L["129446_65039"] = "otter"
 -- emoji:🦨; unicode = 1f9a8
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129448"] = "skunk"
+-- emoji:🦨; unicode = 1f9a8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦨, 1f9a8
+-- format: unicodeKey = tts
+L["129448_65039"] = "skunk"
 -- emoji:🦘; unicode = 1f998
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129432"] = "kangaroo"
+-- emoji:🦘; unicode = 1f998 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦘, 1f998
+-- format: unicodeKey = tts
+L["129432_65039"] = "kangaroo"
 -- emoji:🦡; unicode = 1f9a1
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129441"] = "badger"
+-- emoji:🦡; unicode = 1f9a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦡, 1f9a1
+-- format: unicodeKey = tts
+L["129441_65039"] = "badger"
 -- emoji:🐾; unicode = 1f43e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128062"] = "paw prints"
+-- emoji:🐾; unicode = 1f43e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐾, 1f43e
+-- format: unicodeKey = tts
+L["128062_65039"] = "paw prints"
 -- emoji:🦃; unicode = 1f983
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129411"] = "turkey"
+-- emoji:🦃; unicode = 1f983 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦃, 1f983
+-- format: unicodeKey = tts
+L["129411_65039"] = "turkey"
 -- emoji:🐔; unicode = 1f414
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128020"] = "chicken"
+-- emoji:🐔; unicode = 1f414 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐔, 1f414
+-- format: unicodeKey = tts
+L["128020_65039"] = "chicken"
 -- emoji:🐓; unicode = 1f413
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128019"] = "rooster"
+-- emoji:🐓; unicode = 1f413 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐓, 1f413
+-- format: unicodeKey = tts
+L["128019_65039"] = "rooster"
 -- emoji:🐣; unicode = 1f423
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128035"] = "hatching chick"
+-- emoji:🐣; unicode = 1f423 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐣, 1f423
+-- format: unicodeKey = tts
+L["128035_65039"] = "hatching chick"
 -- emoji:🐤; unicode = 1f424
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128036"] = "baby chick"
+-- emoji:🐤; unicode = 1f424 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐤, 1f424
+-- format: unicodeKey = tts
+L["128036_65039"] = "baby chick"
 -- emoji:🐥; unicode = 1f425
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128037"] = "front-facing baby chick"
+-- emoji:🐥; unicode = 1f425 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐥, 1f425
+-- format: unicodeKey = tts
+L["128037_65039"] = "front-facing baby chick"
 -- emoji:🐦; unicode = 1f426
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128038"] = "bird"
+-- emoji:🐦; unicode = 1f426 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐦, 1f426
+-- format: unicodeKey = tts
+L["128038_65039"] = "bird"
 -- emoji:🐧; unicode = 1f427
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128039"] = "penguin"
+-- emoji:🐧; unicode = 1f427 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐧, 1f427
+-- format: unicodeKey = tts
+L["128039_65039"] = "penguin"
 -- emoji:🕊️; unicode = 1f54a fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15308,42 +17148,92 @@ L["128330"] = "dove"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129413"] = "eagle"
+-- emoji:🦅; unicode = 1f985 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦅, 1f985
+-- format: unicodeKey = tts
+L["129413_65039"] = "eagle"
 -- emoji:🦆; unicode = 1f986
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129414"] = "duck"
+-- emoji:🦆; unicode = 1f986 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦆, 1f986
+-- format: unicodeKey = tts
+L["129414_65039"] = "duck"
 -- emoji:🦢; unicode = 1f9a2
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129442"] = "swan"
+-- emoji:🦢; unicode = 1f9a2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦢, 1f9a2
+-- format: unicodeKey = tts
+L["129442_65039"] = "swan"
 -- emoji:🦉; unicode = 1f989
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129417"] = "owl"
+-- emoji:🦉; unicode = 1f989 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦉, 1f989
+-- format: unicodeKey = tts
+L["129417_65039"] = "owl"
 -- emoji:🦤; unicode = 1f9a4
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129444"] = "dodo"
+-- emoji:🦤; unicode = 1f9a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦤, 1f9a4
+-- format: unicodeKey = tts
+L["129444_65039"] = "dodo"
 -- emoji:🪶; unicode = 1fab6
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129718"] = "feather"
+-- emoji:🪶; unicode = 1fab6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪶, 1fab6
+-- format: unicodeKey = tts
+L["129718_65039"] = "feather"
 -- emoji:🦩; unicode = 1f9a9
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129449"] = "flamingo"
+-- emoji:🦩; unicode = 1f9a9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦩, 1f9a9
+-- format: unicodeKey = tts
+L["129449_65039"] = "flamingo"
 -- emoji:🦚; unicode = 1f99a
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129434"] = "peacock"
+-- emoji:🦚; unicode = 1f99a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦚, 1f99a
+-- format: unicodeKey = tts
+L["129434_65039"] = "peacock"
 -- emoji:🦜; unicode = 1f99c
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129436"] = "parrot"
+-- emoji:🦜; unicode = 1f99c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦜, 1f99c
+-- format: unicodeKey = tts
+L["129436_65039"] = "parrot"
 -- emoji:🪽; unicode = 1fabd
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129725"] = "wing"
+-- emoji:🪽; unicode = 1fabd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪽, 1fabd
+-- format: unicodeKey = tts
+L["129725_65039"] = "wing"
 -- emoji:🐦‍⬛; unicode = 1f426 200d 2b1b
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
@@ -15352,6 +17242,11 @@ L["128038_8205_11035"] = "black bird"
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129727"] = "goose"
+-- emoji:🪿; unicode = 1fabf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪿, 1fabf
+-- format: unicodeKey = tts
+L["129727_65039"] = "goose"
 -- emoji:🐦‍🔥; unicode = 1f426 200d 1f525
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -15360,142 +17255,317 @@ L["128038_8205_128293"] = "phoenix"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128056"] = "frog"
+-- emoji:🐸; unicode = 1f438 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐸, 1f438
+-- format: unicodeKey = tts
+L["128056_65039"] = "frog"
 -- emoji:🐊; unicode = 1f40a
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128010"] = "crocodile"
+-- emoji:🐊; unicode = 1f40a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐊, 1f40a
+-- format: unicodeKey = tts
+L["128010_65039"] = "crocodile"
 -- emoji:🐢; unicode = 1f422
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128034"] = "turtle"
+-- emoji:🐢; unicode = 1f422 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐢, 1f422
+-- format: unicodeKey = tts
+L["128034_65039"] = "turtle"
 -- emoji:🦎; unicode = 1f98e
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129422"] = "lizard"
+-- emoji:🦎; unicode = 1f98e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦎, 1f98e
+-- format: unicodeKey = tts
+L["129422_65039"] = "lizard"
 -- emoji:🐍; unicode = 1f40d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128013"] = "snake"
+-- emoji:🐍; unicode = 1f40d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐍, 1f40d
+-- format: unicodeKey = tts
+L["128013_65039"] = "snake"
 -- emoji:🐲; unicode = 1f432
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128050"] = "dragon face"
+-- emoji:🐲; unicode = 1f432 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐲, 1f432
+-- format: unicodeKey = tts
+L["128050_65039"] = "dragon face"
 -- emoji:🐉; unicode = 1f409
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128009"] = "dragon"
+-- emoji:🐉; unicode = 1f409 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐉, 1f409
+-- format: unicodeKey = tts
+L["128009_65039"] = "dragon"
 -- emoji:🦕; unicode = 1f995
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129429"] = "sauropod"
+-- emoji:🦕; unicode = 1f995 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦕, 1f995
+-- format: unicodeKey = tts
+L["129429_65039"] = "sauropod"
 -- emoji:🦖; unicode = 1f996
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129430"] = "T-Rex"
+-- emoji:🦖; unicode = 1f996 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦖, 1f996
+-- format: unicodeKey = tts
+L["129430_65039"] = "T-Rex"
 -- emoji:🐳; unicode = 1f433
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128051"] = "spouting whale"
+-- emoji:🐳; unicode = 1f433 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐳, 1f433
+-- format: unicodeKey = tts
+L["128051_65039"] = "spouting whale"
 -- emoji:🐋; unicode = 1f40b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128011"] = "whale"
+-- emoji:🐋; unicode = 1f40b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐋, 1f40b
+-- format: unicodeKey = tts
+L["128011_65039"] = "whale"
 -- emoji:🐬; unicode = 1f42c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128044"] = "dolphin"
+-- emoji:🐬; unicode = 1f42c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐬, 1f42c
+-- format: unicodeKey = tts
+L["128044_65039"] = "dolphin"
 -- emoji:🦭; unicode = 1f9ad
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129453"] = "seal"
+-- emoji:🦭; unicode = 1f9ad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦭, 1f9ad
+-- format: unicodeKey = tts
+L["129453_65039"] = "seal"
 -- emoji:🐟; unicode = 1f41f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128031"] = "fish"
+-- emoji:🐟; unicode = 1f41f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐟, 1f41f
+-- format: unicodeKey = tts
+L["128031_65039"] = "fish"
 -- emoji:🐠; unicode = 1f420
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128032"] = "tropical fish"
+-- emoji:🐠; unicode = 1f420 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐠, 1f420
+-- format: unicodeKey = tts
+L["128032_65039"] = "tropical fish"
 -- emoji:🐡; unicode = 1f421
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128033"] = "blowfish"
+-- emoji:🐡; unicode = 1f421 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐡, 1f421
+-- format: unicodeKey = tts
+L["128033_65039"] = "blowfish"
 -- emoji:🦈; unicode = 1f988
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129416"] = "shark"
+-- emoji:🦈; unicode = 1f988 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦈, 1f988
+-- format: unicodeKey = tts
+L["129416_65039"] = "shark"
 -- emoji:🐙; unicode = 1f419
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128025"] = "octopus"
+-- emoji:🐙; unicode = 1f419 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐙, 1f419
+-- format: unicodeKey = tts
+L["128025_65039"] = "octopus"
 -- emoji:🐚; unicode = 1f41a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128026"] = "spiral shell"
+-- emoji:🐚; unicode = 1f41a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐚, 1f41a
+-- format: unicodeKey = tts
+L["128026_65039"] = "spiral shell"
 -- emoji:🪸; unicode = 1fab8
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129720"] = "coral"
+-- emoji:🪸; unicode = 1fab8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪸, 1fab8
+-- format: unicodeKey = tts
+L["129720_65039"] = "coral"
 -- emoji:🪼; unicode = 1fabc
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129724"] = "jellyfish"
+-- emoji:🪼; unicode = 1fabc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪼, 1fabc
+-- format: unicodeKey = tts
+L["129724_65039"] = "jellyfish"
 -- emoji:🦀; unicode = 1f980
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129408"] = "crab"
+-- emoji:🦀; unicode = 1f980 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦀, 1f980
+-- format: unicodeKey = tts
+L["129408_65039"] = "crab"
 -- emoji:🦞; unicode = 1f99e
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129438"] = "lobster"
+-- emoji:🦞; unicode = 1f99e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦞, 1f99e
+-- format: unicodeKey = tts
+L["129438_65039"] = "lobster"
 -- emoji:🦐; unicode = 1f990
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129424"] = "shrimp"
+-- emoji:🦐; unicode = 1f990 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦐, 1f990
+-- format: unicodeKey = tts
+L["129424_65039"] = "shrimp"
 -- emoji:🦑; unicode = 1f991
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129425"] = "squid"
+-- emoji:🦑; unicode = 1f991 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦑, 1f991
+-- format: unicodeKey = tts
+L["129425_65039"] = "squid"
 -- emoji:🦪; unicode = 1f9aa
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129450"] = "oyster"
+-- emoji:🦪; unicode = 1f9aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦪, 1f9aa
+-- format: unicodeKey = tts
+L["129450_65039"] = "oyster"
 -- emoji:🐌; unicode = 1f40c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128012"] = "snail"
+-- emoji:🐌; unicode = 1f40c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐌, 1f40c
+-- format: unicodeKey = tts
+L["128012_65039"] = "snail"
 -- emoji:🦋; unicode = 1f98b
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129419"] = "butterfly"
+-- emoji:🦋; unicode = 1f98b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦋, 1f98b
+-- format: unicodeKey = tts
+L["129419_65039"] = "butterfly"
 -- emoji:🐛; unicode = 1f41b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128027"] = "bug"
+-- emoji:🐛; unicode = 1f41b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐛, 1f41b
+-- format: unicodeKey = tts
+L["128027_65039"] = "bug"
 -- emoji:🐜; unicode = 1f41c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128028"] = "ant"
+-- emoji:🐜; unicode = 1f41c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐜, 1f41c
+-- format: unicodeKey = tts
+L["128028_65039"] = "ant"
 -- emoji:🐝; unicode = 1f41d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128029"] = "honeybee"
+-- emoji:🐝; unicode = 1f41d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐝, 1f41d
+-- format: unicodeKey = tts
+L["128029_65039"] = "honeybee"
 -- emoji:🪲; unicode = 1fab2
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129714"] = "beetle"
+-- emoji:🪲; unicode = 1fab2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪲, 1fab2
+-- format: unicodeKey = tts
+L["129714_65039"] = "beetle"
 -- emoji:🐞; unicode = 1f41e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128030"] = "lady beetle"
+-- emoji:🐞; unicode = 1f41e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐞, 1f41e
+-- format: unicodeKey = tts
+L["128030_65039"] = "lady beetle"
 -- emoji:🦗; unicode = 1f997
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129431"] = "cricket"
+-- emoji:🦗; unicode = 1f997 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦗, 1f997
+-- format: unicodeKey = tts
+L["129431_65039"] = "cricket"
 -- emoji:🪳; unicode = 1fab3
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129715"] = "cockroach"
+-- emoji:🪳; unicode = 1fab3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪳, 1fab3
+-- format: unicodeKey = tts
+L["129715_65039"] = "cockroach"
 -- emoji:🕷️; unicode = 1f577 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15518,38 +17588,83 @@ L["128376"] = "spider web"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129410"] = "scorpion"
+-- emoji:🦂; unicode = 1f982 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦂, 1f982
+-- format: unicodeKey = tts
+L["129410_65039"] = "scorpion"
 -- emoji:🦟; unicode = 1f99f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129439"] = "mosquito"
+-- emoji:🦟; unicode = 1f99f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦟, 1f99f
+-- format: unicodeKey = tts
+L["129439_65039"] = "mosquito"
 -- emoji:🪰; unicode = 1fab0
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129712"] = "fly"
+-- emoji:🪰; unicode = 1fab0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪰, 1fab0
+-- format: unicodeKey = tts
+L["129712_65039"] = "fly"
 -- emoji:🪱; unicode = 1fab1
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129713"] = "worm"
+-- emoji:🪱; unicode = 1fab1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪱, 1fab1
+-- format: unicodeKey = tts
+L["129713_65039"] = "worm"
 -- emoji:🦠; unicode = 1f9a0
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129440"] = "microbe"
+-- emoji:🦠; unicode = 1f9a0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦠, 1f9a0
+-- format: unicodeKey = tts
+L["129440_65039"] = "microbe"
 -- emoji:💐; unicode = 1f490
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128144"] = "bouquet"
+-- emoji:💐; unicode = 1f490 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💐, 1f490
+-- format: unicodeKey = tts
+L["128144_65039"] = "bouquet"
 -- emoji:🌸; unicode = 1f338
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127800"] = "cherry blossom"
+-- emoji:🌸; unicode = 1f338 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌸, 1f338
+-- format: unicodeKey = tts
+L["127800_65039"] = "cherry blossom"
 -- emoji:💮; unicode = 1f4ae
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128174"] = "white flower"
+-- emoji:💮; unicode = 1f4ae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💮, 1f4ae
+-- format: unicodeKey = tts
+L["128174_65039"] = "white flower"
 -- emoji:🪷; unicode = 1fab7
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129719"] = "lotus"
+-- emoji:🪷; unicode = 1fab7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪷, 1fab7
+-- format: unicodeKey = tts
+L["129719_65039"] = "lotus"
 -- emoji:🏵️; unicode = 1f3f5 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15563,62 +17678,137 @@ L["127989"] = "rosette"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127801"] = "rose"
+-- emoji:🌹; unicode = 1f339 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌹, 1f339
+-- format: unicodeKey = tts
+L["127801_65039"] = "rose"
 -- emoji:🥀; unicode = 1f940
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129344"] = "wilted flower"
+-- emoji:🥀; unicode = 1f940 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥀, 1f940
+-- format: unicodeKey = tts
+L["129344_65039"] = "wilted flower"
 -- emoji:🌺; unicode = 1f33a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127802"] = "hibiscus"
+-- emoji:🌺; unicode = 1f33a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌺, 1f33a
+-- format: unicodeKey = tts
+L["127802_65039"] = "hibiscus"
 -- emoji:🌻; unicode = 1f33b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127803"] = "sunflower"
+-- emoji:🌻; unicode = 1f33b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌻, 1f33b
+-- format: unicodeKey = tts
+L["127803_65039"] = "sunflower"
 -- emoji:🌼; unicode = 1f33c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127804"] = "blossom"
+-- emoji:🌼; unicode = 1f33c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌼, 1f33c
+-- format: unicodeKey = tts
+L["127804_65039"] = "blossom"
 -- emoji:🌷; unicode = 1f337
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127799"] = "tulip"
+-- emoji:🌷; unicode = 1f337 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌷, 1f337
+-- format: unicodeKey = tts
+L["127799_65039"] = "tulip"
 -- emoji:🪻; unicode = 1fabb
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129723"] = "hyacinth"
+-- emoji:🪻; unicode = 1fabb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪻, 1fabb
+-- format: unicodeKey = tts
+L["129723_65039"] = "hyacinth"
 -- emoji:🌱; unicode = 1f331
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127793"] = "seedling"
+-- emoji:🌱; unicode = 1f331 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌱, 1f331
+-- format: unicodeKey = tts
+L["127793_65039"] = "seedling"
 -- emoji:🪴; unicode = 1fab4
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129716"] = "potted plant"
+-- emoji:🪴; unicode = 1fab4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪴, 1fab4
+-- format: unicodeKey = tts
+L["129716_65039"] = "potted plant"
 -- emoji:🌲; unicode = 1f332
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127794"] = "evergreen tree"
+-- emoji:🌲; unicode = 1f332 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌲, 1f332
+-- format: unicodeKey = tts
+L["127794_65039"] = "evergreen tree"
 -- emoji:🌳; unicode = 1f333
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127795"] = "deciduous tree"
+-- emoji:🌳; unicode = 1f333 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌳, 1f333
+-- format: unicodeKey = tts
+L["127795_65039"] = "deciduous tree"
 -- emoji:🌴; unicode = 1f334
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127796"] = "palm tree"
+-- emoji:🌴; unicode = 1f334 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌴, 1f334
+-- format: unicodeKey = tts
+L["127796_65039"] = "palm tree"
 -- emoji:🌵; unicode = 1f335
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127797"] = "cactus"
+-- emoji:🌵; unicode = 1f335 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌵, 1f335
+-- format: unicodeKey = tts
+L["127797_65039"] = "cactus"
 -- emoji:🌾; unicode = 1f33e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127806"] = "sheaf of rice"
+-- emoji:🌾; unicode = 1f33e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌾, 1f33e
+-- format: unicodeKey = tts
+L["127806_65039"] = "sheaf of rice"
 -- emoji:🌿; unicode = 1f33f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127807"] = "herb"
+-- emoji:🌿; unicode = 1f33f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌿, 1f33f
+-- format: unicodeKey = tts
+L["127807_65039"] = "herb"
 -- emoji:☘️; unicode = 2618 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -15632,54 +17822,119 @@ L["9752"] = "shamrock"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127808"] = "four leaf clover"
+-- emoji:🍀; unicode = 1f340 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍀, 1f340
+-- format: unicodeKey = tts
+L["127808_65039"] = "four leaf clover"
 -- emoji:🍁; unicode = 1f341
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127809"] = "maple leaf"
+-- emoji:🍁; unicode = 1f341 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍁, 1f341
+-- format: unicodeKey = tts
+L["127809_65039"] = "maple leaf"
 -- emoji:🍂; unicode = 1f342
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127810"] = "fallen leaf"
+-- emoji:🍂; unicode = 1f342 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍂, 1f342
+-- format: unicodeKey = tts
+L["127810_65039"] = "fallen leaf"
 -- emoji:🍃; unicode = 1f343
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127811"] = "leaf fluttering in wind"
+-- emoji:🍃; unicode = 1f343 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍃, 1f343
+-- format: unicodeKey = tts
+L["127811_65039"] = "leaf fluttering in wind"
 -- emoji:🪹; unicode = 1fab9
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129721"] = "empty nest"
+-- emoji:🪹; unicode = 1fab9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪹, 1fab9
+-- format: unicodeKey = tts
+L["129721_65039"] = "empty nest"
 -- emoji:🪺; unicode = 1faba
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129722"] = "nest with eggs"
+-- emoji:🪺; unicode = 1faba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪺, 1faba
+-- format: unicodeKey = tts
+L["129722_65039"] = "nest with eggs"
 -- emoji:🍄; unicode = 1f344
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127812"] = "mushroom"
+-- emoji:🍄; unicode = 1f344 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍄, 1f344
+-- format: unicodeKey = tts
+L["127812_65039"] = "mushroom"
 -- emoji:🪾; unicode = 1fabe
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129726"] = "leafless tree"
+-- emoji:🪾; unicode = 1fabe fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪾, 1fabe
+-- format: unicodeKey = tts
+L["129726_65039"] = "leafless tree"
 -- emoji:🍇; unicode = 1f347
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127815"] = "grapes"
+-- emoji:🍇; unicode = 1f347 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍇, 1f347
+-- format: unicodeKey = tts
+L["127815_65039"] = "grapes"
 -- emoji:🍈; unicode = 1f348
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127816"] = "melon"
+-- emoji:🍈; unicode = 1f348 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍈, 1f348
+-- format: unicodeKey = tts
+L["127816_65039"] = "melon"
 -- emoji:🍉; unicode = 1f349
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127817"] = "watermelon"
+-- emoji:🍉; unicode = 1f349 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍉, 1f349
+-- format: unicodeKey = tts
+L["127817_65039"] = "watermelon"
 -- emoji:🍊; unicode = 1f34a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127818"] = "tangerine"
+-- emoji:🍊; unicode = 1f34a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍊, 1f34a
+-- format: unicodeKey = tts
+L["127818_65039"] = "tangerine"
 -- emoji:🍋; unicode = 1f34b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127819"] = "lemon"
+-- emoji:🍋; unicode = 1f34b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍋, 1f34b
+-- format: unicodeKey = tts
+L["127819_65039"] = "lemon"
 -- emoji:🍋‍🟩; unicode = 1f34b 200d 1f7e9
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -15688,78 +17943,173 @@ L["127819_8205_129001"] = "lime"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127820"] = "banana"
+-- emoji:🍌; unicode = 1f34c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍌, 1f34c
+-- format: unicodeKey = tts
+L["127820_65039"] = "banana"
 -- emoji:🍍; unicode = 1f34d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127821"] = "pineapple"
+-- emoji:🍍; unicode = 1f34d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍍, 1f34d
+-- format: unicodeKey = tts
+L["127821_65039"] = "pineapple"
 -- emoji:🥭; unicode = 1f96d
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129389"] = "mango"
+-- emoji:🥭; unicode = 1f96d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥭, 1f96d
+-- format: unicodeKey = tts
+L["129389_65039"] = "mango"
 -- emoji:🍎; unicode = 1f34e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127822"] = "red apple"
+-- emoji:🍎; unicode = 1f34e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍎, 1f34e
+-- format: unicodeKey = tts
+L["127822_65039"] = "red apple"
 -- emoji:🍏; unicode = 1f34f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127823"] = "green apple"
+-- emoji:🍏; unicode = 1f34f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍏, 1f34f
+-- format: unicodeKey = tts
+L["127823_65039"] = "green apple"
 -- emoji:🍐; unicode = 1f350
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127824"] = "pear"
+-- emoji:🍐; unicode = 1f350 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍐, 1f350
+-- format: unicodeKey = tts
+L["127824_65039"] = "pear"
 -- emoji:🍑; unicode = 1f351
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127825"] = "peach"
+-- emoji:🍑; unicode = 1f351 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍑, 1f351
+-- format: unicodeKey = tts
+L["127825_65039"] = "peach"
 -- emoji:🍒; unicode = 1f352
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127826"] = "cherries"
+-- emoji:🍒; unicode = 1f352 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍒, 1f352
+-- format: unicodeKey = tts
+L["127826_65039"] = "cherries"
 -- emoji:🍓; unicode = 1f353
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127827"] = "strawberry"
+-- emoji:🍓; unicode = 1f353 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍓, 1f353
+-- format: unicodeKey = tts
+L["127827_65039"] = "strawberry"
 -- emoji:🫐; unicode = 1fad0
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129744"] = "blueberries"
+-- emoji:🫐; unicode = 1fad0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫐, 1fad0
+-- format: unicodeKey = tts
+L["129744_65039"] = "blueberries"
 -- emoji:🥝; unicode = 1f95d
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129373"] = "kiwi fruit"
+-- emoji:🥝; unicode = 1f95d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥝, 1f95d
+-- format: unicodeKey = tts
+L["129373_65039"] = "kiwi fruit"
 -- emoji:🍅; unicode = 1f345
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127813"] = "tomato"
+-- emoji:🍅; unicode = 1f345 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍅, 1f345
+-- format: unicodeKey = tts
+L["127813_65039"] = "tomato"
 -- emoji:🫒; unicode = 1fad2
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129746"] = "olive"
+-- emoji:🫒; unicode = 1fad2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫒, 1fad2
+-- format: unicodeKey = tts
+L["129746_65039"] = "olive"
 -- emoji:🥥; unicode = 1f965
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129381"] = "coconut"
+-- emoji:🥥; unicode = 1f965 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥥, 1f965
+-- format: unicodeKey = tts
+L["129381_65039"] = "coconut"
 -- emoji:🥑; unicode = 1f951
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129361"] = "avocado"
+-- emoji:🥑; unicode = 1f951 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥑, 1f951
+-- format: unicodeKey = tts
+L["129361_65039"] = "avocado"
 -- emoji:🍆; unicode = 1f346
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127814"] = "eggplant"
+-- emoji:🍆; unicode = 1f346 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍆, 1f346
+-- format: unicodeKey = tts
+L["127814_65039"] = "eggplant"
 -- emoji:🥔; unicode = 1f954
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129364"] = "potato"
+-- emoji:🥔; unicode = 1f954 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥔, 1f954
+-- format: unicodeKey = tts
+L["129364_65039"] = "potato"
 -- emoji:🥕; unicode = 1f955
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129365"] = "carrot"
+-- emoji:🥕; unicode = 1f955 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥕, 1f955
+-- format: unicodeKey = tts
+L["129365_65039"] = "carrot"
 -- emoji:🌽; unicode = 1f33d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127805"] = "ear of corn"
+-- emoji:🌽; unicode = 1f33d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌽, 1f33d
+-- format: unicodeKey = tts
+L["127805_65039"] = "ear of corn"
 -- emoji:🌶️; unicode = 1f336 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15773,46 +18123,101 @@ L["127798"] = "hot pepper"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129745"] = "bell pepper"
+-- emoji:🫑; unicode = 1fad1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫑, 1fad1
+-- format: unicodeKey = tts
+L["129745_65039"] = "bell pepper"
 -- emoji:🥒; unicode = 1f952
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129362"] = "cucumber"
+-- emoji:🥒; unicode = 1f952 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥒, 1f952
+-- format: unicodeKey = tts
+L["129362_65039"] = "cucumber"
 -- emoji:🥬; unicode = 1f96c
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129388"] = "leafy green"
+-- emoji:🥬; unicode = 1f96c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥬, 1f96c
+-- format: unicodeKey = tts
+L["129388_65039"] = "leafy green"
 -- emoji:🥦; unicode = 1f966
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129382"] = "broccoli"
+-- emoji:🥦; unicode = 1f966 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥦, 1f966
+-- format: unicodeKey = tts
+L["129382_65039"] = "broccoli"
 -- emoji:🧄; unicode = 1f9c4
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129476"] = "garlic"
+-- emoji:🧄; unicode = 1f9c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧄, 1f9c4
+-- format: unicodeKey = tts
+L["129476_65039"] = "garlic"
 -- emoji:🧅; unicode = 1f9c5
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129477"] = "onion"
+-- emoji:🧅; unicode = 1f9c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧅, 1f9c5
+-- format: unicodeKey = tts
+L["129477_65039"] = "onion"
 -- emoji:🥜; unicode = 1f95c
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129372"] = "peanuts"
+-- emoji:🥜; unicode = 1f95c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥜, 1f95c
+-- format: unicodeKey = tts
+L["129372_65039"] = "peanuts"
 -- emoji:🫘; unicode = 1fad8
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129752"] = "beans"
+-- emoji:🫘; unicode = 1fad8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫘, 1fad8
+-- format: unicodeKey = tts
+L["129752_65039"] = "beans"
 -- emoji:🌰; unicode = 1f330
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127792"] = "chestnut"
+-- emoji:🌰; unicode = 1f330 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌰, 1f330
+-- format: unicodeKey = tts
+L["127792_65039"] = "chestnut"
 -- emoji:🫚; unicode = 1fada
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129754"] = "ginger root"
+-- emoji:🫚; unicode = 1fada fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫚, 1fada
+-- format: unicodeKey = tts
+L["129754_65039"] = "ginger root"
 -- emoji:🫛; unicode = 1fadb
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129755"] = "pea pod"
+-- emoji:🫛; unicode = 1fadb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫛, 1fadb
+-- format: unicodeKey = tts
+L["129755_65039"] = "pea pod"
 -- emoji:🍄‍🟫; unicode = 1f344 200d 1f7eb
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -15821,350 +18226,785 @@ L["127812_8205_129003"] = "brown mushroom"
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129756"] = "root vegetable"
+-- emoji:🫜; unicode = 1fadc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫜, 1fadc
+-- format: unicodeKey = tts
+L["129756_65039"] = "root vegetable"
 -- emoji:🍞; unicode = 1f35e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127838"] = "bread"
+-- emoji:🍞; unicode = 1f35e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍞, 1f35e
+-- format: unicodeKey = tts
+L["127838_65039"] = "bread"
 -- emoji:🥐; unicode = 1f950
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129360"] = "croissant"
+-- emoji:🥐; unicode = 1f950 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥐, 1f950
+-- format: unicodeKey = tts
+L["129360_65039"] = "croissant"
 -- emoji:🥖; unicode = 1f956
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129366"] = "baguette bread"
+-- emoji:🥖; unicode = 1f956 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥖, 1f956
+-- format: unicodeKey = tts
+L["129366_65039"] = "baguette bread"
 -- emoji:🫓; unicode = 1fad3
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129747"] = "flatbread"
+-- emoji:🫓; unicode = 1fad3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫓, 1fad3
+-- format: unicodeKey = tts
+L["129747_65039"] = "flatbread"
 -- emoji:🥨; unicode = 1f968
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129384"] = "pretzel"
+-- emoji:🥨; unicode = 1f968 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥨, 1f968
+-- format: unicodeKey = tts
+L["129384_65039"] = "pretzel"
 -- emoji:🥯; unicode = 1f96f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129391"] = "bagel"
+-- emoji:🥯; unicode = 1f96f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥯, 1f96f
+-- format: unicodeKey = tts
+L["129391_65039"] = "bagel"
 -- emoji:🥞; unicode = 1f95e
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129374"] = "pancakes"
+-- emoji:🥞; unicode = 1f95e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥞, 1f95e
+-- format: unicodeKey = tts
+L["129374_65039"] = "pancakes"
 -- emoji:🧇; unicode = 1f9c7
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129479"] = "waffle"
+-- emoji:🧇; unicode = 1f9c7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧇, 1f9c7
+-- format: unicodeKey = tts
+L["129479_65039"] = "waffle"
 -- emoji:🧀; unicode = 1f9c0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129472"] = "cheese wedge"
+-- emoji:🧀; unicode = 1f9c0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧀, 1f9c0
+-- format: unicodeKey = tts
+L["129472_65039"] = "cheese wedge"
 -- emoji:🍖; unicode = 1f356
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127830"] = "meat on bone"
+-- emoji:🍖; unicode = 1f356 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍖, 1f356
+-- format: unicodeKey = tts
+L["127830_65039"] = "meat on bone"
 -- emoji:🍗; unicode = 1f357
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127831"] = "poultry leg"
+-- emoji:🍗; unicode = 1f357 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍗, 1f357
+-- format: unicodeKey = tts
+L["127831_65039"] = "poultry leg"
 -- emoji:🥩; unicode = 1f969
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129385"] = "cut of meat"
+-- emoji:🥩; unicode = 1f969 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥩, 1f969
+-- format: unicodeKey = tts
+L["129385_65039"] = "cut of meat"
 -- emoji:🥓; unicode = 1f953
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129363"] = "bacon"
+-- emoji:🥓; unicode = 1f953 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥓, 1f953
+-- format: unicodeKey = tts
+L["129363_65039"] = "bacon"
 -- emoji:🍔; unicode = 1f354
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127828"] = "hamburger"
+-- emoji:🍔; unicode = 1f354 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍔, 1f354
+-- format: unicodeKey = tts
+L["127828_65039"] = "hamburger"
 -- emoji:🍟; unicode = 1f35f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127839"] = "french fries"
+-- emoji:🍟; unicode = 1f35f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍟, 1f35f
+-- format: unicodeKey = tts
+L["127839_65039"] = "french fries"
 -- emoji:🍕; unicode = 1f355
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127829"] = "pizza"
+-- emoji:🍕; unicode = 1f355 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍕, 1f355
+-- format: unicodeKey = tts
+L["127829_65039"] = "pizza"
 -- emoji:🌭; unicode = 1f32d
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127789"] = "hot dog"
+-- emoji:🌭; unicode = 1f32d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌭, 1f32d
+-- format: unicodeKey = tts
+L["127789_65039"] = "hot dog"
 -- emoji:🥪; unicode = 1f96a
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129386"] = "sandwich"
+-- emoji:🥪; unicode = 1f96a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥪, 1f96a
+-- format: unicodeKey = tts
+L["129386_65039"] = "sandwich"
 -- emoji:🌮; unicode = 1f32e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127790"] = "taco"
+-- emoji:🌮; unicode = 1f32e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌮, 1f32e
+-- format: unicodeKey = tts
+L["127790_65039"] = "taco"
 -- emoji:🌯; unicode = 1f32f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127791"] = "burrito"
+-- emoji:🌯; unicode = 1f32f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌯, 1f32f
+-- format: unicodeKey = tts
+L["127791_65039"] = "burrito"
 -- emoji:🫔; unicode = 1fad4
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129748"] = "tamale"
+-- emoji:🫔; unicode = 1fad4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫔, 1fad4
+-- format: unicodeKey = tts
+L["129748_65039"] = "tamale"
 -- emoji:🥙; unicode = 1f959
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129369"] = "stuffed flatbread"
+-- emoji:🥙; unicode = 1f959 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥙, 1f959
+-- format: unicodeKey = tts
+L["129369_65039"] = "stuffed flatbread"
 -- emoji:🧆; unicode = 1f9c6
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129478"] = "falafel"
+-- emoji:🧆; unicode = 1f9c6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧆, 1f9c6
+-- format: unicodeKey = tts
+L["129478_65039"] = "falafel"
 -- emoji:🥚; unicode = 1f95a
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129370"] = "egg"
+-- emoji:🥚; unicode = 1f95a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥚, 1f95a
+-- format: unicodeKey = tts
+L["129370_65039"] = "egg"
 -- emoji:🍳; unicode = 1f373
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127859"] = "cooking"
+-- emoji:🍳; unicode = 1f373 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍳, 1f373
+-- format: unicodeKey = tts
+L["127859_65039"] = "cooking"
 -- emoji:🥘; unicode = 1f958
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129368"] = "shallow pan of food"
+-- emoji:🥘; unicode = 1f958 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥘, 1f958
+-- format: unicodeKey = tts
+L["129368_65039"] = "shallow pan of food"
 -- emoji:🍲; unicode = 1f372
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127858"] = "pot of food"
+-- emoji:🍲; unicode = 1f372 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍲, 1f372
+-- format: unicodeKey = tts
+L["127858_65039"] = "pot of food"
 -- emoji:🫕; unicode = 1fad5
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129749"] = "fondue"
+-- emoji:🫕; unicode = 1fad5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫕, 1fad5
+-- format: unicodeKey = tts
+L["129749_65039"] = "fondue"
 -- emoji:🥣; unicode = 1f963
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129379"] = "bowl with spoon"
+-- emoji:🥣; unicode = 1f963 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥣, 1f963
+-- format: unicodeKey = tts
+L["129379_65039"] = "bowl with spoon"
 -- emoji:🥗; unicode = 1f957
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129367"] = "green salad"
+-- emoji:🥗; unicode = 1f957 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥗, 1f957
+-- format: unicodeKey = tts
+L["129367_65039"] = "green salad"
 -- emoji:🍿; unicode = 1f37f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127871"] = "popcorn"
+-- emoji:🍿; unicode = 1f37f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍿, 1f37f
+-- format: unicodeKey = tts
+L["127871_65039"] = "popcorn"
 -- emoji:🧈; unicode = 1f9c8
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129480"] = "butter"
+-- emoji:🧈; unicode = 1f9c8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧈, 1f9c8
+-- format: unicodeKey = tts
+L["129480_65039"] = "butter"
 -- emoji:🧂; unicode = 1f9c2
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129474"] = "salt"
+-- emoji:🧂; unicode = 1f9c2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧂, 1f9c2
+-- format: unicodeKey = tts
+L["129474_65039"] = "salt"
 -- emoji:🥫; unicode = 1f96b
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129387"] = "canned food"
+-- emoji:🥫; unicode = 1f96b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥫, 1f96b
+-- format: unicodeKey = tts
+L["129387_65039"] = "canned food"
 -- emoji:🍱; unicode = 1f371
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127857"] = "bento box"
+-- emoji:🍱; unicode = 1f371 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍱, 1f371
+-- format: unicodeKey = tts
+L["127857_65039"] = "bento box"
 -- emoji:🍘; unicode = 1f358
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127832"] = "rice cracker"
+-- emoji:🍘; unicode = 1f358 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍘, 1f358
+-- format: unicodeKey = tts
+L["127832_65039"] = "rice cracker"
 -- emoji:🍙; unicode = 1f359
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127833"] = "rice ball"
+-- emoji:🍙; unicode = 1f359 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍙, 1f359
+-- format: unicodeKey = tts
+L["127833_65039"] = "rice ball"
 -- emoji:🍚; unicode = 1f35a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127834"] = "cooked rice"
+-- emoji:🍚; unicode = 1f35a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍚, 1f35a
+-- format: unicodeKey = tts
+L["127834_65039"] = "cooked rice"
 -- emoji:🍛; unicode = 1f35b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127835"] = "curry rice"
+-- emoji:🍛; unicode = 1f35b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍛, 1f35b
+-- format: unicodeKey = tts
+L["127835_65039"] = "curry rice"
 -- emoji:🍜; unicode = 1f35c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127836"] = "steaming bowl"
+-- emoji:🍜; unicode = 1f35c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍜, 1f35c
+-- format: unicodeKey = tts
+L["127836_65039"] = "steaming bowl"
 -- emoji:🍝; unicode = 1f35d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127837"] = "spaghetti"
+-- emoji:🍝; unicode = 1f35d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍝, 1f35d
+-- format: unicodeKey = tts
+L["127837_65039"] = "spaghetti"
 -- emoji:🍠; unicode = 1f360
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127840"] = "roasted sweet potato"
+-- emoji:🍠; unicode = 1f360 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍠, 1f360
+-- format: unicodeKey = tts
+L["127840_65039"] = "roasted sweet potato"
 -- emoji:🍢; unicode = 1f362
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127842"] = "oden"
+-- emoji:🍢; unicode = 1f362 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍢, 1f362
+-- format: unicodeKey = tts
+L["127842_65039"] = "oden"
 -- emoji:🍣; unicode = 1f363
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127843"] = "sushi"
+-- emoji:🍣; unicode = 1f363 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍣, 1f363
+-- format: unicodeKey = tts
+L["127843_65039"] = "sushi"
 -- emoji:🍤; unicode = 1f364
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127844"] = "fried shrimp"
+-- emoji:🍤; unicode = 1f364 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍤, 1f364
+-- format: unicodeKey = tts
+L["127844_65039"] = "fried shrimp"
 -- emoji:🍥; unicode = 1f365
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127845"] = "fish cake with swirl"
+-- emoji:🍥; unicode = 1f365 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍥, 1f365
+-- format: unicodeKey = tts
+L["127845_65039"] = "fish cake with swirl"
 -- emoji:🥮; unicode = 1f96e
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129390"] = "moon cake"
+-- emoji:🥮; unicode = 1f96e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥮, 1f96e
+-- format: unicodeKey = tts
+L["129390_65039"] = "moon cake"
 -- emoji:🍡; unicode = 1f361
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127841"] = "dango"
+-- emoji:🍡; unicode = 1f361 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍡, 1f361
+-- format: unicodeKey = tts
+L["127841_65039"] = "dango"
 -- emoji:🥟; unicode = 1f95f
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129375"] = "dumpling"
+-- emoji:🥟; unicode = 1f95f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥟, 1f95f
+-- format: unicodeKey = tts
+L["129375_65039"] = "dumpling"
 -- emoji:🥠; unicode = 1f960
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129376"] = "fortune cookie"
+-- emoji:🥠; unicode = 1f960 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥠, 1f960
+-- format: unicodeKey = tts
+L["129376_65039"] = "fortune cookie"
 -- emoji:🥡; unicode = 1f961
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129377"] = "takeout box"
+-- emoji:🥡; unicode = 1f961 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥡, 1f961
+-- format: unicodeKey = tts
+L["129377_65039"] = "takeout box"
 -- emoji:🍦; unicode = 1f366
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127846"] = "soft ice cream"
+-- emoji:🍦; unicode = 1f366 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍦, 1f366
+-- format: unicodeKey = tts
+L["127846_65039"] = "soft ice cream"
 -- emoji:🍧; unicode = 1f367
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127847"] = "shaved ice"
+-- emoji:🍧; unicode = 1f367 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍧, 1f367
+-- format: unicodeKey = tts
+L["127847_65039"] = "shaved ice"
 -- emoji:🍨; unicode = 1f368
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127848"] = "ice cream"
+-- emoji:🍨; unicode = 1f368 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍨, 1f368
+-- format: unicodeKey = tts
+L["127848_65039"] = "ice cream"
 -- emoji:🍩; unicode = 1f369
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127849"] = "doughnut"
+-- emoji:🍩; unicode = 1f369 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍩, 1f369
+-- format: unicodeKey = tts
+L["127849_65039"] = "doughnut"
 -- emoji:🍪; unicode = 1f36a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127850"] = "cookie"
+-- emoji:🍪; unicode = 1f36a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍪, 1f36a
+-- format: unicodeKey = tts
+L["127850_65039"] = "cookie"
 -- emoji:🎂; unicode = 1f382
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127874"] = "birthday cake"
+-- emoji:🎂; unicode = 1f382 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎂, 1f382
+-- format: unicodeKey = tts
+L["127874_65039"] = "birthday cake"
 -- emoji:🍰; unicode = 1f370
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127856"] = "shortcake"
+-- emoji:🍰; unicode = 1f370 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍰, 1f370
+-- format: unicodeKey = tts
+L["127856_65039"] = "shortcake"
 -- emoji:🧁; unicode = 1f9c1
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129473"] = "cupcake"
+-- emoji:🧁; unicode = 1f9c1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧁, 1f9c1
+-- format: unicodeKey = tts
+L["129473_65039"] = "cupcake"
 -- emoji:🥧; unicode = 1f967
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129383"] = "pie"
+-- emoji:🥧; unicode = 1f967 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥧, 1f967
+-- format: unicodeKey = tts
+L["129383_65039"] = "pie"
 -- emoji:🍫; unicode = 1f36b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127851"] = "chocolate bar"
+-- emoji:🍫; unicode = 1f36b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍫, 1f36b
+-- format: unicodeKey = tts
+L["127851_65039"] = "chocolate bar"
 -- emoji:🍬; unicode = 1f36c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127852"] = "candy"
+-- emoji:🍬; unicode = 1f36c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍬, 1f36c
+-- format: unicodeKey = tts
+L["127852_65039"] = "candy"
 -- emoji:🍭; unicode = 1f36d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127853"] = "lollipop"
+-- emoji:🍭; unicode = 1f36d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍭, 1f36d
+-- format: unicodeKey = tts
+L["127853_65039"] = "lollipop"
 -- emoji:🍮; unicode = 1f36e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127854"] = "custard"
+-- emoji:🍮; unicode = 1f36e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍮, 1f36e
+-- format: unicodeKey = tts
+L["127854_65039"] = "custard"
 -- emoji:🍯; unicode = 1f36f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127855"] = "honey pot"
+-- emoji:🍯; unicode = 1f36f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍯, 1f36f
+-- format: unicodeKey = tts
+L["127855_65039"] = "honey pot"
 -- emoji:🍼; unicode = 1f37c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127868"] = "baby bottle"
+-- emoji:🍼; unicode = 1f37c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍼, 1f37c
+-- format: unicodeKey = tts
+L["127868_65039"] = "baby bottle"
 -- emoji:🥛; unicode = 1f95b
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129371"] = "glass of milk"
+-- emoji:🥛; unicode = 1f95b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥛, 1f95b
+-- format: unicodeKey = tts
+L["129371_65039"] = "glass of milk"
 -- emoji:☕; unicode = 2615
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9749"] = "hot beverage"
+-- emoji:☕; unicode = 2615 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ☕, 2615
+-- format: unicodeKey = tts
+L["9749_65039"] = "hot beverage"
 -- emoji:🫖; unicode = 1fad6
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129750"] = "teapot"
+-- emoji:🫖; unicode = 1fad6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫖, 1fad6
+-- format: unicodeKey = tts
+L["129750_65039"] = "teapot"
 -- emoji:🍵; unicode = 1f375
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127861"] = "teacup without handle"
+-- emoji:🍵; unicode = 1f375 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍵, 1f375
+-- format: unicodeKey = tts
+L["127861_65039"] = "teacup without handle"
 -- emoji:🍶; unicode = 1f376
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127862"] = "sake"
+-- emoji:🍶; unicode = 1f376 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍶, 1f376
+-- format: unicodeKey = tts
+L["127862_65039"] = "sake"
 -- emoji:🍾; unicode = 1f37e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127870"] = "bottle with popping cork"
+-- emoji:🍾; unicode = 1f37e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍾, 1f37e
+-- format: unicodeKey = tts
+L["127870_65039"] = "bottle with popping cork"
 -- emoji:🍷; unicode = 1f377
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127863"] = "wine glass"
+-- emoji:🍷; unicode = 1f377 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍷, 1f377
+-- format: unicodeKey = tts
+L["127863_65039"] = "wine glass"
 -- emoji:🍸; unicode = 1f378
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127864"] = "cocktail glass"
+-- emoji:🍸; unicode = 1f378 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍸, 1f378
+-- format: unicodeKey = tts
+L["127864_65039"] = "cocktail glass"
 -- emoji:🍹; unicode = 1f379
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127865"] = "tropical drink"
+-- emoji:🍹; unicode = 1f379 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍹, 1f379
+-- format: unicodeKey = tts
+L["127865_65039"] = "tropical drink"
 -- emoji:🍺; unicode = 1f37a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127866"] = "beer mug"
+-- emoji:🍺; unicode = 1f37a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍺, 1f37a
+-- format: unicodeKey = tts
+L["127866_65039"] = "beer mug"
 -- emoji:🍻; unicode = 1f37b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127867"] = "clinking beer mugs"
+-- emoji:🍻; unicode = 1f37b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍻, 1f37b
+-- format: unicodeKey = tts
+L["127867_65039"] = "clinking beer mugs"
 -- emoji:🥂; unicode = 1f942
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129346"] = "clinking glasses"
+-- emoji:🥂; unicode = 1f942 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥂, 1f942
+-- format: unicodeKey = tts
+L["129346_65039"] = "clinking glasses"
 -- emoji:🥃; unicode = 1f943
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129347"] = "tumbler glass"
+-- emoji:🥃; unicode = 1f943 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥃, 1f943
+-- format: unicodeKey = tts
+L["129347_65039"] = "tumbler glass"
 -- emoji:🫗; unicode = 1fad7
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129751"] = "pouring liquid"
+-- emoji:🫗; unicode = 1fad7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫗, 1fad7
+-- format: unicodeKey = tts
+L["129751_65039"] = "pouring liquid"
 -- emoji:🥤; unicode = 1f964
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129380"] = "cup with straw"
+-- emoji:🥤; unicode = 1f964 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥤, 1f964
+-- format: unicodeKey = tts
+L["129380_65039"] = "cup with straw"
 -- emoji:🧋; unicode = 1f9cb
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129483"] = "bubble tea"
+-- emoji:🧋; unicode = 1f9cb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧋, 1f9cb
+-- format: unicodeKey = tts
+L["129483_65039"] = "bubble tea"
 -- emoji:🧃; unicode = 1f9c3
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129475"] = "beverage box"
+-- emoji:🧃; unicode = 1f9c3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧃, 1f9c3
+-- format: unicodeKey = tts
+L["129475_65039"] = "beverage box"
 -- emoji:🧉; unicode = 1f9c9
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129481"] = "mate"
+-- emoji:🧉; unicode = 1f9c9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧉, 1f9c9
+-- format: unicodeKey = tts
+L["129481_65039"] = "mate"
 -- emoji:🧊; unicode = 1f9ca
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129482"] = "ice"
+-- emoji:🧊; unicode = 1f9ca fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧊, 1f9ca
+-- format: unicodeKey = tts
+L["129482_65039"] = "ice"
 -- emoji:🥢; unicode = 1f962
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129378"] = "chopsticks"
+-- emoji:🥢; unicode = 1f962 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥢, 1f962
+-- format: unicodeKey = tts
+L["129378_65039"] = "chopsticks"
 -- emoji:🍽️; unicode = 1f37d fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16178,38 +19018,83 @@ L["127869"] = "fork and knife with plate"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127860"] = "fork and knife"
+-- emoji:🍴; unicode = 1f374 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍴, 1f374
+-- format: unicodeKey = tts
+L["127860_65039"] = "fork and knife"
 -- emoji:🥄; unicode = 1f944
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129348"] = "spoon"
+-- emoji:🥄; unicode = 1f944 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥄, 1f944
+-- format: unicodeKey = tts
+L["129348_65039"] = "spoon"
 -- emoji:🔪; unicode = 1f52a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128298"] = "kitchen knife"
+-- emoji:🔪; unicode = 1f52a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔪, 1f52a
+-- format: unicodeKey = tts
+L["128298_65039"] = "kitchen knife"
 -- emoji:🫙; unicode = 1fad9
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129753"] = "jar"
+-- emoji:🫙; unicode = 1fad9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫙, 1fad9
+-- format: unicodeKey = tts
+L["129753_65039"] = "jar"
 -- emoji:🏺; unicode = 1f3fa
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127994"] = "amphora"
+-- emoji:🏺; unicode = 1f3fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏺, 1f3fa
+-- format: unicodeKey = tts
+L["127994_65039"] = "amphora"
 -- emoji:🌍; unicode = 1f30d
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["127757"] = "globe showing Europe-Africa"
+-- emoji:🌍; unicode = 1f30d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌍, 1f30d
+-- format: unicodeKey = tts
+L["127757_65039"] = "globe showing Europe-Africa"
 -- emoji:🌎; unicode = 1f30e
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["127758"] = "globe showing Americas"
+-- emoji:🌎; unicode = 1f30e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌎, 1f30e
+-- format: unicodeKey = tts
+L["127758_65039"] = "globe showing Americas"
 -- emoji:🌏; unicode = 1f30f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127759"] = "globe showing Asia-Australia"
+-- emoji:🌏; unicode = 1f30f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌏, 1f30f
+-- format: unicodeKey = tts
+L["127759_65039"] = "globe showing Asia-Australia"
 -- emoji:🌐; unicode = 1f310
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127760"] = "globe with meridians"
+-- emoji:🌐; unicode = 1f310 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌐, 1f310
+-- format: unicodeKey = tts
+L["127760_65039"] = "globe with meridians"
 -- emoji:🗺️; unicode = 1f5fa fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16223,10 +19108,20 @@ L["128506"] = "world map"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128510"] = "map of Japan"
+-- emoji:🗾; unicode = 1f5fe fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗾, 1f5fe
+-- format: unicodeKey = tts
+L["128510_65039"] = "map of Japan"
 -- emoji:🧭; unicode = 1f9ed
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129517"] = "compass"
+-- emoji:🧭; unicode = 1f9ed fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧭, 1f9ed
+-- format: unicodeKey = tts
+L["129517_65039"] = "compass"
 -- emoji:🏔️; unicode = 1f3d4 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16249,10 +19144,20 @@ L["9968"] = "mountain"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127755"] = "volcano"
+-- emoji:🌋; unicode = 1f30b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌋, 1f30b
+-- format: unicodeKey = tts
+L["127755_65039"] = "volcano"
 -- emoji:🗻; unicode = 1f5fb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128507"] = "mount fuji"
+-- emoji:🗻; unicode = 1f5fb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗻, 1f5fb
+-- format: unicodeKey = tts
+L["128507_65039"] = "mount fuji"
 -- emoji:🏕️; unicode = 1f3d5 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16329,18 +19234,38 @@ L["127959"] = "building construction"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129521"] = "brick"
+-- emoji:🧱; unicode = 1f9f1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧱, 1f9f1
+-- format: unicodeKey = tts
+L["129521_65039"] = "brick"
 -- emoji:🪨; unicode = 1faa8
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129704"] = "rock"
+-- emoji:🪨; unicode = 1faa8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪨, 1faa8
+-- format: unicodeKey = tts
+L["129704_65039"] = "rock"
 -- emoji:🪵; unicode = 1fab5
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129717"] = "wood"
+-- emoji:🪵; unicode = 1fab5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪵, 1fab5
+-- format: unicodeKey = tts
+L["129717_65039"] = "wood"
 -- emoji:🛖; unicode = 1f6d6
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["128726"] = "hut"
+-- emoji:🛖; unicode = 1f6d6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛖, 1f6d6
+-- format: unicodeKey = tts
+L["128726_65039"] = "hut"
 -- emoji:🏘️; unicode = 1f3d8 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16363,90 +19288,200 @@ L["127962"] = "derelict house"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127968"] = "house"
+-- emoji:🏠; unicode = 1f3e0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏠, 1f3e0
+-- format: unicodeKey = tts
+L["127968_65039"] = "house"
 -- emoji:🏡; unicode = 1f3e1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127969"] = "house with garden"
+-- emoji:🏡; unicode = 1f3e1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏡, 1f3e1
+-- format: unicodeKey = tts
+L["127969_65039"] = "house with garden"
 -- emoji:🏢; unicode = 1f3e2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127970"] = "office building"
+-- emoji:🏢; unicode = 1f3e2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏢, 1f3e2
+-- format: unicodeKey = tts
+L["127970_65039"] = "office building"
 -- emoji:🏣; unicode = 1f3e3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127971"] = "Japanese post office"
+-- emoji:🏣; unicode = 1f3e3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏣, 1f3e3
+-- format: unicodeKey = tts
+L["127971_65039"] = "Japanese post office"
 -- emoji:🏤; unicode = 1f3e4
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127972"] = "post office"
+-- emoji:🏤; unicode = 1f3e4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏤, 1f3e4
+-- format: unicodeKey = tts
+L["127972_65039"] = "post office"
 -- emoji:🏥; unicode = 1f3e5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127973"] = "hospital"
+-- emoji:🏥; unicode = 1f3e5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏥, 1f3e5
+-- format: unicodeKey = tts
+L["127973_65039"] = "hospital"
 -- emoji:🏦; unicode = 1f3e6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127974"] = "bank"
+-- emoji:🏦; unicode = 1f3e6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏦, 1f3e6
+-- format: unicodeKey = tts
+L["127974_65039"] = "bank"
 -- emoji:🏨; unicode = 1f3e8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127976"] = "hotel"
+-- emoji:🏨; unicode = 1f3e8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏨, 1f3e8
+-- format: unicodeKey = tts
+L["127976_65039"] = "hotel"
 -- emoji:🏩; unicode = 1f3e9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127977"] = "love hotel"
+-- emoji:🏩; unicode = 1f3e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏩, 1f3e9
+-- format: unicodeKey = tts
+L["127977_65039"] = "love hotel"
 -- emoji:🏪; unicode = 1f3ea
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127978"] = "convenience store"
+-- emoji:🏪; unicode = 1f3ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏪, 1f3ea
+-- format: unicodeKey = tts
+L["127978_65039"] = "convenience store"
 -- emoji:🏫; unicode = 1f3eb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127979"] = "school"
+-- emoji:🏫; unicode = 1f3eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏫, 1f3eb
+-- format: unicodeKey = tts
+L["127979_65039"] = "school"
 -- emoji:🏬; unicode = 1f3ec
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127980"] = "department store"
+-- emoji:🏬; unicode = 1f3ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏬, 1f3ec
+-- format: unicodeKey = tts
+L["127980_65039"] = "department store"
 -- emoji:🏭; unicode = 1f3ed
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127981"] = "factory"
+-- emoji:🏭; unicode = 1f3ed fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏭, 1f3ed
+-- format: unicodeKey = tts
+L["127981_65039"] = "factory"
 -- emoji:🏯; unicode = 1f3ef
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127983"] = "Japanese castle"
+-- emoji:🏯; unicode = 1f3ef fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏯, 1f3ef
+-- format: unicodeKey = tts
+L["127983_65039"] = "Japanese castle"
 -- emoji:🏰; unicode = 1f3f0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127984"] = "castle"
+-- emoji:🏰; unicode = 1f3f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏰, 1f3f0
+-- format: unicodeKey = tts
+L["127984_65039"] = "castle"
 -- emoji:💒; unicode = 1f492
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128146"] = "wedding"
+-- emoji:💒; unicode = 1f492 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💒, 1f492
+-- format: unicodeKey = tts
+L["128146_65039"] = "wedding"
 -- emoji:🗼; unicode = 1f5fc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128508"] = "Tokyo tower"
+-- emoji:🗼; unicode = 1f5fc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗼, 1f5fc
+-- format: unicodeKey = tts
+L["128508_65039"] = "Tokyo tower"
 -- emoji:🗽; unicode = 1f5fd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128509"] = "Statue of Liberty"
+-- emoji:🗽; unicode = 1f5fd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗽, 1f5fd
+-- format: unicodeKey = tts
+L["128509_65039"] = "Statue of Liberty"
 -- emoji:⛪; unicode = 26ea
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9962"] = "church"
+-- emoji:⛪; unicode = 26ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛪, 26ea
+-- format: unicodeKey = tts
+L["9962_65039"] = "church"
 -- emoji:🕌; unicode = 1f54c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128332"] = "mosque"
+-- emoji:🕌; unicode = 1f54c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕌, 1f54c
+-- format: unicodeKey = tts
+L["128332_65039"] = "mosque"
 -- emoji:🛕; unicode = 1f6d5
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128725"] = "hindu temple"
+-- emoji:🛕; unicode = 1f6d5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛕, 1f6d5
+-- format: unicodeKey = tts
+L["128725_65039"] = "hindu temple"
 -- emoji:🕍; unicode = 1f54d
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128333"] = "synagogue"
+-- emoji:🕍; unicode = 1f54d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕍, 1f54d
+-- format: unicodeKey = tts
+L["128333_65039"] = "synagogue"
 -- emoji:⛩️; unicode = 26e9 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16460,22 +19495,47 @@ L["9961"] = "shinto shrine"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128331"] = "kaaba"
+-- emoji:🕋; unicode = 1f54b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕋, 1f54b
+-- format: unicodeKey = tts
+L["128331_65039"] = "kaaba"
 -- emoji:⛲; unicode = 26f2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9970"] = "fountain"
+-- emoji:⛲; unicode = 26f2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛲, 26f2
+-- format: unicodeKey = tts
+L["9970_65039"] = "fountain"
 -- emoji:⛺; unicode = 26fa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9978"] = "tent"
+-- emoji:⛺; unicode = 26fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛺, 26fa
+-- format: unicodeKey = tts
+L["9978_65039"] = "tent"
 -- emoji:🌁; unicode = 1f301
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127745"] = "foggy"
+-- emoji:🌁; unicode = 1f301 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌁, 1f301
+-- format: unicodeKey = tts
+L["127745_65039"] = "foggy"
 -- emoji:🌃; unicode = 1f303
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127747"] = "night with stars"
+-- emoji:🌃; unicode = 1f303 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌃, 1f303
+-- format: unicodeKey = tts
+L["127747_65039"] = "night with stars"
 -- emoji:🏙️; unicode = 1f3d9 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16489,22 +19549,47 @@ L["127961"] = "cityscape"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127748"] = "sunrise over mountains"
+-- emoji:🌄; unicode = 1f304 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌄, 1f304
+-- format: unicodeKey = tts
+L["127748_65039"] = "sunrise over mountains"
 -- emoji:🌅; unicode = 1f305
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127749"] = "sunrise"
+-- emoji:🌅; unicode = 1f305 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌅, 1f305
+-- format: unicodeKey = tts
+L["127749_65039"] = "sunrise"
 -- emoji:🌆; unicode = 1f306
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127750"] = "cityscape at dusk"
+-- emoji:🌆; unicode = 1f306 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌆, 1f306
+-- format: unicodeKey = tts
+L["127750_65039"] = "cityscape at dusk"
 -- emoji:🌇; unicode = 1f307
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127751"] = "sunset"
+-- emoji:🌇; unicode = 1f307 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌇, 1f307
+-- format: unicodeKey = tts
+L["127751_65039"] = "sunset"
 -- emoji:🌉; unicode = 1f309
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127753"] = "bridge at night"
+-- emoji:🌉; unicode = 1f309 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌉, 1f309
+-- format: unicodeKey = tts
+L["127753_65039"] = "bridge at night"
 -- emoji:♨️; unicode = 2668 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -16518,142 +19603,317 @@ L["9832"] = "hot springs"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127904"] = "carousel horse"
+-- emoji:🎠; unicode = 1f3a0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎠, 1f3a0
+-- format: unicodeKey = tts
+L["127904_65039"] = "carousel horse"
 -- emoji:🛝; unicode = 1f6dd
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["128733"] = "playground slide"
+-- emoji:🛝; unicode = 1f6dd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛝, 1f6dd
+-- format: unicodeKey = tts
+L["128733_65039"] = "playground slide"
 -- emoji:🎡; unicode = 1f3a1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127905"] = "ferris wheel"
+-- emoji:🎡; unicode = 1f3a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎡, 1f3a1
+-- format: unicodeKey = tts
+L["127905_65039"] = "ferris wheel"
 -- emoji:🎢; unicode = 1f3a2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127906"] = "roller coaster"
+-- emoji:🎢; unicode = 1f3a2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎢, 1f3a2
+-- format: unicodeKey = tts
+L["127906_65039"] = "roller coaster"
 -- emoji:💈; unicode = 1f488
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128136"] = "barber pole"
+-- emoji:💈; unicode = 1f488 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💈, 1f488
+-- format: unicodeKey = tts
+L["128136_65039"] = "barber pole"
 -- emoji:🎪; unicode = 1f3aa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127914"] = "circus tent"
+-- emoji:🎪; unicode = 1f3aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎪, 1f3aa
+-- format: unicodeKey = tts
+L["127914_65039"] = "circus tent"
 -- emoji:🚂; unicode = 1f682
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128642"] = "locomotive"
+-- emoji:🚂; unicode = 1f682 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚂, 1f682
+-- format: unicodeKey = tts
+L["128642_65039"] = "locomotive"
 -- emoji:🚃; unicode = 1f683
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128643"] = "railway car"
+-- emoji:🚃; unicode = 1f683 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚃, 1f683
+-- format: unicodeKey = tts
+L["128643_65039"] = "railway car"
 -- emoji:🚄; unicode = 1f684
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128644"] = "high-speed train"
+-- emoji:🚄; unicode = 1f684 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚄, 1f684
+-- format: unicodeKey = tts
+L["128644_65039"] = "high-speed train"
 -- emoji:🚅; unicode = 1f685
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128645"] = "bullet train"
+-- emoji:🚅; unicode = 1f685 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚅, 1f685
+-- format: unicodeKey = tts
+L["128645_65039"] = "bullet train"
 -- emoji:🚆; unicode = 1f686
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128646"] = "train"
+-- emoji:🚆; unicode = 1f686 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚆, 1f686
+-- format: unicodeKey = tts
+L["128646_65039"] = "train"
 -- emoji:🚇; unicode = 1f687
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128647"] = "metro"
+-- emoji:🚇; unicode = 1f687 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚇, 1f687
+-- format: unicodeKey = tts
+L["128647_65039"] = "metro"
 -- emoji:🚈; unicode = 1f688
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128648"] = "light rail"
+-- emoji:🚈; unicode = 1f688 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚈, 1f688
+-- format: unicodeKey = tts
+L["128648_65039"] = "light rail"
 -- emoji:🚉; unicode = 1f689
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128649"] = "station"
+-- emoji:🚉; unicode = 1f689 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚉, 1f689
+-- format: unicodeKey = tts
+L["128649_65039"] = "station"
 -- emoji:🚊; unicode = 1f68a
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128650"] = "tram"
+-- emoji:🚊; unicode = 1f68a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚊, 1f68a
+-- format: unicodeKey = tts
+L["128650_65039"] = "tram"
 -- emoji:🚝; unicode = 1f69d
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128669"] = "monorail"
+-- emoji:🚝; unicode = 1f69d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚝, 1f69d
+-- format: unicodeKey = tts
+L["128669_65039"] = "monorail"
 -- emoji:🚞; unicode = 1f69e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128670"] = "mountain railway"
+-- emoji:🚞; unicode = 1f69e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚞, 1f69e
+-- format: unicodeKey = tts
+L["128670_65039"] = "mountain railway"
 -- emoji:🚋; unicode = 1f68b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128651"] = "tram car"
+-- emoji:🚋; unicode = 1f68b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚋, 1f68b
+-- format: unicodeKey = tts
+L["128651_65039"] = "tram car"
 -- emoji:🚌; unicode = 1f68c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128652"] = "bus"
+-- emoji:🚌; unicode = 1f68c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚌, 1f68c
+-- format: unicodeKey = tts
+L["128652_65039"] = "bus"
 -- emoji:🚍; unicode = 1f68d
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128653"] = "oncoming bus"
+-- emoji:🚍; unicode = 1f68d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚍, 1f68d
+-- format: unicodeKey = tts
+L["128653_65039"] = "oncoming bus"
 -- emoji:🚎; unicode = 1f68e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128654"] = "trolleybus"
+-- emoji:🚎; unicode = 1f68e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚎, 1f68e
+-- format: unicodeKey = tts
+L["128654_65039"] = "trolleybus"
 -- emoji:🚐; unicode = 1f690
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128656"] = "minibus"
+-- emoji:🚐; unicode = 1f690 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚐, 1f690
+-- format: unicodeKey = tts
+L["128656_65039"] = "minibus"
 -- emoji:🚑; unicode = 1f691
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128657"] = "ambulance"
+-- emoji:🚑; unicode = 1f691 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚑, 1f691
+-- format: unicodeKey = tts
+L["128657_65039"] = "ambulance"
 -- emoji:🚒; unicode = 1f692
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128658"] = "fire engine"
+-- emoji:🚒; unicode = 1f692 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚒, 1f692
+-- format: unicodeKey = tts
+L["128658_65039"] = "fire engine"
 -- emoji:🚓; unicode = 1f693
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128659"] = "police car"
+-- emoji:🚓; unicode = 1f693 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚓, 1f693
+-- format: unicodeKey = tts
+L["128659_65039"] = "police car"
 -- emoji:🚔; unicode = 1f694
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128660"] = "oncoming police car"
+-- emoji:🚔; unicode = 1f694 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚔, 1f694
+-- format: unicodeKey = tts
+L["128660_65039"] = "oncoming police car"
 -- emoji:🚕; unicode = 1f695
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128661"] = "taxi"
+-- emoji:🚕; unicode = 1f695 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚕, 1f695
+-- format: unicodeKey = tts
+L["128661_65039"] = "taxi"
 -- emoji:🚖; unicode = 1f696
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128662"] = "oncoming taxi"
+-- emoji:🚖; unicode = 1f696 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚖, 1f696
+-- format: unicodeKey = tts
+L["128662_65039"] = "oncoming taxi"
 -- emoji:🚗; unicode = 1f697
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128663"] = "automobile"
+-- emoji:🚗; unicode = 1f697 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚗, 1f697
+-- format: unicodeKey = tts
+L["128663_65039"] = "automobile"
 -- emoji:🚘; unicode = 1f698
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128664"] = "oncoming automobile"
+-- emoji:🚘; unicode = 1f698 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚘, 1f698
+-- format: unicodeKey = tts
+L["128664_65039"] = "oncoming automobile"
 -- emoji:🚙; unicode = 1f699
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128665"] = "sport utility vehicle"
+-- emoji:🚙; unicode = 1f699 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚙, 1f699
+-- format: unicodeKey = tts
+L["128665_65039"] = "sport utility vehicle"
 -- emoji:🛻; unicode = 1f6fb
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["128763"] = "pickup truck"
+-- emoji:🛻; unicode = 1f6fb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛻, 1f6fb
+-- format: unicodeKey = tts
+L["128763_65039"] = "pickup truck"
 -- emoji:🚚; unicode = 1f69a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128666"] = "delivery truck"
+-- emoji:🚚; unicode = 1f69a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚚, 1f69a
+-- format: unicodeKey = tts
+L["128666_65039"] = "delivery truck"
 -- emoji:🚛; unicode = 1f69b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128667"] = "articulated lorry"
+-- emoji:🚛; unicode = 1f69b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚛, 1f69b
+-- format: unicodeKey = tts
+L["128667_65039"] = "articulated lorry"
 -- emoji:🚜; unicode = 1f69c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128668"] = "tractor"
+-- emoji:🚜; unicode = 1f69c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚜, 1f69c
+-- format: unicodeKey = tts
+L["128668_65039"] = "tractor"
 -- emoji:🏎️; unicode = 1f3ce fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16676,38 +19936,83 @@ L["127949"] = "motorcycle"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128757"] = "motor scooter"
+-- emoji:🛵; unicode = 1f6f5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛵, 1f6f5
+-- format: unicodeKey = tts
+L["128757_65039"] = "motor scooter"
 -- emoji:🦽; unicode = 1f9bd
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129469"] = "manual wheelchair"
+-- emoji:🦽; unicode = 1f9bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦽, 1f9bd
+-- format: unicodeKey = tts
+L["129469_65039"] = "manual wheelchair"
 -- emoji:🦼; unicode = 1f9bc
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129468"] = "motorized wheelchair"
+-- emoji:🦼; unicode = 1f9bc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦼, 1f9bc
+-- format: unicodeKey = tts
+L["129468_65039"] = "motorized wheelchair"
 -- emoji:🛺; unicode = 1f6fa
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128762"] = "auto rickshaw"
+-- emoji:🛺; unicode = 1f6fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛺, 1f6fa
+-- format: unicodeKey = tts
+L["128762_65039"] = "auto rickshaw"
 -- emoji:🚲; unicode = 1f6b2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128690"] = "bicycle"
+-- emoji:🚲; unicode = 1f6b2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚲, 1f6b2
+-- format: unicodeKey = tts
+L["128690_65039"] = "bicycle"
 -- emoji:🛴; unicode = 1f6f4
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128756"] = "kick scooter"
+-- emoji:🛴; unicode = 1f6f4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛴, 1f6f4
+-- format: unicodeKey = tts
+L["128756_65039"] = "kick scooter"
 -- emoji:🛹; unicode = 1f6f9
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["128761"] = "skateboard"
+-- emoji:🛹; unicode = 1f6f9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛹, 1f6f9
+-- format: unicodeKey = tts
+L["128761_65039"] = "skateboard"
 -- emoji:🛼; unicode = 1f6fc
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["128764"] = "roller skate"
+-- emoji:🛼; unicode = 1f6fc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛼, 1f6fc
+-- format: unicodeKey = tts
+L["128764_65039"] = "roller skate"
 -- emoji:🚏; unicode = 1f68f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128655"] = "bus stop"
+-- emoji:🚏; unicode = 1f68f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚏, 1f68f
+-- format: unicodeKey = tts
+L["128655_65039"] = "bus stop"
 -- emoji:🛣️; unicode = 1f6e3 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16739,50 +20044,110 @@ L["128738"] = "oil drum"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9981"] = "fuel pump"
+-- emoji:⛽; unicode = 26fd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛽, 26fd
+-- format: unicodeKey = tts
+L["9981_65039"] = "fuel pump"
 -- emoji:🛞; unicode = 1f6de
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["128734"] = "wheel"
+-- emoji:🛞; unicode = 1f6de fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛞, 1f6de
+-- format: unicodeKey = tts
+L["128734_65039"] = "wheel"
 -- emoji:🚨; unicode = 1f6a8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128680"] = "police car light"
+-- emoji:🚨; unicode = 1f6a8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚨, 1f6a8
+-- format: unicodeKey = tts
+L["128680_65039"] = "police car light"
 -- emoji:🚥; unicode = 1f6a5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128677"] = "horizontal traffic light"
+-- emoji:🚥; unicode = 1f6a5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚥, 1f6a5
+-- format: unicodeKey = tts
+L["128677_65039"] = "horizontal traffic light"
 -- emoji:🚦; unicode = 1f6a6
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128678"] = "vertical traffic light"
+-- emoji:🚦; unicode = 1f6a6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚦, 1f6a6
+-- format: unicodeKey = tts
+L["128678_65039"] = "vertical traffic light"
 -- emoji:🛑; unicode = 1f6d1
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128721"] = "stop sign"
+-- emoji:🛑; unicode = 1f6d1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛑, 1f6d1
+-- format: unicodeKey = tts
+L["128721_65039"] = "stop sign"
 -- emoji:🚧; unicode = 1f6a7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128679"] = "construction"
+-- emoji:🚧; unicode = 1f6a7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚧, 1f6a7
+-- format: unicodeKey = tts
+L["128679_65039"] = "construction"
 -- emoji:⚓; unicode = 2693
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9875"] = "anchor"
+-- emoji:⚓; unicode = 2693 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚓, 2693
+-- format: unicodeKey = tts
+L["9875_65039"] = "anchor"
 -- emoji:🛟; unicode = 1f6df
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["128735"] = "ring buoy"
+-- emoji:🛟; unicode = 1f6df fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛟, 1f6df
+-- format: unicodeKey = tts
+L["128735_65039"] = "ring buoy"
 -- emoji:⛵; unicode = 26f5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9973"] = "sailboat"
+-- emoji:⛵; unicode = 26f5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛵, 26f5
+-- format: unicodeKey = tts
+L["9973_65039"] = "sailboat"
 -- emoji:🛶; unicode = 1f6f6
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128758"] = "canoe"
+-- emoji:🛶; unicode = 1f6f6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛶, 1f6f6
+-- format: unicodeKey = tts
+L["128758_65039"] = "canoe"
 -- emoji:🚤; unicode = 1f6a4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128676"] = "speedboat"
+-- emoji:🚤; unicode = 1f6a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚤, 1f6a4
+-- format: unicodeKey = tts
+L["128676_65039"] = "speedboat"
 -- emoji:🛳️; unicode = 1f6f3 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16814,6 +20179,11 @@ L["128741"] = "motor boat"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128674"] = "ship"
+-- emoji:🚢; unicode = 1f6a2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚢, 1f6a2
+-- format: unicodeKey = tts
+L["128674_65039"] = "ship"
 -- emoji:✈️; unicode = 2708 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -16836,34 +20206,74 @@ L["128745"] = "small airplane"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128747"] = "airplane departure"
+-- emoji:🛫; unicode = 1f6eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛫, 1f6eb
+-- format: unicodeKey = tts
+L["128747_65039"] = "airplane departure"
 -- emoji:🛬; unicode = 1f6ec
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128748"] = "airplane arrival"
+-- emoji:🛬; unicode = 1f6ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛬, 1f6ec
+-- format: unicodeKey = tts
+L["128748_65039"] = "airplane arrival"
 -- emoji:🪂; unicode = 1fa82
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129666"] = "parachute"
+-- emoji:🪂; unicode = 1fa82 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪂, 1fa82
+-- format: unicodeKey = tts
+L["129666_65039"] = "parachute"
 -- emoji:💺; unicode = 1f4ba
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128186"] = "seat"
+-- emoji:💺; unicode = 1f4ba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💺, 1f4ba
+-- format: unicodeKey = tts
+L["128186_65039"] = "seat"
 -- emoji:🚁; unicode = 1f681
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128641"] = "helicopter"
+-- emoji:🚁; unicode = 1f681 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚁, 1f681
+-- format: unicodeKey = tts
+L["128641_65039"] = "helicopter"
 -- emoji:🚟; unicode = 1f69f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128671"] = "suspension railway"
+-- emoji:🚟; unicode = 1f69f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚟, 1f69f
+-- format: unicodeKey = tts
+L["128671_65039"] = "suspension railway"
 -- emoji:🚠; unicode = 1f6a0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128672"] = "mountain cableway"
+-- emoji:🚠; unicode = 1f6a0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚠, 1f6a0
+-- format: unicodeKey = tts
+L["128672_65039"] = "mountain cableway"
 -- emoji:🚡; unicode = 1f6a1
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128673"] = "aerial tramway"
+-- emoji:🚡; unicode = 1f6a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚡, 1f6a1
+-- format: unicodeKey = tts
+L["128673_65039"] = "aerial tramway"
 -- emoji:🛰️; unicode = 1f6f0 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16877,10 +20287,20 @@ L["128752"] = "satellite"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128640"] = "rocket"
+-- emoji:🚀; unicode = 1f680 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚀, 1f680
+-- format: unicodeKey = tts
+L["128640_65039"] = "rocket"
 -- emoji:🛸; unicode = 1f6f8
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["128760"] = "flying saucer"
+-- emoji:🛸; unicode = 1f6f8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛸, 1f6f8
+-- format: unicodeKey = tts
+L["128760_65039"] = "flying saucer"
 -- emoji:🛎️; unicode = 1f6ce fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16894,22 +20314,47 @@ L["128718"] = "bellhop bell"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129523"] = "luggage"
+-- emoji:🧳; unicode = 1f9f3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧳, 1f9f3
+-- format: unicodeKey = tts
+L["129523_65039"] = "luggage"
 -- emoji:⌛; unicode = 231b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["8987"] = "hourglass done"
+-- emoji:⌛; unicode = 231b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⌛, 231b
+-- format: unicodeKey = tts
+L["8987_65039"] = "hourglass done"
 -- emoji:⏳; unicode = 23f3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9203"] = "hourglass not done"
+-- emoji:⏳; unicode = 23f3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏳, 23f3
+-- format: unicodeKey = tts
+L["9203_65039"] = "hourglass not done"
 -- emoji:⌚; unicode = 231a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["8986"] = "watch"
+-- emoji:⌚; unicode = 231a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⌚, 231a
+-- format: unicodeKey = tts
+L["8986_65039"] = "watch"
 -- emoji:⏰; unicode = 23f0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9200"] = "alarm clock"
+-- emoji:⏰; unicode = 23f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏰, 23f0
+-- format: unicodeKey = tts
+L["9200_65039"] = "alarm clock"
 -- emoji:⏱️; unicode = 23f1 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -16941,146 +20386,326 @@ L["128368"] = "mantelpiece clock"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128347"] = "twelve o’clock"
+-- emoji:🕛; unicode = 1f55b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕛, 1f55b
+-- format: unicodeKey = tts
+L["128347_65039"] = "twelve o’clock"
 -- emoji:🕧; unicode = 1f567
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128359"] = "twelve-thirty"
+-- emoji:🕧; unicode = 1f567 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕧, 1f567
+-- format: unicodeKey = tts
+L["128359_65039"] = "twelve-thirty"
 -- emoji:🕐; unicode = 1f550
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128336"] = "one o’clock"
+-- emoji:🕐; unicode = 1f550 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕐, 1f550
+-- format: unicodeKey = tts
+L["128336_65039"] = "one o’clock"
 -- emoji:🕜; unicode = 1f55c
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128348"] = "one-thirty"
+-- emoji:🕜; unicode = 1f55c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕜, 1f55c
+-- format: unicodeKey = tts
+L["128348_65039"] = "one-thirty"
 -- emoji:🕑; unicode = 1f551
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128337"] = "two o’clock"
+-- emoji:🕑; unicode = 1f551 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕑, 1f551
+-- format: unicodeKey = tts
+L["128337_65039"] = "two o’clock"
 -- emoji:🕝; unicode = 1f55d
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128349"] = "two-thirty"
+-- emoji:🕝; unicode = 1f55d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕝, 1f55d
+-- format: unicodeKey = tts
+L["128349_65039"] = "two-thirty"
 -- emoji:🕒; unicode = 1f552
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128338"] = "three o’clock"
+-- emoji:🕒; unicode = 1f552 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕒, 1f552
+-- format: unicodeKey = tts
+L["128338_65039"] = "three o’clock"
 -- emoji:🕞; unicode = 1f55e
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128350"] = "three-thirty"
+-- emoji:🕞; unicode = 1f55e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕞, 1f55e
+-- format: unicodeKey = tts
+L["128350_65039"] = "three-thirty"
 -- emoji:🕓; unicode = 1f553
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128339"] = "four o’clock"
+-- emoji:🕓; unicode = 1f553 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕓, 1f553
+-- format: unicodeKey = tts
+L["128339_65039"] = "four o’clock"
 -- emoji:🕟; unicode = 1f55f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128351"] = "four-thirty"
+-- emoji:🕟; unicode = 1f55f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕟, 1f55f
+-- format: unicodeKey = tts
+L["128351_65039"] = "four-thirty"
 -- emoji:🕔; unicode = 1f554
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128340"] = "five o’clock"
+-- emoji:🕔; unicode = 1f554 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕔, 1f554
+-- format: unicodeKey = tts
+L["128340_65039"] = "five o’clock"
 -- emoji:🕠; unicode = 1f560
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128352"] = "five-thirty"
+-- emoji:🕠; unicode = 1f560 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕠, 1f560
+-- format: unicodeKey = tts
+L["128352_65039"] = "five-thirty"
 -- emoji:🕕; unicode = 1f555
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128341"] = "six o’clock"
+-- emoji:🕕; unicode = 1f555 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕕, 1f555
+-- format: unicodeKey = tts
+L["128341_65039"] = "six o’clock"
 -- emoji:🕡; unicode = 1f561
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128353"] = "six-thirty"
+-- emoji:🕡; unicode = 1f561 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕡, 1f561
+-- format: unicodeKey = tts
+L["128353_65039"] = "six-thirty"
 -- emoji:🕖; unicode = 1f556
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128342"] = "seven o’clock"
+-- emoji:🕖; unicode = 1f556 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕖, 1f556
+-- format: unicodeKey = tts
+L["128342_65039"] = "seven o’clock"
 -- emoji:🕢; unicode = 1f562
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128354"] = "seven-thirty"
+-- emoji:🕢; unicode = 1f562 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕢, 1f562
+-- format: unicodeKey = tts
+L["128354_65039"] = "seven-thirty"
 -- emoji:🕗; unicode = 1f557
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128343"] = "eight o’clock"
+-- emoji:🕗; unicode = 1f557 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕗, 1f557
+-- format: unicodeKey = tts
+L["128343_65039"] = "eight o’clock"
 -- emoji:🕣; unicode = 1f563
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128355"] = "eight-thirty"
+-- emoji:🕣; unicode = 1f563 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕣, 1f563
+-- format: unicodeKey = tts
+L["128355_65039"] = "eight-thirty"
 -- emoji:🕘; unicode = 1f558
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128344"] = "nine o’clock"
+-- emoji:🕘; unicode = 1f558 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕘, 1f558
+-- format: unicodeKey = tts
+L["128344_65039"] = "nine o’clock"
 -- emoji:🕤; unicode = 1f564
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128356"] = "nine-thirty"
+-- emoji:🕤; unicode = 1f564 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕤, 1f564
+-- format: unicodeKey = tts
+L["128356_65039"] = "nine-thirty"
 -- emoji:🕙; unicode = 1f559
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128345"] = "ten o’clock"
+-- emoji:🕙; unicode = 1f559 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕙, 1f559
+-- format: unicodeKey = tts
+L["128345_65039"] = "ten o’clock"
 -- emoji:🕥; unicode = 1f565
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128357"] = "ten-thirty"
+-- emoji:🕥; unicode = 1f565 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕥, 1f565
+-- format: unicodeKey = tts
+L["128357_65039"] = "ten-thirty"
 -- emoji:🕚; unicode = 1f55a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128346"] = "eleven o’clock"
+-- emoji:🕚; unicode = 1f55a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕚, 1f55a
+-- format: unicodeKey = tts
+L["128346_65039"] = "eleven o’clock"
 -- emoji:🕦; unicode = 1f566
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128358"] = "eleven-thirty"
+-- emoji:🕦; unicode = 1f566 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕦, 1f566
+-- format: unicodeKey = tts
+L["128358_65039"] = "eleven-thirty"
 -- emoji:🌑; unicode = 1f311
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127761"] = "new moon"
+-- emoji:🌑; unicode = 1f311 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌑, 1f311
+-- format: unicodeKey = tts
+L["127761_65039"] = "new moon"
 -- emoji:🌒; unicode = 1f312
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127762"] = "waxing crescent moon"
+-- emoji:🌒; unicode = 1f312 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌒, 1f312
+-- format: unicodeKey = tts
+L["127762_65039"] = "waxing crescent moon"
 -- emoji:🌓; unicode = 1f313
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127763"] = "first quarter moon"
+-- emoji:🌓; unicode = 1f313 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌓, 1f313
+-- format: unicodeKey = tts
+L["127763_65039"] = "first quarter moon"
 -- emoji:🌔; unicode = 1f314
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127764"] = "waxing gibbous moon"
+-- emoji:🌔; unicode = 1f314 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌔, 1f314
+-- format: unicodeKey = tts
+L["127764_65039"] = "waxing gibbous moon"
 -- emoji:🌕; unicode = 1f315
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127765"] = "full moon"
+-- emoji:🌕; unicode = 1f315 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌕, 1f315
+-- format: unicodeKey = tts
+L["127765_65039"] = "full moon"
 -- emoji:🌖; unicode = 1f316
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127766"] = "waning gibbous moon"
+-- emoji:🌖; unicode = 1f316 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌖, 1f316
+-- format: unicodeKey = tts
+L["127766_65039"] = "waning gibbous moon"
 -- emoji:🌗; unicode = 1f317
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127767"] = "last quarter moon"
+-- emoji:🌗; unicode = 1f317 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌗, 1f317
+-- format: unicodeKey = tts
+L["127767_65039"] = "last quarter moon"
 -- emoji:🌘; unicode = 1f318
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127768"] = "waning crescent moon"
+-- emoji:🌘; unicode = 1f318 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌘, 1f318
+-- format: unicodeKey = tts
+L["127768_65039"] = "waning crescent moon"
 -- emoji:🌙; unicode = 1f319
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127769"] = "crescent moon"
+-- emoji:🌙; unicode = 1f319 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌙, 1f319
+-- format: unicodeKey = tts
+L["127769_65039"] = "crescent moon"
 -- emoji:🌚; unicode = 1f31a
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127770"] = "new moon face"
+-- emoji:🌚; unicode = 1f31a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌚, 1f31a
+-- format: unicodeKey = tts
+L["127770_65039"] = "new moon face"
 -- emoji:🌛; unicode = 1f31b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127771"] = "first quarter moon face"
+-- emoji:🌛; unicode = 1f31b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌛, 1f31b
+-- format: unicodeKey = tts
+L["127771_65039"] = "first quarter moon face"
 -- emoji:🌜; unicode = 1f31c
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["127772"] = "last quarter moon face"
+-- emoji:🌜; unicode = 1f31c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌜, 1f31c
+-- format: unicodeKey = tts
+L["127772_65039"] = "last quarter moon face"
 -- emoji:🌡️; unicode = 1f321 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17103,30 +20728,65 @@ L["9728"] = "sun"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127773"] = "full moon face"
+-- emoji:🌝; unicode = 1f31d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌝, 1f31d
+-- format: unicodeKey = tts
+L["127773_65039"] = "full moon face"
 -- emoji:🌞; unicode = 1f31e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127774"] = "sun with face"
+-- emoji:🌞; unicode = 1f31e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌞, 1f31e
+-- format: unicodeKey = tts
+L["127774_65039"] = "sun with face"
 -- emoji:🪐; unicode = 1fa90
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129680"] = "ringed planet"
+-- emoji:🪐; unicode = 1fa90 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪐, 1fa90
+-- format: unicodeKey = tts
+L["129680_65039"] = "ringed planet"
 -- emoji:⭐; unicode = 2b50
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["11088"] = "star"
+-- emoji:⭐; unicode = 2b50 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⭐, 2b50
+-- format: unicodeKey = tts
+L["11088_65039"] = "star"
 -- emoji:🌟; unicode = 1f31f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127775"] = "glowing star"
+-- emoji:🌟; unicode = 1f31f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌟, 1f31f
+-- format: unicodeKey = tts
+L["127775_65039"] = "glowing star"
 -- emoji:🌠; unicode = 1f320
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127776"] = "shooting star"
+-- emoji:🌠; unicode = 1f320 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌠, 1f320
+-- format: unicodeKey = tts
+L["127776_65039"] = "shooting star"
 -- emoji:🌌; unicode = 1f30c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127756"] = "milky way"
+-- emoji:🌌; unicode = 1f30c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌌, 1f30c
+-- format: unicodeKey = tts
+L["127756_65039"] = "milky way"
 -- emoji:☁️; unicode = 2601 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -17140,6 +20800,11 @@ L["9729"] = "cloud"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9925"] = "sun behind cloud"
+-- emoji:⛅; unicode = 26c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛅, 26c5
+-- format: unicodeKey = tts
+L["9925_65039"] = "sun behind cloud"
 -- emoji:⛈️; unicode = 26c8 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17234,14 +20899,29 @@ L["127788"] = "wind face"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127744"] = "cyclone"
+-- emoji:🌀; unicode = 1f300 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌀, 1f300
+-- format: unicodeKey = tts
+L["127744_65039"] = "cyclone"
 -- emoji:🌈; unicode = 1f308
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127752"] = "rainbow"
+-- emoji:🌈; unicode = 1f308 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌈, 1f308
+-- format: unicodeKey = tts
+L["127752_65039"] = "rainbow"
 -- emoji:🌂; unicode = 1f302
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127746"] = "closed umbrella"
+-- emoji:🌂; unicode = 1f302 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌂, 1f302
+-- format: unicodeKey = tts
+L["127746_65039"] = "closed umbrella"
 -- emoji:☂️; unicode = 2602 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17255,6 +20935,11 @@ L["9730"] = "umbrella"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9748"] = "umbrella with rain drops"
+-- emoji:☔; unicode = 2614 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ☔, 2614
+-- format: unicodeKey = tts
+L["9748_65039"] = "umbrella with rain drops"
 -- emoji:⛱️; unicode = 26f1 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17268,6 +20953,11 @@ L["9969"] = "umbrella on ground"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9889"] = "high voltage"
+-- emoji:⚡; unicode = 26a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚡, 26a1
+-- format: unicodeKey = tts
+L["9889_65039"] = "high voltage"
 -- emoji:❄️; unicode = 2744 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -17290,6 +20980,11 @@ L["9731"] = "snowman"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9924"] = "snowman without snow"
+-- emoji:⛄; unicode = 26c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛄, 26c4
+-- format: unicodeKey = tts
+L["9924_65039"] = "snowman without snow"
 -- emoji:☄️; unicode = 2604 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -17303,86 +20998,191 @@ L["9732"] = "comet"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128293"] = "fire"
+-- emoji:🔥; unicode = 1f525 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔥, 1f525
+-- format: unicodeKey = tts
+L["128293_65039"] = "fire"
 -- emoji:💧; unicode = 1f4a7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128167"] = "droplet"
+-- emoji:💧; unicode = 1f4a7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💧, 1f4a7
+-- format: unicodeKey = tts
+L["128167_65039"] = "droplet"
 -- emoji:🌊; unicode = 1f30a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127754"] = "water wave"
+-- emoji:🌊; unicode = 1f30a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌊, 1f30a
+-- format: unicodeKey = tts
+L["127754_65039"] = "water wave"
 -- emoji:🎃; unicode = 1f383
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127875"] = "jack-o-lantern"
+-- emoji:🎃; unicode = 1f383 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎃, 1f383
+-- format: unicodeKey = tts
+L["127875_65039"] = "jack-o-lantern"
 -- emoji:🎄; unicode = 1f384
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127876"] = "Christmas tree"
+-- emoji:🎄; unicode = 1f384 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎄, 1f384
+-- format: unicodeKey = tts
+L["127876_65039"] = "Christmas tree"
 -- emoji:🎆; unicode = 1f386
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127878"] = "fireworks"
+-- emoji:🎆; unicode = 1f386 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎆, 1f386
+-- format: unicodeKey = tts
+L["127878_65039"] = "fireworks"
 -- emoji:🎇; unicode = 1f387
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127879"] = "sparkler"
+-- emoji:🎇; unicode = 1f387 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎇, 1f387
+-- format: unicodeKey = tts
+L["127879_65039"] = "sparkler"
 -- emoji:🧨; unicode = 1f9e8
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129512"] = "firecracker"
+-- emoji:🧨; unicode = 1f9e8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧨, 1f9e8
+-- format: unicodeKey = tts
+L["129512_65039"] = "firecracker"
 -- emoji:✨; unicode = 2728
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10024"] = "sparkles"
+-- emoji:✨; unicode = 2728 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ✨, 2728
+-- format: unicodeKey = tts
+L["10024_65039"] = "sparkles"
 -- emoji:🎈; unicode = 1f388
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127880"] = "balloon"
+-- emoji:🎈; unicode = 1f388 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎈, 1f388
+-- format: unicodeKey = tts
+L["127880_65039"] = "balloon"
 -- emoji:🎉; unicode = 1f389
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127881"] = "party popper"
+-- emoji:🎉; unicode = 1f389 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎉, 1f389
+-- format: unicodeKey = tts
+L["127881_65039"] = "party popper"
 -- emoji:🎊; unicode = 1f38a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127882"] = "confetti ball"
+-- emoji:🎊; unicode = 1f38a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎊, 1f38a
+-- format: unicodeKey = tts
+L["127882_65039"] = "confetti ball"
 -- emoji:🎋; unicode = 1f38b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127883"] = "tanabata tree"
+-- emoji:🎋; unicode = 1f38b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎋, 1f38b
+-- format: unicodeKey = tts
+L["127883_65039"] = "tanabata tree"
 -- emoji:🎍; unicode = 1f38d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127885"] = "pine decoration"
+-- emoji:🎍; unicode = 1f38d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎍, 1f38d
+-- format: unicodeKey = tts
+L["127885_65039"] = "pine decoration"
 -- emoji:🎎; unicode = 1f38e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127886"] = "Japanese dolls"
+-- emoji:🎎; unicode = 1f38e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎎, 1f38e
+-- format: unicodeKey = tts
+L["127886_65039"] = "Japanese dolls"
 -- emoji:🎏; unicode = 1f38f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127887"] = "carp streamer"
+-- emoji:🎏; unicode = 1f38f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎏, 1f38f
+-- format: unicodeKey = tts
+L["127887_65039"] = "carp streamer"
 -- emoji:🎐; unicode = 1f390
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127888"] = "wind chime"
+-- emoji:🎐; unicode = 1f390 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎐, 1f390
+-- format: unicodeKey = tts
+L["127888_65039"] = "wind chime"
 -- emoji:🎑; unicode = 1f391
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127889"] = "moon viewing ceremony"
+-- emoji:🎑; unicode = 1f391 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎑, 1f391
+-- format: unicodeKey = tts
+L["127889_65039"] = "moon viewing ceremony"
 -- emoji:🧧; unicode = 1f9e7
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129511"] = "red envelope"
+-- emoji:🧧; unicode = 1f9e7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧧, 1f9e7
+-- format: unicodeKey = tts
+L["129511_65039"] = "red envelope"
 -- emoji:🎀; unicode = 1f380
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127872"] = "ribbon"
+-- emoji:🎀; unicode = 1f380 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎀, 1f380
+-- format: unicodeKey = tts
+L["127872_65039"] = "ribbon"
 -- emoji:🎁; unicode = 1f381
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127873"] = "wrapped gift"
+-- emoji:🎁; unicode = 1f381 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎁, 1f381
+-- format: unicodeKey = tts
+L["127873_65039"] = "wrapped gift"
 -- emoji:🎗️; unicode = 1f397 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17405,6 +21205,11 @@ L["127903"] = "admission tickets"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127915"] = "ticket"
+-- emoji:🎫; unicode = 1f3ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎫, 1f3ab
+-- format: unicodeKey = tts
+L["127915_65039"] = "ticket"
 -- emoji:🎖️; unicode = 1f396 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17418,102 +21223,227 @@ L["127894"] = "military medal"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127942"] = "trophy"
+-- emoji:🏆; unicode = 1f3c6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏆, 1f3c6
+-- format: unicodeKey = tts
+L["127942_65039"] = "trophy"
 -- emoji:🏅; unicode = 1f3c5
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127941"] = "sports medal"
+-- emoji:🏅; unicode = 1f3c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏅, 1f3c5
+-- format: unicodeKey = tts
+L["127941_65039"] = "sports medal"
 -- emoji:🥇; unicode = 1f947
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129351"] = "1st place medal"
+-- emoji:🥇; unicode = 1f947 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥇, 1f947
+-- format: unicodeKey = tts
+L["129351_65039"] = "1st place medal"
 -- emoji:🥈; unicode = 1f948
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129352"] = "2nd place medal"
+-- emoji:🥈; unicode = 1f948 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥈, 1f948
+-- format: unicodeKey = tts
+L["129352_65039"] = "2nd place medal"
 -- emoji:🥉; unicode = 1f949
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129353"] = "3rd place medal"
+-- emoji:🥉; unicode = 1f949 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥉, 1f949
+-- format: unicodeKey = tts
+L["129353_65039"] = "3rd place medal"
 -- emoji:⚽; unicode = 26bd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9917"] = "soccer ball"
+-- emoji:⚽; unicode = 26bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚽, 26bd
+-- format: unicodeKey = tts
+L["9917_65039"] = "soccer ball"
 -- emoji:⚾; unicode = 26be
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9918"] = "baseball"
+-- emoji:⚾; unicode = 26be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚾, 26be
+-- format: unicodeKey = tts
+L["9918_65039"] = "baseball"
 -- emoji:🥎; unicode = 1f94e
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129358"] = "softball"
+-- emoji:🥎; unicode = 1f94e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥎, 1f94e
+-- format: unicodeKey = tts
+L["129358_65039"] = "softball"
 -- emoji:🏀; unicode = 1f3c0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127936"] = "basketball"
+-- emoji:🏀; unicode = 1f3c0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏀, 1f3c0
+-- format: unicodeKey = tts
+L["127936_65039"] = "basketball"
 -- emoji:🏐; unicode = 1f3d0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127952"] = "volleyball"
+-- emoji:🏐; unicode = 1f3d0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏐, 1f3d0
+-- format: unicodeKey = tts
+L["127952_65039"] = "volleyball"
 -- emoji:🏈; unicode = 1f3c8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127944"] = "american football"
+-- emoji:🏈; unicode = 1f3c8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏈, 1f3c8
+-- format: unicodeKey = tts
+L["127944_65039"] = "american football"
 -- emoji:🏉; unicode = 1f3c9
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127945"] = "rugby football"
+-- emoji:🏉; unicode = 1f3c9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏉, 1f3c9
+-- format: unicodeKey = tts
+L["127945_65039"] = "rugby football"
 -- emoji:🎾; unicode = 1f3be
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127934"] = "tennis"
+-- emoji:🎾; unicode = 1f3be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎾, 1f3be
+-- format: unicodeKey = tts
+L["127934_65039"] = "tennis"
 -- emoji:🥏; unicode = 1f94f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129359"] = "flying disc"
+-- emoji:🥏; unicode = 1f94f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥏, 1f94f
+-- format: unicodeKey = tts
+L["129359_65039"] = "flying disc"
 -- emoji:🎳; unicode = 1f3b3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127923"] = "bowling"
+-- emoji:🎳; unicode = 1f3b3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎳, 1f3b3
+-- format: unicodeKey = tts
+L["127923_65039"] = "bowling"
 -- emoji:🏏; unicode = 1f3cf
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127951"] = "cricket game"
+-- emoji:🏏; unicode = 1f3cf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏏, 1f3cf
+-- format: unicodeKey = tts
+L["127951_65039"] = "cricket game"
 -- emoji:🏑; unicode = 1f3d1
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127953"] = "field hockey"
+-- emoji:🏑; unicode = 1f3d1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏑, 1f3d1
+-- format: unicodeKey = tts
+L["127953_65039"] = "field hockey"
 -- emoji:🏒; unicode = 1f3d2
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127954"] = "ice hockey"
+-- emoji:🏒; unicode = 1f3d2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏒, 1f3d2
+-- format: unicodeKey = tts
+L["127954_65039"] = "ice hockey"
 -- emoji:🥍; unicode = 1f94d
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129357"] = "lacrosse"
+-- emoji:🥍; unicode = 1f94d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥍, 1f94d
+-- format: unicodeKey = tts
+L["129357_65039"] = "lacrosse"
 -- emoji:🏓; unicode = 1f3d3
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127955"] = "ping pong"
+-- emoji:🏓; unicode = 1f3d3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏓, 1f3d3
+-- format: unicodeKey = tts
+L["127955_65039"] = "ping pong"
 -- emoji:🏸; unicode = 1f3f8
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127992"] = "badminton"
+-- emoji:🏸; unicode = 1f3f8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏸, 1f3f8
+-- format: unicodeKey = tts
+L["127992_65039"] = "badminton"
 -- emoji:🥊; unicode = 1f94a
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129354"] = "boxing glove"
+-- emoji:🥊; unicode = 1f94a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥊, 1f94a
+-- format: unicodeKey = tts
+L["129354_65039"] = "boxing glove"
 -- emoji:🥋; unicode = 1f94b
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129355"] = "martial arts uniform"
+-- emoji:🥋; unicode = 1f94b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥋, 1f94b
+-- format: unicodeKey = tts
+L["129355_65039"] = "martial arts uniform"
 -- emoji:🥅; unicode = 1f945
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129349"] = "goal net"
+-- emoji:🥅; unicode = 1f945 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥅, 1f945
+-- format: unicodeKey = tts
+L["129349_65039"] = "goal net"
 -- emoji:⛳; unicode = 26f3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9971"] = "flag in hole"
+-- emoji:⛳; unicode = 26f3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛳, 26f3
+-- format: unicodeKey = tts
+L["9971_65039"] = "flag in hole"
 -- emoji:⛸️; unicode = 26f8 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17527,58 +21457,128 @@ L["9976"] = "ice skate"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127907"] = "fishing pole"
+-- emoji:🎣; unicode = 1f3a3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎣, 1f3a3
+-- format: unicodeKey = tts
+L["127907_65039"] = "fishing pole"
 -- emoji:🤿; unicode = 1f93f
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129343"] = "diving mask"
+-- emoji:🤿; unicode = 1f93f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤿, 1f93f
+-- format: unicodeKey = tts
+L["129343_65039"] = "diving mask"
 -- emoji:🎽; unicode = 1f3bd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127933"] = "running shirt"
+-- emoji:🎽; unicode = 1f3bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎽, 1f3bd
+-- format: unicodeKey = tts
+L["127933_65039"] = "running shirt"
 -- emoji:🎿; unicode = 1f3bf
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127935"] = "skis"
+-- emoji:🎿; unicode = 1f3bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎿, 1f3bf
+-- format: unicodeKey = tts
+L["127935_65039"] = "skis"
 -- emoji:🛷; unicode = 1f6f7
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["128759"] = "sled"
+-- emoji:🛷; unicode = 1f6f7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛷, 1f6f7
+-- format: unicodeKey = tts
+L["128759_65039"] = "sled"
 -- emoji:🥌; unicode = 1f94c
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129356"] = "curling stone"
+-- emoji:🥌; unicode = 1f94c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥌, 1f94c
+-- format: unicodeKey = tts
+L["129356_65039"] = "curling stone"
 -- emoji:🎯; unicode = 1f3af
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127919"] = "bullseye"
+-- emoji:🎯; unicode = 1f3af fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎯, 1f3af
+-- format: unicodeKey = tts
+L["127919_65039"] = "bullseye"
 -- emoji:🪀; unicode = 1fa80
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129664"] = "yo-yo"
+-- emoji:🪀; unicode = 1fa80 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪀, 1fa80
+-- format: unicodeKey = tts
+L["129664_65039"] = "yo-yo"
 -- emoji:🪁; unicode = 1fa81
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129665"] = "kite"
+-- emoji:🪁; unicode = 1fa81 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪁, 1fa81
+-- format: unicodeKey = tts
+L["129665_65039"] = "kite"
 -- emoji:🔫; unicode = 1f52b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128299"] = "water pistol"
+-- emoji:🔫; unicode = 1f52b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔫, 1f52b
+-- format: unicodeKey = tts
+L["128299_65039"] = "water pistol"
 -- emoji:🎱; unicode = 1f3b1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127921"] = "pool 8 ball"
+-- emoji:🎱; unicode = 1f3b1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎱, 1f3b1
+-- format: unicodeKey = tts
+L["127921_65039"] = "pool 8 ball"
 -- emoji:🔮; unicode = 1f52e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128302"] = "crystal ball"
+-- emoji:🔮; unicode = 1f52e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔮, 1f52e
+-- format: unicodeKey = tts
+L["128302_65039"] = "crystal ball"
 -- emoji:🪄; unicode = 1fa84
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129668"] = "magic wand"
+-- emoji:🪄; unicode = 1fa84 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪄, 1fa84
+-- format: unicodeKey = tts
+L["129668_65039"] = "magic wand"
 -- emoji:🎮; unicode = 1f3ae
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127918"] = "video game"
+-- emoji:🎮; unicode = 1f3ae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎮, 1f3ae
+-- format: unicodeKey = tts
+L["127918_65039"] = "video game"
 -- emoji:🕹️; unicode = 1f579 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17592,30 +21592,65 @@ L["128377"] = "joystick"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127920"] = "slot machine"
+-- emoji:🎰; unicode = 1f3b0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎰, 1f3b0
+-- format: unicodeKey = tts
+L["127920_65039"] = "slot machine"
 -- emoji:🎲; unicode = 1f3b2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127922"] = "game die"
+-- emoji:🎲; unicode = 1f3b2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎲, 1f3b2
+-- format: unicodeKey = tts
+L["127922_65039"] = "game die"
 -- emoji:🧩; unicode = 1f9e9
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129513"] = "puzzle piece"
+-- emoji:🧩; unicode = 1f9e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧩, 1f9e9
+-- format: unicodeKey = tts
+L["129513_65039"] = "puzzle piece"
 -- emoji:🧸; unicode = 1f9f8
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129528"] = "teddy bear"
+-- emoji:🧸; unicode = 1f9f8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧸, 1f9f8
+-- format: unicodeKey = tts
+L["129528_65039"] = "teddy bear"
 -- emoji:🪅; unicode = 1fa85
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129669"] = "piñata"
+-- emoji:🪅; unicode = 1fa85 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪅, 1fa85
+-- format: unicodeKey = tts
+L["129669_65039"] = "piñata"
 -- emoji:🪩; unicode = 1faa9
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129705"] = "mirror ball"
+-- emoji:🪩; unicode = 1faa9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪩, 1faa9
+-- format: unicodeKey = tts
+L["129705_65039"] = "mirror ball"
 -- emoji:🪆; unicode = 1fa86
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129670"] = "nesting dolls"
+-- emoji:🪆; unicode = 1fa86 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪆, 1fa86
+-- format: unicodeKey = tts
+L["129670_65039"] = "nesting dolls"
 -- emoji:♠️; unicode = 2660 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -17665,18 +21700,38 @@ L["9823"] = "chess pawn"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127183"] = "joker"
+-- emoji:🃏; unicode = 1f0cf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🃏, 1f0cf
+-- format: unicodeKey = tts
+L["127183_65039"] = "joker"
 -- emoji:🀄; unicode = 1f004
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["126980"] = "mahjong red dragon"
+-- emoji:🀄; unicode = 1f004 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🀄, 1f004
+-- format: unicodeKey = tts
+L["126980_65039"] = "mahjong red dragon"
 -- emoji:🎴; unicode = 1f3b4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127924"] = "flower playing cards"
+-- emoji:🎴; unicode = 1f3b4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎴, 1f3b4
+-- format: unicodeKey = tts
+L["127924_65039"] = "flower playing cards"
 -- emoji:🎭; unicode = 1f3ad
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127917"] = "performing arts"
+-- emoji:🎭; unicode = 1f3ad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎭, 1f3ad
+-- format: unicodeKey = tts
+L["127917_65039"] = "performing arts"
 -- emoji:🖼️; unicode = 1f5bc fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17690,26 +21745,56 @@ L["128444"] = "framed picture"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127912"] = "artist palette"
+-- emoji:🎨; unicode = 1f3a8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎨, 1f3a8
+-- format: unicodeKey = tts
+L["127912_65039"] = "artist palette"
 -- emoji:🧵; unicode = 1f9f5
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129525"] = "thread"
+-- emoji:🧵; unicode = 1f9f5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧵, 1f9f5
+-- format: unicodeKey = tts
+L["129525_65039"] = "thread"
 -- emoji:🪡; unicode = 1faa1
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129697"] = "sewing needle"
+-- emoji:🪡; unicode = 1faa1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪡, 1faa1
+-- format: unicodeKey = tts
+L["129697_65039"] = "sewing needle"
 -- emoji:🧶; unicode = 1f9f6
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129526"] = "yarn"
+-- emoji:🧶; unicode = 1f9f6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧶, 1f9f6
+-- format: unicodeKey = tts
+L["129526_65039"] = "yarn"
 -- emoji:🪢; unicode = 1faa2
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129698"] = "knot"
+-- emoji:🪢; unicode = 1faa2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪢, 1faa2
+-- format: unicodeKey = tts
+L["129698_65039"] = "knot"
 -- emoji:👓; unicode = 1f453
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128083"] = "glasses"
+-- emoji:👓; unicode = 1f453 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👓, 1f453
+-- format: unicodeKey = tts
+L["128083_65039"] = "glasses"
 -- emoji:🕶️; unicode = 1f576 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17723,90 +21808,200 @@ L["128374"] = "sunglasses"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129405"] = "goggles"
+-- emoji:🥽; unicode = 1f97d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥽, 1f97d
+-- format: unicodeKey = tts
+L["129405_65039"] = "goggles"
 -- emoji:🥼; unicode = 1f97c
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129404"] = "lab coat"
+-- emoji:🥼; unicode = 1f97c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥼, 1f97c
+-- format: unicodeKey = tts
+L["129404_65039"] = "lab coat"
 -- emoji:🦺; unicode = 1f9ba
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129466"] = "safety vest"
+-- emoji:🦺; unicode = 1f9ba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦺, 1f9ba
+-- format: unicodeKey = tts
+L["129466_65039"] = "safety vest"
 -- emoji:👔; unicode = 1f454
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128084"] = "necktie"
+-- emoji:👔; unicode = 1f454 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👔, 1f454
+-- format: unicodeKey = tts
+L["128084_65039"] = "necktie"
 -- emoji:👕; unicode = 1f455
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128085"] = "t-shirt"
+-- emoji:👕; unicode = 1f455 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👕, 1f455
+-- format: unicodeKey = tts
+L["128085_65039"] = "t-shirt"
 -- emoji:👖; unicode = 1f456
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128086"] = "jeans"
+-- emoji:👖; unicode = 1f456 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👖, 1f456
+-- format: unicodeKey = tts
+L["128086_65039"] = "jeans"
 -- emoji:🧣; unicode = 1f9e3
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129507"] = "scarf"
+-- emoji:🧣; unicode = 1f9e3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧣, 1f9e3
+-- format: unicodeKey = tts
+L["129507_65039"] = "scarf"
 -- emoji:🧤; unicode = 1f9e4
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129508"] = "gloves"
+-- emoji:🧤; unicode = 1f9e4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧤, 1f9e4
+-- format: unicodeKey = tts
+L["129508_65039"] = "gloves"
 -- emoji:🧥; unicode = 1f9e5
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129509"] = "coat"
+-- emoji:🧥; unicode = 1f9e5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧥, 1f9e5
+-- format: unicodeKey = tts
+L["129509_65039"] = "coat"
 -- emoji:🧦; unicode = 1f9e6
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129510"] = "socks"
+-- emoji:🧦; unicode = 1f9e6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧦, 1f9e6
+-- format: unicodeKey = tts
+L["129510_65039"] = "socks"
 -- emoji:👗; unicode = 1f457
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128087"] = "dress"
+-- emoji:👗; unicode = 1f457 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👗, 1f457
+-- format: unicodeKey = tts
+L["128087_65039"] = "dress"
 -- emoji:👘; unicode = 1f458
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128088"] = "kimono"
+-- emoji:👘; unicode = 1f458 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👘, 1f458
+-- format: unicodeKey = tts
+L["128088_65039"] = "kimono"
 -- emoji:🥻; unicode = 1f97b
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129403"] = "sari"
+-- emoji:🥻; unicode = 1f97b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥻, 1f97b
+-- format: unicodeKey = tts
+L["129403_65039"] = "sari"
 -- emoji:🩱; unicode = 1fa71
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129649"] = "one-piece swimsuit"
+-- emoji:🩱; unicode = 1fa71 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩱, 1fa71
+-- format: unicodeKey = tts
+L["129649_65039"] = "one-piece swimsuit"
 -- emoji:🩲; unicode = 1fa72
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129650"] = "briefs"
+-- emoji:🩲; unicode = 1fa72 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩲, 1fa72
+-- format: unicodeKey = tts
+L["129650_65039"] = "briefs"
 -- emoji:🩳; unicode = 1fa73
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129651"] = "shorts"
+-- emoji:🩳; unicode = 1fa73 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩳, 1fa73
+-- format: unicodeKey = tts
+L["129651_65039"] = "shorts"
 -- emoji:👙; unicode = 1f459
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128089"] = "bikini"
+-- emoji:👙; unicode = 1f459 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👙, 1f459
+-- format: unicodeKey = tts
+L["128089_65039"] = "bikini"
 -- emoji:👚; unicode = 1f45a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128090"] = "woman’s clothes"
+-- emoji:👚; unicode = 1f45a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👚, 1f45a
+-- format: unicodeKey = tts
+L["128090_65039"] = "woman’s clothes"
 -- emoji:🪭; unicode = 1faad
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129709"] = "folding hand fan"
+-- emoji:🪭; unicode = 1faad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪭, 1faad
+-- format: unicodeKey = tts
+L["129709_65039"] = "folding hand fan"
 -- emoji:👛; unicode = 1f45b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128091"] = "purse"
+-- emoji:👛; unicode = 1f45b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👛, 1f45b
+-- format: unicodeKey = tts
+L["128091_65039"] = "purse"
 -- emoji:👜; unicode = 1f45c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128092"] = "handbag"
+-- emoji:👜; unicode = 1f45c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👜, 1f45c
+-- format: unicodeKey = tts
+L["128092_65039"] = "handbag"
 -- emoji:👝; unicode = 1f45d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128093"] = "clutch bag"
+-- emoji:👝; unicode = 1f45d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👝, 1f45d
+-- format: unicodeKey = tts
+L["128093_65039"] = "clutch bag"
 -- emoji:🛍️; unicode = 1f6cd fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17820,70 +22015,155 @@ L["128717"] = "shopping bags"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127890"] = "backpack"
+-- emoji:🎒; unicode = 1f392 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎒, 1f392
+-- format: unicodeKey = tts
+L["127890_65039"] = "backpack"
 -- emoji:🩴; unicode = 1fa74
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129652"] = "thong sandal"
+-- emoji:🩴; unicode = 1fa74 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩴, 1fa74
+-- format: unicodeKey = tts
+L["129652_65039"] = "thong sandal"
 -- emoji:👞; unicode = 1f45e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128094"] = "man’s shoe"
+-- emoji:👞; unicode = 1f45e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👞, 1f45e
+-- format: unicodeKey = tts
+L["128094_65039"] = "man’s shoe"
 -- emoji:👟; unicode = 1f45f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128095"] = "running shoe"
+-- emoji:👟; unicode = 1f45f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👟, 1f45f
+-- format: unicodeKey = tts
+L["128095_65039"] = "running shoe"
 -- emoji:🥾; unicode = 1f97e
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129406"] = "hiking boot"
+-- emoji:🥾; unicode = 1f97e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥾, 1f97e
+-- format: unicodeKey = tts
+L["129406_65039"] = "hiking boot"
 -- emoji:🥿; unicode = 1f97f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129407"] = "flat shoe"
+-- emoji:🥿; unicode = 1f97f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥿, 1f97f
+-- format: unicodeKey = tts
+L["129407_65039"] = "flat shoe"
 -- emoji:👠; unicode = 1f460
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128096"] = "high-heeled shoe"
+-- emoji:👠; unicode = 1f460 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👠, 1f460
+-- format: unicodeKey = tts
+L["128096_65039"] = "high-heeled shoe"
 -- emoji:👡; unicode = 1f461
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128097"] = "woman’s sandal"
+-- emoji:👡; unicode = 1f461 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👡, 1f461
+-- format: unicodeKey = tts
+L["128097_65039"] = "woman’s sandal"
 -- emoji:🩰; unicode = 1fa70
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129648"] = "ballet shoes"
+-- emoji:🩰; unicode = 1fa70 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩰, 1fa70
+-- format: unicodeKey = tts
+L["129648_65039"] = "ballet shoes"
 -- emoji:👢; unicode = 1f462
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128098"] = "woman’s boot"
+-- emoji:👢; unicode = 1f462 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👢, 1f462
+-- format: unicodeKey = tts
+L["128098_65039"] = "woman’s boot"
 -- emoji:🪮; unicode = 1faae
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129710"] = "hair pick"
+-- emoji:🪮; unicode = 1faae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪮, 1faae
+-- format: unicodeKey = tts
+L["129710_65039"] = "hair pick"
 -- emoji:👑; unicode = 1f451
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128081"] = "crown"
+-- emoji:👑; unicode = 1f451 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👑, 1f451
+-- format: unicodeKey = tts
+L["128081_65039"] = "crown"
 -- emoji:👒; unicode = 1f452
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128082"] = "woman’s hat"
+-- emoji:👒; unicode = 1f452 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👒, 1f452
+-- format: unicodeKey = tts
+L["128082_65039"] = "woman’s hat"
 -- emoji:🎩; unicode = 1f3a9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127913"] = "top hat"
+-- emoji:🎩; unicode = 1f3a9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎩, 1f3a9
+-- format: unicodeKey = tts
+L["127913_65039"] = "top hat"
 -- emoji:🎓; unicode = 1f393
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127891"] = "graduation cap"
+-- emoji:🎓; unicode = 1f393 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎓, 1f393
+-- format: unicodeKey = tts
+L["127891_65039"] = "graduation cap"
 -- emoji:🧢; unicode = 1f9e2
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129506"] = "billed cap"
+-- emoji:🧢; unicode = 1f9e2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧢, 1f9e2
+-- format: unicodeKey = tts
+L["129506_65039"] = "billed cap"
 -- emoji:🪖; unicode = 1fa96
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129686"] = "military helmet"
+-- emoji:🪖; unicode = 1fa96 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪖, 1fa96
+-- format: unicodeKey = tts
+L["129686_65039"] = "military helmet"
 -- emoji:⛑️; unicode = 26d1 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17897,66 +22177,146 @@ L["9937"] = "rescue worker’s helmet"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128255"] = "prayer beads"
+-- emoji:📿; unicode = 1f4ff fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📿, 1f4ff
+-- format: unicodeKey = tts
+L["128255_65039"] = "prayer beads"
 -- emoji:💄; unicode = 1f484
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128132"] = "lipstick"
+-- emoji:💄; unicode = 1f484 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💄, 1f484
+-- format: unicodeKey = tts
+L["128132_65039"] = "lipstick"
 -- emoji:💍; unicode = 1f48d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128141"] = "ring"
+-- emoji:💍; unicode = 1f48d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💍, 1f48d
+-- format: unicodeKey = tts
+L["128141_65039"] = "ring"
 -- emoji:💎; unicode = 1f48e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128142"] = "gem stone"
+-- emoji:💎; unicode = 1f48e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💎, 1f48e
+-- format: unicodeKey = tts
+L["128142_65039"] = "gem stone"
 -- emoji:🔇; unicode = 1f507
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128263"] = "muted speaker"
+-- emoji:🔇; unicode = 1f507 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔇, 1f507
+-- format: unicodeKey = tts
+L["128263_65039"] = "muted speaker"
 -- emoji:🔈; unicode = 1f508
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128264"] = "speaker low volume"
+-- emoji:🔈; unicode = 1f508 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔈, 1f508
+-- format: unicodeKey = tts
+L["128264_65039"] = "speaker low volume"
 -- emoji:🔉; unicode = 1f509
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128265"] = "speaker medium volume"
+-- emoji:🔉; unicode = 1f509 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔉, 1f509
+-- format: unicodeKey = tts
+L["128265_65039"] = "speaker medium volume"
 -- emoji:🔊; unicode = 1f50a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128266"] = "speaker high volume"
+-- emoji:🔊; unicode = 1f50a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔊, 1f50a
+-- format: unicodeKey = tts
+L["128266_65039"] = "speaker high volume"
 -- emoji:📢; unicode = 1f4e2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128226"] = "loudspeaker"
+-- emoji:📢; unicode = 1f4e2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📢, 1f4e2
+-- format: unicodeKey = tts
+L["128226_65039"] = "loudspeaker"
 -- emoji:📣; unicode = 1f4e3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128227"] = "megaphone"
+-- emoji:📣; unicode = 1f4e3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📣, 1f4e3
+-- format: unicodeKey = tts
+L["128227_65039"] = "megaphone"
 -- emoji:📯; unicode = 1f4ef
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128239"] = "postal horn"
+-- emoji:📯; unicode = 1f4ef fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📯, 1f4ef
+-- format: unicodeKey = tts
+L["128239_65039"] = "postal horn"
 -- emoji:🔔; unicode = 1f514
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128276"] = "bell"
+-- emoji:🔔; unicode = 1f514 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔔, 1f514
+-- format: unicodeKey = tts
+L["128276_65039"] = "bell"
 -- emoji:🔕; unicode = 1f515
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128277"] = "bell with slash"
+-- emoji:🔕; unicode = 1f515 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔕, 1f515
+-- format: unicodeKey = tts
+L["128277_65039"] = "bell with slash"
 -- emoji:🎼; unicode = 1f3bc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127932"] = "musical score"
+-- emoji:🎼; unicode = 1f3bc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎼, 1f3bc
+-- format: unicodeKey = tts
+L["127932_65039"] = "musical score"
 -- emoji:🎵; unicode = 1f3b5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127925"] = "musical note"
+-- emoji:🎵; unicode = 1f3b5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎵, 1f3b5
+-- format: unicodeKey = tts
+L["127925_65039"] = "musical note"
 -- emoji:🎶; unicode = 1f3b6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127926"] = "musical notes"
+-- emoji:🎶; unicode = 1f3b6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎶, 1f3b6
+-- format: unicodeKey = tts
+L["127926_65039"] = "musical notes"
 -- emoji:🎙️; unicode = 1f399 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17988,70 +22348,155 @@ L["127899"] = "control knobs"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127908"] = "microphone"
+-- emoji:🎤; unicode = 1f3a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎤, 1f3a4
+-- format: unicodeKey = tts
+L["127908_65039"] = "microphone"
 -- emoji:🎧; unicode = 1f3a7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127911"] = "headphone"
+-- emoji:🎧; unicode = 1f3a7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎧, 1f3a7
+-- format: unicodeKey = tts
+L["127911_65039"] = "headphone"
 -- emoji:📻; unicode = 1f4fb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128251"] = "radio"
+-- emoji:📻; unicode = 1f4fb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📻, 1f4fb
+-- format: unicodeKey = tts
+L["128251_65039"] = "radio"
 -- emoji:🎷; unicode = 1f3b7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127927"] = "saxophone"
+-- emoji:🎷; unicode = 1f3b7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎷, 1f3b7
+-- format: unicodeKey = tts
+L["127927_65039"] = "saxophone"
 -- emoji:🪗; unicode = 1fa97
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129687"] = "accordion"
+-- emoji:🪗; unicode = 1fa97 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪗, 1fa97
+-- format: unicodeKey = tts
+L["129687_65039"] = "accordion"
 -- emoji:🎸; unicode = 1f3b8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127928"] = "guitar"
+-- emoji:🎸; unicode = 1f3b8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎸, 1f3b8
+-- format: unicodeKey = tts
+L["127928_65039"] = "guitar"
 -- emoji:🎹; unicode = 1f3b9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127929"] = "musical keyboard"
+-- emoji:🎹; unicode = 1f3b9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎹, 1f3b9
+-- format: unicodeKey = tts
+L["127929_65039"] = "musical keyboard"
 -- emoji:🎺; unicode = 1f3ba
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127930"] = "trumpet"
+-- emoji:🎺; unicode = 1f3ba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎺, 1f3ba
+-- format: unicodeKey = tts
+L["127930_65039"] = "trumpet"
 -- emoji:🎻; unicode = 1f3bb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127931"] = "violin"
+-- emoji:🎻; unicode = 1f3bb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎻, 1f3bb
+-- format: unicodeKey = tts
+L["127931_65039"] = "violin"
 -- emoji:🪕; unicode = 1fa95
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129685"] = "banjo"
+-- emoji:🪕; unicode = 1fa95 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪕, 1fa95
+-- format: unicodeKey = tts
+L["129685_65039"] = "banjo"
 -- emoji:🥁; unicode = 1f941
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129345"] = "drum"
+-- emoji:🥁; unicode = 1f941 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥁, 1f941
+-- format: unicodeKey = tts
+L["129345_65039"] = "drum"
 -- emoji:🪘; unicode = 1fa98
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129688"] = "long drum"
+-- emoji:🪘; unicode = 1fa98 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪘, 1fa98
+-- format: unicodeKey = tts
+L["129688_65039"] = "long drum"
 -- emoji:🪇; unicode = 1fa87
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129671"] = "maracas"
+-- emoji:🪇; unicode = 1fa87 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪇, 1fa87
+-- format: unicodeKey = tts
+L["129671_65039"] = "maracas"
 -- emoji:🪈; unicode = 1fa88
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129672"] = "flute"
+-- emoji:🪈; unicode = 1fa88 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪈, 1fa88
+-- format: unicodeKey = tts
+L["129672_65039"] = "flute"
 -- emoji:🪉; unicode = 1fa89
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129673"] = "harp"
+-- emoji:🪉; unicode = 1fa89 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪉, 1fa89
+-- format: unicodeKey = tts
+L["129673_65039"] = "harp"
 -- emoji:📱; unicode = 1f4f1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128241"] = "mobile phone"
+-- emoji:📱; unicode = 1f4f1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📱, 1f4f1
+-- format: unicodeKey = tts
+L["128241_65039"] = "mobile phone"
 -- emoji:📲; unicode = 1f4f2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128242"] = "mobile phone with arrow"
+-- emoji:📲; unicode = 1f4f2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📲, 1f4f2
+-- format: unicodeKey = tts
+L["128242_65039"] = "mobile phone with arrow"
 -- emoji:☎️; unicode = 260e fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -18065,30 +22510,65 @@ L["9742"] = "telephone"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128222"] = "telephone receiver"
+-- emoji:📞; unicode = 1f4de fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📞, 1f4de
+-- format: unicodeKey = tts
+L["128222_65039"] = "telephone receiver"
 -- emoji:📟; unicode = 1f4df
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128223"] = "pager"
+-- emoji:📟; unicode = 1f4df fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📟, 1f4df
+-- format: unicodeKey = tts
+L["128223_65039"] = "pager"
 -- emoji:📠; unicode = 1f4e0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128224"] = "fax machine"
+-- emoji:📠; unicode = 1f4e0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📠, 1f4e0
+-- format: unicodeKey = tts
+L["128224_65039"] = "fax machine"
 -- emoji:🔋; unicode = 1f50b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128267"] = "battery"
+-- emoji:🔋; unicode = 1f50b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔋, 1f50b
+-- format: unicodeKey = tts
+L["128267_65039"] = "battery"
 -- emoji:🪫; unicode = 1faab
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129707"] = "low battery"
+-- emoji:🪫; unicode = 1faab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪫, 1faab
+-- format: unicodeKey = tts
+L["129707_65039"] = "low battery"
 -- emoji:🔌; unicode = 1f50c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128268"] = "electric plug"
+-- emoji:🔌; unicode = 1f50c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔌, 1f50c
+-- format: unicodeKey = tts
+L["128268_65039"] = "electric plug"
 -- emoji:💻; unicode = 1f4bb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128187"] = "laptop"
+-- emoji:💻; unicode = 1f4bb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💻, 1f4bb
+-- format: unicodeKey = tts
+L["128187_65039"] = "laptop"
 -- emoji:🖥️; unicode = 1f5a5 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18138,26 +22618,56 @@ L["128434"] = "trackball"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128189"] = "computer disk"
+-- emoji:💽; unicode = 1f4bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💽, 1f4bd
+-- format: unicodeKey = tts
+L["128189_65039"] = "computer disk"
 -- emoji:💾; unicode = 1f4be
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128190"] = "floppy disk"
+-- emoji:💾; unicode = 1f4be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💾, 1f4be
+-- format: unicodeKey = tts
+L["128190_65039"] = "floppy disk"
 -- emoji:💿; unicode = 1f4bf
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128191"] = "optical disk"
+-- emoji:💿; unicode = 1f4bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💿, 1f4bf
+-- format: unicodeKey = tts
+L["128191_65039"] = "optical disk"
 -- emoji:📀; unicode = 1f4c0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128192"] = "dvd"
+-- emoji:📀; unicode = 1f4c0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📀, 1f4c0
+-- format: unicodeKey = tts
+L["128192_65039"] = "dvd"
 -- emoji:🧮; unicode = 1f9ee
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129518"] = "abacus"
+-- emoji:🧮; unicode = 1f9ee fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧮, 1f9ee
+-- format: unicodeKey = tts
+L["129518_65039"] = "abacus"
 -- emoji:🎥; unicode = 1f3a5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127909"] = "movie camera"
+-- emoji:🎥; unicode = 1f3a5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎥, 1f3a5
+-- format: unicodeKey = tts
+L["127909_65039"] = "movie camera"
 -- emoji:🎞️; unicode = 1f39e fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18180,34 +22690,74 @@ L["128253"] = "film projector"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127916"] = "clapper board"
+-- emoji:🎬; unicode = 1f3ac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎬, 1f3ac
+-- format: unicodeKey = tts
+L["127916_65039"] = "clapper board"
 -- emoji:📺; unicode = 1f4fa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128250"] = "television"
+-- emoji:📺; unicode = 1f4fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📺, 1f4fa
+-- format: unicodeKey = tts
+L["128250_65039"] = "television"
 -- emoji:📷; unicode = 1f4f7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128247"] = "camera"
+-- emoji:📷; unicode = 1f4f7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📷, 1f4f7
+-- format: unicodeKey = tts
+L["128247_65039"] = "camera"
 -- emoji:📸; unicode = 1f4f8
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128248"] = "camera with flash"
+-- emoji:📸; unicode = 1f4f8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📸, 1f4f8
+-- format: unicodeKey = tts
+L["128248_65039"] = "camera with flash"
 -- emoji:📹; unicode = 1f4f9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128249"] = "video camera"
+-- emoji:📹; unicode = 1f4f9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📹, 1f4f9
+-- format: unicodeKey = tts
+L["128249_65039"] = "video camera"
 -- emoji:📼; unicode = 1f4fc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128252"] = "videocassette"
+-- emoji:📼; unicode = 1f4fc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📼, 1f4fc
+-- format: unicodeKey = tts
+L["128252_65039"] = "videocassette"
 -- emoji:🔍; unicode = 1f50d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128269"] = "magnifying glass tilted left"
+-- emoji:🔍; unicode = 1f50d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔍, 1f50d
+-- format: unicodeKey = tts
+L["128269_65039"] = "magnifying glass tilted left"
 -- emoji:🔎; unicode = 1f50e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128270"] = "magnifying glass tilted right"
+-- emoji:🔎; unicode = 1f50e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔎, 1f50e
+-- format: unicodeKey = tts
+L["128270_65039"] = "magnifying glass tilted right"
 -- emoji:🕯️; unicode = 1f56f fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18221,70 +22771,155 @@ L["128367"] = "candle"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128161"] = "light bulb"
+-- emoji:💡; unicode = 1f4a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💡, 1f4a1
+-- format: unicodeKey = tts
+L["128161_65039"] = "light bulb"
 -- emoji:🔦; unicode = 1f526
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128294"] = "flashlight"
+-- emoji:🔦; unicode = 1f526 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔦, 1f526
+-- format: unicodeKey = tts
+L["128294_65039"] = "flashlight"
 -- emoji:🏮; unicode = 1f3ee
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127982"] = "red paper lantern"
+-- emoji:🏮; unicode = 1f3ee fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏮, 1f3ee
+-- format: unicodeKey = tts
+L["127982_65039"] = "red paper lantern"
 -- emoji:🪔; unicode = 1fa94
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129684"] = "diya lamp"
+-- emoji:🪔; unicode = 1fa94 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪔, 1fa94
+-- format: unicodeKey = tts
+L["129684_65039"] = "diya lamp"
 -- emoji:📔; unicode = 1f4d4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128212"] = "notebook with decorative cover"
+-- emoji:📔; unicode = 1f4d4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📔, 1f4d4
+-- format: unicodeKey = tts
+L["128212_65039"] = "notebook with decorative cover"
 -- emoji:📕; unicode = 1f4d5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128213"] = "closed book"
+-- emoji:📕; unicode = 1f4d5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📕, 1f4d5
+-- format: unicodeKey = tts
+L["128213_65039"] = "closed book"
 -- emoji:📖; unicode = 1f4d6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128214"] = "open book"
+-- emoji:📖; unicode = 1f4d6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📖, 1f4d6
+-- format: unicodeKey = tts
+L["128214_65039"] = "open book"
 -- emoji:📗; unicode = 1f4d7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128215"] = "green book"
+-- emoji:📗; unicode = 1f4d7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📗, 1f4d7
+-- format: unicodeKey = tts
+L["128215_65039"] = "green book"
 -- emoji:📘; unicode = 1f4d8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128216"] = "blue book"
+-- emoji:📘; unicode = 1f4d8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📘, 1f4d8
+-- format: unicodeKey = tts
+L["128216_65039"] = "blue book"
 -- emoji:📙; unicode = 1f4d9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128217"] = "orange book"
+-- emoji:📙; unicode = 1f4d9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📙, 1f4d9
+-- format: unicodeKey = tts
+L["128217_65039"] = "orange book"
 -- emoji:📚; unicode = 1f4da
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128218"] = "books"
+-- emoji:📚; unicode = 1f4da fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📚, 1f4da
+-- format: unicodeKey = tts
+L["128218_65039"] = "books"
 -- emoji:📓; unicode = 1f4d3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128211"] = "notebook"
+-- emoji:📓; unicode = 1f4d3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📓, 1f4d3
+-- format: unicodeKey = tts
+L["128211_65039"] = "notebook"
 -- emoji:📒; unicode = 1f4d2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128210"] = "ledger"
+-- emoji:📒; unicode = 1f4d2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📒, 1f4d2
+-- format: unicodeKey = tts
+L["128210_65039"] = "ledger"
 -- emoji:📃; unicode = 1f4c3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128195"] = "page with curl"
+-- emoji:📃; unicode = 1f4c3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📃, 1f4c3
+-- format: unicodeKey = tts
+L["128195_65039"] = "page with curl"
 -- emoji:📜; unicode = 1f4dc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128220"] = "scroll"
+-- emoji:📜; unicode = 1f4dc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📜, 1f4dc
+-- format: unicodeKey = tts
+L["128220_65039"] = "scroll"
 -- emoji:📄; unicode = 1f4c4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128196"] = "page facing up"
+-- emoji:📄; unicode = 1f4c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📄, 1f4c4
+-- format: unicodeKey = tts
+L["128196_65039"] = "page facing up"
 -- emoji:📰; unicode = 1f4f0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128240"] = "newspaper"
+-- emoji:📰; unicode = 1f4f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📰, 1f4f0
+-- format: unicodeKey = tts
+L["128240_65039"] = "newspaper"
 -- emoji:🗞️; unicode = 1f5de fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18298,10 +22933,20 @@ L["128478"] = "rolled-up newspaper"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128209"] = "bookmark tabs"
+-- emoji:📑; unicode = 1f4d1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📑, 1f4d1
+-- format: unicodeKey = tts
+L["128209_65039"] = "bookmark tabs"
 -- emoji:🔖; unicode = 1f516
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128278"] = "bookmark"
+-- emoji:🔖; unicode = 1f516 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔖, 1f516
+-- format: unicodeKey = tts
+L["128278_65039"] = "bookmark"
 -- emoji:🏷️; unicode = 1f3f7 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18315,42 +22960,92 @@ L["127991"] = "label"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128176"] = "money bag"
+-- emoji:💰; unicode = 1f4b0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💰, 1f4b0
+-- format: unicodeKey = tts
+L["128176_65039"] = "money bag"
 -- emoji:🪙; unicode = 1fa99
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129689"] = "coin"
+-- emoji:🪙; unicode = 1fa99 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪙, 1fa99
+-- format: unicodeKey = tts
+L["129689_65039"] = "coin"
 -- emoji:💴; unicode = 1f4b4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128180"] = "yen banknote"
+-- emoji:💴; unicode = 1f4b4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💴, 1f4b4
+-- format: unicodeKey = tts
+L["128180_65039"] = "yen banknote"
 -- emoji:💵; unicode = 1f4b5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128181"] = "dollar banknote"
+-- emoji:💵; unicode = 1f4b5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💵, 1f4b5
+-- format: unicodeKey = tts
+L["128181_65039"] = "dollar banknote"
 -- emoji:💶; unicode = 1f4b6
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128182"] = "euro banknote"
+-- emoji:💶; unicode = 1f4b6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💶, 1f4b6
+-- format: unicodeKey = tts
+L["128182_65039"] = "euro banknote"
 -- emoji:💷; unicode = 1f4b7
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128183"] = "pound banknote"
+-- emoji:💷; unicode = 1f4b7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💷, 1f4b7
+-- format: unicodeKey = tts
+L["128183_65039"] = "pound banknote"
 -- emoji:💸; unicode = 1f4b8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128184"] = "money with wings"
+-- emoji:💸; unicode = 1f4b8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💸, 1f4b8
+-- format: unicodeKey = tts
+L["128184_65039"] = "money with wings"
 -- emoji:💳; unicode = 1f4b3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128179"] = "credit card"
+-- emoji:💳; unicode = 1f4b3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💳, 1f4b3
+-- format: unicodeKey = tts
+L["128179_65039"] = "credit card"
 -- emoji:🧾; unicode = 1f9fe
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129534"] = "receipt"
+-- emoji:🧾; unicode = 1f9fe fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧾, 1f9fe
+-- format: unicodeKey = tts
+L["129534_65039"] = "receipt"
 -- emoji:💹; unicode = 1f4b9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128185"] = "chart increasing with yen"
+-- emoji:💹; unicode = 1f4b9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💹, 1f4b9
+-- format: unicodeKey = tts
+L["128185_65039"] = "chart increasing with yen"
 -- emoji:✉️; unicode = 2709 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -18364,46 +23059,101 @@ L["9993"] = "envelope"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128231"] = "e-mail"
+-- emoji:📧; unicode = 1f4e7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📧, 1f4e7
+-- format: unicodeKey = tts
+L["128231_65039"] = "e-mail"
 -- emoji:📨; unicode = 1f4e8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128232"] = "incoming envelope"
+-- emoji:📨; unicode = 1f4e8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📨, 1f4e8
+-- format: unicodeKey = tts
+L["128232_65039"] = "incoming envelope"
 -- emoji:📩; unicode = 1f4e9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128233"] = "envelope with arrow"
+-- emoji:📩; unicode = 1f4e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📩, 1f4e9
+-- format: unicodeKey = tts
+L["128233_65039"] = "envelope with arrow"
 -- emoji:📤; unicode = 1f4e4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128228"] = "outbox tray"
+-- emoji:📤; unicode = 1f4e4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📤, 1f4e4
+-- format: unicodeKey = tts
+L["128228_65039"] = "outbox tray"
 -- emoji:📥; unicode = 1f4e5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128229"] = "inbox tray"
+-- emoji:📥; unicode = 1f4e5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📥, 1f4e5
+-- format: unicodeKey = tts
+L["128229_65039"] = "inbox tray"
 -- emoji:📦; unicode = 1f4e6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128230"] = "package"
+-- emoji:📦; unicode = 1f4e6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📦, 1f4e6
+-- format: unicodeKey = tts
+L["128230_65039"] = "package"
 -- emoji:📫; unicode = 1f4eb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128235"] = "closed mailbox with raised flag"
+-- emoji:📫; unicode = 1f4eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📫, 1f4eb
+-- format: unicodeKey = tts
+L["128235_65039"] = "closed mailbox with raised flag"
 -- emoji:📪; unicode = 1f4ea
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128234"] = "closed mailbox with lowered flag"
+-- emoji:📪; unicode = 1f4ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📪, 1f4ea
+-- format: unicodeKey = tts
+L["128234_65039"] = "closed mailbox with lowered flag"
 -- emoji:📬; unicode = 1f4ec
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128236"] = "open mailbox with raised flag"
+-- emoji:📬; unicode = 1f4ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📬, 1f4ec
+-- format: unicodeKey = tts
+L["128236_65039"] = "open mailbox with raised flag"
 -- emoji:📭; unicode = 1f4ed
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128237"] = "open mailbox with lowered flag"
+-- emoji:📭; unicode = 1f4ed fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📭, 1f4ed
+-- format: unicodeKey = tts
+L["128237_65039"] = "open mailbox with lowered flag"
 -- emoji:📮; unicode = 1f4ee
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128238"] = "postbox"
+-- emoji:📮; unicode = 1f4ee fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📮, 1f4ee
+-- format: unicodeKey = tts
+L["128238_65039"] = "postbox"
 -- emoji:🗳️; unicode = 1f5f3 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18471,18 +23221,38 @@ L["128397"] = "crayon"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128221"] = "memo"
+-- emoji:📝; unicode = 1f4dd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📝, 1f4dd
+-- format: unicodeKey = tts
+L["128221_65039"] = "memo"
 -- emoji:💼; unicode = 1f4bc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128188"] = "briefcase"
+-- emoji:💼; unicode = 1f4bc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💼, 1f4bc
+-- format: unicodeKey = tts
+L["128188_65039"] = "briefcase"
 -- emoji:📁; unicode = 1f4c1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128193"] = "file folder"
+-- emoji:📁; unicode = 1f4c1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📁, 1f4c1
+-- format: unicodeKey = tts
+L["128193_65039"] = "file folder"
 -- emoji:📂; unicode = 1f4c2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128194"] = "open file folder"
+-- emoji:📂; unicode = 1f4c2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📂, 1f4c2
+-- format: unicodeKey = tts
+L["128194_65039"] = "open file folder"
 -- emoji:🗂️; unicode = 1f5c2 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18496,10 +23266,20 @@ L["128450"] = "card index dividers"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128197"] = "calendar"
+-- emoji:📅; unicode = 1f4c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📅, 1f4c5
+-- format: unicodeKey = tts
+L["128197_65039"] = "calendar"
 -- emoji:📆; unicode = 1f4c6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128198"] = "tear-off calendar"
+-- emoji:📆; unicode = 1f4c6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📆, 1f4c6
+-- format: unicodeKey = tts
+L["128198_65039"] = "tear-off calendar"
 -- emoji:🗒️; unicode = 1f5d2 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18522,34 +23302,74 @@ L["128467"] = "spiral calendar"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128199"] = "card index"
+-- emoji:📇; unicode = 1f4c7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📇, 1f4c7
+-- format: unicodeKey = tts
+L["128199_65039"] = "card index"
 -- emoji:📈; unicode = 1f4c8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128200"] = "chart increasing"
+-- emoji:📈; unicode = 1f4c8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📈, 1f4c8
+-- format: unicodeKey = tts
+L["128200_65039"] = "chart increasing"
 -- emoji:📉; unicode = 1f4c9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128201"] = "chart decreasing"
+-- emoji:📉; unicode = 1f4c9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📉, 1f4c9
+-- format: unicodeKey = tts
+L["128201_65039"] = "chart decreasing"
 -- emoji:📊; unicode = 1f4ca
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128202"] = "bar chart"
+-- emoji:📊; unicode = 1f4ca fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📊, 1f4ca
+-- format: unicodeKey = tts
+L["128202_65039"] = "bar chart"
 -- emoji:📋; unicode = 1f4cb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128203"] = "clipboard"
+-- emoji:📋; unicode = 1f4cb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📋, 1f4cb
+-- format: unicodeKey = tts
+L["128203_65039"] = "clipboard"
 -- emoji:📌; unicode = 1f4cc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128204"] = "pushpin"
+-- emoji:📌; unicode = 1f4cc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📌, 1f4cc
+-- format: unicodeKey = tts
+L["128204_65039"] = "pushpin"
 -- emoji:📍; unicode = 1f4cd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128205"] = "round pushpin"
+-- emoji:📍; unicode = 1f4cd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📍, 1f4cd
+-- format: unicodeKey = tts
+L["128205_65039"] = "round pushpin"
 -- emoji:📎; unicode = 1f4ce
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128206"] = "paperclip"
+-- emoji:📎; unicode = 1f4ce fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📎, 1f4ce
+-- format: unicodeKey = tts
+L["128206_65039"] = "paperclip"
 -- emoji:🖇️; unicode = 1f587 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18563,10 +23383,20 @@ L["128391"] = "linked paperclips"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128207"] = "straight ruler"
+-- emoji:📏; unicode = 1f4cf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📏, 1f4cf
+-- format: unicodeKey = tts
+L["128207_65039"] = "straight ruler"
 -- emoji:📐; unicode = 1f4d0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128208"] = "triangular ruler"
+-- emoji:📐; unicode = 1f4d0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📐, 1f4d0
+-- format: unicodeKey = tts
+L["128208_65039"] = "triangular ruler"
 -- emoji:✂️; unicode = 2702 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -18607,22 +23437,47 @@ L["128465"] = "wastebasket"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128274"] = "locked"
+-- emoji:🔒; unicode = 1f512 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔒, 1f512
+-- format: unicodeKey = tts
+L["128274_65039"] = "locked"
 -- emoji:🔓; unicode = 1f513
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128275"] = "unlocked"
+-- emoji:🔓; unicode = 1f513 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔓, 1f513
+-- format: unicodeKey = tts
+L["128275_65039"] = "unlocked"
 -- emoji:🔏; unicode = 1f50f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128271"] = "locked with pen"
+-- emoji:🔏; unicode = 1f50f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔏, 1f50f
+-- format: unicodeKey = tts
+L["128271_65039"] = "locked with pen"
 -- emoji:🔐; unicode = 1f510
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128272"] = "locked with key"
+-- emoji:🔐; unicode = 1f510 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔐, 1f510
+-- format: unicodeKey = tts
+L["128272_65039"] = "locked with key"
 -- emoji:🔑; unicode = 1f511
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128273"] = "key"
+-- emoji:🔑; unicode = 1f511 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔑, 1f511
+-- format: unicodeKey = tts
+L["128273_65039"] = "key"
 -- emoji:🗝️; unicode = 1f5dd fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18636,10 +23491,20 @@ L["128477"] = "old key"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128296"] = "hammer"
+-- emoji:🔨; unicode = 1f528 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔨, 1f528
+-- format: unicodeKey = tts
+L["128296_65039"] = "hammer"
 -- emoji:🪓; unicode = 1fa93
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129683"] = "axe"
+-- emoji:🪓; unicode = 1fa93 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪓, 1fa93
+-- format: unicodeKey = tts
+L["129683_65039"] = "axe"
 -- emoji:⛏️; unicode = 26cf fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18689,14 +23554,29 @@ L["9876"] = "crossed swords"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128163"] = "bomb"
+-- emoji:💣; unicode = 1f4a3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💣, 1f4a3
+-- format: unicodeKey = tts
+L["128163_65039"] = "bomb"
 -- emoji:🪃; unicode = 1fa83
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129667"] = "boomerang"
+-- emoji:🪃; unicode = 1fa83 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪃, 1fa83
+-- format: unicodeKey = tts
+L["129667_65039"] = "boomerang"
 -- emoji:🏹; unicode = 1f3f9
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127993"] = "bow and arrow"
+-- emoji:🏹; unicode = 1f3f9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏹, 1f3f9
+-- format: unicodeKey = tts
+L["127993_65039"] = "bow and arrow"
 -- emoji:🛡️; unicode = 1f6e1 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18710,18 +23590,38 @@ L["128737"] = "shield"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129690"] = "carpentry saw"
+-- emoji:🪚; unicode = 1fa9a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪚, 1fa9a
+-- format: unicodeKey = tts
+L["129690_65039"] = "carpentry saw"
 -- emoji:🔧; unicode = 1f527
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128295"] = "wrench"
+-- emoji:🔧; unicode = 1f527 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔧, 1f527
+-- format: unicodeKey = tts
+L["128295_65039"] = "wrench"
 -- emoji:🪛; unicode = 1fa9b
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129691"] = "screwdriver"
+-- emoji:🪛; unicode = 1fa9b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪛, 1fa9b
+-- format: unicodeKey = tts
+L["129691_65039"] = "screwdriver"
 -- emoji:🔩; unicode = 1f529
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128297"] = "nut and bolt"
+-- emoji:🔩; unicode = 1f529 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔩, 1f529
+-- format: unicodeKey = tts
+L["128297_65039"] = "nut and bolt"
 -- emoji:⚙️; unicode = 2699 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -18753,10 +23653,20 @@ L["9878"] = "balance scale"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129455"] = "white cane"
+-- emoji:🦯; unicode = 1f9af fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦯, 1f9af
+-- format: unicodeKey = tts
+L["129455_65039"] = "white cane"
 -- emoji:🔗; unicode = 1f517
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128279"] = "link"
+-- emoji:🔗; unicode = 1f517 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔗, 1f517
+-- format: unicodeKey = tts
+L["128279_65039"] = "link"
 -- emoji:⛓️‍💥; unicode = 26d3 fe0f 200d 1f4a5
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -18779,22 +23689,47 @@ L["9939"] = "chains"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129693"] = "hook"
+-- emoji:🪝; unicode = 1fa9d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪝, 1fa9d
+-- format: unicodeKey = tts
+L["129693_65039"] = "hook"
 -- emoji:🧰; unicode = 1f9f0
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129520"] = "toolbox"
+-- emoji:🧰; unicode = 1f9f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧰, 1f9f0
+-- format: unicodeKey = tts
+L["129520_65039"] = "toolbox"
 -- emoji:🧲; unicode = 1f9f2
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129522"] = "magnet"
+-- emoji:🧲; unicode = 1f9f2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧲, 1f9f2
+-- format: unicodeKey = tts
+L["129522_65039"] = "magnet"
 -- emoji:🪜; unicode = 1fa9c
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129692"] = "ladder"
+-- emoji:🪜; unicode = 1fa9c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪜, 1fa9c
+-- format: unicodeKey = tts
+L["129692_65039"] = "ladder"
 -- emoji:🪏; unicode = 1fa8f
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129679"] = "shovel"
+-- emoji:🪏; unicode = 1fa8f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪏, 1fa8f
+-- format: unicodeKey = tts
+L["129679_65039"] = "shovel"
 -- emoji:⚗️; unicode = 2697 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -18808,70 +23743,155 @@ L["9879"] = "alembic"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129514"] = "test tube"
+-- emoji:🧪; unicode = 1f9ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧪, 1f9ea
+-- format: unicodeKey = tts
+L["129514_65039"] = "test tube"
 -- emoji:🧫; unicode = 1f9eb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129515"] = "petri dish"
+-- emoji:🧫; unicode = 1f9eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧫, 1f9eb
+-- format: unicodeKey = tts
+L["129515_65039"] = "petri dish"
 -- emoji:🧬; unicode = 1f9ec
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129516"] = "dna"
+-- emoji:🧬; unicode = 1f9ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧬, 1f9ec
+-- format: unicodeKey = tts
+L["129516_65039"] = "dna"
 -- emoji:🔬; unicode = 1f52c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128300"] = "microscope"
+-- emoji:🔬; unicode = 1f52c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔬, 1f52c
+-- format: unicodeKey = tts
+L["128300_65039"] = "microscope"
 -- emoji:🔭; unicode = 1f52d
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128301"] = "telescope"
+-- emoji:🔭; unicode = 1f52d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔭, 1f52d
+-- format: unicodeKey = tts
+L["128301_65039"] = "telescope"
 -- emoji:📡; unicode = 1f4e1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128225"] = "satellite antenna"
+-- emoji:📡; unicode = 1f4e1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📡, 1f4e1
+-- format: unicodeKey = tts
+L["128225_65039"] = "satellite antenna"
 -- emoji:💉; unicode = 1f489
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128137"] = "syringe"
+-- emoji:💉; unicode = 1f489 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💉, 1f489
+-- format: unicodeKey = tts
+L["128137_65039"] = "syringe"
 -- emoji:🩸; unicode = 1fa78
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129656"] = "drop of blood"
+-- emoji:🩸; unicode = 1fa78 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩸, 1fa78
+-- format: unicodeKey = tts
+L["129656_65039"] = "drop of blood"
 -- emoji:💊; unicode = 1f48a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128138"] = "pill"
+-- emoji:💊; unicode = 1f48a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💊, 1f48a
+-- format: unicodeKey = tts
+L["128138_65039"] = "pill"
 -- emoji:🩹; unicode = 1fa79
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129657"] = "adhesive bandage"
+-- emoji:🩹; unicode = 1fa79 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩹, 1fa79
+-- format: unicodeKey = tts
+L["129657_65039"] = "adhesive bandage"
 -- emoji:🩼; unicode = 1fa7c
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129660"] = "crutch"
+-- emoji:🩼; unicode = 1fa7c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩼, 1fa7c
+-- format: unicodeKey = tts
+L["129660_65039"] = "crutch"
 -- emoji:🩺; unicode = 1fa7a
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129658"] = "stethoscope"
+-- emoji:🩺; unicode = 1fa7a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩺, 1fa7a
+-- format: unicodeKey = tts
+L["129658_65039"] = "stethoscope"
 -- emoji:🩻; unicode = 1fa7b
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129659"] = "x-ray"
+-- emoji:🩻; unicode = 1fa7b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩻, 1fa7b
+-- format: unicodeKey = tts
+L["129659_65039"] = "x-ray"
 -- emoji:🚪; unicode = 1f6aa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128682"] = "door"
+-- emoji:🚪; unicode = 1f6aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚪, 1f6aa
+-- format: unicodeKey = tts
+L["128682_65039"] = "door"
 -- emoji:🛗; unicode = 1f6d7
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["128727"] = "elevator"
+-- emoji:🛗; unicode = 1f6d7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛗, 1f6d7
+-- format: unicodeKey = tts
+L["128727_65039"] = "elevator"
 -- emoji:🪞; unicode = 1fa9e
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129694"] = "mirror"
+-- emoji:🪞; unicode = 1fa9e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪞, 1fa9e
+-- format: unicodeKey = tts
+L["129694_65039"] = "mirror"
 -- emoji:🪟; unicode = 1fa9f
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129695"] = "window"
+-- emoji:🪟; unicode = 1fa9f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪟, 1fa9f
+-- format: unicodeKey = tts
+L["129695_65039"] = "window"
 -- emoji:🛏️; unicode = 1f6cf fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18894,82 +23914,182 @@ L["128715"] = "couch and lamp"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129681"] = "chair"
+-- emoji:🪑; unicode = 1fa91 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪑, 1fa91
+-- format: unicodeKey = tts
+L["129681_65039"] = "chair"
 -- emoji:🚽; unicode = 1f6bd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128701"] = "toilet"
+-- emoji:🚽; unicode = 1f6bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚽, 1f6bd
+-- format: unicodeKey = tts
+L["128701_65039"] = "toilet"
 -- emoji:🪠; unicode = 1faa0
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129696"] = "plunger"
+-- emoji:🪠; unicode = 1faa0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪠, 1faa0
+-- format: unicodeKey = tts
+L["129696_65039"] = "plunger"
 -- emoji:🚿; unicode = 1f6bf
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128703"] = "shower"
+-- emoji:🚿; unicode = 1f6bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚿, 1f6bf
+-- format: unicodeKey = tts
+L["128703_65039"] = "shower"
 -- emoji:🛁; unicode = 1f6c1
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128705"] = "bathtub"
+-- emoji:🛁; unicode = 1f6c1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛁, 1f6c1
+-- format: unicodeKey = tts
+L["128705_65039"] = "bathtub"
 -- emoji:🪤; unicode = 1faa4
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129700"] = "mouse trap"
+-- emoji:🪤; unicode = 1faa4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪤, 1faa4
+-- format: unicodeKey = tts
+L["129700_65039"] = "mouse trap"
 -- emoji:🪒; unicode = 1fa92
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129682"] = "razor"
+-- emoji:🪒; unicode = 1fa92 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪒, 1fa92
+-- format: unicodeKey = tts
+L["129682_65039"] = "razor"
 -- emoji:🧴; unicode = 1f9f4
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129524"] = "lotion bottle"
+-- emoji:🧴; unicode = 1f9f4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧴, 1f9f4
+-- format: unicodeKey = tts
+L["129524_65039"] = "lotion bottle"
 -- emoji:🧷; unicode = 1f9f7
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129527"] = "safety pin"
+-- emoji:🧷; unicode = 1f9f7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧷, 1f9f7
+-- format: unicodeKey = tts
+L["129527_65039"] = "safety pin"
 -- emoji:🧹; unicode = 1f9f9
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129529"] = "broom"
+-- emoji:🧹; unicode = 1f9f9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧹, 1f9f9
+-- format: unicodeKey = tts
+L["129529_65039"] = "broom"
 -- emoji:🧺; unicode = 1f9fa
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129530"] = "basket"
+-- emoji:🧺; unicode = 1f9fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧺, 1f9fa
+-- format: unicodeKey = tts
+L["129530_65039"] = "basket"
 -- emoji:🧻; unicode = 1f9fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129531"] = "roll of paper"
+-- emoji:🧻; unicode = 1f9fb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧻, 1f9fb
+-- format: unicodeKey = tts
+L["129531_65039"] = "roll of paper"
 -- emoji:🪣; unicode = 1faa3
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129699"] = "bucket"
+-- emoji:🪣; unicode = 1faa3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪣, 1faa3
+-- format: unicodeKey = tts
+L["129699_65039"] = "bucket"
 -- emoji:🧼; unicode = 1f9fc
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129532"] = "soap"
+-- emoji:🧼; unicode = 1f9fc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧼, 1f9fc
+-- format: unicodeKey = tts
+L["129532_65039"] = "soap"
 -- emoji:🫧; unicode = 1fae7
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129767"] = "bubbles"
+-- emoji:🫧; unicode = 1fae7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫧, 1fae7
+-- format: unicodeKey = tts
+L["129767_65039"] = "bubbles"
 -- emoji:🪥; unicode = 1faa5
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129701"] = "toothbrush"
+-- emoji:🪥; unicode = 1faa5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪥, 1faa5
+-- format: unicodeKey = tts
+L["129701_65039"] = "toothbrush"
 -- emoji:🧽; unicode = 1f9fd
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129533"] = "sponge"
+-- emoji:🧽; unicode = 1f9fd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧽, 1f9fd
+-- format: unicodeKey = tts
+L["129533_65039"] = "sponge"
 -- emoji:🧯; unicode = 1f9ef
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129519"] = "fire extinguisher"
+-- emoji:🧯; unicode = 1f9ef fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧯, 1f9ef
+-- format: unicodeKey = tts
+L["129519_65039"] = "fire extinguisher"
 -- emoji:🛒; unicode = 1f6d2
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128722"] = "shopping cart"
+-- emoji:🛒; unicode = 1f6d2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛒, 1f6d2
+-- format: unicodeKey = tts
+L["128722_65039"] = "shopping cart"
 -- emoji:🚬; unicode = 1f6ac
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128684"] = "cigarette"
+-- emoji:🚬; unicode = 1f6ac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚬, 1f6ac
+-- format: unicodeKey = tts
+L["128684_65039"] = "cigarette"
 -- emoji:⚰️; unicode = 26b0 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -18983,6 +24103,11 @@ L["9904"] = "coffin"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129702"] = "headstone"
+-- emoji:🪦; unicode = 1faa6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪦, 1faa6
+-- format: unicodeKey = tts
+L["129702_65039"] = "headstone"
 -- emoji:⚱️; unicode = 26b1 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -18996,74 +24121,164 @@ L["9905"] = "funeral urn"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129535"] = "nazar amulet"
+-- emoji:🧿; unicode = 1f9ff fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧿, 1f9ff
+-- format: unicodeKey = tts
+L["129535_65039"] = "nazar amulet"
 -- emoji:🪬; unicode = 1faac
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129708"] = "hamsa"
+-- emoji:🪬; unicode = 1faac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪬, 1faac
+-- format: unicodeKey = tts
+L["129708_65039"] = "hamsa"
 -- emoji:🗿; unicode = 1f5ff
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128511"] = "moai"
+-- emoji:🗿; unicode = 1f5ff fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗿, 1f5ff
+-- format: unicodeKey = tts
+L["128511_65039"] = "moai"
 -- emoji:🪧; unicode = 1faa7
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129703"] = "placard"
+-- emoji:🪧; unicode = 1faa7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪧, 1faa7
+-- format: unicodeKey = tts
+L["129703_65039"] = "placard"
 -- emoji:🪪; unicode = 1faaa
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129706"] = "identification card"
+-- emoji:🪪; unicode = 1faaa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪪, 1faaa
+-- format: unicodeKey = tts
+L["129706_65039"] = "identification card"
 -- emoji:🏧; unicode = 1f3e7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127975"] = "ATM sign"
+-- emoji:🏧; unicode = 1f3e7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏧, 1f3e7
+-- format: unicodeKey = tts
+L["127975_65039"] = "ATM sign"
 -- emoji:🚮; unicode = 1f6ae
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128686"] = "litter in bin sign"
+-- emoji:🚮; unicode = 1f6ae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚮, 1f6ae
+-- format: unicodeKey = tts
+L["128686_65039"] = "litter in bin sign"
 -- emoji:🚰; unicode = 1f6b0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128688"] = "potable water"
+-- emoji:🚰; unicode = 1f6b0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚰, 1f6b0
+-- format: unicodeKey = tts
+L["128688_65039"] = "potable water"
 -- emoji:♿; unicode = 267f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9855"] = "wheelchair symbol"
+-- emoji:♿; unicode = 267f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♿, 267f
+-- format: unicodeKey = tts
+L["9855_65039"] = "wheelchair symbol"
 -- emoji:🚹; unicode = 1f6b9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128697"] = "men’s room"
+-- emoji:🚹; unicode = 1f6b9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚹, 1f6b9
+-- format: unicodeKey = tts
+L["128697_65039"] = "men’s room"
 -- emoji:🚺; unicode = 1f6ba
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128698"] = "women’s room"
+-- emoji:🚺; unicode = 1f6ba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚺, 1f6ba
+-- format: unicodeKey = tts
+L["128698_65039"] = "women’s room"
 -- emoji:🚻; unicode = 1f6bb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128699"] = "restroom"
+-- emoji:🚻; unicode = 1f6bb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚻, 1f6bb
+-- format: unicodeKey = tts
+L["128699_65039"] = "restroom"
 -- emoji:🚼; unicode = 1f6bc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128700"] = "baby symbol"
+-- emoji:🚼; unicode = 1f6bc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚼, 1f6bc
+-- format: unicodeKey = tts
+L["128700_65039"] = "baby symbol"
 -- emoji:🚾; unicode = 1f6be
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128702"] = "water closet"
+-- emoji:🚾; unicode = 1f6be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚾, 1f6be
+-- format: unicodeKey = tts
+L["128702_65039"] = "water closet"
 -- emoji:🛂; unicode = 1f6c2
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128706"] = "passport control"
+-- emoji:🛂; unicode = 1f6c2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛂, 1f6c2
+-- format: unicodeKey = tts
+L["128706_65039"] = "passport control"
 -- emoji:🛃; unicode = 1f6c3
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128707"] = "customs"
+-- emoji:🛃; unicode = 1f6c3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛃, 1f6c3
+-- format: unicodeKey = tts
+L["128707_65039"] = "customs"
 -- emoji:🛄; unicode = 1f6c4
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128708"] = "baggage claim"
+-- emoji:🛄; unicode = 1f6c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛄, 1f6c4
+-- format: unicodeKey = tts
+L["128708_65039"] = "baggage claim"
 -- emoji:🛅; unicode = 1f6c5
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128709"] = "left luggage"
+-- emoji:🛅; unicode = 1f6c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛅, 1f6c5
+-- format: unicodeKey = tts
+L["128709_65039"] = "left luggage"
 -- emoji:⚠️; unicode = 26a0 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19077,42 +24292,92 @@ L["9888"] = "warning"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128696"] = "children crossing"
+-- emoji:🚸; unicode = 1f6b8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚸, 1f6b8
+-- format: unicodeKey = tts
+L["128696_65039"] = "children crossing"
 -- emoji:⛔; unicode = 26d4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9940"] = "no entry"
+-- emoji:⛔; unicode = 26d4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛔, 26d4
+-- format: unicodeKey = tts
+L["9940_65039"] = "no entry"
 -- emoji:🚫; unicode = 1f6ab
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128683"] = "prohibited"
+-- emoji:🚫; unicode = 1f6ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚫, 1f6ab
+-- format: unicodeKey = tts
+L["128683_65039"] = "prohibited"
 -- emoji:🚳; unicode = 1f6b3
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128691"] = "no bicycles"
+-- emoji:🚳; unicode = 1f6b3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚳, 1f6b3
+-- format: unicodeKey = tts
+L["128691_65039"] = "no bicycles"
 -- emoji:🚭; unicode = 1f6ad
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128685"] = "no smoking"
+-- emoji:🚭; unicode = 1f6ad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚭, 1f6ad
+-- format: unicodeKey = tts
+L["128685_65039"] = "no smoking"
 -- emoji:🚯; unicode = 1f6af
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128687"] = "no littering"
+-- emoji:🚯; unicode = 1f6af fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚯, 1f6af
+-- format: unicodeKey = tts
+L["128687_65039"] = "no littering"
 -- emoji:🚱; unicode = 1f6b1
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128689"] = "non-potable water"
+-- emoji:🚱; unicode = 1f6b1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚱, 1f6b1
+-- format: unicodeKey = tts
+L["128689_65039"] = "non-potable water"
 -- emoji:🚷; unicode = 1f6b7
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128695"] = "no pedestrians"
+-- emoji:🚷; unicode = 1f6b7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚷, 1f6b7
+-- format: unicodeKey = tts
+L["128695_65039"] = "no pedestrians"
 -- emoji:📵; unicode = 1f4f5
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128245"] = "no mobile phones"
+-- emoji:📵; unicode = 1f4f5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📵, 1f4f5
+-- format: unicodeKey = tts
+L["128245_65039"] = "no mobile phones"
 -- emoji:🔞; unicode = 1f51e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128286"] = "no one under eighteen"
+-- emoji:🔞; unicode = 1f51e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔞, 1f51e
+-- format: unicodeKey = tts
+L["128286_65039"] = "no one under eighteen"
 -- emoji:☢️; unicode = 2622 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -19261,34 +24526,74 @@ L["10549"] = "right arrow curving down"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128259"] = "clockwise vertical arrows"
+-- emoji:🔃; unicode = 1f503 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔃, 1f503
+-- format: unicodeKey = tts
+L["128259_65039"] = "clockwise vertical arrows"
 -- emoji:🔄; unicode = 1f504
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128260"] = "counterclockwise arrows button"
+-- emoji:🔄; unicode = 1f504 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔄, 1f504
+-- format: unicodeKey = tts
+L["128260_65039"] = "counterclockwise arrows button"
 -- emoji:🔙; unicode = 1f519
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128281"] = "BACK arrow"
+-- emoji:🔙; unicode = 1f519 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔙, 1f519
+-- format: unicodeKey = tts
+L["128281_65039"] = "BACK arrow"
 -- emoji:🔚; unicode = 1f51a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128282"] = "END arrow"
+-- emoji:🔚; unicode = 1f51a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔚, 1f51a
+-- format: unicodeKey = tts
+L["128282_65039"] = "END arrow"
 -- emoji:🔛; unicode = 1f51b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128283"] = "ON! arrow"
+-- emoji:🔛; unicode = 1f51b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔛, 1f51b
+-- format: unicodeKey = tts
+L["128283_65039"] = "ON! arrow"
 -- emoji:🔜; unicode = 1f51c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128284"] = "SOON arrow"
+-- emoji:🔜; unicode = 1f51c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔜, 1f51c
+-- format: unicodeKey = tts
+L["128284_65039"] = "SOON arrow"
 -- emoji:🔝; unicode = 1f51d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128285"] = "TOP arrow"
+-- emoji:🔝; unicode = 1f51d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔝, 1f51d
+-- format: unicodeKey = tts
+L["128285_65039"] = "TOP arrow"
 -- emoji:🛐; unicode = 1f6d0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128720"] = "place of worship"
+-- emoji:🛐; unicode = 1f6d0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛐, 1f6d0
+-- format: unicodeKey = tts
+L["128720_65039"] = "place of worship"
 -- emoji:⚛️; unicode = 269b fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -19374,78 +24679,173 @@ L["9774"] = "peace symbol"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128334"] = "menorah"
+-- emoji:🕎; unicode = 1f54e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕎, 1f54e
+-- format: unicodeKey = tts
+L["128334_65039"] = "menorah"
 -- emoji:🔯; unicode = 1f52f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128303"] = "dotted six-pointed star"
+-- emoji:🔯; unicode = 1f52f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔯, 1f52f
+-- format: unicodeKey = tts
+L["128303_65039"] = "dotted six-pointed star"
 -- emoji:🪯; unicode = 1faaf
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129711"] = "khanda"
+-- emoji:🪯; unicode = 1faaf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪯, 1faaf
+-- format: unicodeKey = tts
+L["129711_65039"] = "khanda"
 -- emoji:♈; unicode = 2648
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9800"] = "Aries"
+-- emoji:♈; unicode = 2648 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♈, 2648
+-- format: unicodeKey = tts
+L["9800_65039"] = "Aries"
 -- emoji:♉; unicode = 2649
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9801"] = "Taurus"
+-- emoji:♉; unicode = 2649 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♉, 2649
+-- format: unicodeKey = tts
+L["9801_65039"] = "Taurus"
 -- emoji:♊; unicode = 264a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9802"] = "Gemini"
+-- emoji:♊; unicode = 264a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♊, 264a
+-- format: unicodeKey = tts
+L["9802_65039"] = "Gemini"
 -- emoji:♋; unicode = 264b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9803"] = "Cancer"
+-- emoji:♋; unicode = 264b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♋, 264b
+-- format: unicodeKey = tts
+L["9803_65039"] = "Cancer"
 -- emoji:♌; unicode = 264c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9804"] = "Leo"
+-- emoji:♌; unicode = 264c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♌, 264c
+-- format: unicodeKey = tts
+L["9804_65039"] = "Leo"
 -- emoji:♍; unicode = 264d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9805"] = "Virgo"
+-- emoji:♍; unicode = 264d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♍, 264d
+-- format: unicodeKey = tts
+L["9805_65039"] = "Virgo"
 -- emoji:♎; unicode = 264e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9806"] = "Libra"
+-- emoji:♎; unicode = 264e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♎, 264e
+-- format: unicodeKey = tts
+L["9806_65039"] = "Libra"
 -- emoji:♏; unicode = 264f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9807"] = "Scorpio"
+-- emoji:♏; unicode = 264f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♏, 264f
+-- format: unicodeKey = tts
+L["9807_65039"] = "Scorpio"
 -- emoji:♐; unicode = 2650
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9808"] = "Sagittarius"
+-- emoji:♐; unicode = 2650 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♐, 2650
+-- format: unicodeKey = tts
+L["9808_65039"] = "Sagittarius"
 -- emoji:♑; unicode = 2651
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9809"] = "Capricorn"
+-- emoji:♑; unicode = 2651 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♑, 2651
+-- format: unicodeKey = tts
+L["9809_65039"] = "Capricorn"
 -- emoji:♒; unicode = 2652
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9810"] = "Aquarius"
+-- emoji:♒; unicode = 2652 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♒, 2652
+-- format: unicodeKey = tts
+L["9810_65039"] = "Aquarius"
 -- emoji:♓; unicode = 2653
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9811"] = "Pisces"
+-- emoji:♓; unicode = 2653 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♓, 2653
+-- format: unicodeKey = tts
+L["9811_65039"] = "Pisces"
 -- emoji:⛎; unicode = 26ce
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9934"] = "Ophiuchus"
+-- emoji:⛎; unicode = 26ce fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛎, 26ce
+-- format: unicodeKey = tts
+L["9934_65039"] = "Ophiuchus"
 -- emoji:🔀; unicode = 1f500
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128256"] = "shuffle tracks button"
+-- emoji:🔀; unicode = 1f500 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔀, 1f500
+-- format: unicodeKey = tts
+L["128256_65039"] = "shuffle tracks button"
 -- emoji:🔁; unicode = 1f501
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128257"] = "repeat button"
+-- emoji:🔁; unicode = 1f501 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔁, 1f501
+-- format: unicodeKey = tts
+L["128257_65039"] = "repeat button"
 -- emoji:🔂; unicode = 1f502
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128258"] = "repeat single button"
+-- emoji:🔂; unicode = 1f502 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔂, 1f502
+-- format: unicodeKey = tts
+L["128258_65039"] = "repeat single button"
 -- emoji:▶️; unicode = 25b6 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19459,6 +24859,11 @@ L["9654"] = "play button"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9193"] = "fast-forward button"
+-- emoji:⏩; unicode = 23e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏩, 23e9
+-- format: unicodeKey = tts
+L["9193_65039"] = "fast-forward button"
 -- emoji:⏭️; unicode = 23ed fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -19490,6 +24895,11 @@ L["9664"] = "reverse button"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9194"] = "fast reverse button"
+-- emoji:⏪; unicode = 23ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏪, 23ea
+-- format: unicodeKey = tts
+L["9194_65039"] = "fast reverse button"
 -- emoji:⏮️; unicode = 23ee fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -19503,18 +24913,38 @@ L["9198"] = "last track button"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128316"] = "upwards button"
+-- emoji:🔼; unicode = 1f53c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔼, 1f53c
+-- format: unicodeKey = tts
+L["128316_65039"] = "upwards button"
 -- emoji:⏫; unicode = 23eb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9195"] = "fast up button"
+-- emoji:⏫; unicode = 23eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏫, 23eb
+-- format: unicodeKey = tts
+L["9195_65039"] = "fast up button"
 -- emoji:🔽; unicode = 1f53d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128317"] = "downwards button"
+-- emoji:🔽; unicode = 1f53d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔽, 1f53d
+-- format: unicodeKey = tts
+L["128317_65039"] = "downwards button"
 -- emoji:⏬; unicode = 23ec
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9196"] = "fast down button"
+-- emoji:⏬; unicode = 23ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏬, 23ec
+-- format: unicodeKey = tts
+L["9196_65039"] = "fast down button"
 -- emoji:⏸️; unicode = 23f8 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -19555,30 +24985,65 @@ L["9167"] = "eject button"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127910"] = "cinema"
+-- emoji:🎦; unicode = 1f3a6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎦, 1f3a6
+-- format: unicodeKey = tts
+L["127910_65039"] = "cinema"
 -- emoji:🔅; unicode = 1f505
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128261"] = "dim button"
+-- emoji:🔅; unicode = 1f505 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔅, 1f505
+-- format: unicodeKey = tts
+L["128261_65039"] = "dim button"
 -- emoji:🔆; unicode = 1f506
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128262"] = "bright button"
+-- emoji:🔆; unicode = 1f506 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔆, 1f506
+-- format: unicodeKey = tts
+L["128262_65039"] = "bright button"
 -- emoji:📶; unicode = 1f4f6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128246"] = "antenna bars"
+-- emoji:📶; unicode = 1f4f6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📶, 1f4f6
+-- format: unicodeKey = tts
+L["128246_65039"] = "antenna bars"
 -- emoji:🛜; unicode = 1f6dc
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["128732"] = "wireless"
+-- emoji:🛜; unicode = 1f6dc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛜, 1f6dc
+-- format: unicodeKey = tts
+L["128732_65039"] = "wireless"
 -- emoji:📳; unicode = 1f4f3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128243"] = "vibration mode"
+-- emoji:📳; unicode = 1f4f3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📳, 1f4f3
+-- format: unicodeKey = tts
+L["128243_65039"] = "vibration mode"
 -- emoji:📴; unicode = 1f4f4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128244"] = "mobile phone off"
+-- emoji:📴; unicode = 1f4f4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📴, 1f4f4
+-- format: unicodeKey = tts
+L["128244_65039"] = "mobile phone off"
 -- emoji:♀️; unicode = 2640 fe0f
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -19619,18 +25084,38 @@ L["10006"] = "multiply"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10133"] = "plus"
+-- emoji:➕; unicode = 2795 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➕, 2795
+-- format: unicodeKey = tts
+L["10133_65039"] = "plus"
 -- emoji:➖; unicode = 2796
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10134"] = "minus"
+-- emoji:➖; unicode = 2796 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➖, 2796
+-- format: unicodeKey = tts
+L["10134_65039"] = "minus"
 -- emoji:➗; unicode = 2797
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10135"] = "divide"
+-- emoji:➗; unicode = 2797 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➗, 2797
+-- format: unicodeKey = tts
+L["10135_65039"] = "divide"
 -- emoji:🟰; unicode = 1f7f0
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129008"] = "heavy equals sign"
+-- emoji:🟰; unicode = 1f7f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟰, 1f7f0
+-- format: unicodeKey = tts
+L["129008_65039"] = "heavy equals sign"
 -- emoji:♾️; unicode = 267e fe0f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -19662,18 +25147,38 @@ L["8265"] = "exclamation question mark"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10067"] = "red question mark"
+-- emoji:❓; unicode = 2753 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❓, 2753
+-- format: unicodeKey = tts
+L["10067_65039"] = "red question mark"
 -- emoji:❔; unicode = 2754
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10068"] = "white question mark"
+-- emoji:❔; unicode = 2754 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❔, 2754
+-- format: unicodeKey = tts
+L["10068_65039"] = "white question mark"
 -- emoji:❕; unicode = 2755
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10069"] = "white exclamation mark"
+-- emoji:❕; unicode = 2755 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❕, 2755
+-- format: unicodeKey = tts
+L["10069_65039"] = "white exclamation mark"
 -- emoji:❗; unicode = 2757
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10071"] = "red exclamation mark"
+-- emoji:❗; unicode = 2757 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❗, 2757
+-- format: unicodeKey = tts
+L["10071_65039"] = "red exclamation mark"
 -- emoji:〰️; unicode = 3030 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19687,10 +25192,20 @@ L["12336"] = "wavy dash"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128177"] = "currency exchange"
+-- emoji:💱; unicode = 1f4b1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💱, 1f4b1
+-- format: unicodeKey = tts
+L["128177_65039"] = "currency exchange"
 -- emoji:💲; unicode = 1f4b2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128178"] = "heavy dollar sign"
+-- emoji:💲; unicode = 1f4b2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💲, 1f4b2
+-- format: unicodeKey = tts
+L["128178_65039"] = "heavy dollar sign"
 -- emoji:⚕️; unicode = 2695 fe0f
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -19722,22 +25237,47 @@ L["9884"] = "fleur-de-lis"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128305"] = "trident emblem"
+-- emoji:🔱; unicode = 1f531 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔱, 1f531
+-- format: unicodeKey = tts
+L["128305_65039"] = "trident emblem"
 -- emoji:📛; unicode = 1f4db
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128219"] = "name badge"
+-- emoji:📛; unicode = 1f4db fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📛, 1f4db
+-- format: unicodeKey = tts
+L["128219_65039"] = "name badge"
 -- emoji:🔰; unicode = 1f530
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128304"] = "Japanese symbol for beginner"
+-- emoji:🔰; unicode = 1f530 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔰, 1f530
+-- format: unicodeKey = tts
+L["128304_65039"] = "Japanese symbol for beginner"
 -- emoji:⭕; unicode = 2b55
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["11093"] = "hollow red circle"
+-- emoji:⭕; unicode = 2b55 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⭕, 2b55
+-- format: unicodeKey = tts
+L["11093_65039"] = "hollow red circle"
 -- emoji:✅; unicode = 2705
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9989"] = "check mark button"
+-- emoji:✅; unicode = 2705 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ✅, 2705
+-- format: unicodeKey = tts
+L["9989_65039"] = "check mark button"
 -- emoji:☑️; unicode = 2611 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19760,18 +25300,38 @@ L["10004"] = "check mark"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10060"] = "cross mark"
+-- emoji:❌; unicode = 274c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❌, 274c
+-- format: unicodeKey = tts
+L["10060_65039"] = "cross mark"
 -- emoji:❎; unicode = 274e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10062"] = "cross mark button"
+-- emoji:❎; unicode = 274e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❎, 274e
+-- format: unicodeKey = tts
+L["10062_65039"] = "cross mark button"
 -- emoji:➰; unicode = 27b0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10160"] = "curly loop"
+-- emoji:➰; unicode = 27b0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➰, 27b0
+-- format: unicodeKey = tts
+L["10160_65039"] = "curly loop"
 -- emoji:➿; unicode = 27bf
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["10175"] = "double curly loop"
+-- emoji:➿; unicode = 27bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➿, 27bf
+-- format: unicodeKey = tts
+L["10175_65039"] = "double curly loop"
 -- emoji:〽️; unicode = 303d fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19839,6 +25399,11 @@ L["8482"] = "trade mark"
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129759"] = "splatter"
+-- emoji:🫟; unicode = 1fadf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫟, 1fadf
+-- format: unicodeKey = tts
+L["129759_65039"] = "splatter"
 -- emoji:#️⃣; unicode = 23 fe0f 20e3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19951,26 +25516,56 @@ L["57_8419"] = "keycap: 9"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128287"] = "keycap: 10"
+-- emoji:🔟; unicode = 1f51f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔟, 1f51f
+-- format: unicodeKey = tts
+L["128287_65039"] = "keycap: 10"
 -- emoji:🔠; unicode = 1f520
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128288"] = "input latin uppercase"
+-- emoji:🔠; unicode = 1f520 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔠, 1f520
+-- format: unicodeKey = tts
+L["128288_65039"] = "input latin uppercase"
 -- emoji:🔡; unicode = 1f521
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128289"] = "input latin lowercase"
+-- emoji:🔡; unicode = 1f521 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔡, 1f521
+-- format: unicodeKey = tts
+L["128289_65039"] = "input latin lowercase"
 -- emoji:🔢; unicode = 1f522
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128290"] = "input numbers"
+-- emoji:🔢; unicode = 1f522 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔢, 1f522
+-- format: unicodeKey = tts
+L["128290_65039"] = "input numbers"
 -- emoji:🔣; unicode = 1f523
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128291"] = "input symbols"
+-- emoji:🔣; unicode = 1f523 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔣, 1f523
+-- format: unicodeKey = tts
+L["128291_65039"] = "input symbols"
 -- emoji:🔤; unicode = 1f524
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128292"] = "input latin letters"
+-- emoji:🔤; unicode = 1f524 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔤, 1f524
+-- format: unicodeKey = tts
+L["128292_65039"] = "input latin letters"
 -- emoji:🅰️; unicode = 1f170 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19984,6 +25579,11 @@ L["127344"] = "A button (blood type)"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127374"] = "AB button (blood type)"
+-- emoji:🆎; unicode = 1f18e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆎, 1f18e
+-- format: unicodeKey = tts
+L["127374_65039"] = "AB button (blood type)"
 -- emoji:🅱️; unicode = 1f171 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19997,14 +25597,29 @@ L["127345"] = "B button (blood type)"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127377"] = "CL button"
+-- emoji:🆑; unicode = 1f191 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆑, 1f191
+-- format: unicodeKey = tts
+L["127377_65039"] = "CL button"
 -- emoji:🆒; unicode = 1f192
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127378"] = "COOL button"
+-- emoji:🆒; unicode = 1f192 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆒, 1f192
+-- format: unicodeKey = tts
+L["127378_65039"] = "COOL button"
 -- emoji:🆓; unicode = 1f193
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127379"] = "FREE button"
+-- emoji:🆓; unicode = 1f193 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆓, 1f193
+-- format: unicodeKey = tts
+L["127379_65039"] = "FREE button"
 -- emoji:ℹ️; unicode = 2139 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20018,6 +25633,11 @@ L["8505"] = "information"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127380"] = "ID button"
+-- emoji:🆔; unicode = 1f194 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆔, 1f194
+-- format: unicodeKey = tts
+L["127380_65039"] = "ID button"
 -- emoji:Ⓜ️; unicode = 24c2 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20031,10 +25651,20 @@ L["9410"] = "circled M"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127381"] = "NEW button"
+-- emoji:🆕; unicode = 1f195 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆕, 1f195
+-- format: unicodeKey = tts
+L["127381_65039"] = "NEW button"
 -- emoji:🆖; unicode = 1f196
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127382"] = "NG button"
+-- emoji:🆖; unicode = 1f196 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆖, 1f196
+-- format: unicodeKey = tts
+L["127382_65039"] = "NG button"
 -- emoji:🅾️; unicode = 1f17e fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20048,6 +25678,11 @@ L["127358"] = "O button (blood type)"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127383"] = "OK button"
+-- emoji:🆗; unicode = 1f197 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆗, 1f197
+-- format: unicodeKey = tts
+L["127383_65039"] = "OK button"
 -- emoji:🅿️; unicode = 1f17f fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20061,18 +25696,38 @@ L["127359"] = "P button"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127384"] = "SOS button"
+-- emoji:🆘; unicode = 1f198 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆘, 1f198
+-- format: unicodeKey = tts
+L["127384_65039"] = "SOS button"
 -- emoji:🆙; unicode = 1f199
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127385"] = "UP! button"
+-- emoji:🆙; unicode = 1f199 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆙, 1f199
+-- format: unicodeKey = tts
+L["127385_65039"] = "UP! button"
 -- emoji:🆚; unicode = 1f19a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127386"] = "VS button"
+-- emoji:🆚; unicode = 1f19a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆚, 1f19a
+-- format: unicodeKey = tts
+L["127386_65039"] = "VS button"
 -- emoji:🈁; unicode = 1f201
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127489"] = "Japanese “here” button"
+-- emoji:🈁; unicode = 1f201 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈁, 1f201
+-- format: unicodeKey = tts
+L["127489_65039"] = "Japanese “here” button"
 -- emoji:🈂️; unicode = 1f202 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20095,42 +25750,92 @@ L["127543"] = "Japanese “monthly amount” button"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127542"] = "Japanese “not free of charge” button"
+-- emoji:🈶; unicode = 1f236 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈶, 1f236
+-- format: unicodeKey = tts
+L["127542_65039"] = "Japanese “not free of charge” button"
 -- emoji:🈯; unicode = 1f22f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127535"] = "Japanese “reserved” button"
+-- emoji:🈯; unicode = 1f22f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈯, 1f22f
+-- format: unicodeKey = tts
+L["127535_65039"] = "Japanese “reserved” button"
 -- emoji:🉐; unicode = 1f250
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127568"] = "Japanese “bargain” button"
+-- emoji:🉐; unicode = 1f250 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🉐, 1f250
+-- format: unicodeKey = tts
+L["127568_65039"] = "Japanese “bargain” button"
 -- emoji:🈹; unicode = 1f239
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127545"] = "Japanese “discount” button"
+-- emoji:🈹; unicode = 1f239 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈹, 1f239
+-- format: unicodeKey = tts
+L["127545_65039"] = "Japanese “discount” button"
 -- emoji:🈚; unicode = 1f21a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127514"] = "Japanese “free of charge” button"
+-- emoji:🈚; unicode = 1f21a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈚, 1f21a
+-- format: unicodeKey = tts
+L["127514_65039"] = "Japanese “free of charge” button"
 -- emoji:🈲; unicode = 1f232
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127538"] = "Japanese “prohibited” button"
+-- emoji:🈲; unicode = 1f232 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈲, 1f232
+-- format: unicodeKey = tts
+L["127538_65039"] = "Japanese “prohibited” button"
 -- emoji:🉑; unicode = 1f251
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127569"] = "Japanese “acceptable” button"
+-- emoji:🉑; unicode = 1f251 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🉑, 1f251
+-- format: unicodeKey = tts
+L["127569_65039"] = "Japanese “acceptable” button"
 -- emoji:🈸; unicode = 1f238
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127544"] = "Japanese “application” button"
+-- emoji:🈸; unicode = 1f238 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈸, 1f238
+-- format: unicodeKey = tts
+L["127544_65039"] = "Japanese “application” button"
 -- emoji:🈴; unicode = 1f234
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127540"] = "Japanese “passing grade” button"
+-- emoji:🈴; unicode = 1f234 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈴, 1f234
+-- format: unicodeKey = tts
+L["127540_65039"] = "Japanese “passing grade” button"
 -- emoji:🈳; unicode = 1f233
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127539"] = "Japanese “vacancy” button"
+-- emoji:🈳; unicode = 1f233 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈳, 1f233
+-- format: unicodeKey = tts
+L["127539_65039"] = "Japanese “vacancy” button"
 -- emoji:㊗️; unicode = 3297 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20153,82 +25858,182 @@ L["12953"] = "Japanese “secret” button"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127546"] = "Japanese “open for business” button"
+-- emoji:🈺; unicode = 1f23a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈺, 1f23a
+-- format: unicodeKey = tts
+L["127546_65039"] = "Japanese “open for business” button"
 -- emoji:🈵; unicode = 1f235
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127541"] = "Japanese “no vacancy” button"
+-- emoji:🈵; unicode = 1f235 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈵, 1f235
+-- format: unicodeKey = tts
+L["127541_65039"] = "Japanese “no vacancy” button"
 -- emoji:🔴; unicode = 1f534
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128308"] = "red circle"
+-- emoji:🔴; unicode = 1f534 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔴, 1f534
+-- format: unicodeKey = tts
+L["128308_65039"] = "red circle"
 -- emoji:🟠; unicode = 1f7e0
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128992"] = "orange circle"
+-- emoji:🟠; unicode = 1f7e0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟠, 1f7e0
+-- format: unicodeKey = tts
+L["128992_65039"] = "orange circle"
 -- emoji:🟡; unicode = 1f7e1
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128993"] = "yellow circle"
+-- emoji:🟡; unicode = 1f7e1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟡, 1f7e1
+-- format: unicodeKey = tts
+L["128993_65039"] = "yellow circle"
 -- emoji:🟢; unicode = 1f7e2
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128994"] = "green circle"
+-- emoji:🟢; unicode = 1f7e2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟢, 1f7e2
+-- format: unicodeKey = tts
+L["128994_65039"] = "green circle"
 -- emoji:🔵; unicode = 1f535
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128309"] = "blue circle"
+-- emoji:🔵; unicode = 1f535 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔵, 1f535
+-- format: unicodeKey = tts
+L["128309_65039"] = "blue circle"
 -- emoji:🟣; unicode = 1f7e3
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128995"] = "purple circle"
+-- emoji:🟣; unicode = 1f7e3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟣, 1f7e3
+-- format: unicodeKey = tts
+L["128995_65039"] = "purple circle"
 -- emoji:🟤; unicode = 1f7e4
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128996"] = "brown circle"
+-- emoji:🟤; unicode = 1f7e4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟤, 1f7e4
+-- format: unicodeKey = tts
+L["128996_65039"] = "brown circle"
 -- emoji:⚫; unicode = 26ab
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9899"] = "black circle"
+-- emoji:⚫; unicode = 26ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚫, 26ab
+-- format: unicodeKey = tts
+L["9899_65039"] = "black circle"
 -- emoji:⚪; unicode = 26aa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9898"] = "white circle"
+-- emoji:⚪; unicode = 26aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚪, 26aa
+-- format: unicodeKey = tts
+L["9898_65039"] = "white circle"
 -- emoji:🟥; unicode = 1f7e5
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128997"] = "red square"
+-- emoji:🟥; unicode = 1f7e5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟥, 1f7e5
+-- format: unicodeKey = tts
+L["128997_65039"] = "red square"
 -- emoji:🟧; unicode = 1f7e7
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128999"] = "orange square"
+-- emoji:🟧; unicode = 1f7e7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟧, 1f7e7
+-- format: unicodeKey = tts
+L["128999_65039"] = "orange square"
 -- emoji:🟨; unicode = 1f7e8
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129000"] = "yellow square"
+-- emoji:🟨; unicode = 1f7e8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟨, 1f7e8
+-- format: unicodeKey = tts
+L["129000_65039"] = "yellow square"
 -- emoji:🟩; unicode = 1f7e9
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129001"] = "green square"
+-- emoji:🟩; unicode = 1f7e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟩, 1f7e9
+-- format: unicodeKey = tts
+L["129001_65039"] = "green square"
 -- emoji:🟦; unicode = 1f7e6
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128998"] = "blue square"
+-- emoji:🟦; unicode = 1f7e6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟦, 1f7e6
+-- format: unicodeKey = tts
+L["128998_65039"] = "blue square"
 -- emoji:🟪; unicode = 1f7ea
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129002"] = "purple square"
+-- emoji:🟪; unicode = 1f7ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟪, 1f7ea
+-- format: unicodeKey = tts
+L["129002_65039"] = "purple square"
 -- emoji:🟫; unicode = 1f7eb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129003"] = "brown square"
+-- emoji:🟫; unicode = 1f7eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟫, 1f7eb
+-- format: unicodeKey = tts
+L["129003_65039"] = "brown square"
 -- emoji:⬛; unicode = 2b1b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["11035"] = "black large square"
+-- emoji:⬛; unicode = 2b1b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⬛, 2b1b
+-- format: unicodeKey = tts
+L["11035_65039"] = "black large square"
 -- emoji:⬜; unicode = 2b1c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["11036"] = "white large square"
+-- emoji:⬜; unicode = 2b1c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⬜, 2b1c
+-- format: unicodeKey = tts
+L["11036_65039"] = "white large square"
 -- emoji:◼️; unicode = 25fc fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20251,10 +26056,20 @@ L["9723"] = "white medium square"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9726"] = "black medium-small square"
+-- emoji:◾; unicode = 25fe fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ◾, 25fe
+-- format: unicodeKey = tts
+L["9726_65039"] = "black medium-small square"
 -- emoji:◽; unicode = 25fd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9725"] = "white medium-small square"
+-- emoji:◽; unicode = 25fd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ◽, 25fd
+-- format: unicodeKey = tts
+L["9725_65039"] = "white medium-small square"
 -- emoji:▪️; unicode = 25aa fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20277,58 +26092,128 @@ L["9643"] = "white small square"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128310"] = "large orange diamond"
+-- emoji:🔶; unicode = 1f536 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔶, 1f536
+-- format: unicodeKey = tts
+L["128310_65039"] = "large orange diamond"
 -- emoji:🔷; unicode = 1f537
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128311"] = "large blue diamond"
+-- emoji:🔷; unicode = 1f537 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔷, 1f537
+-- format: unicodeKey = tts
+L["128311_65039"] = "large blue diamond"
 -- emoji:🔸; unicode = 1f538
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128312"] = "small orange diamond"
+-- emoji:🔸; unicode = 1f538 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔸, 1f538
+-- format: unicodeKey = tts
+L["128312_65039"] = "small orange diamond"
 -- emoji:🔹; unicode = 1f539
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128313"] = "small blue diamond"
+-- emoji:🔹; unicode = 1f539 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔹, 1f539
+-- format: unicodeKey = tts
+L["128313_65039"] = "small blue diamond"
 -- emoji:🔺; unicode = 1f53a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128314"] = "red triangle pointed up"
+-- emoji:🔺; unicode = 1f53a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔺, 1f53a
+-- format: unicodeKey = tts
+L["128314_65039"] = "red triangle pointed up"
 -- emoji:🔻; unicode = 1f53b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128315"] = "red triangle pointed down"
+-- emoji:🔻; unicode = 1f53b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔻, 1f53b
+-- format: unicodeKey = tts
+L["128315_65039"] = "red triangle pointed down"
 -- emoji:💠; unicode = 1f4a0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128160"] = "diamond with a dot"
+-- emoji:💠; unicode = 1f4a0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💠, 1f4a0
+-- format: unicodeKey = tts
+L["128160_65039"] = "diamond with a dot"
 -- emoji:🔘; unicode = 1f518
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128280"] = "radio button"
+-- emoji:🔘; unicode = 1f518 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔘, 1f518
+-- format: unicodeKey = tts
+L["128280_65039"] = "radio button"
 -- emoji:🔳; unicode = 1f533
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128307"] = "white square button"
+-- emoji:🔳; unicode = 1f533 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔳, 1f533
+-- format: unicodeKey = tts
+L["128307_65039"] = "white square button"
 -- emoji:🔲; unicode = 1f532
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128306"] = "black square button"
+-- emoji:🔲; unicode = 1f532 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔲, 1f532
+-- format: unicodeKey = tts
+L["128306_65039"] = "black square button"
 -- emoji:🏁; unicode = 1f3c1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127937"] = "chequered flag"
+-- emoji:🏁; unicode = 1f3c1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏁, 1f3c1
+-- format: unicodeKey = tts
+L["127937_65039"] = "chequered flag"
 -- emoji:🚩; unicode = 1f6a9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128681"] = "triangular flag"
+-- emoji:🚩; unicode = 1f6a9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚩, 1f6a9
+-- format: unicodeKey = tts
+L["128681_65039"] = "triangular flag"
 -- emoji:🎌; unicode = 1f38c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127884"] = "crossed flags"
+-- emoji:🎌; unicode = 1f38c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎌, 1f38c
+-- format: unicodeKey = tts
+L["127884_65039"] = "crossed flags"
 -- emoji:🏴; unicode = 1f3f4
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127988"] = "black flag"
+-- emoji:🏴; unicode = 1f3f4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏴, 1f3f4
+-- format: unicodeKey = tts
+L["127988_65039"] = "black flag"
 -- emoji:🏳️; unicode = 1f3f3 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts

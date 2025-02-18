@@ -7,78 +7,173 @@ if not L then return end
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128512"] = "嘿嘿"
+-- emoji:😀; unicode = 1f600 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😀, 1f600
+-- format: unicodeKey = tts
+L["128512_65039"] = "嘿嘿"
 -- emoji:😃; unicode = 1f603
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128515"] = "哈哈"
+-- emoji:😃; unicode = 1f603 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😃, 1f603
+-- format: unicodeKey = tts
+L["128515_65039"] = "哈哈"
 -- emoji:😄; unicode = 1f604
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128516"] = "大笑"
+-- emoji:😄; unicode = 1f604 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😄, 1f604
+-- format: unicodeKey = tts
+L["128516_65039"] = "大笑"
 -- emoji:😁; unicode = 1f601
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128513"] = "嘻嘻"
+-- emoji:😁; unicode = 1f601 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😁, 1f601
+-- format: unicodeKey = tts
+L["128513_65039"] = "嘻嘻"
 -- emoji:😆; unicode = 1f606
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128518"] = "斜眼笑"
+-- emoji:😆; unicode = 1f606 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😆, 1f606
+-- format: unicodeKey = tts
+L["128518_65039"] = "斜眼笑"
 -- emoji:😅; unicode = 1f605
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128517"] = "苦笑"
+-- emoji:😅; unicode = 1f605 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😅, 1f605
+-- format: unicodeKey = tts
+L["128517_65039"] = "苦笑"
 -- emoji:🤣; unicode = 1f923
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129315"] = "笑得满地打滚"
+-- emoji:🤣; unicode = 1f923 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤣, 1f923
+-- format: unicodeKey = tts
+L["129315_65039"] = "笑得满地打滚"
 -- emoji:😂; unicode = 1f602
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128514"] = "笑哭了"
+-- emoji:😂; unicode = 1f602 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😂, 1f602
+-- format: unicodeKey = tts
+L["128514_65039"] = "笑哭了"
 -- emoji:🙂; unicode = 1f642
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128578"] = "呵呵"
+-- emoji:🙂; unicode = 1f642 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙂, 1f642
+-- format: unicodeKey = tts
+L["128578_65039"] = "呵呵"
 -- emoji:🙃; unicode = 1f643
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128579"] = "倒脸"
+-- emoji:🙃; unicode = 1f643 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙃, 1f643
+-- format: unicodeKey = tts
+L["128579_65039"] = "倒脸"
 -- emoji:🫠; unicode = 1fae0
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129760"] = "融化"
+-- emoji:🫠; unicode = 1fae0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫠, 1fae0
+-- format: unicodeKey = tts
+L["129760_65039"] = "融化"
 -- emoji:😉; unicode = 1f609
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128521"] = "眨眼"
+-- emoji:😉; unicode = 1f609 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😉, 1f609
+-- format: unicodeKey = tts
+L["128521_65039"] = "眨眼"
 -- emoji:😊; unicode = 1f60a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128522"] = "羞涩微笑"
+-- emoji:😊; unicode = 1f60a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😊, 1f60a
+-- format: unicodeKey = tts
+L["128522_65039"] = "羞涩微笑"
 -- emoji:😇; unicode = 1f607
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128519"] = "微笑天使"
+-- emoji:😇; unicode = 1f607 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😇, 1f607
+-- format: unicodeKey = tts
+L["128519_65039"] = "微笑天使"
 -- emoji:🥰; unicode = 1f970
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129392"] = "喜笑颜开"
+-- emoji:🥰; unicode = 1f970 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥰, 1f970
+-- format: unicodeKey = tts
+L["129392_65039"] = "喜笑颜开"
 -- emoji:😍; unicode = 1f60d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128525"] = "花痴"
+-- emoji:😍; unicode = 1f60d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😍, 1f60d
+-- format: unicodeKey = tts
+L["128525_65039"] = "花痴"
 -- emoji:🤩; unicode = 1f929
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129321"] = "好崇拜哦"
+-- emoji:🤩; unicode = 1f929 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤩, 1f929
+-- format: unicodeKey = tts
+L["129321_65039"] = "好崇拜哦"
 -- emoji:😘; unicode = 1f618
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128536"] = "飞吻"
+-- emoji:😘; unicode = 1f618 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😘, 1f618
+-- format: unicodeKey = tts
+L["128536_65039"] = "飞吻"
 -- emoji:😗; unicode = 1f617
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128535"] = "亲亲"
+-- emoji:😗; unicode = 1f617 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😗, 1f617
+-- format: unicodeKey = tts
+L["128535_65039"] = "亲亲"
 -- emoji:☺️; unicode = 263a fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -92,90 +187,200 @@ L["9786"] = "微笑"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128538"] = "羞涩亲亲"
+-- emoji:😚; unicode = 1f61a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😚, 1f61a
+-- format: unicodeKey = tts
+L["128538_65039"] = "羞涩亲亲"
 -- emoji:😙; unicode = 1f619
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128537"] = "微笑亲亲"
+-- emoji:😙; unicode = 1f619 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😙, 1f619
+-- format: unicodeKey = tts
+L["128537_65039"] = "微笑亲亲"
 -- emoji:🥲; unicode = 1f972
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129394"] = "含泪的笑脸"
+-- emoji:🥲; unicode = 1f972 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥲, 1f972
+-- format: unicodeKey = tts
+L["129394_65039"] = "含泪的笑脸"
 -- emoji:😋; unicode = 1f60b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128523"] = "好吃"
+-- emoji:😋; unicode = 1f60b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😋, 1f60b
+-- format: unicodeKey = tts
+L["128523_65039"] = "好吃"
 -- emoji:😛; unicode = 1f61b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128539"] = "吐舌"
+-- emoji:😛; unicode = 1f61b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😛, 1f61b
+-- format: unicodeKey = tts
+L["128539_65039"] = "吐舌"
 -- emoji:😜; unicode = 1f61c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128540"] = "单眼吐舌"
+-- emoji:😜; unicode = 1f61c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😜, 1f61c
+-- format: unicodeKey = tts
+L["128540_65039"] = "单眼吐舌"
 -- emoji:🤪; unicode = 1f92a
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129322"] = "滑稽"
+-- emoji:🤪; unicode = 1f92a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤪, 1f92a
+-- format: unicodeKey = tts
+L["129322_65039"] = "滑稽"
 -- emoji:😝; unicode = 1f61d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128541"] = "眯眼吐舌"
+-- emoji:😝; unicode = 1f61d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😝, 1f61d
+-- format: unicodeKey = tts
+L["128541_65039"] = "眯眼吐舌"
 -- emoji:🤑; unicode = 1f911
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129297"] = "发财"
+-- emoji:🤑; unicode = 1f911 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤑, 1f911
+-- format: unicodeKey = tts
+L["129297_65039"] = "发财"
 -- emoji:🤗; unicode = 1f917
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129303"] = "抱抱"
+-- emoji:🤗; unicode = 1f917 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤗, 1f917
+-- format: unicodeKey = tts
+L["129303_65039"] = "抱抱"
 -- emoji:🤭; unicode = 1f92d
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129325"] = "不说"
+-- emoji:🤭; unicode = 1f92d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤭, 1f92d
+-- format: unicodeKey = tts
+L["129325_65039"] = "不说"
 -- emoji:🫢; unicode = 1fae2
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129762"] = "睁眼捂嘴"
+-- emoji:🫢; unicode = 1fae2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫢, 1fae2
+-- format: unicodeKey = tts
+L["129762_65039"] = "睁眼捂嘴"
 -- emoji:🫣; unicode = 1fae3
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129763"] = "偷看"
+-- emoji:🫣; unicode = 1fae3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫣, 1fae3
+-- format: unicodeKey = tts
+L["129763_65039"] = "偷看"
 -- emoji:🤫; unicode = 1f92b
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129323"] = "安静的脸"
+-- emoji:🤫; unicode = 1f92b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤫, 1f92b
+-- format: unicodeKey = tts
+L["129323_65039"] = "安静的脸"
 -- emoji:🤔; unicode = 1f914
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129300"] = "想一想"
+-- emoji:🤔; unicode = 1f914 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤔, 1f914
+-- format: unicodeKey = tts
+L["129300_65039"] = "想一想"
 -- emoji:🫡; unicode = 1fae1
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129761"] = "致敬"
+-- emoji:🫡; unicode = 1fae1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫡, 1fae1
+-- format: unicodeKey = tts
+L["129761_65039"] = "致敬"
 -- emoji:🤐; unicode = 1f910
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129296"] = "闭嘴"
+-- emoji:🤐; unicode = 1f910 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤐, 1f910
+-- format: unicodeKey = tts
+L["129296_65039"] = "闭嘴"
 -- emoji:🤨; unicode = 1f928
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129320"] = "挑眉"
+-- emoji:🤨; unicode = 1f928 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤨, 1f928
+-- format: unicodeKey = tts
+L["129320_65039"] = "挑眉"
 -- emoji:😐; unicode = 1f610
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128528"] = "冷漠"
+-- emoji:😐; unicode = 1f610 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😐, 1f610
+-- format: unicodeKey = tts
+L["128528_65039"] = "冷漠"
 -- emoji:😑; unicode = 1f611
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128529"] = "无语"
+-- emoji:😑; unicode = 1f611 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😑, 1f611
+-- format: unicodeKey = tts
+L["128529_65039"] = "无语"
 -- emoji:😶; unicode = 1f636
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128566"] = "沉默"
+-- emoji:😶; unicode = 1f636 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😶, 1f636
+-- format: unicodeKey = tts
+L["128566_65039"] = "沉默"
 -- emoji:🫥; unicode = 1fae5
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129765"] = "虚线脸"
+-- emoji:🫥; unicode = 1fae5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫥, 1fae5
+-- format: unicodeKey = tts
+L["129765_65039"] = "虚线脸"
 -- emoji:😶‍🌫️; unicode = 1f636 200d 1f32b fe0f
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -189,18 +394,38 @@ L["128566_8205_127787"] = "迷茫"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128527"] = "得意"
+-- emoji:😏; unicode = 1f60f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😏, 1f60f
+-- format: unicodeKey = tts
+L["128527_65039"] = "得意"
 -- emoji:😒; unicode = 1f612
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128530"] = "不高兴"
+-- emoji:😒; unicode = 1f612 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😒, 1f612
+-- format: unicodeKey = tts
+L["128530_65039"] = "不高兴"
 -- emoji:🙄; unicode = 1f644
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128580"] = "翻白眼"
+-- emoji:🙄; unicode = 1f644 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙄, 1f644
+-- format: unicodeKey = tts
+L["128580_65039"] = "翻白眼"
 -- emoji:😬; unicode = 1f62c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128556"] = "龇牙咧嘴"
+-- emoji:😬; unicode = 1f62c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😬, 1f62c
+-- format: unicodeKey = tts
+L["128556_65039"] = "龇牙咧嘴"
 -- emoji:😮‍💨; unicode = 1f62e 200d 1f4a8
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -209,10 +434,20 @@ L["128558_8205_128168"] = "呼气"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129317"] = "说谎"
+-- emoji:🤥; unicode = 1f925 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤥, 1f925
+-- format: unicodeKey = tts
+L["129317_65039"] = "说谎"
 -- emoji:🫨; unicode = 1fae8
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129768"] = "颤抖"
+-- emoji:🫨; unicode = 1fae8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫨, 1fae8
+-- format: unicodeKey = tts
+L["129768_65039"] = "颤抖"
 -- emoji:🙂‍↔️; unicode = 1f642 200d 2194 fe0f
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -235,66 +470,146 @@ L["128578_8205_8597"] = "上下点头"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128524"] = "松了口气"
+-- emoji:😌; unicode = 1f60c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😌, 1f60c
+-- format: unicodeKey = tts
+L["128524_65039"] = "松了口气"
 -- emoji:😔; unicode = 1f614
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128532"] = "沉思"
+-- emoji:😔; unicode = 1f614 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😔, 1f614
+-- format: unicodeKey = tts
+L["128532_65039"] = "沉思"
 -- emoji:😪; unicode = 1f62a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128554"] = "困"
+-- emoji:😪; unicode = 1f62a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😪, 1f62a
+-- format: unicodeKey = tts
+L["128554_65039"] = "困"
 -- emoji:🤤; unicode = 1f924
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129316"] = "流口水"
+-- emoji:🤤; unicode = 1f924 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤤, 1f924
+-- format: unicodeKey = tts
+L["129316_65039"] = "流口水"
 -- emoji:😴; unicode = 1f634
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128564"] = "睡着了"
+-- emoji:😴; unicode = 1f634 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😴, 1f634
+-- format: unicodeKey = tts
+L["128564_65039"] = "睡着了"
 -- emoji:🫩; unicode = 1fae9
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129769"] = "有眼袋"
+-- emoji:🫩; unicode = 1fae9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫩, 1fae9
+-- format: unicodeKey = tts
+L["129769_65039"] = "有眼袋"
 -- emoji:😷; unicode = 1f637
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128567"] = "感冒"
+-- emoji:😷; unicode = 1f637 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😷, 1f637
+-- format: unicodeKey = tts
+L["128567_65039"] = "感冒"
 -- emoji:🤒; unicode = 1f912
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129298"] = "发烧"
+-- emoji:🤒; unicode = 1f912 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤒, 1f912
+-- format: unicodeKey = tts
+L["129298_65039"] = "发烧"
 -- emoji:🤕; unicode = 1f915
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129301"] = "受伤"
+-- emoji:🤕; unicode = 1f915 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤕, 1f915
+-- format: unicodeKey = tts
+L["129301_65039"] = "受伤"
 -- emoji:🤢; unicode = 1f922
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129314"] = "恶心"
+-- emoji:🤢; unicode = 1f922 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤢, 1f922
+-- format: unicodeKey = tts
+L["129314_65039"] = "恶心"
 -- emoji:🤮; unicode = 1f92e
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129326"] = "呕吐"
+-- emoji:🤮; unicode = 1f92e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤮, 1f92e
+-- format: unicodeKey = tts
+L["129326_65039"] = "呕吐"
 -- emoji:🤧; unicode = 1f927
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129319"] = "打喷嚏"
+-- emoji:🤧; unicode = 1f927 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤧, 1f927
+-- format: unicodeKey = tts
+L["129319_65039"] = "打喷嚏"
 -- emoji:🥵; unicode = 1f975
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129397"] = "脸发烧"
+-- emoji:🥵; unicode = 1f975 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥵, 1f975
+-- format: unicodeKey = tts
+L["129397_65039"] = "脸发烧"
 -- emoji:🥶; unicode = 1f976
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129398"] = "冷脸"
+-- emoji:🥶; unicode = 1f976 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥶, 1f976
+-- format: unicodeKey = tts
+L["129398_65039"] = "冷脸"
 -- emoji:🥴; unicode = 1f974
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129396"] = "头昏眼花"
+-- emoji:🥴; unicode = 1f974 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥴, 1f974
+-- format: unicodeKey = tts
+L["129396_65039"] = "头昏眼花"
 -- emoji:😵; unicode = 1f635
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128565"] = "晕头转向"
+-- emoji:😵; unicode = 1f635 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😵, 1f635
+-- format: unicodeKey = tts
+L["128565_65039"] = "晕头转向"
 -- emoji:😵‍💫; unicode = 1f635 200d 1f4ab
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -303,46 +618,101 @@ L["128565_8205_128171"] = "晕"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129327"] = "爆炸头"
+-- emoji:🤯; unicode = 1f92f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤯, 1f92f
+-- format: unicodeKey = tts
+L["129327_65039"] = "爆炸头"
 -- emoji:🤠; unicode = 1f920
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129312"] = "牛仔帽脸"
+-- emoji:🤠; unicode = 1f920 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤠, 1f920
+-- format: unicodeKey = tts
+L["129312_65039"] = "牛仔帽脸"
 -- emoji:🥳; unicode = 1f973
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129395"] = "聚会笑脸"
+-- emoji:🥳; unicode = 1f973 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥳, 1f973
+-- format: unicodeKey = tts
+L["129395_65039"] = "聚会笑脸"
 -- emoji:🥸; unicode = 1f978
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129400"] = "伪装的脸"
+-- emoji:🥸; unicode = 1f978 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥸, 1f978
+-- format: unicodeKey = tts
+L["129400_65039"] = "伪装的脸"
 -- emoji:😎; unicode = 1f60e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128526"] = "墨镜笑脸"
+-- emoji:😎; unicode = 1f60e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😎, 1f60e
+-- format: unicodeKey = tts
+L["128526_65039"] = "墨镜笑脸"
 -- emoji:🤓; unicode = 1f913
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129299"] = "书呆子脸"
+-- emoji:🤓; unicode = 1f913 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤓, 1f913
+-- format: unicodeKey = tts
+L["129299_65039"] = "书呆子脸"
 -- emoji:🧐; unicode = 1f9d0
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129488"] = "带单片眼镜的脸"
+-- emoji:🧐; unicode = 1f9d0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧐, 1f9d0
+-- format: unicodeKey = tts
+L["129488_65039"] = "带单片眼镜的脸"
 -- emoji:😕; unicode = 1f615
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128533"] = "困扰"
+-- emoji:😕; unicode = 1f615 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😕, 1f615
+-- format: unicodeKey = tts
+L["128533_65039"] = "困扰"
 -- emoji:🫤; unicode = 1fae4
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129764"] = "郁闷"
+-- emoji:🫤; unicode = 1fae4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫤, 1fae4
+-- format: unicodeKey = tts
+L["129764_65039"] = "郁闷"
 -- emoji:😟; unicode = 1f61f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128543"] = "担心"
+-- emoji:😟; unicode = 1f61f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😟, 1f61f
+-- format: unicodeKey = tts
+L["128543_65039"] = "担心"
 -- emoji:🙁; unicode = 1f641
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128577"] = "微微不满"
+-- emoji:🙁; unicode = 1f641 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙁, 1f641
+-- format: unicodeKey = tts
+L["128577_65039"] = "微微不满"
 -- emoji:☹️; unicode = 2639 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -356,114 +726,254 @@ L["9785"] = "不满"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128558"] = "吃惊"
+-- emoji:😮; unicode = 1f62e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😮, 1f62e
+-- format: unicodeKey = tts
+L["128558_65039"] = "吃惊"
 -- emoji:😯; unicode = 1f62f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128559"] = "缄默"
+-- emoji:😯; unicode = 1f62f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😯, 1f62f
+-- format: unicodeKey = tts
+L["128559_65039"] = "缄默"
 -- emoji:😲; unicode = 1f632
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128562"] = "震惊"
+-- emoji:😲; unicode = 1f632 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😲, 1f632
+-- format: unicodeKey = tts
+L["128562_65039"] = "震惊"
 -- emoji:😳; unicode = 1f633
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128563"] = "脸红"
+-- emoji:😳; unicode = 1f633 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😳, 1f633
+-- format: unicodeKey = tts
+L["128563_65039"] = "脸红"
 -- emoji:🥺; unicode = 1f97a
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129402"] = "恳求的脸"
+-- emoji:🥺; unicode = 1f97a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥺, 1f97a
+-- format: unicodeKey = tts
+L["129402_65039"] = "恳求的脸"
 -- emoji:🥹; unicode = 1f979
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129401"] = "忍住泪水"
+-- emoji:🥹; unicode = 1f979 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥹, 1f979
+-- format: unicodeKey = tts
+L["129401_65039"] = "忍住泪水"
 -- emoji:😦; unicode = 1f626
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128550"] = "啊"
+-- emoji:😦; unicode = 1f626 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😦, 1f626
+-- format: unicodeKey = tts
+L["128550_65039"] = "啊"
 -- emoji:😧; unicode = 1f627
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128551"] = "极度痛苦"
+-- emoji:😧; unicode = 1f627 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😧, 1f627
+-- format: unicodeKey = tts
+L["128551_65039"] = "极度痛苦"
 -- emoji:😨; unicode = 1f628
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128552"] = "害怕"
+-- emoji:😨; unicode = 1f628 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😨, 1f628
+-- format: unicodeKey = tts
+L["128552_65039"] = "害怕"
 -- emoji:😰; unicode = 1f630
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128560"] = "冷汗"
+-- emoji:😰; unicode = 1f630 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😰, 1f630
+-- format: unicodeKey = tts
+L["128560_65039"] = "冷汗"
 -- emoji:😥; unicode = 1f625
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128549"] = "失望但如释重负"
+-- emoji:😥; unicode = 1f625 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😥, 1f625
+-- format: unicodeKey = tts
+L["128549_65039"] = "失望但如释重负"
 -- emoji:😢; unicode = 1f622
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128546"] = "哭"
+-- emoji:😢; unicode = 1f622 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😢, 1f622
+-- format: unicodeKey = tts
+L["128546_65039"] = "哭"
 -- emoji:😭; unicode = 1f62d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128557"] = "放声大哭"
+-- emoji:😭; unicode = 1f62d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😭, 1f62d
+-- format: unicodeKey = tts
+L["128557_65039"] = "放声大哭"
 -- emoji:😱; unicode = 1f631
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128561"] = "吓死了"
+-- emoji:😱; unicode = 1f631 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😱, 1f631
+-- format: unicodeKey = tts
+L["128561_65039"] = "吓死了"
 -- emoji:😖; unicode = 1f616
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128534"] = "困惑"
+-- emoji:😖; unicode = 1f616 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😖, 1f616
+-- format: unicodeKey = tts
+L["128534_65039"] = "困惑"
 -- emoji:😣; unicode = 1f623
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128547"] = "痛苦"
+-- emoji:😣; unicode = 1f623 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😣, 1f623
+-- format: unicodeKey = tts
+L["128547_65039"] = "痛苦"
 -- emoji:😞; unicode = 1f61e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128542"] = "失望"
+-- emoji:😞; unicode = 1f61e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😞, 1f61e
+-- format: unicodeKey = tts
+L["128542_65039"] = "失望"
 -- emoji:😓; unicode = 1f613
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128531"] = "汗"
+-- emoji:😓; unicode = 1f613 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😓, 1f613
+-- format: unicodeKey = tts
+L["128531_65039"] = "汗"
 -- emoji:😩; unicode = 1f629
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128553"] = "累死了"
+-- emoji:😩; unicode = 1f629 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😩, 1f629
+-- format: unicodeKey = tts
+L["128553_65039"] = "累死了"
 -- emoji:😫; unicode = 1f62b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128555"] = "累"
+-- emoji:😫; unicode = 1f62b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😫, 1f62b
+-- format: unicodeKey = tts
+L["128555_65039"] = "累"
 -- emoji:🥱; unicode = 1f971
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129393"] = "打呵欠"
+-- emoji:🥱; unicode = 1f971 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥱, 1f971
+-- format: unicodeKey = tts
+L["129393_65039"] = "打呵欠"
 -- emoji:😤; unicode = 1f624
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128548"] = "傲慢"
+-- emoji:😤; unicode = 1f624 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😤, 1f624
+-- format: unicodeKey = tts
+L["128548_65039"] = "傲慢"
 -- emoji:😡; unicode = 1f621
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128545"] = "怒火中烧"
+-- emoji:😡; unicode = 1f621 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😡, 1f621
+-- format: unicodeKey = tts
+L["128545_65039"] = "怒火中烧"
 -- emoji:😠; unicode = 1f620
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128544"] = "生气"
+-- emoji:😠; unicode = 1f620 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😠, 1f620
+-- format: unicodeKey = tts
+L["128544_65039"] = "生气"
 -- emoji:🤬; unicode = 1f92c
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129324"] = "嘴上有符号的脸"
+-- emoji:🤬; unicode = 1f92c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤬, 1f92c
+-- format: unicodeKey = tts
+L["129324_65039"] = "嘴上有符号的脸"
 -- emoji:😈; unicode = 1f608
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128520"] = "恶魔微笑"
+-- emoji:😈; unicode = 1f608 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😈, 1f608
+-- format: unicodeKey = tts
+L["128520_65039"] = "恶魔微笑"
 -- emoji:👿; unicode = 1f47f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128127"] = "生气的恶魔"
+-- emoji:👿; unicode = 1f47f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👿, 1f47f
+-- format: unicodeKey = tts
+L["128127_65039"] = "生气的恶魔"
 -- emoji:💀; unicode = 1f480
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128128"] = "头骨"
+-- emoji:💀; unicode = 1f480 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💀, 1f480
+-- format: unicodeKey = tts
+L["128128_65039"] = "头骨"
 -- emoji:☠️; unicode = 2620 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -477,118 +987,263 @@ L["9760"] = "骷髅"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128169"] = "大便"
+-- emoji:💩; unicode = 1f4a9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💩, 1f4a9
+-- format: unicodeKey = tts
+L["128169_65039"] = "大便"
 -- emoji:🤡; unicode = 1f921
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129313"] = "小丑脸"
+-- emoji:🤡; unicode = 1f921 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤡, 1f921
+-- format: unicodeKey = tts
+L["129313_65039"] = "小丑脸"
 -- emoji:👹; unicode = 1f479
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128121"] = "食人魔"
+-- emoji:👹; unicode = 1f479 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👹, 1f479
+-- format: unicodeKey = tts
+L["128121_65039"] = "食人魔"
 -- emoji:👺; unicode = 1f47a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128122"] = "小妖精"
+-- emoji:👺; unicode = 1f47a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👺, 1f47a
+-- format: unicodeKey = tts
+L["128122_65039"] = "小妖精"
 -- emoji:👻; unicode = 1f47b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128123"] = "鬼"
+-- emoji:👻; unicode = 1f47b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👻, 1f47b
+-- format: unicodeKey = tts
+L["128123_65039"] = "鬼"
 -- emoji:👽; unicode = 1f47d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128125"] = "外星人"
+-- emoji:👽; unicode = 1f47d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👽, 1f47d
+-- format: unicodeKey = tts
+L["128125_65039"] = "外星人"
 -- emoji:👾; unicode = 1f47e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128126"] = "外星怪物"
+-- emoji:👾; unicode = 1f47e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👾, 1f47e
+-- format: unicodeKey = tts
+L["128126_65039"] = "外星怪物"
 -- emoji:🤖; unicode = 1f916
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129302"] = "机器人"
+-- emoji:🤖; unicode = 1f916 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤖, 1f916
+-- format: unicodeKey = tts
+L["129302_65039"] = "机器人"
 -- emoji:😺; unicode = 1f63a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128570"] = "大笑的猫"
+-- emoji:😺; unicode = 1f63a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😺, 1f63a
+-- format: unicodeKey = tts
+L["128570_65039"] = "大笑的猫"
 -- emoji:😸; unicode = 1f638
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128568"] = "微笑的猫"
+-- emoji:😸; unicode = 1f638 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😸, 1f638
+-- format: unicodeKey = tts
+L["128568_65039"] = "微笑的猫"
 -- emoji:😹; unicode = 1f639
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128569"] = "笑出眼泪的猫"
+-- emoji:😹; unicode = 1f639 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😹, 1f639
+-- format: unicodeKey = tts
+L["128569_65039"] = "笑出眼泪的猫"
 -- emoji:😻; unicode = 1f63b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128571"] = "花痴的猫"
+-- emoji:😻; unicode = 1f63b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😻, 1f63b
+-- format: unicodeKey = tts
+L["128571_65039"] = "花痴的猫"
 -- emoji:😼; unicode = 1f63c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128572"] = "奸笑的猫"
+-- emoji:😼; unicode = 1f63c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😼, 1f63c
+-- format: unicodeKey = tts
+L["128572_65039"] = "奸笑的猫"
 -- emoji:😽; unicode = 1f63d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128573"] = "亲亲猫"
+-- emoji:😽; unicode = 1f63d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😽, 1f63d
+-- format: unicodeKey = tts
+L["128573_65039"] = "亲亲猫"
 -- emoji:🙀; unicode = 1f640
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128576"] = "疲倦的猫"
+-- emoji:🙀; unicode = 1f640 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙀, 1f640
+-- format: unicodeKey = tts
+L["128576_65039"] = "疲倦的猫"
 -- emoji:😿; unicode = 1f63f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128575"] = "哭泣的猫"
+-- emoji:😿; unicode = 1f63f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😿, 1f63f
+-- format: unicodeKey = tts
+L["128575_65039"] = "哭泣的猫"
 -- emoji:😾; unicode = 1f63e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128574"] = "生气的猫"
+-- emoji:😾; unicode = 1f63e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 😾, 1f63e
+-- format: unicodeKey = tts
+L["128574_65039"] = "生气的猫"
 -- emoji:🙈; unicode = 1f648
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128584"] = "非礼勿视"
+-- emoji:🙈; unicode = 1f648 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙈, 1f648
+-- format: unicodeKey = tts
+L["128584_65039"] = "非礼勿视"
 -- emoji:🙉; unicode = 1f649
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128585"] = "非礼勿听"
+-- emoji:🙉; unicode = 1f649 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙉, 1f649
+-- format: unicodeKey = tts
+L["128585_65039"] = "非礼勿听"
 -- emoji:🙊; unicode = 1f64a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128586"] = "非礼勿言"
+-- emoji:🙊; unicode = 1f64a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙊, 1f64a
+-- format: unicodeKey = tts
+L["128586_65039"] = "非礼勿言"
 -- emoji:💌; unicode = 1f48c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128140"] = "情书"
+-- emoji:💌; unicode = 1f48c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💌, 1f48c
+-- format: unicodeKey = tts
+L["128140_65039"] = "情书"
 -- emoji:💘; unicode = 1f498
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128152"] = "心中箭了"
+-- emoji:💘; unicode = 1f498 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💘, 1f498
+-- format: unicodeKey = tts
+L["128152_65039"] = "心中箭了"
 -- emoji:💝; unicode = 1f49d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128157"] = "系有缎带的心"
+-- emoji:💝; unicode = 1f49d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💝, 1f49d
+-- format: unicodeKey = tts
+L["128157_65039"] = "系有缎带的心"
 -- emoji:💖; unicode = 1f496
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128150"] = "闪亮的心"
+-- emoji:💖; unicode = 1f496 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💖, 1f496
+-- format: unicodeKey = tts
+L["128150_65039"] = "闪亮的心"
 -- emoji:💗; unicode = 1f497
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128151"] = "搏动的心"
+-- emoji:💗; unicode = 1f497 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💗, 1f497
+-- format: unicodeKey = tts
+L["128151_65039"] = "搏动的心"
 -- emoji:💓; unicode = 1f493
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128147"] = "心跳"
+-- emoji:💓; unicode = 1f493 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💓, 1f493
+-- format: unicodeKey = tts
+L["128147_65039"] = "心跳"
 -- emoji:💞; unicode = 1f49e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128158"] = "舞动的心"
+-- emoji:💞; unicode = 1f49e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💞, 1f49e
+-- format: unicodeKey = tts
+L["128158_65039"] = "舞动的心"
 -- emoji:💕; unicode = 1f495
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128149"] = "两颗心"
+-- emoji:💕; unicode = 1f495 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💕, 1f495
+-- format: unicodeKey = tts
+L["128149_65039"] = "两颗心"
 -- emoji:💟; unicode = 1f49f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128159"] = "心型装饰"
+-- emoji:💟; unicode = 1f49f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💟, 1f49f
+-- format: unicodeKey = tts
+L["128159_65039"] = "心型装饰"
 -- emoji:❣️; unicode = 2763 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -602,6 +1257,11 @@ L["10083"] = "心叹号"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128148"] = "心碎"
+-- emoji:💔; unicode = 1f494 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💔, 1f494
+-- format: unicodeKey = tts
+L["128148_65039"] = "心碎"
 -- emoji:❤️‍🔥; unicode = 2764 fe0f 200d 1f525
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -633,74 +1293,164 @@ L["10084"] = "红心"
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129655"] = "粉红色的心"
+-- emoji:🩷; unicode = 1fa77 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩷, 1fa77
+-- format: unicodeKey = tts
+L["129655_65039"] = "粉红色的心"
 -- emoji:🧡; unicode = 1f9e1
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129505"] = "橙心"
+-- emoji:🧡; unicode = 1f9e1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧡, 1f9e1
+-- format: unicodeKey = tts
+L["129505_65039"] = "橙心"
 -- emoji:💛; unicode = 1f49b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128155"] = "黄心"
+-- emoji:💛; unicode = 1f49b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💛, 1f49b
+-- format: unicodeKey = tts
+L["128155_65039"] = "黄心"
 -- emoji:💚; unicode = 1f49a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128154"] = "绿心"
+-- emoji:💚; unicode = 1f49a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💚, 1f49a
+-- format: unicodeKey = tts
+L["128154_65039"] = "绿心"
 -- emoji:💙; unicode = 1f499
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128153"] = "蓝心"
+-- emoji:💙; unicode = 1f499 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💙, 1f499
+-- format: unicodeKey = tts
+L["128153_65039"] = "蓝心"
 -- emoji:🩵; unicode = 1fa75
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129653"] = "浅蓝色的心"
+-- emoji:🩵; unicode = 1fa75 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩵, 1fa75
+-- format: unicodeKey = tts
+L["129653_65039"] = "浅蓝色的心"
 -- emoji:💜; unicode = 1f49c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128156"] = "紫心"
+-- emoji:💜; unicode = 1f49c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💜, 1f49c
+-- format: unicodeKey = tts
+L["128156_65039"] = "紫心"
 -- emoji:🤎; unicode = 1f90e
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129294"] = "棕心"
+-- emoji:🤎; unicode = 1f90e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤎, 1f90e
+-- format: unicodeKey = tts
+L["129294_65039"] = "棕心"
 -- emoji:🖤; unicode = 1f5a4
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128420"] = "黑心"
+-- emoji:🖤; unicode = 1f5a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🖤, 1f5a4
+-- format: unicodeKey = tts
+L["128420_65039"] = "黑心"
 -- emoji:🩶; unicode = 1fa76
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129654"] = "灰心"
+-- emoji:🩶; unicode = 1fa76 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩶, 1fa76
+-- format: unicodeKey = tts
+L["129654_65039"] = "灰心"
 -- emoji:🤍; unicode = 1f90d
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129293"] = "白心"
+-- emoji:🤍; unicode = 1f90d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤍, 1f90d
+-- format: unicodeKey = tts
+L["129293_65039"] = "白心"
 -- emoji:💋; unicode = 1f48b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128139"] = "唇印"
+-- emoji:💋; unicode = 1f48b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💋, 1f48b
+-- format: unicodeKey = tts
+L["128139_65039"] = "唇印"
 -- emoji:💯; unicode = 1f4af
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128175"] = "一百分"
+-- emoji:💯; unicode = 1f4af fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💯, 1f4af
+-- format: unicodeKey = tts
+L["128175_65039"] = "一百分"
 -- emoji:💢; unicode = 1f4a2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128162"] = "怒"
+-- emoji:💢; unicode = 1f4a2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💢, 1f4a2
+-- format: unicodeKey = tts
+L["128162_65039"] = "怒"
 -- emoji:💥; unicode = 1f4a5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128165"] = "爆炸"
+-- emoji:💥; unicode = 1f4a5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💥, 1f4a5
+-- format: unicodeKey = tts
+L["128165_65039"] = "爆炸"
 -- emoji:💫; unicode = 1f4ab
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128171"] = "头晕"
+-- emoji:💫; unicode = 1f4ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💫, 1f4ab
+-- format: unicodeKey = tts
+L["128171_65039"] = "头晕"
 -- emoji:💦; unicode = 1f4a6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128166"] = "汗滴"
+-- emoji:💦; unicode = 1f4a6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💦, 1f4a6
+-- format: unicodeKey = tts
+L["128166_65039"] = "汗滴"
 -- emoji:💨; unicode = 1f4a8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128168"] = "尾气"
+-- emoji:💨; unicode = 1f4a8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💨, 1f4a8
+-- format: unicodeKey = tts
+L["128168_65039"] = "尾气"
 -- emoji:🕳️; unicode = 1f573 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -714,6 +1464,11 @@ L["128371"] = "洞"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128172"] = "话语气泡"
+-- emoji:💬; unicode = 1f4ac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💬, 1f4ac
+-- format: unicodeKey = tts
+L["128172_65039"] = "话语气泡"
 -- emoji:👁️‍🗨️; unicode = 1f441 fe0f 200d 1f5e8 fe0f
 -- status: FULLY_QUALIFIED; since: E2.0
 -- format: unicodeKey = tts
@@ -755,14 +1510,29 @@ L["128495"] = "愤怒话语气泡"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128173"] = "内心活动气泡"
+-- emoji:💭; unicode = 1f4ad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💭, 1f4ad
+-- format: unicodeKey = tts
+L["128173_65039"] = "内心活动气泡"
 -- emoji:💤; unicode = 1f4a4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128164"] = "睡着"
+-- emoji:💤; unicode = 1f4a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💤, 1f4a4
+-- format: unicodeKey = tts
+L["128164_65039"] = "睡着"
 -- emoji:👋; unicode = 1f44b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128075"] = "挥手"
+-- emoji:👋; unicode = 1f44b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👋, 1f44b
+-- format: unicodeKey = tts
+L["128075_65039"] = "挥手"
 -- emoji:👋🏻; unicode = 1f44b 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -787,6 +1557,11 @@ L["128075_127999"] = "挥手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129306"] = "立起的手背"
+-- emoji:🤚; unicode = 1f91a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤚, 1f91a
+-- format: unicodeKey = tts
+L["129306_65039"] = "立起的手背"
 -- emoji:🤚🏻; unicode = 1f91a 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -840,6 +1615,11 @@ L["128400_127999"] = "手掌: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9995"] = "举起手"
+-- emoji:✋; unicode = 270b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ✋, 270b
+-- format: unicodeKey = tts
+L["9995_65039"] = "举起手"
 -- emoji:✋🏻; unicode = 270b 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -864,6 +1644,11 @@ L["9995_127999"] = "举起手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128406"] = "瓦肯举手礼"
+-- emoji:🖖; unicode = 1f596 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🖖, 1f596
+-- format: unicodeKey = tts
+L["128406_65039"] = "瓦肯举手礼"
 -- emoji:🖖🏻; unicode = 1f596 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -888,6 +1673,11 @@ L["128406_127999"] = "瓦肯举手礼: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129777"] = "向右的手"
+-- emoji:🫱; unicode = 1faf1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫱, 1faf1
+-- format: unicodeKey = tts
+L["129777_65039"] = "向右的手"
 -- emoji:🫱🏻; unicode = 1faf1 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -912,6 +1702,11 @@ L["129777_127999"] = "向右的手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129778"] = "向左的手"
+-- emoji:🫲; unicode = 1faf2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫲, 1faf2
+-- format: unicodeKey = tts
+L["129778_65039"] = "向左的手"
 -- emoji:🫲🏻; unicode = 1faf2 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -936,6 +1731,11 @@ L["129778_127999"] = "向左的手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129779"] = "掌心向下的手"
+-- emoji:🫳; unicode = 1faf3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫳, 1faf3
+-- format: unicodeKey = tts
+L["129779_65039"] = "掌心向下的手"
 -- emoji:🫳🏻; unicode = 1faf3 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -960,6 +1760,11 @@ L["129779_127999"] = "掌心向下的手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129780"] = "掌心向上的手"
+-- emoji:🫴; unicode = 1faf4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫴, 1faf4
+-- format: unicodeKey = tts
+L["129780_65039"] = "掌心向上的手"
 -- emoji:🫴🏻; unicode = 1faf4 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -984,6 +1789,11 @@ L["129780_127999"] = "掌心向上的手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129783"] = "向左推"
+-- emoji:🫷; unicode = 1faf7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫷, 1faf7
+-- format: unicodeKey = tts
+L["129783_65039"] = "向左推"
 -- emoji:🫷🏻; unicode = 1faf7 1f3fb
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
@@ -1008,6 +1818,11 @@ L["129783_127999"] = "向左推: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129784"] = "向右推"
+-- emoji:🫸; unicode = 1faf8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫸, 1faf8
+-- format: unicodeKey = tts
+L["129784_65039"] = "向右推"
 -- emoji:🫸🏻; unicode = 1faf8 1f3fb
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
@@ -1032,6 +1847,11 @@ L["129784_127999"] = "向右推: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128076"] = "OK"
+-- emoji:👌; unicode = 1f44c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👌, 1f44c
+-- format: unicodeKey = tts
+L["128076_65039"] = "OK"
 -- emoji:👌🏻; unicode = 1f44c 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1056,6 +1876,11 @@ L["128076_127999"] = "OK: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129292"] = "捏手指"
+-- emoji:🤌; unicode = 1f90c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤌, 1f90c
+-- format: unicodeKey = tts
+L["129292_65039"] = "捏手指"
 -- emoji:🤌🏻; unicode = 1f90c 1f3fb
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
@@ -1080,6 +1905,11 @@ L["129292_127999"] = "捏手指: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129295"] = "捏合的手势"
+-- emoji:🤏; unicode = 1f90f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤏, 1f90f
+-- format: unicodeKey = tts
+L["129295_65039"] = "捏合的手势"
 -- emoji:🤏🏻; unicode = 1f90f 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -1133,6 +1963,11 @@ L["9996_127999"] = "胜利手势: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129310"] = "交叉的手指"
+-- emoji:🤞; unicode = 1f91e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤞, 1f91e
+-- format: unicodeKey = tts
+L["129310_65039"] = "交叉的手指"
 -- emoji:🤞🏻; unicode = 1f91e 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1157,6 +1992,11 @@ L["129310_127999"] = "交叉的手指: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129776"] = "食指与拇指交叉的手"
+-- emoji:🫰; unicode = 1faf0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫰, 1faf0
+-- format: unicodeKey = tts
+L["129776_65039"] = "食指与拇指交叉的手"
 -- emoji:🫰🏻; unicode = 1faf0 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -1181,6 +2021,11 @@ L["129776_127999"] = "食指与拇指交叉的手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129311"] = "爱你的手势"
+-- emoji:🤟; unicode = 1f91f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤟, 1f91f
+-- format: unicodeKey = tts
+L["129311_65039"] = "爱你的手势"
 -- emoji:🤟🏻; unicode = 1f91f 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -1205,6 +2050,11 @@ L["129311_127999"] = "爱你的手势: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129304"] = "摇滚"
+-- emoji:🤘; unicode = 1f918 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤘, 1f918
+-- format: unicodeKey = tts
+L["129304_65039"] = "摇滚"
 -- emoji:🤘🏻; unicode = 1f918 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1229,6 +2079,11 @@ L["129304_127999"] = "摇滚: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129305"] = "给我打电话"
+-- emoji:🤙; unicode = 1f919 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤙, 1f919
+-- format: unicodeKey = tts
+L["129305_65039"] = "给我打电话"
 -- emoji:🤙🏻; unicode = 1f919 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1253,6 +2108,11 @@ L["129305_127999"] = "给我打电话: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128072"] = "反手食指向左指"
+-- emoji:👈; unicode = 1f448 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👈, 1f448
+-- format: unicodeKey = tts
+L["128072_65039"] = "反手食指向左指"
 -- emoji:👈🏻; unicode = 1f448 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1277,6 +2137,11 @@ L["128072_127999"] = "反手食指向左指: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128073"] = "反手食指向右指"
+-- emoji:👉; unicode = 1f449 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👉, 1f449
+-- format: unicodeKey = tts
+L["128073_65039"] = "反手食指向右指"
 -- emoji:👉🏻; unicode = 1f449 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1301,6 +2166,11 @@ L["128073_127999"] = "反手食指向右指: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128070"] = "反手食指向上指"
+-- emoji:👆; unicode = 1f446 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👆, 1f446
+-- format: unicodeKey = tts
+L["128070_65039"] = "反手食指向上指"
 -- emoji:👆🏻; unicode = 1f446 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1325,6 +2195,11 @@ L["128070_127999"] = "反手食指向上指: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128405"] = "竖中指"
+-- emoji:🖕; unicode = 1f595 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🖕, 1f595
+-- format: unicodeKey = tts
+L["128405_65039"] = "竖中指"
 -- emoji:🖕🏻; unicode = 1f595 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1349,6 +2224,11 @@ L["128405_127999"] = "竖中指: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128071"] = "反手食指向下指"
+-- emoji:👇; unicode = 1f447 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👇, 1f447
+-- format: unicodeKey = tts
+L["128071_65039"] = "反手食指向下指"
 -- emoji:👇🏻; unicode = 1f447 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1402,6 +2282,11 @@ L["9757_127999"] = "食指向上指: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129781"] = "指向观察者的食指"
+-- emoji:🫵; unicode = 1faf5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫵, 1faf5
+-- format: unicodeKey = tts
+L["129781_65039"] = "指向观察者的食指"
 -- emoji:🫵🏻; unicode = 1faf5 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -1426,6 +2311,11 @@ L["129781_127999"] = "指向观察者的食指: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128077"] = "拇指向上"
+-- emoji:👍; unicode = 1f44d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👍, 1f44d
+-- format: unicodeKey = tts
+L["128077_65039"] = "拇指向上"
 -- emoji:👍🏻; unicode = 1f44d 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1450,6 +2340,11 @@ L["128077_127999"] = "拇指向上: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128078"] = "拇指向下"
+-- emoji:👎; unicode = 1f44e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👎, 1f44e
+-- format: unicodeKey = tts
+L["128078_65039"] = "拇指向下"
 -- emoji:👎🏻; unicode = 1f44e 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1474,6 +2369,11 @@ L["128078_127999"] = "拇指向下: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9994"] = "举起拳头"
+-- emoji:✊; unicode = 270a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ✊, 270a
+-- format: unicodeKey = tts
+L["9994_65039"] = "举起拳头"
 -- emoji:✊🏻; unicode = 270a 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1498,6 +2398,11 @@ L["9994_127999"] = "举起拳头: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128074"] = "出拳"
+-- emoji:👊; unicode = 1f44a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👊, 1f44a
+-- format: unicodeKey = tts
+L["128074_65039"] = "出拳"
 -- emoji:👊🏻; unicode = 1f44a 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1522,6 +2427,11 @@ L["128074_127999"] = "出拳: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129307"] = "朝左的拳头"
+-- emoji:🤛; unicode = 1f91b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤛, 1f91b
+-- format: unicodeKey = tts
+L["129307_65039"] = "朝左的拳头"
 -- emoji:🤛🏻; unicode = 1f91b 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1546,6 +2456,11 @@ L["129307_127999"] = "朝左的拳头: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129308"] = "朝右的拳头"
+-- emoji:🤜; unicode = 1f91c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤜, 1f91c
+-- format: unicodeKey = tts
+L["129308_65039"] = "朝右的拳头"
 -- emoji:🤜🏻; unicode = 1f91c 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1570,6 +2485,11 @@ L["129308_127999"] = "朝右的拳头: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128079"] = "鼓掌"
+-- emoji:👏; unicode = 1f44f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👏, 1f44f
+-- format: unicodeKey = tts
+L["128079_65039"] = "鼓掌"
 -- emoji:👏🏻; unicode = 1f44f 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1594,6 +2514,11 @@ L["128079_127999"] = "鼓掌: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128588"] = "举双手"
+-- emoji:🙌; unicode = 1f64c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙌, 1f64c
+-- format: unicodeKey = tts
+L["128588_65039"] = "举双手"
 -- emoji:🙌🏻; unicode = 1f64c 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1618,6 +2543,11 @@ L["128588_127999"] = "举双手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129782"] = "做成心形的双手"
+-- emoji:🫶; unicode = 1faf6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫶, 1faf6
+-- format: unicodeKey = tts
+L["129782_65039"] = "做成心形的双手"
 -- emoji:🫶🏻; unicode = 1faf6 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -1642,6 +2572,11 @@ L["129782_127999"] = "做成心形的双手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128080"] = "张开双手"
+-- emoji:👐; unicode = 1f450 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👐, 1f450
+-- format: unicodeKey = tts
+L["128080_65039"] = "张开双手"
 -- emoji:👐🏻; unicode = 1f450 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1666,6 +2601,11 @@ L["128080_127999"] = "张开双手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129330"] = "掌心向上托起"
+-- emoji:🤲; unicode = 1f932 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤲, 1f932
+-- format: unicodeKey = tts
+L["129330_65039"] = "掌心向上托起"
 -- emoji:🤲🏻; unicode = 1f932 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -1690,6 +2630,11 @@ L["129330_127999"] = "掌心向上托起: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129309"] = "握手"
+-- emoji:🤝; unicode = 1f91d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤝, 1f91d
+-- format: unicodeKey = tts
+L["129309_65039"] = "握手"
 -- emoji:🤝🏻; unicode = 1f91d 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -1794,6 +2739,11 @@ L["129777_127999_8205_129778_127998"] = "握手: 较深肤色中等-深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128591"] = "双手合十"
+-- emoji:🙏; unicode = 1f64f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙏, 1f64f
+-- format: unicodeKey = tts
+L["128591_65039"] = "双手合十"
 -- emoji:🙏🏻; unicode = 1f64f 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1847,6 +2797,11 @@ L["9997_127999"] = "写字: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128133"] = "涂指甲油"
+-- emoji:💅; unicode = 1f485 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💅, 1f485
+-- format: unicodeKey = tts
+L["128133_65039"] = "涂指甲油"
 -- emoji:💅🏻; unicode = 1f485 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1871,6 +2826,11 @@ L["128133_127999"] = "涂指甲油: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129331"] = "自拍"
+-- emoji:🤳; unicode = 1f933 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤳, 1f933
+-- format: unicodeKey = tts
+L["129331_65039"] = "自拍"
 -- emoji:🤳🏻; unicode = 1f933 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -1895,6 +2855,11 @@ L["129331_127999"] = "自拍: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128170"] = "肌肉"
+-- emoji:💪; unicode = 1f4aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💪, 1f4aa
+-- format: unicodeKey = tts
+L["128170_65039"] = "肌肉"
 -- emoji:💪🏻; unicode = 1f4aa 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1919,14 +2884,29 @@ L["128170_127999"] = "肌肉: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129470"] = "机械手臂"
+-- emoji:🦾; unicode = 1f9be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦾, 1f9be
+-- format: unicodeKey = tts
+L["129470_65039"] = "机械手臂"
 -- emoji:🦿; unicode = 1f9bf
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129471"] = "机械腿"
+-- emoji:🦿; unicode = 1f9bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦿, 1f9bf
+-- format: unicodeKey = tts
+L["129471_65039"] = "机械腿"
 -- emoji:🦵; unicode = 1f9b5
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129461"] = "腿"
+-- emoji:🦵; unicode = 1f9b5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦵, 1f9b5
+-- format: unicodeKey = tts
+L["129461_65039"] = "腿"
 -- emoji:🦵🏻; unicode = 1f9b5 1f3fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -1951,6 +2931,11 @@ L["129461_127999"] = "腿: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129462"] = "脚"
+-- emoji:🦶; unicode = 1f9b6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦶, 1f9b6
+-- format: unicodeKey = tts
+L["129462_65039"] = "脚"
 -- emoji:🦶🏻; unicode = 1f9b6 1f3fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -1975,6 +2960,11 @@ L["129462_127999"] = "脚: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128066"] = "耳朵"
+-- emoji:👂; unicode = 1f442 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👂, 1f442
+-- format: unicodeKey = tts
+L["128066_65039"] = "耳朵"
 -- emoji:👂🏻; unicode = 1f442 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -1999,6 +2989,11 @@ L["128066_127999"] = "耳朵: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129467"] = "戴助听器的耳朵"
+-- emoji:🦻; unicode = 1f9bb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦻, 1f9bb
+-- format: unicodeKey = tts
+L["129467_65039"] = "戴助听器的耳朵"
 -- emoji:🦻🏻; unicode = 1f9bb 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -2023,6 +3018,11 @@ L["129467_127999"] = "戴助听器的耳朵: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128067"] = "鼻子"
+-- emoji:👃; unicode = 1f443 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👃, 1f443
+-- format: unicodeKey = tts
+L["128067_65039"] = "鼻子"
 -- emoji:👃🏻; unicode = 1f443 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2047,26 +3047,56 @@ L["128067_127999"] = "鼻子: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129504"] = "脑"
+-- emoji:🧠; unicode = 1f9e0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧠, 1f9e0
+-- format: unicodeKey = tts
+L["129504_65039"] = "脑"
 -- emoji:🫀; unicode = 1fac0
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129728"] = "心脏器官"
+-- emoji:🫀; unicode = 1fac0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫀, 1fac0
+-- format: unicodeKey = tts
+L["129728_65039"] = "心脏器官"
 -- emoji:🫁; unicode = 1fac1
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129729"] = "肺"
+-- emoji:🫁; unicode = 1fac1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫁, 1fac1
+-- format: unicodeKey = tts
+L["129729_65039"] = "肺"
 -- emoji:🦷; unicode = 1f9b7
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129463"] = "牙齿"
+-- emoji:🦷; unicode = 1f9b7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦷, 1f9b7
+-- format: unicodeKey = tts
+L["129463_65039"] = "牙齿"
 -- emoji:🦴; unicode = 1f9b4
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129460"] = "骨头"
+-- emoji:🦴; unicode = 1f9b4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦴, 1f9b4
+-- format: unicodeKey = tts
+L["129460_65039"] = "骨头"
 -- emoji:👀; unicode = 1f440
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128064"] = "双眼"
+-- emoji:👀; unicode = 1f440 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👀, 1f440
+-- format: unicodeKey = tts
+L["128064_65039"] = "双眼"
 -- emoji:👁️; unicode = 1f441 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -2080,18 +3110,38 @@ L["128065"] = "眼睛"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128069"] = "舌头"
+-- emoji:👅; unicode = 1f445 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👅, 1f445
+-- format: unicodeKey = tts
+L["128069_65039"] = "舌头"
 -- emoji:👄; unicode = 1f444
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128068"] = "嘴"
+-- emoji:👄; unicode = 1f444 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👄, 1f444
+-- format: unicodeKey = tts
+L["128068_65039"] = "嘴"
 -- emoji:🫦; unicode = 1fae6
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129766"] = "咬住嘴唇"
+-- emoji:🫦; unicode = 1fae6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫦, 1fae6
+-- format: unicodeKey = tts
+L["129766_65039"] = "咬住嘴唇"
 -- emoji:👶; unicode = 1f476
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128118"] = "小宝贝"
+-- emoji:👶; unicode = 1f476 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👶, 1f476
+-- format: unicodeKey = tts
+L["128118_65039"] = "小宝贝"
 -- emoji:👶🏻; unicode = 1f476 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2116,6 +3166,11 @@ L["128118_127999"] = "小宝贝: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129490"] = "儿童"
+-- emoji:🧒; unicode = 1f9d2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧒, 1f9d2
+-- format: unicodeKey = tts
+L["129490_65039"] = "儿童"
 -- emoji:🧒🏻; unicode = 1f9d2 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -2140,6 +3195,11 @@ L["129490_127999"] = "儿童: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128102"] = "男孩"
+-- emoji:👦; unicode = 1f466 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👦, 1f466
+-- format: unicodeKey = tts
+L["128102_65039"] = "男孩"
 -- emoji:👦🏻; unicode = 1f466 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2164,6 +3224,11 @@ L["128102_127999"] = "男孩: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128103"] = "女孩"
+-- emoji:👧; unicode = 1f467 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👧, 1f467
+-- format: unicodeKey = tts
+L["128103_65039"] = "女孩"
 -- emoji:👧🏻; unicode = 1f467 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2188,6 +3253,11 @@ L["128103_127999"] = "女孩: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129489"] = "成人"
+-- emoji:🧑; unicode = 1f9d1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧑, 1f9d1
+-- format: unicodeKey = tts
+L["129489_65039"] = "成人"
 -- emoji:🧑🏻; unicode = 1f9d1 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -2212,6 +3282,11 @@ L["129489_127999"] = "成人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128113"] = "金色头发的人"
+-- emoji:👱; unicode = 1f471 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👱, 1f471
+-- format: unicodeKey = tts
+L["128113_65039"] = "金色头发的人"
 -- emoji:👱🏻; unicode = 1f471 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2236,6 +3311,11 @@ L["128113_127999"] = "金色头发的人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128104"] = "男人"
+-- emoji:👨; unicode = 1f468 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👨, 1f468
+-- format: unicodeKey = tts
+L["128104_65039"] = "男人"
 -- emoji:👨🏻; unicode = 1f468 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2260,6 +3340,11 @@ L["128104_127999"] = "男人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129492"] = "有胡子的人"
+-- emoji:🧔; unicode = 1f9d4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧔, 1f9d4
+-- format: unicodeKey = tts
+L["129492_65039"] = "有胡子的人"
 -- emoji:🧔🏻; unicode = 1f9d4 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -2488,6 +3573,11 @@ L["128104_127999_8205_129458"] = "男人: 较深肤色秃顶"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128105"] = "女人"
+-- emoji:👩; unicode = 1f469 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👩, 1f469
+-- format: unicodeKey = tts
+L["128105_65039"] = "女人"
 -- emoji:👩🏻; unicode = 1f469 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2812,6 +3902,11 @@ L["128113_127999_8205_9794"] = "金发男: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129491"] = "老年人"
+-- emoji:🧓; unicode = 1f9d3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧓, 1f9d3
+-- format: unicodeKey = tts
+L["129491_65039"] = "老年人"
 -- emoji:🧓🏻; unicode = 1f9d3 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -2836,6 +3931,11 @@ L["129491_127999"] = "老年人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128116"] = "老爷爷"
+-- emoji:👴; unicode = 1f474 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👴, 1f474
+-- format: unicodeKey = tts
+L["128116_65039"] = "老爷爷"
 -- emoji:👴🏻; unicode = 1f474 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2860,6 +3960,11 @@ L["128116_127999"] = "老爷爷: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128117"] = "老奶奶"
+-- emoji:👵; unicode = 1f475 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👵, 1f475
+-- format: unicodeKey = tts
+L["128117_65039"] = "老奶奶"
 -- emoji:👵🏻; unicode = 1f475 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -2884,6 +3989,11 @@ L["128117_127999"] = "老奶奶: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128589"] = "皱眉"
+-- emoji:🙍; unicode = 1f64d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙍, 1f64d
+-- format: unicodeKey = tts
+L["128589_65039"] = "皱眉"
 -- emoji:🙍🏻; unicode = 1f64d 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3016,6 +4126,11 @@ L["128589_127999_8205_9792"] = "皱眉女: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128590"] = "撅嘴"
+-- emoji:🙎; unicode = 1f64e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙎, 1f64e
+-- format: unicodeKey = tts
+L["128590_65039"] = "撅嘴"
 -- emoji:🙎🏻; unicode = 1f64e 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3148,6 +4263,11 @@ L["128590_127999_8205_9792"] = "撅嘴女: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128581"] = "禁止手势"
+-- emoji:🙅; unicode = 1f645 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙅, 1f645
+-- format: unicodeKey = tts
+L["128581_65039"] = "禁止手势"
 -- emoji:🙅🏻; unicode = 1f645 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3280,6 +4400,11 @@ L["128581_127999_8205_9792"] = "禁止手势女: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128582"] = "OK手势"
+-- emoji:🙆; unicode = 1f646 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙆, 1f646
+-- format: unicodeKey = tts
+L["128582_65039"] = "OK手势"
 -- emoji:🙆🏻; unicode = 1f646 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3412,6 +4537,11 @@ L["128582_127999_8205_9792"] = "OK手势女: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128129"] = "前台"
+-- emoji:💁; unicode = 1f481 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💁, 1f481
+-- format: unicodeKey = tts
+L["128129_65039"] = "前台"
 -- emoji:💁🏻; unicode = 1f481 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3544,6 +4674,11 @@ L["128129_127999_8205_9792"] = "前台女: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128587"] = "举手"
+-- emoji:🙋; unicode = 1f64b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙋, 1f64b
+-- format: unicodeKey = tts
+L["128587_65039"] = "举手"
 -- emoji:🙋🏻; unicode = 1f64b 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3676,6 +4811,11 @@ L["128587_127999_8205_9792"] = "女生举手: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129487"] = "失聪者"
+-- emoji:🧏; unicode = 1f9cf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧏, 1f9cf
+-- format: unicodeKey = tts
+L["129487_65039"] = "失聪者"
 -- emoji:🧏🏻; unicode = 1f9cf 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -3808,6 +4948,11 @@ L["129487_127999_8205_9792"] = "失聪的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128583"] = "鞠躬"
+-- emoji:🙇; unicode = 1f647 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🙇, 1f647
+-- format: unicodeKey = tts
+L["128583_65039"] = "鞠躬"
 -- emoji:🙇🏻; unicode = 1f647 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -3940,6 +5085,11 @@ L["128583_127999_8205_9792"] = "女生鞠躬: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129318"] = "捂脸"
+-- emoji:🤦; unicode = 1f926 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤦, 1f926
+-- format: unicodeKey = tts
+L["129318_65039"] = "捂脸"
 -- emoji:🤦🏻; unicode = 1f926 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -4072,6 +5222,11 @@ L["129318_127999_8205_9792"] = "女生捂脸: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129335"] = "耸肩"
+-- emoji:🤷; unicode = 1f937 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤷, 1f937
+-- format: unicodeKey = tts
+L["129335_65039"] = "耸肩"
 -- emoji:🤷🏻; unicode = 1f937 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -5626,6 +6781,11 @@ L["128105_127999_8205_128658"] = "女消防员: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128110"] = "警察"
+-- emoji:👮; unicode = 1f46e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👮, 1f46e
+-- format: unicodeKey = tts
+L["128110_65039"] = "警察"
 -- emoji:👮🏻; unicode = 1f46e 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -5915,6 +7075,11 @@ L["128373_127999_8205_9792"] = "女侦探: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128130"] = "卫兵"
+-- emoji:💂; unicode = 1f482 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💂, 1f482
+-- format: unicodeKey = tts
+L["128130_65039"] = "卫兵"
 -- emoji:💂🏻; unicode = 1f482 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6047,6 +7212,11 @@ L["128130_127999_8205_9792"] = "女卫兵: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129399"] = "忍者"
+-- emoji:🥷; unicode = 1f977 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥷, 1f977
+-- format: unicodeKey = tts
+L["129399_65039"] = "忍者"
 -- emoji:🥷🏻; unicode = 1f977 1f3fb
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
@@ -6071,6 +7241,11 @@ L["129399_127999"] = "忍者: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128119"] = "建筑工人"
+-- emoji:👷; unicode = 1f477 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👷, 1f477
+-- format: unicodeKey = tts
+L["128119_65039"] = "建筑工人"
 -- emoji:👷🏻; unicode = 1f477 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6203,6 +7378,11 @@ L["128119_127999_8205_9792"] = "女建筑工人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129733"] = "戴王冠的人"
+-- emoji:🫅; unicode = 1fac5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫅, 1fac5
+-- format: unicodeKey = tts
+L["129733_65039"] = "戴王冠的人"
 -- emoji:🫅🏻; unicode = 1fac5 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -6227,6 +7407,11 @@ L["129733_127999"] = "戴王冠的人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129332"] = "王子"
+-- emoji:🤴; unicode = 1f934 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤴, 1f934
+-- format: unicodeKey = tts
+L["129332_65039"] = "王子"
 -- emoji:🤴🏻; unicode = 1f934 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -6251,6 +7436,11 @@ L["129332_127999"] = "王子: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128120"] = "公主"
+-- emoji:👸; unicode = 1f478 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👸, 1f478
+-- format: unicodeKey = tts
+L["128120_65039"] = "公主"
 -- emoji:👸🏻; unicode = 1f478 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6275,6 +7465,11 @@ L["128120_127999"] = "公主: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128115"] = "戴头巾的人"
+-- emoji:👳; unicode = 1f473 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👳, 1f473
+-- format: unicodeKey = tts
+L["128115_65039"] = "戴头巾的人"
 -- emoji:👳🏻; unicode = 1f473 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6407,6 +7602,11 @@ L["128115_127999_8205_9792"] = "戴头巾的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128114"] = "戴瓜皮帽的人"
+-- emoji:👲; unicode = 1f472 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👲, 1f472
+-- format: unicodeKey = tts
+L["128114_65039"] = "戴瓜皮帽的人"
 -- emoji:👲🏻; unicode = 1f472 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6431,6 +7631,11 @@ L["128114_127999"] = "戴瓜皮帽的人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129493"] = "带头饰的女人"
+-- emoji:🧕; unicode = 1f9d5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧕, 1f9d5
+-- format: unicodeKey = tts
+L["129493_65039"] = "带头饰的女人"
 -- emoji:🧕🏻; unicode = 1f9d5 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -6455,6 +7660,11 @@ L["129493_127999"] = "带头饰的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129333"] = "穿燕尾服的人"
+-- emoji:🤵; unicode = 1f935 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤵, 1f935
+-- format: unicodeKey = tts
+L["129333_65039"] = "穿燕尾服的人"
 -- emoji:🤵🏻; unicode = 1f935 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -6587,6 +7797,11 @@ L["129333_127999_8205_9792"] = "穿礼服的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128112"] = "戴头纱的人"
+-- emoji:👰; unicode = 1f470 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👰, 1f470
+-- format: unicodeKey = tts
+L["128112_65039"] = "戴头纱的人"
 -- emoji:👰🏻; unicode = 1f470 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6719,6 +7934,11 @@ L["128112_127999_8205_9792"] = "戴头纱的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129328"] = "孕妇"
+-- emoji:🤰; unicode = 1f930 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤰, 1f930
+-- format: unicodeKey = tts
+L["129328_65039"] = "孕妇"
 -- emoji:🤰🏻; unicode = 1f930 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -6743,6 +7963,11 @@ L["129328_127999"] = "孕妇: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129731"] = "怀孕的男人"
+-- emoji:🫃; unicode = 1fac3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫃, 1fac3
+-- format: unicodeKey = tts
+L["129731_65039"] = "怀孕的男人"
 -- emoji:🫃🏻; unicode = 1fac3 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -6767,6 +7992,11 @@ L["129731_127999"] = "怀孕的男人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129732"] = "怀孕的人"
+-- emoji:🫄; unicode = 1fac4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫄, 1fac4
+-- format: unicodeKey = tts
+L["129732_65039"] = "怀孕的人"
 -- emoji:🫄🏻; unicode = 1fac4 1f3fb
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
@@ -6791,6 +8021,11 @@ L["129732_127999"] = "怀孕的人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129329"] = "母乳喂养"
+-- emoji:🤱; unicode = 1f931 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤱, 1f931
+-- format: unicodeKey = tts
+L["129329_65039"] = "母乳喂养"
 -- emoji:🤱🏻; unicode = 1f931 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -6887,6 +8122,11 @@ L["129489_127999_8205_127868"] = "哺乳的人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128124"] = "小天使"
+-- emoji:👼; unicode = 1f47c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👼, 1f47c
+-- format: unicodeKey = tts
+L["128124_65039"] = "小天使"
 -- emoji:👼🏻; unicode = 1f47c 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6911,6 +8151,11 @@ L["128124_127999"] = "小天使: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127877"] = "圣诞老人"
+-- emoji:🎅; unicode = 1f385 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎅, 1f385
+-- format: unicodeKey = tts
+L["127877_65039"] = "圣诞老人"
 -- emoji:🎅🏻; unicode = 1f385 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -6935,6 +8180,11 @@ L["127877_127999"] = "圣诞老人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129334"] = "圣诞奶奶"
+-- emoji:🤶; unicode = 1f936 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤶, 1f936
+-- format: unicodeKey = tts
+L["129334_65039"] = "圣诞奶奶"
 -- emoji:🤶🏻; unicode = 1f936 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -6983,6 +8233,11 @@ L["129489_127999_8205_127876"] = "圣诞人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129464"] = "超级英雄"
+-- emoji:🦸; unicode = 1f9b8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦸, 1f9b8
+-- format: unicodeKey = tts
+L["129464_65039"] = "超级英雄"
 -- emoji:🦸🏻; unicode = 1f9b8 1f3fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -7115,6 +8370,11 @@ L["129464_127999_8205_9792"] = "女超级英雄: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129465"] = "超级大坏蛋"
+-- emoji:🦹; unicode = 1f9b9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦹, 1f9b9
+-- format: unicodeKey = tts
+L["129465_65039"] = "超级大坏蛋"
 -- emoji:🦹🏻; unicode = 1f9b9 1f3fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -7247,6 +8507,11 @@ L["129465_127999_8205_9792"] = "女超级大坏蛋: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129497"] = "法师"
+-- emoji:🧙; unicode = 1f9d9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧙, 1f9d9
+-- format: unicodeKey = tts
+L["129497_65039"] = "法师"
 -- emoji:🧙🏻; unicode = 1f9d9 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7379,6 +8644,11 @@ L["129497_127999_8205_9792"] = "女法师: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129498"] = "精灵"
+-- emoji:🧚; unicode = 1f9da fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧚, 1f9da
+-- format: unicodeKey = tts
+L["129498_65039"] = "精灵"
 -- emoji:🧚🏻; unicode = 1f9da 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7511,6 +8781,11 @@ L["129498_127999_8205_9792"] = "仙女: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129499"] = "吸血鬼"
+-- emoji:🧛; unicode = 1f9db fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧛, 1f9db
+-- format: unicodeKey = tts
+L["129499_65039"] = "吸血鬼"
 -- emoji:🧛🏻; unicode = 1f9db 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7643,6 +8918,11 @@ L["129499_127999_8205_9792"] = "女吸血鬼: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129500"] = "人鱼"
+-- emoji:🧜; unicode = 1f9dc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧜, 1f9dc
+-- format: unicodeKey = tts
+L["129500_65039"] = "人鱼"
 -- emoji:🧜🏻; unicode = 1f9dc 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7775,6 +9055,11 @@ L["129500_127999_8205_9792"] = "美人鱼: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129501"] = "小精灵"
+-- emoji:🧝; unicode = 1f9dd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧝, 1f9dd
+-- format: unicodeKey = tts
+L["129501_65039"] = "小精灵"
 -- emoji:🧝🏻; unicode = 1f9dd 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7907,6 +9192,11 @@ L["129501_127999_8205_9792"] = "女小精灵: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129502"] = "妖怪"
+-- emoji:🧞; unicode = 1f9de fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧞, 1f9de
+-- format: unicodeKey = tts
+L["129502_65039"] = "妖怪"
 -- emoji:🧞‍♂️; unicode = 1f9de 200d 2642 fe0f
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7929,6 +9219,11 @@ L["129502_8205_9792"] = "女妖怪"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129503"] = "僵尸"
+-- emoji:🧟; unicode = 1f9df fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧟, 1f9df
+-- format: unicodeKey = tts
+L["129503_65039"] = "僵尸"
 -- emoji:🧟‍♂️; unicode = 1f9df 200d 2642 fe0f
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -7951,10 +9246,20 @@ L["129503_8205_9792"] = "女僵尸"
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129484"] = "穴居巨怪"
+-- emoji:🧌; unicode = 1f9cc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧌, 1f9cc
+-- format: unicodeKey = tts
+L["129484_65039"] = "穴居巨怪"
 -- emoji:💆; unicode = 1f486
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128134"] = "按摩"
+-- emoji:💆; unicode = 1f486 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💆, 1f486
+-- format: unicodeKey = tts
+L["128134_65039"] = "按摩"
 -- emoji:💆🏻; unicode = 1f486 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -8087,6 +9392,11 @@ L["128134_127999_8205_9792"] = "女生按摩: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128135"] = "理发"
+-- emoji:💇; unicode = 1f487 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💇, 1f487
+-- format: unicodeKey = tts
+L["128135_65039"] = "理发"
 -- emoji:💇🏻; unicode = 1f487 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -8219,6 +9529,11 @@ L["128135_127999_8205_9792"] = "女生理发: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128694"] = "行人"
+-- emoji:🚶; unicode = 1f6b6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚶, 1f6b6
+-- format: unicodeKey = tts
+L["128694_65039"] = "行人"
 -- emoji:🚶🏻; unicode = 1f6b6 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -8633,6 +9948,11 @@ L["128694_127999_8205_9794_8205_10145"] = "男行人: 较深肤色面向右边"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129485"] = "站立者"
+-- emoji:🧍; unicode = 1f9cd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧍, 1f9cd
+-- format: unicodeKey = tts
+L["129485_65039"] = "站立者"
 -- emoji:🧍🏻; unicode = 1f9cd 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -8765,6 +10085,11 @@ L["129485_127999_8205_9792"] = "站立的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129486"] = "下跪者"
+-- emoji:🧎; unicode = 1f9ce fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧎, 1f9ce
+-- format: unicodeKey = tts
+L["129486_65039"] = "下跪者"
 -- emoji:🧎🏻; unicode = 1f9ce 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -9881,6 +11206,11 @@ L["128105_127999_8205_129469_8205_10145"] = "坐手动轮椅的女人: 较深肤
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127939"] = "跑步者"
+-- emoji:🏃; unicode = 1f3c3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏃, 1f3c3
+-- format: unicodeKey = tts
+L["127939_65039"] = "跑步者"
 -- emoji:🏃🏻; unicode = 1f3c3 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -10295,6 +11625,11 @@ L["127939_127999_8205_9794_8205_10145"] = "男生跑步: 较深肤色面向右�
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128131"] = "跳舞的女人"
+-- emoji:💃; unicode = 1f483 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💃, 1f483
+-- format: unicodeKey = tts
+L["128131_65039"] = "跳舞的女人"
 -- emoji:💃🏻; unicode = 1f483 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -10319,6 +11654,11 @@ L["128131_127999"] = "跳舞的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128378"] = "跳舞的男人"
+-- emoji:🕺; unicode = 1f57a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕺, 1f57a
+-- format: unicodeKey = tts
+L["128378_65039"] = "跳舞的男人"
 -- emoji:🕺🏻; unicode = 1f57a 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -10372,6 +11712,11 @@ L["128372_127999"] = "西装革履的人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128111"] = "戴兔耳朵的人"
+-- emoji:👯; unicode = 1f46f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👯, 1f46f
+-- format: unicodeKey = tts
+L["128111_65039"] = "戴兔耳朵的人"
 -- emoji:👯‍♂️; unicode = 1f46f 200d 2642 fe0f
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -10394,6 +11739,11 @@ L["128111_8205_9792"] = "兔女郎"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129494"] = "蒸房里的人"
+-- emoji:🧖; unicode = 1f9d6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧖, 1f9d6
+-- format: unicodeKey = tts
+L["129494_65039"] = "蒸房里的人"
 -- emoji:🧖🏻; unicode = 1f9d6 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -10526,6 +11876,11 @@ L["129494_127999_8205_9792"] = "蒸房里的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129495"] = "攀爬的人"
+-- emoji:🧗; unicode = 1f9d7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧗, 1f9d7
+-- format: unicodeKey = tts
+L["129495_65039"] = "攀爬的人"
 -- emoji:🧗🏻; unicode = 1f9d7 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -10658,10 +12013,20 @@ L["129495_127999_8205_9792"] = "攀爬的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129338"] = "击剑选手"
+-- emoji:🤺; unicode = 1f93a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤺, 1f93a
+-- format: unicodeKey = tts
+L["129338_65039"] = "击剑选手"
 -- emoji:🏇; unicode = 1f3c7
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127943"] = "赛马"
+-- emoji:🏇; unicode = 1f3c7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏇, 1f3c7
+-- format: unicodeKey = tts
+L["127943_65039"] = "赛马"
 -- emoji:🏇🏻; unicode = 1f3c7 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -10695,6 +12060,11 @@ L["9975"] = "滑雪的人"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127938"] = "滑雪板"
+-- emoji:🏂; unicode = 1f3c2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏂, 1f3c2
+-- format: unicodeKey = tts
+L["127938_65039"] = "滑雪板"
 -- emoji:🏂🏻; unicode = 1f3c2 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -10876,6 +12246,11 @@ L["127948_127999_8205_9792"] = "女生打高尔夫: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127940"] = "冲浪"
+-- emoji:🏄; unicode = 1f3c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏄, 1f3c4
+-- format: unicodeKey = tts
+L["127940_65039"] = "冲浪"
 -- emoji:🏄🏻; unicode = 1f3c4 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11008,6 +12383,11 @@ L["127940_127999_8205_9792"] = "女生冲浪: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128675"] = "划艇"
+-- emoji:🚣; unicode = 1f6a3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚣, 1f6a3
+-- format: unicodeKey = tts
+L["128675_65039"] = "划艇"
 -- emoji:🚣🏻; unicode = 1f6a3 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11140,6 +12520,11 @@ L["128675_127999_8205_9792"] = "女生划船: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127946"] = "游泳"
+-- emoji:🏊; unicode = 1f3ca fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏊, 1f3ca
+-- format: unicodeKey = tts
+L["127946_65039"] = "游泳"
 -- emoji:🏊🏻; unicode = 1f3ca 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11586,6 +12971,11 @@ L["127947_127999_8205_9792"] = "女生举重: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128692"] = "骑自行车"
+-- emoji:🚴; unicode = 1f6b4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚴, 1f6b4
+-- format: unicodeKey = tts
+L["128692_65039"] = "骑自行车"
 -- emoji:🚴🏻; unicode = 1f6b4 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11718,6 +13108,11 @@ L["128692_127999_8205_9792"] = "女生骑自行车: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128693"] = "骑山地车"
+-- emoji:🚵; unicode = 1f6b5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚵, 1f6b5
+-- format: unicodeKey = tts
+L["128693_65039"] = "骑山地车"
 -- emoji:🚵🏻; unicode = 1f6b5 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -11850,6 +13245,11 @@ L["128693_127999_8205_9792"] = "女生骑山地车: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129336"] = "侧手翻"
+-- emoji:🤸; unicode = 1f938 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤸, 1f938
+-- format: unicodeKey = tts
+L["129336_65039"] = "侧手翻"
 -- emoji:🤸🏻; unicode = 1f938 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -11982,6 +13382,11 @@ L["129336_127999_8205_9792"] = "女生侧手翻: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129340"] = "摔跤选手"
+-- emoji:🤼; unicode = 1f93c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤼, 1f93c
+-- format: unicodeKey = tts
+L["129340_65039"] = "摔跤选手"
 -- emoji:🤼‍♂️; unicode = 1f93c 200d 2642 fe0f
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -12004,6 +13409,11 @@ L["129340_8205_9792"] = "女生摔跤"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129341"] = "水球"
+-- emoji:🤽; unicode = 1f93d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤽, 1f93d
+-- format: unicodeKey = tts
+L["129341_65039"] = "水球"
 -- emoji:🤽🏻; unicode = 1f93d 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -12136,6 +13546,11 @@ L["129341_127999_8205_9792"] = "女生玩水球: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129342"] = "手球"
+-- emoji:🤾; unicode = 1f93e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤾, 1f93e
+-- format: unicodeKey = tts
+L["129342_65039"] = "手球"
 -- emoji:🤾🏻; unicode = 1f93e 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -12268,6 +13683,11 @@ L["129342_127999_8205_9792"] = "女生玩手球: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129337"] = "抛接杂耍"
+-- emoji:🤹; unicode = 1f939 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤹, 1f939
+-- format: unicodeKey = tts
+L["129337_65039"] = "抛接杂耍"
 -- emoji:🤹🏻; unicode = 1f939 1f3fb
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
@@ -12400,6 +13820,11 @@ L["129337_127999_8205_9792"] = "女生抛接杂耍: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129496"] = "盘腿的人"
+-- emoji:🧘; unicode = 1f9d8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧘, 1f9d8
+-- format: unicodeKey = tts
+L["129496_65039"] = "盘腿的人"
 -- emoji:🧘🏻; unicode = 1f9d8 1f3fb
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
@@ -12532,6 +13957,11 @@ L["129496_127999_8205_9792"] = "盘腿的女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128704"] = "洗澡的人"
+-- emoji:🛀; unicode = 1f6c0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛀, 1f6c0
+-- format: unicodeKey = tts
+L["128704_65039"] = "洗澡的人"
 -- emoji:🛀🏻; unicode = 1f6c0 1f3fb
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -12556,6 +13986,11 @@ L["128704_127999"] = "洗澡的人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128716"] = "躺在床上的人"
+-- emoji:🛌; unicode = 1f6cc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛌, 1f6cc
+-- format: unicodeKey = tts
+L["128716_65039"] = "躺在床上的人"
 -- emoji:🛌🏻; unicode = 1f6cc 1f3fb
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -12684,6 +14119,11 @@ L["129489_127999_8205_129309_8205_129489_127999"] = "手拉手的两个人: 较�
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128109"] = "手拉手的两个女人"
+-- emoji:👭; unicode = 1f46d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👭, 1f46d
+-- format: unicodeKey = tts
+L["128109_65039"] = "手拉手的两个女人"
 -- emoji:👭🏻; unicode = 1f46d 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -12788,6 +14228,11 @@ L["128109_127999"] = "手拉手的两个女人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128107"] = "手拉手的一男一女"
+-- emoji:👫; unicode = 1f46b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👫, 1f46b
+-- format: unicodeKey = tts
+L["128107_65039"] = "手拉手的一男一女"
 -- emoji:👫🏻; unicode = 1f46b 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -12892,6 +14337,11 @@ L["128107_127999"] = "手拉手的一男一女: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128108"] = "手拉手的两个男人"
+-- emoji:👬; unicode = 1f46c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👬, 1f46c
+-- format: unicodeKey = tts
+L["128108_65039"] = "手拉手的两个男人"
 -- emoji:👬🏻; unicode = 1f46c 1f3fb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -12996,6 +14446,11 @@ L["128108_127999"] = "手拉手的两个男人: 较深肤色"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128143"] = "亲吻"
+-- emoji:💏; unicode = 1f48f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💏, 1f48f
+-- format: unicodeKey = tts
+L["128143_65039"] = "亲吻"
 -- emoji:💏🏻; unicode = 1f48f 1f3fb
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -13902,6 +15357,11 @@ L["128105_127999_8205_10084_8205_128139_8205_128105_127999"] = "亲吻: 女人�
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128145"] = "情侣"
+-- emoji:💑; unicode = 1f491 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💑, 1f491
+-- format: unicodeKey = tts
+L["128145_65039"] = "情侣"
 -- emoji:💑🏻; unicode = 1f491 1f3fb
 -- status: FULLY_QUALIFIED; since: E13.1
 -- format: unicodeKey = tts
@@ -14917,18 +16377,38 @@ L["128483"] = "说话"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128100"] = "人像"
+-- emoji:👤; unicode = 1f464 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👤, 1f464
+-- format: unicodeKey = tts
+L["128100_65039"] = "人像"
 -- emoji:👥; unicode = 1f465
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128101"] = "双人像"
+-- emoji:👥; unicode = 1f465 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👥, 1f465
+-- format: unicodeKey = tts
+L["128101_65039"] = "双人像"
 -- emoji:🫂; unicode = 1fac2
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129730"] = "人的拥抱"
+-- emoji:🫂; unicode = 1fac2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫂, 1fac2
+-- format: unicodeKey = tts
+L["129730_65039"] = "人的拥抱"
 -- emoji:👪; unicode = 1f46a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128106"] = "家庭"
+-- emoji:👪; unicode = 1f46a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👪, 1f46a
+-- format: unicodeKey = tts
+L["128106_65039"] = "家庭"
 -- emoji:🧑‍🧑‍🧒; unicode = 1f9d1 200d 1f9d1 200d 1f9d2
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -14949,10 +16429,20 @@ L["129489_8205_129490_8205_129490"] = "单亲二孩家庭"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128099"] = "脚印"
+-- emoji:👣; unicode = 1f463 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👣, 1f463
+-- format: unicodeKey = tts
+L["128099_65039"] = "脚印"
 -- emoji:🫆; unicode = 1fac6
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129734"] = "指纹"
+-- emoji:🫆; unicode = 1fac6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫆, 1fac6
+-- format: unicodeKey = tts
+L["129734_65039"] = "指纹"
 -- emoji:🏻; unicode = 1f3fb
 -- status: COMPONENT; since: E1.0
 -- format: unicodeKey = tts
@@ -14993,30 +16483,65 @@ L["129458"] = "秃顶"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128053"] = "猴头"
+-- emoji:🐵; unicode = 1f435 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐵, 1f435
+-- format: unicodeKey = tts
+L["128053_65039"] = "猴头"
 -- emoji:🐒; unicode = 1f412
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128018"] = "猴子"
+-- emoji:🐒; unicode = 1f412 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐒, 1f412
+-- format: unicodeKey = tts
+L["128018_65039"] = "猴子"
 -- emoji:🦍; unicode = 1f98d
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129421"] = "大猩猩"
+-- emoji:🦍; unicode = 1f98d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦍, 1f98d
+-- format: unicodeKey = tts
+L["129421_65039"] = "大猩猩"
 -- emoji:🦧; unicode = 1f9a7
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129447"] = "红毛猩猩"
+-- emoji:🦧; unicode = 1f9a7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦧, 1f9a7
+-- format: unicodeKey = tts
+L["129447_65039"] = "红毛猩猩"
 -- emoji:🐶; unicode = 1f436
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128054"] = "狗脸"
+-- emoji:🐶; unicode = 1f436 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐶, 1f436
+-- format: unicodeKey = tts
+L["128054_65039"] = "狗脸"
 -- emoji:🐕; unicode = 1f415
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128021"] = "狗"
+-- emoji:🐕; unicode = 1f415 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐕, 1f415
+-- format: unicodeKey = tts
+L["128021_65039"] = "狗"
 -- emoji:🦮; unicode = 1f9ae
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129454"] = "导盲犬"
+-- emoji:🦮; unicode = 1f9ae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦮, 1f9ae
+-- format: unicodeKey = tts
+L["129454_65039"] = "导盲犬"
 -- emoji:🐕‍🦺; unicode = 1f415 200d 1f9ba
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
@@ -15025,26 +16550,56 @@ L["128021_8205_129466"] = "服务犬"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128041"] = "贵宾犬"
+-- emoji:🐩; unicode = 1f429 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐩, 1f429
+-- format: unicodeKey = tts
+L["128041_65039"] = "贵宾犬"
 -- emoji:🐺; unicode = 1f43a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128058"] = "狼"
+-- emoji:🐺; unicode = 1f43a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐺, 1f43a
+-- format: unicodeKey = tts
+L["128058_65039"] = "狼"
 -- emoji:🦊; unicode = 1f98a
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129418"] = "狐狸"
+-- emoji:🦊; unicode = 1f98a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦊, 1f98a
+-- format: unicodeKey = tts
+L["129418_65039"] = "狐狸"
 -- emoji:🦝; unicode = 1f99d
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129437"] = "浣熊"
+-- emoji:🦝; unicode = 1f99d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦝, 1f99d
+-- format: unicodeKey = tts
+L["129437_65039"] = "浣熊"
 -- emoji:🐱; unicode = 1f431
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128049"] = "猫脸"
+-- emoji:🐱; unicode = 1f431 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐱, 1f431
+-- format: unicodeKey = tts
+L["128049_65039"] = "猫脸"
 -- emoji:🐈; unicode = 1f408
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128008"] = "猫"
+-- emoji:🐈; unicode = 1f408 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐈, 1f408
+-- format: unicodeKey = tts
+L["128008_65039"] = "猫"
 -- emoji:🐈‍⬛; unicode = 1f408 200d 2b1b
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
@@ -15053,150 +16608,335 @@ L["128008_8205_11035"] = "黑猫"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129409"] = "狮子"
+-- emoji:🦁; unicode = 1f981 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦁, 1f981
+-- format: unicodeKey = tts
+L["129409_65039"] = "狮子"
 -- emoji:🐯; unicode = 1f42f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128047"] = "老虎头"
+-- emoji:🐯; unicode = 1f42f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐯, 1f42f
+-- format: unicodeKey = tts
+L["128047_65039"] = "老虎头"
 -- emoji:🐅; unicode = 1f405
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128005"] = "老虎"
+-- emoji:🐅; unicode = 1f405 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐅, 1f405
+-- format: unicodeKey = tts
+L["128005_65039"] = "老虎"
 -- emoji:🐆; unicode = 1f406
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128006"] = "豹子"
+-- emoji:🐆; unicode = 1f406 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐆, 1f406
+-- format: unicodeKey = tts
+L["128006_65039"] = "豹子"
 -- emoji:🐴; unicode = 1f434
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128052"] = "马头"
+-- emoji:🐴; unicode = 1f434 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐴, 1f434
+-- format: unicodeKey = tts
+L["128052_65039"] = "马头"
 -- emoji:🫎; unicode = 1face
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129742"] = "驼鹿"
+-- emoji:🫎; unicode = 1face fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫎, 1face
+-- format: unicodeKey = tts
+L["129742_65039"] = "驼鹿"
 -- emoji:🫏; unicode = 1facf
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129743"] = "驴"
+-- emoji:🫏; unicode = 1facf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫏, 1facf
+-- format: unicodeKey = tts
+L["129743_65039"] = "驴"
 -- emoji:🐎; unicode = 1f40e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128014"] = "马"
+-- emoji:🐎; unicode = 1f40e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐎, 1f40e
+-- format: unicodeKey = tts
+L["128014_65039"] = "马"
 -- emoji:🦄; unicode = 1f984
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129412"] = "独角兽"
+-- emoji:🦄; unicode = 1f984 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦄, 1f984
+-- format: unicodeKey = tts
+L["129412_65039"] = "独角兽"
 -- emoji:🦓; unicode = 1f993
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129427"] = "斑马"
+-- emoji:🦓; unicode = 1f993 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦓, 1f993
+-- format: unicodeKey = tts
+L["129427_65039"] = "斑马"
 -- emoji:🦌; unicode = 1f98c
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129420"] = "鹿"
+-- emoji:🦌; unicode = 1f98c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦌, 1f98c
+-- format: unicodeKey = tts
+L["129420_65039"] = "鹿"
 -- emoji:🦬; unicode = 1f9ac
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129452"] = "大野牛"
+-- emoji:🦬; unicode = 1f9ac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦬, 1f9ac
+-- format: unicodeKey = tts
+L["129452_65039"] = "大野牛"
 -- emoji:🐮; unicode = 1f42e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128046"] = "奶牛头"
+-- emoji:🐮; unicode = 1f42e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐮, 1f42e
+-- format: unicodeKey = tts
+L["128046_65039"] = "奶牛头"
 -- emoji:🐂; unicode = 1f402
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128002"] = "公牛"
+-- emoji:🐂; unicode = 1f402 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐂, 1f402
+-- format: unicodeKey = tts
+L["128002_65039"] = "公牛"
 -- emoji:🐃; unicode = 1f403
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128003"] = "水牛"
+-- emoji:🐃; unicode = 1f403 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐃, 1f403
+-- format: unicodeKey = tts
+L["128003_65039"] = "水牛"
 -- emoji:🐄; unicode = 1f404
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128004"] = "奶牛"
+-- emoji:🐄; unicode = 1f404 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐄, 1f404
+-- format: unicodeKey = tts
+L["128004_65039"] = "奶牛"
 -- emoji:🐷; unicode = 1f437
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128055"] = "猪头"
+-- emoji:🐷; unicode = 1f437 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐷, 1f437
+-- format: unicodeKey = tts
+L["128055_65039"] = "猪头"
 -- emoji:🐖; unicode = 1f416
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128022"] = "猪"
+-- emoji:🐖; unicode = 1f416 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐖, 1f416
+-- format: unicodeKey = tts
+L["128022_65039"] = "猪"
 -- emoji:🐗; unicode = 1f417
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128023"] = "野猪"
+-- emoji:🐗; unicode = 1f417 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐗, 1f417
+-- format: unicodeKey = tts
+L["128023_65039"] = "野猪"
 -- emoji:🐽; unicode = 1f43d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128061"] = "猪鼻子"
+-- emoji:🐽; unicode = 1f43d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐽, 1f43d
+-- format: unicodeKey = tts
+L["128061_65039"] = "猪鼻子"
 -- emoji:🐏; unicode = 1f40f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128015"] = "公羊"
+-- emoji:🐏; unicode = 1f40f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐏, 1f40f
+-- format: unicodeKey = tts
+L["128015_65039"] = "公羊"
 -- emoji:🐑; unicode = 1f411
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128017"] = "母羊"
+-- emoji:🐑; unicode = 1f411 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐑, 1f411
+-- format: unicodeKey = tts
+L["128017_65039"] = "母羊"
 -- emoji:🐐; unicode = 1f410
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128016"] = "山羊"
+-- emoji:🐐; unicode = 1f410 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐐, 1f410
+-- format: unicodeKey = tts
+L["128016_65039"] = "山羊"
 -- emoji:🐪; unicode = 1f42a
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128042"] = "骆驼"
+-- emoji:🐪; unicode = 1f42a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐪, 1f42a
+-- format: unicodeKey = tts
+L["128042_65039"] = "骆驼"
 -- emoji:🐫; unicode = 1f42b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128043"] = "双峰骆驼"
+-- emoji:🐫; unicode = 1f42b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐫, 1f42b
+-- format: unicodeKey = tts
+L["128043_65039"] = "双峰骆驼"
 -- emoji:🦙; unicode = 1f999
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129433"] = "美洲鸵"
+-- emoji:🦙; unicode = 1f999 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦙, 1f999
+-- format: unicodeKey = tts
+L["129433_65039"] = "美洲鸵"
 -- emoji:🦒; unicode = 1f992
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129426"] = "长颈鹿"
+-- emoji:🦒; unicode = 1f992 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦒, 1f992
+-- format: unicodeKey = tts
+L["129426_65039"] = "长颈鹿"
 -- emoji:🐘; unicode = 1f418
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128024"] = "大象"
+-- emoji:🐘; unicode = 1f418 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐘, 1f418
+-- format: unicodeKey = tts
+L["128024_65039"] = "大象"
 -- emoji:🦣; unicode = 1f9a3
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129443"] = "猛犸"
+-- emoji:🦣; unicode = 1f9a3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦣, 1f9a3
+-- format: unicodeKey = tts
+L["129443_65039"] = "猛犸"
 -- emoji:🦏; unicode = 1f98f
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129423"] = "犀牛"
+-- emoji:🦏; unicode = 1f98f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦏, 1f98f
+-- format: unicodeKey = tts
+L["129423_65039"] = "犀牛"
 -- emoji:🦛; unicode = 1f99b
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129435"] = "河马"
+-- emoji:🦛; unicode = 1f99b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦛, 1f99b
+-- format: unicodeKey = tts
+L["129435_65039"] = "河马"
 -- emoji:🐭; unicode = 1f42d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128045"] = "老鼠头"
+-- emoji:🐭; unicode = 1f42d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐭, 1f42d
+-- format: unicodeKey = tts
+L["128045_65039"] = "老鼠头"
 -- emoji:🐁; unicode = 1f401
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128001"] = "老鼠"
+-- emoji:🐁; unicode = 1f401 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐁, 1f401
+-- format: unicodeKey = tts
+L["128001_65039"] = "老鼠"
 -- emoji:🐀; unicode = 1f400
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128000"] = "耗子"
+-- emoji:🐀; unicode = 1f400 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐀, 1f400
+-- format: unicodeKey = tts
+L["128000_65039"] = "耗子"
 -- emoji:🐹; unicode = 1f439
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128057"] = "仓鼠"
+-- emoji:🐹; unicode = 1f439 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐹, 1f439
+-- format: unicodeKey = tts
+L["128057_65039"] = "仓鼠"
 -- emoji:🐰; unicode = 1f430
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128048"] = "兔子头"
+-- emoji:🐰; unicode = 1f430 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐰, 1f430
+-- format: unicodeKey = tts
+L["128048_65039"] = "兔子头"
 -- emoji:🐇; unicode = 1f407
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128007"] = "兔子"
+-- emoji:🐇; unicode = 1f407 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐇, 1f407
+-- format: unicodeKey = tts
+L["128007_65039"] = "兔子"
 -- emoji:🐿️; unicode = 1f43f fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15210,18 +16950,38 @@ L["128063"] = "松鼠"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129451"] = "海狸"
+-- emoji:🦫; unicode = 1f9ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦫, 1f9ab
+-- format: unicodeKey = tts
+L["129451_65039"] = "海狸"
 -- emoji:🦔; unicode = 1f994
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129428"] = "刺猬"
+-- emoji:🦔; unicode = 1f994 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦔, 1f994
+-- format: unicodeKey = tts
+L["129428_65039"] = "刺猬"
 -- emoji:🦇; unicode = 1f987
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129415"] = "蝙蝠"
+-- emoji:🦇; unicode = 1f987 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦇, 1f987
+-- format: unicodeKey = tts
+L["129415_65039"] = "蝙蝠"
 -- emoji:🐻; unicode = 1f43b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128059"] = "熊"
+-- emoji:🐻; unicode = 1f43b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐻, 1f43b
+-- format: unicodeKey = tts
+L["128059_65039"] = "熊"
 -- emoji:🐻‍❄️; unicode = 1f43b 200d 2744 fe0f
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
@@ -15235,66 +16995,146 @@ L["128059_8205_10052"] = "北极熊"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128040"] = "考拉"
+-- emoji:🐨; unicode = 1f428 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐨, 1f428
+-- format: unicodeKey = tts
+L["128040_65039"] = "考拉"
 -- emoji:🐼; unicode = 1f43c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128060"] = "熊猫"
+-- emoji:🐼; unicode = 1f43c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐼, 1f43c
+-- format: unicodeKey = tts
+L["128060_65039"] = "熊猫"
 -- emoji:🦥; unicode = 1f9a5
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129445"] = "树懒"
+-- emoji:🦥; unicode = 1f9a5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦥, 1f9a5
+-- format: unicodeKey = tts
+L["129445_65039"] = "树懒"
 -- emoji:🦦; unicode = 1f9a6
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129446"] = "水獭"
+-- emoji:🦦; unicode = 1f9a6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦦, 1f9a6
+-- format: unicodeKey = tts
+L["129446_65039"] = "水獭"
 -- emoji:🦨; unicode = 1f9a8
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129448"] = "臭鼬"
+-- emoji:🦨; unicode = 1f9a8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦨, 1f9a8
+-- format: unicodeKey = tts
+L["129448_65039"] = "臭鼬"
 -- emoji:🦘; unicode = 1f998
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129432"] = "袋鼠"
+-- emoji:🦘; unicode = 1f998 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦘, 1f998
+-- format: unicodeKey = tts
+L["129432_65039"] = "袋鼠"
 -- emoji:🦡; unicode = 1f9a1
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129441"] = "獾"
+-- emoji:🦡; unicode = 1f9a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦡, 1f9a1
+-- format: unicodeKey = tts
+L["129441_65039"] = "獾"
 -- emoji:🐾; unicode = 1f43e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128062"] = "爪印"
+-- emoji:🐾; unicode = 1f43e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐾, 1f43e
+-- format: unicodeKey = tts
+L["128062_65039"] = "爪印"
 -- emoji:🦃; unicode = 1f983
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129411"] = "火鸡"
+-- emoji:🦃; unicode = 1f983 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦃, 1f983
+-- format: unicodeKey = tts
+L["129411_65039"] = "火鸡"
 -- emoji:🐔; unicode = 1f414
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128020"] = "鸡"
+-- emoji:🐔; unicode = 1f414 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐔, 1f414
+-- format: unicodeKey = tts
+L["128020_65039"] = "鸡"
 -- emoji:🐓; unicode = 1f413
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128019"] = "公鸡"
+-- emoji:🐓; unicode = 1f413 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐓, 1f413
+-- format: unicodeKey = tts
+L["128019_65039"] = "公鸡"
 -- emoji:🐣; unicode = 1f423
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128035"] = "小鸡破壳"
+-- emoji:🐣; unicode = 1f423 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐣, 1f423
+-- format: unicodeKey = tts
+L["128035_65039"] = "小鸡破壳"
 -- emoji:🐤; unicode = 1f424
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128036"] = "小鸡"
+-- emoji:🐤; unicode = 1f424 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐤, 1f424
+-- format: unicodeKey = tts
+L["128036_65039"] = "小鸡"
 -- emoji:🐥; unicode = 1f425
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128037"] = "正面朝向的小鸡"
+-- emoji:🐥; unicode = 1f425 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐥, 1f425
+-- format: unicodeKey = tts
+L["128037_65039"] = "正面朝向的小鸡"
 -- emoji:🐦; unicode = 1f426
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128038"] = "鸟"
+-- emoji:🐦; unicode = 1f426 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐦, 1f426
+-- format: unicodeKey = tts
+L["128038_65039"] = "鸟"
 -- emoji:🐧; unicode = 1f427
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128039"] = "企鹅"
+-- emoji:🐧; unicode = 1f427 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐧, 1f427
+-- format: unicodeKey = tts
+L["128039_65039"] = "企鹅"
 -- emoji:🕊️; unicode = 1f54a fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15308,42 +17148,92 @@ L["128330"] = "鸽"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129413"] = "鹰"
+-- emoji:🦅; unicode = 1f985 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦅, 1f985
+-- format: unicodeKey = tts
+L["129413_65039"] = "鹰"
 -- emoji:🦆; unicode = 1f986
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129414"] = "鸭子"
+-- emoji:🦆; unicode = 1f986 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦆, 1f986
+-- format: unicodeKey = tts
+L["129414_65039"] = "鸭子"
 -- emoji:🦢; unicode = 1f9a2
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129442"] = "天鹅"
+-- emoji:🦢; unicode = 1f9a2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦢, 1f9a2
+-- format: unicodeKey = tts
+L["129442_65039"] = "天鹅"
 -- emoji:🦉; unicode = 1f989
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129417"] = "猫头鹰"
+-- emoji:🦉; unicode = 1f989 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦉, 1f989
+-- format: unicodeKey = tts
+L["129417_65039"] = "猫头鹰"
 -- emoji:🦤; unicode = 1f9a4
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129444"] = "渡渡鸟"
+-- emoji:🦤; unicode = 1f9a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦤, 1f9a4
+-- format: unicodeKey = tts
+L["129444_65039"] = "渡渡鸟"
 -- emoji:🪶; unicode = 1fab6
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129718"] = "羽毛"
+-- emoji:🪶; unicode = 1fab6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪶, 1fab6
+-- format: unicodeKey = tts
+L["129718_65039"] = "羽毛"
 -- emoji:🦩; unicode = 1f9a9
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129449"] = "火烈鸟"
+-- emoji:🦩; unicode = 1f9a9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦩, 1f9a9
+-- format: unicodeKey = tts
+L["129449_65039"] = "火烈鸟"
 -- emoji:🦚; unicode = 1f99a
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129434"] = "孔雀"
+-- emoji:🦚; unicode = 1f99a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦚, 1f99a
+-- format: unicodeKey = tts
+L["129434_65039"] = "孔雀"
 -- emoji:🦜; unicode = 1f99c
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129436"] = "鹦鹉"
+-- emoji:🦜; unicode = 1f99c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦜, 1f99c
+-- format: unicodeKey = tts
+L["129436_65039"] = "鹦鹉"
 -- emoji:🪽; unicode = 1fabd
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129725"] = "翅膀"
+-- emoji:🪽; unicode = 1fabd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪽, 1fabd
+-- format: unicodeKey = tts
+L["129725_65039"] = "翅膀"
 -- emoji:🐦‍⬛; unicode = 1f426 200d 2b1b
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
@@ -15352,6 +17242,11 @@ L["128038_8205_11035"] = "黑色的鸟"
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129727"] = "鹅"
+-- emoji:🪿; unicode = 1fabf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪿, 1fabf
+-- format: unicodeKey = tts
+L["129727_65039"] = "鹅"
 -- emoji:🐦‍🔥; unicode = 1f426 200d 1f525
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -15360,142 +17255,317 @@ L["128038_8205_128293"] = "凤凰"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128056"] = "青蛙"
+-- emoji:🐸; unicode = 1f438 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐸, 1f438
+-- format: unicodeKey = tts
+L["128056_65039"] = "青蛙"
 -- emoji:🐊; unicode = 1f40a
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128010"] = "鳄鱼"
+-- emoji:🐊; unicode = 1f40a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐊, 1f40a
+-- format: unicodeKey = tts
+L["128010_65039"] = "鳄鱼"
 -- emoji:🐢; unicode = 1f422
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128034"] = "龟"
+-- emoji:🐢; unicode = 1f422 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐢, 1f422
+-- format: unicodeKey = tts
+L["128034_65039"] = "龟"
 -- emoji:🦎; unicode = 1f98e
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129422"] = "蜥蜴"
+-- emoji:🦎; unicode = 1f98e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦎, 1f98e
+-- format: unicodeKey = tts
+L["129422_65039"] = "蜥蜴"
 -- emoji:🐍; unicode = 1f40d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128013"] = "蛇"
+-- emoji:🐍; unicode = 1f40d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐍, 1f40d
+-- format: unicodeKey = tts
+L["128013_65039"] = "蛇"
 -- emoji:🐲; unicode = 1f432
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128050"] = "龙头"
+-- emoji:🐲; unicode = 1f432 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐲, 1f432
+-- format: unicodeKey = tts
+L["128050_65039"] = "龙头"
 -- emoji:🐉; unicode = 1f409
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128009"] = "龙"
+-- emoji:🐉; unicode = 1f409 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐉, 1f409
+-- format: unicodeKey = tts
+L["128009_65039"] = "龙"
 -- emoji:🦕; unicode = 1f995
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129429"] = "蜥蜴类"
+-- emoji:🦕; unicode = 1f995 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦕, 1f995
+-- format: unicodeKey = tts
+L["129429_65039"] = "蜥蜴类"
 -- emoji:🦖; unicode = 1f996
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129430"] = "霸王龙"
+-- emoji:🦖; unicode = 1f996 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦖, 1f996
+-- format: unicodeKey = tts
+L["129430_65039"] = "霸王龙"
 -- emoji:🐳; unicode = 1f433
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128051"] = "喷水的鲸"
+-- emoji:🐳; unicode = 1f433 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐳, 1f433
+-- format: unicodeKey = tts
+L["128051_65039"] = "喷水的鲸"
 -- emoji:🐋; unicode = 1f40b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128011"] = "鲸鱼"
+-- emoji:🐋; unicode = 1f40b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐋, 1f40b
+-- format: unicodeKey = tts
+L["128011_65039"] = "鲸鱼"
 -- emoji:🐬; unicode = 1f42c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128044"] = "海豚"
+-- emoji:🐬; unicode = 1f42c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐬, 1f42c
+-- format: unicodeKey = tts
+L["128044_65039"] = "海豚"
 -- emoji:🦭; unicode = 1f9ad
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129453"] = "海豹"
+-- emoji:🦭; unicode = 1f9ad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦭, 1f9ad
+-- format: unicodeKey = tts
+L["129453_65039"] = "海豹"
 -- emoji:🐟; unicode = 1f41f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128031"] = "鱼"
+-- emoji:🐟; unicode = 1f41f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐟, 1f41f
+-- format: unicodeKey = tts
+L["128031_65039"] = "鱼"
 -- emoji:🐠; unicode = 1f420
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128032"] = "热带鱼"
+-- emoji:🐠; unicode = 1f420 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐠, 1f420
+-- format: unicodeKey = tts
+L["128032_65039"] = "热带鱼"
 -- emoji:🐡; unicode = 1f421
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128033"] = "河豚"
+-- emoji:🐡; unicode = 1f421 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐡, 1f421
+-- format: unicodeKey = tts
+L["128033_65039"] = "河豚"
 -- emoji:🦈; unicode = 1f988
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129416"] = "鲨鱼"
+-- emoji:🦈; unicode = 1f988 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦈, 1f988
+-- format: unicodeKey = tts
+L["129416_65039"] = "鲨鱼"
 -- emoji:🐙; unicode = 1f419
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128025"] = "章鱼"
+-- emoji:🐙; unicode = 1f419 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐙, 1f419
+-- format: unicodeKey = tts
+L["128025_65039"] = "章鱼"
 -- emoji:🐚; unicode = 1f41a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128026"] = "海螺"
+-- emoji:🐚; unicode = 1f41a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐚, 1f41a
+-- format: unicodeKey = tts
+L["128026_65039"] = "海螺"
 -- emoji:🪸; unicode = 1fab8
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129720"] = "珊瑚"
+-- emoji:🪸; unicode = 1fab8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪸, 1fab8
+-- format: unicodeKey = tts
+L["129720_65039"] = "珊瑚"
 -- emoji:🪼; unicode = 1fabc
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129724"] = "水母"
+-- emoji:🪼; unicode = 1fabc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪼, 1fabc
+-- format: unicodeKey = tts
+L["129724_65039"] = "水母"
 -- emoji:🦀; unicode = 1f980
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129408"] = "蟹"
+-- emoji:🦀; unicode = 1f980 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦀, 1f980
+-- format: unicodeKey = tts
+L["129408_65039"] = "蟹"
 -- emoji:🦞; unicode = 1f99e
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129438"] = "龙虾"
+-- emoji:🦞; unicode = 1f99e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦞, 1f99e
+-- format: unicodeKey = tts
+L["129438_65039"] = "龙虾"
 -- emoji:🦐; unicode = 1f990
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129424"] = "虾"
+-- emoji:🦐; unicode = 1f990 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦐, 1f990
+-- format: unicodeKey = tts
+L["129424_65039"] = "虾"
 -- emoji:🦑; unicode = 1f991
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129425"] = "乌贼"
+-- emoji:🦑; unicode = 1f991 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦑, 1f991
+-- format: unicodeKey = tts
+L["129425_65039"] = "乌贼"
 -- emoji:🦪; unicode = 1f9aa
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129450"] = "牡蛎"
+-- emoji:🦪; unicode = 1f9aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦪, 1f9aa
+-- format: unicodeKey = tts
+L["129450_65039"] = "牡蛎"
 -- emoji:🐌; unicode = 1f40c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128012"] = "蜗牛"
+-- emoji:🐌; unicode = 1f40c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐌, 1f40c
+-- format: unicodeKey = tts
+L["128012_65039"] = "蜗牛"
 -- emoji:🦋; unicode = 1f98b
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129419"] = "蝴蝶"
+-- emoji:🦋; unicode = 1f98b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦋, 1f98b
+-- format: unicodeKey = tts
+L["129419_65039"] = "蝴蝶"
 -- emoji:🐛; unicode = 1f41b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128027"] = "毛毛虫"
+-- emoji:🐛; unicode = 1f41b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐛, 1f41b
+-- format: unicodeKey = tts
+L["128027_65039"] = "毛毛虫"
 -- emoji:🐜; unicode = 1f41c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128028"] = "蚂蚁"
+-- emoji:🐜; unicode = 1f41c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐜, 1f41c
+-- format: unicodeKey = tts
+L["128028_65039"] = "蚂蚁"
 -- emoji:🐝; unicode = 1f41d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128029"] = "蜜蜂"
+-- emoji:🐝; unicode = 1f41d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐝, 1f41d
+-- format: unicodeKey = tts
+L["128029_65039"] = "蜜蜂"
 -- emoji:🪲; unicode = 1fab2
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129714"] = "甲虫"
+-- emoji:🪲; unicode = 1fab2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪲, 1fab2
+-- format: unicodeKey = tts
+L["129714_65039"] = "甲虫"
 -- emoji:🐞; unicode = 1f41e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128030"] = "瓢虫"
+-- emoji:🐞; unicode = 1f41e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🐞, 1f41e
+-- format: unicodeKey = tts
+L["128030_65039"] = "瓢虫"
 -- emoji:🦗; unicode = 1f997
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129431"] = "蟋蟀"
+-- emoji:🦗; unicode = 1f997 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦗, 1f997
+-- format: unicodeKey = tts
+L["129431_65039"] = "蟋蟀"
 -- emoji:🪳; unicode = 1fab3
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129715"] = "蟑螂"
+-- emoji:🪳; unicode = 1fab3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪳, 1fab3
+-- format: unicodeKey = tts
+L["129715_65039"] = "蟑螂"
 -- emoji:🕷️; unicode = 1f577 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15518,38 +17588,83 @@ L["128376"] = "蜘蛛网"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129410"] = "蝎子"
+-- emoji:🦂; unicode = 1f982 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦂, 1f982
+-- format: unicodeKey = tts
+L["129410_65039"] = "蝎子"
 -- emoji:🦟; unicode = 1f99f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129439"] = "蚊子"
+-- emoji:🦟; unicode = 1f99f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦟, 1f99f
+-- format: unicodeKey = tts
+L["129439_65039"] = "蚊子"
 -- emoji:🪰; unicode = 1fab0
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129712"] = "苍蝇"
+-- emoji:🪰; unicode = 1fab0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪰, 1fab0
+-- format: unicodeKey = tts
+L["129712_65039"] = "苍蝇"
 -- emoji:🪱; unicode = 1fab1
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129713"] = "蠕虫"
+-- emoji:🪱; unicode = 1fab1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪱, 1fab1
+-- format: unicodeKey = tts
+L["129713_65039"] = "蠕虫"
 -- emoji:🦠; unicode = 1f9a0
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129440"] = "细菌"
+-- emoji:🦠; unicode = 1f9a0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦠, 1f9a0
+-- format: unicodeKey = tts
+L["129440_65039"] = "细菌"
 -- emoji:💐; unicode = 1f490
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128144"] = "花束"
+-- emoji:💐; unicode = 1f490 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💐, 1f490
+-- format: unicodeKey = tts
+L["128144_65039"] = "花束"
 -- emoji:🌸; unicode = 1f338
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127800"] = "樱花"
+-- emoji:🌸; unicode = 1f338 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌸, 1f338
+-- format: unicodeKey = tts
+L["127800_65039"] = "樱花"
 -- emoji:💮; unicode = 1f4ae
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128174"] = "白花"
+-- emoji:💮; unicode = 1f4ae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💮, 1f4ae
+-- format: unicodeKey = tts
+L["128174_65039"] = "白花"
 -- emoji:🪷; unicode = 1fab7
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129719"] = "莲花"
+-- emoji:🪷; unicode = 1fab7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪷, 1fab7
+-- format: unicodeKey = tts
+L["129719_65039"] = "莲花"
 -- emoji:🏵️; unicode = 1f3f5 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15563,62 +17678,137 @@ L["127989"] = "圆形花饰"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127801"] = "玫瑰"
+-- emoji:🌹; unicode = 1f339 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌹, 1f339
+-- format: unicodeKey = tts
+L["127801_65039"] = "玫瑰"
 -- emoji:🥀; unicode = 1f940
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129344"] = "枯萎的花"
+-- emoji:🥀; unicode = 1f940 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥀, 1f940
+-- format: unicodeKey = tts
+L["129344_65039"] = "枯萎的花"
 -- emoji:🌺; unicode = 1f33a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127802"] = "芙蓉"
+-- emoji:🌺; unicode = 1f33a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌺, 1f33a
+-- format: unicodeKey = tts
+L["127802_65039"] = "芙蓉"
 -- emoji:🌻; unicode = 1f33b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127803"] = "向日葵"
+-- emoji:🌻; unicode = 1f33b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌻, 1f33b
+-- format: unicodeKey = tts
+L["127803_65039"] = "向日葵"
 -- emoji:🌼; unicode = 1f33c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127804"] = "开花"
+-- emoji:🌼; unicode = 1f33c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌼, 1f33c
+-- format: unicodeKey = tts
+L["127804_65039"] = "开花"
 -- emoji:🌷; unicode = 1f337
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127799"] = "郁金香"
+-- emoji:🌷; unicode = 1f337 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌷, 1f337
+-- format: unicodeKey = tts
+L["127799_65039"] = "郁金香"
 -- emoji:🪻; unicode = 1fabb
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129723"] = "风信子"
+-- emoji:🪻; unicode = 1fabb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪻, 1fabb
+-- format: unicodeKey = tts
+L["129723_65039"] = "风信子"
 -- emoji:🌱; unicode = 1f331
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127793"] = "幼苗"
+-- emoji:🌱; unicode = 1f331 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌱, 1f331
+-- format: unicodeKey = tts
+L["127793_65039"] = "幼苗"
 -- emoji:🪴; unicode = 1fab4
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129716"] = "盆栽植物"
+-- emoji:🪴; unicode = 1fab4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪴, 1fab4
+-- format: unicodeKey = tts
+L["129716_65039"] = "盆栽植物"
 -- emoji:🌲; unicode = 1f332
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127794"] = "松树"
+-- emoji:🌲; unicode = 1f332 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌲, 1f332
+-- format: unicodeKey = tts
+L["127794_65039"] = "松树"
 -- emoji:🌳; unicode = 1f333
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127795"] = "落叶树"
+-- emoji:🌳; unicode = 1f333 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌳, 1f333
+-- format: unicodeKey = tts
+L["127795_65039"] = "落叶树"
 -- emoji:🌴; unicode = 1f334
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127796"] = "棕榈树"
+-- emoji:🌴; unicode = 1f334 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌴, 1f334
+-- format: unicodeKey = tts
+L["127796_65039"] = "棕榈树"
 -- emoji:🌵; unicode = 1f335
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127797"] = "仙人掌"
+-- emoji:🌵; unicode = 1f335 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌵, 1f335
+-- format: unicodeKey = tts
+L["127797_65039"] = "仙人掌"
 -- emoji:🌾; unicode = 1f33e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127806"] = "稻子"
+-- emoji:🌾; unicode = 1f33e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌾, 1f33e
+-- format: unicodeKey = tts
+L["127806_65039"] = "稻子"
 -- emoji:🌿; unicode = 1f33f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127807"] = "药草"
+-- emoji:🌿; unicode = 1f33f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌿, 1f33f
+-- format: unicodeKey = tts
+L["127807_65039"] = "药草"
 -- emoji:☘️; unicode = 2618 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -15632,54 +17822,119 @@ L["9752"] = "三叶草"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127808"] = "四叶草"
+-- emoji:🍀; unicode = 1f340 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍀, 1f340
+-- format: unicodeKey = tts
+L["127808_65039"] = "四叶草"
 -- emoji:🍁; unicode = 1f341
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127809"] = "枫叶"
+-- emoji:🍁; unicode = 1f341 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍁, 1f341
+-- format: unicodeKey = tts
+L["127809_65039"] = "枫叶"
 -- emoji:🍂; unicode = 1f342
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127810"] = "落叶"
+-- emoji:🍂; unicode = 1f342 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍂, 1f342
+-- format: unicodeKey = tts
+L["127810_65039"] = "落叶"
 -- emoji:🍃; unicode = 1f343
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127811"] = "风吹叶落"
+-- emoji:🍃; unicode = 1f343 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍃, 1f343
+-- format: unicodeKey = tts
+L["127811_65039"] = "风吹叶落"
 -- emoji:🪹; unicode = 1fab9
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129721"] = "空巢"
+-- emoji:🪹; unicode = 1fab9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪹, 1fab9
+-- format: unicodeKey = tts
+L["129721_65039"] = "空巢"
 -- emoji:🪺; unicode = 1faba
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129722"] = "有蛋的巢"
+-- emoji:🪺; unicode = 1faba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪺, 1faba
+-- format: unicodeKey = tts
+L["129722_65039"] = "有蛋的巢"
 -- emoji:🍄; unicode = 1f344
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127812"] = "蘑菇"
+-- emoji:🍄; unicode = 1f344 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍄, 1f344
+-- format: unicodeKey = tts
+L["127812_65039"] = "蘑菇"
 -- emoji:🪾; unicode = 1fabe
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129726"] = "无叶树"
+-- emoji:🪾; unicode = 1fabe fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪾, 1fabe
+-- format: unicodeKey = tts
+L["129726_65039"] = "无叶树"
 -- emoji:🍇; unicode = 1f347
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127815"] = "葡萄"
+-- emoji:🍇; unicode = 1f347 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍇, 1f347
+-- format: unicodeKey = tts
+L["127815_65039"] = "葡萄"
 -- emoji:🍈; unicode = 1f348
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127816"] = "甜瓜"
+-- emoji:🍈; unicode = 1f348 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍈, 1f348
+-- format: unicodeKey = tts
+L["127816_65039"] = "甜瓜"
 -- emoji:🍉; unicode = 1f349
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127817"] = "西瓜"
+-- emoji:🍉; unicode = 1f349 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍉, 1f349
+-- format: unicodeKey = tts
+L["127817_65039"] = "西瓜"
 -- emoji:🍊; unicode = 1f34a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127818"] = "橘子"
+-- emoji:🍊; unicode = 1f34a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍊, 1f34a
+-- format: unicodeKey = tts
+L["127818_65039"] = "橘子"
 -- emoji:🍋; unicode = 1f34b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127819"] = "柠檬"
+-- emoji:🍋; unicode = 1f34b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍋, 1f34b
+-- format: unicodeKey = tts
+L["127819_65039"] = "柠檬"
 -- emoji:🍋‍🟩; unicode = 1f34b 200d 1f7e9
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -15688,78 +17943,173 @@ L["127819_8205_129001"] = "青柠"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127820"] = "香蕉"
+-- emoji:🍌; unicode = 1f34c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍌, 1f34c
+-- format: unicodeKey = tts
+L["127820_65039"] = "香蕉"
 -- emoji:🍍; unicode = 1f34d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127821"] = "菠萝"
+-- emoji:🍍; unicode = 1f34d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍍, 1f34d
+-- format: unicodeKey = tts
+L["127821_65039"] = "菠萝"
 -- emoji:🥭; unicode = 1f96d
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129389"] = "芒果"
+-- emoji:🥭; unicode = 1f96d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥭, 1f96d
+-- format: unicodeKey = tts
+L["129389_65039"] = "芒果"
 -- emoji:🍎; unicode = 1f34e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127822"] = "红苹果"
+-- emoji:🍎; unicode = 1f34e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍎, 1f34e
+-- format: unicodeKey = tts
+L["127822_65039"] = "红苹果"
 -- emoji:🍏; unicode = 1f34f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127823"] = "青苹果"
+-- emoji:🍏; unicode = 1f34f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍏, 1f34f
+-- format: unicodeKey = tts
+L["127823_65039"] = "青苹果"
 -- emoji:🍐; unicode = 1f350
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127824"] = "梨"
+-- emoji:🍐; unicode = 1f350 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍐, 1f350
+-- format: unicodeKey = tts
+L["127824_65039"] = "梨"
 -- emoji:🍑; unicode = 1f351
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127825"] = "桃"
+-- emoji:🍑; unicode = 1f351 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍑, 1f351
+-- format: unicodeKey = tts
+L["127825_65039"] = "桃"
 -- emoji:🍒; unicode = 1f352
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127826"] = "樱桃"
+-- emoji:🍒; unicode = 1f352 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍒, 1f352
+-- format: unicodeKey = tts
+L["127826_65039"] = "樱桃"
 -- emoji:🍓; unicode = 1f353
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127827"] = "草莓"
+-- emoji:🍓; unicode = 1f353 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍓, 1f353
+-- format: unicodeKey = tts
+L["127827_65039"] = "草莓"
 -- emoji:🫐; unicode = 1fad0
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129744"] = "蓝莓"
+-- emoji:🫐; unicode = 1fad0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫐, 1fad0
+-- format: unicodeKey = tts
+L["129744_65039"] = "蓝莓"
 -- emoji:🥝; unicode = 1f95d
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129373"] = "猕猴桃"
+-- emoji:🥝; unicode = 1f95d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥝, 1f95d
+-- format: unicodeKey = tts
+L["129373_65039"] = "猕猴桃"
 -- emoji:🍅; unicode = 1f345
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127813"] = "西红柿"
+-- emoji:🍅; unicode = 1f345 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍅, 1f345
+-- format: unicodeKey = tts
+L["127813_65039"] = "西红柿"
 -- emoji:🫒; unicode = 1fad2
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129746"] = "橄榄"
+-- emoji:🫒; unicode = 1fad2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫒, 1fad2
+-- format: unicodeKey = tts
+L["129746_65039"] = "橄榄"
 -- emoji:🥥; unicode = 1f965
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129381"] = "椰子"
+-- emoji:🥥; unicode = 1f965 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥥, 1f965
+-- format: unicodeKey = tts
+L["129381_65039"] = "椰子"
 -- emoji:🥑; unicode = 1f951
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129361"] = "鳄梨"
+-- emoji:🥑; unicode = 1f951 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥑, 1f951
+-- format: unicodeKey = tts
+L["129361_65039"] = "鳄梨"
 -- emoji:🍆; unicode = 1f346
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127814"] = "茄子"
+-- emoji:🍆; unicode = 1f346 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍆, 1f346
+-- format: unicodeKey = tts
+L["127814_65039"] = "茄子"
 -- emoji:🥔; unicode = 1f954
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129364"] = "土豆"
+-- emoji:🥔; unicode = 1f954 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥔, 1f954
+-- format: unicodeKey = tts
+L["129364_65039"] = "土豆"
 -- emoji:🥕; unicode = 1f955
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129365"] = "胡萝卜"
+-- emoji:🥕; unicode = 1f955 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥕, 1f955
+-- format: unicodeKey = tts
+L["129365_65039"] = "胡萝卜"
 -- emoji:🌽; unicode = 1f33d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127805"] = "玉米"
+-- emoji:🌽; unicode = 1f33d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌽, 1f33d
+-- format: unicodeKey = tts
+L["127805_65039"] = "玉米"
 -- emoji:🌶️; unicode = 1f336 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -15773,46 +18123,101 @@ L["127798"] = "红辣椒"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129745"] = "灯笼椒"
+-- emoji:🫑; unicode = 1fad1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫑, 1fad1
+-- format: unicodeKey = tts
+L["129745_65039"] = "灯笼椒"
 -- emoji:🥒; unicode = 1f952
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129362"] = "黄瓜"
+-- emoji:🥒; unicode = 1f952 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥒, 1f952
+-- format: unicodeKey = tts
+L["129362_65039"] = "黄瓜"
 -- emoji:🥬; unicode = 1f96c
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129388"] = "绿叶蔬菜"
+-- emoji:🥬; unicode = 1f96c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥬, 1f96c
+-- format: unicodeKey = tts
+L["129388_65039"] = "绿叶蔬菜"
 -- emoji:🥦; unicode = 1f966
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129382"] = "西兰花"
+-- emoji:🥦; unicode = 1f966 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥦, 1f966
+-- format: unicodeKey = tts
+L["129382_65039"] = "西兰花"
 -- emoji:🧄; unicode = 1f9c4
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129476"] = "蒜"
+-- emoji:🧄; unicode = 1f9c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧄, 1f9c4
+-- format: unicodeKey = tts
+L["129476_65039"] = "蒜"
 -- emoji:🧅; unicode = 1f9c5
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129477"] = "洋葱"
+-- emoji:🧅; unicode = 1f9c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧅, 1f9c5
+-- format: unicodeKey = tts
+L["129477_65039"] = "洋葱"
 -- emoji:🥜; unicode = 1f95c
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129372"] = "花生"
+-- emoji:🥜; unicode = 1f95c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥜, 1f95c
+-- format: unicodeKey = tts
+L["129372_65039"] = "花生"
 -- emoji:🫘; unicode = 1fad8
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129752"] = "豆"
+-- emoji:🫘; unicode = 1fad8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫘, 1fad8
+-- format: unicodeKey = tts
+L["129752_65039"] = "豆"
 -- emoji:🌰; unicode = 1f330
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127792"] = "栗子"
+-- emoji:🌰; unicode = 1f330 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌰, 1f330
+-- format: unicodeKey = tts
+L["127792_65039"] = "栗子"
 -- emoji:🫚; unicode = 1fada
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129754"] = "姜"
+-- emoji:🫚; unicode = 1fada fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫚, 1fada
+-- format: unicodeKey = tts
+L["129754_65039"] = "姜"
 -- emoji:🫛; unicode = 1fadb
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129755"] = "豌豆荚"
+-- emoji:🫛; unicode = 1fadb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫛, 1fadb
+-- format: unicodeKey = tts
+L["129755_65039"] = "豌豆荚"
 -- emoji:🍄‍🟫; unicode = 1f344 200d 1f7eb
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -15821,350 +18226,785 @@ L["127812_8205_129003"] = "褐色蘑菇"
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129756"] = "根菜"
+-- emoji:🫜; unicode = 1fadc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫜, 1fadc
+-- format: unicodeKey = tts
+L["129756_65039"] = "根菜"
 -- emoji:🍞; unicode = 1f35e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127838"] = "面包"
+-- emoji:🍞; unicode = 1f35e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍞, 1f35e
+-- format: unicodeKey = tts
+L["127838_65039"] = "面包"
 -- emoji:🥐; unicode = 1f950
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129360"] = "羊角面包"
+-- emoji:🥐; unicode = 1f950 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥐, 1f950
+-- format: unicodeKey = tts
+L["129360_65039"] = "羊角面包"
 -- emoji:🥖; unicode = 1f956
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129366"] = "法式长棍面包"
+-- emoji:🥖; unicode = 1f956 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥖, 1f956
+-- format: unicodeKey = tts
+L["129366_65039"] = "法式长棍面包"
 -- emoji:🫓; unicode = 1fad3
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129747"] = "扁面包"
+-- emoji:🫓; unicode = 1fad3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫓, 1fad3
+-- format: unicodeKey = tts
+L["129747_65039"] = "扁面包"
 -- emoji:🥨; unicode = 1f968
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129384"] = "椒盐卷饼"
+-- emoji:🥨; unicode = 1f968 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥨, 1f968
+-- format: unicodeKey = tts
+L["129384_65039"] = "椒盐卷饼"
 -- emoji:🥯; unicode = 1f96f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129391"] = "面包圈"
+-- emoji:🥯; unicode = 1f96f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥯, 1f96f
+-- format: unicodeKey = tts
+L["129391_65039"] = "面包圈"
 -- emoji:🥞; unicode = 1f95e
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129374"] = "烙饼"
+-- emoji:🥞; unicode = 1f95e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥞, 1f95e
+-- format: unicodeKey = tts
+L["129374_65039"] = "烙饼"
 -- emoji:🧇; unicode = 1f9c7
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129479"] = "华夫饼"
+-- emoji:🧇; unicode = 1f9c7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧇, 1f9c7
+-- format: unicodeKey = tts
+L["129479_65039"] = "华夫饼"
 -- emoji:🧀; unicode = 1f9c0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["129472"] = "芝士"
+-- emoji:🧀; unicode = 1f9c0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧀, 1f9c0
+-- format: unicodeKey = tts
+L["129472_65039"] = "芝士"
 -- emoji:🍖; unicode = 1f356
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127830"] = "排骨"
+-- emoji:🍖; unicode = 1f356 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍖, 1f356
+-- format: unicodeKey = tts
+L["127830_65039"] = "排骨"
 -- emoji:🍗; unicode = 1f357
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127831"] = "家禽的腿"
+-- emoji:🍗; unicode = 1f357 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍗, 1f357
+-- format: unicodeKey = tts
+L["127831_65039"] = "家禽的腿"
 -- emoji:🥩; unicode = 1f969
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129385"] = "肉块"
+-- emoji:🥩; unicode = 1f969 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥩, 1f969
+-- format: unicodeKey = tts
+L["129385_65039"] = "肉块"
 -- emoji:🥓; unicode = 1f953
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129363"] = "培根"
+-- emoji:🥓; unicode = 1f953 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥓, 1f953
+-- format: unicodeKey = tts
+L["129363_65039"] = "培根"
 -- emoji:🍔; unicode = 1f354
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127828"] = "汉堡"
+-- emoji:🍔; unicode = 1f354 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍔, 1f354
+-- format: unicodeKey = tts
+L["127828_65039"] = "汉堡"
 -- emoji:🍟; unicode = 1f35f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127839"] = "薯条"
+-- emoji:🍟; unicode = 1f35f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍟, 1f35f
+-- format: unicodeKey = tts
+L["127839_65039"] = "薯条"
 -- emoji:🍕; unicode = 1f355
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127829"] = "披萨"
+-- emoji:🍕; unicode = 1f355 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍕, 1f355
+-- format: unicodeKey = tts
+L["127829_65039"] = "披萨"
 -- emoji:🌭; unicode = 1f32d
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127789"] = "热狗"
+-- emoji:🌭; unicode = 1f32d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌭, 1f32d
+-- format: unicodeKey = tts
+L["127789_65039"] = "热狗"
 -- emoji:🥪; unicode = 1f96a
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129386"] = "三明治"
+-- emoji:🥪; unicode = 1f96a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥪, 1f96a
+-- format: unicodeKey = tts
+L["129386_65039"] = "三明治"
 -- emoji:🌮; unicode = 1f32e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127790"] = "墨西哥卷饼"
+-- emoji:🌮; unicode = 1f32e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌮, 1f32e
+-- format: unicodeKey = tts
+L["127790_65039"] = "墨西哥卷饼"
 -- emoji:🌯; unicode = 1f32f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127791"] = "墨西哥玉米煎饼"
+-- emoji:🌯; unicode = 1f32f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌯, 1f32f
+-- format: unicodeKey = tts
+L["127791_65039"] = "墨西哥玉米煎饼"
 -- emoji:🫔; unicode = 1fad4
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129748"] = "墨西哥粽子"
+-- emoji:🫔; unicode = 1fad4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫔, 1fad4
+-- format: unicodeKey = tts
+L["129748_65039"] = "墨西哥粽子"
 -- emoji:🥙; unicode = 1f959
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129369"] = "夹心饼"
+-- emoji:🥙; unicode = 1f959 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥙, 1f959
+-- format: unicodeKey = tts
+L["129369_65039"] = "夹心饼"
 -- emoji:🧆; unicode = 1f9c6
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129478"] = "炸豆丸子"
+-- emoji:🧆; unicode = 1f9c6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧆, 1f9c6
+-- format: unicodeKey = tts
+L["129478_65039"] = "炸豆丸子"
 -- emoji:🥚; unicode = 1f95a
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129370"] = "蛋"
+-- emoji:🥚; unicode = 1f95a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥚, 1f95a
+-- format: unicodeKey = tts
+L["129370_65039"] = "蛋"
 -- emoji:🍳; unicode = 1f373
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127859"] = "煎蛋"
+-- emoji:🍳; unicode = 1f373 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍳, 1f373
+-- format: unicodeKey = tts
+L["127859_65039"] = "煎蛋"
 -- emoji:🥘; unicode = 1f958
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129368"] = "装有食物的浅底锅"
+-- emoji:🥘; unicode = 1f958 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥘, 1f958
+-- format: unicodeKey = tts
+L["129368_65039"] = "装有食物的浅底锅"
 -- emoji:🍲; unicode = 1f372
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127858"] = "一锅食物"
+-- emoji:🍲; unicode = 1f372 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍲, 1f372
+-- format: unicodeKey = tts
+L["127858_65039"] = "一锅食物"
 -- emoji:🫕; unicode = 1fad5
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129749"] = "奶酪火锅"
+-- emoji:🫕; unicode = 1fad5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫕, 1fad5
+-- format: unicodeKey = tts
+L["129749_65039"] = "奶酪火锅"
 -- emoji:🥣; unicode = 1f963
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129379"] = "碗勺"
+-- emoji:🥣; unicode = 1f963 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥣, 1f963
+-- format: unicodeKey = tts
+L["129379_65039"] = "碗勺"
 -- emoji:🥗; unicode = 1f957
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129367"] = "绿色沙拉"
+-- emoji:🥗; unicode = 1f957 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥗, 1f957
+-- format: unicodeKey = tts
+L["129367_65039"] = "绿色沙拉"
 -- emoji:🍿; unicode = 1f37f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127871"] = "爆米花"
+-- emoji:🍿; unicode = 1f37f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍿, 1f37f
+-- format: unicodeKey = tts
+L["127871_65039"] = "爆米花"
 -- emoji:🧈; unicode = 1f9c8
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129480"] = "黄油"
+-- emoji:🧈; unicode = 1f9c8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧈, 1f9c8
+-- format: unicodeKey = tts
+L["129480_65039"] = "黄油"
 -- emoji:🧂; unicode = 1f9c2
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129474"] = "盐"
+-- emoji:🧂; unicode = 1f9c2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧂, 1f9c2
+-- format: unicodeKey = tts
+L["129474_65039"] = "盐"
 -- emoji:🥫; unicode = 1f96b
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129387"] = "罐头食品"
+-- emoji:🥫; unicode = 1f96b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥫, 1f96b
+-- format: unicodeKey = tts
+L["129387_65039"] = "罐头食品"
 -- emoji:🍱; unicode = 1f371
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127857"] = "盒饭"
+-- emoji:🍱; unicode = 1f371 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍱, 1f371
+-- format: unicodeKey = tts
+L["127857_65039"] = "盒饭"
 -- emoji:🍘; unicode = 1f358
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127832"] = "米饼"
+-- emoji:🍘; unicode = 1f358 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍘, 1f358
+-- format: unicodeKey = tts
+L["127832_65039"] = "米饼"
 -- emoji:🍙; unicode = 1f359
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127833"] = "饭团"
+-- emoji:🍙; unicode = 1f359 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍙, 1f359
+-- format: unicodeKey = tts
+L["127833_65039"] = "饭团"
 -- emoji:🍚; unicode = 1f35a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127834"] = "米饭"
+-- emoji:🍚; unicode = 1f35a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍚, 1f35a
+-- format: unicodeKey = tts
+L["127834_65039"] = "米饭"
 -- emoji:🍛; unicode = 1f35b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127835"] = "咖喱饭"
+-- emoji:🍛; unicode = 1f35b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍛, 1f35b
+-- format: unicodeKey = tts
+L["127835_65039"] = "咖喱饭"
 -- emoji:🍜; unicode = 1f35c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127836"] = "面条"
+-- emoji:🍜; unicode = 1f35c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍜, 1f35c
+-- format: unicodeKey = tts
+L["127836_65039"] = "面条"
 -- emoji:🍝; unicode = 1f35d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127837"] = "意粉"
+-- emoji:🍝; unicode = 1f35d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍝, 1f35d
+-- format: unicodeKey = tts
+L["127837_65039"] = "意粉"
 -- emoji:🍠; unicode = 1f360
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127840"] = "烤红薯"
+-- emoji:🍠; unicode = 1f360 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍠, 1f360
+-- format: unicodeKey = tts
+L["127840_65039"] = "烤红薯"
 -- emoji:🍢; unicode = 1f362
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127842"] = "关东煮"
+-- emoji:🍢; unicode = 1f362 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍢, 1f362
+-- format: unicodeKey = tts
+L["127842_65039"] = "关东煮"
 -- emoji:🍣; unicode = 1f363
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127843"] = "寿司"
+-- emoji:🍣; unicode = 1f363 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍣, 1f363
+-- format: unicodeKey = tts
+L["127843_65039"] = "寿司"
 -- emoji:🍤; unicode = 1f364
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127844"] = "天妇罗"
+-- emoji:🍤; unicode = 1f364 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍤, 1f364
+-- format: unicodeKey = tts
+L["127844_65039"] = "天妇罗"
 -- emoji:🍥; unicode = 1f365
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127845"] = "鱼板"
+-- emoji:🍥; unicode = 1f365 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍥, 1f365
+-- format: unicodeKey = tts
+L["127845_65039"] = "鱼板"
 -- emoji:🥮; unicode = 1f96e
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129390"] = "月饼"
+-- emoji:🥮; unicode = 1f96e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥮, 1f96e
+-- format: unicodeKey = tts
+L["129390_65039"] = "月饼"
 -- emoji:🍡; unicode = 1f361
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127841"] = "团子"
+-- emoji:🍡; unicode = 1f361 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍡, 1f361
+-- format: unicodeKey = tts
+L["127841_65039"] = "团子"
 -- emoji:🥟; unicode = 1f95f
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129375"] = "饺子"
+-- emoji:🥟; unicode = 1f95f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥟, 1f95f
+-- format: unicodeKey = tts
+L["129375_65039"] = "饺子"
 -- emoji:🥠; unicode = 1f960
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129376"] = "幸运饼干"
+-- emoji:🥠; unicode = 1f960 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥠, 1f960
+-- format: unicodeKey = tts
+L["129376_65039"] = "幸运饼干"
 -- emoji:🥡; unicode = 1f961
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129377"] = "外卖盒"
+-- emoji:🥡; unicode = 1f961 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥡, 1f961
+-- format: unicodeKey = tts
+L["129377_65039"] = "外卖盒"
 -- emoji:🍦; unicode = 1f366
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127846"] = "圆筒冰激凌"
+-- emoji:🍦; unicode = 1f366 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍦, 1f366
+-- format: unicodeKey = tts
+L["127846_65039"] = "圆筒冰激凌"
 -- emoji:🍧; unicode = 1f367
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127847"] = "刨冰"
+-- emoji:🍧; unicode = 1f367 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍧, 1f367
+-- format: unicodeKey = tts
+L["127847_65039"] = "刨冰"
 -- emoji:🍨; unicode = 1f368
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127848"] = "冰淇淋"
+-- emoji:🍨; unicode = 1f368 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍨, 1f368
+-- format: unicodeKey = tts
+L["127848_65039"] = "冰淇淋"
 -- emoji:🍩; unicode = 1f369
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127849"] = "甜甜圈"
+-- emoji:🍩; unicode = 1f369 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍩, 1f369
+-- format: unicodeKey = tts
+L["127849_65039"] = "甜甜圈"
 -- emoji:🍪; unicode = 1f36a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127850"] = "饼干"
+-- emoji:🍪; unicode = 1f36a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍪, 1f36a
+-- format: unicodeKey = tts
+L["127850_65039"] = "饼干"
 -- emoji:🎂; unicode = 1f382
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127874"] = "生日蛋糕"
+-- emoji:🎂; unicode = 1f382 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎂, 1f382
+-- format: unicodeKey = tts
+L["127874_65039"] = "生日蛋糕"
 -- emoji:🍰; unicode = 1f370
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127856"] = "水果蛋糕"
+-- emoji:🍰; unicode = 1f370 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍰, 1f370
+-- format: unicodeKey = tts
+L["127856_65039"] = "水果蛋糕"
 -- emoji:🧁; unicode = 1f9c1
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129473"] = "纸杯蛋糕"
+-- emoji:🧁; unicode = 1f9c1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧁, 1f9c1
+-- format: unicodeKey = tts
+L["129473_65039"] = "纸杯蛋糕"
 -- emoji:🥧; unicode = 1f967
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129383"] = "派"
+-- emoji:🥧; unicode = 1f967 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥧, 1f967
+-- format: unicodeKey = tts
+L["129383_65039"] = "派"
 -- emoji:🍫; unicode = 1f36b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127851"] = "巧克力"
+-- emoji:🍫; unicode = 1f36b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍫, 1f36b
+-- format: unicodeKey = tts
+L["127851_65039"] = "巧克力"
 -- emoji:🍬; unicode = 1f36c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127852"] = "糖"
+-- emoji:🍬; unicode = 1f36c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍬, 1f36c
+-- format: unicodeKey = tts
+L["127852_65039"] = "糖"
 -- emoji:🍭; unicode = 1f36d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127853"] = "棒棒糖"
+-- emoji:🍭; unicode = 1f36d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍭, 1f36d
+-- format: unicodeKey = tts
+L["127853_65039"] = "棒棒糖"
 -- emoji:🍮; unicode = 1f36e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127854"] = "奶黄"
+-- emoji:🍮; unicode = 1f36e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍮, 1f36e
+-- format: unicodeKey = tts
+L["127854_65039"] = "奶黄"
 -- emoji:🍯; unicode = 1f36f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127855"] = "蜂蜜"
+-- emoji:🍯; unicode = 1f36f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍯, 1f36f
+-- format: unicodeKey = tts
+L["127855_65039"] = "蜂蜜"
 -- emoji:🍼; unicode = 1f37c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127868"] = "奶瓶"
+-- emoji:🍼; unicode = 1f37c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍼, 1f37c
+-- format: unicodeKey = tts
+L["127868_65039"] = "奶瓶"
 -- emoji:🥛; unicode = 1f95b
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129371"] = "一杯奶"
+-- emoji:🥛; unicode = 1f95b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥛, 1f95b
+-- format: unicodeKey = tts
+L["129371_65039"] = "一杯奶"
 -- emoji:☕; unicode = 2615
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9749"] = "热饮"
+-- emoji:☕; unicode = 2615 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ☕, 2615
+-- format: unicodeKey = tts
+L["9749_65039"] = "热饮"
 -- emoji:🫖; unicode = 1fad6
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129750"] = "茶壶"
+-- emoji:🫖; unicode = 1fad6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫖, 1fad6
+-- format: unicodeKey = tts
+L["129750_65039"] = "茶壶"
 -- emoji:🍵; unicode = 1f375
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127861"] = "热茶"
+-- emoji:🍵; unicode = 1f375 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍵, 1f375
+-- format: unicodeKey = tts
+L["127861_65039"] = "热茶"
 -- emoji:🍶; unicode = 1f376
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127862"] = "清酒"
+-- emoji:🍶; unicode = 1f376 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍶, 1f376
+-- format: unicodeKey = tts
+L["127862_65039"] = "清酒"
 -- emoji:🍾; unicode = 1f37e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127870"] = "开香槟"
+-- emoji:🍾; unicode = 1f37e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍾, 1f37e
+-- format: unicodeKey = tts
+L["127870_65039"] = "开香槟"
 -- emoji:🍷; unicode = 1f377
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127863"] = "葡萄酒"
+-- emoji:🍷; unicode = 1f377 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍷, 1f377
+-- format: unicodeKey = tts
+L["127863_65039"] = "葡萄酒"
 -- emoji:🍸; unicode = 1f378
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127864"] = "鸡尾酒"
+-- emoji:🍸; unicode = 1f378 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍸, 1f378
+-- format: unicodeKey = tts
+L["127864_65039"] = "鸡尾酒"
 -- emoji:🍹; unicode = 1f379
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127865"] = "热带水果饮料"
+-- emoji:🍹; unicode = 1f379 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍹, 1f379
+-- format: unicodeKey = tts
+L["127865_65039"] = "热带水果饮料"
 -- emoji:🍺; unicode = 1f37a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127866"] = "啤酒"
+-- emoji:🍺; unicode = 1f37a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍺, 1f37a
+-- format: unicodeKey = tts
+L["127866_65039"] = "啤酒"
 -- emoji:🍻; unicode = 1f37b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127867"] = "干杯"
+-- emoji:🍻; unicode = 1f37b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍻, 1f37b
+-- format: unicodeKey = tts
+L["127867_65039"] = "干杯"
 -- emoji:🥂; unicode = 1f942
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129346"] = "碰杯"
+-- emoji:🥂; unicode = 1f942 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥂, 1f942
+-- format: unicodeKey = tts
+L["129346_65039"] = "碰杯"
 -- emoji:🥃; unicode = 1f943
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129347"] = "平底杯"
+-- emoji:🥃; unicode = 1f943 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥃, 1f943
+-- format: unicodeKey = tts
+L["129347_65039"] = "平底杯"
 -- emoji:🫗; unicode = 1fad7
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129751"] = "倾倒液体"
+-- emoji:🫗; unicode = 1fad7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫗, 1fad7
+-- format: unicodeKey = tts
+L["129751_65039"] = "倾倒液体"
 -- emoji:🥤; unicode = 1f964
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129380"] = "带吸管杯"
+-- emoji:🥤; unicode = 1f964 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥤, 1f964
+-- format: unicodeKey = tts
+L["129380_65039"] = "带吸管杯"
 -- emoji:🧋; unicode = 1f9cb
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129483"] = "珍珠奶茶"
+-- emoji:🧋; unicode = 1f9cb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧋, 1f9cb
+-- format: unicodeKey = tts
+L["129483_65039"] = "珍珠奶茶"
 -- emoji:🧃; unicode = 1f9c3
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129475"] = "饮料盒"
+-- emoji:🧃; unicode = 1f9c3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧃, 1f9c3
+-- format: unicodeKey = tts
+L["129475_65039"] = "饮料盒"
 -- emoji:🧉; unicode = 1f9c9
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129481"] = "马黛茶"
+-- emoji:🧉; unicode = 1f9c9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧉, 1f9c9
+-- format: unicodeKey = tts
+L["129481_65039"] = "马黛茶"
 -- emoji:🧊; unicode = 1f9ca
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129482"] = "冰块"
+-- emoji:🧊; unicode = 1f9ca fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧊, 1f9ca
+-- format: unicodeKey = tts
+L["129482_65039"] = "冰块"
 -- emoji:🥢; unicode = 1f962
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129378"] = "筷子"
+-- emoji:🥢; unicode = 1f962 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥢, 1f962
+-- format: unicodeKey = tts
+L["129378_65039"] = "筷子"
 -- emoji:🍽️; unicode = 1f37d fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16178,38 +19018,83 @@ L["127869"] = "餐具"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127860"] = "刀叉"
+-- emoji:🍴; unicode = 1f374 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🍴, 1f374
+-- format: unicodeKey = tts
+L["127860_65039"] = "刀叉"
 -- emoji:🥄; unicode = 1f944
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129348"] = "匙"
+-- emoji:🥄; unicode = 1f944 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥄, 1f944
+-- format: unicodeKey = tts
+L["129348_65039"] = "匙"
 -- emoji:🔪; unicode = 1f52a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128298"] = "菜刀"
+-- emoji:🔪; unicode = 1f52a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔪, 1f52a
+-- format: unicodeKey = tts
+L["128298_65039"] = "菜刀"
 -- emoji:🫙; unicode = 1fad9
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129753"] = "罐"
+-- emoji:🫙; unicode = 1fad9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫙, 1fad9
+-- format: unicodeKey = tts
+L["129753_65039"] = "罐"
 -- emoji:🏺; unicode = 1f3fa
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127994"] = "双耳瓶"
+-- emoji:🏺; unicode = 1f3fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏺, 1f3fa
+-- format: unicodeKey = tts
+L["127994_65039"] = "双耳瓶"
 -- emoji:🌍; unicode = 1f30d
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["127757"] = "地球上的欧洲非洲"
+-- emoji:🌍; unicode = 1f30d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌍, 1f30d
+-- format: unicodeKey = tts
+L["127757_65039"] = "地球上的欧洲非洲"
 -- emoji:🌎; unicode = 1f30e
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["127758"] = "地球上的美洲"
+-- emoji:🌎; unicode = 1f30e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌎, 1f30e
+-- format: unicodeKey = tts
+L["127758_65039"] = "地球上的美洲"
 -- emoji:🌏; unicode = 1f30f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127759"] = "地球上的亚洲澳洲"
+-- emoji:🌏; unicode = 1f30f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌏, 1f30f
+-- format: unicodeKey = tts
+L["127759_65039"] = "地球上的亚洲澳洲"
 -- emoji:🌐; unicode = 1f310
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127760"] = "带经纬线的地球"
+-- emoji:🌐; unicode = 1f310 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌐, 1f310
+-- format: unicodeKey = tts
+L["127760_65039"] = "带经纬线的地球"
 -- emoji:🗺️; unicode = 1f5fa fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16223,10 +19108,20 @@ L["128506"] = "世界地图"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128510"] = "日本地图"
+-- emoji:🗾; unicode = 1f5fe fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗾, 1f5fe
+-- format: unicodeKey = tts
+L["128510_65039"] = "日本地图"
 -- emoji:🧭; unicode = 1f9ed
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129517"] = "指南针"
+-- emoji:🧭; unicode = 1f9ed fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧭, 1f9ed
+-- format: unicodeKey = tts
+L["129517_65039"] = "指南针"
 -- emoji:🏔️; unicode = 1f3d4 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16249,10 +19144,20 @@ L["9968"] = "山"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127755"] = "火山"
+-- emoji:🌋; unicode = 1f30b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌋, 1f30b
+-- format: unicodeKey = tts
+L["127755_65039"] = "火山"
 -- emoji:🗻; unicode = 1f5fb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128507"] = "富士山"
+-- emoji:🗻; unicode = 1f5fb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗻, 1f5fb
+-- format: unicodeKey = tts
+L["128507_65039"] = "富士山"
 -- emoji:🏕️; unicode = 1f3d5 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16329,18 +19234,38 @@ L["127959"] = "施工"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129521"] = "砖"
+-- emoji:🧱; unicode = 1f9f1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧱, 1f9f1
+-- format: unicodeKey = tts
+L["129521_65039"] = "砖"
 -- emoji:🪨; unicode = 1faa8
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129704"] = "岩石"
+-- emoji:🪨; unicode = 1faa8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪨, 1faa8
+-- format: unicodeKey = tts
+L["129704_65039"] = "岩石"
 -- emoji:🪵; unicode = 1fab5
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129717"] = "木头"
+-- emoji:🪵; unicode = 1fab5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪵, 1fab5
+-- format: unicodeKey = tts
+L["129717_65039"] = "木头"
 -- emoji:🛖; unicode = 1f6d6
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["128726"] = "小屋"
+-- emoji:🛖; unicode = 1f6d6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛖, 1f6d6
+-- format: unicodeKey = tts
+L["128726_65039"] = "小屋"
 -- emoji:🏘️; unicode = 1f3d8 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16363,90 +19288,200 @@ L["127962"] = "废墟"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127968"] = "房子"
+-- emoji:🏠; unicode = 1f3e0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏠, 1f3e0
+-- format: unicodeKey = tts
+L["127968_65039"] = "房子"
 -- emoji:🏡; unicode = 1f3e1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127969"] = "别墅"
+-- emoji:🏡; unicode = 1f3e1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏡, 1f3e1
+-- format: unicodeKey = tts
+L["127969_65039"] = "别墅"
 -- emoji:🏢; unicode = 1f3e2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127970"] = "办公楼"
+-- emoji:🏢; unicode = 1f3e2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏢, 1f3e2
+-- format: unicodeKey = tts
+L["127970_65039"] = "办公楼"
 -- emoji:🏣; unicode = 1f3e3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127971"] = "日本邮局"
+-- emoji:🏣; unicode = 1f3e3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏣, 1f3e3
+-- format: unicodeKey = tts
+L["127971_65039"] = "日本邮局"
 -- emoji:🏤; unicode = 1f3e4
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127972"] = "邮局"
+-- emoji:🏤; unicode = 1f3e4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏤, 1f3e4
+-- format: unicodeKey = tts
+L["127972_65039"] = "邮局"
 -- emoji:🏥; unicode = 1f3e5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127973"] = "医院"
+-- emoji:🏥; unicode = 1f3e5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏥, 1f3e5
+-- format: unicodeKey = tts
+L["127973_65039"] = "医院"
 -- emoji:🏦; unicode = 1f3e6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127974"] = "银行"
+-- emoji:🏦; unicode = 1f3e6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏦, 1f3e6
+-- format: unicodeKey = tts
+L["127974_65039"] = "银行"
 -- emoji:🏨; unicode = 1f3e8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127976"] = "酒店"
+-- emoji:🏨; unicode = 1f3e8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏨, 1f3e8
+-- format: unicodeKey = tts
+L["127976_65039"] = "酒店"
 -- emoji:🏩; unicode = 1f3e9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127977"] = "情人酒店"
+-- emoji:🏩; unicode = 1f3e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏩, 1f3e9
+-- format: unicodeKey = tts
+L["127977_65039"] = "情人酒店"
 -- emoji:🏪; unicode = 1f3ea
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127978"] = "便利店"
+-- emoji:🏪; unicode = 1f3ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏪, 1f3ea
+-- format: unicodeKey = tts
+L["127978_65039"] = "便利店"
 -- emoji:🏫; unicode = 1f3eb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127979"] = "学校"
+-- emoji:🏫; unicode = 1f3eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏫, 1f3eb
+-- format: unicodeKey = tts
+L["127979_65039"] = "学校"
 -- emoji:🏬; unicode = 1f3ec
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127980"] = "商场"
+-- emoji:🏬; unicode = 1f3ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏬, 1f3ec
+-- format: unicodeKey = tts
+L["127980_65039"] = "商场"
 -- emoji:🏭; unicode = 1f3ed
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127981"] = "工厂"
+-- emoji:🏭; unicode = 1f3ed fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏭, 1f3ed
+-- format: unicodeKey = tts
+L["127981_65039"] = "工厂"
 -- emoji:🏯; unicode = 1f3ef
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127983"] = "日本城堡"
+-- emoji:🏯; unicode = 1f3ef fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏯, 1f3ef
+-- format: unicodeKey = tts
+L["127983_65039"] = "日本城堡"
 -- emoji:🏰; unicode = 1f3f0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127984"] = "欧洲城堡"
+-- emoji:🏰; unicode = 1f3f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏰, 1f3f0
+-- format: unicodeKey = tts
+L["127984_65039"] = "欧洲城堡"
 -- emoji:💒; unicode = 1f492
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128146"] = "婚礼"
+-- emoji:💒; unicode = 1f492 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💒, 1f492
+-- format: unicodeKey = tts
+L["128146_65039"] = "婚礼"
 -- emoji:🗼; unicode = 1f5fc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128508"] = "东京塔"
+-- emoji:🗼; unicode = 1f5fc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗼, 1f5fc
+-- format: unicodeKey = tts
+L["128508_65039"] = "东京塔"
 -- emoji:🗽; unicode = 1f5fd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128509"] = "自由女神像"
+-- emoji:🗽; unicode = 1f5fd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗽, 1f5fd
+-- format: unicodeKey = tts
+L["128509_65039"] = "自由女神像"
 -- emoji:⛪; unicode = 26ea
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9962"] = "教堂"
+-- emoji:⛪; unicode = 26ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛪, 26ea
+-- format: unicodeKey = tts
+L["9962_65039"] = "教堂"
 -- emoji:🕌; unicode = 1f54c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128332"] = "清真寺"
+-- emoji:🕌; unicode = 1f54c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕌, 1f54c
+-- format: unicodeKey = tts
+L["128332_65039"] = "清真寺"
 -- emoji:🛕; unicode = 1f6d5
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128725"] = "印度寺庙"
+-- emoji:🛕; unicode = 1f6d5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛕, 1f6d5
+-- format: unicodeKey = tts
+L["128725_65039"] = "印度寺庙"
 -- emoji:🕍; unicode = 1f54d
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128333"] = "犹太教堂"
+-- emoji:🕍; unicode = 1f54d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕍, 1f54d
+-- format: unicodeKey = tts
+L["128333_65039"] = "犹太教堂"
 -- emoji:⛩️; unicode = 26e9 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16460,22 +19495,47 @@ L["9961"] = "神社"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128331"] = "克尔白"
+-- emoji:🕋; unicode = 1f54b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕋, 1f54b
+-- format: unicodeKey = tts
+L["128331_65039"] = "克尔白"
 -- emoji:⛲; unicode = 26f2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9970"] = "喷泉"
+-- emoji:⛲; unicode = 26f2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛲, 26f2
+-- format: unicodeKey = tts
+L["9970_65039"] = "喷泉"
 -- emoji:⛺; unicode = 26fa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9978"] = "帐篷"
+-- emoji:⛺; unicode = 26fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛺, 26fa
+-- format: unicodeKey = tts
+L["9978_65039"] = "帐篷"
 -- emoji:🌁; unicode = 1f301
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127745"] = "有雾"
+-- emoji:🌁; unicode = 1f301 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌁, 1f301
+-- format: unicodeKey = tts
+L["127745_65039"] = "有雾"
 -- emoji:🌃; unicode = 1f303
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127747"] = "夜晚"
+-- emoji:🌃; unicode = 1f303 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌃, 1f303
+-- format: unicodeKey = tts
+L["127747_65039"] = "夜晚"
 -- emoji:🏙️; unicode = 1f3d9 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16489,22 +19549,47 @@ L["127961"] = "城市风光"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127748"] = "山顶日出"
+-- emoji:🌄; unicode = 1f304 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌄, 1f304
+-- format: unicodeKey = tts
+L["127748_65039"] = "山顶日出"
 -- emoji:🌅; unicode = 1f305
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127749"] = "日出"
+-- emoji:🌅; unicode = 1f305 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌅, 1f305
+-- format: unicodeKey = tts
+L["127749_65039"] = "日出"
 -- emoji:🌆; unicode = 1f306
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127750"] = "城市黄昏"
+-- emoji:🌆; unicode = 1f306 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌆, 1f306
+-- format: unicodeKey = tts
+L["127750_65039"] = "城市黄昏"
 -- emoji:🌇; unicode = 1f307
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127751"] = "日落"
+-- emoji:🌇; unicode = 1f307 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌇, 1f307
+-- format: unicodeKey = tts
+L["127751_65039"] = "日落"
 -- emoji:🌉; unicode = 1f309
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127753"] = "夜幕下的桥"
+-- emoji:🌉; unicode = 1f309 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌉, 1f309
+-- format: unicodeKey = tts
+L["127753_65039"] = "夜幕下的桥"
 -- emoji:♨️; unicode = 2668 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -16518,142 +19603,317 @@ L["9832"] = "温泉"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127904"] = "旋转木马"
+-- emoji:🎠; unicode = 1f3a0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎠, 1f3a0
+-- format: unicodeKey = tts
+L["127904_65039"] = "旋转木马"
 -- emoji:🛝; unicode = 1f6dd
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["128733"] = "游乐场滑梯"
+-- emoji:🛝; unicode = 1f6dd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛝, 1f6dd
+-- format: unicodeKey = tts
+L["128733_65039"] = "游乐场滑梯"
 -- emoji:🎡; unicode = 1f3a1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127905"] = "摩天轮"
+-- emoji:🎡; unicode = 1f3a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎡, 1f3a1
+-- format: unicodeKey = tts
+L["127905_65039"] = "摩天轮"
 -- emoji:🎢; unicode = 1f3a2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127906"] = "过山车"
+-- emoji:🎢; unicode = 1f3a2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎢, 1f3a2
+-- format: unicodeKey = tts
+L["127906_65039"] = "过山车"
 -- emoji:💈; unicode = 1f488
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128136"] = "理发店"
+-- emoji:💈; unicode = 1f488 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💈, 1f488
+-- format: unicodeKey = tts
+L["128136_65039"] = "理发店"
 -- emoji:🎪; unicode = 1f3aa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127914"] = "马戏团帐篷"
+-- emoji:🎪; unicode = 1f3aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎪, 1f3aa
+-- format: unicodeKey = tts
+L["127914_65039"] = "马戏团帐篷"
 -- emoji:🚂; unicode = 1f682
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128642"] = "蒸汽火车"
+-- emoji:🚂; unicode = 1f682 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚂, 1f682
+-- format: unicodeKey = tts
+L["128642_65039"] = "蒸汽火车"
 -- emoji:🚃; unicode = 1f683
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128643"] = "轨道车"
+-- emoji:🚃; unicode = 1f683 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚃, 1f683
+-- format: unicodeKey = tts
+L["128643_65039"] = "轨道车"
 -- emoji:🚄; unicode = 1f684
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128644"] = "高速列车"
+-- emoji:🚄; unicode = 1f684 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚄, 1f684
+-- format: unicodeKey = tts
+L["128644_65039"] = "高速列车"
 -- emoji:🚅; unicode = 1f685
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128645"] = "子弹头高速列车"
+-- emoji:🚅; unicode = 1f685 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚅, 1f685
+-- format: unicodeKey = tts
+L["128645_65039"] = "子弹头高速列车"
 -- emoji:🚆; unicode = 1f686
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128646"] = "火车"
+-- emoji:🚆; unicode = 1f686 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚆, 1f686
+-- format: unicodeKey = tts
+L["128646_65039"] = "火车"
 -- emoji:🚇; unicode = 1f687
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128647"] = "地铁"
+-- emoji:🚇; unicode = 1f687 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚇, 1f687
+-- format: unicodeKey = tts
+L["128647_65039"] = "地铁"
 -- emoji:🚈; unicode = 1f688
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128648"] = "轻轨"
+-- emoji:🚈; unicode = 1f688 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚈, 1f688
+-- format: unicodeKey = tts
+L["128648_65039"] = "轻轨"
 -- emoji:🚉; unicode = 1f689
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128649"] = "车站"
+-- emoji:🚉; unicode = 1f689 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚉, 1f689
+-- format: unicodeKey = tts
+L["128649_65039"] = "车站"
 -- emoji:🚊; unicode = 1f68a
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128650"] = "路面电车"
+-- emoji:🚊; unicode = 1f68a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚊, 1f68a
+-- format: unicodeKey = tts
+L["128650_65039"] = "路面电车"
 -- emoji:🚝; unicode = 1f69d
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128669"] = "单轨"
+-- emoji:🚝; unicode = 1f69d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚝, 1f69d
+-- format: unicodeKey = tts
+L["128669_65039"] = "单轨"
 -- emoji:🚞; unicode = 1f69e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128670"] = "山区铁路"
+-- emoji:🚞; unicode = 1f69e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚞, 1f69e
+-- format: unicodeKey = tts
+L["128670_65039"] = "山区铁路"
 -- emoji:🚋; unicode = 1f68b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128651"] = "有轨电车"
+-- emoji:🚋; unicode = 1f68b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚋, 1f68b
+-- format: unicodeKey = tts
+L["128651_65039"] = "有轨电车"
 -- emoji:🚌; unicode = 1f68c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128652"] = "公交车"
+-- emoji:🚌; unicode = 1f68c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚌, 1f68c
+-- format: unicodeKey = tts
+L["128652_65039"] = "公交车"
 -- emoji:🚍; unicode = 1f68d
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128653"] = "迎面驶来的公交车"
+-- emoji:🚍; unicode = 1f68d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚍, 1f68d
+-- format: unicodeKey = tts
+L["128653_65039"] = "迎面驶来的公交车"
 -- emoji:🚎; unicode = 1f68e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128654"] = "无轨电车"
+-- emoji:🚎; unicode = 1f68e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚎, 1f68e
+-- format: unicodeKey = tts
+L["128654_65039"] = "无轨电车"
 -- emoji:🚐; unicode = 1f690
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128656"] = "小巴"
+-- emoji:🚐; unicode = 1f690 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚐, 1f690
+-- format: unicodeKey = tts
+L["128656_65039"] = "小巴"
 -- emoji:🚑; unicode = 1f691
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128657"] = "救护车"
+-- emoji:🚑; unicode = 1f691 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚑, 1f691
+-- format: unicodeKey = tts
+L["128657_65039"] = "救护车"
 -- emoji:🚒; unicode = 1f692
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128658"] = "消防车"
+-- emoji:🚒; unicode = 1f692 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚒, 1f692
+-- format: unicodeKey = tts
+L["128658_65039"] = "消防车"
 -- emoji:🚓; unicode = 1f693
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128659"] = "警车"
+-- emoji:🚓; unicode = 1f693 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚓, 1f693
+-- format: unicodeKey = tts
+L["128659_65039"] = "警车"
 -- emoji:🚔; unicode = 1f694
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128660"] = "迎面驶来的警车"
+-- emoji:🚔; unicode = 1f694 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚔, 1f694
+-- format: unicodeKey = tts
+L["128660_65039"] = "迎面驶来的警车"
 -- emoji:🚕; unicode = 1f695
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128661"] = "出租车"
+-- emoji:🚕; unicode = 1f695 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚕, 1f695
+-- format: unicodeKey = tts
+L["128661_65039"] = "出租车"
 -- emoji:🚖; unicode = 1f696
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128662"] = "迎面驶来的出租车"
+-- emoji:🚖; unicode = 1f696 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚖, 1f696
+-- format: unicodeKey = tts
+L["128662_65039"] = "迎面驶来的出租车"
 -- emoji:🚗; unicode = 1f697
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128663"] = "汽车"
+-- emoji:🚗; unicode = 1f697 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚗, 1f697
+-- format: unicodeKey = tts
+L["128663_65039"] = "汽车"
 -- emoji:🚘; unicode = 1f698
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128664"] = "迎面驶来的汽车"
+-- emoji:🚘; unicode = 1f698 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚘, 1f698
+-- format: unicodeKey = tts
+L["128664_65039"] = "迎面驶来的汽车"
 -- emoji:🚙; unicode = 1f699
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128665"] = "运动型多用途车"
+-- emoji:🚙; unicode = 1f699 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚙, 1f699
+-- format: unicodeKey = tts
+L["128665_65039"] = "运动型多用途车"
 -- emoji:🛻; unicode = 1f6fb
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["128763"] = "敞蓬小型载货卡车"
+-- emoji:🛻; unicode = 1f6fb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛻, 1f6fb
+-- format: unicodeKey = tts
+L["128763_65039"] = "敞蓬小型载货卡车"
 -- emoji:🚚; unicode = 1f69a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128666"] = "货车"
+-- emoji:🚚; unicode = 1f69a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚚, 1f69a
+-- format: unicodeKey = tts
+L["128666_65039"] = "货车"
 -- emoji:🚛; unicode = 1f69b
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128667"] = "铰接式货车"
+-- emoji:🚛; unicode = 1f69b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚛, 1f69b
+-- format: unicodeKey = tts
+L["128667_65039"] = "铰接式货车"
 -- emoji:🚜; unicode = 1f69c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128668"] = "拖拉机"
+-- emoji:🚜; unicode = 1f69c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚜, 1f69c
+-- format: unicodeKey = tts
+L["128668_65039"] = "拖拉机"
 -- emoji:🏎️; unicode = 1f3ce fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16676,38 +19936,83 @@ L["127949"] = "摩托车"
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128757"] = "小型摩托车"
+-- emoji:🛵; unicode = 1f6f5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛵, 1f6f5
+-- format: unicodeKey = tts
+L["128757_65039"] = "小型摩托车"
 -- emoji:🦽; unicode = 1f9bd
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129469"] = "手动轮椅"
+-- emoji:🦽; unicode = 1f9bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦽, 1f9bd
+-- format: unicodeKey = tts
+L["129469_65039"] = "手动轮椅"
 -- emoji:🦼; unicode = 1f9bc
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129468"] = "电动轮椅"
+-- emoji:🦼; unicode = 1f9bc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦼, 1f9bc
+-- format: unicodeKey = tts
+L["129468_65039"] = "电动轮椅"
 -- emoji:🛺; unicode = 1f6fa
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128762"] = "三轮摩托车"
+-- emoji:🛺; unicode = 1f6fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛺, 1f6fa
+-- format: unicodeKey = tts
+L["128762_65039"] = "三轮摩托车"
 -- emoji:🚲; unicode = 1f6b2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128690"] = "自行车"
+-- emoji:🚲; unicode = 1f6b2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚲, 1f6b2
+-- format: unicodeKey = tts
+L["128690_65039"] = "自行车"
 -- emoji:🛴; unicode = 1f6f4
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128756"] = "滑板车"
+-- emoji:🛴; unicode = 1f6f4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛴, 1f6f4
+-- format: unicodeKey = tts
+L["128756_65039"] = "滑板车"
 -- emoji:🛹; unicode = 1f6f9
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["128761"] = "滑板"
+-- emoji:🛹; unicode = 1f6f9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛹, 1f6f9
+-- format: unicodeKey = tts
+L["128761_65039"] = "滑板"
 -- emoji:🛼; unicode = 1f6fc
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["128764"] = "四轮滑冰鞋"
+-- emoji:🛼; unicode = 1f6fc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛼, 1f6fc
+-- format: unicodeKey = tts
+L["128764_65039"] = "四轮滑冰鞋"
 -- emoji:🚏; unicode = 1f68f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128655"] = "公交车站"
+-- emoji:🚏; unicode = 1f68f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚏, 1f68f
+-- format: unicodeKey = tts
+L["128655_65039"] = "公交车站"
 -- emoji:🛣️; unicode = 1f6e3 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16739,50 +20044,110 @@ L["128738"] = "石油桶"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9981"] = "油泵"
+-- emoji:⛽; unicode = 26fd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛽, 26fd
+-- format: unicodeKey = tts
+L["9981_65039"] = "油泵"
 -- emoji:🛞; unicode = 1f6de
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["128734"] = "车轮"
+-- emoji:🛞; unicode = 1f6de fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛞, 1f6de
+-- format: unicodeKey = tts
+L["128734_65039"] = "车轮"
 -- emoji:🚨; unicode = 1f6a8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128680"] = "警车灯"
+-- emoji:🚨; unicode = 1f6a8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚨, 1f6a8
+-- format: unicodeKey = tts
+L["128680_65039"] = "警车灯"
 -- emoji:🚥; unicode = 1f6a5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128677"] = "横向的红绿灯"
+-- emoji:🚥; unicode = 1f6a5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚥, 1f6a5
+-- format: unicodeKey = tts
+L["128677_65039"] = "横向的红绿灯"
 -- emoji:🚦; unicode = 1f6a6
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128678"] = "纵向的红绿灯"
+-- emoji:🚦; unicode = 1f6a6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚦, 1f6a6
+-- format: unicodeKey = tts
+L["128678_65039"] = "纵向的红绿灯"
 -- emoji:🛑; unicode = 1f6d1
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128721"] = "停止标志"
+-- emoji:🛑; unicode = 1f6d1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛑, 1f6d1
+-- format: unicodeKey = tts
+L["128721_65039"] = "停止标志"
 -- emoji:🚧; unicode = 1f6a7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128679"] = "路障"
+-- emoji:🚧; unicode = 1f6a7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚧, 1f6a7
+-- format: unicodeKey = tts
+L["128679_65039"] = "路障"
 -- emoji:⚓; unicode = 2693
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9875"] = "锚"
+-- emoji:⚓; unicode = 2693 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚓, 2693
+-- format: unicodeKey = tts
+L["9875_65039"] = "锚"
 -- emoji:🛟; unicode = 1f6df
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["128735"] = "救生圈"
+-- emoji:🛟; unicode = 1f6df fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛟, 1f6df
+-- format: unicodeKey = tts
+L["128735_65039"] = "救生圈"
 -- emoji:⛵; unicode = 26f5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9973"] = "帆船"
+-- emoji:⛵; unicode = 26f5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛵, 26f5
+-- format: unicodeKey = tts
+L["9973_65039"] = "帆船"
 -- emoji:🛶; unicode = 1f6f6
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128758"] = "独木舟"
+-- emoji:🛶; unicode = 1f6f6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛶, 1f6f6
+-- format: unicodeKey = tts
+L["128758_65039"] = "独木舟"
 -- emoji:🚤; unicode = 1f6a4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128676"] = "快艇"
+-- emoji:🚤; unicode = 1f6a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚤, 1f6a4
+-- format: unicodeKey = tts
+L["128676_65039"] = "快艇"
 -- emoji:🛳️; unicode = 1f6f3 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16814,6 +20179,11 @@ L["128741"] = "摩托艇"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128674"] = "船"
+-- emoji:🚢; unicode = 1f6a2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚢, 1f6a2
+-- format: unicodeKey = tts
+L["128674_65039"] = "船"
 -- emoji:✈️; unicode = 2708 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -16836,34 +20206,74 @@ L["128745"] = "小型飞机"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128747"] = "航班起飞"
+-- emoji:🛫; unicode = 1f6eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛫, 1f6eb
+-- format: unicodeKey = tts
+L["128747_65039"] = "航班起飞"
 -- emoji:🛬; unicode = 1f6ec
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128748"] = "航班降落"
+-- emoji:🛬; unicode = 1f6ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛬, 1f6ec
+-- format: unicodeKey = tts
+L["128748_65039"] = "航班降落"
 -- emoji:🪂; unicode = 1fa82
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129666"] = "降落伞"
+-- emoji:🪂; unicode = 1fa82 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪂, 1fa82
+-- format: unicodeKey = tts
+L["129666_65039"] = "降落伞"
 -- emoji:💺; unicode = 1f4ba
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128186"] = "座位"
+-- emoji:💺; unicode = 1f4ba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💺, 1f4ba
+-- format: unicodeKey = tts
+L["128186_65039"] = "座位"
 -- emoji:🚁; unicode = 1f681
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128641"] = "直升机"
+-- emoji:🚁; unicode = 1f681 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚁, 1f681
+-- format: unicodeKey = tts
+L["128641_65039"] = "直升机"
 -- emoji:🚟; unicode = 1f69f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128671"] = "空轨"
+-- emoji:🚟; unicode = 1f69f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚟, 1f69f
+-- format: unicodeKey = tts
+L["128671_65039"] = "空轨"
 -- emoji:🚠; unicode = 1f6a0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128672"] = "缆车"
+-- emoji:🚠; unicode = 1f6a0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚠, 1f6a0
+-- format: unicodeKey = tts
+L["128672_65039"] = "缆车"
 -- emoji:🚡; unicode = 1f6a1
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128673"] = "索道"
+-- emoji:🚡; unicode = 1f6a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚡, 1f6a1
+-- format: unicodeKey = tts
+L["128673_65039"] = "索道"
 -- emoji:🛰️; unicode = 1f6f0 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16877,10 +20287,20 @@ L["128752"] = "卫星"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128640"] = "火箭"
+-- emoji:🚀; unicode = 1f680 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚀, 1f680
+-- format: unicodeKey = tts
+L["128640_65039"] = "火箭"
 -- emoji:🛸; unicode = 1f6f8
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["128760"] = "飞碟"
+-- emoji:🛸; unicode = 1f6f8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛸, 1f6f8
+-- format: unicodeKey = tts
+L["128760_65039"] = "飞碟"
 -- emoji:🛎️; unicode = 1f6ce fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -16894,22 +20314,47 @@ L["128718"] = "服务铃"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129523"] = "行李箱"
+-- emoji:🧳; unicode = 1f9f3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧳, 1f9f3
+-- format: unicodeKey = tts
+L["129523_65039"] = "行李箱"
 -- emoji:⌛; unicode = 231b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["8987"] = "沙漏"
+-- emoji:⌛; unicode = 231b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⌛, 231b
+-- format: unicodeKey = tts
+L["8987_65039"] = "沙漏"
 -- emoji:⏳; unicode = 23f3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9203"] = "沙正往下流的沙漏"
+-- emoji:⏳; unicode = 23f3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏳, 23f3
+-- format: unicodeKey = tts
+L["9203_65039"] = "沙正往下流的沙漏"
 -- emoji:⌚; unicode = 231a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["8986"] = "手表"
+-- emoji:⌚; unicode = 231a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⌚, 231a
+-- format: unicodeKey = tts
+L["8986_65039"] = "手表"
 -- emoji:⏰; unicode = 23f0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9200"] = "闹钟"
+-- emoji:⏰; unicode = 23f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏰, 23f0
+-- format: unicodeKey = tts
+L["9200_65039"] = "闹钟"
 -- emoji:⏱️; unicode = 23f1 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -16941,146 +20386,326 @@ L["128368"] = "座钟"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128347"] = "十二点"
+-- emoji:🕛; unicode = 1f55b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕛, 1f55b
+-- format: unicodeKey = tts
+L["128347_65039"] = "十二点"
 -- emoji:🕧; unicode = 1f567
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128359"] = "十二点半"
+-- emoji:🕧; unicode = 1f567 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕧, 1f567
+-- format: unicodeKey = tts
+L["128359_65039"] = "十二点半"
 -- emoji:🕐; unicode = 1f550
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128336"] = "一点"
+-- emoji:🕐; unicode = 1f550 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕐, 1f550
+-- format: unicodeKey = tts
+L["128336_65039"] = "一点"
 -- emoji:🕜; unicode = 1f55c
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128348"] = "一点半"
+-- emoji:🕜; unicode = 1f55c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕜, 1f55c
+-- format: unicodeKey = tts
+L["128348_65039"] = "一点半"
 -- emoji:🕑; unicode = 1f551
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128337"] = "两点"
+-- emoji:🕑; unicode = 1f551 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕑, 1f551
+-- format: unicodeKey = tts
+L["128337_65039"] = "两点"
 -- emoji:🕝; unicode = 1f55d
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128349"] = "两点半"
+-- emoji:🕝; unicode = 1f55d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕝, 1f55d
+-- format: unicodeKey = tts
+L["128349_65039"] = "两点半"
 -- emoji:🕒; unicode = 1f552
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128338"] = "三点"
+-- emoji:🕒; unicode = 1f552 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕒, 1f552
+-- format: unicodeKey = tts
+L["128338_65039"] = "三点"
 -- emoji:🕞; unicode = 1f55e
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128350"] = "三点半"
+-- emoji:🕞; unicode = 1f55e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕞, 1f55e
+-- format: unicodeKey = tts
+L["128350_65039"] = "三点半"
 -- emoji:🕓; unicode = 1f553
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128339"] = "四点"
+-- emoji:🕓; unicode = 1f553 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕓, 1f553
+-- format: unicodeKey = tts
+L["128339_65039"] = "四点"
 -- emoji:🕟; unicode = 1f55f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128351"] = "四点半"
+-- emoji:🕟; unicode = 1f55f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕟, 1f55f
+-- format: unicodeKey = tts
+L["128351_65039"] = "四点半"
 -- emoji:🕔; unicode = 1f554
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128340"] = "五点"
+-- emoji:🕔; unicode = 1f554 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕔, 1f554
+-- format: unicodeKey = tts
+L["128340_65039"] = "五点"
 -- emoji:🕠; unicode = 1f560
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128352"] = "五点半"
+-- emoji:🕠; unicode = 1f560 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕠, 1f560
+-- format: unicodeKey = tts
+L["128352_65039"] = "五点半"
 -- emoji:🕕; unicode = 1f555
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128341"] = "六点"
+-- emoji:🕕; unicode = 1f555 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕕, 1f555
+-- format: unicodeKey = tts
+L["128341_65039"] = "六点"
 -- emoji:🕡; unicode = 1f561
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128353"] = "六点半"
+-- emoji:🕡; unicode = 1f561 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕡, 1f561
+-- format: unicodeKey = tts
+L["128353_65039"] = "六点半"
 -- emoji:🕖; unicode = 1f556
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128342"] = "七点"
+-- emoji:🕖; unicode = 1f556 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕖, 1f556
+-- format: unicodeKey = tts
+L["128342_65039"] = "七点"
 -- emoji:🕢; unicode = 1f562
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128354"] = "七点半"
+-- emoji:🕢; unicode = 1f562 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕢, 1f562
+-- format: unicodeKey = tts
+L["128354_65039"] = "七点半"
 -- emoji:🕗; unicode = 1f557
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128343"] = "八点"
+-- emoji:🕗; unicode = 1f557 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕗, 1f557
+-- format: unicodeKey = tts
+L["128343_65039"] = "八点"
 -- emoji:🕣; unicode = 1f563
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128355"] = "八点半"
+-- emoji:🕣; unicode = 1f563 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕣, 1f563
+-- format: unicodeKey = tts
+L["128355_65039"] = "八点半"
 -- emoji:🕘; unicode = 1f558
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128344"] = "九点"
+-- emoji:🕘; unicode = 1f558 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕘, 1f558
+-- format: unicodeKey = tts
+L["128344_65039"] = "九点"
 -- emoji:🕤; unicode = 1f564
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128356"] = "九点半"
+-- emoji:🕤; unicode = 1f564 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕤, 1f564
+-- format: unicodeKey = tts
+L["128356_65039"] = "九点半"
 -- emoji:🕙; unicode = 1f559
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128345"] = "十点"
+-- emoji:🕙; unicode = 1f559 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕙, 1f559
+-- format: unicodeKey = tts
+L["128345_65039"] = "十点"
 -- emoji:🕥; unicode = 1f565
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128357"] = "十点半"
+-- emoji:🕥; unicode = 1f565 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕥, 1f565
+-- format: unicodeKey = tts
+L["128357_65039"] = "十点半"
 -- emoji:🕚; unicode = 1f55a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128346"] = "十一点"
+-- emoji:🕚; unicode = 1f55a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕚, 1f55a
+-- format: unicodeKey = tts
+L["128346_65039"] = "十一点"
 -- emoji:🕦; unicode = 1f566
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128358"] = "十一点半"
+-- emoji:🕦; unicode = 1f566 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕦, 1f566
+-- format: unicodeKey = tts
+L["128358_65039"] = "十一点半"
 -- emoji:🌑; unicode = 1f311
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127761"] = "朔月"
+-- emoji:🌑; unicode = 1f311 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌑, 1f311
+-- format: unicodeKey = tts
+L["127761_65039"] = "朔月"
 -- emoji:🌒; unicode = 1f312
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127762"] = "蛾眉月"
+-- emoji:🌒; unicode = 1f312 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌒, 1f312
+-- format: unicodeKey = tts
+L["127762_65039"] = "蛾眉月"
 -- emoji:🌓; unicode = 1f313
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127763"] = "上弦月"
+-- emoji:🌓; unicode = 1f313 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌓, 1f313
+-- format: unicodeKey = tts
+L["127763_65039"] = "上弦月"
 -- emoji:🌔; unicode = 1f314
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127764"] = "盈凸月"
+-- emoji:🌔; unicode = 1f314 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌔, 1f314
+-- format: unicodeKey = tts
+L["127764_65039"] = "盈凸月"
 -- emoji:🌕; unicode = 1f315
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127765"] = "满月"
+-- emoji:🌕; unicode = 1f315 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌕, 1f315
+-- format: unicodeKey = tts
+L["127765_65039"] = "满月"
 -- emoji:🌖; unicode = 1f316
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127766"] = "亏凸月"
+-- emoji:🌖; unicode = 1f316 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌖, 1f316
+-- format: unicodeKey = tts
+L["127766_65039"] = "亏凸月"
 -- emoji:🌗; unicode = 1f317
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127767"] = "下弦月"
+-- emoji:🌗; unicode = 1f317 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌗, 1f317
+-- format: unicodeKey = tts
+L["127767_65039"] = "下弦月"
 -- emoji:🌘; unicode = 1f318
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127768"] = "残月"
+-- emoji:🌘; unicode = 1f318 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌘, 1f318
+-- format: unicodeKey = tts
+L["127768_65039"] = "残月"
 -- emoji:🌙; unicode = 1f319
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127769"] = "弯月"
+-- emoji:🌙; unicode = 1f319 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌙, 1f319
+-- format: unicodeKey = tts
+L["127769_65039"] = "弯月"
 -- emoji:🌚; unicode = 1f31a
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127770"] = "微笑的朔月"
+-- emoji:🌚; unicode = 1f31a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌚, 1f31a
+-- format: unicodeKey = tts
+L["127770_65039"] = "微笑的朔月"
 -- emoji:🌛; unicode = 1f31b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127771"] = "微笑的上弦月"
+-- emoji:🌛; unicode = 1f31b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌛, 1f31b
+-- format: unicodeKey = tts
+L["127771_65039"] = "微笑的上弦月"
 -- emoji:🌜; unicode = 1f31c
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["127772"] = "微笑的下弦月"
+-- emoji:🌜; unicode = 1f31c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌜, 1f31c
+-- format: unicodeKey = tts
+L["127772_65039"] = "微笑的下弦月"
 -- emoji:🌡️; unicode = 1f321 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17103,30 +20728,65 @@ L["9728"] = "太阳"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127773"] = "微笑的月亮"
+-- emoji:🌝; unicode = 1f31d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌝, 1f31d
+-- format: unicodeKey = tts
+L["127773_65039"] = "微笑的月亮"
 -- emoji:🌞; unicode = 1f31e
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127774"] = "微笑的太阳"
+-- emoji:🌞; unicode = 1f31e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌞, 1f31e
+-- format: unicodeKey = tts
+L["127774_65039"] = "微笑的太阳"
 -- emoji:🪐; unicode = 1fa90
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129680"] = "有环行星"
+-- emoji:🪐; unicode = 1fa90 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪐, 1fa90
+-- format: unicodeKey = tts
+L["129680_65039"] = "有环行星"
 -- emoji:⭐; unicode = 2b50
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["11088"] = "星星"
+-- emoji:⭐; unicode = 2b50 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⭐, 2b50
+-- format: unicodeKey = tts
+L["11088_65039"] = "星星"
 -- emoji:🌟; unicode = 1f31f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127775"] = "闪亮的星星"
+-- emoji:🌟; unicode = 1f31f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌟, 1f31f
+-- format: unicodeKey = tts
+L["127775_65039"] = "闪亮的星星"
 -- emoji:🌠; unicode = 1f320
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127776"] = "流星"
+-- emoji:🌠; unicode = 1f320 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌠, 1f320
+-- format: unicodeKey = tts
+L["127776_65039"] = "流星"
 -- emoji:🌌; unicode = 1f30c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127756"] = "银河"
+-- emoji:🌌; unicode = 1f30c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌌, 1f30c
+-- format: unicodeKey = tts
+L["127756_65039"] = "银河"
 -- emoji:☁️; unicode = 2601 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -17140,6 +20800,11 @@ L["9729"] = "云"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9925"] = "阴"
+-- emoji:⛅; unicode = 26c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛅, 26c5
+-- format: unicodeKey = tts
+L["9925_65039"] = "阴"
 -- emoji:⛈️; unicode = 26c8 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17234,14 +20899,29 @@ L["127788"] = "大风"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127744"] = "台风"
+-- emoji:🌀; unicode = 1f300 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌀, 1f300
+-- format: unicodeKey = tts
+L["127744_65039"] = "台风"
 -- emoji:🌈; unicode = 1f308
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127752"] = "彩虹"
+-- emoji:🌈; unicode = 1f308 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌈, 1f308
+-- format: unicodeKey = tts
+L["127752_65039"] = "彩虹"
 -- emoji:🌂; unicode = 1f302
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127746"] = "收起的伞"
+-- emoji:🌂; unicode = 1f302 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌂, 1f302
+-- format: unicodeKey = tts
+L["127746_65039"] = "收起的伞"
 -- emoji:☂️; unicode = 2602 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17255,6 +20935,11 @@ L["9730"] = "伞"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9748"] = "雨伞"
+-- emoji:☔; unicode = 2614 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ☔, 2614
+-- format: unicodeKey = tts
+L["9748_65039"] = "雨伞"
 -- emoji:⛱️; unicode = 26f1 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17268,6 +20953,11 @@ L["9969"] = "阳伞"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9889"] = "高压"
+-- emoji:⚡; unicode = 26a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚡, 26a1
+-- format: unicodeKey = tts
+L["9889_65039"] = "高压"
 -- emoji:❄️; unicode = 2744 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -17290,6 +20980,11 @@ L["9731"] = "雪与雪人"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9924"] = "雪人"
+-- emoji:⛄; unicode = 26c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛄, 26c4
+-- format: unicodeKey = tts
+L["9924_65039"] = "雪人"
 -- emoji:☄️; unicode = 2604 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -17303,86 +20998,191 @@ L["9732"] = "彗星"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128293"] = "火焰"
+-- emoji:🔥; unicode = 1f525 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔥, 1f525
+-- format: unicodeKey = tts
+L["128293_65039"] = "火焰"
 -- emoji:💧; unicode = 1f4a7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128167"] = "水滴"
+-- emoji:💧; unicode = 1f4a7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💧, 1f4a7
+-- format: unicodeKey = tts
+L["128167_65039"] = "水滴"
 -- emoji:🌊; unicode = 1f30a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127754"] = "浪花"
+-- emoji:🌊; unicode = 1f30a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🌊, 1f30a
+-- format: unicodeKey = tts
+L["127754_65039"] = "浪花"
 -- emoji:🎃; unicode = 1f383
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127875"] = "南瓜灯"
+-- emoji:🎃; unicode = 1f383 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎃, 1f383
+-- format: unicodeKey = tts
+L["127875_65039"] = "南瓜灯"
 -- emoji:🎄; unicode = 1f384
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127876"] = "圣诞树"
+-- emoji:🎄; unicode = 1f384 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎄, 1f384
+-- format: unicodeKey = tts
+L["127876_65039"] = "圣诞树"
 -- emoji:🎆; unicode = 1f386
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127878"] = "焰火"
+-- emoji:🎆; unicode = 1f386 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎆, 1f386
+-- format: unicodeKey = tts
+L["127878_65039"] = "焰火"
 -- emoji:🎇; unicode = 1f387
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127879"] = "烟花"
+-- emoji:🎇; unicode = 1f387 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎇, 1f387
+-- format: unicodeKey = tts
+L["127879_65039"] = "烟花"
 -- emoji:🧨; unicode = 1f9e8
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129512"] = "爆竹"
+-- emoji:🧨; unicode = 1f9e8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧨, 1f9e8
+-- format: unicodeKey = tts
+L["129512_65039"] = "爆竹"
 -- emoji:✨; unicode = 2728
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10024"] = "闪亮"
+-- emoji:✨; unicode = 2728 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ✨, 2728
+-- format: unicodeKey = tts
+L["10024_65039"] = "闪亮"
 -- emoji:🎈; unicode = 1f388
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127880"] = "气球"
+-- emoji:🎈; unicode = 1f388 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎈, 1f388
+-- format: unicodeKey = tts
+L["127880_65039"] = "气球"
 -- emoji:🎉; unicode = 1f389
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127881"] = "拉炮彩带"
+-- emoji:🎉; unicode = 1f389 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎉, 1f389
+-- format: unicodeKey = tts
+L["127881_65039"] = "拉炮彩带"
 -- emoji:🎊; unicode = 1f38a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127882"] = "五彩纸屑球"
+-- emoji:🎊; unicode = 1f38a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎊, 1f38a
+-- format: unicodeKey = tts
+L["127882_65039"] = "五彩纸屑球"
 -- emoji:🎋; unicode = 1f38b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127883"] = "七夕树"
+-- emoji:🎋; unicode = 1f38b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎋, 1f38b
+-- format: unicodeKey = tts
+L["127883_65039"] = "七夕树"
 -- emoji:🎍; unicode = 1f38d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127885"] = "门松"
+-- emoji:🎍; unicode = 1f38d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎍, 1f38d
+-- format: unicodeKey = tts
+L["127885_65039"] = "门松"
 -- emoji:🎎; unicode = 1f38e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127886"] = "日本人形"
+-- emoji:🎎; unicode = 1f38e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎎, 1f38e
+-- format: unicodeKey = tts
+L["127886_65039"] = "日本人形"
 -- emoji:🎏; unicode = 1f38f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127887"] = "鲤鱼旗"
+-- emoji:🎏; unicode = 1f38f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎏, 1f38f
+-- format: unicodeKey = tts
+L["127887_65039"] = "鲤鱼旗"
 -- emoji:🎐; unicode = 1f390
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127888"] = "风铃"
+-- emoji:🎐; unicode = 1f390 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎐, 1f390
+-- format: unicodeKey = tts
+L["127888_65039"] = "风铃"
 -- emoji:🎑; unicode = 1f391
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127889"] = "赏月"
+-- emoji:🎑; unicode = 1f391 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎑, 1f391
+-- format: unicodeKey = tts
+L["127889_65039"] = "赏月"
 -- emoji:🧧; unicode = 1f9e7
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129511"] = "红包"
+-- emoji:🧧; unicode = 1f9e7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧧, 1f9e7
+-- format: unicodeKey = tts
+L["129511_65039"] = "红包"
 -- emoji:🎀; unicode = 1f380
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127872"] = "蝴蝶结"
+-- emoji:🎀; unicode = 1f380 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎀, 1f380
+-- format: unicodeKey = tts
+L["127872_65039"] = "蝴蝶结"
 -- emoji:🎁; unicode = 1f381
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127873"] = "礼物"
+-- emoji:🎁; unicode = 1f381 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎁, 1f381
+-- format: unicodeKey = tts
+L["127873_65039"] = "礼物"
 -- emoji:🎗️; unicode = 1f397 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17405,6 +21205,11 @@ L["127903"] = "入场券"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127915"] = "票"
+-- emoji:🎫; unicode = 1f3ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎫, 1f3ab
+-- format: unicodeKey = tts
+L["127915_65039"] = "票"
 -- emoji:🎖️; unicode = 1f396 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17418,102 +21223,227 @@ L["127894"] = "军功章"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127942"] = "奖杯"
+-- emoji:🏆; unicode = 1f3c6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏆, 1f3c6
+-- format: unicodeKey = tts
+L["127942_65039"] = "奖杯"
 -- emoji:🏅; unicode = 1f3c5
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127941"] = "奖牌"
+-- emoji:🏅; unicode = 1f3c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏅, 1f3c5
+-- format: unicodeKey = tts
+L["127941_65039"] = "奖牌"
 -- emoji:🥇; unicode = 1f947
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129351"] = "金牌"
+-- emoji:🥇; unicode = 1f947 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥇, 1f947
+-- format: unicodeKey = tts
+L["129351_65039"] = "金牌"
 -- emoji:🥈; unicode = 1f948
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129352"] = "银牌"
+-- emoji:🥈; unicode = 1f948 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥈, 1f948
+-- format: unicodeKey = tts
+L["129352_65039"] = "银牌"
 -- emoji:🥉; unicode = 1f949
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129353"] = "铜牌"
+-- emoji:🥉; unicode = 1f949 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥉, 1f949
+-- format: unicodeKey = tts
+L["129353_65039"] = "铜牌"
 -- emoji:⚽; unicode = 26bd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9917"] = "足球"
+-- emoji:⚽; unicode = 26bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚽, 26bd
+-- format: unicodeKey = tts
+L["9917_65039"] = "足球"
 -- emoji:⚾; unicode = 26be
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9918"] = "棒球"
+-- emoji:⚾; unicode = 26be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚾, 26be
+-- format: unicodeKey = tts
+L["9918_65039"] = "棒球"
 -- emoji:🥎; unicode = 1f94e
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129358"] = "垒球"
+-- emoji:🥎; unicode = 1f94e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥎, 1f94e
+-- format: unicodeKey = tts
+L["129358_65039"] = "垒球"
 -- emoji:🏀; unicode = 1f3c0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127936"] = "篮球"
+-- emoji:🏀; unicode = 1f3c0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏀, 1f3c0
+-- format: unicodeKey = tts
+L["127936_65039"] = "篮球"
 -- emoji:🏐; unicode = 1f3d0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127952"] = "排球"
+-- emoji:🏐; unicode = 1f3d0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏐, 1f3d0
+-- format: unicodeKey = tts
+L["127952_65039"] = "排球"
 -- emoji:🏈; unicode = 1f3c8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127944"] = "美式橄榄球"
+-- emoji:🏈; unicode = 1f3c8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏈, 1f3c8
+-- format: unicodeKey = tts
+L["127944_65039"] = "美式橄榄球"
 -- emoji:🏉; unicode = 1f3c9
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127945"] = "英式橄榄球"
+-- emoji:🏉; unicode = 1f3c9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏉, 1f3c9
+-- format: unicodeKey = tts
+L["127945_65039"] = "英式橄榄球"
 -- emoji:🎾; unicode = 1f3be
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127934"] = "网球"
+-- emoji:🎾; unicode = 1f3be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎾, 1f3be
+-- format: unicodeKey = tts
+L["127934_65039"] = "网球"
 -- emoji:🥏; unicode = 1f94f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129359"] = "飞盘"
+-- emoji:🥏; unicode = 1f94f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥏, 1f94f
+-- format: unicodeKey = tts
+L["129359_65039"] = "飞盘"
 -- emoji:🎳; unicode = 1f3b3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127923"] = "保龄球"
+-- emoji:🎳; unicode = 1f3b3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎳, 1f3b3
+-- format: unicodeKey = tts
+L["127923_65039"] = "保龄球"
 -- emoji:🏏; unicode = 1f3cf
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127951"] = "板球"
+-- emoji:🏏; unicode = 1f3cf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏏, 1f3cf
+-- format: unicodeKey = tts
+L["127951_65039"] = "板球"
 -- emoji:🏑; unicode = 1f3d1
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127953"] = "曲棍球"
+-- emoji:🏑; unicode = 1f3d1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏑, 1f3d1
+-- format: unicodeKey = tts
+L["127953_65039"] = "曲棍球"
 -- emoji:🏒; unicode = 1f3d2
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127954"] = "冰球"
+-- emoji:🏒; unicode = 1f3d2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏒, 1f3d2
+-- format: unicodeKey = tts
+L["127954_65039"] = "冰球"
 -- emoji:🥍; unicode = 1f94d
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129357"] = "袋棍球"
+-- emoji:🥍; unicode = 1f94d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥍, 1f94d
+-- format: unicodeKey = tts
+L["129357_65039"] = "袋棍球"
 -- emoji:🏓; unicode = 1f3d3
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127955"] = "乒乓球"
+-- emoji:🏓; unicode = 1f3d3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏓, 1f3d3
+-- format: unicodeKey = tts
+L["127955_65039"] = "乒乓球"
 -- emoji:🏸; unicode = 1f3f8
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127992"] = "羽毛球"
+-- emoji:🏸; unicode = 1f3f8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏸, 1f3f8
+-- format: unicodeKey = tts
+L["127992_65039"] = "羽毛球"
 -- emoji:🥊; unicode = 1f94a
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129354"] = "拳击手套"
+-- emoji:🥊; unicode = 1f94a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥊, 1f94a
+-- format: unicodeKey = tts
+L["129354_65039"] = "拳击手套"
 -- emoji:🥋; unicode = 1f94b
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129355"] = "练武服"
+-- emoji:🥋; unicode = 1f94b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥋, 1f94b
+-- format: unicodeKey = tts
+L["129355_65039"] = "练武服"
 -- emoji:🥅; unicode = 1f945
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129349"] = "球门"
+-- emoji:🥅; unicode = 1f945 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥅, 1f945
+-- format: unicodeKey = tts
+L["129349_65039"] = "球门"
 -- emoji:⛳; unicode = 26f3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9971"] = "高尔夫球洞"
+-- emoji:⛳; unicode = 26f3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛳, 26f3
+-- format: unicodeKey = tts
+L["9971_65039"] = "高尔夫球洞"
 -- emoji:⛸️; unicode = 26f8 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17527,58 +21457,128 @@ L["9976"] = "滑冰"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127907"] = "钓鱼竿"
+-- emoji:🎣; unicode = 1f3a3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎣, 1f3a3
+-- format: unicodeKey = tts
+L["127907_65039"] = "钓鱼竿"
 -- emoji:🤿; unicode = 1f93f
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129343"] = "潜水面罩"
+-- emoji:🤿; unicode = 1f93f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🤿, 1f93f
+-- format: unicodeKey = tts
+L["129343_65039"] = "潜水面罩"
 -- emoji:🎽; unicode = 1f3bd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127933"] = "运动背心"
+-- emoji:🎽; unicode = 1f3bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎽, 1f3bd
+-- format: unicodeKey = tts
+L["127933_65039"] = "运动背心"
 -- emoji:🎿; unicode = 1f3bf
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127935"] = "滑雪"
+-- emoji:🎿; unicode = 1f3bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎿, 1f3bf
+-- format: unicodeKey = tts
+L["127935_65039"] = "滑雪"
 -- emoji:🛷; unicode = 1f6f7
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["128759"] = "雪橇"
+-- emoji:🛷; unicode = 1f6f7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛷, 1f6f7
+-- format: unicodeKey = tts
+L["128759_65039"] = "雪橇"
 -- emoji:🥌; unicode = 1f94c
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129356"] = "冰壶"
+-- emoji:🥌; unicode = 1f94c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥌, 1f94c
+-- format: unicodeKey = tts
+L["129356_65039"] = "冰壶"
 -- emoji:🎯; unicode = 1f3af
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127919"] = "正中靶心的飞镖"
+-- emoji:🎯; unicode = 1f3af fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎯, 1f3af
+-- format: unicodeKey = tts
+L["127919_65039"] = "正中靶心的飞镖"
 -- emoji:🪀; unicode = 1fa80
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129664"] = "悠悠球"
+-- emoji:🪀; unicode = 1fa80 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪀, 1fa80
+-- format: unicodeKey = tts
+L["129664_65039"] = "悠悠球"
 -- emoji:🪁; unicode = 1fa81
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129665"] = "风筝"
+-- emoji:🪁; unicode = 1fa81 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪁, 1fa81
+-- format: unicodeKey = tts
+L["129665_65039"] = "风筝"
 -- emoji:🔫; unicode = 1f52b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128299"] = "水枪"
+-- emoji:🔫; unicode = 1f52b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔫, 1f52b
+-- format: unicodeKey = tts
+L["128299_65039"] = "水枪"
 -- emoji:🎱; unicode = 1f3b1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127921"] = "台球"
+-- emoji:🎱; unicode = 1f3b1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎱, 1f3b1
+-- format: unicodeKey = tts
+L["127921_65039"] = "台球"
 -- emoji:🔮; unicode = 1f52e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128302"] = "水晶球"
+-- emoji:🔮; unicode = 1f52e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔮, 1f52e
+-- format: unicodeKey = tts
+L["128302_65039"] = "水晶球"
 -- emoji:🪄; unicode = 1fa84
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129668"] = "魔棒"
+-- emoji:🪄; unicode = 1fa84 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪄, 1fa84
+-- format: unicodeKey = tts
+L["129668_65039"] = "魔棒"
 -- emoji:🎮; unicode = 1f3ae
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127918"] = "游戏手柄"
+-- emoji:🎮; unicode = 1f3ae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎮, 1f3ae
+-- format: unicodeKey = tts
+L["127918_65039"] = "游戏手柄"
 -- emoji:🕹️; unicode = 1f579 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17592,30 +21592,65 @@ L["128377"] = "游戏操控杆"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127920"] = "老虎机"
+-- emoji:🎰; unicode = 1f3b0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎰, 1f3b0
+-- format: unicodeKey = tts
+L["127920_65039"] = "老虎机"
 -- emoji:🎲; unicode = 1f3b2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127922"] = "骰子"
+-- emoji:🎲; unicode = 1f3b2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎲, 1f3b2
+-- format: unicodeKey = tts
+L["127922_65039"] = "骰子"
 -- emoji:🧩; unicode = 1f9e9
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129513"] = "拼图"
+-- emoji:🧩; unicode = 1f9e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧩, 1f9e9
+-- format: unicodeKey = tts
+L["129513_65039"] = "拼图"
 -- emoji:🧸; unicode = 1f9f8
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129528"] = "泰迪熊"
+-- emoji:🧸; unicode = 1f9f8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧸, 1f9f8
+-- format: unicodeKey = tts
+L["129528_65039"] = "泰迪熊"
 -- emoji:🪅; unicode = 1fa85
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129669"] = "彩罐"
+-- emoji:🪅; unicode = 1fa85 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪅, 1fa85
+-- format: unicodeKey = tts
+L["129669_65039"] = "彩罐"
 -- emoji:🪩; unicode = 1faa9
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129705"] = "镜球"
+-- emoji:🪩; unicode = 1faa9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪩, 1faa9
+-- format: unicodeKey = tts
+L["129705_65039"] = "镜球"
 -- emoji:🪆; unicode = 1fa86
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129670"] = "套娃"
+-- emoji:🪆; unicode = 1fa86 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪆, 1fa86
+-- format: unicodeKey = tts
+L["129670_65039"] = "套娃"
 -- emoji:♠️; unicode = 2660 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -17665,18 +21700,38 @@ L["9823"] = "兵"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127183"] = "大小王"
+-- emoji:🃏; unicode = 1f0cf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🃏, 1f0cf
+-- format: unicodeKey = tts
+L["127183_65039"] = "大小王"
 -- emoji:🀄; unicode = 1f004
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["126980"] = "红中"
+-- emoji:🀄; unicode = 1f004 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🀄, 1f004
+-- format: unicodeKey = tts
+L["126980_65039"] = "红中"
 -- emoji:🎴; unicode = 1f3b4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127924"] = "花札"
+-- emoji:🎴; unicode = 1f3b4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎴, 1f3b4
+-- format: unicodeKey = tts
+L["127924_65039"] = "花札"
 -- emoji:🎭; unicode = 1f3ad
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127917"] = "表演艺术"
+-- emoji:🎭; unicode = 1f3ad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎭, 1f3ad
+-- format: unicodeKey = tts
+L["127917_65039"] = "表演艺术"
 -- emoji:🖼️; unicode = 1f5bc fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17690,26 +21745,56 @@ L["128444"] = "带框的画"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127912"] = "调色盘"
+-- emoji:🎨; unicode = 1f3a8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎨, 1f3a8
+-- format: unicodeKey = tts
+L["127912_65039"] = "调色盘"
 -- emoji:🧵; unicode = 1f9f5
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129525"] = "线"
+-- emoji:🧵; unicode = 1f9f5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧵, 1f9f5
+-- format: unicodeKey = tts
+L["129525_65039"] = "线"
 -- emoji:🪡; unicode = 1faa1
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129697"] = "缝合针"
+-- emoji:🪡; unicode = 1faa1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪡, 1faa1
+-- format: unicodeKey = tts
+L["129697_65039"] = "缝合针"
 -- emoji:🧶; unicode = 1f9f6
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129526"] = "毛线"
+-- emoji:🧶; unicode = 1f9f6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧶, 1f9f6
+-- format: unicodeKey = tts
+L["129526_65039"] = "毛线"
 -- emoji:🪢; unicode = 1faa2
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129698"] = "结"
+-- emoji:🪢; unicode = 1faa2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪢, 1faa2
+-- format: unicodeKey = tts
+L["129698_65039"] = "结"
 -- emoji:👓; unicode = 1f453
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128083"] = "眼镜"
+-- emoji:👓; unicode = 1f453 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👓, 1f453
+-- format: unicodeKey = tts
+L["128083_65039"] = "眼镜"
 -- emoji:🕶️; unicode = 1f576 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17723,90 +21808,200 @@ L["128374"] = "墨镜"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129405"] = "护目镜"
+-- emoji:🥽; unicode = 1f97d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥽, 1f97d
+-- format: unicodeKey = tts
+L["129405_65039"] = "护目镜"
 -- emoji:🥼; unicode = 1f97c
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129404"] = "白大褂"
+-- emoji:🥼; unicode = 1f97c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥼, 1f97c
+-- format: unicodeKey = tts
+L["129404_65039"] = "白大褂"
 -- emoji:🦺; unicode = 1f9ba
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129466"] = "救生衣"
+-- emoji:🦺; unicode = 1f9ba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦺, 1f9ba
+-- format: unicodeKey = tts
+L["129466_65039"] = "救生衣"
 -- emoji:👔; unicode = 1f454
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128084"] = "领带"
+-- emoji:👔; unicode = 1f454 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👔, 1f454
+-- format: unicodeKey = tts
+L["128084_65039"] = "领带"
 -- emoji:👕; unicode = 1f455
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128085"] = "T恤"
+-- emoji:👕; unicode = 1f455 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👕, 1f455
+-- format: unicodeKey = tts
+L["128085_65039"] = "T恤"
 -- emoji:👖; unicode = 1f456
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128086"] = "牛仔裤"
+-- emoji:👖; unicode = 1f456 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👖, 1f456
+-- format: unicodeKey = tts
+L["128086_65039"] = "牛仔裤"
 -- emoji:🧣; unicode = 1f9e3
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129507"] = "围巾"
+-- emoji:🧣; unicode = 1f9e3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧣, 1f9e3
+-- format: unicodeKey = tts
+L["129507_65039"] = "围巾"
 -- emoji:🧤; unicode = 1f9e4
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129508"] = "手套"
+-- emoji:🧤; unicode = 1f9e4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧤, 1f9e4
+-- format: unicodeKey = tts
+L["129508_65039"] = "手套"
 -- emoji:🧥; unicode = 1f9e5
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129509"] = "外套"
+-- emoji:🧥; unicode = 1f9e5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧥, 1f9e5
+-- format: unicodeKey = tts
+L["129509_65039"] = "外套"
 -- emoji:🧦; unicode = 1f9e6
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129510"] = "袜子"
+-- emoji:🧦; unicode = 1f9e6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧦, 1f9e6
+-- format: unicodeKey = tts
+L["129510_65039"] = "袜子"
 -- emoji:👗; unicode = 1f457
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128087"] = "连衣裙"
+-- emoji:👗; unicode = 1f457 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👗, 1f457
+-- format: unicodeKey = tts
+L["128087_65039"] = "连衣裙"
 -- emoji:👘; unicode = 1f458
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128088"] = "和服"
+-- emoji:👘; unicode = 1f458 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👘, 1f458
+-- format: unicodeKey = tts
+L["128088_65039"] = "和服"
 -- emoji:🥻; unicode = 1f97b
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129403"] = "纱丽"
+-- emoji:🥻; unicode = 1f97b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥻, 1f97b
+-- format: unicodeKey = tts
+L["129403_65039"] = "纱丽"
 -- emoji:🩱; unicode = 1fa71
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129649"] = "连体泳衣"
+-- emoji:🩱; unicode = 1fa71 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩱, 1fa71
+-- format: unicodeKey = tts
+L["129649_65039"] = "连体泳衣"
 -- emoji:🩲; unicode = 1fa72
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129650"] = "三角裤"
+-- emoji:🩲; unicode = 1fa72 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩲, 1fa72
+-- format: unicodeKey = tts
+L["129650_65039"] = "三角裤"
 -- emoji:🩳; unicode = 1fa73
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129651"] = "短裤"
+-- emoji:🩳; unicode = 1fa73 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩳, 1fa73
+-- format: unicodeKey = tts
+L["129651_65039"] = "短裤"
 -- emoji:👙; unicode = 1f459
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128089"] = "比基尼"
+-- emoji:👙; unicode = 1f459 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👙, 1f459
+-- format: unicodeKey = tts
+L["128089_65039"] = "比基尼"
 -- emoji:👚; unicode = 1f45a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128090"] = "女装"
+-- emoji:👚; unicode = 1f45a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👚, 1f45a
+-- format: unicodeKey = tts
+L["128090_65039"] = "女装"
 -- emoji:🪭; unicode = 1faad
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129709"] = "折扇"
+-- emoji:🪭; unicode = 1faad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪭, 1faad
+-- format: unicodeKey = tts
+L["129709_65039"] = "折扇"
 -- emoji:👛; unicode = 1f45b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128091"] = "钱包"
+-- emoji:👛; unicode = 1f45b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👛, 1f45b
+-- format: unicodeKey = tts
+L["128091_65039"] = "钱包"
 -- emoji:👜; unicode = 1f45c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128092"] = "手提包"
+-- emoji:👜; unicode = 1f45c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👜, 1f45c
+-- format: unicodeKey = tts
+L["128092_65039"] = "手提包"
 -- emoji:👝; unicode = 1f45d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128093"] = "手袋"
+-- emoji:👝; unicode = 1f45d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👝, 1f45d
+-- format: unicodeKey = tts
+L["128093_65039"] = "手袋"
 -- emoji:🛍️; unicode = 1f6cd fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17820,70 +22015,155 @@ L["128717"] = "购物袋"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127890"] = "书包"
+-- emoji:🎒; unicode = 1f392 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎒, 1f392
+-- format: unicodeKey = tts
+L["127890_65039"] = "书包"
 -- emoji:🩴; unicode = 1fa74
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129652"] = "夹趾凉鞋"
+-- emoji:🩴; unicode = 1fa74 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩴, 1fa74
+-- format: unicodeKey = tts
+L["129652_65039"] = "夹趾凉鞋"
 -- emoji:👞; unicode = 1f45e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128094"] = "男鞋"
+-- emoji:👞; unicode = 1f45e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👞, 1f45e
+-- format: unicodeKey = tts
+L["128094_65039"] = "男鞋"
 -- emoji:👟; unicode = 1f45f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128095"] = "跑鞋"
+-- emoji:👟; unicode = 1f45f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👟, 1f45f
+-- format: unicodeKey = tts
+L["128095_65039"] = "跑鞋"
 -- emoji:🥾; unicode = 1f97e
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129406"] = "登山鞋"
+-- emoji:🥾; unicode = 1f97e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥾, 1f97e
+-- format: unicodeKey = tts
+L["129406_65039"] = "登山鞋"
 -- emoji:🥿; unicode = 1f97f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129407"] = "平底鞋"
+-- emoji:🥿; unicode = 1f97f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥿, 1f97f
+-- format: unicodeKey = tts
+L["129407_65039"] = "平底鞋"
 -- emoji:👠; unicode = 1f460
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128096"] = "高跟鞋"
+-- emoji:👠; unicode = 1f460 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👠, 1f460
+-- format: unicodeKey = tts
+L["128096_65039"] = "高跟鞋"
 -- emoji:👡; unicode = 1f461
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128097"] = "女式凉鞋"
+-- emoji:👡; unicode = 1f461 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👡, 1f461
+-- format: unicodeKey = tts
+L["128097_65039"] = "女式凉鞋"
 -- emoji:🩰; unicode = 1fa70
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129648"] = "芭蕾舞鞋"
+-- emoji:🩰; unicode = 1fa70 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩰, 1fa70
+-- format: unicodeKey = tts
+L["129648_65039"] = "芭蕾舞鞋"
 -- emoji:👢; unicode = 1f462
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128098"] = "女靴"
+-- emoji:👢; unicode = 1f462 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👢, 1f462
+-- format: unicodeKey = tts
+L["128098_65039"] = "女靴"
 -- emoji:🪮; unicode = 1faae
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129710"] = "发夹"
+-- emoji:🪮; unicode = 1faae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪮, 1faae
+-- format: unicodeKey = tts
+L["129710_65039"] = "发夹"
 -- emoji:👑; unicode = 1f451
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128081"] = "皇冠"
+-- emoji:👑; unicode = 1f451 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👑, 1f451
+-- format: unicodeKey = tts
+L["128081_65039"] = "皇冠"
 -- emoji:👒; unicode = 1f452
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128082"] = "女帽"
+-- emoji:👒; unicode = 1f452 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 👒, 1f452
+-- format: unicodeKey = tts
+L["128082_65039"] = "女帽"
 -- emoji:🎩; unicode = 1f3a9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127913"] = "礼帽"
+-- emoji:🎩; unicode = 1f3a9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎩, 1f3a9
+-- format: unicodeKey = tts
+L["127913_65039"] = "礼帽"
 -- emoji:🎓; unicode = 1f393
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127891"] = "毕业帽"
+-- emoji:🎓; unicode = 1f393 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎓, 1f393
+-- format: unicodeKey = tts
+L["127891_65039"] = "毕业帽"
 -- emoji:🧢; unicode = 1f9e2
 -- status: FULLY_QUALIFIED; since: E5.0
 -- format: unicodeKey = tts
 L["129506"] = "鸭舌帽"
+-- emoji:🧢; unicode = 1f9e2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧢, 1f9e2
+-- format: unicodeKey = tts
+L["129506_65039"] = "鸭舌帽"
 -- emoji:🪖; unicode = 1fa96
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129686"] = "军用头盔"
+-- emoji:🪖; unicode = 1fa96 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪖, 1fa96
+-- format: unicodeKey = tts
+L["129686_65039"] = "军用头盔"
 -- emoji:⛑️; unicode = 26d1 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17897,66 +22177,146 @@ L["9937"] = "白十字头盔"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128255"] = "念珠"
+-- emoji:📿; unicode = 1f4ff fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📿, 1f4ff
+-- format: unicodeKey = tts
+L["128255_65039"] = "念珠"
 -- emoji:💄; unicode = 1f484
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128132"] = "唇膏"
+-- emoji:💄; unicode = 1f484 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💄, 1f484
+-- format: unicodeKey = tts
+L["128132_65039"] = "唇膏"
 -- emoji:💍; unicode = 1f48d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128141"] = "戒指"
+-- emoji:💍; unicode = 1f48d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💍, 1f48d
+-- format: unicodeKey = tts
+L["128141_65039"] = "戒指"
 -- emoji:💎; unicode = 1f48e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128142"] = "宝石"
+-- emoji:💎; unicode = 1f48e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💎, 1f48e
+-- format: unicodeKey = tts
+L["128142_65039"] = "宝石"
 -- emoji:🔇; unicode = 1f507
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128263"] = "已静音的扬声器"
+-- emoji:🔇; unicode = 1f507 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔇, 1f507
+-- format: unicodeKey = tts
+L["128263_65039"] = "已静音的扬声器"
 -- emoji:🔈; unicode = 1f508
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128264"] = "低音量的扬声器"
+-- emoji:🔈; unicode = 1f508 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔈, 1f508
+-- format: unicodeKey = tts
+L["128264_65039"] = "低音量的扬声器"
 -- emoji:🔉; unicode = 1f509
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128265"] = "中等音量的扬声器"
+-- emoji:🔉; unicode = 1f509 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔉, 1f509
+-- format: unicodeKey = tts
+L["128265_65039"] = "中等音量的扬声器"
 -- emoji:🔊; unicode = 1f50a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128266"] = "高音量的扬声器"
+-- emoji:🔊; unicode = 1f50a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔊, 1f50a
+-- format: unicodeKey = tts
+L["128266_65039"] = "高音量的扬声器"
 -- emoji:📢; unicode = 1f4e2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128226"] = "喇叭"
+-- emoji:📢; unicode = 1f4e2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📢, 1f4e2
+-- format: unicodeKey = tts
+L["128226_65039"] = "喇叭"
 -- emoji:📣; unicode = 1f4e3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128227"] = "扩音器"
+-- emoji:📣; unicode = 1f4e3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📣, 1f4e3
+-- format: unicodeKey = tts
+L["128227_65039"] = "扩音器"
 -- emoji:📯; unicode = 1f4ef
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128239"] = "邮号"
+-- emoji:📯; unicode = 1f4ef fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📯, 1f4ef
+-- format: unicodeKey = tts
+L["128239_65039"] = "邮号"
 -- emoji:🔔; unicode = 1f514
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128276"] = "铃铛"
+-- emoji:🔔; unicode = 1f514 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔔, 1f514
+-- format: unicodeKey = tts
+L["128276_65039"] = "铃铛"
 -- emoji:🔕; unicode = 1f515
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128277"] = "禁止响铃"
+-- emoji:🔕; unicode = 1f515 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔕, 1f515
+-- format: unicodeKey = tts
+L["128277_65039"] = "禁止响铃"
 -- emoji:🎼; unicode = 1f3bc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127932"] = "乐谱"
+-- emoji:🎼; unicode = 1f3bc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎼, 1f3bc
+-- format: unicodeKey = tts
+L["127932_65039"] = "乐谱"
 -- emoji:🎵; unicode = 1f3b5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127925"] = "音符"
+-- emoji:🎵; unicode = 1f3b5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎵, 1f3b5
+-- format: unicodeKey = tts
+L["127925_65039"] = "音符"
 -- emoji:🎶; unicode = 1f3b6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127926"] = "多个音符"
+-- emoji:🎶; unicode = 1f3b6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎶, 1f3b6
+-- format: unicodeKey = tts
+L["127926_65039"] = "多个音符"
 -- emoji:🎙️; unicode = 1f399 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -17988,70 +22348,155 @@ L["127899"] = "控制旋钮"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127908"] = "麦克风"
+-- emoji:🎤; unicode = 1f3a4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎤, 1f3a4
+-- format: unicodeKey = tts
+L["127908_65039"] = "麦克风"
 -- emoji:🎧; unicode = 1f3a7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127911"] = "耳机"
+-- emoji:🎧; unicode = 1f3a7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎧, 1f3a7
+-- format: unicodeKey = tts
+L["127911_65039"] = "耳机"
 -- emoji:📻; unicode = 1f4fb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128251"] = "收音机"
+-- emoji:📻; unicode = 1f4fb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📻, 1f4fb
+-- format: unicodeKey = tts
+L["128251_65039"] = "收音机"
 -- emoji:🎷; unicode = 1f3b7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127927"] = "萨克斯管"
+-- emoji:🎷; unicode = 1f3b7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎷, 1f3b7
+-- format: unicodeKey = tts
+L["127927_65039"] = "萨克斯管"
 -- emoji:🪗; unicode = 1fa97
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129687"] = "手风琴"
+-- emoji:🪗; unicode = 1fa97 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪗, 1fa97
+-- format: unicodeKey = tts
+L["129687_65039"] = "手风琴"
 -- emoji:🎸; unicode = 1f3b8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127928"] = "吉他"
+-- emoji:🎸; unicode = 1f3b8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎸, 1f3b8
+-- format: unicodeKey = tts
+L["127928_65039"] = "吉他"
 -- emoji:🎹; unicode = 1f3b9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127929"] = "音乐键盘"
+-- emoji:🎹; unicode = 1f3b9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎹, 1f3b9
+-- format: unicodeKey = tts
+L["127929_65039"] = "音乐键盘"
 -- emoji:🎺; unicode = 1f3ba
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127930"] = "小号"
+-- emoji:🎺; unicode = 1f3ba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎺, 1f3ba
+-- format: unicodeKey = tts
+L["127930_65039"] = "小号"
 -- emoji:🎻; unicode = 1f3bb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127931"] = "小提琴"
+-- emoji:🎻; unicode = 1f3bb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎻, 1f3bb
+-- format: unicodeKey = tts
+L["127931_65039"] = "小提琴"
 -- emoji:🪕; unicode = 1fa95
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129685"] = "班卓琴"
+-- emoji:🪕; unicode = 1fa95 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪕, 1fa95
+-- format: unicodeKey = tts
+L["129685_65039"] = "班卓琴"
 -- emoji:🥁; unicode = 1f941
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["129345"] = "鼓"
+-- emoji:🥁; unicode = 1f941 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🥁, 1f941
+-- format: unicodeKey = tts
+L["129345_65039"] = "鼓"
 -- emoji:🪘; unicode = 1fa98
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129688"] = "长鼓"
+-- emoji:🪘; unicode = 1fa98 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪘, 1fa98
+-- format: unicodeKey = tts
+L["129688_65039"] = "长鼓"
 -- emoji:🪇; unicode = 1fa87
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129671"] = "沙球"
+-- emoji:🪇; unicode = 1fa87 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪇, 1fa87
+-- format: unicodeKey = tts
+L["129671_65039"] = "沙球"
 -- emoji:🪈; unicode = 1fa88
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129672"] = "长笛"
+-- emoji:🪈; unicode = 1fa88 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪈, 1fa88
+-- format: unicodeKey = tts
+L["129672_65039"] = "长笛"
 -- emoji:🪉; unicode = 1fa89
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129673"] = "竖琴"
+-- emoji:🪉; unicode = 1fa89 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪉, 1fa89
+-- format: unicodeKey = tts
+L["129673_65039"] = "竖琴"
 -- emoji:📱; unicode = 1f4f1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128241"] = "手机"
+-- emoji:📱; unicode = 1f4f1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📱, 1f4f1
+-- format: unicodeKey = tts
+L["128241_65039"] = "手机"
 -- emoji:📲; unicode = 1f4f2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128242"] = "带有箭头的手机"
+-- emoji:📲; unicode = 1f4f2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📲, 1f4f2
+-- format: unicodeKey = tts
+L["128242_65039"] = "带有箭头的手机"
 -- emoji:☎️; unicode = 260e fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -18065,30 +22510,65 @@ L["9742"] = "电话"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128222"] = "电话听筒"
+-- emoji:📞; unicode = 1f4de fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📞, 1f4de
+-- format: unicodeKey = tts
+L["128222_65039"] = "电话听筒"
 -- emoji:📟; unicode = 1f4df
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128223"] = "寻呼机"
+-- emoji:📟; unicode = 1f4df fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📟, 1f4df
+-- format: unicodeKey = tts
+L["128223_65039"] = "寻呼机"
 -- emoji:📠; unicode = 1f4e0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128224"] = "传真机"
+-- emoji:📠; unicode = 1f4e0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📠, 1f4e0
+-- format: unicodeKey = tts
+L["128224_65039"] = "传真机"
 -- emoji:🔋; unicode = 1f50b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128267"] = "电池"
+-- emoji:🔋; unicode = 1f50b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔋, 1f50b
+-- format: unicodeKey = tts
+L["128267_65039"] = "电池"
 -- emoji:🪫; unicode = 1faab
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129707"] = "电池电量不足"
+-- emoji:🪫; unicode = 1faab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪫, 1faab
+-- format: unicodeKey = tts
+L["129707_65039"] = "电池电量不足"
 -- emoji:🔌; unicode = 1f50c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128268"] = "电源插头"
+-- emoji:🔌; unicode = 1f50c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔌, 1f50c
+-- format: unicodeKey = tts
+L["128268_65039"] = "电源插头"
 -- emoji:💻; unicode = 1f4bb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128187"] = "笔记本电脑"
+-- emoji:💻; unicode = 1f4bb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💻, 1f4bb
+-- format: unicodeKey = tts
+L["128187_65039"] = "笔记本电脑"
 -- emoji:🖥️; unicode = 1f5a5 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18138,26 +22618,56 @@ L["128434"] = "轨迹球"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128189"] = "电脑光盘"
+-- emoji:💽; unicode = 1f4bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💽, 1f4bd
+-- format: unicodeKey = tts
+L["128189_65039"] = "电脑光盘"
 -- emoji:💾; unicode = 1f4be
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128190"] = "软盘"
+-- emoji:💾; unicode = 1f4be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💾, 1f4be
+-- format: unicodeKey = tts
+L["128190_65039"] = "软盘"
 -- emoji:💿; unicode = 1f4bf
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128191"] = "光盘"
+-- emoji:💿; unicode = 1f4bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💿, 1f4bf
+-- format: unicodeKey = tts
+L["128191_65039"] = "光盘"
 -- emoji:📀; unicode = 1f4c0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128192"] = "DVD"
+-- emoji:📀; unicode = 1f4c0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📀, 1f4c0
+-- format: unicodeKey = tts
+L["128192_65039"] = "DVD"
 -- emoji:🧮; unicode = 1f9ee
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129518"] = "算盘"
+-- emoji:🧮; unicode = 1f9ee fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧮, 1f9ee
+-- format: unicodeKey = tts
+L["129518_65039"] = "算盘"
 -- emoji:🎥; unicode = 1f3a5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127909"] = "电影摄影机"
+-- emoji:🎥; unicode = 1f3a5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎥, 1f3a5
+-- format: unicodeKey = tts
+L["127909_65039"] = "电影摄影机"
 -- emoji:🎞️; unicode = 1f39e fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18180,34 +22690,74 @@ L["128253"] = "电影放映机"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127916"] = "场记板"
+-- emoji:🎬; unicode = 1f3ac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎬, 1f3ac
+-- format: unicodeKey = tts
+L["127916_65039"] = "场记板"
 -- emoji:📺; unicode = 1f4fa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128250"] = "电视机"
+-- emoji:📺; unicode = 1f4fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📺, 1f4fa
+-- format: unicodeKey = tts
+L["128250_65039"] = "电视机"
 -- emoji:📷; unicode = 1f4f7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128247"] = "相机"
+-- emoji:📷; unicode = 1f4f7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📷, 1f4f7
+-- format: unicodeKey = tts
+L["128247_65039"] = "相机"
 -- emoji:📸; unicode = 1f4f8
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128248"] = "开闪光灯的相机"
+-- emoji:📸; unicode = 1f4f8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📸, 1f4f8
+-- format: unicodeKey = tts
+L["128248_65039"] = "开闪光灯的相机"
 -- emoji:📹; unicode = 1f4f9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128249"] = "摄像机"
+-- emoji:📹; unicode = 1f4f9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📹, 1f4f9
+-- format: unicodeKey = tts
+L["128249_65039"] = "摄像机"
 -- emoji:📼; unicode = 1f4fc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128252"] = "录像带"
+-- emoji:📼; unicode = 1f4fc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📼, 1f4fc
+-- format: unicodeKey = tts
+L["128252_65039"] = "录像带"
 -- emoji:🔍; unicode = 1f50d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128269"] = "左斜的放大镜"
+-- emoji:🔍; unicode = 1f50d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔍, 1f50d
+-- format: unicodeKey = tts
+L["128269_65039"] = "左斜的放大镜"
 -- emoji:🔎; unicode = 1f50e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128270"] = "右斜的放大镜"
+-- emoji:🔎; unicode = 1f50e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔎, 1f50e
+-- format: unicodeKey = tts
+L["128270_65039"] = "右斜的放大镜"
 -- emoji:🕯️; unicode = 1f56f fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18221,70 +22771,155 @@ L["128367"] = "蜡烛"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128161"] = "灯泡"
+-- emoji:💡; unicode = 1f4a1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💡, 1f4a1
+-- format: unicodeKey = tts
+L["128161_65039"] = "灯泡"
 -- emoji:🔦; unicode = 1f526
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128294"] = "手电筒"
+-- emoji:🔦; unicode = 1f526 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔦, 1f526
+-- format: unicodeKey = tts
+L["128294_65039"] = "手电筒"
 -- emoji:🏮; unicode = 1f3ee
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127982"] = "红灯笼"
+-- emoji:🏮; unicode = 1f3ee fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏮, 1f3ee
+-- format: unicodeKey = tts
+L["127982_65039"] = "红灯笼"
 -- emoji:🪔; unicode = 1fa94
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129684"] = "印度油灯"
+-- emoji:🪔; unicode = 1fa94 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪔, 1fa94
+-- format: unicodeKey = tts
+L["129684_65039"] = "印度油灯"
 -- emoji:📔; unicode = 1f4d4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128212"] = "精装笔记本"
+-- emoji:📔; unicode = 1f4d4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📔, 1f4d4
+-- format: unicodeKey = tts
+L["128212_65039"] = "精装笔记本"
 -- emoji:📕; unicode = 1f4d5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128213"] = "合上的书本"
+-- emoji:📕; unicode = 1f4d5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📕, 1f4d5
+-- format: unicodeKey = tts
+L["128213_65039"] = "合上的书本"
 -- emoji:📖; unicode = 1f4d6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128214"] = "打开的书本"
+-- emoji:📖; unicode = 1f4d6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📖, 1f4d6
+-- format: unicodeKey = tts
+L["128214_65039"] = "打开的书本"
 -- emoji:📗; unicode = 1f4d7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128215"] = "绿色书本"
+-- emoji:📗; unicode = 1f4d7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📗, 1f4d7
+-- format: unicodeKey = tts
+L["128215_65039"] = "绿色书本"
 -- emoji:📘; unicode = 1f4d8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128216"] = "蓝色书本"
+-- emoji:📘; unicode = 1f4d8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📘, 1f4d8
+-- format: unicodeKey = tts
+L["128216_65039"] = "蓝色书本"
 -- emoji:📙; unicode = 1f4d9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128217"] = "橙色书本"
+-- emoji:📙; unicode = 1f4d9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📙, 1f4d9
+-- format: unicodeKey = tts
+L["128217_65039"] = "橙色书本"
 -- emoji:📚; unicode = 1f4da
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128218"] = "书"
+-- emoji:📚; unicode = 1f4da fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📚, 1f4da
+-- format: unicodeKey = tts
+L["128218_65039"] = "书"
 -- emoji:📓; unicode = 1f4d3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128211"] = "笔记本"
+-- emoji:📓; unicode = 1f4d3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📓, 1f4d3
+-- format: unicodeKey = tts
+L["128211_65039"] = "笔记本"
 -- emoji:📒; unicode = 1f4d2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128210"] = "账本"
+-- emoji:📒; unicode = 1f4d2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📒, 1f4d2
+-- format: unicodeKey = tts
+L["128210_65039"] = "账本"
 -- emoji:📃; unicode = 1f4c3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128195"] = "带卷边的页面"
+-- emoji:📃; unicode = 1f4c3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📃, 1f4c3
+-- format: unicodeKey = tts
+L["128195_65039"] = "带卷边的页面"
 -- emoji:📜; unicode = 1f4dc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128220"] = "卷轴"
+-- emoji:📜; unicode = 1f4dc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📜, 1f4dc
+-- format: unicodeKey = tts
+L["128220_65039"] = "卷轴"
 -- emoji:📄; unicode = 1f4c4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128196"] = "文件"
+-- emoji:📄; unicode = 1f4c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📄, 1f4c4
+-- format: unicodeKey = tts
+L["128196_65039"] = "文件"
 -- emoji:📰; unicode = 1f4f0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128240"] = "报纸"
+-- emoji:📰; unicode = 1f4f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📰, 1f4f0
+-- format: unicodeKey = tts
+L["128240_65039"] = "报纸"
 -- emoji:🗞️; unicode = 1f5de fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18298,10 +22933,20 @@ L["128478"] = "报纸卷"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128209"] = "标签页"
+-- emoji:📑; unicode = 1f4d1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📑, 1f4d1
+-- format: unicodeKey = tts
+L["128209_65039"] = "标签页"
 -- emoji:🔖; unicode = 1f516
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128278"] = "书签"
+-- emoji:🔖; unicode = 1f516 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔖, 1f516
+-- format: unicodeKey = tts
+L["128278_65039"] = "书签"
 -- emoji:🏷️; unicode = 1f3f7 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18315,42 +22960,92 @@ L["127991"] = "标签"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128176"] = "钱袋"
+-- emoji:💰; unicode = 1f4b0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💰, 1f4b0
+-- format: unicodeKey = tts
+L["128176_65039"] = "钱袋"
 -- emoji:🪙; unicode = 1fa99
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129689"] = "硬币"
+-- emoji:🪙; unicode = 1fa99 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪙, 1fa99
+-- format: unicodeKey = tts
+L["129689_65039"] = "硬币"
 -- emoji:💴; unicode = 1f4b4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128180"] = "日元"
+-- emoji:💴; unicode = 1f4b4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💴, 1f4b4
+-- format: unicodeKey = tts
+L["128180_65039"] = "日元"
 -- emoji:💵; unicode = 1f4b5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128181"] = "美元"
+-- emoji:💵; unicode = 1f4b5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💵, 1f4b5
+-- format: unicodeKey = tts
+L["128181_65039"] = "美元"
 -- emoji:💶; unicode = 1f4b6
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128182"] = "欧元"
+-- emoji:💶; unicode = 1f4b6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💶, 1f4b6
+-- format: unicodeKey = tts
+L["128182_65039"] = "欧元"
 -- emoji:💷; unicode = 1f4b7
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128183"] = "英镑"
+-- emoji:💷; unicode = 1f4b7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💷, 1f4b7
+-- format: unicodeKey = tts
+L["128183_65039"] = "英镑"
 -- emoji:💸; unicode = 1f4b8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128184"] = "长翅膀的钱"
+-- emoji:💸; unicode = 1f4b8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💸, 1f4b8
+-- format: unicodeKey = tts
+L["128184_65039"] = "长翅膀的钱"
 -- emoji:💳; unicode = 1f4b3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128179"] = "信用卡"
+-- emoji:💳; unicode = 1f4b3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💳, 1f4b3
+-- format: unicodeKey = tts
+L["128179_65039"] = "信用卡"
 -- emoji:🧾; unicode = 1f9fe
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129534"] = "收据"
+-- emoji:🧾; unicode = 1f9fe fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧾, 1f9fe
+-- format: unicodeKey = tts
+L["129534_65039"] = "收据"
 -- emoji:💹; unicode = 1f4b9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128185"] = "趋势向上且带有日元符号的图表"
+-- emoji:💹; unicode = 1f4b9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💹, 1f4b9
+-- format: unicodeKey = tts
+L["128185_65039"] = "趋势向上且带有日元符号的图表"
 -- emoji:✉️; unicode = 2709 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -18364,46 +23059,101 @@ L["9993"] = "信封"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128231"] = "电子邮件"
+-- emoji:📧; unicode = 1f4e7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📧, 1f4e7
+-- format: unicodeKey = tts
+L["128231_65039"] = "电子邮件"
 -- emoji:📨; unicode = 1f4e8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128232"] = "来信"
+-- emoji:📨; unicode = 1f4e8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📨, 1f4e8
+-- format: unicodeKey = tts
+L["128232_65039"] = "来信"
 -- emoji:📩; unicode = 1f4e9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128233"] = "收邮件"
+-- emoji:📩; unicode = 1f4e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📩, 1f4e9
+-- format: unicodeKey = tts
+L["128233_65039"] = "收邮件"
 -- emoji:📤; unicode = 1f4e4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128228"] = "发件箱"
+-- emoji:📤; unicode = 1f4e4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📤, 1f4e4
+-- format: unicodeKey = tts
+L["128228_65039"] = "发件箱"
 -- emoji:📥; unicode = 1f4e5
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128229"] = "收件箱"
+-- emoji:📥; unicode = 1f4e5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📥, 1f4e5
+-- format: unicodeKey = tts
+L["128229_65039"] = "收件箱"
 -- emoji:📦; unicode = 1f4e6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128230"] = "包裹"
+-- emoji:📦; unicode = 1f4e6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📦, 1f4e6
+-- format: unicodeKey = tts
+L["128230_65039"] = "包裹"
 -- emoji:📫; unicode = 1f4eb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128235"] = "有待收信件"
+-- emoji:📫; unicode = 1f4eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📫, 1f4eb
+-- format: unicodeKey = tts
+L["128235_65039"] = "有待收信件"
 -- emoji:📪; unicode = 1f4ea
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128234"] = "无待收信件"
+-- emoji:📪; unicode = 1f4ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📪, 1f4ea
+-- format: unicodeKey = tts
+L["128234_65039"] = "无待收信件"
 -- emoji:📬; unicode = 1f4ec
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128236"] = "有新信件"
+-- emoji:📬; unicode = 1f4ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📬, 1f4ec
+-- format: unicodeKey = tts
+L["128236_65039"] = "有新信件"
 -- emoji:📭; unicode = 1f4ed
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
 L["128237"] = "无新信件"
+-- emoji:📭; unicode = 1f4ed fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📭, 1f4ed
+-- format: unicodeKey = tts
+L["128237_65039"] = "无新信件"
 -- emoji:📮; unicode = 1f4ee
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128238"] = "邮筒"
+-- emoji:📮; unicode = 1f4ee fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📮, 1f4ee
+-- format: unicodeKey = tts
+L["128238_65039"] = "邮筒"
 -- emoji:🗳️; unicode = 1f5f3 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18471,18 +23221,38 @@ L["128397"] = "蜡笔"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128221"] = "备忘录"
+-- emoji:📝; unicode = 1f4dd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📝, 1f4dd
+-- format: unicodeKey = tts
+L["128221_65039"] = "备忘录"
 -- emoji:💼; unicode = 1f4bc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128188"] = "公文包"
+-- emoji:💼; unicode = 1f4bc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💼, 1f4bc
+-- format: unicodeKey = tts
+L["128188_65039"] = "公文包"
 -- emoji:📁; unicode = 1f4c1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128193"] = "文件夹"
+-- emoji:📁; unicode = 1f4c1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📁, 1f4c1
+-- format: unicodeKey = tts
+L["128193_65039"] = "文件夹"
 -- emoji:📂; unicode = 1f4c2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128194"] = "打开的文件夹"
+-- emoji:📂; unicode = 1f4c2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📂, 1f4c2
+-- format: unicodeKey = tts
+L["128194_65039"] = "打开的文件夹"
 -- emoji:🗂️; unicode = 1f5c2 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18496,10 +23266,20 @@ L["128450"] = "索引分隔文件夹"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128197"] = "日历"
+-- emoji:📅; unicode = 1f4c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📅, 1f4c5
+-- format: unicodeKey = tts
+L["128197_65039"] = "日历"
 -- emoji:📆; unicode = 1f4c6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128198"] = "手撕日历"
+-- emoji:📆; unicode = 1f4c6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📆, 1f4c6
+-- format: unicodeKey = tts
+L["128198_65039"] = "手撕日历"
 -- emoji:🗒️; unicode = 1f5d2 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18522,34 +23302,74 @@ L["128467"] = "线圈日历"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128199"] = "卡片索引"
+-- emoji:📇; unicode = 1f4c7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📇, 1f4c7
+-- format: unicodeKey = tts
+L["128199_65039"] = "卡片索引"
 -- emoji:📈; unicode = 1f4c8
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128200"] = "趋势向上的图表"
+-- emoji:📈; unicode = 1f4c8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📈, 1f4c8
+-- format: unicodeKey = tts
+L["128200_65039"] = "趋势向上的图表"
 -- emoji:📉; unicode = 1f4c9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128201"] = "趋势向下的图表"
+-- emoji:📉; unicode = 1f4c9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📉, 1f4c9
+-- format: unicodeKey = tts
+L["128201_65039"] = "趋势向下的图表"
 -- emoji:📊; unicode = 1f4ca
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128202"] = "条形图"
+-- emoji:📊; unicode = 1f4ca fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📊, 1f4ca
+-- format: unicodeKey = tts
+L["128202_65039"] = "条形图"
 -- emoji:📋; unicode = 1f4cb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128203"] = "剪贴板"
+-- emoji:📋; unicode = 1f4cb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📋, 1f4cb
+-- format: unicodeKey = tts
+L["128203_65039"] = "剪贴板"
 -- emoji:📌; unicode = 1f4cc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128204"] = "图钉"
+-- emoji:📌; unicode = 1f4cc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📌, 1f4cc
+-- format: unicodeKey = tts
+L["128204_65039"] = "图钉"
 -- emoji:📍; unicode = 1f4cd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128205"] = "圆图钉"
+-- emoji:📍; unicode = 1f4cd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📍, 1f4cd
+-- format: unicodeKey = tts
+L["128205_65039"] = "圆图钉"
 -- emoji:📎; unicode = 1f4ce
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128206"] = "回形针"
+-- emoji:📎; unicode = 1f4ce fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📎, 1f4ce
+-- format: unicodeKey = tts
+L["128206_65039"] = "回形针"
 -- emoji:🖇️; unicode = 1f587 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18563,10 +23383,20 @@ L["128391"] = "连起来的两个回形针"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128207"] = "直尺"
+-- emoji:📏; unicode = 1f4cf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📏, 1f4cf
+-- format: unicodeKey = tts
+L["128207_65039"] = "直尺"
 -- emoji:📐; unicode = 1f4d0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128208"] = "三角尺"
+-- emoji:📐; unicode = 1f4d0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📐, 1f4d0
+-- format: unicodeKey = tts
+L["128208_65039"] = "三角尺"
 -- emoji:✂️; unicode = 2702 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -18607,22 +23437,47 @@ L["128465"] = "垃圾桶"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128274"] = "合上的锁"
+-- emoji:🔒; unicode = 1f512 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔒, 1f512
+-- format: unicodeKey = tts
+L["128274_65039"] = "合上的锁"
 -- emoji:🔓; unicode = 1f513
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128275"] = "打开的锁"
+-- emoji:🔓; unicode = 1f513 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔓, 1f513
+-- format: unicodeKey = tts
+L["128275_65039"] = "打开的锁"
 -- emoji:🔏; unicode = 1f50f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128271"] = "墨水笔和锁"
+-- emoji:🔏; unicode = 1f50f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔏, 1f50f
+-- format: unicodeKey = tts
+L["128271_65039"] = "墨水笔和锁"
 -- emoji:🔐; unicode = 1f510
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128272"] = "钥匙和锁"
+-- emoji:🔐; unicode = 1f510 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔐, 1f510
+-- format: unicodeKey = tts
+L["128272_65039"] = "钥匙和锁"
 -- emoji:🔑; unicode = 1f511
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128273"] = "钥匙"
+-- emoji:🔑; unicode = 1f511 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔑, 1f511
+-- format: unicodeKey = tts
+L["128273_65039"] = "钥匙"
 -- emoji:🗝️; unicode = 1f5dd fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18636,10 +23491,20 @@ L["128477"] = "老式钥匙"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128296"] = "锤子"
+-- emoji:🔨; unicode = 1f528 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔨, 1f528
+-- format: unicodeKey = tts
+L["128296_65039"] = "锤子"
 -- emoji:🪓; unicode = 1fa93
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129683"] = "斧头"
+-- emoji:🪓; unicode = 1fa93 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪓, 1fa93
+-- format: unicodeKey = tts
+L["129683_65039"] = "斧头"
 -- emoji:⛏️; unicode = 26cf fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18689,14 +23554,29 @@ L["9876"] = "交叉放置的剑"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128163"] = "炸弹"
+-- emoji:💣; unicode = 1f4a3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💣, 1f4a3
+-- format: unicodeKey = tts
+L["128163_65039"] = "炸弹"
 -- emoji:🪃; unicode = 1fa83
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129667"] = "回旋镖"
+-- emoji:🪃; unicode = 1fa83 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪃, 1fa83
+-- format: unicodeKey = tts
+L["129667_65039"] = "回旋镖"
 -- emoji:🏹; unicode = 1f3f9
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127993"] = "弓和箭"
+-- emoji:🏹; unicode = 1f3f9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏹, 1f3f9
+-- format: unicodeKey = tts
+L["127993_65039"] = "弓和箭"
 -- emoji:🛡️; unicode = 1f6e1 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18710,18 +23590,38 @@ L["128737"] = "盾牌"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129690"] = "木工锯"
+-- emoji:🪚; unicode = 1fa9a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪚, 1fa9a
+-- format: unicodeKey = tts
+L["129690_65039"] = "木工锯"
 -- emoji:🔧; unicode = 1f527
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128295"] = "扳手"
+-- emoji:🔧; unicode = 1f527 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔧, 1f527
+-- format: unicodeKey = tts
+L["128295_65039"] = "扳手"
 -- emoji:🪛; unicode = 1fa9b
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129691"] = "螺丝刀"
+-- emoji:🪛; unicode = 1fa9b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪛, 1fa9b
+-- format: unicodeKey = tts
+L["129691_65039"] = "螺丝刀"
 -- emoji:🔩; unicode = 1f529
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128297"] = "螺母与螺栓"
+-- emoji:🔩; unicode = 1f529 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔩, 1f529
+-- format: unicodeKey = tts
+L["128297_65039"] = "螺母与螺栓"
 -- emoji:⚙️; unicode = 2699 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -18753,10 +23653,20 @@ L["9878"] = "天平"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129455"] = "盲杖"
+-- emoji:🦯; unicode = 1f9af fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🦯, 1f9af
+-- format: unicodeKey = tts
+L["129455_65039"] = "盲杖"
 -- emoji:🔗; unicode = 1f517
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128279"] = "链接"
+-- emoji:🔗; unicode = 1f517 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔗, 1f517
+-- format: unicodeKey = tts
+L["128279_65039"] = "链接"
 -- emoji:⛓️‍💥; unicode = 26d3 fe0f 200d 1f4a5
 -- status: FULLY_QUALIFIED; since: E15.1
 -- format: unicodeKey = tts
@@ -18779,22 +23689,47 @@ L["9939"] = "链条"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129693"] = "挂钩"
+-- emoji:🪝; unicode = 1fa9d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪝, 1fa9d
+-- format: unicodeKey = tts
+L["129693_65039"] = "挂钩"
 -- emoji:🧰; unicode = 1f9f0
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129520"] = "工具箱"
+-- emoji:🧰; unicode = 1f9f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧰, 1f9f0
+-- format: unicodeKey = tts
+L["129520_65039"] = "工具箱"
 -- emoji:🧲; unicode = 1f9f2
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129522"] = "磁铁"
+-- emoji:🧲; unicode = 1f9f2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧲, 1f9f2
+-- format: unicodeKey = tts
+L["129522_65039"] = "磁铁"
 -- emoji:🪜; unicode = 1fa9c
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129692"] = "梯子"
+-- emoji:🪜; unicode = 1fa9c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪜, 1fa9c
+-- format: unicodeKey = tts
+L["129692_65039"] = "梯子"
 -- emoji:🪏; unicode = 1fa8f
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129679"] = "铲"
+-- emoji:🪏; unicode = 1fa8f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪏, 1fa8f
+-- format: unicodeKey = tts
+L["129679_65039"] = "铲"
 -- emoji:⚗️; unicode = 2697 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -18808,70 +23743,155 @@ L["9879"] = "蒸馏器"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129514"] = "试管"
+-- emoji:🧪; unicode = 1f9ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧪, 1f9ea
+-- format: unicodeKey = tts
+L["129514_65039"] = "试管"
 -- emoji:🧫; unicode = 1f9eb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129515"] = "培养皿"
+-- emoji:🧫; unicode = 1f9eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧫, 1f9eb
+-- format: unicodeKey = tts
+L["129515_65039"] = "培养皿"
 -- emoji:🧬; unicode = 1f9ec
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129516"] = "DNA"
+-- emoji:🧬; unicode = 1f9ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧬, 1f9ec
+-- format: unicodeKey = tts
+L["129516_65039"] = "DNA"
 -- emoji:🔬; unicode = 1f52c
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128300"] = "显微镜"
+-- emoji:🔬; unicode = 1f52c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔬, 1f52c
+-- format: unicodeKey = tts
+L["128300_65039"] = "显微镜"
 -- emoji:🔭; unicode = 1f52d
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128301"] = "望远镜"
+-- emoji:🔭; unicode = 1f52d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔭, 1f52d
+-- format: unicodeKey = tts
+L["128301_65039"] = "望远镜"
 -- emoji:📡; unicode = 1f4e1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128225"] = "卫星天线"
+-- emoji:📡; unicode = 1f4e1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📡, 1f4e1
+-- format: unicodeKey = tts
+L["128225_65039"] = "卫星天线"
 -- emoji:💉; unicode = 1f489
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128137"] = "注射器"
+-- emoji:💉; unicode = 1f489 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💉, 1f489
+-- format: unicodeKey = tts
+L["128137_65039"] = "注射器"
 -- emoji:🩸; unicode = 1fa78
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129656"] = "血滴"
+-- emoji:🩸; unicode = 1fa78 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩸, 1fa78
+-- format: unicodeKey = tts
+L["129656_65039"] = "血滴"
 -- emoji:💊; unicode = 1f48a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128138"] = "药丸"
+-- emoji:💊; unicode = 1f48a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💊, 1f48a
+-- format: unicodeKey = tts
+L["128138_65039"] = "药丸"
 -- emoji:🩹; unicode = 1fa79
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129657"] = "创可贴"
+-- emoji:🩹; unicode = 1fa79 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩹, 1fa79
+-- format: unicodeKey = tts
+L["129657_65039"] = "创可贴"
 -- emoji:🩼; unicode = 1fa7c
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129660"] = "拐杖"
+-- emoji:🩼; unicode = 1fa7c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩼, 1fa7c
+-- format: unicodeKey = tts
+L["129660_65039"] = "拐杖"
 -- emoji:🩺; unicode = 1fa7a
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129658"] = "听诊器"
+-- emoji:🩺; unicode = 1fa7a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩺, 1fa7a
+-- format: unicodeKey = tts
+L["129658_65039"] = "听诊器"
 -- emoji:🩻; unicode = 1fa7b
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129659"] = "X射线"
+-- emoji:🩻; unicode = 1fa7b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🩻, 1fa7b
+-- format: unicodeKey = tts
+L["129659_65039"] = "X射线"
 -- emoji:🚪; unicode = 1f6aa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128682"] = "门"
+-- emoji:🚪; unicode = 1f6aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚪, 1f6aa
+-- format: unicodeKey = tts
+L["128682_65039"] = "门"
 -- emoji:🛗; unicode = 1f6d7
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["128727"] = "电梯"
+-- emoji:🛗; unicode = 1f6d7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛗, 1f6d7
+-- format: unicodeKey = tts
+L["128727_65039"] = "电梯"
 -- emoji:🪞; unicode = 1fa9e
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129694"] = "镜子"
+-- emoji:🪞; unicode = 1fa9e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪞, 1fa9e
+-- format: unicodeKey = tts
+L["129694_65039"] = "镜子"
 -- emoji:🪟; unicode = 1fa9f
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129695"] = "窗户"
+-- emoji:🪟; unicode = 1fa9f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪟, 1fa9f
+-- format: unicodeKey = tts
+L["129695_65039"] = "窗户"
 -- emoji:🛏️; unicode = 1f6cf fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -18894,82 +23914,182 @@ L["128715"] = "沙发和灯"
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129681"] = "椅子"
+-- emoji:🪑; unicode = 1fa91 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪑, 1fa91
+-- format: unicodeKey = tts
+L["129681_65039"] = "椅子"
 -- emoji:🚽; unicode = 1f6bd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128701"] = "马桶"
+-- emoji:🚽; unicode = 1f6bd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚽, 1f6bd
+-- format: unicodeKey = tts
+L["128701_65039"] = "马桶"
 -- emoji:🪠; unicode = 1faa0
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129696"] = "活塞"
+-- emoji:🪠; unicode = 1faa0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪠, 1faa0
+-- format: unicodeKey = tts
+L["129696_65039"] = "活塞"
 -- emoji:🚿; unicode = 1f6bf
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128703"] = "淋浴"
+-- emoji:🚿; unicode = 1f6bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚿, 1f6bf
+-- format: unicodeKey = tts
+L["128703_65039"] = "淋浴"
 -- emoji:🛁; unicode = 1f6c1
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128705"] = "浴缸"
+-- emoji:🛁; unicode = 1f6c1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛁, 1f6c1
+-- format: unicodeKey = tts
+L["128705_65039"] = "浴缸"
 -- emoji:🪤; unicode = 1faa4
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129700"] = "捕鼠器"
+-- emoji:🪤; unicode = 1faa4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪤, 1faa4
+-- format: unicodeKey = tts
+L["129700_65039"] = "捕鼠器"
 -- emoji:🪒; unicode = 1fa92
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129682"] = "剃须刀"
+-- emoji:🪒; unicode = 1fa92 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪒, 1fa92
+-- format: unicodeKey = tts
+L["129682_65039"] = "剃须刀"
 -- emoji:🧴; unicode = 1f9f4
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129524"] = "乳液瓶"
+-- emoji:🧴; unicode = 1f9f4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧴, 1f9f4
+-- format: unicodeKey = tts
+L["129524_65039"] = "乳液瓶"
 -- emoji:🧷; unicode = 1f9f7
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129527"] = "安全别针"
+-- emoji:🧷; unicode = 1f9f7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧷, 1f9f7
+-- format: unicodeKey = tts
+L["129527_65039"] = "安全别针"
 -- emoji:🧹; unicode = 1f9f9
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129529"] = "扫帚"
+-- emoji:🧹; unicode = 1f9f9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧹, 1f9f9
+-- format: unicodeKey = tts
+L["129529_65039"] = "扫帚"
 -- emoji:🧺; unicode = 1f9fa
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129530"] = "筐"
+-- emoji:🧺; unicode = 1f9fa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧺, 1f9fa
+-- format: unicodeKey = tts
+L["129530_65039"] = "筐"
 -- emoji:🧻; unicode = 1f9fb
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129531"] = "卷纸"
+-- emoji:🧻; unicode = 1f9fb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧻, 1f9fb
+-- format: unicodeKey = tts
+L["129531_65039"] = "卷纸"
 -- emoji:🪣; unicode = 1faa3
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129699"] = "桶"
+-- emoji:🪣; unicode = 1faa3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪣, 1faa3
+-- format: unicodeKey = tts
+L["129699_65039"] = "桶"
 -- emoji:🧼; unicode = 1f9fc
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129532"] = "皂"
+-- emoji:🧼; unicode = 1f9fc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧼, 1f9fc
+-- format: unicodeKey = tts
+L["129532_65039"] = "皂"
 -- emoji:🫧; unicode = 1fae7
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129767"] = "气泡"
+-- emoji:🫧; unicode = 1fae7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫧, 1fae7
+-- format: unicodeKey = tts
+L["129767_65039"] = "气泡"
 -- emoji:🪥; unicode = 1faa5
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129701"] = "牙刷"
+-- emoji:🪥; unicode = 1faa5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪥, 1faa5
+-- format: unicodeKey = tts
+L["129701_65039"] = "牙刷"
 -- emoji:🧽; unicode = 1f9fd
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129533"] = "海绵"
+-- emoji:🧽; unicode = 1f9fd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧽, 1f9fd
+-- format: unicodeKey = tts
+L["129533_65039"] = "海绵"
 -- emoji:🧯; unicode = 1f9ef
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129519"] = "灭火器"
+-- emoji:🧯; unicode = 1f9ef fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧯, 1f9ef
+-- format: unicodeKey = tts
+L["129519_65039"] = "灭火器"
 -- emoji:🛒; unicode = 1f6d2
 -- status: FULLY_QUALIFIED; since: E3.0
 -- format: unicodeKey = tts
 L["128722"] = "购物车"
+-- emoji:🛒; unicode = 1f6d2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛒, 1f6d2
+-- format: unicodeKey = tts
+L["128722_65039"] = "购物车"
 -- emoji:🚬; unicode = 1f6ac
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128684"] = "香烟"
+-- emoji:🚬; unicode = 1f6ac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚬, 1f6ac
+-- format: unicodeKey = tts
+L["128684_65039"] = "香烟"
 -- emoji:⚰️; unicode = 26b0 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -18983,6 +24103,11 @@ L["9904"] = "棺材"
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129702"] = "墓碑"
+-- emoji:🪦; unicode = 1faa6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪦, 1faa6
+-- format: unicodeKey = tts
+L["129702_65039"] = "墓碑"
 -- emoji:⚱️; unicode = 26b1 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -18996,74 +24121,164 @@ L["9905"] = "骨灰缸"
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
 L["129535"] = "纳扎尔护身符"
+-- emoji:🧿; unicode = 1f9ff fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🧿, 1f9ff
+-- format: unicodeKey = tts
+L["129535_65039"] = "纳扎尔护身符"
 -- emoji:🪬; unicode = 1faac
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129708"] = "法蒂玛之手"
+-- emoji:🪬; unicode = 1faac fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪬, 1faac
+-- format: unicodeKey = tts
+L["129708_65039"] = "法蒂玛之手"
 -- emoji:🗿; unicode = 1f5ff
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128511"] = "摩埃"
+-- emoji:🗿; unicode = 1f5ff fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🗿, 1f5ff
+-- format: unicodeKey = tts
+L["128511_65039"] = "摩埃"
 -- emoji:🪧; unicode = 1faa7
 -- status: FULLY_QUALIFIED; since: E13.0
 -- format: unicodeKey = tts
 L["129703"] = "标语牌"
+-- emoji:🪧; unicode = 1faa7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪧, 1faa7
+-- format: unicodeKey = tts
+L["129703_65039"] = "标语牌"
 -- emoji:🪪; unicode = 1faaa
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129706"] = "身份证"
+-- emoji:🪪; unicode = 1faaa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪪, 1faaa
+-- format: unicodeKey = tts
+L["129706_65039"] = "身份证"
 -- emoji:🏧; unicode = 1f3e7
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127975"] = "取款机"
+-- emoji:🏧; unicode = 1f3e7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏧, 1f3e7
+-- format: unicodeKey = tts
+L["127975_65039"] = "取款机"
 -- emoji:🚮; unicode = 1f6ae
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128686"] = "倒垃圾"
+-- emoji:🚮; unicode = 1f6ae fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚮, 1f6ae
+-- format: unicodeKey = tts
+L["128686_65039"] = "倒垃圾"
 -- emoji:🚰; unicode = 1f6b0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128688"] = "饮用水"
+-- emoji:🚰; unicode = 1f6b0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚰, 1f6b0
+-- format: unicodeKey = tts
+L["128688_65039"] = "饮用水"
 -- emoji:♿; unicode = 267f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9855"] = "轮椅标识"
+-- emoji:♿; unicode = 267f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♿, 267f
+-- format: unicodeKey = tts
+L["9855_65039"] = "轮椅标识"
 -- emoji:🚹; unicode = 1f6b9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128697"] = "男厕"
+-- emoji:🚹; unicode = 1f6b9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚹, 1f6b9
+-- format: unicodeKey = tts
+L["128697_65039"] = "男厕"
 -- emoji:🚺; unicode = 1f6ba
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128698"] = "女厕"
+-- emoji:🚺; unicode = 1f6ba fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚺, 1f6ba
+-- format: unicodeKey = tts
+L["128698_65039"] = "女厕"
 -- emoji:🚻; unicode = 1f6bb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128699"] = "卫生间"
+-- emoji:🚻; unicode = 1f6bb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚻, 1f6bb
+-- format: unicodeKey = tts
+L["128699_65039"] = "卫生间"
 -- emoji:🚼; unicode = 1f6bc
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128700"] = "宝宝"
+-- emoji:🚼; unicode = 1f6bc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚼, 1f6bc
+-- format: unicodeKey = tts
+L["128700_65039"] = "宝宝"
 -- emoji:🚾; unicode = 1f6be
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128702"] = "厕所"
+-- emoji:🚾; unicode = 1f6be fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚾, 1f6be
+-- format: unicodeKey = tts
+L["128702_65039"] = "厕所"
 -- emoji:🛂; unicode = 1f6c2
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128706"] = "护照检查"
+-- emoji:🛂; unicode = 1f6c2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛂, 1f6c2
+-- format: unicodeKey = tts
+L["128706_65039"] = "护照检查"
 -- emoji:🛃; unicode = 1f6c3
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128707"] = "海关"
+-- emoji:🛃; unicode = 1f6c3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛃, 1f6c3
+-- format: unicodeKey = tts
+L["128707_65039"] = "海关"
 -- emoji:🛄; unicode = 1f6c4
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128708"] = "提取行李"
+-- emoji:🛄; unicode = 1f6c4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛄, 1f6c4
+-- format: unicodeKey = tts
+L["128708_65039"] = "提取行李"
 -- emoji:🛅; unicode = 1f6c5
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128709"] = "寄存行李"
+-- emoji:🛅; unicode = 1f6c5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛅, 1f6c5
+-- format: unicodeKey = tts
+L["128709_65039"] = "寄存行李"
 -- emoji:⚠️; unicode = 26a0 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19077,42 +24292,92 @@ L["9888"] = "警告"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128696"] = "儿童过街"
+-- emoji:🚸; unicode = 1f6b8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚸, 1f6b8
+-- format: unicodeKey = tts
+L["128696_65039"] = "儿童过街"
 -- emoji:⛔; unicode = 26d4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9940"] = "禁止通行"
+-- emoji:⛔; unicode = 26d4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛔, 26d4
+-- format: unicodeKey = tts
+L["9940_65039"] = "禁止通行"
 -- emoji:🚫; unicode = 1f6ab
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128683"] = "禁止"
+-- emoji:🚫; unicode = 1f6ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚫, 1f6ab
+-- format: unicodeKey = tts
+L["128683_65039"] = "禁止"
 -- emoji:🚳; unicode = 1f6b3
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128691"] = "禁止自行车"
+-- emoji:🚳; unicode = 1f6b3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚳, 1f6b3
+-- format: unicodeKey = tts
+L["128691_65039"] = "禁止自行车"
 -- emoji:🚭; unicode = 1f6ad
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128685"] = "禁止吸烟"
+-- emoji:🚭; unicode = 1f6ad fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚭, 1f6ad
+-- format: unicodeKey = tts
+L["128685_65039"] = "禁止吸烟"
 -- emoji:🚯; unicode = 1f6af
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128687"] = "禁止乱扔垃圾"
+-- emoji:🚯; unicode = 1f6af fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚯, 1f6af
+-- format: unicodeKey = tts
+L["128687_65039"] = "禁止乱扔垃圾"
 -- emoji:🚱; unicode = 1f6b1
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128689"] = "非饮用水"
+-- emoji:🚱; unicode = 1f6b1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚱, 1f6b1
+-- format: unicodeKey = tts
+L["128689_65039"] = "非饮用水"
 -- emoji:🚷; unicode = 1f6b7
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128695"] = "禁止行人通行"
+-- emoji:🚷; unicode = 1f6b7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚷, 1f6b7
+-- format: unicodeKey = tts
+L["128695_65039"] = "禁止行人通行"
 -- emoji:📵; unicode = 1f4f5
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128245"] = "禁止使用手机"
+-- emoji:📵; unicode = 1f4f5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📵, 1f4f5
+-- format: unicodeKey = tts
+L["128245_65039"] = "禁止使用手机"
 -- emoji:🔞; unicode = 1f51e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128286"] = "18禁"
+-- emoji:🔞; unicode = 1f51e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔞, 1f51e
+-- format: unicodeKey = tts
+L["128286_65039"] = "18禁"
 -- emoji:☢️; unicode = 2622 fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -19261,34 +24526,74 @@ L["10549"] = "右下弯箭头"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128259"] = "顺时针垂直箭头"
+-- emoji:🔃; unicode = 1f503 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔃, 1f503
+-- format: unicodeKey = tts
+L["128259_65039"] = "顺时针垂直箭头"
 -- emoji:🔄; unicode = 1f504
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128260"] = "逆时针箭头按钮"
+-- emoji:🔄; unicode = 1f504 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔄, 1f504
+-- format: unicodeKey = tts
+L["128260_65039"] = "逆时针箭头按钮"
 -- emoji:🔙; unicode = 1f519
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128281"] = "返回箭头"
+-- emoji:🔙; unicode = 1f519 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔙, 1f519
+-- format: unicodeKey = tts
+L["128281_65039"] = "返回箭头"
 -- emoji:🔚; unicode = 1f51a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128282"] = "结束箭头"
+-- emoji:🔚; unicode = 1f51a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔚, 1f51a
+-- format: unicodeKey = tts
+L["128282_65039"] = "结束箭头"
 -- emoji:🔛; unicode = 1f51b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128283"] = "ON! 箭头"
+-- emoji:🔛; unicode = 1f51b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔛, 1f51b
+-- format: unicodeKey = tts
+L["128283_65039"] = "ON! 箭头"
 -- emoji:🔜; unicode = 1f51c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128284"] = "SOON 箭头"
+-- emoji:🔜; unicode = 1f51c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔜, 1f51c
+-- format: unicodeKey = tts
+L["128284_65039"] = "SOON 箭头"
 -- emoji:🔝; unicode = 1f51d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128285"] = "置顶"
+-- emoji:🔝; unicode = 1f51d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔝, 1f51d
+-- format: unicodeKey = tts
+L["128285_65039"] = "置顶"
 -- emoji:🛐; unicode = 1f6d0
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128720"] = "宗教场所"
+-- emoji:🛐; unicode = 1f6d0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛐, 1f6d0
+-- format: unicodeKey = tts
+L["128720_65039"] = "宗教场所"
 -- emoji:⚛️; unicode = 269b fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
@@ -19374,78 +24679,173 @@ L["9774"] = "和平符号"
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128334"] = "烛台"
+-- emoji:🕎; unicode = 1f54e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🕎, 1f54e
+-- format: unicodeKey = tts
+L["128334_65039"] = "烛台"
 -- emoji:🔯; unicode = 1f52f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128303"] = "带中间点的六芒星"
+-- emoji:🔯; unicode = 1f52f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔯, 1f52f
+-- format: unicodeKey = tts
+L["128303_65039"] = "带中间点的六芒星"
 -- emoji:🪯; unicode = 1faaf
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["129711"] = "坎达"
+-- emoji:🪯; unicode = 1faaf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🪯, 1faaf
+-- format: unicodeKey = tts
+L["129711_65039"] = "坎达"
 -- emoji:♈; unicode = 2648
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9800"] = "白羊座"
+-- emoji:♈; unicode = 2648 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♈, 2648
+-- format: unicodeKey = tts
+L["9800_65039"] = "白羊座"
 -- emoji:♉; unicode = 2649
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9801"] = "金牛座"
+-- emoji:♉; unicode = 2649 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♉, 2649
+-- format: unicodeKey = tts
+L["9801_65039"] = "金牛座"
 -- emoji:♊; unicode = 264a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9802"] = "双子座"
+-- emoji:♊; unicode = 264a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♊, 264a
+-- format: unicodeKey = tts
+L["9802_65039"] = "双子座"
 -- emoji:♋; unicode = 264b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9803"] = "巨蟹座"
+-- emoji:♋; unicode = 264b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♋, 264b
+-- format: unicodeKey = tts
+L["9803_65039"] = "巨蟹座"
 -- emoji:♌; unicode = 264c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9804"] = "狮子座"
+-- emoji:♌; unicode = 264c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♌, 264c
+-- format: unicodeKey = tts
+L["9804_65039"] = "狮子座"
 -- emoji:♍; unicode = 264d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9805"] = "处女座"
+-- emoji:♍; unicode = 264d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♍, 264d
+-- format: unicodeKey = tts
+L["9805_65039"] = "处女座"
 -- emoji:♎; unicode = 264e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9806"] = "天秤座"
+-- emoji:♎; unicode = 264e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♎, 264e
+-- format: unicodeKey = tts
+L["9806_65039"] = "天秤座"
 -- emoji:♏; unicode = 264f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9807"] = "天蝎座"
+-- emoji:♏; unicode = 264f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♏, 264f
+-- format: unicodeKey = tts
+L["9807_65039"] = "天蝎座"
 -- emoji:♐; unicode = 2650
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9808"] = "射手座"
+-- emoji:♐; unicode = 2650 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♐, 2650
+-- format: unicodeKey = tts
+L["9808_65039"] = "射手座"
 -- emoji:♑; unicode = 2651
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9809"] = "摩羯座"
+-- emoji:♑; unicode = 2651 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♑, 2651
+-- format: unicodeKey = tts
+L["9809_65039"] = "摩羯座"
 -- emoji:♒; unicode = 2652
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9810"] = "水瓶座"
+-- emoji:♒; unicode = 2652 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♒, 2652
+-- format: unicodeKey = tts
+L["9810_65039"] = "水瓶座"
 -- emoji:♓; unicode = 2653
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9811"] = "双鱼座"
+-- emoji:♓; unicode = 2653 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ♓, 2653
+-- format: unicodeKey = tts
+L["9811_65039"] = "双鱼座"
 -- emoji:⛎; unicode = 26ce
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9934"] = "蛇夫座"
+-- emoji:⛎; unicode = 26ce fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⛎, 26ce
+-- format: unicodeKey = tts
+L["9934_65039"] = "蛇夫座"
 -- emoji:🔀; unicode = 1f500
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128256"] = "随机播放音轨按钮"
+-- emoji:🔀; unicode = 1f500 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔀, 1f500
+-- format: unicodeKey = tts
+L["128256_65039"] = "随机播放音轨按钮"
 -- emoji:🔁; unicode = 1f501
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128257"] = "重复按钮"
+-- emoji:🔁; unicode = 1f501 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔁, 1f501
+-- format: unicodeKey = tts
+L["128257_65039"] = "重复按钮"
 -- emoji:🔂; unicode = 1f502
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128258"] = "重复一次按钮"
+-- emoji:🔂; unicode = 1f502 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔂, 1f502
+-- format: unicodeKey = tts
+L["128258_65039"] = "重复一次按钮"
 -- emoji:▶️; unicode = 25b6 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19459,6 +24859,11 @@ L["9654"] = "播放按钮"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9193"] = "快进按钮"
+-- emoji:⏩; unicode = 23e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏩, 23e9
+-- format: unicodeKey = tts
+L["9193_65039"] = "快进按钮"
 -- emoji:⏭️; unicode = 23ed fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -19490,6 +24895,11 @@ L["9664"] = "倒退按钮"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9194"] = "快退按钮"
+-- emoji:⏪; unicode = 23ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏪, 23ea
+-- format: unicodeKey = tts
+L["9194_65039"] = "快退按钮"
 -- emoji:⏮️; unicode = 23ee fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -19503,18 +24913,38 @@ L["9198"] = "上一个音轨按钮"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128316"] = "向上三角形按钮"
+-- emoji:🔼; unicode = 1f53c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔼, 1f53c
+-- format: unicodeKey = tts
+L["128316_65039"] = "向上三角形按钮"
 -- emoji:⏫; unicode = 23eb
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9195"] = "快速上升按钮"
+-- emoji:⏫; unicode = 23eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏫, 23eb
+-- format: unicodeKey = tts
+L["9195_65039"] = "快速上升按钮"
 -- emoji:🔽; unicode = 1f53d
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128317"] = "向下三角形按钮"
+-- emoji:🔽; unicode = 1f53d fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔽, 1f53d
+-- format: unicodeKey = tts
+L["128317_65039"] = "向下三角形按钮"
 -- emoji:⏬; unicode = 23ec
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9196"] = "快速下降按钮"
+-- emoji:⏬; unicode = 23ec fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⏬, 23ec
+-- format: unicodeKey = tts
+L["9196_65039"] = "快速下降按钮"
 -- emoji:⏸️; unicode = 23f8 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
@@ -19555,30 +24985,65 @@ L["9167"] = "推出按钮"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127910"] = "电影院"
+-- emoji:🎦; unicode = 1f3a6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎦, 1f3a6
+-- format: unicodeKey = tts
+L["127910_65039"] = "电影院"
 -- emoji:🔅; unicode = 1f505
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128261"] = "低亮度按钮"
+-- emoji:🔅; unicode = 1f505 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔅, 1f505
+-- format: unicodeKey = tts
+L["128261_65039"] = "低亮度按钮"
 -- emoji:🔆; unicode = 1f506
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["128262"] = "高亮度按钮"
+-- emoji:🔆; unicode = 1f506 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔆, 1f506
+-- format: unicodeKey = tts
+L["128262_65039"] = "高亮度按钮"
 -- emoji:📶; unicode = 1f4f6
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128246"] = "信号强度条"
+-- emoji:📶; unicode = 1f4f6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📶, 1f4f6
+-- format: unicodeKey = tts
+L["128246_65039"] = "信号强度条"
 -- emoji:🛜; unicode = 1f6dc
 -- status: FULLY_QUALIFIED; since: E15.0
 -- format: unicodeKey = tts
 L["128732"] = "无线"
+-- emoji:🛜; unicode = 1f6dc fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🛜, 1f6dc
+-- format: unicodeKey = tts
+L["128732_65039"] = "无线"
 -- emoji:📳; unicode = 1f4f3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128243"] = "振动模式"
+-- emoji:📳; unicode = 1f4f3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📳, 1f4f3
+-- format: unicodeKey = tts
+L["128243_65039"] = "振动模式"
 -- emoji:📴; unicode = 1f4f4
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128244"] = "手机关机"
+-- emoji:📴; unicode = 1f4f4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📴, 1f4f4
+-- format: unicodeKey = tts
+L["128244_65039"] = "手机关机"
 -- emoji:♀️; unicode = 2640 fe0f
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -19619,18 +25084,38 @@ L["10006"] = "乘"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10133"] = "加"
+-- emoji:➕; unicode = 2795 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➕, 2795
+-- format: unicodeKey = tts
+L["10133_65039"] = "加"
 -- emoji:➖; unicode = 2796
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10134"] = "减"
+-- emoji:➖; unicode = 2796 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➖, 2796
+-- format: unicodeKey = tts
+L["10134_65039"] = "减"
 -- emoji:➗; unicode = 2797
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10135"] = "除"
+-- emoji:➗; unicode = 2797 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➗, 2797
+-- format: unicodeKey = tts
+L["10135_65039"] = "除"
 -- emoji:🟰; unicode = 1f7f0
 -- status: FULLY_QUALIFIED; since: E14.0
 -- format: unicodeKey = tts
 L["129008"] = "粗等号"
+-- emoji:🟰; unicode = 1f7f0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟰, 1f7f0
+-- format: unicodeKey = tts
+L["129008_65039"] = "粗等号"
 -- emoji:♾️; unicode = 267e fe0f
 -- status: FULLY_QUALIFIED; since: E11.0
 -- format: unicodeKey = tts
@@ -19662,18 +25147,38 @@ L["8265"] = "感叹疑问号"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10067"] = "红色问号"
+-- emoji:❓; unicode = 2753 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❓, 2753
+-- format: unicodeKey = tts
+L["10067_65039"] = "红色问号"
 -- emoji:❔; unicode = 2754
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10068"] = "白色问号"
+-- emoji:❔; unicode = 2754 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❔, 2754
+-- format: unicodeKey = tts
+L["10068_65039"] = "白色问号"
 -- emoji:❕; unicode = 2755
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10069"] = "白色感叹号"
+-- emoji:❕; unicode = 2755 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❕, 2755
+-- format: unicodeKey = tts
+L["10069_65039"] = "白色感叹号"
 -- emoji:❗; unicode = 2757
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10071"] = "红色感叹号"
+-- emoji:❗; unicode = 2757 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❗, 2757
+-- format: unicodeKey = tts
+L["10071_65039"] = "红色感叹号"
 -- emoji:〰️; unicode = 3030 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19687,10 +25192,20 @@ L["12336"] = "波浪型破折号"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128177"] = "货币兑换"
+-- emoji:💱; unicode = 1f4b1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💱, 1f4b1
+-- format: unicodeKey = tts
+L["128177_65039"] = "货币兑换"
 -- emoji:💲; unicode = 1f4b2
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128178"] = "粗美元符号"
+-- emoji:💲; unicode = 1f4b2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💲, 1f4b2
+-- format: unicodeKey = tts
+L["128178_65039"] = "粗美元符号"
 -- emoji:⚕️; unicode = 2695 fe0f
 -- status: FULLY_QUALIFIED; since: E4.0
 -- format: unicodeKey = tts
@@ -19722,22 +25237,47 @@ L["9884"] = "百合花饰"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128305"] = "三叉戟徽章"
+-- emoji:🔱; unicode = 1f531 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔱, 1f531
+-- format: unicodeKey = tts
+L["128305_65039"] = "三叉戟徽章"
 -- emoji:📛; unicode = 1f4db
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128219"] = "姓名牌"
+-- emoji:📛; unicode = 1f4db fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 📛, 1f4db
+-- format: unicodeKey = tts
+L["128219_65039"] = "姓名牌"
 -- emoji:🔰; unicode = 1f530
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128304"] = "日本新手驾驶标志"
+-- emoji:🔰; unicode = 1f530 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔰, 1f530
+-- format: unicodeKey = tts
+L["128304_65039"] = "日本新手驾驶标志"
 -- emoji:⭕; unicode = 2b55
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["11093"] = "红色空心圆圈"
+-- emoji:⭕; unicode = 2b55 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⭕, 2b55
+-- format: unicodeKey = tts
+L["11093_65039"] = "红色空心圆圈"
 -- emoji:✅; unicode = 2705
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9989"] = "勾号按钮"
+-- emoji:✅; unicode = 2705 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ✅, 2705
+-- format: unicodeKey = tts
+L["9989_65039"] = "勾号按钮"
 -- emoji:☑️; unicode = 2611 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19760,18 +25300,38 @@ L["10004"] = "勾号"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10060"] = "叉号"
+-- emoji:❌; unicode = 274c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❌, 274c
+-- format: unicodeKey = tts
+L["10060_65039"] = "叉号"
 -- emoji:❎; unicode = 274e
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10062"] = "叉号按钮"
+-- emoji:❎; unicode = 274e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ❎, 274e
+-- format: unicodeKey = tts
+L["10062_65039"] = "叉号按钮"
 -- emoji:➰; unicode = 27b0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["10160"] = "卷曲环"
+-- emoji:➰; unicode = 27b0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➰, 27b0
+-- format: unicodeKey = tts
+L["10160_65039"] = "卷曲环"
 -- emoji:➿; unicode = 27bf
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["10175"] = "双卷曲环"
+-- emoji:➿; unicode = 27bf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ➿, 27bf
+-- format: unicodeKey = tts
+L["10175_65039"] = "双卷曲环"
 -- emoji:〽️; unicode = 303d fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19839,6 +25399,11 @@ L["8482"] = "商标"
 -- status: FULLY_QUALIFIED; since: E16.0
 -- format: unicodeKey = tts
 L["129759"] = "泼溅"
+-- emoji:🫟; unicode = 1fadf fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🫟, 1fadf
+-- format: unicodeKey = tts
+L["129759_65039"] = "泼溅"
 -- emoji:#️⃣; unicode = 23 fe0f 20e3
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19951,26 +25516,56 @@ L["57_8419"] = "按键: 9"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128287"] = "按键: 10"
+-- emoji:🔟; unicode = 1f51f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔟, 1f51f
+-- format: unicodeKey = tts
+L["128287_65039"] = "按键: 10"
 -- emoji:🔠; unicode = 1f520
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128288"] = "输入大写拉丁字母"
+-- emoji:🔠; unicode = 1f520 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔠, 1f520
+-- format: unicodeKey = tts
+L["128288_65039"] = "输入大写拉丁字母"
 -- emoji:🔡; unicode = 1f521
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128289"] = "输入小写拉丁字母"
+-- emoji:🔡; unicode = 1f521 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔡, 1f521
+-- format: unicodeKey = tts
+L["128289_65039"] = "输入小写拉丁字母"
 -- emoji:🔢; unicode = 1f522
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128290"] = "输入数字"
+-- emoji:🔢; unicode = 1f522 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔢, 1f522
+-- format: unicodeKey = tts
+L["128290_65039"] = "输入数字"
 -- emoji:🔣; unicode = 1f523
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128291"] = "输入符号"
+-- emoji:🔣; unicode = 1f523 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔣, 1f523
+-- format: unicodeKey = tts
+L["128291_65039"] = "输入符号"
 -- emoji:🔤; unicode = 1f524
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128292"] = "输入拉丁字母"
+-- emoji:🔤; unicode = 1f524 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔤, 1f524
+-- format: unicodeKey = tts
+L["128292_65039"] = "输入拉丁字母"
 -- emoji:🅰️; unicode = 1f170 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19984,6 +25579,11 @@ L["127344"] = "A型血"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127374"] = "AB型血"
+-- emoji:🆎; unicode = 1f18e fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆎, 1f18e
+-- format: unicodeKey = tts
+L["127374_65039"] = "AB型血"
 -- emoji:🅱️; unicode = 1f171 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -19997,14 +25597,29 @@ L["127345"] = "B型血"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127377"] = "CL按钮"
+-- emoji:🆑; unicode = 1f191 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆑, 1f191
+-- format: unicodeKey = tts
+L["127377_65039"] = "CL按钮"
 -- emoji:🆒; unicode = 1f192
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127378"] = "cool按钮"
+-- emoji:🆒; unicode = 1f192 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆒, 1f192
+-- format: unicodeKey = tts
+L["127378_65039"] = "cool按钮"
 -- emoji:🆓; unicode = 1f193
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127379"] = "免费按钮"
+-- emoji:🆓; unicode = 1f193 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆓, 1f193
+-- format: unicodeKey = tts
+L["127379_65039"] = "免费按钮"
 -- emoji:ℹ️; unicode = 2139 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20018,6 +25633,11 @@ L["8505"] = "信息"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127380"] = "ID按钮"
+-- emoji:🆔; unicode = 1f194 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆔, 1f194
+-- format: unicodeKey = tts
+L["127380_65039"] = "ID按钮"
 -- emoji:Ⓜ️; unicode = 24c2 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20031,10 +25651,20 @@ L["9410"] = "圆圈包围的M"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127381"] = "new按钮"
+-- emoji:🆕; unicode = 1f195 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆕, 1f195
+-- format: unicodeKey = tts
+L["127381_65039"] = "new按钮"
 -- emoji:🆖; unicode = 1f196
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127382"] = "NG按钮"
+-- emoji:🆖; unicode = 1f196 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆖, 1f196
+-- format: unicodeKey = tts
+L["127382_65039"] = "NG按钮"
 -- emoji:🅾️; unicode = 1f17e fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20048,6 +25678,11 @@ L["127358"] = "O 型血"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127383"] = "OK按钮"
+-- emoji:🆗; unicode = 1f197 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆗, 1f197
+-- format: unicodeKey = tts
+L["127383_65039"] = "OK按钮"
 -- emoji:🅿️; unicode = 1f17f fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20061,18 +25696,38 @@ L["127359"] = "停车按钮"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127384"] = "SOS按钮"
+-- emoji:🆘; unicode = 1f198 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆘, 1f198
+-- format: unicodeKey = tts
+L["127384_65039"] = "SOS按钮"
 -- emoji:🆙; unicode = 1f199
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127385"] = "up按钮"
+-- emoji:🆙; unicode = 1f199 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆙, 1f199
+-- format: unicodeKey = tts
+L["127385_65039"] = "up按钮"
 -- emoji:🆚; unicode = 1f19a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127386"] = "VS按钮"
+-- emoji:🆚; unicode = 1f19a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🆚, 1f19a
+-- format: unicodeKey = tts
+L["127386_65039"] = "VS按钮"
 -- emoji:🈁; unicode = 1f201
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127489"] = "日文的“这里”按钮"
+-- emoji:🈁; unicode = 1f201 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈁, 1f201
+-- format: unicodeKey = tts
+L["127489_65039"] = "日文的“这里”按钮"
 -- emoji:🈂️; unicode = 1f202 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20095,42 +25750,92 @@ L["127543"] = "日文的“月总量”按钮"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127542"] = "日文的“收费”按钮"
+-- emoji:🈶; unicode = 1f236 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈶, 1f236
+-- format: unicodeKey = tts
+L["127542_65039"] = "日文的“收费”按钮"
 -- emoji:🈯; unicode = 1f22f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127535"] = "日文的“预留”按钮"
+-- emoji:🈯; unicode = 1f22f fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈯, 1f22f
+-- format: unicodeKey = tts
+L["127535_65039"] = "日文的“预留”按钮"
 -- emoji:🉐; unicode = 1f250
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127568"] = "日文的“议价”按钮"
+-- emoji:🉐; unicode = 1f250 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🉐, 1f250
+-- format: unicodeKey = tts
+L["127568_65039"] = "日文的“议价”按钮"
 -- emoji:🈹; unicode = 1f239
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127545"] = "日文的“打折”按钮"
+-- emoji:🈹; unicode = 1f239 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈹, 1f239
+-- format: unicodeKey = tts
+L["127545_65039"] = "日文的“打折”按钮"
 -- emoji:🈚; unicode = 1f21a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127514"] = "日文的“免费”按钮"
+-- emoji:🈚; unicode = 1f21a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈚, 1f21a
+-- format: unicodeKey = tts
+L["127514_65039"] = "日文的“免费”按钮"
 -- emoji:🈲; unicode = 1f232
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127538"] = "日文的“禁止”按钮"
+-- emoji:🈲; unicode = 1f232 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈲, 1f232
+-- format: unicodeKey = tts
+L["127538_65039"] = "日文的“禁止”按钮"
 -- emoji:🉑; unicode = 1f251
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127569"] = "日文的“可接受”按钮"
+-- emoji:🉑; unicode = 1f251 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🉑, 1f251
+-- format: unicodeKey = tts
+L["127569_65039"] = "日文的“可接受”按钮"
 -- emoji:🈸; unicode = 1f238
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127544"] = "日文的“申请”按钮"
+-- emoji:🈸; unicode = 1f238 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈸, 1f238
+-- format: unicodeKey = tts
+L["127544_65039"] = "日文的“申请”按钮"
 -- emoji:🈴; unicode = 1f234
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127540"] = "日文的“合格”按钮"
+-- emoji:🈴; unicode = 1f234 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈴, 1f234
+-- format: unicodeKey = tts
+L["127540_65039"] = "日文的“合格”按钮"
 -- emoji:🈳; unicode = 1f233
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127539"] = "日文的“有空位”按钮"
+-- emoji:🈳; unicode = 1f233 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈳, 1f233
+-- format: unicodeKey = tts
+L["127539_65039"] = "日文的“有空位”按钮"
 -- emoji:㊗️; unicode = 3297 fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20153,82 +25858,182 @@ L["12953"] = "日文的“秘密”按钮"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127546"] = "日文的“开始营业”按钮"
+-- emoji:🈺; unicode = 1f23a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈺, 1f23a
+-- format: unicodeKey = tts
+L["127546_65039"] = "日文的“开始营业”按钮"
 -- emoji:🈵; unicode = 1f235
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127541"] = "日文的“没有空位”按钮"
+-- emoji:🈵; unicode = 1f235 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🈵, 1f235
+-- format: unicodeKey = tts
+L["127541_65039"] = "日文的“没有空位”按钮"
 -- emoji:🔴; unicode = 1f534
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128308"] = "红色圆"
+-- emoji:🔴; unicode = 1f534 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔴, 1f534
+-- format: unicodeKey = tts
+L["128308_65039"] = "红色圆"
 -- emoji:🟠; unicode = 1f7e0
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128992"] = "橙色圆"
+-- emoji:🟠; unicode = 1f7e0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟠, 1f7e0
+-- format: unicodeKey = tts
+L["128992_65039"] = "橙色圆"
 -- emoji:🟡; unicode = 1f7e1
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128993"] = "黄色圆"
+-- emoji:🟡; unicode = 1f7e1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟡, 1f7e1
+-- format: unicodeKey = tts
+L["128993_65039"] = "黄色圆"
 -- emoji:🟢; unicode = 1f7e2
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128994"] = "绿色圆"
+-- emoji:🟢; unicode = 1f7e2 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟢, 1f7e2
+-- format: unicodeKey = tts
+L["128994_65039"] = "绿色圆"
 -- emoji:🔵; unicode = 1f535
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128309"] = "蓝色圆"
+-- emoji:🔵; unicode = 1f535 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔵, 1f535
+-- format: unicodeKey = tts
+L["128309_65039"] = "蓝色圆"
 -- emoji:🟣; unicode = 1f7e3
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128995"] = "紫色圆"
+-- emoji:🟣; unicode = 1f7e3 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟣, 1f7e3
+-- format: unicodeKey = tts
+L["128995_65039"] = "紫色圆"
 -- emoji:🟤; unicode = 1f7e4
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128996"] = "棕色圆"
+-- emoji:🟤; unicode = 1f7e4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟤, 1f7e4
+-- format: unicodeKey = tts
+L["128996_65039"] = "棕色圆"
 -- emoji:⚫; unicode = 26ab
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9899"] = "黑色圆"
+-- emoji:⚫; unicode = 26ab fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚫, 26ab
+-- format: unicodeKey = tts
+L["9899_65039"] = "黑色圆"
 -- emoji:⚪; unicode = 26aa
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9898"] = "白色圆"
+-- emoji:⚪; unicode = 26aa fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⚪, 26aa
+-- format: unicodeKey = tts
+L["9898_65039"] = "白色圆"
 -- emoji:🟥; unicode = 1f7e5
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128997"] = "红色方块"
+-- emoji:🟥; unicode = 1f7e5 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟥, 1f7e5
+-- format: unicodeKey = tts
+L["128997_65039"] = "红色方块"
 -- emoji:🟧; unicode = 1f7e7
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128999"] = "橙色方块"
+-- emoji:🟧; unicode = 1f7e7 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟧, 1f7e7
+-- format: unicodeKey = tts
+L["128999_65039"] = "橙色方块"
 -- emoji:🟨; unicode = 1f7e8
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129000"] = "黄色方块"
+-- emoji:🟨; unicode = 1f7e8 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟨, 1f7e8
+-- format: unicodeKey = tts
+L["129000_65039"] = "黄色方块"
 -- emoji:🟩; unicode = 1f7e9
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129001"] = "绿色方块"
+-- emoji:🟩; unicode = 1f7e9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟩, 1f7e9
+-- format: unicodeKey = tts
+L["129001_65039"] = "绿色方块"
 -- emoji:🟦; unicode = 1f7e6
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["128998"] = "蓝色方块"
+-- emoji:🟦; unicode = 1f7e6 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟦, 1f7e6
+-- format: unicodeKey = tts
+L["128998_65039"] = "蓝色方块"
 -- emoji:🟪; unicode = 1f7ea
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129002"] = "紫色方块"
+-- emoji:🟪; unicode = 1f7ea fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟪, 1f7ea
+-- format: unicodeKey = tts
+L["129002_65039"] = "紫色方块"
 -- emoji:🟫; unicode = 1f7eb
 -- status: FULLY_QUALIFIED; since: E12.0
 -- format: unicodeKey = tts
 L["129003"] = "棕色方块"
+-- emoji:🟫; unicode = 1f7eb fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🟫, 1f7eb
+-- format: unicodeKey = tts
+L["129003_65039"] = "棕色方块"
 -- emoji:⬛; unicode = 2b1b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["11035"] = "黑线大方框"
+-- emoji:⬛; unicode = 2b1b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⬛, 2b1b
+-- format: unicodeKey = tts
+L["11035_65039"] = "黑线大方框"
 -- emoji:⬜; unicode = 2b1c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["11036"] = "白线大方框"
+-- emoji:⬜; unicode = 2b1c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ⬜, 2b1c
+-- format: unicodeKey = tts
+L["11036_65039"] = "白线大方框"
 -- emoji:◼️; unicode = 25fc fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20251,10 +26056,20 @@ L["9723"] = "白色中方块"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9726"] = "黑色中小方块"
+-- emoji:◾; unicode = 25fe fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ◾, 25fe
+-- format: unicodeKey = tts
+L["9726_65039"] = "黑色中小方块"
 -- emoji:◽; unicode = 25fd
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["9725"] = "白色中小方块"
+-- emoji:◽; unicode = 25fd fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: ◽, 25fd
+-- format: unicodeKey = tts
+L["9725_65039"] = "白色中小方块"
 -- emoji:▪️; unicode = 25aa fe0f
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
@@ -20277,58 +26092,128 @@ L["9643"] = "白色小方块"
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128310"] = "橙色大菱形"
+-- emoji:🔶; unicode = 1f536 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔶, 1f536
+-- format: unicodeKey = tts
+L["128310_65039"] = "橙色大菱形"
 -- emoji:🔷; unicode = 1f537
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128311"] = "蓝色大菱形"
+-- emoji:🔷; unicode = 1f537 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔷, 1f537
+-- format: unicodeKey = tts
+L["128311_65039"] = "蓝色大菱形"
 -- emoji:🔸; unicode = 1f538
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128312"] = "橙色小菱形"
+-- emoji:🔸; unicode = 1f538 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔸, 1f538
+-- format: unicodeKey = tts
+L["128312_65039"] = "橙色小菱形"
 -- emoji:🔹; unicode = 1f539
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128313"] = "蓝色小菱形"
+-- emoji:🔹; unicode = 1f539 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔹, 1f539
+-- format: unicodeKey = tts
+L["128313_65039"] = "蓝色小菱形"
 -- emoji:🔺; unicode = 1f53a
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128314"] = "红色正三角"
+-- emoji:🔺; unicode = 1f53a fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔺, 1f53a
+-- format: unicodeKey = tts
+L["128314_65039"] = "红色正三角"
 -- emoji:🔻; unicode = 1f53b
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128315"] = "红色倒三角"
+-- emoji:🔻; unicode = 1f53b fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔻, 1f53b
+-- format: unicodeKey = tts
+L["128315_65039"] = "红色倒三角"
 -- emoji:💠; unicode = 1f4a0
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128160"] = "带圆点的菱形"
+-- emoji:💠; unicode = 1f4a0 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 💠, 1f4a0
+-- format: unicodeKey = tts
+L["128160_65039"] = "带圆点的菱形"
 -- emoji:🔘; unicode = 1f518
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128280"] = "单选按钮"
+-- emoji:🔘; unicode = 1f518 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔘, 1f518
+-- format: unicodeKey = tts
+L["128280_65039"] = "单选按钮"
 -- emoji:🔳; unicode = 1f533
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128307"] = "白色方形按钮"
+-- emoji:🔳; unicode = 1f533 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔳, 1f533
+-- format: unicodeKey = tts
+L["128307_65039"] = "白色方形按钮"
 -- emoji:🔲; unicode = 1f532
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128306"] = "黑色方形按钮"
+-- emoji:🔲; unicode = 1f532 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🔲, 1f532
+-- format: unicodeKey = tts
+L["128306_65039"] = "黑色方形按钮"
 -- emoji:🏁; unicode = 1f3c1
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127937"] = "黑白方格旗"
+-- emoji:🏁; unicode = 1f3c1 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏁, 1f3c1
+-- format: unicodeKey = tts
+L["127937_65039"] = "黑白方格旗"
 -- emoji:🚩; unicode = 1f6a9
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["128681"] = "三角旗"
+-- emoji:🚩; unicode = 1f6a9 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🚩, 1f6a9
+-- format: unicodeKey = tts
+L["128681_65039"] = "三角旗"
 -- emoji:🎌; unicode = 1f38c
 -- status: FULLY_QUALIFIED; since: E0.6
 -- format: unicodeKey = tts
 L["127884"] = "交叉旗"
+-- emoji:🎌; unicode = 1f38c fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🎌, 1f38c
+-- format: unicodeKey = tts
+L["127884_65039"] = "交叉旗"
 -- emoji:🏴; unicode = 1f3f4
 -- status: FULLY_QUALIFIED; since: E1.0
 -- format: unicodeKey = tts
 L["127988"] = "黑旗"
+-- emoji:🏴; unicode = 1f3f4 fe0f
+-- status: MINIMALLY_QUALIFIED; since: addon compat
+-- from: 🏴, 1f3f4
+-- format: unicodeKey = tts
+L["127988_65039"] = "黑旗"
 -- emoji:🏳️; unicode = 1f3f3 fe0f
 -- status: FULLY_QUALIFIED; since: E0.7
 -- format: unicodeKey = tts
