@@ -53,12 +53,18 @@ local emojiMaybeFlag = 1
 -- emoji字符结束标志
 local emojiEndFlag = 2
 
+-- 短代码开始/结束
+local emojiShortcodeStartCodePoint = L.shortcodeStartCodePoint
+local emojiShortcodeCompleteCodePoint = L.shortcodeCompleteCodePoint
+
 -- 将emoji替换为名字或图片
 -- @param text: 字符串
 -- @param type: "name": 名字 "icon": 图片
 function addon:ReplaceEmojiTo(text, type)
     local codePointArray, codePointStartIndexes, codePointEndIndexes, codePointLen, textLen = GetStringCodePoints(text)
     if not codePointArray then return text end
+
+    local showIcon = type == "icon"
 
     local rIndex = 1
     while rIndex <= codePointLen do
@@ -67,8 +73,8 @@ function addon:ReplaceEmojiTo(text, type)
 
         -- 重置状态
         codePointEmojiStatusArray[index] = emojiInitFlag
-
         local codePoint = codePointArray[index]
+
         local isEmoji, before, after, combineFlag = self:CodePointIsEmoji(codePoint)
         
         if isEmoji then
@@ -129,41 +135,80 @@ function addon:ReplaceEmojiTo(text, type)
     -- print(table.concat(codePointArray, ",", 1, codePointLen))
     -- print(table.concat(codePointEmojiStatusArray, ",", 1, codePointLen))
 
+    -- byte index
     local emojiEndIndex = 1
     local result = ""
 
+    -- codepoint index
     local startIndex = nil
+    local shortcodeStartIndex = 0
+
     for index = 1, codePointLen do
         local status = codePointEmojiStatusArray[index]
-        if status == emojiInitFlag then
-            startIndex = nil
-        elseif status == emojiMaybeFlag then
-            if not startIndex then
-                startIndex = index
-            end
-        elseif status == emojiEndFlag then
-            -- codePointEmojiStatusArray内的flag是以下形式时：
-            -- 0, 0, 1, 1, 2; 此时认为，1, 1, 2 可能为emoji
-            -- 0, 2, 2, 1, 2；此时认为有3个emoji
-            local start = startIndex or index
-            startIndex = nil
-            
-            local unicodeKey = table.concat(codePointArray, "_", start, index)
+        local codePoint = codePointArray[index]
+        if showIcon and (codePoint == emojiShortcodeStartCodePoint or codePoint == emojiShortcodeCompleteCodePoint) then
+            -- 查短代码
+            local findShortcode = false
+            if codePoint == emojiShortcodeCompleteCodePoint and shortcodeStartIndex > 0 and index - shortcodeStartIndex > 1 then
+                -- 中间可能有emoji短代码
+                local shortCodeByteStartIndex = codePointStartIndexes[shortcodeStartIndex + 1]
+                local shortCodeByteEndIndex = codePointEndIndexes[index - 1]
+                local shortCode = text:sub(shortCodeByteStartIndex, shortCodeByteEndIndex)
 
-            local replacement
-            if type == "icon" then
-                replacement = self:GetEmojiIconByUnicodeKey(unicodeKey, true) or L[unicodeKey]
-            else
-                replacement = L[unicodeKey]
+                -- 无论该短代码是否能转换为图标，都认为这一段已经结束了
+                shortcodeStartIndex = 0
+
+                local unicodeKey = self:SeachEmojiByName(shortCode)
+                if unicodeKey then
+                    findShortcode = true
+
+                    local icon = self:GetEmojiIconByUnicodeKey(unicodeKey, true)
+                    if icon then
+                        -- 组合中间非emoji部分，这里-2是因为要去掉短代码开始符
+                        result = result .. text:sub(emojiEndIndex, shortCodeByteStartIndex - 2)
+                        result = result .. icon
+
+                        emojiEndIndex = codePointEndIndexes[index] + 1
+                    end
+                end          
             end
-            
-            if replacement then
-                local emojiStartIndex = codePointStartIndexes[start]
-                if emojiStartIndex - emojiEndIndex > 0 then
-                    result = result .. text:sub(emojiEndIndex, emojiStartIndex - 1)
+
+            -- 因为英文语系下，开始和结束都是：，所以需要判断findShortcode，否则会一个冒号当两个用
+            if codePoint == emojiShortcodeStartCodePoint and not findShortcode then
+                shortcodeStartIndex = index
+            end
+        else
+            if status == emojiInitFlag then
+                startIndex = nil
+            elseif status == emojiMaybeFlag then
+                if not startIndex then
+                    startIndex = index
                 end
-                result = result .. replacement
-                emojiEndIndex = codePointEndIndexes[index] + 1
+            elseif status == emojiEndFlag then
+                -- codePointEmojiStatusArray内的flag是以下形式时：
+                -- 0, 0, 1, 1, 2; 此时认为，1, 1, 2 可能为emoji
+                -- 0, 2, 2, 1, 2；此时认为有3个emoji
+                local start = startIndex or index
+                startIndex = nil
+                
+                local unicodeKey = table.concat(codePointArray, "_", start, index)
+    
+                local replacement
+                if showIcon then
+                    replacement = self:GetEmojiIconByUnicodeKey(unicodeKey, true) or self:GetEmojiShortcodeByUnicode(unicodeKey)
+                else
+                    replacement = self:GetEmojiShortcodeByUnicode(unicodeKey)
+                end
+                
+                if replacement then
+                    local emojiStartIndex = codePointStartIndexes[start]
+                    if emojiStartIndex - emojiEndIndex > 0 then
+                        -- 组合中间非emoji部分
+                        result = result .. text:sub(emojiEndIndex, emojiStartIndex - 1)
+                    end
+                    result = result .. replacement
+                    emojiEndIndex = codePointEndIndexes[index] + 1
+                end
             end
         end
     end
@@ -216,6 +261,21 @@ do
     for _, msgType in pairs(CHAT_MSG_TYPES) do
         ChatFrame_AddMessageEventFilter('CHAT_MSG_' .. msgType, replaceEmojiToIcon)
     end
+end
+
+do
+    -- 支持输入框显示
+    local function onChatEditTextChanged(self, userInput)
+        local text = self:GetText()
+        if not text then return end
+
+        local newText = addon:ReplaceEmojiToName(text)
+        if text ~= newText then
+            self:SetText(newText)
+        end
+    end
+
+    hooksecurefunc(_G, "ChatEdit_OnTextChanged", onChatEditTextChanged)
 end
 
 do
@@ -313,6 +373,4 @@ do
 
     EventRegistry:RegisterFrameEventAndCallback("PLAYER_ENTERING_WORLD", enableOrDisableChatBubble)
     EventRegistry:RegisterFrameEventAndCallback("CVAR_UPDATE", onCVarUpdate)
-
-
 end

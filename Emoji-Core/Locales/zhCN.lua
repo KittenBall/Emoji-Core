@@ -3,6 +3,13 @@ local addonName, addon = ...
 local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "zhCN")
 if not L then return end
 
+-- {: 0x7b
+L.shortcodeStartCodePoint = 123
+-- }: 0x7d
+L.shortcodeCompleteCodePoint = 125
+L["emoji_shortcode_start"] = "{"
+L["emoji_shortcode_complete"] = "}"
+
 -- emoji:😀; unicode = 1f600
 -- status: FULLY_QUALIFIED; since: E1.0
 L["128512_name"] = "嘿嘿"

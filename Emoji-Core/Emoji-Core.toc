@@ -20,6 +20,5 @@ Indexes\zhCN.lua
 Emojis.lua
 CodePoints.lua
 Core.lua
-EmojiPack.lua
 
 Api.lua
