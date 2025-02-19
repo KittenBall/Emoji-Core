@@ -346,6 +346,7 @@ do
             EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_YELL", startChatBubbleTask)
             EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_SAY", startChatBubbleTask)
             EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_PARTY", startChatBubbleTask)
+            EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_PARTY_LEADER", startChatBubbleTask)
         else
             if chatBubbles then
                 EventRegistry:RegisterFrameEventAndCallback("CHAT_MSG_YELL", startChatBubbleTask)
@@ -358,9 +359,11 @@ do
             
             if chatBubblesParty then
                 EventRegistry:RegisterFrameEventAndCallback("CHAT_MSG_PARTY", startChatBubbleTask)
+                EventRegistry:RegisterFrameEventAndCallback("CHAT_MSG_PARTY_LEADER", startChatBubbleTask)
             else
                 stopChatBubbleTask()
                 EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_PARTY", startChatBubbleTask)
+                EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_PARTY_LEADER", startChatBubbleTask)
             end
         end
     end
