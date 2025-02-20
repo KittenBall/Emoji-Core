@@ -318,9 +318,7 @@ do
                 local child = chatBubble:GetChildren()
                 if child and child.String then
                     local fontString = child.String
-                    if fontString then
-                        fontString:SetText(addon:ReplaceEmojiToIcon(fontString:GetText()))
-                    end
+                    fontString:SetText(addon:ReplaceEmojiToIcon(fontString:GetText()))
                 end
             end
         end
