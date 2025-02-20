@@ -64,8 +64,6 @@ function addon:ReplaceEmojiTo(text, type)
     local codePointArray, codePointStartIndexes, codePointEndIndexes, codePointLen, textLen = GetStringCodePoints(text)
     if not codePointArray then return text end
 
-    local showIcon = type == "icon"
-
     local rIndex = 1
     while rIndex <= codePointLen do
         local index = rIndex
@@ -142,11 +140,12 @@ function addon:ReplaceEmojiTo(text, type)
     -- codepoint index
     local startIndex = nil
     local shortcodeStartIndex = 0
+    local showIcon = type == "icon"
 
     for index = 1, codePointLen do
         local status = codePointEmojiStatusArray[index]
         local codePoint = codePointArray[index]
-        if showIcon and (codePoint == emojiShortcodeStartCodePoint or codePoint == emojiShortcodeCompleteCodePoint) then
+        if (codePoint == emojiShortcodeStartCodePoint or codePoint == emojiShortcodeCompleteCodePoint) then
             -- 查短代码
             local findShortcode = false
             if codePoint == emojiShortcodeCompleteCodePoint and shortcodeStartIndex > 0 and index - shortcodeStartIndex > 1 then
@@ -214,10 +213,17 @@ function addon:ReplaceEmojiTo(text, type)
     end
 
     if emojiEndIndex <= textLen then
-        result = result .. text:sub(emojiEndIndex, codePointEndIndexes[codePointLen])
+        result = result .. text:sub(emojiEndIndex, textLen)
     end
 
-    return result
+    -- 未完成的短代码
+    local uncompletedShortCode
+    if shortcodeStartIndex > 0 and shortcodeStartIndex < codePointLen then
+        local shortCodeByteStartIndex = codePointStartIndexes[shortcodeStartIndex + 1]
+        uncompletedShortCode = text:sub(shortCodeByteStartIndex, textLen)
+    end
+
+    return result, uncompletedShortCode
 end
 
 -- 将字符串内的emoji替换为名称
@@ -269,7 +275,7 @@ do
         local text = self:GetText()
         if not text then return end
 
-        local newText = addon:ReplaceEmojiToName(text)
+        local newText, uncompletedShortCode = addon:ReplaceEmojiToName(text)
         if text ~= newText then
             self:SetText(newText)
         end
