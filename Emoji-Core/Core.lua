@@ -161,13 +161,15 @@ function addon:ReplaceEmojiTo(text, type)
                 if unicodeKey then
                     findShortcode = true
 
-                    local icon = self:GetEmojiIconByUnicodeKey(unicodeKey, true)
-                    if icon then
-                        -- 组合中间非emoji部分，这里-2是因为要去掉短代码开始符
-                        result = result .. text:sub(emojiEndIndex, shortCodeByteStartIndex - 2)
-                        result = result .. icon
-
-                        emojiEndIndex = codePointEndIndexes[index] + 1
+                    if showIcon then
+                        local icon = self:GetEmojiIconByUnicodeKey(unicodeKey, true)
+                        if icon then
+                            -- 组合中间非emoji部分，这里-2是因为要去掉短代码开始符
+                            result = result .. text:sub(emojiEndIndex, shortCodeByteStartIndex - 2)
+                            result = result .. icon
+    
+                            emojiEndIndex = codePointEndIndexes[index] + 1
+                        end 
                     end
                 end          
             end
