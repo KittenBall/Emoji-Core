@@ -19,5 +19,5 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create Retail Package
+      - name: Create Package
         uses: BigWigsMods/packager@master
