@@ -4,6 +4,17 @@ if GetLocale() ~= "enUS" then return end
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 if not L then return end
 
+-- enable auto complete shortcode without a start delimiter if text len with [min, max] range
+L.EmojiAutoCompleteMinLength = 2
+L.EmojiAutoCompleteMaxLength = 7
+
+-- :: 0x3a
+L.shortcodeStartCodePoint = 58
+-- :: 0x3a
+L.shortcodeCompleteCodePoint = 58
+L["emoji_shortcode_start"] = ":"
+L["emoji_shortcode_complete"] = ":"
+
 L.EmojiKeywordList = {
 	"sodding",
 	"frowning",
