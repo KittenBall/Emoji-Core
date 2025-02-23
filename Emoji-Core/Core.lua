@@ -306,6 +306,11 @@ do
     -- 公会/社区输入框
     if C_AddOns.IsAddOnLoaded("Blizzard_Communities") then
         addon:EnableEmojiCompleterForEditBox(CommunitiesFrame.ChatEditBox)
+    else
+        local function OnAddonLoaded()
+            addon:EnableEmojiCompleterForEditBox(CommunitiesFrame.ChatEditBox)
+        end
+        EventRegistry:ContinueOnAddOnLoaded("Blizzard_Communities", OnAddonLoaded)
     end
 end
 
