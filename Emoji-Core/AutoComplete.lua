@@ -21,6 +21,7 @@ AutoCompleteFrame.Results = {}
 AutoCompleteFrame.ResultCount = 0
 AutoCompleteFrame:SetFrameStrata("DIALOG")
 
+
 local autoCompleteInstructions = AutoCompleteFrame:CreateFontString(nil, nil, "GameFontDisableSmall")
 autoCompleteInstructions:SetText(PRESS_TAB)
 autoCompleteInstructions:SetPoint("TOPLEFT", 15, -10)
@@ -64,8 +65,11 @@ end
 
 -- 附着到editbox
 function AutoCompleteFrame:Attach(editBox)
-    self:ClearAllPoints()
+    if self.EditBox == editBox then return end
+    self:Detach()
+    
     self.EditBox = editBox
+    self.EditBoxArrowKeyMode = editBox:GetAltArrowKeyMode()
 
     local height = self:CalcHeight(AUTOCOMPLETE_MAX_BUTTONS)
     local top = self:GetParent():GetHeight() - editBox:GetTop()
@@ -76,6 +80,33 @@ function AutoCompleteFrame:Attach(editBox)
         relativePoint = "BOTTOM"
     end
     self:SetPoint(point, editBox, relativePoint)
+end
+
+-- 取消附着
+function AutoCompleteFrame:Detach()
+    self:RestoreEditBoxArrowKeyMode()
+
+    self.EditBoxArrowKeyMode = nil
+    self.EditBox = nil
+    self:ClearAllPoints()
+    self:Hide()
+end
+
+-- 恢复输入框的箭头模式
+function AutoCompleteFrame:RestoreEditBoxArrowKeyMode()
+    local arrowKeyMode = self.EditBoxArrowKeyMode
+    local editBox = self.EditBox
+    if editBox and arrowKeyMode ~= nil then
+        editBox:SetAltArrowKeyMode(arrowKeyMode)    
+    end
+end
+
+-- 禁用输入框的箭头模式
+function AutoCompleteFrame:DisableEditBoxArrowKeyMode()
+    local editBox = self.EditBox
+    if editBox then
+        editBox:SetAltArrowKeyMode(false)
+    end
 end
 
 -- tab事件
@@ -89,10 +120,10 @@ end
 function AutoCompleteFrame:OnArrowPressed(editBox, key)
     if editBox ~= self.EditBox or not self:IsShown() then return end
 
-    if key == "up" then
-        self:IncrementSelection(false)
-    elseif key == "down" then
+    if key == "UP" then
         self:IncrementSelection(true)
+    elseif key == "DOWN" then
+        self:IncrementSelection(false)
     end
 end
 
@@ -115,7 +146,7 @@ end
 -- 输入框失去焦点
 function AutoCompleteFrame:OnEditBoxFocusLost(editBox)
     if editBox == self.EditBox then
-        self:Hide()
+        self:Detach()
     end
 end
 
@@ -137,7 +168,7 @@ end
 -- 输入框按下escape按钮
 function AutoCompleteFrame:OnEditBoxEscapePressed(editBox)
     if editBox ~= self.EditBox or not self:IsShown() then return end
-    self:Hide()
+    self:Detach()
     return true
 end
 
@@ -185,7 +216,8 @@ function AutoCompleteFrame:UpdateResults()
     local startIndex = max(selectedIndex - AUTOCOMPLETE_MAX_BUTTONS + 1, 0)
 
     if showCount <= 0 then
-        AutoCompleteFrame:Hide()
+        self:Hide()
+        self:RestoreEditBoxArrowKeyMode()
     else
         local maxWidth = 120
 
@@ -223,6 +255,7 @@ function AutoCompleteFrame:UpdateResults()
     
         self:SetHeight(self:CalcHeight(showCount))
         self:SetWidth(maxWidth)
+        self:DisableEditBoxArrowKeyMode()
         self:Show()
     end
 end
@@ -230,10 +263,11 @@ end
 -- 分帧检查
 local function OnEditBoxUpdate(self)
     local shortCode = self.shortCodePendingComplete
+    local regex = self.shortCodeRegex
+    if not shortCode or not regex then return end
 
     local nameIndex = self.shortCodeCompleteNameIndex
-    if shortCode and nameIndex < EmojiNameListSize then
-        local regex = ".*" .. shortCode
+    if nameIndex < EmojiNameListSize then
         local endIndex = min(EmojiNameListSize, nameIndex + 300)
         self.shortCodeCompleteNameIndex = endIndex
         
@@ -247,8 +281,7 @@ local function OnEditBoxUpdate(self)
     end
 
     local keywordIndex = self.shortCodeCompleteKeywordIndex
-    if shortCode and keywordIndex < EmojiKeywordListSize then
-        local regex = ".*" .. shortCode
+    if keywordIndex < EmojiKeywordListSize then
         local endIndex = min(EmojiKeywordListSize, keywordIndex + 300)
         self.shortCodeCompleteKeywordIndex = endIndex
         
@@ -266,6 +299,7 @@ end
 
 local function startAutoComplete(editBox, shortCode, shortCodeStartByteIndex, shortCodeEndByteIndex)
     editBox.shortCodePendingComplete = shortCode
+    editBox.shortCodeRegex = ".*" .. shortCode:gsub("%p", function(char) return "%" .. char end)
     editBox.shortCodeStartByteIndex = shortCodeStartByteIndex
     editBox.shortCodeEndByteIndex = shortCodeEndByteIndex
     editBox.shortCodeCompleteKeywordIndex = 0
@@ -323,8 +357,8 @@ local function OnEditBoxTabPressed(self)
     AutoCompleteFrame:OnTabPressed(self)
 end
 
-local function OnEditBoxArrowPressed(self)
-    AutoCompleteFrame:OnArrowPressed(self)
+local function OnEditBoxArrowPressed(self, up)
+    AutoCompleteFrame:OnArrowPressed(self, up)
 end
 
 local function OnEditBoxFocusLost(self)
