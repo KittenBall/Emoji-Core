@@ -1,5 +1,6 @@
 local addonName, addon = ...
 
+if GetLocale() ~= "enUS" then return end
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 if not L then return end
 
