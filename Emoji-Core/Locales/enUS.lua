@@ -3,6 +3,10 @@ local addonName, addon = ...
 local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "enUS", true, "raw")
 if not L then return end
 
+-- enable auto complete shortcode without a start delimiter if text len with [min, max] range
+L.EmojiAutoCompleteMinLength = 2
+L.EmojiAutoCompleteMaxLength = 7
+
 -- :: 0x3a
 L.shortcodeStartCodePoint = 58
 -- :: 0x3a

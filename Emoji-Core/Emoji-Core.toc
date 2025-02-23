@@ -19,6 +19,7 @@ Indexes\zhCN.lua
 
 Emojis.lua
 CodePoints.lua
+AutoComplete.lua
 Core.lua
 
 Api.lua

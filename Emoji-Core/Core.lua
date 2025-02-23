@@ -56,10 +56,17 @@ local emojiEndFlag = 2
 -- 短代码开始/结束
 local emojiShortcodeStartCodePoint = L.shortcodeStartCodePoint
 local emojiShortcodeCompleteCodePoint = L.shortcodeCompleteCodePoint
+-- emoji名字索引
+local EmojiNameIndexes = L.EmojiNameIndexes
 
 -- 将emoji替换为名字或图片
 -- @param text: 字符串
 -- @param type: "name": 名字 "icon": 图片
+-- @return newText: emoji被替换为对应的类型之后的文本
+-- @return hasEmoji: 替换之后的文本是否含有emoji 
+-- @return uncompletedShortCode: 未完成的短代码，可能为nil
+-- @return uncompletedShortCodeStartByteIndex: 未完成的短代码，byte起始位置（含emojiShortcodeStartCodePoint），可能为nil
+-- @return uncompletedShortCodeEndByteIndex: 未完成的短代码，byte结束位置，可能为nil
 function addon:ReplaceEmojiTo(text, type)
     local codePointArray, codePointStartIndexes, codePointEndIndexes, codePointLen, textLen = GetStringCodePoints(text)
     if not codePointArray then return text end
@@ -136,6 +143,7 @@ function addon:ReplaceEmojiTo(text, type)
     -- byte index
     local emojiEndIndex = 1
     local result = ""
+    local hasEmoji = false
 
     -- codepoint index
     local startIndex = nil
@@ -157,9 +165,10 @@ function addon:ReplaceEmojiTo(text, type)
                 -- 无论该短代码是否能转换为图标，都认为这一段已经结束了
                 shortcodeStartIndex = 0
 
-                local unicodeKey = self:SeachEmojiByName(shortCode)
+                local unicodeKey = EmojiNameIndexes[shortCode]
                 if unicodeKey then
                     findShortcode = true
+                    hasEmoji = true
 
                     if showIcon then
                         local icon = self:GetEmojiIconByUnicodeKey(unicodeKey, true)
@@ -196,12 +205,14 @@ function addon:ReplaceEmojiTo(text, type)
     
                 local replacement
                 if showIcon then
-                    replacement = self:GetEmojiIconByUnicodeKey(unicodeKey, true) or self:GetEmojiShortcodeByUnicode(unicodeKey)
+                    replacement = self:GetEmojiIconByUnicodeKey(unicodeKey, true) or self:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all")
                 else
-                    replacement = self:GetEmojiShortcodeByUnicode(unicodeKey)
+                    replacement = self:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all")
                 end
                 
                 if replacement then
+                    hasEmoji = true
+
                     local emojiStartIndex = codePointStartIndexes[start]
                     if emojiStartIndex - emojiEndIndex > 0 then
                         -- 组合中间非emoji部分
@@ -220,12 +231,16 @@ function addon:ReplaceEmojiTo(text, type)
 
     -- 未完成的短代码
     local uncompletedShortCode
+    local uncompletedShortCodeStartByteIndex
+    local uncompletedShortCodeEndByteIndex
     if shortcodeStartIndex > 0 and shortcodeStartIndex < codePointLen then
-        local shortCodeByteStartIndex = codePointStartIndexes[shortcodeStartIndex + 1]
-        uncompletedShortCode = text:sub(shortCodeByteStartIndex, textLen)
+        local startByteIndex = codePointStartIndexes[shortcodeStartIndex + 1]
+        uncompletedShortCodeStartByteIndex = startByteIndex - 1
+        uncompletedShortCodeEndByteIndex = textLen
+        uncompletedShortCode = text:sub(startByteIndex, uncompletedShortCodeEndByteIndex)
     end
 
-    return result, uncompletedShortCode
+    return result, hasEmoji, uncompletedShortCode, uncompletedShortCodeStartByteIndex, uncompletedShortCodeEndByteIndex
 end
 
 -- 将字符串内的emoji替换为名称
@@ -259,7 +274,9 @@ do
         'WHISPER_INFORM',
         'BN_WHISPER',
         'BN_WHISPER_INFORM',
-        'YELL'
+        'YELL',
+        'INSTANCE_CHAT',
+        'INSTANCE_CHAT_LEADER'
     }
 
     local function replaceEmojiToIcon(chatFrame, event, text, ...)
@@ -273,17 +290,18 @@ end
 
 do
     -- 支持输入框显示
-    local function onChatEditTextChanged(self, userInput)
-        local text = self:GetText()
-        if not text then return end
+    for i = 1, 10 do
+        local editBox = _G["ChatFrame" .. i .. "EditBox"]
+        addon:EnableEmojiCompleterForEditBox(editBox)
+    end
 
-        local newText, uncompletedShortCode = addon:ReplaceEmojiToName(text)
-        if text ~= newText then
-            self:SetText(newText)
+    local function enableEmojiCompleterForFloatingChatFrame(chatFrame)
+        if chatFrame.editBox then
+            addon:EnableEmojiCompleterForEditBox(chatFrame.editBox)
         end
     end
 
-    hooksecurefunc(_G, "ChatEdit_OnTextChanged", onChatEditTextChanged)
+    hooksecurefunc(_G, "FloatingChatFrame_OnLoad", enableEmojiCompleterForFloatingChatFrame)
 end
 
 do

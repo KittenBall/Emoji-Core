@@ -1,0 +1,11 @@
+## Interface: 110007
+## Author: KittenBall
+## Version: 20250223130313
+## Notes: EmojiPack: Noto
+## Notes-zhCN: Emoji表情包：Noto
+## DefaultState: enabled
+## Dependencies: Emoji-Core
+
+Locales\enUS.lua
+Locales\zhCN.lua
+Emoji-Noto.lua

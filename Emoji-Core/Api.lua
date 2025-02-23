@@ -42,11 +42,20 @@ local shortcodeStart = L["emoji_shortcode_start"]
 local shortcodeComplete = L["emoji_shortcode_complete"]
 
 -- 根据unicode key获取emoji短代码
-function addon:GetEmojiShortcodeByUnicode(key)
+-- @param shortcodeDelimiter 短代码分隔符 left, right, all or nil
+function addon:GetEmojiShortcodeByUnicodeKey(key, shortcodeDelimiter)
     if not key then return end
 
     local shortcode = L[key .. "_shortcode"]
     if not shortcode then return end
 
-    return shortcodeStart .. shortcode .. shortcodeComplete
+    if shortcodeDelimiter == "left" then
+        return shortcodeStart .. shortcode
+    elseif shortcodeDelimiter == "right" then
+        return shortcode .. shortcodeComplete
+    elseif shortcodeDelimiter == "all" then
+        return shortcodeStart .. shortcode .. shortcodeComplete
+    else
+        return shortcode
+    end
 end
