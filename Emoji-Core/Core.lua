@@ -302,6 +302,11 @@ do
     end
 
     hooksecurefunc(_G, "FloatingChatFrame_OnLoad", enableEmojiCompleterForFloatingChatFrame)
+
+    -- 公会/社区输入框
+    if C_AddOns.IsAddOnLoaded("Blizzard_Communities") then
+        addon:EnableEmojiCompleterForEditBox(CommunitiesFrame.ChatEditBox)
+    end
 end
 
 do

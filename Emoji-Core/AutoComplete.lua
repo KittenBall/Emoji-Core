@@ -19,6 +19,7 @@ AutoCompleteFrame:Hide()
 AutoCompleteFrame:SetClampedToScreen(true)
 AutoCompleteFrame.Results = {}
 AutoCompleteFrame.ResultCount = 0
+AutoCompleteFrame:SetFrameStrata("DIALOG")
 
 local autoCompleteInstructions = AutoCompleteFrame:CreateFontString(nil, nil, "GameFontDisableSmall")
 autoCompleteInstructions:SetText(PRESS_TAB)
