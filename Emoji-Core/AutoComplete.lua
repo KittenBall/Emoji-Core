@@ -134,6 +134,13 @@ function AutoCompleteFrame:OnEditBoxEnterPressed(editBox)
     end
 end
 
+-- 输入框按下escape按钮
+function AutoCompleteFrame:OnEditBoxEscapePressed(editBox)
+    if editBox ~= self.EditBox or not self:IsShown() then return end
+    self:Hide()
+    return true
+end
+
 -- 添加结果到输入框
 function AutoCompleteFrame:InsertResultToEditBox(unicodeKey)
     local editBox = self.EditBox
@@ -337,6 +344,19 @@ local function HookEditBoxOnEnterPressed(self)
     self:SetScript("OnEnterPressed", OnEditBoxEnterPressed)
 end
 
+local function OnEditBoxEscapePressed(self)
+    if AutoCompleteFrame:OnEditBoxEscapePressed(self) then
+        return
+    end
+    self:OldOnEscapePressed()
+end
+
+local function HookEditBoxOnEscapePressed(self)
+    local oldOnEscapePressed = self:GetScript("OnEscapePressed")
+    self.OldOnEscapePressed = oldOnEscapePressed
+    self:SetScript("OnEscapePressed", OnEditBoxEscapePressed)
+end
+
 -- 为editbox添加emoji自动补全功能
 function addon:EnableEmojiCompleterForEditBox(editBox)
     if editBox.emojiCompleterEnabled then
@@ -349,5 +369,6 @@ function addon:EnableEmojiCompleterForEditBox(editBox)
     editBox:HookScript("OnArrowPressed", OnEditBoxArrowPressed)
     editBox:HookScript("OnEditFocusLost", OnEditBoxFocusLost)
     HookEditBoxOnEnterPressed(editBox)
+    HookEditBoxOnEscapePressed(editBox)
     editBox.emojiCompleterEnabled = true
 end
