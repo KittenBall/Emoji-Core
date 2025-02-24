@@ -213,7 +213,7 @@ function AutoCompleteFrame:UpdateResults()
     local resultCount = self.ResultCount
     local showCount = min(resultCount, AUTOCOMPLETE_MAX_BUTTONS)
     local selectedIndex = self.SelectedIndex + 1
-    local startIndex = max(selectedIndex - AUTOCOMPLETE_MAX_BUTTONS + 1, 0)
+    local startIndex = resultCount == AUTOCOMPLETE_MAX_BUTTONS and 0 or max(selectedIndex - AUTOCOMPLETE_MAX_BUTTONS + 1, 0)
 
     if showCount <= 0 then
         self:Hide()
@@ -327,7 +327,7 @@ end
 
 local function OnEditBoxTextChanged(self)
     local text = self:GetText()
-    if not text or self:IsInIMECompositionMode() then return end
+    if not text or self:IsInIMECompositionMode() then stopAutoComplete(self) return end
 
     local newText, hasEmoji, uncompletedShortCode, uncompletedShortCodeStartByteIndex, uncompletedShortCodeEndByteIndex = addon:ReplaceEmojiToName(text)
 

@@ -24371,13 +24371,13 @@ L["128245_65039_name"] = "禁止使用手机"
 L["128245_65039_shortcode"] = "禁止使用手机"
 -- emoji:🔞; unicode = 1f51e
 -- status: FULLY_QUALIFIED; since: E0.6
-L["128286_name"] = "18禁"
-L["128286_shortcode"] = "18禁"
+L["128286_name"] = "18/禁"
+L["128286_shortcode"] = "18/禁"
 -- emoji:🔞; unicode = 1f51e-fe0f
 -- status: MINIMALLY_QUALIFIED; since: addon compat
 -- from: 🔞, 1f51e
-L["128286_65039_name"] = "18禁"
-L["128286_65039_shortcode"] = "18禁"
+L["128286_65039_name"] = "18/禁"
+L["128286_65039_shortcode"] = "18/禁"
 -- emoji:☢️; unicode = 2622-fe0f
 -- status: FULLY_QUALIFIED; since: E1.0
 L["9762_65039_name"] = "辐射"
