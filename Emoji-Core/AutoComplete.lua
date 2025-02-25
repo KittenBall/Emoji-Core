@@ -56,10 +56,11 @@ function AutoCompleteFrame:CalcHeight(itemCount)
 end
 
 -- 重置
-function AutoCompleteFrame:Reset()
+-- @param defaultSelect: 是否默认选中
+function AutoCompleteFrame:Reset(defaultSelect)
     table.wipe(self.Results)
     self.ResultCount = 0
-    self.SelectedIndex = 0
+    self.SelectedIndex = defaultSelect and 0 or -1
     self:UpdateResults()
 end
 
@@ -297,14 +298,14 @@ local function OnEditBoxUpdate(self)
     end
 end
 
-local function startAutoComplete(editBox, shortCode, shortCodeStartByteIndex, shortCodeEndByteIndex)
+local function startAutoComplete(editBox, startByShortCodeDelimiter, shortCode, shortCodeStartByteIndex, shortCodeEndByteIndex)
     editBox.shortCodePendingComplete = shortCode
     editBox.shortCodeRegex = ".*" .. shortCode:gsub("%p", function(char) return "%" .. char end)
     editBox.shortCodeStartByteIndex = shortCodeStartByteIndex
     editBox.shortCodeEndByteIndex = shortCodeEndByteIndex
     editBox.shortCodeCompleteKeywordIndex = 0
     editBox.shortCodeCompleteNameIndex = 0
-    AutoCompleteFrame:Reset()
+    AutoCompleteFrame:Reset(startByShortCodeDelimiter)
     AutoCompleteFrame:Attach(editBox)
 
     local unicodeKeys = EmojiNameIndexes[shortCode]
@@ -330,19 +331,21 @@ local function OnEditBoxTextChanged(self)
     if not text or self:IsInIMECompositionMode() then stopAutoComplete(self) return end
 
     local newText, hasEmoji, uncompletedShortCode, uncompletedShortCodeStartByteIndex, uncompletedShortCodeEndByteIndex = addon:ReplaceEmojiToName(text)
-
+    local startByShortCodeDelimiter = true
+    
     if not uncompletedShortCode and not hasEmoji and not newText:match("/") then
         local textLen = strlenutf8(newText)
         if textLen >= EmojiAutoCompleteMinLength and textLen <= EmojiAutoCompleteMaxLength then
             uncompletedShortCode = newText
             uncompletedShortCodeStartByteIndex = 0
             uncompletedShortCodeEndByteIndex = strlen(newText)
+            startByShortCodeDelimiter = false
         end
     end
 
     if uncompletedShortCode and AutoCompleteBox.parent ~= self and not AutoCompleteBox:IsShown() then
         if uncompletedShortCode ~= self.shortCodePendingComplete then
-            startAutoComplete(self, uncompletedShortCode, uncompletedShortCodeStartByteIndex, uncompletedShortCodeEndByteIndex)
+            startAutoComplete(self, startByShortCodeDelimiter, uncompletedShortCode, uncompletedShortCodeStartByteIndex, uncompletedShortCodeEndByteIndex)
         end
     else
         stopAutoComplete(self)
