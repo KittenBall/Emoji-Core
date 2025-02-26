@@ -20,34 +20,53 @@ AutoCompleteFrame:SetClampedToScreen(true)
 AutoCompleteFrame.Results = {}
 AutoCompleteFrame.ResultCount = 0
 AutoCompleteFrame:SetFrameStrata("DIALOG")
+AutoCompleteFrame:EnableKeyboard(true)
 
+do
+    local autoCompleteInstructions = AutoCompleteFrame:CreateFontString(nil, nil, "GameFontDisableSmall")
+    autoCompleteInstructions:SetText(PRESS_TAB)
+    autoCompleteInstructions:SetPoint("TOPLEFT", 15, -10)
+    
+    local autoCompletePressTips = AutoCompleteFrame:CreateFontString(nil, nil, "GameFontDisableSmall")
+    AutoCompleteFrame.PressTips = autoCompletePressTips
+    autoCompletePressTips:SetText(L["auto_complete_keyboard_press_tips"])
+    
+    local function onAutoCompleteButtonClick(self)
+        self:GetParent():OnAutoCompleteButtonClick(self.Index)
+    end
 
-local autoCompleteInstructions = AutoCompleteFrame:CreateFontString(nil, nil, "GameFontDisableSmall")
-autoCompleteInstructions:SetText(PRESS_TAB)
-autoCompleteInstructions:SetPoint("TOPLEFT", 15, -10)
-
-local lastButton = autoCompleteInstructions
-for i = 1, AUTOCOMPLETE_MAX_BUTTONS do
-    local button = CreateFrame("Button", nil, AutoCompleteFrame)
-    AutoCompleteFrame["Button" .. i] = button
-    button:SetSize(120, 30)
-    button:SetHighlightTexture([[Interface\Buttons\UI-Panel-Button-Highlight]], "ADD")
-    button:GetHighlightTexture():SetTexCoord(0, 0.625, 0, 0.6875)
-    button:SetPoint("LEFT", 5, 0)
-    button:SetPoint("RIGHT", -5, 0)
-    button:SetPoint("TOP", lastButton, "BOTTOM", 0, -5)
-    lastButton = button
-
-    local icon = button:CreateTexture()
-    button.Icon = icon
-    icon:SetSize(28, 28)
-    icon:SetPoint("LEFT", 10, 0)
-    icon:SetTexture(UNKNOWN_EMOJI)
-
-    local name = button:CreateFontString(nil, nil, "GameFontNormal")
-    button.Name = name
-    name:SetPoint("LEFT", icon, "RIGHT", 10, -3)
-    name:SetText(CONTINUED)
+    local lastButton = autoCompleteInstructions
+    for i = 1, AUTOCOMPLETE_MAX_BUTTONS do
+        local button = CreateFrame("Button", nil, AutoCompleteFrame)
+        AutoCompleteFrame["Button" .. i] = button
+        button:SetSize(120, 30)
+        button:SetHighlightTexture([[Interface\Buttons\UI-Panel-Button-Highlight]], "ADD")
+        button:GetHighlightTexture():SetTexCoord(0, 0.625, 0, 0.6875)
+        button:SetPoint("LEFT", 10, 0)
+        button:SetPoint("RIGHT", -5, 0)
+        button:SetPoint("TOP", lastButton, "BOTTOM", 0, -5)
+        button:SetScript("OnClick", onAutoCompleteButtonClick)
+        button.Index = i
+        lastButton = button
+    
+        local seq = button:CreateFontString(nil, nil, "GameFontDisable")
+        button.Seq = seq
+        seq:SetWidth(15)
+        seq:SetPoint("LEFT", 5, 0)
+        seq:SetText(i .. ".")
+        seq:SetJustifyH("LEFT")
+    
+        local icon = button:CreateTexture()
+        button.Icon = icon
+        icon:SetSize(28, 28)
+        icon:SetPoint("LEFT", seq, "RIGHT", 5, 0)
+        icon:SetTexture(UNKNOWN_EMOJI)
+    
+        local name = button:CreateFontString(nil, nil, "GameFontNormal")
+        button.Name = name
+        name:SetPoint("LEFT", icon, "RIGHT", 10, -3)
+        name:SetText(CONTINUED)
+    end
 end
 
 -- 计算高度
@@ -61,6 +80,7 @@ function AutoCompleteFrame:Reset(defaultSelect)
     table.wipe(self.Results)
     self.ResultCount = 0
     self.SelectedIndex = defaultSelect and 0 or -1
+    self.StartIndex = 0
     self:UpdateResults()
 end
 
@@ -146,24 +166,55 @@ end
 
 -- 输入框失去焦点
 function AutoCompleteFrame:OnEditBoxFocusLost(editBox)
-    if editBox == self.EditBox then
+    if editBox == self.EditBox and not self:IsMouseOver() then
         self:Detach()
     end
 end
 
--- 输入框按下回车按钮
-function AutoCompleteFrame:OnEditBoxEnterPressed(editBox)
+-- 输入框按下空格按钮
+function AutoCompleteFrame:OnEditBoxSpacePressed(editBox)
     if editBox ~= self.EditBox or not self:IsShown() then return end
 
     local seletedIndex = self.SelectedIndex + 1
-    local result = self.Results[seletedIndex]
+    local unicodeKey = self.Results[seletedIndex]
+    if not unicodeKey then return end
 
-    if result then
-        self:InsertResultToEditBox(result)
-        return true
-    else
-        return false
-    end
+    local text = editBox:GetText()
+
+    self:InsertResultToEditBox(unicodeKey, " ")
+end
+
+-- 输入框输入文字
+function AutoCompleteFrame:OnEditBoxChar(editBox, char)
+    if editBox ~= self.EditBox or not self:IsShown() then return end
+    -- 小于0说明该界面目前没有任何条目被选中，不该激活数字选择
+    -- if self.SelectedIndex < 0 then return end
+    
+    local resultCount = self.ResultCount
+    if resultCount <= 0 then return end
+    
+    local number = tonumber(char)
+    if not number or number > min(AUTOCOMPLETE_MAX_BUTTONS, resultCount) or number <= 0 then return end
+
+    local unicodeKey = self.Results[self.StartIndex + number]
+    if not unicodeKey then return end
+
+    self:InsertResultToEditBox(unicodeKey, char)
+end
+
+-- 候选项被点击
+function AutoCompleteFrame:OnAutoCompleteButtonClick(index)
+    local editBox = self.EditBox
+    if not editBox then return end
+
+    local resultCount = self.ResultCount
+    if resultCount <= 0 then return end
+
+    local unicodeKey = self.Results[self.StartIndex + index]
+    if not unicodeKey then return end
+
+    self:InsertResultToEditBox(unicodeKey)
+    editBox:SetFocus()
 end
 
 -- 输入框按下escape按钮
@@ -174,7 +225,7 @@ function AutoCompleteFrame:OnEditBoxEscapePressed(editBox)
 end
 
 -- 添加结果到输入框
-function AutoCompleteFrame:InsertResultToEditBox(unicodeKey)
+function AutoCompleteFrame:InsertResultToEditBox(unicodeKey, removeLastCharIfSameAs)
     local editBox = self.EditBox
     if not editBox then return end
 
@@ -192,7 +243,15 @@ function AutoCompleteFrame:InsertResultToEditBox(unicodeKey)
     if startByteIndex > 1 then
         newText = text:sub(1, startByteIndex - 1)
     end
-    newText = newText .. name .. text:sub(endByteIndex + 1)
+
+    local textRemainByteIndex = -1
+    if removeLastCharIfSameAs then
+        local lastChar = text:sub(-1)
+        if lastChar == removeLastCharIfSameAs then
+            textRemainByteIndex = -2
+        end
+    end
+    newText = newText .. name .. text:sub(endByteIndex + 1, textRemainByteIndex)
     editBox:SetText(newText)
 end
 
@@ -215,12 +274,14 @@ function AutoCompleteFrame:UpdateResults()
     local showCount = min(resultCount, AUTOCOMPLETE_MAX_BUTTONS)
     local selectedIndex = self.SelectedIndex + 1
     local startIndex = resultCount == AUTOCOMPLETE_MAX_BUTTONS and 0 or max(selectedIndex - AUTOCOMPLETE_MAX_BUTTONS + 1, 0)
+    self.StartIndex = startIndex
 
     if showCount <= 0 then
         self:Hide()
         self:RestoreEditBoxArrowKeyMode()
     else
-        local maxWidth = 120
+        local maxWidth = 130
+        local lastButton
 
         for i = 1, AUTOCOMPLETE_MAX_BUTTONS do
             local button = self["Button" .. i]
@@ -228,13 +289,17 @@ function AutoCompleteFrame:UpdateResults()
 
             if resultIndex == selectedIndex then
                 button:LockHighlight()
+                button.Seq:SetTextColor(GameFontHighlight:GetTextColor())
                 button.Name:SetTextColor(GameFontHighlight:GetTextColor())
             else
                 button:UnlockHighlight()
+                button.Seq:SetTextColor(GameFontDisable:GetTextColor())
                 button.Name:SetTextColor(GameFontNormal:GetTextColor())
             end
 
             if i <= showCount then
+                lastButton = button
+
                 button:Show()
 
                 if i == showCount and i < resultCount then
@@ -247,14 +312,27 @@ function AutoCompleteFrame:UpdateResults()
                     local emojiIcon = addon:GetEmojiIconByUnicodeKey(unicodeKey) or UNKNOWN_EMOJI
                     button.Icon:SetTexture(emojiIcon)
                     button.Name:SetText(addon:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all"))
-                    maxWidth = max(maxWidth, button.Name:GetWidth() + 70)
+                    maxWidth = max(maxWidth, button.Name:GetWidth() + 90)
                 end
             else
                 button:Hide()
             end
         end
-    
-        self:SetHeight(self:CalcHeight(showCount))
+        
+        
+        local height = self:CalcHeight(showCount)
+        if selectedIndex > 0 then
+            self.PressTips:ClearAllPoints()
+            self.PressTips:SetPoint("TOP", lastButton, "BOTTOM", 0, -5)
+            self.PressTips:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 15, 10)
+            self.PressTips:Show()
+            height = height + 25
+        else
+            self.PressTips:ClearAllPoints()
+            self.PressTips:Hide()
+        end
+
+        self:SetHeight(height)
         self:SetWidth(maxWidth)
         self:DisableEditBoxArrowKeyMode()
         self:Show()
@@ -368,17 +446,12 @@ local function OnEditBoxFocusLost(self)
     AutoCompleteFrame:OnEditBoxFocusLost(self)
 end
 
-local function OnEditBoxEnterPressed(self)
-    if AutoCompleteFrame:OnEditBoxEnterPressed(self) then
-        return
-    end
-    self:OldOnEnterPressed()
+local function OnEditBoxSpacePressed(self)
+    AutoCompleteFrame:OnEditBoxSpacePressed(self)
 end
 
-local function HookEditBoxOnEnterPressed(self)
-    local oldOnEnterPressed = self:GetScript("OnEnterPressed")
-    self.OldOnEnterPressed = oldOnEnterPressed
-    self:SetScript("OnEnterPressed", OnEditBoxEnterPressed)
+local function OnEditBoxChar(self, char)
+    AutoCompleteFrame:OnEditBoxChar(self, char)
 end
 
 local function OnEditBoxEscapePressed(self)
@@ -405,7 +478,8 @@ function addon:EnableEmojiCompleterForEditBox(editBox)
     editBox:HookScript("OnTabPressed", OnEditBoxTabPressed)
     editBox:HookScript("OnArrowPressed", OnEditBoxArrowPressed)
     editBox:HookScript("OnEditFocusLost", OnEditBoxFocusLost)
-    HookEditBoxOnEnterPressed(editBox)
+    editBox:HookScript("OnSpacePressed", OnEditBoxSpacePressed)
+    editBox:HookScript("OnChar", OnEditBoxChar)
     HookEditBoxOnEscapePressed(editBox)
     editBox.emojiCompleterEnabled = true
 end

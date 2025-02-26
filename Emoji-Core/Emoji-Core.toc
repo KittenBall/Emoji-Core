@@ -16,6 +16,8 @@ embeds.xml
 
 Locales\enUS.lua
 Locales\zhCN.lua
+Locales\localization_zhCN.lua
+Locales\localization_enUS.lua
 
 Indexes\enUS.lua
 Indexes\zhCN.lua
