@@ -188,7 +188,7 @@ end
 function AutoCompleteFrame:OnEditBoxChar(editBox, char)
     if editBox ~= self.EditBox or not self:IsShown() then return end
     -- 小于0说明该界面目前没有任何条目被选中，不该激活数字选择
-    -- if self.SelectedIndex < 0 then return end
+    if self.SelectedIndex < 0 then return end
     
     local resultCount = self.ResultCount
     if resultCount <= 0 then return end
