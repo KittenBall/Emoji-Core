@@ -1,9 +1,9 @@
-## Interface: 110007
+## Interface: 110100
 ## Interface-Classic: 11506
 ## Interface-Wrath: 30403
 ## Interface-Cata: 40402
 ## Author: KittenBall
-## Version: 20250223223409
+## Version: 20250227131242
 ## Notes: EmojiPack: Noto
 ## Notes-zhCN: Emoji表情包：Noto
 ## DefaultState: enabled
