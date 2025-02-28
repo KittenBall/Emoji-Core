@@ -3,7 +3,7 @@ This addon is designed to display emojis in the game.
 #### Addon features
 
 *   Pure byte stream parsing, making it extremely fast.
-*   Supports the display of all 3782 emojis from Unicode 16.0, including various variants, and is compatible with all known UNQUALIFIED or MINIMALLY\_QUALIFIED emojis.
+*   Supports the display of all 3781 emojis from Unicode 16.0, and 5042 if including various variants, and is compatible with all known UNQUALIFIED or MINIMALLY_QUALIFIED emojis.
 
 #### Currently implemented features
 
