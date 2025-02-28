@@ -47,8 +47,11 @@ function addon:GetEmojiShortcodeByUnicodeKey(key, shortcodeDelimiter)
     if not key then return end
 
     local shortcode = L[key .. "_shortcode"]
-    if not shortcode then return end
+    return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
+end
 
+function addon:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
+    if not shortcode then return end
     if shortcodeDelimiter == "left" then
         return shortcodeStart .. shortcode
     elseif shortcodeDelimiter == "right" then

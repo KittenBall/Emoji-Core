@@ -51,7 +51,7 @@ do
     
         local seq = button:CreateFontString(nil, nil, "GameFontDisable")
         button.Seq = seq
-        seq:SetWidth(15)
+        seq:SetWidth(20)
         seq:SetPoint("LEFT", 5, 0)
         seq:SetText(i .. ".")
         seq:SetJustifyH("LEFT")
@@ -176,12 +176,12 @@ function AutoCompleteFrame:OnEditBoxSpacePressed(editBox)
     if editBox ~= self.EditBox or not self:IsShown() then return end
 
     local seletedIndex = self.SelectedIndex + 1
-    local unicodeKey = self.Results[seletedIndex]
+    local unicodeKey, shortcode, icon = self:GetResult(seletedIndex)
     if not unicodeKey then return end
 
     local text = editBox:GetText()
 
-    self:InsertResultToEditBox(unicodeKey, " ")
+    self:InsertResultToEditBox(shortcode, " ")
 end
 
 -- 输入框输入文字
@@ -196,10 +196,10 @@ function AutoCompleteFrame:OnEditBoxChar(editBox, char)
     local number = tonumber(char)
     if not number or number > min(AUTOCOMPLETE_MAX_BUTTONS, resultCount) or number <= 0 then return end
 
-    local unicodeKey = self.Results[self.StartIndex + number]
+    local unicodeKey, shortcode, icon = self:GetResult(self.StartIndex + number)
     if not unicodeKey then return end
 
-    self:InsertResultToEditBox(unicodeKey, char)
+    self:InsertResultToEditBox(shortcode, char)
 end
 
 -- 候选项被点击
@@ -210,10 +210,10 @@ function AutoCompleteFrame:OnAutoCompleteButtonClick(index)
     local resultCount = self.ResultCount
     if resultCount <= 0 then return end
 
-    local unicodeKey = self.Results[self.StartIndex + index]
+    local unicodeKey, shortcode, icon = self:GetResult(self.StartIndex + index)
     if not unicodeKey then return end
 
-    self:InsertResultToEditBox(unicodeKey)
+    self:InsertResultToEditBox(shortcode)
     editBox:SetFocus()
 end
 
@@ -225,7 +225,9 @@ function AutoCompleteFrame:OnEditBoxEscapePressed(editBox)
 end
 
 -- 添加结果到输入框
-function AutoCompleteFrame:InsertResultToEditBox(unicodeKey, removeLastCharIfSameAs)
+function AutoCompleteFrame:InsertResultToEditBox(shortcode, removeLastCharIfSameAs)
+    if not shortcode then return end
+
     local editBox = self.EditBox
     if not editBox then return end
 
@@ -235,9 +237,6 @@ function AutoCompleteFrame:InsertResultToEditBox(unicodeKey, removeLastCharIfSam
 
     local text = editBox:GetText()
     if not text then return end
-
-    local name = addon:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all")
-    if not name then return end
 
     local newText = ""
     if startByteIndex > 1 then
@@ -251,15 +250,18 @@ function AutoCompleteFrame:InsertResultToEditBox(unicodeKey, removeLastCharIfSam
             textRemainByteIndex = -2
         end
     end
-    newText = newText .. name .. text:sub(endByteIndex + 1, textRemainByteIndex)
+    newText = newText .. shortcode .. text:sub(endByteIndex + 1, textRemainByteIndex)
     editBox:SetText(newText)
 end
 
 -- 添加结果
-function AutoCompleteFrame:AddResult(unicodeKey)
+function AutoCompleteFrame:AddResult(unicodeKey, shortcode)
     local results = self.Results
     if not results[unicodeKey] then
-        results[unicodeKey] = true
+        -- 这里将unicodekey对应的shortcode存下来
+        -- 因为一个unicodekey可以对应多个shortcode
+        -- 我们尽可能让用户输入的是其想要的那个
+        results[unicodeKey] = shortcode and addon:WrapperShortcodeWithDelimiter(shortcode, "all") or true
         self.ResultCount = self.ResultCount + 1
         results[self.ResultCount] = unicodeKey
         
@@ -267,9 +269,23 @@ function AutoCompleteFrame:AddResult(unicodeKey)
     end
 end
 
+-- 获取结果
+function AutoCompleteFrame:GetResult(index)
+    local results = self.Results
+    local unicodeKey = results[index]
+    if not unicodeKey then return end
+
+    local icon = addon:GetEmojiIconByUnicodeKey(unicodeKey) or UNKNOWN_EMOJI
+    local shortcode = results[unicodeKey]
+    if type(shortcode) ~= "string" then
+        shortcode = addon:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all")
+    end
+
+    return unicodeKey, shortcode, icon
+end
+
 -- 更新显示结果
 function AutoCompleteFrame:UpdateResults()
-    local results = self.Results
     local resultCount = self.ResultCount
     local showCount = min(resultCount, AUTOCOMPLETE_MAX_BUTTONS)
     local selectedIndex = self.SelectedIndex + 1
@@ -280,7 +296,7 @@ function AutoCompleteFrame:UpdateResults()
         self:Hide()
         self:RestoreEditBoxArrowKeyMode()
     else
-        local maxWidth = 130
+        local maxWidth = 135
         local lastButton
 
         for i = 1, AUTOCOMPLETE_MAX_BUTTONS do
@@ -308,11 +324,10 @@ function AutoCompleteFrame:UpdateResults()
                 else
                     button.Icon:Show()
 
-                    local unicodeKey = results[resultIndex]
-                    local emojiIcon = addon:GetEmojiIconByUnicodeKey(unicodeKey) or UNKNOWN_EMOJI
-                    button.Icon:SetTexture(emojiIcon)
-                    button.Name:SetText(addon:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all"))
-                    maxWidth = max(maxWidth, button.Name:GetWidth() + 90)
+                    local unicodeKey, shortcode, icon = self:GetResult(resultIndex)
+                    button.Icon:SetTexture(icon)
+                    button.Name:SetText(shortcode)
+                    maxWidth = max(maxWidth, button.Name:GetWidth() + 95)
                 end
             else
                 button:Hide()
@@ -354,6 +369,18 @@ local function OnEditBoxUpdate(self)
             local name = EmojiNameList[i]
             if name:match(regex) then
                 local unicodeKey = EmojiNameIndexes[name]
+                AutoCompleteFrame:AddResult(unicodeKey, name)
+            end
+        end
+
+        if endIndex < EmojiNameListSize then return end
+    end
+
+    if not self.shortCodeKeywordCompareFlag then
+        self.shortCodeKeywordCompareFlag = true
+        local unicodeKeys = EmojiKeywordIndexes[shortCode]
+        if unicodeKeys then
+            for _, unicodeKey in ipairs(unicodeKeys) do
                 AutoCompleteFrame:AddResult(unicodeKey)
             end
         end
@@ -378,24 +405,18 @@ end
 
 local function startAutoComplete(editBox, startByShortCodeDelimiter, shortCode, shortCodeStartByteIndex, shortCodeEndByteIndex)
     editBox.shortCodePendingComplete = shortCode
-    editBox.shortCodeRegex = ".*" .. shortCode:gsub("%p", function(char) return "%" .. char end)
+    editBox.shortCodeRegex = shortCode:gsub("%p", function(char) return "%" .. char end):lower()
     editBox.shortCodeStartByteIndex = shortCodeStartByteIndex
     editBox.shortCodeEndByteIndex = shortCodeEndByteIndex
     editBox.shortCodeCompleteKeywordIndex = 0
     editBox.shortCodeCompleteNameIndex = 0
+    editBox.shortCodeKeywordCompareFlag = false
     AutoCompleteFrame:Reset(startByShortCodeDelimiter)
     AutoCompleteFrame:Attach(editBox)
 
     local unicodeKeys = EmojiNameIndexes[shortCode]
     if unicodeKeys then
-        AutoCompleteFrame:AddResult(unicodeKeys)
-    end
-
-    unicodeKeys = EmojiKeywordIndexes[shortCode]
-    if unicodeKeys then
-        for _, unicodeKey in ipairs(unicodeKeys) do
-            AutoCompleteFrame:AddResult(unicodeKey)
-        end
+        AutoCompleteFrame:AddResult(unicodeKeys, shortCode)
     end
 end
 
