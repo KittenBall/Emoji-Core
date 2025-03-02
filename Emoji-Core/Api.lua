@@ -4,6 +4,10 @@ local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 -- export api
 Emojis = addon
 
+local Emojis = addon.Emojis
+local shortcodeStart = addon.Emojis.ShortcodeStartDelimiter
+local shortcodeComplete = addon.Emojis.ShortcodeEndDelimiter
+
 local EmojiPacks = {}
 
 -- 注册emoji包
@@ -38,15 +42,14 @@ function addon:GetEmojiIconByUnicodeKey(key, withEscapeSequences)
     end
 end
 
-local shortcodeStart = L["emoji_shortcode_start"]
-local shortcodeComplete = L["emoji_shortcode_complete"]
 
 -- 根据unicode key获取emoji短代码
 -- @param shortcodeDelimiter 短代码分隔符 left, right, all or nil
 function addon:GetEmojiShortcodeByUnicodeKey(key, shortcodeDelimiter)
     if not key then return end
 
-    local shortcode = L[key .. "_shortcode"]
+    local emoji = Emojis[key]
+    local shortcode = emoji and emoji.Shortcodes[1] or nil
     return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
 end
 

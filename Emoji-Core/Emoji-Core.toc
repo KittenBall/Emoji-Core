@@ -14,17 +14,14 @@
 
 embeds.xml
 
-Locales\enUS.lua
-Locales\zhCN.lua
 Locales\localization_zhCN.lua
 Locales\localization_enUS.lua
+Locales\Emojis_zhCN.lua
+Locales\Emojis_enUS.lua
 
-Indexes\enUS.lua
-Indexes\zhCN.lua
-
-Emojis.lua
 CodePoints.lua
 AutoComplete.lua
+Keyboard.xml
 Core.lua
 
 Api.lua

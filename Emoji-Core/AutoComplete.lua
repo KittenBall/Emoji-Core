@@ -1,14 +1,15 @@
 local addonName, addon = ...
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 
-local EmojiNameIndexes = L.EmojiNameIndexes
-local EmojiKeywordIndexes = L.EmojiKeywordIndexes
-local EmojiNameList = L.EmojiNameList
-local EmojiNameListSize = L.EmojiNameListSize
-local EmojiKeywordList = L.EmojiKeywordList
-local EmojiKeywordListSize = L.EmojiKeywordListSize
-local EmojiAutoCompleteMinLength = L.EmojiAutoCompleteMinLength
-local EmojiAutoCompleteMaxLength = L.EmojiAutoCompleteMaxLength
+local Emojis = addon.Emojis
+local ShortcodesToUnicodeKey = Emojis.ShortcodesToUnicodeKey
+local ShortcodeList = Emojis.ShortcodeList
+local ShortcodeCount = ShortcodeList.ShortcodeCount
+local EmojiKeywordIndexes = Emojis.KeywordIndexes
+local EmojiKeywordList = Emojis.KeywordList
+local EmojiKeywordListSize = EmojiKeywordList.KeywordListCount
+local EmojiAutoCompleteMinLength = Emojis.AutoCompleteMinLength
+local EmojiAutoCompleteMaxLength = Emojis.AutoCompleteMaxLength
 
 local AUTOCOMPLETE_MAX_BUTTONS = 6
 local UNKNOWN_EMOJI = [[Interface\ICONS\INV_Misc_QuestionMark]]
@@ -361,19 +362,19 @@ local function OnEditBoxUpdate(self)
     if not shortCode or not regex then return end
 
     local nameIndex = self.shortCodeCompleteNameIndex
-    if nameIndex < EmojiNameListSize then
-        local endIndex = min(EmojiNameListSize, nameIndex + 300)
+    if nameIndex < ShortcodeCount then
+        local endIndex = min(ShortcodeCount, nameIndex + 300)
         self.shortCodeCompleteNameIndex = endIndex
         
         for i = nameIndex + 1, endIndex do
-            local name = EmojiNameList[i]
+            local name = ShortcodeList[i]
             if name:match(regex) then
-                local unicodeKey = EmojiNameIndexes[name]
+                local unicodeKey = ShortcodesToUnicodeKey[name]
                 AutoCompleteFrame:AddResult(unicodeKey, name)
             end
         end
 
-        if endIndex < EmojiNameListSize then return end
+        if endIndex < ShortcodeCount then return end
     end
 
     if not self.shortCodeKeywordCompareFlag then
@@ -414,7 +415,7 @@ local function startAutoComplete(editBox, startByShortCodeDelimiter, shortCode, 
     AutoCompleteFrame:Reset(startByShortCodeDelimiter)
     AutoCompleteFrame:Attach(editBox)
 
-    local unicodeKeys = EmojiNameIndexes[shortCode]
+    local unicodeKeys = ShortcodesToUnicodeKey[shortCode]
     if unicodeKeys then
         AutoCompleteFrame:AddResult(unicodeKeys, shortCode)
     end

@@ -1,6 +1,6 @@
 local addonName, addon = ...
-local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 
+local Emojis = addon.Emojis
 -- 最近一次解析的字符串的codepoint序列
 local codePointArray = {}
 -- 存codepoint在最近一次解析的字符串中的开始索引
@@ -54,10 +54,10 @@ local emojiMaybeFlag = 1
 local emojiEndFlag = 2
 
 -- 短代码开始/结束
-local emojiShortcodeStartCodePoint = L.shortcodeStartCodePoint
-local emojiShortcodeCompleteCodePoint = L.shortcodeCompleteCodePoint
--- emoji名字索引
-local EmojiNameIndexes = L.EmojiNameIndexes
+local emojiShortcodeStartCodePoint = Emojis.ShortcodeStartCodePoint
+local emojiShortcodeCompleteCodePoint = Emojis.ShortcodeCompleteCodePoint
+-- emoji名字->unicode key
+local ShortcodesToUnicodeKey = Emojis.ShortcodesToUnicodeKey
 
 -- 将emoji替换为名字或图片
 -- @param text: 字符串
@@ -165,7 +165,7 @@ function addon:ReplaceEmojiTo(text, type)
                 -- 无论该短代码是否能转换为图标，都认为这一段已经结束了
                 shortcodeStartIndex = 0
 
-                local unicodeKey = EmojiNameIndexes[shortCode]
+                local unicodeKey = ShortcodesToUnicodeKey[shortCode]
                 if unicodeKey then
                     findShortcode = true
                     hasEmoji = true
@@ -293,24 +293,30 @@ do
     for i = 1, 10 do
         local editBox = _G["ChatFrame" .. i .. "EditBox"]
         addon:EnableEmojiCompleterForEditBox(editBox)
+        addon:EnableEmojiKeyboardForEditBox(editBox)
     end
 
-    local function enableEmojiCompleterForFloatingChatFrame(chatFrame)
+    local function enableEmojiFeaturesForFloatingChatFrame(chatFrame)
         if chatFrame.editBox then
             addon:EnableEmojiCompleterForEditBox(chatFrame.editBox)
+            addon:EnableEmojiKeyboardForEditBox(chatFrame.editBox)
         end
     end
 
-    hooksecurefunc(_G, "FloatingChatFrame_OnLoad", enableEmojiCompleterForFloatingChatFrame)
+    hooksecurefunc(_G, "FloatingChatFrame_OnLoad", enableEmojiFeaturesForFloatingChatFrame)
 
-    -- 公会/社区输入框
-    if C_AddOns.IsAddOnLoaded("Blizzard_Communities") then
-        addon:EnableEmojiCompleterForEditBox(CommunitiesFrame.ChatEditBox)
-    else
-        local function OnAddonLoaded()
+    if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+        -- 公会/社区输入框
+        if C_AddOns.IsAddOnLoaded("Blizzard_Communities") then
             addon:EnableEmojiCompleterForEditBox(CommunitiesFrame.ChatEditBox)
+            addon:EnableEmojiKeyboardForEditBox(CommunitiesFrame.ChatEditBox)
+        else
+            local function OnAddonLoaded()
+                addon:EnableEmojiCompleterForEditBox(CommunitiesFrame.ChatEditBox)
+                addon:EnableEmojiKeyboardForEditBox(CommunitiesFrame.ChatEditBox)
+            end
+            EventRegistry:ContinueOnAddOnLoaded("Blizzard_Communities", OnAddonLoaded)
         end
-        EventRegistry:ContinueOnAddOnLoaded("Blizzard_Communities", OnAddonLoaded)
     end
 end
 
