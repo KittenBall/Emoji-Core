@@ -10,17 +10,15 @@ function addon:AddRecentEmoji(emojiKey)
     local recentEmojis = self.Saved.RecentEmojis
     
     local size = #recentEmojis
-    if size == MAX_RECENT_EMOJIS_COUNT then
-        for i = 1, size do
-            if i == MAX_RECENT_EMOJIS_COUNT then
-                recentEmojis[i] = nil
-            elseif recentEmojis[i] == emojiKey then
-                table.remove(recentEmojis, i)
-                break
-            end
-        end 
-    end
-    table.insert(recentEmojis, emojiKey)
+    for i = 1, size do
+        if i == MAX_RECENT_EMOJIS_COUNT then
+            recentEmojis[i] = nil
+        elseif recentEmojis[i] == emojiKey then
+            table.remove(recentEmojis, i)
+            break
+        end
+    end 
+    table.insert(recentEmojis, 1, emojiKey)
 end
 
 -- 获取最近使用的emoji列表

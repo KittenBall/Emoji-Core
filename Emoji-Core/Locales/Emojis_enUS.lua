@@ -5,7 +5,7 @@ if GetLocale() ~= "enUS" then return end
 addon.Emojis = {
 	Popular = {
 		Name = "Popular",
-		EmojiCount = 133,
+		EmojiCount = 175,
 		"128514",
 		"10084_65039",
 		"129315",
@@ -30,6 +30,7 @@ addon.Emojis = {
 		"128518",
 		"129303",
 		"128521",
+		"128286",
 		"127874",
 		"129300",
 		"128079",
@@ -101,7 +102,7 @@ addon.Emojis = {
 		"128587",
 		"9785_65039",
 		"128529",
-		"128916",
+		"129396",
 		"128072",
 		"128169",
 		"9989",
@@ -139,6 +140,47 @@ addon.Emojis = {
 		"128569",
 		"129304",
 		"127799",
+		"128157",
+		"128164",
+		"129309",
+		"128048",
+		"128531",
+		"128152",
+		"127867",
+		"128543",
+		"128547",
+		"129488",
+		"128544",
+		"129312",
+		"128571",
+		"127769",
+		"128539",
+		"129305",
+		"128586",
+		"129505",
+		"129313",
+		"129323",
+		"127804",
+		"129346",
+		"128567",
+		"129299",
+		"9760_65039",
+		"129398",
+		"128566",
+		"128534",
+		"127925",
+		"128694",
+		"128537",
+		"127814",
+		"129297",
+		"128133",
+		"128535",
+		"128054",
+		"127827",
+		"9995",
+		"128069",
+		"128068",
+		"127807",
 	},
 
 	GroupInfo = {
@@ -2831,20 +2873,20 @@ addon.Emojis = {
 		["128512"] = "grinning",
 		["128512_65039"] = "grinning",
 		-- emoji:😃; unicode = 1f603
-		["128515"] = "grinning_face_with_big_eyes",
-		["128515_65039"] = "grinning_face_with_big_eyes",
+		["128515"] = "smiley",
+		["128515_65039"] = "smiley",
 		-- emoji:😄; unicode = 1f604
-		["128516"] = "grinning_face_with_closed_eyes",
-		["128516_65039"] = "grinning_face_with_closed_eyes",
+		["128516"] = "smile",
+		["128516_65039"] = "smile",
 		-- emoji:😁; unicode = 1f601
-		["128513"] = "beaming_face",
-		["128513_65039"] = "beaming_face",
+		["128513"] = "grin",
+		["128513_65039"] = "grin",
 		-- emoji:😆; unicode = 1f606
-		["128518"] = "laughing",
-		["128518_65039"] = "laughing",
+		["128518"] = "lol",
+		["128518_65039"] = "lol",
 		-- emoji:😅; unicode = 1f605
-		["128517"] = "grinning_face_with_sweat",
-		["128517_65039"] = "grinning_face_with_sweat",
+		["128517"] = "sweat_smile",
+		["128517_65039"] = "sweat_smile",
 		-- emoji:🤣; unicode = 1f923
 		["129315"] = "rofl",
 		["129315_65039"] = "rofl",
@@ -2879,8 +2921,8 @@ addon.Emojis = {
 		["129321"] = "star_struck",
 		["129321_65039"] = "star_struck",
 		-- emoji:😘; unicode = 1f618
-		["128536"] = "blowing_a_kiss",
-		["128536_65039"] = "blowing_a_kiss",
+		["128536"] = "kissing_heart",
+		["128536_65039"] = "kissing_heart",
 		-- emoji:😗; unicode = 1f617
 		["128535"] = "kissing",
 		["128535_65039"] = "kissing",
@@ -2891,14 +2933,14 @@ addon.Emojis = {
 		["128538"] = "kissing_closed_eyes",
 		["128538_65039"] = "kissing_closed_eyes",
 		-- emoji:😙; unicode = 1f619
-		["128537"] = "kissing_face_with_smiling_eyes",
-		["128537_65039"] = "kissing_face_with_smiling_eyes",
+		["128537"] = "kissing_smiling_eyes",
+		["128537_65039"] = "kissing_smiling_eyes",
 		-- emoji:🥲; unicode = 1f972
 		["129394"] = "smiling_face_with_tear",
 		["129394_65039"] = "smiling_face_with_tear",
 		-- emoji:😋; unicode = 1f60b
-		["128523"] = "savoring_food",
-		["128523_65039"] = "savoring_food",
+		["128523"] = "yum",
+		["128523_65039"] = "yum",
 		-- emoji:😛; unicode = 1f61b
 		["128539"] = "face_with_tongue",
 		["128539_65039"] = "face_with_tongue",
@@ -2918,20 +2960,20 @@ addon.Emojis = {
 		["129303"] = "hug",
 		["129303_65039"] = "hug",
 		-- emoji:🤭; unicode = 1f92d
-		["129325"] = "face_with_hand_over_mouth",
-		["129325_65039"] = "face_with_hand_over_mouth",
+		["129325"] = "hand_over_mouth",
+		["129325_65039"] = "hand_over_mouth",
 		-- emoji:🫢; unicode = 1fae2
-		["129762"] = "face_with_open_eyes_hand_over_mouth",
-		["129762_65039"] = "face_with_open_eyes_hand_over_mouth",
+		["129762"] = "gasp",
+		["129762_65039"] = "gasp",
 		-- emoji:🫣; unicode = 1fae3
-		["129763"] = "face_with_peeking_eye",
-		["129763_65039"] = "face_with_peeking_eye",
+		["129763"] = "peek",
+		["129763_65039"] = "peek",
 		-- emoji:🤫; unicode = 1f92b
 		["129323"] = "shush",
 		["129323_65039"] = "shush",
 		-- emoji:🤔; unicode = 1f914
-		["129300"] = "thinking",
-		["129300_65039"] = "thinking",
+		["129300"] = "wtf",
+		["129300_65039"] = "wtf",
 		-- emoji:🫡; unicode = 1fae1
 		["129761"] = "salute",
 		["129761_65039"] = "salute",
@@ -2939,8 +2981,8 @@ addon.Emojis = {
 		["129296"] = "zipper_mouth",
 		["129296_65039"] = "zipper_mouth",
 		-- emoji:🤨; unicode = 1f928
-		["129320"] = "face_with_raised_eyebrow",
-		["129320_65039"] = "face_with_raised_eyebrow",
+		["129320"] = "raised_eyebrow",
+		["129320_65039"] = "raised_eyebrow",
 		-- emoji:😐; unicode = 1f610
 		["128528"] = "neutral",
 		["128528_65039"] = "neutral",
@@ -3013,8 +3055,8 @@ addon.Emojis = {
 		["129314"] = "nauseated",
 		["129314_65039"] = "nauseated",
 		-- emoji:🤮; unicode = 1f92e
-		["129326"] = "face_vomiting",
-		["129326_65039"] = "face_vomiting",
+		["129326"] = "vomiting",
+		["129326_65039"] = "vomiting",
 		-- emoji:🤧; unicode = 1f927
 		["129319"] = "sneezing",
 		["129319_65039"] = "sneezing",
@@ -3045,8 +3087,8 @@ addon.Emojis = {
 		["129400"] = "disguised",
 		["129400_65039"] = "disguised",
 		-- emoji:😎; unicode = 1f60e
-		["128526"] = "smiling_face_with_sunglasses",
-		["128526_65039"] = "smiling_face_with_sunglasses",
+		["128526"] = "too_cool",
+		["128526_65039"] = "too_cool",
 		-- emoji:🤓; unicode = 1f913
 		["129299"] = "nerd",
 		["129299_65039"] = "nerd",
@@ -3069,8 +3111,8 @@ addon.Emojis = {
 		["9785_65039"] = "white_frowning_face",
 		["9785"] = "white_frowning_face",
 		-- emoji:😮; unicode = 1f62e
-		["128558"] = "face_with_open_mouth",
-		["128558_65039"] = "face_with_open_mouth",
+		["128558"] = "open_mouth",
+		["128558_65039"] = "open_mouth",
 		-- emoji:😯; unicode = 1f62f
 		["128559"] = "hushed",
 		["128559_65039"] = "hushed",
@@ -3084,8 +3126,8 @@ addon.Emojis = {
 		["129402"] = "pleading",
 		["129402_65039"] = "pleading",
 		-- emoji:🥹; unicode = 1f979
-		["129401"] = "face_holding_back_tears",
-		["129401_65039"] = "face_holding_back_tears",
+		["129401"] = "watery_eyes",
+		["129401_65039"] = "watery_eyes",
 		-- emoji:😦; unicode = 1f626
 		["128550"] = "frowning",
 		["128550_65039"] = "frowning",
@@ -3099,14 +3141,14 @@ addon.Emojis = {
 		["128560"] = "anxious",
 		["128560_65039"] = "anxious",
 		-- emoji:😥; unicode = 1f625
-		["128549"] = "disappointed_relieved",
-		["128549_65039"] = "disappointed_relieved",
+		["128549"] = "sad_relieved_face",
+		["128549_65039"] = "sad_relieved_face",
 		-- emoji:😢; unicode = 1f622
 		["128546"] = "cry",
 		["128546_65039"] = "cry",
 		-- emoji:😭; unicode = 1f62d
-		["128557"] = "loudly_crying_face",
-		["128557_65039"] = "loudly_crying_face",
+		["128557"] = "sob",
+		["128557_65039"] = "sob",
 		-- emoji:😱; unicode = 1f631
 		["128561"] = "scream",
 		["128561_65039"] = "scream",
@@ -3120,8 +3162,8 @@ addon.Emojis = {
 		["128542"] = "disappointed",
 		["128542_65039"] = "disappointed",
 		-- emoji:😓; unicode = 1f613
-		["128531"] = "downcast_face",
-		["128531_65039"] = "downcast_face",
+		["128531"] = "sweat",
+		["128531_65039"] = "sweat",
 		-- emoji:😩; unicode = 1f629
 		["128553"] = "weary",
 		["128553_65039"] = "weary",
@@ -3132,8 +3174,8 @@ addon.Emojis = {
 		["129393"] = "yawn",
 		["129393_65039"] = "yawn",
 		-- emoji:😤; unicode = 1f624
-		["128548"] = "nose_steam",
-		["128548_65039"] = "nose_steam",
+		["128548"] = "triumph",
+		["128548_65039"] = "triumph",
 		-- emoji:😡; unicode = 1f621
 		["128545"] = "pout",
 		["128545_65039"] = "pout",
@@ -3147,8 +3189,8 @@ addon.Emojis = {
 		["128520"] = "smiling_imp",
 		["128520_65039"] = "smiling_imp",
 		-- emoji:👿; unicode = 1f47f
-		["128127"] = "angry_imp",
-		["128127_65039"] = "angry_imp",
+		["128127"] = "imp",
+		["128127_65039"] = "imp",
 		-- emoji:💀; unicode = 1f480
 		["128128"] = "skull",
 		["128128_65039"] = "skull",
@@ -3162,8 +3204,8 @@ addon.Emojis = {
 		["129313"] = "clown",
 		["129313_65039"] = "clown",
 		-- emoji:👹; unicode = 1f479
-		["128121"] = "japanese_ogre",
-		["128121_65039"] = "japanese_ogre",
+		["128121"] = "ogre",
+		["128121_65039"] = "ogre",
 		-- emoji:👺; unicode = 1f47a
 		["128122"] = "goblin",
 		["128122_65039"] = "goblin",
@@ -3180,11 +3222,11 @@ addon.Emojis = {
 		["129302"] = "robot",
 		["129302_65039"] = "robot",
 		-- emoji:😺; unicode = 1f63a
-		["128570"] = "grinning_cat",
-		["128570_65039"] = "grinning_cat",
+		["128570"] = "smiley_cat",
+		["128570_65039"] = "smiley_cat",
 		-- emoji:😸; unicode = 1f638
-		["128568"] = "grinning_cat_with_closed_eyes",
-		["128568_65039"] = "grinning_cat_with_closed_eyes",
+		["128568"] = "smile_cat",
+		["128568_65039"] = "smile_cat",
 		-- emoji:😹; unicode = 1f639
 		["128569"] = "joy_cat",
 		["128569_65039"] = "joy_cat",
@@ -3198,8 +3240,8 @@ addon.Emojis = {
 		["128573"] = "kissing_cat",
 		["128573_65039"] = "kissing_cat",
 		-- emoji:🙀; unicode = 1f640
-		["128576"] = "scream_cat",
-		["128576_65039"] = "scream_cat",
+		["128576"] = "weary_cat",
+		["128576_65039"] = "weary_cat",
 		-- emoji:😿; unicode = 1f63f
 		["128575"] = "crying_cat",
 		["128575_65039"] = "crying_cat",
@@ -3228,11 +3270,11 @@ addon.Emojis = {
 		["128150"] = "sparkling_heart",
 		["128150_65039"] = "sparkling_heart",
 		-- emoji:💗; unicode = 1f497
-		["128151"] = "growing_heart",
-		["128151_65039"] = "growing_heart",
+		["128151"] = "heartpulse",
+		["128151_65039"] = "heartpulse",
 		-- emoji:💓; unicode = 1f493
-		["128147"] = "beating_heart",
-		["128147_65039"] = "beating_heart",
+		["128147"] = "heartbeat",
+		["128147_65039"] = "heartbeat",
 		-- emoji:💞; unicode = 1f49e
 		["128158"] = "revolving_hearts",
 		["128158_65039"] = "revolving_hearts",
@@ -3882,18 +3924,18 @@ addon.Emojis = {
 		-- emoji:🫱🏿‍🫲🏾; unicode = 1faf1-1f3ff-200d-1faf2-1f3fe
 		["129777_127999_8205_129778_127998"] = "handshake_tone5-4",
 		-- emoji:🙏; unicode = 1f64f
-		["128591"] = "folded_hands",
-		["128591_65039"] = "folded_hands",
+		["128591"] = "pray",
+		["128591_65039"] = "pray",
 		-- emoji:🙏🏻; unicode = 1f64f-1f3fb
-		["128591_127995"] = "folded_hands_tone1",
+		["128591_127995"] = "pray_tone1",
 		-- emoji:🙏🏼; unicode = 1f64f-1f3fc
-		["128591_127996"] = "folded_hands_tone2",
+		["128591_127996"] = "pray_tone2",
 		-- emoji:🙏🏽; unicode = 1f64f-1f3fd
-		["128591_127997"] = "folded_hands_tone3",
+		["128591_127997"] = "pray_tone3",
 		-- emoji:🙏🏾; unicode = 1f64f-1f3fe
-		["128591_127998"] = "folded_hands_tone4",
+		["128591_127998"] = "pray_tone4",
 		-- emoji:🙏🏿; unicode = 1f64f-1f3ff
-		["128591_127999"] = "folded_hands_tone5",
+		["128591_127999"] = "pray_tone5",
 		-- emoji:✍️; unicode = 270d-fe0f
 		["9997_65039"] = "writing_hand",
 		["9997"] = "writing_hand",
@@ -3992,18 +4034,18 @@ addon.Emojis = {
 		-- emoji:👂🏿; unicode = 1f442-1f3ff
 		["128066_127999"] = "ear_tone5",
 		-- emoji:🦻; unicode = 1f9bb
-		["129467"] = "ear_with_hearing_aid",
-		["129467_65039"] = "ear_with_hearing_aid",
+		["129467"] = "hearing_aid",
+		["129467_65039"] = "hearing_aid",
 		-- emoji:🦻🏻; unicode = 1f9bb-1f3fb
-		["129467_127995"] = "ear_with_hearing_aid_tone1",
+		["129467_127995"] = "hearing_aid_tone1",
 		-- emoji:🦻🏼; unicode = 1f9bb-1f3fc
-		["129467_127996"] = "ear_with_hearing_aid_tone2",
+		["129467_127996"] = "hearing_aid_tone2",
 		-- emoji:🦻🏽; unicode = 1f9bb-1f3fd
-		["129467_127997"] = "ear_with_hearing_aid_tone3",
+		["129467_127997"] = "hearing_aid_tone3",
 		-- emoji:🦻🏾; unicode = 1f9bb-1f3fe
-		["129467_127998"] = "ear_with_hearing_aid_tone4",
+		["129467_127998"] = "hearing_aid_tone4",
 		-- emoji:🦻🏿; unicode = 1f9bb-1f3ff
-		["129467_127999"] = "ear_with_hearing_aid_tone5",
+		["129467_127999"] = "hearing_aid_tone5",
 		-- emoji:👃; unicode = 1f443
 		["128067"] = "nose",
 		["128067_65039"] = "nose",
@@ -4469,18 +4511,18 @@ addon.Emojis = {
 		["128589_127999_8205_9792_65039"] = "woman_frowning_tone5",
 		["128589_127999_8205_9792"] = "woman_frowning_tone5",
 		-- emoji:🙎; unicode = 1f64e
-		["128590"] = "person_pouting",
-		["128590_65039"] = "person_pouting",
+		["128590"] = "pouting",
+		["128590_65039"] = "pouting",
 		-- emoji:🙎🏻; unicode = 1f64e-1f3fb
-		["128590_127995"] = "person_pouting_tone1",
+		["128590_127995"] = "pouting_tone1",
 		-- emoji:🙎🏼; unicode = 1f64e-1f3fc
-		["128590_127996"] = "person_pouting_tone2",
+		["128590_127996"] = "pouting_tone2",
 		-- emoji:🙎🏽; unicode = 1f64e-1f3fd
-		["128590_127997"] = "person_pouting_tone3",
+		["128590_127997"] = "pouting_tone3",
 		-- emoji:🙎🏾; unicode = 1f64e-1f3fe
-		["128590_127998"] = "person_pouting_tone4",
+		["128590_127998"] = "pouting_tone4",
 		-- emoji:🙎🏿; unicode = 1f64e-1f3ff
-		["128590_127999"] = "person_pouting_tone5",
+		["128590_127999"] = "pouting_tone5",
 		-- emoji:🙎‍♂️; unicode = 1f64e-200d-2642-fe0f
 		["128590_8205_9794_65039"] = "man_pouting",
 		["128590_8205_9794"] = "man_pouting",
@@ -4861,18 +4903,18 @@ addon.Emojis = {
 		["129318_127999_8205_9792_65039"] = "woman_facepalming_tone5",
 		["129318_127999_8205_9792"] = "woman_facepalming_tone5",
 		-- emoji:🤷; unicode = 1f937
-		["129335"] = "person_shrugging",
-		["129335_65039"] = "person_shrugging",
+		["129335"] = "shrug",
+		["129335_65039"] = "shrug",
 		-- emoji:🤷🏻; unicode = 1f937-1f3fb
-		["129335_127995"] = "person_shrugging_tone1",
+		["129335_127995"] = "shrug_tone1",
 		-- emoji:🤷🏼; unicode = 1f937-1f3fc
-		["129335_127996"] = "person_shrugging_tone2",
+		["129335_127996"] = "shrug_tone2",
 		-- emoji:🤷🏽; unicode = 1f937-1f3fd
-		["129335_127997"] = "person_shrugging_tone3",
+		["129335_127997"] = "shrug_tone3",
 		-- emoji:🤷🏾; unicode = 1f937-1f3fe
-		["129335_127998"] = "person_shrugging_tone4",
+		["129335_127998"] = "shrug_tone4",
 		-- emoji:🤷🏿; unicode = 1f937-1f3ff
-		["129335_127999"] = "person_shrugging_tone5",
+		["129335_127999"] = "shrug_tone5",
 		-- emoji:🤷‍♂️; unicode = 1f937-200d-2642-fe0f
 		["129335_8205_9794_65039"] = "man_shrugging",
 		["129335_8205_9794"] = "man_shrugging",
@@ -5753,18 +5795,18 @@ addon.Emojis = {
 		["128119_127999_8205_9792_65039"] = "woman_construction_worker_tone5",
 		["128119_127999_8205_9792"] = "woman_construction_worker_tone5",
 		-- emoji:🫅; unicode = 1fac5
-		["129733"] = "person_with_crown",
-		["129733_65039"] = "person_with_crown",
+		["129733"] = "royalty",
+		["129733_65039"] = "royalty",
 		-- emoji:🫅🏻; unicode = 1fac5-1f3fb
-		["129733_127995"] = "person_with_crown_tone1",
+		["129733_127995"] = "royalty_tone1",
 		-- emoji:🫅🏼; unicode = 1fac5-1f3fc
-		["129733_127996"] = "person_with_crown_tone2",
+		["129733_127996"] = "royalty_tone2",
 		-- emoji:🫅🏽; unicode = 1fac5-1f3fd
-		["129733_127997"] = "person_with_crown_tone3",
+		["129733_127997"] = "royalty_tone3",
 		-- emoji:🫅🏾; unicode = 1fac5-1f3fe
-		["129733_127998"] = "person_with_crown_tone4",
+		["129733_127998"] = "royalty_tone4",
 		-- emoji:🫅🏿; unicode = 1fac5-1f3ff
-		["129733_127999"] = "person_with_crown_tone5",
+		["129733_127999"] = "royalty_tone5",
 		-- emoji:🤴; unicode = 1f934
 		["129332"] = "prince",
 		["129332_65039"] = "prince",
@@ -6566,18 +6608,18 @@ addon.Emojis = {
 		["128135_127999_8205_9792_65039"] = "woman_getting_haircut_tone5",
 		["128135_127999_8205_9792"] = "woman_getting_haircut_tone5",
 		-- emoji:🚶; unicode = 1f6b6
-		["128694"] = "person_walking",
-		["128694_65039"] = "person_walking",
+		["128694"] = "walking",
+		["128694_65039"] = "walking",
 		-- emoji:🚶🏻; unicode = 1f6b6-1f3fb
-		["128694_127995"] = "person_walking_tone1",
+		["128694_127995"] = "walking_tone1",
 		-- emoji:🚶🏼; unicode = 1f6b6-1f3fc
-		["128694_127996"] = "person_walking_tone2",
+		["128694_127996"] = "walking_tone2",
 		-- emoji:🚶🏽; unicode = 1f6b6-1f3fd
-		["128694_127997"] = "person_walking_tone3",
+		["128694_127997"] = "walking_tone3",
 		-- emoji:🚶🏾; unicode = 1f6b6-1f3fe
-		["128694_127998"] = "person_walking_tone4",
+		["128694_127998"] = "walking_tone4",
 		-- emoji:🚶🏿; unicode = 1f6b6-1f3ff
-		["128694_127999"] = "person_walking_tone5",
+		["128694_127999"] = "walking_tone5",
 		-- emoji:🚶‍♂️; unicode = 1f6b6-200d-2642-fe0f
 		["128694_8205_9794_65039"] = "man_walking",
 		["128694_8205_9794"] = "man_walking",
@@ -6693,18 +6735,18 @@ addon.Emojis = {
 		["128694_127999_8205_9794_65039_8205_10145"] = "man_walking_right_tone5",
 		["128694_127999_8205_9794_8205_10145"] = "man_walking_right_tone5",
 		-- emoji:🧍; unicode = 1f9cd
-		["129485"] = "person_standing",
-		["129485_65039"] = "person_standing",
+		["129485"] = "standing",
+		["129485_65039"] = "standing",
 		-- emoji:🧍🏻; unicode = 1f9cd-1f3fb
-		["129485_127995"] = "person_standing_tone1",
+		["129485_127995"] = "standing_tone1",
 		-- emoji:🧍🏼; unicode = 1f9cd-1f3fc
-		["129485_127996"] = "person_standing_tone2",
+		["129485_127996"] = "standing_tone2",
 		-- emoji:🧍🏽; unicode = 1f9cd-1f3fd
-		["129485_127997"] = "person_standing_tone3",
+		["129485_127997"] = "standing_tone3",
 		-- emoji:🧍🏾; unicode = 1f9cd-1f3fe
-		["129485_127998"] = "person_standing_tone4",
+		["129485_127998"] = "standing_tone4",
 		-- emoji:🧍🏿; unicode = 1f9cd-1f3ff
-		["129485_127999"] = "person_standing_tone5",
+		["129485_127999"] = "standing_tone5",
 		-- emoji:🧍‍♂️; unicode = 1f9cd-200d-2642-fe0f
 		["129485_8205_9794_65039"] = "man_standing",
 		["129485_8205_9794"] = "man_standing",
@@ -6869,17 +6911,17 @@ addon.Emojis = {
 		["129486_127999_8205_9794_65039_8205_10145"] = "man_kneeling_right_tone5",
 		["129486_127999_8205_9794_8205_10145"] = "man_kneeling_right_tone5",
 		-- emoji:🧑‍🦯; unicode = 1f9d1-200d-1f9af
-		["129489_8205_129455"] = "person_with_probing_cane",
+		["129489_8205_129455"] = "person_with_white_cane",
 		-- emoji:🧑🏻‍🦯; unicode = 1f9d1-1f3fb-200d-1f9af
-		["129489_127995_8205_129455"] = "person_with_probing_cane_tone1",
+		["129489_127995_8205_129455"] = "person_with_white_cane_tone1",
 		-- emoji:🧑🏼‍🦯; unicode = 1f9d1-1f3fc-200d-1f9af
-		["129489_127996_8205_129455"] = "person_with_probing_cane_tone2",
+		["129489_127996_8205_129455"] = "person_with_white_cane_tone2",
 		-- emoji:🧑🏽‍🦯; unicode = 1f9d1-1f3fd-200d-1f9af
-		["129489_127997_8205_129455"] = "person_with_probing_cane_tone3",
+		["129489_127997_8205_129455"] = "person_with_white_cane_tone3",
 		-- emoji:🧑🏾‍🦯; unicode = 1f9d1-1f3fe-200d-1f9af
-		["129489_127998_8205_129455"] = "person_with_probing_cane_tone4",
+		["129489_127998_8205_129455"] = "person_with_white_cane_tone4",
 		-- emoji:🧑🏿‍🦯; unicode = 1f9d1-1f3ff-200d-1f9af
-		["129489_127999_8205_129455"] = "person_with_probing_cane_tone5",
+		["129489_127999_8205_129455"] = "person_with_white_cane_tone5",
 		-- emoji:🧑‍🦯‍➡️; unicode = 1f9d1-200d-1f9af-200d-27a1-fe0f
 		["129489_8205_129455_8205_10145_65039"] = "person_with_white_cane_right",
 		["129489_8205_129455_8205_10145"] = "person_with_white_cane_right",
@@ -6899,17 +6941,17 @@ addon.Emojis = {
 		["129489_127999_8205_129455_8205_10145_65039"] = "person_with_white_cane_right_tone5",
 		["129489_127999_8205_129455_8205_10145"] = "person_with_white_cane_right_tone5",
 		-- emoji:👨‍🦯; unicode = 1f468-200d-1f9af
-		["128104_8205_129455"] = "man_with_probing_cane",
+		["128104_8205_129455"] = "man_with_white_cane",
 		-- emoji:👨🏻‍🦯; unicode = 1f468-1f3fb-200d-1f9af
-		["128104_127995_8205_129455"] = "man_with_probing_cane_tone1",
+		["128104_127995_8205_129455"] = "man_with_white_cane_tone1",
 		-- emoji:👨🏼‍🦯; unicode = 1f468-1f3fc-200d-1f9af
-		["128104_127996_8205_129455"] = "man_with_probing_cane_tone2",
+		["128104_127996_8205_129455"] = "man_with_white_cane_tone2",
 		-- emoji:👨🏽‍🦯; unicode = 1f468-1f3fd-200d-1f9af
-		["128104_127997_8205_129455"] = "man_with_probing_cane_tone3",
+		["128104_127997_8205_129455"] = "man_with_white_cane_tone3",
 		-- emoji:👨🏾‍🦯; unicode = 1f468-1f3fe-200d-1f9af
-		["128104_127998_8205_129455"] = "man_with_probing_cane_tone4",
+		["128104_127998_8205_129455"] = "man_with_white_cane_tone4",
 		-- emoji:👨🏿‍🦯; unicode = 1f468-1f3ff-200d-1f9af
-		["128104_127999_8205_129455"] = "man_with_probing_cane_tone5",
+		["128104_127999_8205_129455"] = "man_with_white_cane_tone5",
 		-- emoji:👨‍🦯‍➡️; unicode = 1f468-200d-1f9af-200d-27a1-fe0f
 		["128104_8205_129455_8205_10145_65039"] = "man_with_white_cane_right",
 		["128104_8205_129455_8205_10145"] = "man_with_white_cane_right",
@@ -6929,17 +6971,17 @@ addon.Emojis = {
 		["128104_127999_8205_129455_8205_10145_65039"] = "man_with_white_cane_right_tone5",
 		["128104_127999_8205_129455_8205_10145"] = "man_with_white_cane_right_tone5",
 		-- emoji:👩‍🦯; unicode = 1f469-200d-1f9af
-		["128105_8205_129455"] = "woman_with_probing_cane",
+		["128105_8205_129455"] = "woman_with_white_cane",
 		-- emoji:👩🏻‍🦯; unicode = 1f469-1f3fb-200d-1f9af
-		["128105_127995_8205_129455"] = "woman_with_probing_cane_tone1",
+		["128105_127995_8205_129455"] = "woman_with_white_cane_tone1",
 		-- emoji:👩🏼‍🦯; unicode = 1f469-1f3fc-200d-1f9af
-		["128105_127996_8205_129455"] = "woman_with_probing_cane_tone2",
+		["128105_127996_8205_129455"] = "woman_with_white_cane_tone2",
 		-- emoji:👩🏽‍🦯; unicode = 1f469-1f3fd-200d-1f9af
-		["128105_127997_8205_129455"] = "woman_with_probing_cane_tone3",
+		["128105_127997_8205_129455"] = "woman_with_white_cane_tone3",
 		-- emoji:👩🏾‍🦯; unicode = 1f469-1f3fe-200d-1f9af
-		["128105_127998_8205_129455"] = "woman_with_probing_cane_tone4",
+		["128105_127998_8205_129455"] = "woman_with_white_cane_tone4",
 		-- emoji:👩🏿‍🦯; unicode = 1f469-1f3ff-200d-1f9af
-		["128105_127999_8205_129455"] = "woman_with_probing_cane_tone5",
+		["128105_127999_8205_129455"] = "woman_with_white_cane_tone5",
 		-- emoji:👩‍🦯‍➡️; unicode = 1f469-200d-1f9af-200d-27a1-fe0f
 		["128105_8205_129455_8205_10145_65039"] = "woman_with_white_cane_right",
 		["128105_8205_129455_8205_10145"] = "woman_with_white_cane_right",
@@ -7139,18 +7181,18 @@ addon.Emojis = {
 		["128105_127999_8205_129469_8205_10145_65039"] = "woman_in_manual_wheelchair_right_tone5",
 		["128105_127999_8205_129469_8205_10145"] = "woman_in_manual_wheelchair_right_tone5",
 		-- emoji:🏃; unicode = 1f3c3
-		["127939"] = "person_running",
-		["127939_65039"] = "person_running",
+		["127939"] = "running",
+		["127939_65039"] = "running",
 		-- emoji:🏃🏻; unicode = 1f3c3-1f3fb
-		["127939_127995"] = "person_running_tone1",
+		["127939_127995"] = "running_tone1",
 		-- emoji:🏃🏼; unicode = 1f3c3-1f3fc
-		["127939_127996"] = "person_running_tone2",
+		["127939_127996"] = "running_tone2",
 		-- emoji:🏃🏽; unicode = 1f3c3-1f3fd
-		["127939_127997"] = "person_running_tone3",
+		["127939_127997"] = "running_tone3",
 		-- emoji:🏃🏾; unicode = 1f3c3-1f3fe
-		["127939_127998"] = "person_running_tone4",
+		["127939_127998"] = "running_tone4",
 		-- emoji:🏃🏿; unicode = 1f3c3-1f3ff
-		["127939_127999"] = "person_running_tone5",
+		["127939_127999"] = "running_tone5",
 		-- emoji:🏃‍♂️; unicode = 1f3c3-200d-2642-fe0f
 		["127939_8205_9794_65039"] = "man_running",
 		["127939_8205_9794"] = "man_running",
@@ -7428,21 +7470,21 @@ addon.Emojis = {
 		-- emoji:🏇🏿; unicode = 1f3c7-1f3ff
 		["127943_127999"] = "horse_racing_tone5",
 		-- emoji:⛷️; unicode = 26f7-fe0f
-		["9975_65039"] = "person_skiing",
-		["9975"] = "person_skiing",
+		["9975_65039"] = "skier",
+		["9975"] = "skier",
 		-- emoji:🏂; unicode = 1f3c2
-		["127938"] = "person_snowboarding",
-		["127938_65039"] = "person_snowboarding",
+		["127938"] = "snowboarder",
+		["127938_65039"] = "snowboarder",
 		-- emoji:🏂🏻; unicode = 1f3c2-1f3fb
-		["127938_127995"] = "person_snowboarding_tone1",
+		["127938_127995"] = "snowboarder_tone1",
 		-- emoji:🏂🏼; unicode = 1f3c2-1f3fc
-		["127938_127996"] = "person_snowboarding_tone2",
+		["127938_127996"] = "snowboarder_tone2",
 		-- emoji:🏂🏽; unicode = 1f3c2-1f3fd
-		["127938_127997"] = "person_snowboarding_tone3",
+		["127938_127997"] = "snowboarder_tone3",
 		-- emoji:🏂🏾; unicode = 1f3c2-1f3fe
-		["127938_127998"] = "person_snowboarding_tone4",
+		["127938_127998"] = "snowboarder_tone4",
 		-- emoji:🏂🏿; unicode = 1f3c2-1f3ff
-		["127938_127999"] = "person_snowboarding_tone5",
+		["127938_127999"] = "snowboarder_tone5",
 		-- emoji:🏌️; unicode = 1f3cc-fe0f
 		["127948_65039"] = "golfer",
 		["127948"] = "golfer",
@@ -7497,18 +7539,18 @@ addon.Emojis = {
 		["127948_127999_8205_9792_65039"] = "woman_golfing_tone5",
 		["127948_127999_8205_9792"] = "woman_golfing_tone5",
 		-- emoji:🏄; unicode = 1f3c4
-		["127940"] = "person_surfing",
-		["127940_65039"] = "person_surfing",
+		["127940"] = "surfer",
+		["127940_65039"] = "surfer",
 		-- emoji:🏄🏻; unicode = 1f3c4-1f3fb
-		["127940_127995"] = "person_surfing_tone1",
+		["127940_127995"] = "surfer_tone1",
 		-- emoji:🏄🏼; unicode = 1f3c4-1f3fc
-		["127940_127996"] = "person_surfing_tone2",
+		["127940_127996"] = "surfer_tone2",
 		-- emoji:🏄🏽; unicode = 1f3c4-1f3fd
-		["127940_127997"] = "person_surfing_tone3",
+		["127940_127997"] = "surfer_tone3",
 		-- emoji:🏄🏾; unicode = 1f3c4-1f3fe
-		["127940_127998"] = "person_surfing_tone4",
+		["127940_127998"] = "surfer_tone4",
 		-- emoji:🏄🏿; unicode = 1f3c4-1f3ff
-		["127940_127999"] = "person_surfing_tone5",
+		["127940_127999"] = "surfer_tone5",
 		-- emoji:🏄‍♂️; unicode = 1f3c4-200d-2642-fe0f
 		["127940_8205_9794_65039"] = "man_surfing",
 		["127940_8205_9794"] = "man_surfing",
@@ -7546,18 +7588,18 @@ addon.Emojis = {
 		["127940_127999_8205_9792_65039"] = "woman_surfing_tone5",
 		["127940_127999_8205_9792"] = "woman_surfing_tone5",
 		-- emoji:🚣; unicode = 1f6a3
-		["128675"] = "person_rowing_boat",
-		["128675_65039"] = "person_rowing_boat",
+		["128675"] = "rowboat",
+		["128675_65039"] = "rowboat",
 		-- emoji:🚣🏻; unicode = 1f6a3-1f3fb
-		["128675_127995"] = "person_rowing_boat_tone1",
+		["128675_127995"] = "rowboat_tone1",
 		-- emoji:🚣🏼; unicode = 1f6a3-1f3fc
-		["128675_127996"] = "person_rowing_boat_tone2",
+		["128675_127996"] = "rowboat_tone2",
 		-- emoji:🚣🏽; unicode = 1f6a3-1f3fd
-		["128675_127997"] = "person_rowing_boat_tone3",
+		["128675_127997"] = "rowboat_tone3",
 		-- emoji:🚣🏾; unicode = 1f6a3-1f3fe
-		["128675_127998"] = "person_rowing_boat_tone4",
+		["128675_127998"] = "rowboat_tone4",
 		-- emoji:🚣🏿; unicode = 1f6a3-1f3ff
-		["128675_127999"] = "person_rowing_boat_tone5",
+		["128675_127999"] = "rowboat_tone5",
 		-- emoji:🚣‍♂️; unicode = 1f6a3-200d-2642-fe0f
 		["128675_8205_9794_65039"] = "man_rowing_boat",
 		["128675_8205_9794"] = "man_rowing_boat",
@@ -7595,18 +7637,18 @@ addon.Emojis = {
 		["128675_127999_8205_9792_65039"] = "woman_rowing_boat_tone5",
 		["128675_127999_8205_9792"] = "woman_rowing_boat_tone5",
 		-- emoji:🏊; unicode = 1f3ca
-		["127946"] = "person_swimming",
-		["127946_65039"] = "person_swimming",
+		["127946"] = "swimmer",
+		["127946_65039"] = "swimmer",
 		-- emoji:🏊🏻; unicode = 1f3ca-1f3fb
-		["127946_127995"] = "person_swimming_tone1",
+		["127946_127995"] = "swimmer_tone1",
 		-- emoji:🏊🏼; unicode = 1f3ca-1f3fc
-		["127946_127996"] = "person_swimming_tone2",
+		["127946_127996"] = "swimmer_tone2",
 		-- emoji:🏊🏽; unicode = 1f3ca-1f3fd
-		["127946_127997"] = "person_swimming_tone3",
+		["127946_127997"] = "swimmer_tone3",
 		-- emoji:🏊🏾; unicode = 1f3ca-1f3fe
-		["127946_127998"] = "person_swimming_tone4",
+		["127946_127998"] = "swimmer_tone4",
 		-- emoji:🏊🏿; unicode = 1f3ca-1f3ff
-		["127946_127999"] = "person_swimming_tone5",
+		["127946_127999"] = "swimmer_tone5",
 		-- emoji:🏊‍♂️; unicode = 1f3ca-200d-2642-fe0f
 		["127946_8205_9794_65039"] = "man_swimming",
 		["127946_8205_9794"] = "man_swimming",
@@ -7697,18 +7739,18 @@ addon.Emojis = {
 		["9977_127999_8205_9792_65039"] = "woman_bouncing_ball_tone5",
 		["9977_127999_8205_9792"] = "woman_bouncing_ball_tone5",
 		-- emoji:🏋️; unicode = 1f3cb-fe0f
-		["127947_65039"] = "person_lifting_weights",
-		["127947"] = "person_lifting_weights",
+		["127947_65039"] = "weight_lifter",
+		["127947"] = "weight_lifter",
 		-- emoji:🏋🏻; unicode = 1f3cb-1f3fb
-		["127947_127995"] = "person_lifting_weights_tone1",
+		["127947_127995"] = "weight_lifter_tone1",
 		-- emoji:🏋🏼; unicode = 1f3cb-1f3fc
-		["127947_127996"] = "person_lifting_weights_tone2",
+		["127947_127996"] = "weight_lifter_tone2",
 		-- emoji:🏋🏽; unicode = 1f3cb-1f3fd
-		["127947_127997"] = "person_lifting_weights_tone3",
+		["127947_127997"] = "weight_lifter_tone3",
 		-- emoji:🏋🏾; unicode = 1f3cb-1f3fe
-		["127947_127998"] = "person_lifting_weights_tone4",
+		["127947_127998"] = "weight_lifter_tone4",
 		-- emoji:🏋🏿; unicode = 1f3cb-1f3ff
-		["127947_127999"] = "person_lifting_weights_tone5",
+		["127947_127999"] = "weight_lifter_tone5",
 		-- emoji:🏋️‍♂️; unicode = 1f3cb-fe0f-200d-2642-fe0f
 		["127947_65039_8205_9794_65039"] = "man_lifting_weights",
 		["127947_8205_9794_65039"] = "man_lifting_weights",
@@ -7750,18 +7792,18 @@ addon.Emojis = {
 		["127947_127999_8205_9792_65039"] = "woman_lifting_weights_tone5",
 		["127947_127999_8205_9792"] = "woman_lifting_weights_tone5",
 		-- emoji:🚴; unicode = 1f6b4
-		["128692"] = "bicyclist",
-		["128692_65039"] = "bicyclist",
+		["128692"] = "biking",
+		["128692_65039"] = "biking",
 		-- emoji:🚴🏻; unicode = 1f6b4-1f3fb
-		["128692_127995"] = "bicyclist_tone1",
+		["128692_127995"] = "biking_tone1",
 		-- emoji:🚴🏼; unicode = 1f6b4-1f3fc
-		["128692_127996"] = "bicyclist_tone2",
+		["128692_127996"] = "biking_tone2",
 		-- emoji:🚴🏽; unicode = 1f6b4-1f3fd
-		["128692_127997"] = "bicyclist_tone3",
+		["128692_127997"] = "biking_tone3",
 		-- emoji:🚴🏾; unicode = 1f6b4-1f3fe
-		["128692_127998"] = "bicyclist_tone4",
+		["128692_127998"] = "biking_tone4",
 		-- emoji:🚴🏿; unicode = 1f6b4-1f3ff
-		["128692_127999"] = "bicyclist_tone5",
+		["128692_127999"] = "biking_tone5",
 		-- emoji:🚴‍♂️; unicode = 1f6b4-200d-2642-fe0f
 		["128692_8205_9794_65039"] = "man_biking",
 		["128692_8205_9794"] = "man_biking",
@@ -7799,18 +7841,18 @@ addon.Emojis = {
 		["128692_127999_8205_9792_65039"] = "woman_biking_tone5",
 		["128692_127999_8205_9792"] = "woman_biking_tone5",
 		-- emoji:🚵; unicode = 1f6b5
-		["128693"] = "mountain_bicyclist",
-		["128693_65039"] = "mountain_bicyclist",
+		["128693"] = "mountain_biking",
+		["128693_65039"] = "mountain_biking",
 		-- emoji:🚵🏻; unicode = 1f6b5-1f3fb
-		["128693_127995"] = "mountain_bicyclist_tone1",
+		["128693_127995"] = "mountain_biking_tone1",
 		-- emoji:🚵🏼; unicode = 1f6b5-1f3fc
-		["128693_127996"] = "mountain_bicyclist_tone2",
+		["128693_127996"] = "mountain_biking_tone2",
 		-- emoji:🚵🏽; unicode = 1f6b5-1f3fd
-		["128693_127997"] = "mountain_bicyclist_tone3",
+		["128693_127997"] = "mountain_biking_tone3",
 		-- emoji:🚵🏾; unicode = 1f6b5-1f3fe
-		["128693_127998"] = "mountain_bicyclist_tone4",
+		["128693_127998"] = "mountain_biking_tone4",
 		-- emoji:🚵🏿; unicode = 1f6b5-1f3ff
-		["128693_127999"] = "mountain_bicyclist_tone5",
+		["128693_127999"] = "mountain_biking_tone5",
 		-- emoji:🚵‍♂️; unicode = 1f6b5-200d-2642-fe0f
 		["128693_8205_9794_65039"] = "man_mountain_biking",
 		["128693_8205_9794"] = "man_mountain_biking",
@@ -7897,8 +7939,8 @@ addon.Emojis = {
 		["129336_127999_8205_9792_65039"] = "woman_cartwheeling_tone5",
 		["129336_127999_8205_9792"] = "woman_cartwheeling_tone5",
 		-- emoji:🤼; unicode = 1f93c
-		["129340"] = "people_wrestling",
-		["129340_65039"] = "people_wrestling",
+		["129340"] = "wrestlers",
+		["129340_65039"] = "wrestlers",
 		-- emoji:🤼‍♂️; unicode = 1f93c-200d-2642-fe0f
 		["129340_8205_9794_65039"] = "men_wrestling",
 		["129340_8205_9794"] = "men_wrestling",
@@ -7906,18 +7948,18 @@ addon.Emojis = {
 		["129340_8205_9792_65039"] = "women_wrestling",
 		["129340_8205_9792"] = "women_wrestling",
 		-- emoji:🤽; unicode = 1f93d
-		["129341"] = "person_playing_water_polo",
-		["129341_65039"] = "person_playing_water_polo",
+		["129341"] = "water_polo",
+		["129341_65039"] = "water_polo",
 		-- emoji:🤽🏻; unicode = 1f93d-1f3fb
-		["129341_127995"] = "person_playing_water_polo_tone1",
+		["129341_127995"] = "water_polo_tone1",
 		-- emoji:🤽🏼; unicode = 1f93d-1f3fc
-		["129341_127996"] = "person_playing_water_polo_tone2",
+		["129341_127996"] = "water_polo_tone2",
 		-- emoji:🤽🏽; unicode = 1f93d-1f3fd
-		["129341_127997"] = "person_playing_water_polo_tone3",
+		["129341_127997"] = "water_polo_tone3",
 		-- emoji:🤽🏾; unicode = 1f93d-1f3fe
-		["129341_127998"] = "person_playing_water_polo_tone4",
+		["129341_127998"] = "water_polo_tone4",
 		-- emoji:🤽🏿; unicode = 1f93d-1f3ff
-		["129341_127999"] = "person_playing_water_polo_tone5",
+		["129341_127999"] = "water_polo_tone5",
 		-- emoji:🤽‍♂️; unicode = 1f93d-200d-2642-fe0f
 		["129341_8205_9794_65039"] = "man_playing_water_polo",
 		["129341_8205_9794"] = "man_playing_water_polo",
@@ -8339,78 +8381,78 @@ addon.Emojis = {
 		-- emoji:👬🏿; unicode = 1f46c-1f3ff
 		["128108_127999"] = "two_men_holding_hands_tone5",
 		-- emoji:💏; unicode = 1f48f
-		["128143"] = "couple_kiss",
-		["128143_65039"] = "couple_kiss",
+		["128143"] = "couplekiss",
+		["128143_65039"] = "couplekiss",
 		-- emoji:💏🏻; unicode = 1f48f-1f3fb
-		["128143_127995"] = "couple_kiss_tone1",
+		["128143_127995"] = "couplekiss_tone1",
 		-- emoji:💏🏼; unicode = 1f48f-1f3fc
-		["128143_127996"] = "couple_kiss_tone2",
+		["128143_127996"] = "couplekiss_tone2",
 		-- emoji:💏🏽; unicode = 1f48f-1f3fd
-		["128143_127997"] = "couple_kiss_tone3",
+		["128143_127997"] = "couplekiss_tone3",
 		-- emoji:💏🏾; unicode = 1f48f-1f3fe
-		["128143_127998"] = "couple_kiss_tone4",
+		["128143_127998"] = "couplekiss_tone4",
 		-- emoji:💏🏿; unicode = 1f48f-1f3ff
-		["128143_127999"] = "couple_kiss_tone5",
+		["128143_127999"] = "couplekiss_tone5",
 		-- emoji:🧑🏻‍❤️‍💋‍🧑🏼; unicode = 1f9d1-1f3fb-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fc
-		["129489_127995_8205_10084_65039_8205_128139_8205_129489_127996"] = "couple_kiss_tone1-2",
-		["129489_127995_8205_10084_8205_128139_8205_129489_127996"] = "couple_kiss_tone1-2",
+		["129489_127995_8205_10084_65039_8205_128139_8205_129489_127996"] = "couplekiss_tone1-2",
+		["129489_127995_8205_10084_8205_128139_8205_129489_127996"] = "couplekiss_tone1-2",
 		-- emoji:🧑🏻‍❤️‍💋‍🧑🏽; unicode = 1f9d1-1f3fb-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fd
-		["129489_127995_8205_10084_65039_8205_128139_8205_129489_127997"] = "couple_kiss_tone1-3",
-		["129489_127995_8205_10084_8205_128139_8205_129489_127997"] = "couple_kiss_tone1-3",
+		["129489_127995_8205_10084_65039_8205_128139_8205_129489_127997"] = "couplekiss_tone1-3",
+		["129489_127995_8205_10084_8205_128139_8205_129489_127997"] = "couplekiss_tone1-3",
 		-- emoji:🧑🏻‍❤️‍💋‍🧑🏾; unicode = 1f9d1-1f3fb-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fe
-		["129489_127995_8205_10084_65039_8205_128139_8205_129489_127998"] = "couple_kiss_tone1-4",
-		["129489_127995_8205_10084_8205_128139_8205_129489_127998"] = "couple_kiss_tone1-4",
+		["129489_127995_8205_10084_65039_8205_128139_8205_129489_127998"] = "couplekiss_tone1-4",
+		["129489_127995_8205_10084_8205_128139_8205_129489_127998"] = "couplekiss_tone1-4",
 		-- emoji:🧑🏻‍❤️‍💋‍🧑🏿; unicode = 1f9d1-1f3fb-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3ff
-		["129489_127995_8205_10084_65039_8205_128139_8205_129489_127999"] = "couple_kiss_tone1-5",
-		["129489_127995_8205_10084_8205_128139_8205_129489_127999"] = "couple_kiss_tone1-5",
+		["129489_127995_8205_10084_65039_8205_128139_8205_129489_127999"] = "couplekiss_tone1-5",
+		["129489_127995_8205_10084_8205_128139_8205_129489_127999"] = "couplekiss_tone1-5",
 		-- emoji:🧑🏼‍❤️‍💋‍🧑🏻; unicode = 1f9d1-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fb
-		["129489_127996_8205_10084_65039_8205_128139_8205_129489_127995"] = "couple_kiss_tone2-1",
-		["129489_127996_8205_10084_8205_128139_8205_129489_127995"] = "couple_kiss_tone2-1",
+		["129489_127996_8205_10084_65039_8205_128139_8205_129489_127995"] = "couplekiss_tone2-1",
+		["129489_127996_8205_10084_8205_128139_8205_129489_127995"] = "couplekiss_tone2-1",
 		-- emoji:🧑🏼‍❤️‍💋‍🧑🏽; unicode = 1f9d1-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fd
-		["129489_127996_8205_10084_65039_8205_128139_8205_129489_127997"] = "couple_kiss_tone2-3",
-		["129489_127996_8205_10084_8205_128139_8205_129489_127997"] = "couple_kiss_tone2-3",
+		["129489_127996_8205_10084_65039_8205_128139_8205_129489_127997"] = "couplekiss_tone2-3",
+		["129489_127996_8205_10084_8205_128139_8205_129489_127997"] = "couplekiss_tone2-3",
 		-- emoji:🧑🏼‍❤️‍💋‍🧑🏾; unicode = 1f9d1-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fe
-		["129489_127996_8205_10084_65039_8205_128139_8205_129489_127998"] = "couple_kiss_tone2-4",
-		["129489_127996_8205_10084_8205_128139_8205_129489_127998"] = "couple_kiss_tone2-4",
+		["129489_127996_8205_10084_65039_8205_128139_8205_129489_127998"] = "couplekiss_tone2-4",
+		["129489_127996_8205_10084_8205_128139_8205_129489_127998"] = "couplekiss_tone2-4",
 		-- emoji:🧑🏼‍❤️‍💋‍🧑🏿; unicode = 1f9d1-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3ff
-		["129489_127996_8205_10084_65039_8205_128139_8205_129489_127999"] = "couple_kiss_tone2-5",
-		["129489_127996_8205_10084_8205_128139_8205_129489_127999"] = "couple_kiss_tone2-5",
+		["129489_127996_8205_10084_65039_8205_128139_8205_129489_127999"] = "couplekiss_tone2-5",
+		["129489_127996_8205_10084_8205_128139_8205_129489_127999"] = "couplekiss_tone2-5",
 		-- emoji:🧑🏽‍❤️‍💋‍🧑🏻; unicode = 1f9d1-1f3fd-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fb
-		["129489_127997_8205_10084_65039_8205_128139_8205_129489_127995"] = "couple_kiss_tone3-1",
-		["129489_127997_8205_10084_8205_128139_8205_129489_127995"] = "couple_kiss_tone3-1",
+		["129489_127997_8205_10084_65039_8205_128139_8205_129489_127995"] = "couplekiss_tone3-1",
+		["129489_127997_8205_10084_8205_128139_8205_129489_127995"] = "couplekiss_tone3-1",
 		-- emoji:🧑🏽‍❤️‍💋‍🧑🏼; unicode = 1f9d1-1f3fd-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fc
-		["129489_127997_8205_10084_65039_8205_128139_8205_129489_127996"] = "couple_kiss_tone3-2",
-		["129489_127997_8205_10084_8205_128139_8205_129489_127996"] = "couple_kiss_tone3-2",
+		["129489_127997_8205_10084_65039_8205_128139_8205_129489_127996"] = "couplekiss_tone3-2",
+		["129489_127997_8205_10084_8205_128139_8205_129489_127996"] = "couplekiss_tone3-2",
 		-- emoji:🧑🏽‍❤️‍💋‍🧑🏾; unicode = 1f9d1-1f3fd-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fe
-		["129489_127997_8205_10084_65039_8205_128139_8205_129489_127998"] = "couple_kiss_tone3-4",
-		["129489_127997_8205_10084_8205_128139_8205_129489_127998"] = "couple_kiss_tone3-4",
+		["129489_127997_8205_10084_65039_8205_128139_8205_129489_127998"] = "couplekiss_tone3-4",
+		["129489_127997_8205_10084_8205_128139_8205_129489_127998"] = "couplekiss_tone3-4",
 		-- emoji:🧑🏽‍❤️‍💋‍🧑🏿; unicode = 1f9d1-1f3fd-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3ff
-		["129489_127997_8205_10084_65039_8205_128139_8205_129489_127999"] = "couple_kiss_tone3-5",
-		["129489_127997_8205_10084_8205_128139_8205_129489_127999"] = "couple_kiss_tone3-5",
+		["129489_127997_8205_10084_65039_8205_128139_8205_129489_127999"] = "couplekiss_tone3-5",
+		["129489_127997_8205_10084_8205_128139_8205_129489_127999"] = "couplekiss_tone3-5",
 		-- emoji:🧑🏾‍❤️‍💋‍🧑🏻; unicode = 1f9d1-1f3fe-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fb
-		["129489_127998_8205_10084_65039_8205_128139_8205_129489_127995"] = "couple_kiss_tone4-1",
-		["129489_127998_8205_10084_8205_128139_8205_129489_127995"] = "couple_kiss_tone4-1",
+		["129489_127998_8205_10084_65039_8205_128139_8205_129489_127995"] = "couplekiss_tone4-1",
+		["129489_127998_8205_10084_8205_128139_8205_129489_127995"] = "couplekiss_tone4-1",
 		-- emoji:🧑🏾‍❤️‍💋‍🧑🏼; unicode = 1f9d1-1f3fe-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fc
-		["129489_127998_8205_10084_65039_8205_128139_8205_129489_127996"] = "couple_kiss_tone4-2",
-		["129489_127998_8205_10084_8205_128139_8205_129489_127996"] = "couple_kiss_tone4-2",
+		["129489_127998_8205_10084_65039_8205_128139_8205_129489_127996"] = "couplekiss_tone4-2",
+		["129489_127998_8205_10084_8205_128139_8205_129489_127996"] = "couplekiss_tone4-2",
 		-- emoji:🧑🏾‍❤️‍💋‍🧑🏽; unicode = 1f9d1-1f3fe-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fd
-		["129489_127998_8205_10084_65039_8205_128139_8205_129489_127997"] = "couple_kiss_tone4-3",
-		["129489_127998_8205_10084_8205_128139_8205_129489_127997"] = "couple_kiss_tone4-3",
+		["129489_127998_8205_10084_65039_8205_128139_8205_129489_127997"] = "couplekiss_tone4-3",
+		["129489_127998_8205_10084_8205_128139_8205_129489_127997"] = "couplekiss_tone4-3",
 		-- emoji:🧑🏾‍❤️‍💋‍🧑🏿; unicode = 1f9d1-1f3fe-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3ff
-		["129489_127998_8205_10084_65039_8205_128139_8205_129489_127999"] = "couple_kiss_tone4-5",
-		["129489_127998_8205_10084_8205_128139_8205_129489_127999"] = "couple_kiss_tone4-5",
+		["129489_127998_8205_10084_65039_8205_128139_8205_129489_127999"] = "couplekiss_tone4-5",
+		["129489_127998_8205_10084_8205_128139_8205_129489_127999"] = "couplekiss_tone4-5",
 		-- emoji:🧑🏿‍❤️‍💋‍🧑🏻; unicode = 1f9d1-1f3ff-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fb
-		["129489_127999_8205_10084_65039_8205_128139_8205_129489_127995"] = "couple_kiss_tone5-1",
-		["129489_127999_8205_10084_8205_128139_8205_129489_127995"] = "couple_kiss_tone5-1",
+		["129489_127999_8205_10084_65039_8205_128139_8205_129489_127995"] = "couplekiss_tone5-1",
+		["129489_127999_8205_10084_8205_128139_8205_129489_127995"] = "couplekiss_tone5-1",
 		-- emoji:🧑🏿‍❤️‍💋‍🧑🏼; unicode = 1f9d1-1f3ff-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fc
-		["129489_127999_8205_10084_65039_8205_128139_8205_129489_127996"] = "couple_kiss_tone5-2",
-		["129489_127999_8205_10084_8205_128139_8205_129489_127996"] = "couple_kiss_tone5-2",
+		["129489_127999_8205_10084_65039_8205_128139_8205_129489_127996"] = "couplekiss_tone5-2",
+		["129489_127999_8205_10084_8205_128139_8205_129489_127996"] = "couplekiss_tone5-2",
 		-- emoji:🧑🏿‍❤️‍💋‍🧑🏽; unicode = 1f9d1-1f3ff-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fd
-		["129489_127999_8205_10084_65039_8205_128139_8205_129489_127997"] = "couple_kiss_tone5-3",
-		["129489_127999_8205_10084_8205_128139_8205_129489_127997"] = "couple_kiss_tone5-3",
+		["129489_127999_8205_10084_65039_8205_128139_8205_129489_127997"] = "couplekiss_tone5-3",
+		["129489_127999_8205_10084_8205_128139_8205_129489_127997"] = "couplekiss_tone5-3",
 		-- emoji:🧑🏿‍❤️‍💋‍🧑🏾; unicode = 1f9d1-1f3ff-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fe
-		["129489_127999_8205_10084_65039_8205_128139_8205_129489_127998"] = "couple_kiss_tone5-4",
-		["129489_127999_8205_10084_8205_128139_8205_129489_127998"] = "couple_kiss_tone5-4",
+		["129489_127999_8205_10084_65039_8205_128139_8205_129489_127998"] = "couplekiss_tone5-4",
+		["129489_127999_8205_10084_8205_128139_8205_129489_127998"] = "couplekiss_tone5-4",
 		-- emoji:👩‍❤️‍💋‍👨; unicode = 1f469-200d-2764-fe0f-200d-1f48b-200d-1f468
 		["128105_8205_10084_65039_8205_128139_8205_128104"] = "kiss_mw",
 		["128105_8205_10084_8205_128139_8205_128104"] = "kiss_mw",
@@ -9334,8 +9376,8 @@ addon.Emojis = {
 		["129429"] = "sauropod",
 		["129429_65039"] = "sauropod",
 		-- emoji:🦖; unicode = 1f996
-		["129430"] = "t-rex",
-		["129430_65039"] = "t-rex",
+		["129430"] = "trex",
+		["129430_65039"] = "trex",
 		-- emoji:🐳; unicode = 1f433
 		["128051"] = "spouting_whale",
 		["128051_65039"] = "spouting_whale",
@@ -9511,8 +9553,8 @@ addon.Emojis = {
 		["127811"] = "leaves",
 		["127811_65039"] = "leaves",
 		-- emoji:🪹; unicode = 1fab9
-		["129721"] = "empty_nest",
-		["129721_65039"] = "empty_nest",
+		["129721"] = "nest",
+		["129721_65039"] = "nest",
 		-- emoji:🪺; unicode = 1faba
 		["129722"] = "nest_with_eggs",
 		["129722_65039"] = "nest_with_eggs",
@@ -9680,8 +9722,8 @@ addon.Emojis = {
 		["127828"] = "hamburger",
 		["127828_65039"] = "hamburger",
 		-- emoji:🍟; unicode = 1f35f
-		["127839"] = "french_fries",
-		["127839_65039"] = "french_fries",
+		["127839"] = "fries",
+		["127839_65039"] = "fries",
 		-- emoji:🍕; unicode = 1f355
 		["127829"] = "pizza",
 		["127829_65039"] = "pizza",
@@ -9716,8 +9758,8 @@ addon.Emojis = {
 		["129368"] = "shallow_pan_of_food",
 		["129368_65039"] = "shallow_pan_of_food",
 		-- emoji:🍲; unicode = 1f372
-		["127858"] = "pot_of_food",
-		["127858_65039"] = "pot_of_food",
+		["127858"] = "stew",
+		["127858_65039"] = "stew",
 		-- emoji:🫕; unicode = 1fad5
 		["129749"] = "fondue",
 		["129749_65039"] = "fondue",
@@ -9725,8 +9767,8 @@ addon.Emojis = {
 		["129379"] = "bowl_with_spoon",
 		["129379_65039"] = "bowl_with_spoon",
 		-- emoji:🥗; unicode = 1f957
-		["129367"] = "green_salad",
-		["129367_65039"] = "green_salad",
+		["129367"] = "salad",
+		["129367_65039"] = "salad",
 		-- emoji:🍿; unicode = 1f37f
 		["127871"] = "popcorn",
 		["127871_65039"] = "popcorn",
@@ -9749,8 +9791,8 @@ addon.Emojis = {
 		["127833"] = "rice_ball",
 		["127833_65039"] = "rice_ball",
 		-- emoji:🍚; unicode = 1f35a
-		["127834"] = "cooked_rice",
-		["127834_65039"] = "cooked_rice",
+		["127834"] = "rice",
+		["127834_65039"] = "rice",
 		-- emoji:🍛; unicode = 1f35b
 		["127835"] = "curry",
 		["127835_65039"] = "curry",
@@ -9836,8 +9878,8 @@ addon.Emojis = {
 		["127868"] = "baby_bottle",
 		["127868_65039"] = "baby_bottle",
 		-- emoji:🥛; unicode = 1f95b
-		["129371"] = "glass_of_milk",
-		["129371_65039"] = "glass_of_milk",
+		["129371"] = "milk",
+		["129371_65039"] = "milk",
 		-- emoji:☕; unicode = 2615
 		["9749"] = "coffee",
 		["9749_65039"] = "coffee",
@@ -9872,8 +9914,8 @@ addon.Emojis = {
 		["129346"] = "clinking_glasses",
 		["129346_65039"] = "clinking_glasses",
 		-- emoji:🥃; unicode = 1f943
-		["129347"] = "tumbler_glass",
-		["129347_65039"] = "tumbler_glass",
+		["129347"] = "whisky",
+		["129347_65039"] = "whisky",
 		-- emoji:🫗; unicode = 1fad7
 		["129751"] = "pour",
 		["129751_65039"] = "pour",
@@ -9884,8 +9926,8 @@ addon.Emojis = {
 		["129483"] = "boba_drink",
 		["129483_65039"] = "boba_drink",
 		-- emoji:🧃; unicode = 1f9c3
-		["129475"] = "beverage_box",
-		["129475_65039"] = "beverage_box",
+		["129475"] = "juice_box",
+		["129475_65039"] = "juice_box",
 		-- emoji:🧉; unicode = 1f9c9
 		["129481"] = "mate",
 		["129481_65039"] = "mate",
@@ -9956,8 +9998,8 @@ addon.Emojis = {
 		["127964_65039"] = "desert",
 		["127964"] = "desert",
 		-- emoji:🏝️; unicode = 1f3dd-fe0f
-		["127965_65039"] = "desert_island",
-		["127965"] = "desert_island",
+		["127965_65039"] = "island",
+		["127965"] = "island",
 		-- emoji:🏞️; unicode = 1f3de-fe0f
 		["127966_65039"] = "national_park",
 		["127966"] = "national_park",
@@ -9968,8 +10010,8 @@ addon.Emojis = {
 		["127963_65039"] = "classical_building",
 		["127963"] = "classical_building",
 		-- emoji:🏗️; unicode = 1f3d7-fe0f
-		["127959_65039"] = "building_construction",
-		["127959"] = "building_construction",
+		["127959_65039"] = "construction_site",
+		["127959"] = "construction_site",
 		-- emoji:🧱; unicode = 1f9f1
 		["129521"] = "bricks",
 		["129521_65039"] = "bricks",
@@ -10085,8 +10127,8 @@ addon.Emojis = {
 		["127750"] = "city_dusk",
 		["127750_65039"] = "city_dusk",
 		-- emoji:🌇; unicode = 1f307
-		["127751"] = "city_sunrise",
-		["127751_65039"] = "city_sunrise",
+		["127751"] = "city_sunset",
+		["127751_65039"] = "city_sunset",
 		-- emoji:🌉; unicode = 1f309
 		["127753"] = "bridge_at_night",
 		["127753_65039"] = "bridge_at_night",
@@ -10097,8 +10139,8 @@ addon.Emojis = {
 		["127904"] = "carousel_horse",
 		["127904_65039"] = "carousel_horse",
 		-- emoji:🛝; unicode = 1f6dd
-		["128733"] = "playground_slide",
-		["128733_65039"] = "playground_slide",
+		["128733"] = "slide",
+		["128733_65039"] = "slide",
 		-- emoji:🎡; unicode = 1f3a1
 		["127905"] = "ferris_wheel",
 		["127905_65039"] = "ferris_wheel",
@@ -10184,14 +10226,14 @@ addon.Emojis = {
 		["128664"] = "oncoming_automobile",
 		["128664_65039"] = "oncoming_automobile",
 		-- emoji:🚙; unicode = 1f699
-		["128665"] = "blue_car",
-		["128665_65039"] = "blue_car",
+		["128665"] = "suv",
+		["128665_65039"] = "suv",
 		-- emoji:🛻; unicode = 1f6fb
 		["128763"] = "pickup_truck",
 		["128763_65039"] = "pickup_truck",
 		-- emoji:🚚; unicode = 1f69a
-		["128666"] = "delivery_truck",
-		["128666_65039"] = "delivery_truck",
+		["128666"] = "truck",
+		["128666_65039"] = "truck",
 		-- emoji:🚛; unicode = 1f69b
 		["128667"] = "articulated_lorry",
 		["128667_65039"] = "articulated_lorry",
@@ -10217,8 +10259,8 @@ addon.Emojis = {
 		["128762"] = "auto_rickshaw",
 		["128762_65039"] = "auto_rickshaw",
 		-- emoji:🚲; unicode = 1f6b2
-		["128690"] = "bicycle",
-		["128690_65039"] = "bicycle",
+		["128690"] = "bike",
+		["128690_65039"] = "bike",
 		-- emoji:🛴; unicode = 1f6f4
 		["128756"] = "scooter",
 		["128756_65039"] = "scooter",
@@ -10256,8 +10298,8 @@ addon.Emojis = {
 		["128678"] = "vertical_traffic_light",
 		["128678_65039"] = "vertical_traffic_light",
 		-- emoji:🛑; unicode = 1f6d1
-		["128721"] = "octagonal_sign",
-		["128721_65039"] = "octagonal_sign",
+		["128721"] = "stop_sign",
+		["128721_65039"] = "stop_sign",
 		-- emoji:🚧; unicode = 1f6a7
 		["128679"] = "construction",
 		["128679_65039"] = "construction",
@@ -10475,17 +10517,17 @@ addon.Emojis = {
 		["127774"] = "sun_with_face",
 		["127774_65039"] = "sun_with_face",
 		-- emoji:🪐; unicode = 1fa90
-		["129680"] = "ringed_planet",
-		["129680_65039"] = "ringed_planet",
+		["129680"] = "saturn",
+		["129680_65039"] = "saturn",
 		-- emoji:⭐; unicode = 2b50
 		["11088"] = "star",
 		["11088_65039"] = "star",
 		-- emoji:🌟; unicode = 1f31f
-		["127775"] = "glowing_star",
-		["127775_65039"] = "glowing_star",
+		["127775"] = "star2",
+		["127775_65039"] = "star2",
 		-- emoji:🌠; unicode = 1f320
-		["127776"] = "shooting_star",
-		["127776_65039"] = "shooting_star",
+		["127776"] = "stars",
+		["127776_65039"] = "stars",
 		-- emoji:🌌; unicode = 1f30c
 		["127756"] = "milky_way",
 		["127756_65039"] = "milky_way",
@@ -10499,8 +10541,8 @@ addon.Emojis = {
 		["9928_65039"] = "stormy",
 		["9928"] = "stormy",
 		-- emoji:🌤️; unicode = 1f324-fe0f
-		["127780_65039"] = "sun_behind_small_cloud",
-		["127780"] = "sun_behind_small_cloud",
+		["127780_65039"] = "sunny",
+		["127780"] = "sunny",
 		-- emoji:🌥️; unicode = 1f325-fe0f
 		["127781_65039"] = "cloudy",
 		["127781"] = "cloudy",
@@ -10508,14 +10550,14 @@ addon.Emojis = {
 		["127782_65039"] = "sun_and_rain",
 		["127782"] = "sun_and_rain",
 		-- emoji:🌧️; unicode = 1f327-fe0f
-		["127783_65039"] = "cloud_with_rain",
-		["127783"] = "cloud_with_rain",
+		["127783_65039"] = "rainy",
+		["127783"] = "rainy",
 		-- emoji:🌨️; unicode = 1f328-fe0f
-		["127784_65039"] = "cloud_with_snow",
-		["127784"] = "cloud_with_snow",
+		["127784_65039"] = "snowy",
+		["127784"] = "snowy",
 		-- emoji:🌩️; unicode = 1f329-fe0f
-		["127785_65039"] = "cloud_with_lightning",
-		["127785"] = "cloud_with_lightning",
+		["127785_65039"] = "lightning",
+		["127785"] = "lightning",
 		-- emoji:🌪️; unicode = 1f32a-fe0f
 		["127786_65039"] = "tornado",
 		["127786"] = "tornado",
@@ -10544,8 +10586,8 @@ addon.Emojis = {
 		["9969_65039"] = "beach_umbrella",
 		["9969"] = "beach_umbrella",
 		-- emoji:⚡; unicode = 26a1
-		["9889"] = "high_voltage",
-		["9889_65039"] = "high_voltage",
+		["9889"] = "zap",
+		["9889_65039"] = "zap",
 		-- emoji:❄️; unicode = 2744-fe0f
 		["10052_65039"] = "snowflake",
 		["10052"] = "snowflake",
@@ -10589,8 +10631,8 @@ addon.Emojis = {
 		["127880"] = "balloon",
 		["127880_65039"] = "balloon",
 		-- emoji:🎉; unicode = 1f389
-		["127881"] = "party",
-		["127881_65039"] = "party",
+		["127881"] = "tada",
+		["127881_65039"] = "tada",
 		-- emoji:🎊; unicode = 1f38a
 		["127882"] = "confetti_ball",
 		["127882_65039"] = "confetti_ball",
@@ -10604,14 +10646,14 @@ addon.Emojis = {
 		["127886"] = "dolls",
 		["127886_65039"] = "dolls",
 		-- emoji:🎏; unicode = 1f38f
-		["127887"] = "carp_streamer",
-		["127887_65039"] = "carp_streamer",
+		["127887"] = "flags",
+		["127887_65039"] = "flags",
 		-- emoji:🎐; unicode = 1f390
 		["127888"] = "wind_chime",
 		["127888_65039"] = "wind_chime",
 		-- emoji:🎑; unicode = 1f391
-		["127889"] = "moon_ceremony",
-		["127889_65039"] = "moon_ceremony",
+		["127889"] = "rice_scene",
+		["127889_65039"] = "rice_scene",
 		-- emoji:🧧; unicode = 1f9e7
 		["129511"] = "red_envelope",
 		["129511_65039"] = "red_envelope",
@@ -10625,8 +10667,8 @@ addon.Emojis = {
 		["127895_65039"] = "reminder_ribbon",
 		["127895"] = "reminder_ribbon",
 		-- emoji:🎟️; unicode = 1f39f-fe0f
-		["127903_65039"] = "admission_tickets",
-		["127903"] = "admission_tickets",
+		["127903_65039"] = "tickets",
+		["127903"] = "tickets",
 		-- emoji:🎫; unicode = 1f3ab
 		["127915"] = "ticket",
 		["127915_65039"] = "ticket",
@@ -10730,8 +10772,8 @@ addon.Emojis = {
 		["129356"] = "curling_stone",
 		["129356_65039"] = "curling_stone",
 		-- emoji:🎯; unicode = 1f3af
-		["127919"] = "bullseye",
-		["127919_65039"] = "bullseye",
+		["127919"] = "dart",
+		["127919_65039"] = "dart",
 		-- emoji:🪀; unicode = 1fa80
 		["129664"] = "yo_yo",
 		["129664_65039"] = "yo_yo",
@@ -10805,8 +10847,8 @@ addon.Emojis = {
 		["127917"] = "performing_arts",
 		["127917_65039"] = "performing_arts",
 		-- emoji:🖼️; unicode = 1f5bc-fe0f
-		["128444_65039"] = "frame_with_picture",
-		["128444"] = "frame_with_picture",
+		["128444_65039"] = "framed_picture",
+		["128444"] = "framed_picture",
 		-- emoji:🎨; unicode = 1f3a8
 		["127912"] = "art",
 		["127912_65039"] = "art",
@@ -10823,8 +10865,8 @@ addon.Emojis = {
 		["129698"] = "knot",
 		["129698_65039"] = "knot",
 		-- emoji:👓; unicode = 1f453
-		["128083"] = "eyeglasses",
-		["128083_65039"] = "eyeglasses",
+		["128083"] = "glasses",
+		["128083_65039"] = "glasses",
 		-- emoji:🕶️; unicode = 1f576-fe0f
 		["128374_65039"] = "sunglasses",
 		["128374"] = "sunglasses",
@@ -10892,8 +10934,8 @@ addon.Emojis = {
 		["128092"] = "handbag",
 		["128092_65039"] = "handbag",
 		-- emoji:👝; unicode = 1f45d
-		["128093"] = "clutch_bag",
-		["128093_65039"] = "clutch_bag",
+		["128093"] = "pouch",
+		["128093_65039"] = "pouch",
 		-- emoji:🛍️; unicode = 1f6cd-fe0f
 		["128717_65039"] = "shopping_bags",
 		["128717"] = "shopping_bags",
@@ -10907,8 +10949,8 @@ addon.Emojis = {
 		["128094"] = "mans_shoe",
 		["128094_65039"] = "mans_shoe",
 		-- emoji:👟; unicode = 1f45f
-		["128095"] = "athletic_shoe",
-		["128095_65039"] = "athletic_shoe",
+		["128095"] = "sneaker",
+		["128095_65039"] = "sneaker",
 		-- emoji:🥾; unicode = 1f97e
 		["129406"] = "hiking_boot",
 		["129406_65039"] = "hiking_boot",
@@ -10937,11 +10979,11 @@ addon.Emojis = {
 		["128082"] = "womans_hat",
 		["128082_65039"] = "womans_hat",
 		-- emoji:🎩; unicode = 1f3a9
-		["127913"] = "top_hat",
-		["127913_65039"] = "top_hat",
+		["127913"] = "tophat",
+		["127913_65039"] = "tophat",
 		-- emoji:🎓; unicode = 1f393
-		["127891"] = "graduation_cap",
-		["127891_65039"] = "graduation_cap",
+		["127891"] = "mortar_board",
+		["127891_65039"] = "mortar_board",
 		-- emoji:🧢; unicode = 1f9e2
 		["129506"] = "billed_cap",
 		["129506_65039"] = "billed_cap",
@@ -10967,14 +11009,14 @@ addon.Emojis = {
 		["128263"] = "mute",
 		["128263_65039"] = "mute",
 		-- emoji:🔈; unicode = 1f508
-		["128264"] = "low_volume",
-		["128264_65039"] = "low_volume",
+		["128264"] = "speaker",
+		["128264_65039"] = "speaker",
 		-- emoji:🔉; unicode = 1f509
-		["128265"] = "medium_volumne",
-		["128265_65039"] = "medium_volumne",
+		["128265"] = "sound",
+		["128265_65039"] = "sound",
 		-- emoji:🔊; unicode = 1f50a
-		["128266"] = "high_volume",
-		["128266_65039"] = "high_volume",
+		["128266"] = "loud_sound",
+		["128266_65039"] = "loud_sound",
 		-- emoji:📢; unicode = 1f4e2
 		["128226"] = "loudspeaker",
 		["128226_65039"] = "loudspeaker",
@@ -10997,8 +11039,8 @@ addon.Emojis = {
 		["127925"] = "musical_note",
 		["127925_65039"] = "musical_note",
 		-- emoji:🎶; unicode = 1f3b6
-		["127926"] = "musical_notes",
-		["127926_65039"] = "musical_notes",
+		["127926"] = "notes",
+		["127926_65039"] = "notes",
 		-- emoji:🎙️; unicode = 1f399-fe0f
 		["127897_65039"] = "studio_microphone",
 		["127897"] = "studio_microphone",
@@ -11054,8 +11096,8 @@ addon.Emojis = {
 		["129673"] = "harp",
 		["129673_65039"] = "harp",
 		-- emoji:📱; unicode = 1f4f1
-		["128241"] = "android",
-		["128241_65039"] = "android",
+		["128241"] = "iphone",
+		["128241_65039"] = "iphone",
 		-- emoji:📲; unicode = 1f4f2
 		["128242"] = "calling",
 		["128242_65039"] = "calling",
@@ -11099,8 +11141,8 @@ addon.Emojis = {
 		["128434_65039"] = "trackball",
 		["128434"] = "trackball",
 		-- emoji:💽; unicode = 1f4bd
-		["128189"] = "computer_disk",
-		["128189_65039"] = "computer_disk",
+		["128189"] = "minidisc",
+		["128189_65039"] = "minidisc",
 		-- emoji:💾; unicode = 1f4be
 		["128190"] = "floppy_disk",
 		["128190_65039"] = "floppy_disk",
@@ -11246,8 +11288,8 @@ addon.Emojis = {
 		["9993_65039"] = "envelope",
 		["9993"] = "envelope",
 		-- emoji:📧; unicode = 1f4e7
-		["128231"] = "e-mail",
-		["128231_65039"] = "e-mail",
+		["128231"] = "email",
+		["128231_65039"] = "email",
 		-- emoji:📨; unicode = 1f4e8
 		["128232"] = "incoming_envelope",
 		["128232_65039"] = "incoming_envelope",
@@ -11378,11 +11420,11 @@ addon.Emojis = {
 		["128275"] = "unlock",
 		["128275_65039"] = "unlock",
 		-- emoji:🔏; unicode = 1f50f
-		["128271"] = "lock_with_ink_pen",
-		["128271_65039"] = "lock_with_ink_pen",
+		["128271"] = "locked_with_pen",
+		["128271_65039"] = "locked_with_pen",
 		-- emoji:🔐; unicode = 1f510
-		["128272"] = "closed_lock_with_key",
-		["128272_65039"] = "closed_lock_with_key",
+		["128272"] = "locked_with_key",
+		["128272_65039"] = "locked_with_key",
 		-- emoji:🔑; unicode = 1f511
 		["128273"] = "key",
 		["128273_65039"] = "key",
@@ -11444,8 +11486,8 @@ addon.Emojis = {
 		["9878_65039"] = "scales",
 		["9878"] = "scales",
 		-- emoji:🦯; unicode = 1f9af
-		["129455"] = "probing_cane",
-		["129455_65039"] = "probing_cane",
+		["129455"] = "white_cane",
+		["129455_65039"] = "white_cane",
 		-- emoji:🔗; unicode = 1f517
 		["128279"] = "link",
 		["128279_65039"] = "link",
@@ -11501,8 +11543,8 @@ addon.Emojis = {
 		["128138"] = "pill",
 		["128138_65039"] = "pill",
 		-- emoji:🩹; unicode = 1fa79
-		["129657"] = "adhesive_bandage",
-		["129657_65039"] = "adhesive_bandage",
+		["129657"] = "bandaid",
+		["129657_65039"] = "bandaid",
 		-- emoji:🩼; unicode = 1fa7c
 		["129660"] = "crutch",
 		["129660_65039"] = "crutch",
@@ -11510,8 +11552,8 @@ addon.Emojis = {
 		["129658"] = "stethoscope",
 		["129658_65039"] = "stethoscope",
 		-- emoji:🩻; unicode = 1fa7b
-		["129659"] = "x-ray",
-		["129659_65039"] = "x-ray",
+		["129659"] = "xray",
+		["129659_65039"] = "xray",
 		-- emoji:🚪; unicode = 1f6aa
 		["128682"] = "door",
 		["128682_65039"] = "door",
@@ -11564,8 +11606,8 @@ addon.Emojis = {
 		["129530"] = "basket",
 		["129530_65039"] = "basket",
 		-- emoji:🧻; unicode = 1f9fb
-		["129531"] = "roll_of_paper",
-		["129531_65039"] = "roll_of_paper",
+		["129531"] = "toilet_paper",
+		["129531_65039"] = "toilet_paper",
 		-- emoji:🪣; unicode = 1faa3
 		["129699"] = "bucket",
 		["129699_65039"] = "bucket",
@@ -11588,8 +11630,8 @@ addon.Emojis = {
 		["128722"] = "shopping_cart",
 		["128722_65039"] = "shopping_cart",
 		-- emoji:🚬; unicode = 1f6ac
-		["128684"] = "cigarette",
-		["128684_65039"] = "cigarette",
+		["128684"] = "smoking",
+		["128684_65039"] = "smoking",
 		-- emoji:⚰️; unicode = 26b0-fe0f
 		["9904_65039"] = "coffin",
 		["9904"] = "coffin",
@@ -11624,8 +11666,8 @@ addon.Emojis = {
 		["128688"] = "potable_water",
 		["128688_65039"] = "potable_water",
 		-- emoji:♿; unicode = 267f
-		["9855"] = "handicapped",
-		["9855_65039"] = "handicapped",
+		["9855"] = "wheelchair",
+		["9855_65039"] = "wheelchair",
 		-- emoji:🚹; unicode = 1f6b9
 		["128697"] = "mens",
 		["128697_65039"] = "mens",
@@ -11639,8 +11681,8 @@ addon.Emojis = {
 		["128700"] = "baby_symbol",
 		["128700_65039"] = "baby_symbol",
 		-- emoji:🚾; unicode = 1f6be
-		["128702"] = "water_closet",
-		["128702_65039"] = "water_closet",
+		["128702"] = "wc",
+		["128702_65039"] = "wc",
 		-- emoji:🛂; unicode = 1f6c2
 		["128706"] = "passport_control",
 		["128706_65039"] = "passport_control",
@@ -11672,8 +11714,8 @@ addon.Emojis = {
 		["128685"] = "no_smoking",
 		["128685_65039"] = "no_smoking",
 		-- emoji:🚯; unicode = 1f6af
-		["128687"] = "do_not_litter",
-		["128687_65039"] = "do_not_litter",
+		["128687"] = "no_littering",
+		["128687_65039"] = "no_littering",
 		-- emoji:🚱; unicode = 1f6b1
 		["128689"] = "non-potable_water",
 		["128689_65039"] = "non-potable_water",
@@ -11684,8 +11726,8 @@ addon.Emojis = {
 		["128245"] = "no_mobile_phones",
 		["128245_65039"] = "no_mobile_phones",
 		-- emoji:🔞; unicode = 1f51e
-		["128286"] = "no_one_under_18",
-		["128286_65039"] = "no_one_under_18",
+		["128286"] = "underage",
+		["128286_65039"] = "underage",
 		-- emoji:☢️; unicode = 2622-fe0f
 		["9762_65039"] = "radioactive",
 		["9762"] = "radioactive",
@@ -11735,11 +11777,11 @@ addon.Emojis = {
 		["10549_65039"] = "arrow_heading_down",
 		["10549"] = "arrow_heading_down",
 		-- emoji:🔃; unicode = 1f503
-		["128259"] = "arrows_clockwise",
-		["128259_65039"] = "arrows_clockwise",
+		["128259"] = "clockwise",
+		["128259_65039"] = "clockwise",
 		-- emoji:🔄; unicode = 1f504
-		["128260"] = "arrows_counterclockwise",
-		["128260_65039"] = "arrows_counterclockwise",
+		["128260"] = "counterclockwise",
+		["128260_65039"] = "counterclockwise",
 		-- emoji:🔙; unicode = 1f519
 		["128281"] = "back",
 		["128281_65039"] = "back",
@@ -11843,8 +11885,8 @@ addon.Emojis = {
 		["128258"] = "repeat_one",
 		["128258_65039"] = "repeat_one",
 		-- emoji:▶️; unicode = 25b6-fe0f
-		["9654_65039"] = "arrow_forward",
-		["9654"] = "arrow_forward",
+		["9654_65039"] = "play",
+		["9654"] = "play",
 		-- emoji:⏩; unicode = 23e9
 		["9193"] = "fast_forward",
 		["9193_65039"] = "fast_forward",
@@ -11855,26 +11897,26 @@ addon.Emojis = {
 		["9199_65039"] = "play_pause",
 		["9199"] = "play_pause",
 		-- emoji:◀️; unicode = 25c0-fe0f
-		["9664_65039"] = "arrow_backward",
-		["9664"] = "arrow_backward",
+		["9664_65039"] = "reverse",
+		["9664"] = "reverse",
 		-- emoji:⏪; unicode = 23ea
-		["9194"] = "fast_reverse",
-		["9194_65039"] = "fast_reverse",
+		["9194"] = "rewind",
+		["9194_65039"] = "rewind",
 		-- emoji:⏮️; unicode = 23ee-fe0f
 		["9198_65039"] = "previous_track",
 		["9198"] = "previous_track",
 		-- emoji:🔼; unicode = 1f53c
-		["128316"] = "arrow_up_small",
-		["128316_65039"] = "arrow_up_small",
+		["128316"] = "up",
+		["128316_65039"] = "up",
 		-- emoji:⏫; unicode = 23eb
-		["9195"] = "arrow_double_up",
-		["9195_65039"] = "arrow_double_up",
+		["9195"] = "fast_up",
+		["9195_65039"] = "fast_up",
 		-- emoji:🔽; unicode = 1f53d
-		["128317"] = "arrow_down_small",
-		["128317_65039"] = "arrow_down_small",
+		["128317"] = "down",
+		["128317_65039"] = "down",
 		-- emoji:⏬; unicode = 23ec
-		["9196"] = "arrow_double_down",
-		["9196_65039"] = "arrow_double_down",
+		["9196"] = "fast_down",
+		["9196_65039"] = "fast_down",
 		-- emoji:⏸️; unicode = 23f8-fe0f
 		["9208_65039"] = "pause",
 		["9208"] = "pause",
@@ -11918,8 +11960,8 @@ addon.Emojis = {
 		["9895_65039"] = "transgender_symbol",
 		["9895"] = "transgender_symbol",
 		-- emoji:✖️; unicode = 2716-fe0f
-		["10006_65039"] = "multiplication",
-		["10006"] = "multiplication",
+		["10006_65039"] = "multiply",
+		["10006"] = "multiply",
 		-- emoji:➕; unicode = 2795
 		["10133"] = "plus",
 		["10133_65039"] = "plus",
@@ -11939,8 +11981,8 @@ addon.Emojis = {
 		["8252_65039"] = "bangbang",
 		["8252"] = "bangbang",
 		-- emoji:⁉️; unicode = 2049-fe0f
-		["8265_65039"] = "exclamation_question",
-		["8265"] = "exclamation_question",
+		["8265_65039"] = "interrobang",
+		["8265"] = "interrobang",
 		-- emoji:❓; unicode = 2753
 		["10067"] = "question",
 		["10067_65039"] = "question",
@@ -11981,11 +12023,11 @@ addon.Emojis = {
 		["128304"] = "beginner",
 		["128304_65039"] = "beginner",
 		-- emoji:⭕; unicode = 2b55
-		["11093"] = "hollow_red_circle",
-		["11093_65039"] = "hollow_red_circle",
+		["11093"] = "red_o",
+		["11093_65039"] = "red_o",
 		-- emoji:✅; unicode = 2705
-		["9989"] = "check_mark_button",
-		["9989_65039"] = "check_mark_button",
+		["9989"] = "white_check_mark",
+		["9989_65039"] = "white_check_mark",
 		-- emoji:☑️; unicode = 2611-fe0f
 		["9745_65039"] = "ballot_box_with_check",
 		["9745"] = "ballot_box_with_check",
@@ -11993,8 +12035,8 @@ addon.Emojis = {
 		["10004_65039"] = "check_mark",
 		["10004"] = "check_mark",
 		-- emoji:❌; unicode = 274c
-		["10060"] = "cross_mark",
-		["10060_65039"] = "cross_mark",
+		["10060"] = "x",
+		["10060_65039"] = "x",
 		-- emoji:❎; unicode = 274e
 		["10062"] = "cross_mark_button",
 		["10062_65039"] = "cross_mark_button",
@@ -12002,8 +12044,8 @@ addon.Emojis = {
 		["10160"] = "curly_loop",
 		["10160_65039"] = "curly_loop",
 		-- emoji:➿; unicode = 27bf
-		["10175"] = "double_curly_loop",
-		["10175_65039"] = "double_curly_loop",
+		["10175"] = "loop",
+		["10175_65039"] = "loop",
 		-- emoji:〽️; unicode = 303d-fe0f
 		["12349_65039"] = "part_alternation_mark",
 		["12349"] = "part_alternation_mark",
@@ -12134,8 +12176,8 @@ addon.Emojis = {
 		["127386"] = "vs",
 		["127386_65039"] = "vs",
 		-- emoji:🈁; unicode = 1f201
-		["127489"] = "ja_here",
-		["127489_65039"] = "ja_here",
+		["127489"] = "koko",
+		["127489_65039"] = "koko",
 		-- emoji:🈂️; unicode = 1f202-fe0f
 		["127490_65039"] = "ja_service_charge",
 		["127490"] = "ja_service_charge",
@@ -12149,8 +12191,8 @@ addon.Emojis = {
 		["127535"] = "ja_reserved",
 		["127535_65039"] = "ja_reserved",
 		-- emoji:🉐; unicode = 1f250
-		["127568"] = "ideograph_advantage",
-		["127568_65039"] = "ideograph_advantage",
+		["127568"] = "ja_bargain",
+		["127568_65039"] = "ja_bargain",
 		-- emoji:🈹; unicode = 1f239
 		["127545"] = "ja_discount",
 		["127545_65039"] = "ja_discount",
@@ -12176,8 +12218,8 @@ addon.Emojis = {
 		["12951_65039"] = "congratulations",
 		["12951"] = "congratulations",
 		-- emoji:㊙️; unicode = 3299-fe0f
-		["12953_65039"] = "ja_secret",
-		["12953"] = "ja_secret",
+		["12953_65039"] = "secret",
+		["12953"] = "secret",
 		-- emoji:🈺; unicode = 1f23a
 		["127546"] = "ja_open_for_business",
 		["127546_65039"] = "ja_open_for_business",
@@ -12275,8 +12317,8 @@ addon.Emojis = {
 		["128315"] = "small_red_triangle_down",
 		["128315_65039"] = "small_red_triangle_down",
 		-- emoji:💠; unicode = 1f4a0
-		["128160"] = "diamond_shape_with_a_dot_inside",
-		["128160_65039"] = "diamond_shape_with_a_dot_inside",
+		["128160"] = "diamond_with_a_dot",
+		["128160_65039"] = "diamond_with_a_dot",
 		-- emoji:🔘; unicode = 1f518
 		["128280"] = "radio_button",
 		["128280_65039"] = "radio_button",
@@ -12313,17 +12355,17 @@ addon.Emojis = {
 		["127988_8205_9760_65039"] = "jolly_roger",
 		["127988_8205_9760"] = "jolly_roger",
 		-- emoji:🇦🇨; unicode = 1f1e6-1f1e8
-		["127462_127464"] = "ascension_island",
+		["127462_127464"] = "flag_ac",
 		-- emoji:🇦🇩; unicode = 1f1e6-1f1e9
 		["127462_127465"] = "andorra",
 		-- emoji:🇦🇪; unicode = 1f1e6-1f1ea
 		["127462_127466"] = "flag_ae",
 		-- emoji:🇦🇫; unicode = 1f1e6-1f1eb
-		["127462_127467"] = "afghanistan",
+		["127462_127467"] = "flag_af",
 		-- emoji:🇦🇬; unicode = 1f1e6-1f1ec
-		["127462_127468"] = "antigua_barbuda",
+		["127462_127468"] = "flag_ag",
 		-- emoji:🇦🇮; unicode = 1f1e6-1f1ee
-		["127462_127470"] = "anguilla",
+		["127462_127470"] = "flag_ai",
 		-- emoji:🇦🇱; unicode = 1f1e6-1f1f1
 		["127462_127473"] = "albania",
 		-- emoji:🇦🇲; unicode = 1f1e6-1f1f2
@@ -12331,33 +12373,33 @@ addon.Emojis = {
 		-- emoji:🇦🇴; unicode = 1f1e6-1f1f4
 		["127462_127476"] = "angola",
 		-- emoji:🇦🇶; unicode = 1f1e6-1f1f6
-		["127462_127478"] = "antarctica",
+		["127462_127478"] = "flag_aq",
 		-- emoji:🇦🇷; unicode = 1f1e6-1f1f7
-		["127462_127479"] = "argentina",
+		["127462_127479"] = "flag_ar",
 		-- emoji:🇦🇸; unicode = 1f1e6-1f1f8
-		["127462_127480"] = "american_samoa",
+		["127462_127480"] = "flag_as",
 		-- emoji:🇦🇹; unicode = 1f1e6-1f1f9
 		["127462_127481"] = "austria",
 		-- emoji:🇦🇺; unicode = 1f1e6-1f1fa
-		["127462_127482"] = "australia",
+		["127462_127482"] = "flag_au",
 		-- emoji:🇦🇼; unicode = 1f1e6-1f1fc
 		["127462_127484"] = "aruba",
 		-- emoji:🇦🇽; unicode = 1f1e6-1f1fd
-		["127462_127485"] = "aland_islands",
+		["127462_127485"] = "flag_ax",
 		-- emoji:🇦🇿; unicode = 1f1e6-1f1ff
-		["127462_127487"] = "azerbaijan",
+		["127462_127487"] = "flag_az",
 		-- emoji:🇧🇦; unicode = 1f1e7-1f1e6
-		["127463_127462"] = "bosnia_herzegovina",
+		["127463_127462"] = "flag_ba",
 		-- emoji:🇧🇧; unicode = 1f1e7-1f1e7
-		["127463_127463"] = "barbados",
+		["127463_127463"] = "flag_bb",
 		-- emoji:🇧🇩; unicode = 1f1e7-1f1e9
-		["127463_127465"] = "bangladesh",
+		["127463_127465"] = "flag_bd",
 		-- emoji:🇧🇪; unicode = 1f1e7-1f1ea
 		["127463_127466"] = "belgium",
 		-- emoji:🇧🇫; unicode = 1f1e7-1f1eb
-		["127463_127467"] = "burkina_faso",
+		["127463_127467"] = "flag_bf",
 		-- emoji:🇧🇬; unicode = 1f1e7-1f1ec
-		["127463_127468"] = "bulgaria",
+		["127463_127468"] = "flag_bg",
 		-- emoji:🇧🇭; unicode = 1f1e7-1f1ed
 		["127463_127469"] = "bahrain",
 		-- emoji:🇧🇮; unicode = 1f1e7-1f1ee
@@ -12373,7 +12415,7 @@ addon.Emojis = {
 		-- emoji:🇧🇴; unicode = 1f1e7-1f1f4
 		["127463_127476"] = "bolivia",
 		-- emoji:🇧🇶; unicode = 1f1e7-1f1f6
-		["127463_127478"] = "caribbean_netherlands",
+		["127463_127478"] = "flag_bq",
 		-- emoji:🇧🇷; unicode = 1f1e7-1f1f7
 		["127463_127479"] = "brazil",
 		-- emoji:🇧🇸; unicode = 1f1e7-1f1f8
@@ -12381,9 +12423,9 @@ addon.Emojis = {
 		-- emoji:🇧🇹; unicode = 1f1e7-1f1f9
 		["127463_127481"] = "bhutan",
 		-- emoji:🇧🇻; unicode = 1f1e7-1f1fb
-		["127463_127483"] = "bouvet_island",
+		["127463_127483"] = "flag_bv",
 		-- emoji:🇧🇼; unicode = 1f1e7-1f1fc
-		["127463_127484"] = "botswana",
+		["127463_127484"] = "flag_bw",
 		-- emoji:🇧🇾; unicode = 1f1e7-1f1fe
 		["127463_127486"] = "belarus",
 		-- emoji:🇧🇿; unicode = 1f1e7-1f1ff
@@ -12391,61 +12433,61 @@ addon.Emojis = {
 		-- emoji:🇨🇦; unicode = 1f1e8-1f1e6
 		["127464_127462"] = "canada",
 		-- emoji:🇨🇨; unicode = 1f1e8-1f1e8
-		["127464_127464"] = "cocos_islands",
+		["127464_127464"] = "flag_cc",
 		-- emoji:🇨🇩; unicode = 1f1e8-1f1e9
-		["127464_127465"] = "congo_kinshasa",
+		["127464_127465"] = "flag_cd",
 		-- emoji:🇨🇫; unicode = 1f1e8-1f1eb
-		["127464_127467"] = "central_african_republic",
+		["127464_127467"] = "flag_cf",
 		-- emoji:🇨🇬; unicode = 1f1e8-1f1ec
-		["127464_127468"] = "congo_brazzaville",
+		["127464_127468"] = "flag_cg",
 		-- emoji:🇨🇭; unicode = 1f1e8-1f1ed
 		["127464_127469"] = "flag_ch",
 		-- emoji:🇨🇮; unicode = 1f1e8-1f1ee
-		["127464_127470"] = "cote_divoire",
+		["127464_127470"] = "flag_ci",
 		-- emoji:🇨🇰; unicode = 1f1e8-1f1f0
-		["127464_127472"] = "cook_islands",
+		["127464_127472"] = "flag_ck",
 		-- emoji:🇨🇱; unicode = 1f1e8-1f1f1
 		["127464_127473"] = "chile",
 		-- emoji:🇨🇲; unicode = 1f1e8-1f1f2
-		["127464_127474"] = "cameroon",
+		["127464_127474"] = "flag_cm",
 		-- emoji:🇨🇳; unicode = 1f1e8-1f1f3
 		["127464_127475"] = "china",
 		-- emoji:🇨🇴; unicode = 1f1e8-1f1f4
-		["127464_127476"] = "colombia",
+		["127464_127476"] = "flag_co",
 		-- emoji:🇨🇵; unicode = 1f1e8-1f1f5
-		["127464_127477"] = "clipperton_island",
+		["127464_127477"] = "flag_cp",
 		-- emoji:🇨🇶; unicode = 1f1e8-1f1f6
-		["127464_127478"] = "flag_cq",
+		["127464_127478"] = "sark",
 		-- emoji:🇨🇷; unicode = 1f1e8-1f1f7
-		["127464_127479"] = "costa_rica",
+		["127464_127479"] = "flag_cr",
 		-- emoji:🇨🇺; unicode = 1f1e8-1f1fa
 		["127464_127482"] = "cuba",
 		-- emoji:🇨🇻; unicode = 1f1e8-1f1fb
-		["127464_127483"] = "cape_verde",
+		["127464_127483"] = "flag_cv",
 		-- emoji:🇨🇼; unicode = 1f1e8-1f1fc
 		["127464_127484"] = "curacao",
 		-- emoji:🇨🇽; unicode = 1f1e8-1f1fd
-		["127464_127485"] = "christmas_island",
+		["127464_127485"] = "flag_cx",
 		-- emoji:🇨🇾; unicode = 1f1e8-1f1fe
 		["127464_127486"] = "cyprus",
 		-- emoji:🇨🇿; unicode = 1f1e8-1f1ff
-		["127464_127487"] = "czech_republic",
+		["127464_127487"] = "czechia",
 		-- emoji:🇩🇪; unicode = 1f1e9-1f1ea
 		["127465_127466"] = "flag_de",
 		-- emoji:🇩🇬; unicode = 1f1e9-1f1ec
-		["127465_127468"] = "diego_garcia",
+		["127465_127468"] = "flag_dg",
 		-- emoji:🇩🇯; unicode = 1f1e9-1f1ef
-		["127465_127471"] = "djibouti",
+		["127465_127471"] = "flag_dj",
 		-- emoji:🇩🇰; unicode = 1f1e9-1f1f0
 		["127465_127472"] = "denmark",
 		-- emoji:🇩🇲; unicode = 1f1e9-1f1f2
-		["127465_127474"] = "dominica",
+		["127465_127474"] = "flag_dm",
 		-- emoji:🇩🇴; unicode = 1f1e9-1f1f4
-		["127465_127476"] = "dominican_republic",
+		["127465_127476"] = "flag_do",
 		-- emoji:🇩🇿; unicode = 1f1e9-1f1ff
 		["127465_127487"] = "algeria",
 		-- emoji:🇪🇦; unicode = 1f1ea-1f1e6
-		["127466_127462"] = "ceuta_melilla",
+		["127466_127462"] = "flag_ea",
 		-- emoji:🇪🇨; unicode = 1f1ea-1f1e8
 		["127466_127464"] = "ecuador",
 		-- emoji:🇪🇪; unicode = 1f1ea-1f1ea
@@ -12457,27 +12499,27 @@ addon.Emojis = {
 		-- emoji:🇪🇷; unicode = 1f1ea-1f1f7
 		["127466_127479"] = "eritrea",
 		-- emoji:🇪🇸; unicode = 1f1ea-1f1f8
-		["127466_127480"] = "flag_es",
+		["127466_127480"] = "spain",
 		-- emoji:🇪🇹; unicode = 1f1ea-1f1f9
-		["127466_127481"] = "ethiopia",
+		["127466_127481"] = "flag_et",
 		-- emoji:🇪🇺; unicode = 1f1ea-1f1fa
-		["127466_127482"] = "european_union",
+		["127466_127482"] = "flag_eu",
 		-- emoji:🇫🇮; unicode = 1f1eb-1f1ee
 		["127467_127470"] = "finland",
 		-- emoji:🇫🇯; unicode = 1f1eb-1f1ef
 		["127467_127471"] = "fiji",
 		-- emoji:🇫🇰; unicode = 1f1eb-1f1f0
-		["127467_127472"] = "falkland_islands",
+		["127467_127472"] = "flag_fk",
 		-- emoji:🇫🇲; unicode = 1f1eb-1f1f2
 		["127467_127474"] = "flag_fm",
 		-- emoji:🇫🇴; unicode = 1f1eb-1f1f4
-		["127467_127476"] = "faroe_islands",
+		["127467_127476"] = "flag_fo",
 		-- emoji:🇫🇷; unicode = 1f1eb-1f1f7
-		["127467_127479"] = "flag_fr",
+		["127467_127479"] = "france",
 		-- emoji:🇬🇦; unicode = 1f1ec-1f1e6
-		["127468_127462"] = "flag_ga",
+		["127468_127462"] = "gabon",
 		-- emoji:🇬🇧; unicode = 1f1ec-1f1e7
-		["127468_127463"] = "flag_gb",
+		["127468_127463"] = "uk",
 		-- emoji:🇬🇩; unicode = 1f1ec-1f1e9
 		["127468_127465"] = "flag_gd",
 		-- emoji:🇬🇪; unicode = 1f1ec-1f1ea
@@ -12487,31 +12529,31 @@ addon.Emojis = {
 		-- emoji:🇬🇬; unicode = 1f1ec-1f1ec
 		["127468_127468"] = "flag_gg",
 		-- emoji:🇬🇭; unicode = 1f1ec-1f1ed
-		["127468_127469"] = "flag_gh",
+		["127468_127469"] = "ghana",
 		-- emoji:🇬🇮; unicode = 1f1ec-1f1ee
 		["127468_127470"] = "flag_gi",
 		-- emoji:🇬🇱; unicode = 1f1ec-1f1f1
 		["127468_127473"] = "flag_gl",
 		-- emoji:🇬🇲; unicode = 1f1ec-1f1f2
-		["127468_127474"] = "flag_gm",
+		["127468_127474"] = "gambia",
 		-- emoji:🇬🇳; unicode = 1f1ec-1f1f3
-		["127468_127475"] = "flag_gn",
+		["127468_127475"] = "guinea",
 		-- emoji:🇬🇵; unicode = 1f1ec-1f1f5
 		["127468_127477"] = "flag_gp",
 		-- emoji:🇬🇶; unicode = 1f1ec-1f1f6
-		["127468_127478"] = "equatorial_guinea",
+		["127468_127478"] = "flag_gq",
 		-- emoji:🇬🇷; unicode = 1f1ec-1f1f7
-		["127468_127479"] = "flag_gr",
+		["127468_127479"] = "greece",
 		-- emoji:🇬🇸; unicode = 1f1ec-1f1f8
 		["127468_127480"] = "flag_gs",
 		-- emoji:🇬🇹; unicode = 1f1ec-1f1f9
 		["127468_127481"] = "flag_gt",
 		-- emoji:🇬🇺; unicode = 1f1ec-1f1fa
-		["127468_127482"] = "flag_gu",
+		["127468_127482"] = "guam",
 		-- emoji:🇬🇼; unicode = 1f1ec-1f1fc
 		["127468_127484"] = "flag_gw",
 		-- emoji:🇬🇾; unicode = 1f1ec-1f1fe
-		["127468_127486"] = "flag_gy",
+		["127468_127486"] = "guyana",
 		-- emoji:🇭🇰; unicode = 1f1ed-1f1f0
 		["127469_127472"] = "flag_hk",
 		-- emoji:🇭🇲; unicode = 1f1ed-1f1f2
@@ -12521,45 +12563,45 @@ addon.Emojis = {
 		-- emoji:🇭🇷; unicode = 1f1ed-1f1f7
 		["127469_127479"] = "croatia",
 		-- emoji:🇭🇹; unicode = 1f1ed-1f1f9
-		["127469_127481"] = "flag_ht",
+		["127469_127481"] = "haiti",
 		-- emoji:🇭🇺; unicode = 1f1ed-1f1fa
 		["127469_127482"] = "flag_hu",
 		-- emoji:🇮🇨; unicode = 1f1ee-1f1e8
-		["127470_127464"] = "canary_islands",
+		["127470_127464"] = "flag_ic",
 		-- emoji:🇮🇩; unicode = 1f1ee-1f1e9
 		["127470_127465"] = "flag_id",
 		-- emoji:🇮🇪; unicode = 1f1ee-1f1ea
 		["127470_127466"] = "flag_ie",
 		-- emoji:🇮🇱; unicode = 1f1ee-1f1f1
-		["127470_127473"] = "flag_il",
+		["127470_127473"] = "israel",
 		-- emoji:🇮🇲; unicode = 1f1ee-1f1f2
 		["127470_127474"] = "flag_im",
 		-- emoji:🇮🇳; unicode = 1f1ee-1f1f3
-		["127470_127475"] = "flag_in",
+		["127470_127475"] = "india",
 		-- emoji:🇮🇴; unicode = 1f1ee-1f1f4
-		["127470_127476"] = "british_indian_ocean_territory",
+		["127470_127476"] = "flag_io",
 		-- emoji:🇮🇶; unicode = 1f1ee-1f1f6
-		["127470_127478"] = "flag_iq",
+		["127470_127478"] = "iraq",
 		-- emoji:🇮🇷; unicode = 1f1ee-1f1f7
-		["127470_127479"] = "flag_ir",
+		["127470_127479"] = "iran",
 		-- emoji:🇮🇸; unicode = 1f1ee-1f1f8
 		["127470_127480"] = "flag_is",
 		-- emoji:🇮🇹; unicode = 1f1ee-1f1f9
-		["127470_127481"] = "flag_it",
+		["127470_127481"] = "italy",
 		-- emoji:🇯🇪; unicode = 1f1ef-1f1ea
-		["127471_127466"] = "flag_je",
+		["127471_127466"] = "jersey",
 		-- emoji:🇯🇲; unicode = 1f1ef-1f1f2
 		["127471_127474"] = "flag_jm",
 		-- emoji:🇯🇴; unicode = 1f1ef-1f1f4
-		["127471_127476"] = "flag_jo",
+		["127471_127476"] = "jordan",
 		-- emoji:🇯🇵; unicode = 1f1ef-1f1f5
-		["127471_127477"] = "flag_jp",
+		["127471_127477"] = "japan",
 		-- emoji:🇰🇪; unicode = 1f1f0-1f1ea
-		["127472_127466"] = "flag_ke",
+		["127472_127466"] = "kenya",
 		-- emoji:🇰🇬; unicode = 1f1f0-1f1ec
 		["127472_127468"] = "flag_kg",
 		-- emoji:🇰🇭; unicode = 1f1f0-1f1ed
-		["127472_127469"] = "cambodia",
+		["127472_127469"] = "flag_kh",
 		-- emoji:🇰🇮; unicode = 1f1f0-1f1ee
 		["127472_127470"] = "flag_ki",
 		-- emoji:🇰🇲; unicode = 1f1f0-1f1f2
@@ -12571,13 +12613,13 @@ addon.Emojis = {
 		-- emoji:🇰🇷; unicode = 1f1f0-1f1f7
 		["127472_127479"] = "flag_kr",
 		-- emoji:🇰🇼; unicode = 1f1f0-1f1fc
-		["127472_127484"] = "flag_kw",
+		["127472_127484"] = "kuwait",
 		-- emoji:🇰🇾; unicode = 1f1f0-1f1fe
-		["127472_127486"] = "cayman_islands",
+		["127472_127486"] = "flag_ky",
 		-- emoji:🇰🇿; unicode = 1f1f0-1f1ff
 		["127472_127487"] = "flag_kz",
 		-- emoji:🇱🇦; unicode = 1f1f1-1f1e6
-		["127473_127462"] = "flag_la",
+		["127473_127462"] = "laos",
 		-- emoji:🇱🇧; unicode = 1f1f1-1f1e7
 		["127473_127463"] = "flag_lb",
 		-- emoji:🇱🇨; unicode = 1f1f1-1f1e8
@@ -12595,13 +12637,13 @@ addon.Emojis = {
 		-- emoji:🇱🇺; unicode = 1f1f1-1f1fa
 		["127473_127482"] = "flag_lu",
 		-- emoji:🇱🇻; unicode = 1f1f1-1f1fb
-		["127473_127483"] = "flag_lv",
+		["127473_127483"] = "latvia",
 		-- emoji:🇱🇾; unicode = 1f1f1-1f1fe
-		["127473_127486"] = "flag_ly",
+		["127473_127486"] = "libya",
 		-- emoji:🇲🇦; unicode = 1f1f2-1f1e6
 		["127474_127462"] = "flag_ma",
 		-- emoji:🇲🇨; unicode = 1f1f2-1f1e8
-		["127474_127464"] = "flag_mc",
+		["127474_127464"] = "monaco",
 		-- emoji:🇲🇩; unicode = 1f1f2-1f1e9
 		["127474_127465"] = "flag_md",
 		-- emoji:🇲🇪; unicode = 1f1f2-1f1ea
@@ -12615,13 +12657,13 @@ addon.Emojis = {
 		-- emoji:🇲🇰; unicode = 1f1f2-1f1f0
 		["127474_127472"] = "flag_mk",
 		-- emoji:🇲🇱; unicode = 1f1f2-1f1f1
-		["127474_127473"] = "flag_ml",
+		["127474_127473"] = "mali",
 		-- emoji:🇲🇲; unicode = 1f1f2-1f1f2
 		["127474_127474"] = "burma",
 		-- emoji:🇲🇳; unicode = 1f1f2-1f1f3
 		["127474_127475"] = "flag_mn",
 		-- emoji:🇲🇴; unicode = 1f1f2-1f1f4
-		["127474_127476"] = "flag_mo",
+		["127474_127476"] = "macao",
 		-- emoji:🇲🇵; unicode = 1f1f2-1f1f5
 		["127474_127477"] = "flag_mp",
 		-- emoji:🇲🇶; unicode = 1f1f2-1f1f6
@@ -12631,15 +12673,15 @@ addon.Emojis = {
 		-- emoji:🇲🇸; unicode = 1f1f2-1f1f8
 		["127474_127480"] = "flag_ms",
 		-- emoji:🇲🇹; unicode = 1f1f2-1f1f9
-		["127474_127481"] = "flag_mt",
+		["127474_127481"] = "malta",
 		-- emoji:🇲🇺; unicode = 1f1f2-1f1fa
 		["127474_127482"] = "flag_mu",
 		-- emoji:🇲🇻; unicode = 1f1f2-1f1fb
 		["127474_127483"] = "flag_mv",
 		-- emoji:🇲🇼; unicode = 1f1f2-1f1fc
-		["127474_127484"] = "flag_mw",
+		["127474_127484"] = "malawi",
 		-- emoji:🇲🇽; unicode = 1f1f2-1f1fd
-		["127474_127485"] = "flag_mx",
+		["127474_127485"] = "mexico",
 		-- emoji:🇲🇾; unicode = 1f1f2-1f1fe
 		["127474_127486"] = "flag_my",
 		-- emoji:🇲🇿; unicode = 1f1f2-1f1ff
@@ -12649,7 +12691,7 @@ addon.Emojis = {
 		-- emoji:🇳🇨; unicode = 1f1f3-1f1e8
 		["127475_127464"] = "flag_nc",
 		-- emoji:🇳🇪; unicode = 1f1f3-1f1ea
-		["127475_127466"] = "flag_ne",
+		["127475_127466"] = "niger",
 		-- emoji:🇳🇫; unicode = 1f1f3-1f1eb
 		["127475_127467"] = "flag_nf",
 		-- emoji:🇳🇬; unicode = 1f1f3-1f1ec
@@ -12659,21 +12701,21 @@ addon.Emojis = {
 		-- emoji:🇳🇱; unicode = 1f1f3-1f1f1
 		["127475_127473"] = "flag_nl",
 		-- emoji:🇳🇴; unicode = 1f1f3-1f1f4
-		["127475_127476"] = "flag_no",
+		["127475_127476"] = "norway",
 		-- emoji:🇳🇵; unicode = 1f1f3-1f1f5
-		["127475_127477"] = "flag_np",
+		["127475_127477"] = "nepal",
 		-- emoji:🇳🇷; unicode = 1f1f3-1f1f7
-		["127475_127479"] = "flag_nr",
+		["127475_127479"] = "nauru",
 		-- emoji:🇳🇺; unicode = 1f1f3-1f1fa
-		["127475_127482"] = "flag_nu",
+		["127475_127482"] = "niue",
 		-- emoji:🇳🇿; unicode = 1f1f3-1f1ff
 		["127475_127487"] = "flag_nz",
 		-- emoji:🇴🇲; unicode = 1f1f4-1f1f2
-		["127476_127474"] = "flag_om",
+		["127476_127474"] = "oman",
 		-- emoji:🇵🇦; unicode = 1f1f5-1f1e6
-		["127477_127462"] = "flag_pa",
+		["127477_127462"] = "panama",
 		-- emoji:🇵🇪; unicode = 1f1f5-1f1ea
-		["127477_127466"] = "flag_pe",
+		["127477_127466"] = "peru",
 		-- emoji:🇵🇫; unicode = 1f1f5-1f1eb
 		["127477_127467"] = "flag_pf",
 		-- emoji:🇵🇬; unicode = 1f1f5-1f1ec
@@ -12683,7 +12725,7 @@ addon.Emojis = {
 		-- emoji:🇵🇰; unicode = 1f1f5-1f1f0
 		["127477_127472"] = "flag_pk",
 		-- emoji:🇵🇱; unicode = 1f1f5-1f1f1
-		["127477_127473"] = "flag_pl",
+		["127477_127473"] = "poland",
 		-- emoji:🇵🇲; unicode = 1f1f5-1f1f2
 		["127477_127474"] = "flag_pm",
 		-- emoji:🇵🇳; unicode = 1f1f5-1f1f3
@@ -12695,21 +12737,21 @@ addon.Emojis = {
 		-- emoji:🇵🇹; unicode = 1f1f5-1f1f9
 		["127477_127481"] = "flag_pt",
 		-- emoji:🇵🇼; unicode = 1f1f5-1f1fc
-		["127477_127484"] = "flag_pw",
+		["127477_127484"] = "palau",
 		-- emoji:🇵🇾; unicode = 1f1f5-1f1fe
 		["127477_127486"] = "flag_py",
 		-- emoji:🇶🇦; unicode = 1f1f6-1f1e6
-		["127478_127462"] = "flag_qa",
+		["127478_127462"] = "qatar",
 		-- emoji:🇷🇪; unicode = 1f1f7-1f1ea
 		["127479_127466"] = "flag_re",
 		-- emoji:🇷🇴; unicode = 1f1f7-1f1f4
 		["127479_127476"] = "flag_ro",
 		-- emoji:🇷🇸; unicode = 1f1f7-1f1f8
-		["127479_127480"] = "flag_rs",
+		["127479_127480"] = "serbia",
 		-- emoji:🇷🇺; unicode = 1f1f7-1f1fa
-		["127479_127482"] = "flag_ru",
+		["127479_127482"] = "russia",
 		-- emoji:🇷🇼; unicode = 1f1f7-1f1fc
-		["127479_127484"] = "flag_rw",
+		["127479_127484"] = "rwanda",
 		-- emoji:🇸🇦; unicode = 1f1f8-1f1e6
 		["127480_127462"] = "flag_sa",
 		-- emoji:🇸🇧; unicode = 1f1f8-1f1e7
@@ -12717,9 +12759,9 @@ addon.Emojis = {
 		-- emoji:🇸🇨; unicode = 1f1f8-1f1e8
 		["127480_127464"] = "flag_sc",
 		-- emoji:🇸🇩; unicode = 1f1f8-1f1e9
-		["127480_127465"] = "flag_sd",
+		["127480_127465"] = "sudan",
 		-- emoji:🇸🇪; unicode = 1f1f8-1f1ea
-		["127480_127466"] = "flag_se",
+		["127480_127466"] = "sweden",
 		-- emoji:🇸🇬; unicode = 1f1f8-1f1ec
 		["127480_127468"] = "flag_sg",
 		-- emoji:🇸🇭; unicode = 1f1f8-1f1ed
@@ -12745,13 +12787,13 @@ addon.Emojis = {
 		-- emoji:🇸🇹; unicode = 1f1f8-1f1f9
 		["127480_127481"] = "flag_st",
 		-- emoji:🇸🇻; unicode = 1f1f8-1f1fb
-		["127480_127483"] = "el_salvador",
+		["127480_127483"] = "flag_sv",
 		-- emoji:🇸🇽; unicode = 1f1f8-1f1fd
 		["127480_127485"] = "flag_sx",
 		-- emoji:🇸🇾; unicode = 1f1f8-1f1fe
-		["127480_127486"] = "flag_sy",
+		["127480_127486"] = "syria",
 		-- emoji:🇸🇿; unicode = 1f1f8-1f1ff
-		["127480_127487"] = "eswatini",
+		["127480_127487"] = "flag_sz",
 		-- emoji:🇹🇦; unicode = 1f1f9-1f1e6
 		["127481_127462"] = "flag_ta",
 		-- emoji:🇹🇨; unicode = 1f1f9-1f1e8
@@ -12761,7 +12803,7 @@ addon.Emojis = {
 		-- emoji:🇹🇫; unicode = 1f1f9-1f1eb
 		["127481_127467"] = "flag_tf",
 		-- emoji:🇹🇬; unicode = 1f1f9-1f1ec
-		["127481_127468"] = "flag_tg",
+		["127481_127468"] = "togo",
 		-- emoji:🇹🇭; unicode = 1f1f9-1f1ed
 		["127481_127469"] = "flag_th",
 		-- emoji:🇹🇯; unicode = 1f1f9-1f1ef
@@ -12775,27 +12817,27 @@ addon.Emojis = {
 		-- emoji:🇹🇳; unicode = 1f1f9-1f1f3
 		["127481_127475"] = "flag_tn",
 		-- emoji:🇹🇴; unicode = 1f1f9-1f1f4
-		["127481_127476"] = "flag_to",
+		["127481_127476"] = "tonga",
 		-- emoji:🇹🇷; unicode = 1f1f9-1f1f7
 		["127481_127479"] = "flag_tr",
 		-- emoji:🇹🇹; unicode = 1f1f9-1f1f9
 		["127481_127481"] = "flag_tt",
 		-- emoji:🇹🇻; unicode = 1f1f9-1f1fb
-		["127481_127483"] = "flag_tv",
+		["127481_127483"] = "tuvalu",
 		-- emoji:🇹🇼; unicode = 1f1f9-1f1fc
-		["127481_127484"] = "flag_tw",
+		["127481_127484"] = "taiwan",
 		-- emoji:🇹🇿; unicode = 1f1f9-1f1ff
 		["127481_127487"] = "flag_tz",
 		-- emoji:🇺🇦; unicode = 1f1fa-1f1e6
 		["127482_127462"] = "flag_ua",
 		-- emoji:🇺🇬; unicode = 1f1fa-1f1ec
-		["127482_127468"] = "flag_ug",
+		["127482_127468"] = "uganda",
 		-- emoji:🇺🇲; unicode = 1f1fa-1f1f2
 		["127482_127474"] = "flag_um",
 		-- emoji:🇺🇳; unicode = 1f1fa-1f1f3
-		["127482_127475"] = "flag_un",
+		["127482_127475"] = "un",
 		-- emoji:🇺🇸; unicode = 1f1fa-1f1f8
-		["127482_127480"] = "flag_us",
+		["127482_127480"] = "usa",
 		-- emoji:🇺🇾; unicode = 1f1fa-1f1fe
 		["127482_127486"] = "flag_uy",
 		-- emoji:🇺🇿; unicode = 1f1fa-1f1ff
@@ -12807,7 +12849,7 @@ addon.Emojis = {
 		-- emoji:🇻🇪; unicode = 1f1fb-1f1ea
 		["127483_127466"] = "flag_ve",
 		-- emoji:🇻🇬; unicode = 1f1fb-1f1ec
-		["127483_127468"] = "british_virgin_islands",
+		["127483_127468"] = "flag_vg",
 		-- emoji:🇻🇮; unicode = 1f1fb-1f1ee
 		["127483_127470"] = "flag_vi",
 		-- emoji:🇻🇳; unicode = 1f1fb-1f1f3
@@ -12817,25 +12859,25 @@ addon.Emojis = {
 		-- emoji:🇼🇫; unicode = 1f1fc-1f1eb
 		["127484_127467"] = "flag_wf",
 		-- emoji:🇼🇸; unicode = 1f1fc-1f1f8
-		["127484_127480"] = "flag_ws",
+		["127484_127480"] = "samoa",
 		-- emoji:🇽🇰; unicode = 1f1fd-1f1f0
-		["127485_127472"] = "flag_xk",
+		["127485_127472"] = "kosovo",
 		-- emoji:🇾🇪; unicode = 1f1fe-1f1ea
-		["127486_127466"] = "flag_ye",
+		["127486_127466"] = "yemen",
 		-- emoji:🇾🇹; unicode = 1f1fe-1f1f9
 		["127486_127481"] = "flag_yt",
 		-- emoji:🇿🇦; unicode = 1f1ff-1f1e6
 		["127487_127462"] = "flag_za",
 		-- emoji:🇿🇲; unicode = 1f1ff-1f1f2
-		["127487_127474"] = "flag_zm",
+		["127487_127474"] = "zambia",
 		-- emoji:🇿🇼; unicode = 1f1ff-1f1fc
 		["127487_127484"] = "flag_zw",
 		-- emoji:🏴󠁧󠁢󠁥󠁮󠁧󠁿; unicode = 1f3f4-e0067-e0062-e0065-e006e-e0067-e007f
 		["127988_917607_917602_917605_917614_917607_917631"] = "england",
 		-- emoji:🏴󠁧󠁢󠁳󠁣󠁴󠁿; unicode = 1f3f4-e0067-e0062-e0073-e0063-e0074-e007f
-		["127988_917607_917602_917619_917603_917620_917631"] = "flag_gbsct",
+		["127988_917607_917602_917619_917603_917620_917631"] = "scotland",
 		-- emoji:🏴󠁧󠁢󠁷󠁬󠁳󠁿; unicode = 1f3f4-e0067-e0062-e0077-e006c-e0073-e007f
-		["127988_917607_917602_917623_917612_917619_917631"] = "flag_gbwls",
+		["127988_917607_917602_917623_917612_917619_917631"] = "wales",
 	},
 
 	-- ====================================================================
@@ -12846,22 +12888,22 @@ addon.Emojis = {
 		["grinning"] = "128512",
 		["grinning_face"] = "128512",
 		-- emoji:😃; unicode = 1f603
-		["grinning_face_with_big_eyes"] = "128515",
 		["smiley"] = "128515",
+		["grinning_face_with_big_eyes"] = "128515",
 		-- emoji:😄; unicode = 1f604
-		["grinning_face_with_closed_eyes"] = "128516",
 		["smile"] = "128516",
+		["grinning_face_with_closed_eyes"] = "128516",
 		-- emoji:😁; unicode = 1f601
-		["beaming_face"] = "128513",
 		["grin"] = "128513",
+		["beaming_face"] = "128513",
 		-- emoji:😆; unicode = 1f606
-		["laughing"] = "128518",
 		["lol"] = "128518",
+		["laughing"] = "128518",
 		["satisfied"] = "128518",
 		["squinting_face"] = "128518",
 		-- emoji:😅; unicode = 1f605
-		["grinning_face_with_sweat"] = "128517",
 		["sweat_smile"] = "128517",
+		["grinning_face_with_sweat"] = "128517",
 		-- emoji:🤣; unicode = 1f923
 		["rofl"] = "129315",
 		-- emoji:😂; unicode = 1f602
@@ -12892,8 +12934,8 @@ addon.Emojis = {
 		-- emoji:🤩; unicode = 1f929
 		["star_struck"] = "129321",
 		-- emoji:😘; unicode = 1f618
-		["blowing_a_kiss"] = "128536",
 		["kissing_heart"] = "128536",
+		["blowing_a_kiss"] = "128536",
 		-- emoji:😗; unicode = 1f617
 		["kissing"] = "128535",
 		["kissing_face"] = "128535",
@@ -12904,13 +12946,13 @@ addon.Emojis = {
 		["kissing_closed_eyes"] = "128538",
 		["kissing_face_with_closed_eyes"] = "128538",
 		-- emoji:😙; unicode = 1f619
-		["kissing_face_with_smiling_eyes"] = "128537",
 		["kissing_smiling_eyes"] = "128537",
+		["kissing_face_with_smiling_eyes"] = "128537",
 		-- emoji:🥲; unicode = 1f972
 		["smiling_face_with_tear"] = "129394",
 		-- emoji:😋; unicode = 1f60b
-		["savoring_food"] = "128523",
 		["yum"] = "128523",
+		["savoring_food"] = "128523",
 		-- emoji:😛; unicode = 1f61b
 		["face_with_tongue"] = "128539",
 		["stuck_out_tongue"] = "128539",
@@ -12928,21 +12970,21 @@ addon.Emojis = {
 		["hugging"] = "129303",
 		["hugging_face"] = "129303",
 		-- emoji:🤭; unicode = 1f92d
-		["face_with_hand_over_mouth"] = "129325",
 		["hand_over_mouth"] = "129325",
+		["face_with_hand_over_mouth"] = "129325",
 		-- emoji:🫢; unicode = 1fae2
-		["face_with_open_eyes_hand_over_mouth"] = "129762",
 		["gasp"] = "129762",
+		["face_with_open_eyes_hand_over_mouth"] = "129762",
 		-- emoji:🫣; unicode = 1fae3
-		["face_with_peeking_eye"] = "129763",
 		["peek"] = "129763",
+		["face_with_peeking_eye"] = "129763",
 		-- emoji:🤫; unicode = 1f92b
 		["shush"] = "129323",
 		["shushing_face"] = "129323",
 		-- emoji:🤔; unicode = 1f914
+		["wtf"] = "129300",
 		["thinking"] = "129300",
 		["thinking_face"] = "129300",
-		["wtf"] = "129300",
 		-- emoji:🫡; unicode = 1fae1
 		["salute"] = "129761",
 		["saluting_face"] = "129761",
@@ -12950,8 +12992,8 @@ addon.Emojis = {
 		["zipper_mouth"] = "129296",
 		["zipper_mouth_face"] = "129296",
 		-- emoji:🤨; unicode = 1f928
-		["face_with_raised_eyebrow"] = "129320",
 		["raised_eyebrow"] = "129320",
+		["face_with_raised_eyebrow"] = "129320",
 		-- emoji:😐; unicode = 1f610
 		["neutral"] = "128528",
 		["neutral_face"] = "128528",
@@ -13017,8 +13059,8 @@ addon.Emojis = {
 		["nauseated"] = "129314",
 		["nauseated_face"] = "129314",
 		-- emoji:🤮; unicode = 1f92e
-		["face_vomiting"] = "129326",
 		["vomiting"] = "129326",
+		["face_vomiting"] = "129326",
 		-- emoji:🤧; unicode = 1f927
 		["sneezing"] = "129319",
 		["sneezing_face"] = "129319",
@@ -13049,9 +13091,9 @@ addon.Emojis = {
 		["disguised"] = "129400",
 		["disguised_face"] = "129400",
 		-- emoji:😎; unicode = 1f60e
-		["smiling_face_with_sunglasses"] = "128526",
-		["sunglasses_cool"] = "128526",
 		["too_cool"] = "128526",
+		["sunglasses_cool"] = "128526",
+		["smiling_face_with_sunglasses"] = "128526",
 		-- emoji:🤓; unicode = 1f913
 		["nerd"] = "129299",
 		["nerd_face"] = "129299",
@@ -13070,8 +13112,8 @@ addon.Emojis = {
 		-- emoji:☹️; unicode = 2639-fe0f
 		["white_frowning_face"] = "9785_65039",
 		-- emoji:😮; unicode = 1f62e
-		["face_with_open_mouth"] = "128558",
 		["open_mouth"] = "128558",
+		["face_with_open_mouth"] = "128558",
 		-- emoji:😯; unicode = 1f62f
 		["hushed"] = "128559",
 		["hushed_face"] = "128559",
@@ -13085,8 +13127,8 @@ addon.Emojis = {
 		["pleading"] = "129402",
 		["pleading_face"] = "129402",
 		-- emoji:🥹; unicode = 1f979
-		["face_holding_back_tears"] = "129401",
 		["watery_eyes"] = "129401",
+		["face_holding_back_tears"] = "129401",
 		-- emoji:😦; unicode = 1f626
 		["frowning"] = "128550",
 		["frowning_face"] = "128550",
@@ -13098,17 +13140,17 @@ addon.Emojis = {
 		["fearful_face"] = "128552",
 		-- emoji:😰; unicode = 1f630
 		["anxious"] = "128560",
-		["anxious_face"] = "128560",
 		["cold_sweat"] = "128560",
+		["anxious_face"] = "128560",
 		-- emoji:😥; unicode = 1f625
-		["disappointed_relieved"] = "128549",
 		["sad_relieved_face"] = "128549",
+		["disappointed_relieved"] = "128549",
 		-- emoji:😢; unicode = 1f622
 		["cry"] = "128546",
 		["crying_face"] = "128546",
 		-- emoji:😭; unicode = 1f62d
-		["loudly_crying_face"] = "128557",
 		["sob"] = "128557",
+		["loudly_crying_face"] = "128557",
 		-- emoji:😱; unicode = 1f631
 		["scream"] = "128561",
 		["screaming_in_fear"] = "128561",
@@ -13122,8 +13164,8 @@ addon.Emojis = {
 		["disappointed"] = "128542",
 		["disappointed_face"] = "128542",
 		-- emoji:😓; unicode = 1f613
-		["downcast_face"] = "128531",
 		["sweat"] = "128531",
+		["downcast_face"] = "128531",
 		-- emoji:😩; unicode = 1f629
 		["weary"] = "128553",
 		["weary_face"] = "128553",
@@ -13135,12 +13177,12 @@ addon.Emojis = {
 		["yawning"] = "129393",
 		["yawning_face"] = "129393",
 		-- emoji:😤; unicode = 1f624
-		["nose_steam"] = "128548",
 		["triumph"] = "128548",
+		["nose_steam"] = "128548",
 		-- emoji:😡; unicode = 1f621
 		["pout"] = "128545",
-		["pouting_face"] = "128545",
 		["rage"] = "128545",
+		["pouting_face"] = "128545",
 		-- emoji:😠; unicode = 1f620
 		["angry"] = "128544",
 		["angry_face"] = "128544",
@@ -13150,8 +13192,8 @@ addon.Emojis = {
 		-- emoji:😈; unicode = 1f608
 		["smiling_imp"] = "128520",
 		-- emoji:👿; unicode = 1f47f
-		["angry_imp"] = "128127",
 		["imp"] = "128127",
+		["angry_imp"] = "128127",
 		-- emoji:💀; unicode = 1f480
 		["skull"] = "128128",
 		-- emoji:☠️; unicode = 2620-fe0f
@@ -13163,8 +13205,8 @@ addon.Emojis = {
 		["clown"] = "129313",
 		["clown_face"] = "129313",
 		-- emoji:👹; unicode = 1f479
-		["japanese_ogre"] = "128121",
 		["ogre"] = "128121",
+		["japanese_ogre"] = "128121",
 		-- emoji:👺; unicode = 1f47a
 		["goblin"] = "128122",
 		["japanese_goblin"] = "128122",
@@ -13179,11 +13221,11 @@ addon.Emojis = {
 		["robot"] = "129302",
 		["robot_face"] = "129302",
 		-- emoji:😺; unicode = 1f63a
-		["grinning_cat"] = "128570",
 		["smiley_cat"] = "128570",
+		["grinning_cat"] = "128570",
 		-- emoji:😸; unicode = 1f638
-		["grinning_cat_with_closed_eyes"] = "128568",
 		["smile_cat"] = "128568",
+		["grinning_cat_with_closed_eyes"] = "128568",
 		-- emoji:😹; unicode = 1f639
 		["joy_cat"] = "128569",
 		["tears_of_joy_cat"] = "128569",
@@ -13196,8 +13238,8 @@ addon.Emojis = {
 		-- emoji:😽; unicode = 1f63d
 		["kissing_cat"] = "128573",
 		-- emoji:🙀; unicode = 1f640
-		["scream_cat"] = "128576",
 		["weary_cat"] = "128576",
+		["scream_cat"] = "128576",
 		-- emoji:😿; unicode = 1f63f
 		["crying_cat"] = "128575",
 		-- emoji:😾; unicode = 1f63e
@@ -13219,11 +13261,11 @@ addon.Emojis = {
 		-- emoji:💖; unicode = 1f496
 		["sparkling_heart"] = "128150",
 		-- emoji:💗; unicode = 1f497
-		["growing_heart"] = "128151",
 		["heartpulse"] = "128151",
+		["growing_heart"] = "128151",
 		-- emoji:💓; unicode = 1f493
-		["beating_heart"] = "128147",
 		["heartbeat"] = "128147",
+		["beating_heart"] = "128147",
 		-- emoji:💞; unicode = 1f49e
 		["revolving_hearts"] = "128158",
 		-- emoji:💕; unicode = 1f495
@@ -13650,28 +13692,28 @@ addon.Emojis = {
 		["point_forward_tone5"] = "129781_127999",
 		-- emoji:👍; unicode = 1f44d
 		["+1"] = "128077",
-		["thumbsup"] = "128077",
 		["yes"] = "128077",
+		["thumbsup"] = "128077",
 		-- emoji:👍🏻; unicode = 1f44d-1f3fb
 		["+1_tone1"] = "128077_127995",
-		["thumbsup_tone1"] = "128077_127995",
 		["yes_tone1"] = "128077_127995",
+		["thumbsup_tone1"] = "128077_127995",
 		-- emoji:👍🏼; unicode = 1f44d-1f3fc
 		["+1_tone2"] = "128077_127996",
-		["thumbsup_tone2"] = "128077_127996",
 		["yes_tone2"] = "128077_127996",
+		["thumbsup_tone2"] = "128077_127996",
 		-- emoji:👍🏽; unicode = 1f44d-1f3fd
 		["+1_tone3"] = "128077_127997",
-		["thumbsup_tone3"] = "128077_127997",
 		["yes_tone3"] = "128077_127997",
+		["thumbsup_tone3"] = "128077_127997",
 		-- emoji:👍🏾; unicode = 1f44d-1f3fe
 		["+1_tone4"] = "128077_127998",
-		["thumbsup_tone4"] = "128077_127998",
 		["yes_tone4"] = "128077_127998",
+		["thumbsup_tone4"] = "128077_127998",
 		-- emoji:👍🏿; unicode = 1f44d-1f3ff
 		["+1_tone5"] = "128077_127999",
-		["thumbsup_tone5"] = "128077_127999",
 		["yes_tone5"] = "128077_127999",
+		["thumbsup_tone5"] = "128077_127999",
 		-- emoji:👎; unicode = 1f44e
 		["-1"] = "128078",
 		["no"] = "128078",
@@ -13863,23 +13905,23 @@ addon.Emojis = {
 		-- emoji:🫱🏿‍🫲🏾; unicode = 1faf1-1f3ff-200d-1faf2-1f3fe
 		["handshake_tone5-4"] = "129777_127999_8205_129778_127998",
 		-- emoji:🙏; unicode = 1f64f
-		["folded_hands"] = "128591",
 		["pray"] = "128591",
+		["folded_hands"] = "128591",
 		-- emoji:🙏🏻; unicode = 1f64f-1f3fb
-		["folded_hands_tone1"] = "128591_127995",
 		["pray_tone1"] = "128591_127995",
+		["folded_hands_tone1"] = "128591_127995",
 		-- emoji:🙏🏼; unicode = 1f64f-1f3fc
-		["folded_hands_tone2"] = "128591_127996",
 		["pray_tone2"] = "128591_127996",
+		["folded_hands_tone2"] = "128591_127996",
 		-- emoji:🙏🏽; unicode = 1f64f-1f3fd
-		["folded_hands_tone3"] = "128591_127997",
 		["pray_tone3"] = "128591_127997",
+		["folded_hands_tone3"] = "128591_127997",
 		-- emoji:🙏🏾; unicode = 1f64f-1f3fe
-		["folded_hands_tone4"] = "128591_127998",
 		["pray_tone4"] = "128591_127998",
+		["folded_hands_tone4"] = "128591_127998",
 		-- emoji:🙏🏿; unicode = 1f64f-1f3ff
-		["folded_hands_tone5"] = "128591_127999",
 		["pray_tone5"] = "128591_127999",
+		["folded_hands_tone5"] = "128591_127999",
 		-- emoji:✍️; unicode = 270d-fe0f
 		["writing_hand"] = "9997_65039",
 		-- emoji:✍🏻; unicode = 270d-1f3fb
@@ -13981,23 +14023,23 @@ addon.Emojis = {
 		-- emoji:👂🏿; unicode = 1f442-1f3ff
 		["ear_tone5"] = "128066_127999",
 		-- emoji:🦻; unicode = 1f9bb
-		["ear_with_hearing_aid"] = "129467",
 		["hearing_aid"] = "129467",
+		["ear_with_hearing_aid"] = "129467",
 		-- emoji:🦻🏻; unicode = 1f9bb-1f3fb
-		["ear_with_hearing_aid_tone1"] = "129467_127995",
 		["hearing_aid_tone1"] = "129467_127995",
+		["ear_with_hearing_aid_tone1"] = "129467_127995",
 		-- emoji:🦻🏼; unicode = 1f9bb-1f3fc
-		["ear_with_hearing_aid_tone2"] = "129467_127996",
 		["hearing_aid_tone2"] = "129467_127996",
+		["ear_with_hearing_aid_tone2"] = "129467_127996",
 		-- emoji:🦻🏽; unicode = 1f9bb-1f3fd
-		["ear_with_hearing_aid_tone3"] = "129467_127997",
 		["hearing_aid_tone3"] = "129467_127997",
+		["ear_with_hearing_aid_tone3"] = "129467_127997",
 		-- emoji:🦻🏾; unicode = 1f9bb-1f3fe
-		["ear_with_hearing_aid_tone4"] = "129467_127998",
 		["hearing_aid_tone4"] = "129467_127998",
+		["ear_with_hearing_aid_tone4"] = "129467_127998",
 		-- emoji:🦻🏿; unicode = 1f9bb-1f3ff
-		["ear_with_hearing_aid_tone5"] = "129467_127999",
 		["hearing_aid_tone5"] = "129467_127999",
+		["ear_with_hearing_aid_tone5"] = "129467_127999",
 		-- emoji:👃; unicode = 1f443
 		["nose"] = "128067",
 		-- emoji:👃🏻; unicode = 1f443-1f3fb
@@ -14404,23 +14446,23 @@ addon.Emojis = {
 		-- emoji:🙍🏿‍♀️; unicode = 1f64d-1f3ff-200d-2640-fe0f
 		["woman_frowning_tone5"] = "128589_127999_8205_9792_65039",
 		-- emoji:🙎; unicode = 1f64e
-		["person_pouting"] = "128590",
 		["pouting"] = "128590",
+		["person_pouting"] = "128590",
 		-- emoji:🙎🏻; unicode = 1f64e-1f3fb
-		["person_pouting_tone1"] = "128590_127995",
 		["pouting_tone1"] = "128590_127995",
+		["person_pouting_tone1"] = "128590_127995",
 		-- emoji:🙎🏼; unicode = 1f64e-1f3fc
-		["person_pouting_tone2"] = "128590_127996",
 		["pouting_tone2"] = "128590_127996",
+		["person_pouting_tone2"] = "128590_127996",
 		-- emoji:🙎🏽; unicode = 1f64e-1f3fd
-		["person_pouting_tone3"] = "128590_127997",
 		["pouting_tone3"] = "128590_127997",
+		["person_pouting_tone3"] = "128590_127997",
 		-- emoji:🙎🏾; unicode = 1f64e-1f3fe
-		["person_pouting_tone4"] = "128590_127998",
 		["pouting_tone4"] = "128590_127998",
+		["person_pouting_tone4"] = "128590_127998",
 		-- emoji:🙎🏿; unicode = 1f64e-1f3ff
-		["person_pouting_tone5"] = "128590_127999",
 		["pouting_tone5"] = "128590_127999",
+		["person_pouting_tone5"] = "128590_127999",
 		-- emoji:🙎‍♂️; unicode = 1f64e-200d-2642-fe0f
 		["man_pouting"] = "128590_8205_9794_65039",
 		-- emoji:🙎🏻‍♂️; unicode = 1f64e-1f3fb-200d-2642-fe0f
@@ -14722,23 +14764,23 @@ addon.Emojis = {
 		-- emoji:🤦🏿‍♀️; unicode = 1f926-1f3ff-200d-2640-fe0f
 		["woman_facepalming_tone5"] = "129318_127999_8205_9792_65039",
 		-- emoji:🤷; unicode = 1f937
-		["person_shrugging"] = "129335",
 		["shrug"] = "129335",
+		["person_shrugging"] = "129335",
 		-- emoji:🤷🏻; unicode = 1f937-1f3fb
-		["person_shrugging_tone1"] = "129335_127995",
 		["shrug_tone1"] = "129335_127995",
+		["person_shrugging_tone1"] = "129335_127995",
 		-- emoji:🤷🏼; unicode = 1f937-1f3fc
-		["person_shrugging_tone2"] = "129335_127996",
 		["shrug_tone2"] = "129335_127996",
+		["person_shrugging_tone2"] = "129335_127996",
 		-- emoji:🤷🏽; unicode = 1f937-1f3fd
-		["person_shrugging_tone3"] = "129335_127997",
 		["shrug_tone3"] = "129335_127997",
+		["person_shrugging_tone3"] = "129335_127997",
 		-- emoji:🤷🏾; unicode = 1f937-1f3fe
-		["person_shrugging_tone4"] = "129335_127998",
 		["shrug_tone4"] = "129335_127998",
+		["person_shrugging_tone4"] = "129335_127998",
 		-- emoji:🤷🏿; unicode = 1f937-1f3ff
-		["person_shrugging_tone5"] = "129335_127999",
 		["shrug_tone5"] = "129335_127999",
+		["person_shrugging_tone5"] = "129335_127999",
 		-- emoji:🤷‍♂️; unicode = 1f937-200d-2642-fe0f
 		["man_shrugging"] = "129335_8205_9794_65039",
 		-- emoji:🤷🏻‍♂️; unicode = 1f937-1f3fb-200d-2642-fe0f
@@ -15502,23 +15544,23 @@ addon.Emojis = {
 		-- emoji:👷🏿‍♀️; unicode = 1f477-1f3ff-200d-2640-fe0f
 		["woman_construction_worker_tone5"] = "128119_127999_8205_9792_65039",
 		-- emoji:🫅; unicode = 1fac5
-		["person_with_crown"] = "129733",
 		["royalty"] = "129733",
+		["person_with_crown"] = "129733",
 		-- emoji:🫅🏻; unicode = 1fac5-1f3fb
-		["person_with_crown_tone1"] = "129733_127995",
 		["royalty_tone1"] = "129733_127995",
+		["person_with_crown_tone1"] = "129733_127995",
 		-- emoji:🫅🏼; unicode = 1fac5-1f3fc
-		["person_with_crown_tone2"] = "129733_127996",
 		["royalty_tone2"] = "129733_127996",
+		["person_with_crown_tone2"] = "129733_127996",
 		-- emoji:🫅🏽; unicode = 1fac5-1f3fd
-		["person_with_crown_tone3"] = "129733_127997",
 		["royalty_tone3"] = "129733_127997",
+		["person_with_crown_tone3"] = "129733_127997",
 		-- emoji:🫅🏾; unicode = 1fac5-1f3fe
-		["person_with_crown_tone4"] = "129733_127998",
 		["royalty_tone4"] = "129733_127998",
+		["person_with_crown_tone4"] = "129733_127998",
 		-- emoji:🫅🏿; unicode = 1fac5-1f3ff
-		["person_with_crown_tone5"] = "129733_127999",
 		["royalty_tone5"] = "129733_127999",
+		["person_with_crown_tone5"] = "129733_127999",
 		-- emoji:🤴; unicode = 1f934
 		["prince"] = "129332",
 		-- emoji:🤴🏻; unicode = 1f934-1f3fb
@@ -16158,23 +16200,23 @@ addon.Emojis = {
 		-- emoji:💇🏿‍♀️; unicode = 1f487-1f3ff-200d-2640-fe0f
 		["woman_getting_haircut_tone5"] = "128135_127999_8205_9792_65039",
 		-- emoji:🚶; unicode = 1f6b6
-		["person_walking"] = "128694",
 		["walking"] = "128694",
+		["person_walking"] = "128694",
 		-- emoji:🚶🏻; unicode = 1f6b6-1f3fb
-		["person_walking_tone1"] = "128694_127995",
 		["walking_tone1"] = "128694_127995",
+		["person_walking_tone1"] = "128694_127995",
 		-- emoji:🚶🏼; unicode = 1f6b6-1f3fc
-		["person_walking_tone2"] = "128694_127996",
 		["walking_tone2"] = "128694_127996",
+		["person_walking_tone2"] = "128694_127996",
 		-- emoji:🚶🏽; unicode = 1f6b6-1f3fd
-		["person_walking_tone3"] = "128694_127997",
 		["walking_tone3"] = "128694_127997",
+		["person_walking_tone3"] = "128694_127997",
 		-- emoji:🚶🏾; unicode = 1f6b6-1f3fe
-		["person_walking_tone4"] = "128694_127998",
 		["walking_tone4"] = "128694_127998",
+		["person_walking_tone4"] = "128694_127998",
 		-- emoji:🚶🏿; unicode = 1f6b6-1f3ff
-		["person_walking_tone5"] = "128694_127999",
 		["walking_tone5"] = "128694_127999",
+		["person_walking_tone5"] = "128694_127999",
 		-- emoji:🚶‍♂️; unicode = 1f6b6-200d-2642-fe0f
 		["man_walking"] = "128694_8205_9794_65039",
 		-- emoji:🚶🏻‍♂️; unicode = 1f6b6-1f3fb-200d-2642-fe0f
@@ -16236,23 +16278,23 @@ addon.Emojis = {
 		-- emoji:🚶🏿‍♂️‍➡️; unicode = 1f6b6-1f3ff-200d-2642-fe0f-200d-27a1-fe0f
 		["man_walking_right_tone5"] = "128694_127999_8205_9794_65039_8205_10145_65039",
 		-- emoji:🧍; unicode = 1f9cd
-		["person_standing"] = "129485",
 		["standing"] = "129485",
+		["person_standing"] = "129485",
 		-- emoji:🧍🏻; unicode = 1f9cd-1f3fb
-		["person_standing_tone1"] = "129485_127995",
 		["standing_tone1"] = "129485_127995",
+		["person_standing_tone1"] = "129485_127995",
 		-- emoji:🧍🏼; unicode = 1f9cd-1f3fc
-		["person_standing_tone2"] = "129485_127996",
 		["standing_tone2"] = "129485_127996",
+		["person_standing_tone2"] = "129485_127996",
 		-- emoji:🧍🏽; unicode = 1f9cd-1f3fd
-		["person_standing_tone3"] = "129485_127997",
 		["standing_tone3"] = "129485_127997",
+		["person_standing_tone3"] = "129485_127997",
 		-- emoji:🧍🏾; unicode = 1f9cd-1f3fe
-		["person_standing_tone4"] = "129485_127998",
 		["standing_tone4"] = "129485_127998",
+		["person_standing_tone4"] = "129485_127998",
 		-- emoji:🧍🏿; unicode = 1f9cd-1f3ff
-		["person_standing_tone5"] = "129485_127999",
 		["standing_tone5"] = "129485_127999",
+		["person_standing_tone5"] = "129485_127999",
 		-- emoji:🧍‍♂️; unicode = 1f9cd-200d-2642-fe0f
 		["man_standing"] = "129485_8205_9794_65039",
 		-- emoji:🧍🏻‍♂️; unicode = 1f9cd-1f3fb-200d-2642-fe0f
@@ -16356,23 +16398,23 @@ addon.Emojis = {
 		-- emoji:🧎🏿‍♂️‍➡️; unicode = 1f9ce-1f3ff-200d-2642-fe0f-200d-27a1-fe0f
 		["man_kneeling_right_tone5"] = "129486_127999_8205_9794_65039_8205_10145_65039",
 		-- emoji:🧑‍🦯; unicode = 1f9d1-200d-1f9af
-		["person_with_probing_cane"] = "129489_8205_129455",
 		["person_with_white_cane"] = "129489_8205_129455",
+		["person_with_probing_cane"] = "129489_8205_129455",
 		-- emoji:🧑🏻‍🦯; unicode = 1f9d1-1f3fb-200d-1f9af
-		["person_with_probing_cane_tone1"] = "129489_127995_8205_129455",
 		["person_with_white_cane_tone1"] = "129489_127995_8205_129455",
+		["person_with_probing_cane_tone1"] = "129489_127995_8205_129455",
 		-- emoji:🧑🏼‍🦯; unicode = 1f9d1-1f3fc-200d-1f9af
-		["person_with_probing_cane_tone2"] = "129489_127996_8205_129455",
 		["person_with_white_cane_tone2"] = "129489_127996_8205_129455",
+		["person_with_probing_cane_tone2"] = "129489_127996_8205_129455",
 		-- emoji:🧑🏽‍🦯; unicode = 1f9d1-1f3fd-200d-1f9af
-		["person_with_probing_cane_tone3"] = "129489_127997_8205_129455",
 		["person_with_white_cane_tone3"] = "129489_127997_8205_129455",
+		["person_with_probing_cane_tone3"] = "129489_127997_8205_129455",
 		-- emoji:🧑🏾‍🦯; unicode = 1f9d1-1f3fe-200d-1f9af
-		["person_with_probing_cane_tone4"] = "129489_127998_8205_129455",
 		["person_with_white_cane_tone4"] = "129489_127998_8205_129455",
+		["person_with_probing_cane_tone4"] = "129489_127998_8205_129455",
 		-- emoji:🧑🏿‍🦯; unicode = 1f9d1-1f3ff-200d-1f9af
-		["person_with_probing_cane_tone5"] = "129489_127999_8205_129455",
 		["person_with_white_cane_tone5"] = "129489_127999_8205_129455",
+		["person_with_probing_cane_tone5"] = "129489_127999_8205_129455",
 		-- emoji:🧑‍🦯‍➡️; unicode = 1f9d1-200d-1f9af-200d-27a1-fe0f
 		["person_with_white_cane_right"] = "129489_8205_129455_8205_10145_65039",
 		-- emoji:🧑🏻‍🦯‍➡️; unicode = 1f9d1-1f3fb-200d-1f9af-200d-27a1-fe0f
@@ -16386,23 +16428,23 @@ addon.Emojis = {
 		-- emoji:🧑🏿‍🦯‍➡️; unicode = 1f9d1-1f3ff-200d-1f9af-200d-27a1-fe0f
 		["person_with_white_cane_right_tone5"] = "129489_127999_8205_129455_8205_10145_65039",
 		-- emoji:👨‍🦯; unicode = 1f468-200d-1f9af
-		["man_with_probing_cane"] = "128104_8205_129455",
 		["man_with_white_cane"] = "128104_8205_129455",
+		["man_with_probing_cane"] = "128104_8205_129455",
 		-- emoji:👨🏻‍🦯; unicode = 1f468-1f3fb-200d-1f9af
-		["man_with_probing_cane_tone1"] = "128104_127995_8205_129455",
 		["man_with_white_cane_tone1"] = "128104_127995_8205_129455",
+		["man_with_probing_cane_tone1"] = "128104_127995_8205_129455",
 		-- emoji:👨🏼‍🦯; unicode = 1f468-1f3fc-200d-1f9af
-		["man_with_probing_cane_tone2"] = "128104_127996_8205_129455",
 		["man_with_white_cane_tone2"] = "128104_127996_8205_129455",
+		["man_with_probing_cane_tone2"] = "128104_127996_8205_129455",
 		-- emoji:👨🏽‍🦯; unicode = 1f468-1f3fd-200d-1f9af
-		["man_with_probing_cane_tone3"] = "128104_127997_8205_129455",
 		["man_with_white_cane_tone3"] = "128104_127997_8205_129455",
+		["man_with_probing_cane_tone3"] = "128104_127997_8205_129455",
 		-- emoji:👨🏾‍🦯; unicode = 1f468-1f3fe-200d-1f9af
-		["man_with_probing_cane_tone4"] = "128104_127998_8205_129455",
 		["man_with_white_cane_tone4"] = "128104_127998_8205_129455",
+		["man_with_probing_cane_tone4"] = "128104_127998_8205_129455",
 		-- emoji:👨🏿‍🦯; unicode = 1f468-1f3ff-200d-1f9af
-		["man_with_probing_cane_tone5"] = "128104_127999_8205_129455",
 		["man_with_white_cane_tone5"] = "128104_127999_8205_129455",
+		["man_with_probing_cane_tone5"] = "128104_127999_8205_129455",
 		-- emoji:👨‍🦯‍➡️; unicode = 1f468-200d-1f9af-200d-27a1-fe0f
 		["man_with_white_cane_right"] = "128104_8205_129455_8205_10145_65039",
 		-- emoji:👨🏻‍🦯‍➡️; unicode = 1f468-1f3fb-200d-1f9af-200d-27a1-fe0f
@@ -16416,23 +16458,23 @@ addon.Emojis = {
 		-- emoji:👨🏿‍🦯‍➡️; unicode = 1f468-1f3ff-200d-1f9af-200d-27a1-fe0f
 		["man_with_white_cane_right_tone5"] = "128104_127999_8205_129455_8205_10145_65039",
 		-- emoji:👩‍🦯; unicode = 1f469-200d-1f9af
-		["woman_with_probing_cane"] = "128105_8205_129455",
 		["woman_with_white_cane"] = "128105_8205_129455",
+		["woman_with_probing_cane"] = "128105_8205_129455",
 		-- emoji:👩🏻‍🦯; unicode = 1f469-1f3fb-200d-1f9af
-		["woman_with_probing_cane_tone1"] = "128105_127995_8205_129455",
 		["woman_with_white_cane_tone1"] = "128105_127995_8205_129455",
+		["woman_with_probing_cane_tone1"] = "128105_127995_8205_129455",
 		-- emoji:👩🏼‍🦯; unicode = 1f469-1f3fc-200d-1f9af
-		["woman_with_probing_cane_tone2"] = "128105_127996_8205_129455",
 		["woman_with_white_cane_tone2"] = "128105_127996_8205_129455",
+		["woman_with_probing_cane_tone2"] = "128105_127996_8205_129455",
 		-- emoji:👩🏽‍🦯; unicode = 1f469-1f3fd-200d-1f9af
-		["woman_with_probing_cane_tone3"] = "128105_127997_8205_129455",
 		["woman_with_white_cane_tone3"] = "128105_127997_8205_129455",
+		["woman_with_probing_cane_tone3"] = "128105_127997_8205_129455",
 		-- emoji:👩🏾‍🦯; unicode = 1f469-1f3fe-200d-1f9af
-		["woman_with_probing_cane_tone4"] = "128105_127998_8205_129455",
 		["woman_with_white_cane_tone4"] = "128105_127998_8205_129455",
+		["woman_with_probing_cane_tone4"] = "128105_127998_8205_129455",
 		-- emoji:👩🏿‍🦯; unicode = 1f469-1f3ff-200d-1f9af
-		["woman_with_probing_cane_tone5"] = "128105_127999_8205_129455",
 		["woman_with_white_cane_tone5"] = "128105_127999_8205_129455",
+		["woman_with_probing_cane_tone5"] = "128105_127999_8205_129455",
 		-- emoji:👩‍🦯‍➡️; unicode = 1f469-200d-1f9af-200d-27a1-fe0f
 		["woman_with_white_cane_right"] = "128105_8205_129455_8205_10145_65039",
 		-- emoji:👩🏻‍🦯‍➡️; unicode = 1f469-1f3fb-200d-1f9af-200d-27a1-fe0f
@@ -16590,23 +16632,23 @@ addon.Emojis = {
 		-- emoji:👩🏿‍🦽‍➡️; unicode = 1f469-1f3ff-200d-1f9bd-200d-27a1-fe0f
 		["woman_in_manual_wheelchair_right_tone5"] = "128105_127999_8205_129469_8205_10145_65039",
 		-- emoji:🏃; unicode = 1f3c3
-		["person_running"] = "127939",
 		["running"] = "127939",
+		["person_running"] = "127939",
 		-- emoji:🏃🏻; unicode = 1f3c3-1f3fb
-		["person_running_tone1"] = "127939_127995",
 		["running_tone1"] = "127939_127995",
+		["person_running_tone1"] = "127939_127995",
 		-- emoji:🏃🏼; unicode = 1f3c3-1f3fc
-		["person_running_tone2"] = "127939_127996",
 		["running_tone2"] = "127939_127996",
+		["person_running_tone2"] = "127939_127996",
 		-- emoji:🏃🏽; unicode = 1f3c3-1f3fd
-		["person_running_tone3"] = "127939_127997",
 		["running_tone3"] = "127939_127997",
+		["person_running_tone3"] = "127939_127997",
 		-- emoji:🏃🏾; unicode = 1f3c3-1f3fe
-		["person_running_tone4"] = "127939_127998",
 		["running_tone4"] = "127939_127998",
+		["person_running_tone4"] = "127939_127998",
 		-- emoji:🏃🏿; unicode = 1f3c3-1f3ff
-		["person_running_tone5"] = "127939_127999",
 		["running_tone5"] = "127939_127999",
+		["person_running_tone5"] = "127939_127999",
 		-- emoji:🏃‍♂️; unicode = 1f3c3-200d-2642-fe0f
 		["man_running"] = "127939_8205_9794_65039",
 		-- emoji:🏃🏻‍♂️; unicode = 1f3c3-1f3fb-200d-2642-fe0f
@@ -16823,33 +16865,33 @@ addon.Emojis = {
 		-- emoji:🏇🏿; unicode = 1f3c7-1f3ff
 		["horse_racing_tone5"] = "127943_127999",
 		-- emoji:⛷️; unicode = 26f7-fe0f
-		["person_skiing"] = "9975_65039",
 		["skier"] = "9975_65039",
 		["skiing"] = "9975_65039",
+		["person_skiing"] = "9975_65039",
 		-- emoji:🏂; unicode = 1f3c2
-		["person_snowboarding"] = "127938",
 		["snowboarder"] = "127938",
 		["snowboarding"] = "127938",
+		["person_snowboarding"] = "127938",
 		-- emoji:🏂🏻; unicode = 1f3c2-1f3fb
-		["person_snowboarding_tone1"] = "127938_127995",
 		["snowboarder_tone1"] = "127938_127995",
 		["snowboarding_tone1"] = "127938_127995",
+		["person_snowboarding_tone1"] = "127938_127995",
 		-- emoji:🏂🏼; unicode = 1f3c2-1f3fc
-		["person_snowboarding_tone2"] = "127938_127996",
 		["snowboarder_tone2"] = "127938_127996",
 		["snowboarding_tone2"] = "127938_127996",
+		["person_snowboarding_tone2"] = "127938_127996",
 		-- emoji:🏂🏽; unicode = 1f3c2-1f3fd
-		["person_snowboarding_tone3"] = "127938_127997",
 		["snowboarder_tone3"] = "127938_127997",
 		["snowboarding_tone3"] = "127938_127997",
+		["person_snowboarding_tone3"] = "127938_127997",
 		-- emoji:🏂🏾; unicode = 1f3c2-1f3fe
-		["person_snowboarding_tone4"] = "127938_127998",
 		["snowboarder_tone4"] = "127938_127998",
 		["snowboarding_tone4"] = "127938_127998",
+		["person_snowboarding_tone4"] = "127938_127998",
 		-- emoji:🏂🏿; unicode = 1f3c2-1f3ff
-		["person_snowboarding_tone5"] = "127938_127999",
 		["snowboarder_tone5"] = "127938_127999",
 		["snowboarding_tone5"] = "127938_127999",
+		["person_snowboarding_tone5"] = "127938_127999",
 		-- emoji:🏌️; unicode = 1f3cc-fe0f
 		["golfer"] = "127948_65039",
 		["golfing"] = "127948_65039",
@@ -16899,29 +16941,29 @@ addon.Emojis = {
 		-- emoji:🏌🏿‍♀️; unicode = 1f3cc-1f3ff-200d-2640-fe0f
 		["woman_golfing_tone5"] = "127948_127999_8205_9792_65039",
 		-- emoji:🏄; unicode = 1f3c4
-		["person_surfing"] = "127940",
 		["surfer"] = "127940",
 		["surfing"] = "127940",
+		["person_surfing"] = "127940",
 		-- emoji:🏄🏻; unicode = 1f3c4-1f3fb
-		["person_surfing_tone1"] = "127940_127995",
 		["surfer_tone1"] = "127940_127995",
 		["surfing_tone1"] = "127940_127995",
+		["person_surfing_tone1"] = "127940_127995",
 		-- emoji:🏄🏼; unicode = 1f3c4-1f3fc
-		["person_surfing_tone2"] = "127940_127996",
 		["surfer_tone2"] = "127940_127996",
 		["surfing_tone2"] = "127940_127996",
+		["person_surfing_tone2"] = "127940_127996",
 		-- emoji:🏄🏽; unicode = 1f3c4-1f3fd
-		["person_surfing_tone3"] = "127940_127997",
 		["surfer_tone3"] = "127940_127997",
 		["surfing_tone3"] = "127940_127997",
+		["person_surfing_tone3"] = "127940_127997",
 		-- emoji:🏄🏾; unicode = 1f3c4-1f3fe
-		["person_surfing_tone4"] = "127940_127998",
 		["surfer_tone4"] = "127940_127998",
 		["surfing_tone4"] = "127940_127998",
+		["person_surfing_tone4"] = "127940_127998",
 		-- emoji:🏄🏿; unicode = 1f3c4-1f3ff
-		["person_surfing_tone5"] = "127940_127999",
 		["surfer_tone5"] = "127940_127999",
 		["surfing_tone5"] = "127940_127999",
+		["person_surfing_tone5"] = "127940_127999",
 		-- emoji:🏄‍♂️; unicode = 1f3c4-200d-2642-fe0f
 		["man_surfing"] = "127940_8205_9794_65039",
 		-- emoji:🏄🏻‍♂️; unicode = 1f3c4-1f3fb-200d-2642-fe0f
@@ -16947,23 +16989,23 @@ addon.Emojis = {
 		-- emoji:🏄🏿‍♀️; unicode = 1f3c4-1f3ff-200d-2640-fe0f
 		["woman_surfing_tone5"] = "127940_127999_8205_9792_65039",
 		-- emoji:🚣; unicode = 1f6a3
-		["person_rowing_boat"] = "128675",
 		["rowboat"] = "128675",
+		["person_rowing_boat"] = "128675",
 		-- emoji:🚣🏻; unicode = 1f6a3-1f3fb
-		["person_rowing_boat_tone1"] = "128675_127995",
 		["rowboat_tone1"] = "128675_127995",
+		["person_rowing_boat_tone1"] = "128675_127995",
 		-- emoji:🚣🏼; unicode = 1f6a3-1f3fc
-		["person_rowing_boat_tone2"] = "128675_127996",
 		["rowboat_tone2"] = "128675_127996",
+		["person_rowing_boat_tone2"] = "128675_127996",
 		-- emoji:🚣🏽; unicode = 1f6a3-1f3fd
-		["person_rowing_boat_tone3"] = "128675_127997",
 		["rowboat_tone3"] = "128675_127997",
+		["person_rowing_boat_tone3"] = "128675_127997",
 		-- emoji:🚣🏾; unicode = 1f6a3-1f3fe
-		["person_rowing_boat_tone4"] = "128675_127998",
 		["rowboat_tone4"] = "128675_127998",
+		["person_rowing_boat_tone4"] = "128675_127998",
 		-- emoji:🚣🏿; unicode = 1f6a3-1f3ff
-		["person_rowing_boat_tone5"] = "128675_127999",
 		["rowboat_tone5"] = "128675_127999",
+		["person_rowing_boat_tone5"] = "128675_127999",
 		-- emoji:🚣‍♂️; unicode = 1f6a3-200d-2642-fe0f
 		["man_rowing_boat"] = "128675_8205_9794_65039",
 		-- emoji:🚣🏻‍♂️; unicode = 1f6a3-1f3fb-200d-2642-fe0f
@@ -16989,29 +17031,29 @@ addon.Emojis = {
 		-- emoji:🚣🏿‍♀️; unicode = 1f6a3-1f3ff-200d-2640-fe0f
 		["woman_rowing_boat_tone5"] = "128675_127999_8205_9792_65039",
 		-- emoji:🏊; unicode = 1f3ca
-		["person_swimming"] = "127946",
 		["swimmer"] = "127946",
 		["swimming"] = "127946",
+		["person_swimming"] = "127946",
 		-- emoji:🏊🏻; unicode = 1f3ca-1f3fb
-		["person_swimming_tone1"] = "127946_127995",
 		["swimmer_tone1"] = "127946_127995",
 		["swimming_tone1"] = "127946_127995",
+		["person_swimming_tone1"] = "127946_127995",
 		-- emoji:🏊🏼; unicode = 1f3ca-1f3fc
-		["person_swimming_tone2"] = "127946_127996",
 		["swimmer_tone2"] = "127946_127996",
 		["swimming_tone2"] = "127946_127996",
+		["person_swimming_tone2"] = "127946_127996",
 		-- emoji:🏊🏽; unicode = 1f3ca-1f3fd
-		["person_swimming_tone3"] = "127946_127997",
 		["swimmer_tone3"] = "127946_127997",
 		["swimming_tone3"] = "127946_127997",
+		["person_swimming_tone3"] = "127946_127997",
 		-- emoji:🏊🏾; unicode = 1f3ca-1f3fe
-		["person_swimming_tone4"] = "127946_127998",
 		["swimmer_tone4"] = "127946_127998",
 		["swimming_tone4"] = "127946_127998",
+		["person_swimming_tone4"] = "127946_127998",
 		-- emoji:🏊🏿; unicode = 1f3ca-1f3ff
-		["person_swimming_tone5"] = "127946_127999",
 		["swimmer_tone5"] = "127946_127999",
 		["swimming_tone5"] = "127946_127999",
+		["person_swimming_tone5"] = "127946_127999",
 		-- emoji:🏊‍♂️; unicode = 1f3ca-200d-2642-fe0f
 		["man_swimming"] = "127946_8205_9794_65039",
 		-- emoji:🏊🏻‍♂️; unicode = 1f3ca-1f3fb-200d-2642-fe0f
@@ -17073,29 +17115,29 @@ addon.Emojis = {
 		-- emoji:⛹🏿‍♀️; unicode = 26f9-1f3ff-200d-2640-fe0f
 		["woman_bouncing_ball_tone5"] = "9977_127999_8205_9792_65039",
 		-- emoji:🏋️; unicode = 1f3cb-fe0f
-		["person_lifting_weights"] = "127947_65039",
 		["weight_lifter"] = "127947_65039",
 		["weight_lifting"] = "127947_65039",
+		["person_lifting_weights"] = "127947_65039",
 		-- emoji:🏋🏻; unicode = 1f3cb-1f3fb
-		["person_lifting_weights_tone1"] = "127947_127995",
 		["weight_lifter_tone1"] = "127947_127995",
 		["weight_lifting_tone1"] = "127947_127995",
+		["person_lifting_weights_tone1"] = "127947_127995",
 		-- emoji:🏋🏼; unicode = 1f3cb-1f3fc
-		["person_lifting_weights_tone2"] = "127947_127996",
 		["weight_lifter_tone2"] = "127947_127996",
 		["weight_lifting_tone2"] = "127947_127996",
+		["person_lifting_weights_tone2"] = "127947_127996",
 		-- emoji:🏋🏽; unicode = 1f3cb-1f3fd
-		["person_lifting_weights_tone3"] = "127947_127997",
 		["weight_lifter_tone3"] = "127947_127997",
 		["weight_lifting_tone3"] = "127947_127997",
+		["person_lifting_weights_tone3"] = "127947_127997",
 		-- emoji:🏋🏾; unicode = 1f3cb-1f3fe
-		["person_lifting_weights_tone4"] = "127947_127998",
 		["weight_lifter_tone4"] = "127947_127998",
 		["weight_lifting_tone4"] = "127947_127998",
+		["person_lifting_weights_tone4"] = "127947_127998",
 		-- emoji:🏋🏿; unicode = 1f3cb-1f3ff
-		["person_lifting_weights_tone5"] = "127947_127999",
 		["weight_lifter_tone5"] = "127947_127999",
 		["weight_lifting_tone5"] = "127947_127999",
+		["person_lifting_weights_tone5"] = "127947_127999",
 		-- emoji:🏋️‍♂️; unicode = 1f3cb-fe0f-200d-2642-fe0f
 		["man_lifting_weights"] = "127947_65039_8205_9794_65039",
 		-- emoji:🏋🏻‍♂️; unicode = 1f3cb-1f3fb-200d-2642-fe0f
@@ -17121,28 +17163,28 @@ addon.Emojis = {
 		-- emoji:🏋🏿‍♀️; unicode = 1f3cb-1f3ff-200d-2640-fe0f
 		["woman_lifting_weights_tone5"] = "127947_127999_8205_9792_65039",
 		-- emoji:🚴; unicode = 1f6b4
-		["bicyclist"] = "128692",
 		["biking"] = "128692",
+		["bicyclist"] = "128692",
 		["person_biking"] = "128692",
 		-- emoji:🚴🏻; unicode = 1f6b4-1f3fb
-		["bicyclist_tone1"] = "128692_127995",
 		["biking_tone1"] = "128692_127995",
+		["bicyclist_tone1"] = "128692_127995",
 		["person_biking_tone1"] = "128692_127995",
 		-- emoji:🚴🏼; unicode = 1f6b4-1f3fc
-		["bicyclist_tone2"] = "128692_127996",
 		["biking_tone2"] = "128692_127996",
+		["bicyclist_tone2"] = "128692_127996",
 		["person_biking_tone2"] = "128692_127996",
 		-- emoji:🚴🏽; unicode = 1f6b4-1f3fd
-		["bicyclist_tone3"] = "128692_127997",
 		["biking_tone3"] = "128692_127997",
+		["bicyclist_tone3"] = "128692_127997",
 		["person_biking_tone3"] = "128692_127997",
 		-- emoji:🚴🏾; unicode = 1f6b4-1f3fe
-		["bicyclist_tone4"] = "128692_127998",
 		["biking_tone4"] = "128692_127998",
+		["bicyclist_tone4"] = "128692_127998",
 		["person_biking_tone4"] = "128692_127998",
 		-- emoji:🚴🏿; unicode = 1f6b4-1f3ff
-		["bicyclist_tone5"] = "128692_127999",
 		["biking_tone5"] = "128692_127999",
+		["bicyclist_tone5"] = "128692_127999",
 		["person_biking_tone5"] = "128692_127999",
 		-- emoji:🚴‍♂️; unicode = 1f6b4-200d-2642-fe0f
 		["man_biking"] = "128692_8205_9794_65039",
@@ -17169,28 +17211,28 @@ addon.Emojis = {
 		-- emoji:🚴🏿‍♀️; unicode = 1f6b4-1f3ff-200d-2640-fe0f
 		["woman_biking_tone5"] = "128692_127999_8205_9792_65039",
 		-- emoji:🚵; unicode = 1f6b5
-		["mountain_bicyclist"] = "128693",
 		["mountain_biking"] = "128693",
+		["mountain_bicyclist"] = "128693",
 		["person_mountain_biking"] = "128693",
 		-- emoji:🚵🏻; unicode = 1f6b5-1f3fb
-		["mountain_bicyclist_tone1"] = "128693_127995",
 		["mountain_biking_tone1"] = "128693_127995",
+		["mountain_bicyclist_tone1"] = "128693_127995",
 		["person_mountain_biking_tone1"] = "128693_127995",
 		-- emoji:🚵🏼; unicode = 1f6b5-1f3fc
-		["mountain_bicyclist_tone2"] = "128693_127996",
 		["mountain_biking_tone2"] = "128693_127996",
+		["mountain_bicyclist_tone2"] = "128693_127996",
 		["person_mountain_biking_tone2"] = "128693_127996",
 		-- emoji:🚵🏽; unicode = 1f6b5-1f3fd
-		["mountain_bicyclist_tone3"] = "128693_127997",
 		["mountain_biking_tone3"] = "128693_127997",
+		["mountain_bicyclist_tone3"] = "128693_127997",
 		["person_mountain_biking_tone3"] = "128693_127997",
 		-- emoji:🚵🏾; unicode = 1f6b5-1f3fe
-		["mountain_bicyclist_tone4"] = "128693_127998",
 		["mountain_biking_tone4"] = "128693_127998",
+		["mountain_bicyclist_tone4"] = "128693_127998",
 		["person_mountain_biking_tone4"] = "128693_127998",
 		-- emoji:🚵🏿; unicode = 1f6b5-1f3ff
-		["mountain_bicyclist_tone5"] = "128693_127999",
 		["mountain_biking_tone5"] = "128693_127999",
+		["mountain_bicyclist_tone5"] = "128693_127999",
 		["person_mountain_biking_tone5"] = "128693_127999",
 		-- emoji:🚵‍♂️; unicode = 1f6b5-200d-2642-fe0f
 		["man_mountain_biking"] = "128693_8205_9794_65039",
@@ -17259,31 +17301,31 @@ addon.Emojis = {
 		-- emoji:🤸🏿‍♀️; unicode = 1f938-1f3ff-200d-2640-fe0f
 		["woman_cartwheeling_tone5"] = "129336_127999_8205_9792_65039",
 		-- emoji:🤼; unicode = 1f93c
-		["people_wrestling"] = "129340",
 		["wrestlers"] = "129340",
 		["wrestling"] = "129340",
+		["people_wrestling"] = "129340",
 		-- emoji:🤼‍♂️; unicode = 1f93c-200d-2642-fe0f
 		["men_wrestling"] = "129340_8205_9794_65039",
 		-- emoji:🤼‍♀️; unicode = 1f93c-200d-2640-fe0f
 		["women_wrestling"] = "129340_8205_9792_65039",
 		-- emoji:🤽; unicode = 1f93d
-		["person_playing_water_polo"] = "129341",
 		["water_polo"] = "129341",
+		["person_playing_water_polo"] = "129341",
 		-- emoji:🤽🏻; unicode = 1f93d-1f3fb
-		["person_playing_water_polo_tone1"] = "129341_127995",
 		["water_polo_tone1"] = "129341_127995",
+		["person_playing_water_polo_tone1"] = "129341_127995",
 		-- emoji:🤽🏼; unicode = 1f93d-1f3fc
-		["person_playing_water_polo_tone2"] = "129341_127996",
 		["water_polo_tone2"] = "129341_127996",
+		["person_playing_water_polo_tone2"] = "129341_127996",
 		-- emoji:🤽🏽; unicode = 1f93d-1f3fd
-		["person_playing_water_polo_tone3"] = "129341_127997",
 		["water_polo_tone3"] = "129341_127997",
+		["person_playing_water_polo_tone3"] = "129341_127997",
 		-- emoji:🤽🏾; unicode = 1f93d-1f3fe
-		["person_playing_water_polo_tone4"] = "129341_127998",
 		["water_polo_tone4"] = "129341_127998",
+		["person_playing_water_polo_tone4"] = "129341_127998",
 		-- emoji:🤽🏿; unicode = 1f93d-1f3ff
-		["person_playing_water_polo_tone5"] = "129341_127999",
 		["water_polo_tone5"] = "129341_127999",
+		["person_playing_water_polo_tone5"] = "129341_127999",
 		-- emoji:🤽‍♂️; unicode = 1f93d-200d-2642-fe0f
 		["man_playing_water_polo"] = "129341_8205_9794_65039",
 		-- emoji:🤽🏻‍♂️; unicode = 1f93d-1f3fb-200d-2642-fe0f
@@ -17679,83 +17721,83 @@ addon.Emojis = {
 		-- emoji:👬🏿; unicode = 1f46c-1f3ff
 		["two_men_holding_hands_tone5"] = "128108_127999",
 		-- emoji:💏; unicode = 1f48f
-		["couple_kiss"] = "128143",
 		["couplekiss"] = "128143",
+		["couple_kiss"] = "128143",
 		-- emoji:💏🏻; unicode = 1f48f-1f3fb
-		["couple_kiss_tone1"] = "128143_127995",
 		["couplekiss_tone1"] = "128143_127995",
+		["couple_kiss_tone1"] = "128143_127995",
 		-- emoji:💏🏼; unicode = 1f48f-1f3fc
-		["couple_kiss_tone2"] = "128143_127996",
 		["couplekiss_tone2"] = "128143_127996",
+		["couple_kiss_tone2"] = "128143_127996",
 		-- emoji:💏🏽; unicode = 1f48f-1f3fd
-		["couple_kiss_tone3"] = "128143_127997",
 		["couplekiss_tone3"] = "128143_127997",
+		["couple_kiss_tone3"] = "128143_127997",
 		-- emoji:💏🏾; unicode = 1f48f-1f3fe
-		["couple_kiss_tone4"] = "128143_127998",
 		["couplekiss_tone4"] = "128143_127998",
+		["couple_kiss_tone4"] = "128143_127998",
 		-- emoji:💏🏿; unicode = 1f48f-1f3ff
-		["couple_kiss_tone5"] = "128143_127999",
 		["couplekiss_tone5"] = "128143_127999",
+		["couple_kiss_tone5"] = "128143_127999",
 		-- emoji:🧑🏻‍❤️‍💋‍🧑🏼; unicode = 1f9d1-1f3fb-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fc
-		["couple_kiss_tone1-2"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127996",
 		["couplekiss_tone1-2"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127996",
+		["couple_kiss_tone1-2"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127996",
 		-- emoji:🧑🏻‍❤️‍💋‍🧑🏽; unicode = 1f9d1-1f3fb-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fd
-		["couple_kiss_tone1-3"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127997",
 		["couplekiss_tone1-3"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127997",
+		["couple_kiss_tone1-3"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127997",
 		-- emoji:🧑🏻‍❤️‍💋‍🧑🏾; unicode = 1f9d1-1f3fb-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fe
-		["couple_kiss_tone1-4"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127998",
 		["couplekiss_tone1-4"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127998",
+		["couple_kiss_tone1-4"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127998",
 		-- emoji:🧑🏻‍❤️‍💋‍🧑🏿; unicode = 1f9d1-1f3fb-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3ff
-		["couple_kiss_tone1-5"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127999",
 		["couplekiss_tone1-5"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127999",
+		["couple_kiss_tone1-5"] = "129489_127995_8205_10084_65039_8205_128139_8205_129489_127999",
 		-- emoji:🧑🏼‍❤️‍💋‍🧑🏻; unicode = 1f9d1-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fb
-		["couple_kiss_tone2-1"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127995",
 		["couplekiss_tone2-1"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127995",
+		["couple_kiss_tone2-1"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127995",
 		-- emoji:🧑🏼‍❤️‍💋‍🧑🏽; unicode = 1f9d1-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fd
-		["couple_kiss_tone2-3"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127997",
 		["couplekiss_tone2-3"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127997",
+		["couple_kiss_tone2-3"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127997",
 		-- emoji:🧑🏼‍❤️‍💋‍🧑🏾; unicode = 1f9d1-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fe
-		["couple_kiss_tone2-4"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127998",
 		["couplekiss_tone2-4"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127998",
+		["couple_kiss_tone2-4"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127998",
 		-- emoji:🧑🏼‍❤️‍💋‍🧑🏿; unicode = 1f9d1-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3ff
-		["couple_kiss_tone2-5"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127999",
 		["couplekiss_tone2-5"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127999",
+		["couple_kiss_tone2-5"] = "129489_127996_8205_10084_65039_8205_128139_8205_129489_127999",
 		-- emoji:🧑🏽‍❤️‍💋‍🧑🏻; unicode = 1f9d1-1f3fd-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fb
-		["couple_kiss_tone3-1"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127995",
 		["couplekiss_tone3-1"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127995",
+		["couple_kiss_tone3-1"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127995",
 		-- emoji:🧑🏽‍❤️‍💋‍🧑🏼; unicode = 1f9d1-1f3fd-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fc
-		["couple_kiss_tone3-2"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127996",
 		["couplekiss_tone3-2"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127996",
+		["couple_kiss_tone3-2"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127996",
 		-- emoji:🧑🏽‍❤️‍💋‍🧑🏾; unicode = 1f9d1-1f3fd-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fe
-		["couple_kiss_tone3-4"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127998",
 		["couplekiss_tone3-4"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127998",
+		["couple_kiss_tone3-4"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127998",
 		-- emoji:🧑🏽‍❤️‍💋‍🧑🏿; unicode = 1f9d1-1f3fd-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3ff
-		["couple_kiss_tone3-5"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127999",
 		["couplekiss_tone3-5"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127999",
+		["couple_kiss_tone3-5"] = "129489_127997_8205_10084_65039_8205_128139_8205_129489_127999",
 		-- emoji:🧑🏾‍❤️‍💋‍🧑🏻; unicode = 1f9d1-1f3fe-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fb
-		["couple_kiss_tone4-1"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127995",
 		["couplekiss_tone4-1"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127995",
+		["couple_kiss_tone4-1"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127995",
 		-- emoji:🧑🏾‍❤️‍💋‍🧑🏼; unicode = 1f9d1-1f3fe-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fc
-		["couple_kiss_tone4-2"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127996",
 		["couplekiss_tone4-2"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127996",
+		["couple_kiss_tone4-2"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127996",
 		-- emoji:🧑🏾‍❤️‍💋‍🧑🏽; unicode = 1f9d1-1f3fe-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fd
-		["couple_kiss_tone4-3"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127997",
 		["couplekiss_tone4-3"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127997",
+		["couple_kiss_tone4-3"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127997",
 		-- emoji:🧑🏾‍❤️‍💋‍🧑🏿; unicode = 1f9d1-1f3fe-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3ff
-		["couple_kiss_tone4-5"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127999",
 		["couplekiss_tone4-5"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127999",
+		["couple_kiss_tone4-5"] = "129489_127998_8205_10084_65039_8205_128139_8205_129489_127999",
 		-- emoji:🧑🏿‍❤️‍💋‍🧑🏻; unicode = 1f9d1-1f3ff-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fb
-		["couple_kiss_tone5-1"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127995",
 		["couplekiss_tone5-1"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127995",
+		["couple_kiss_tone5-1"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127995",
 		-- emoji:🧑🏿‍❤️‍💋‍🧑🏼; unicode = 1f9d1-1f3ff-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fc
-		["couple_kiss_tone5-2"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127996",
 		["couplekiss_tone5-2"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127996",
+		["couple_kiss_tone5-2"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127996",
 		-- emoji:🧑🏿‍❤️‍💋‍🧑🏽; unicode = 1f9d1-1f3ff-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fd
-		["couple_kiss_tone5-3"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127997",
 		["couplekiss_tone5-3"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127997",
+		["couple_kiss_tone5-3"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127997",
 		-- emoji:🧑🏿‍❤️‍💋‍🧑🏾; unicode = 1f9d1-1f3ff-200d-2764-fe0f-200d-1f48b-200d-1f9d1-1f3fe
-		["couple_kiss_tone5-4"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127998",
 		["couplekiss_tone5-4"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127998",
+		["couple_kiss_tone5-4"] = "129489_127999_8205_10084_65039_8205_128139_8205_129489_127998",
 		-- emoji:👩‍❤️‍💋‍👨; unicode = 1f469-200d-2764-fe0f-200d-1f48b-200d-1f468
 		["kiss_mw"] = "128105_8205_10084_65039_8205_128139_8205_128104",
 		["kiss_wm"] = "128105_8205_10084_65039_8205_128139_8205_128104",
@@ -18476,8 +18518,8 @@ addon.Emojis = {
 		-- emoji:🦕; unicode = 1f995
 		["sauropod"] = "129429",
 		-- emoji:🦖; unicode = 1f996
-		["t-rex"] = "129430",
 		["trex"] = "129430",
+		["t-rex"] = "129430",
 		-- emoji:🐳; unicode = 1f433
 		["spouting_whale"] = "128051",
 		-- emoji:🐋; unicode = 1f40b
@@ -18596,8 +18638,8 @@ addon.Emojis = {
 		-- emoji:🍃; unicode = 1f343
 		["leaves"] = "127811",
 		-- emoji:🪹; unicode = 1fab9
-		["empty_nest"] = "129721",
 		["nest"] = "129721",
+		["empty_nest"] = "129721",
 		-- emoji:🪺; unicode = 1faba
 		["nest_with_eggs"] = "129722",
 		-- emoji:🍄; unicode = 1f344
@@ -18714,8 +18756,8 @@ addon.Emojis = {
 		-- emoji:🍔; unicode = 1f354
 		["hamburger"] = "127828",
 		-- emoji:🍟; unicode = 1f35f
-		["french_fries"] = "127839",
 		["fries"] = "127839",
+		["french_fries"] = "127839",
 		-- emoji:🍕; unicode = 1f355
 		["pizza"] = "127829",
 		-- emoji:🌭; unicode = 1f32d
@@ -18740,15 +18782,15 @@ addon.Emojis = {
 		-- emoji:🥘; unicode = 1f958
 		["shallow_pan_of_food"] = "129368",
 		-- emoji:🍲; unicode = 1f372
-		["pot_of_food"] = "127858",
 		["stew"] = "127858",
+		["pot_of_food"] = "127858",
 		-- emoji:🫕; unicode = 1fad5
 		["fondue"] = "129749",
 		-- emoji:🥣; unicode = 1f963
 		["bowl_with_spoon"] = "129379",
 		-- emoji:🥗; unicode = 1f957
-		["green_salad"] = "129367",
 		["salad"] = "129367",
+		["green_salad"] = "129367",
 		-- emoji:🍿; unicode = 1f37f
 		["popcorn"] = "127871",
 		-- emoji:🧈; unicode = 1f9c8
@@ -18765,8 +18807,8 @@ addon.Emojis = {
 		-- emoji:🍙; unicode = 1f359
 		["rice_ball"] = "127833",
 		-- emoji:🍚; unicode = 1f35a
-		["cooked_rice"] = "127834",
 		["rice"] = "127834",
+		["cooked_rice"] = "127834",
 		-- emoji:🍛; unicode = 1f35b
 		["curry"] = "127835",
 		["curry_rice"] = "127835",
@@ -18829,8 +18871,8 @@ addon.Emojis = {
 		-- emoji:🍼; unicode = 1f37c
 		["baby_bottle"] = "127868",
 		-- emoji:🥛; unicode = 1f95b
-		["glass_of_milk"] = "129371",
 		["milk"] = "129371",
+		["glass_of_milk"] = "129371",
 		-- emoji:☕; unicode = 2615
 		["coffee"] = "9749",
 		-- emoji:🫖; unicode = 1fad6
@@ -18854,8 +18896,8 @@ addon.Emojis = {
 		-- emoji:🥂; unicode = 1f942
 		["clinking_glasses"] = "129346",
 		-- emoji:🥃; unicode = 1f943
-		["tumbler_glass"] = "129347",
 		["whisky"] = "129347",
+		["tumbler_glass"] = "129347",
 		-- emoji:🫗; unicode = 1fad7
 		["pour"] = "129751",
 		["pouring_liquid"] = "129751",
@@ -18865,8 +18907,8 @@ addon.Emojis = {
 		["boba_drink"] = "129483",
 		["bubble_tea"] = "129483",
 		-- emoji:🧃; unicode = 1f9c3
-		["beverage_box"] = "129475",
 		["juice_box"] = "129475",
+		["beverage_box"] = "129475",
 		-- emoji:🧉; unicode = 1f9c9
 		["mate"] = "129481",
 		-- emoji:🧊; unicode = 1f9ca
@@ -18917,8 +18959,8 @@ addon.Emojis = {
 		-- emoji:🏜️; unicode = 1f3dc-fe0f
 		["desert"] = "127964_65039",
 		-- emoji:🏝️; unicode = 1f3dd-fe0f
-		["desert_island"] = "127965_65039",
 		["island"] = "127965_65039",
+		["desert_island"] = "127965_65039",
 		-- emoji:🏞️; unicode = 1f3de-fe0f
 		["national_park"] = "127966_65039",
 		-- emoji:🏟️; unicode = 1f3df-fe0f
@@ -18926,8 +18968,8 @@ addon.Emojis = {
 		-- emoji:🏛️; unicode = 1f3db-fe0f
 		["classical_building"] = "127963_65039",
 		-- emoji:🏗️; unicode = 1f3d7-fe0f
-		["building_construction"] = "127959_65039",
 		["construction_site"] = "127959_65039",
+		["building_construction"] = "127959_65039",
 		-- emoji:🧱; unicode = 1f9f1
 		["bricks"] = "129521",
 		-- emoji:🪨; unicode = 1faa8
@@ -19008,8 +19050,8 @@ addon.Emojis = {
 		-- emoji:🌆; unicode = 1f306
 		["city_dusk"] = "127750",
 		-- emoji:🌇; unicode = 1f307
-		["city_sunrise"] = "127751",
 		["city_sunset"] = "127751",
+		["city_sunrise"] = "127751",
 		-- emoji:🌉; unicode = 1f309
 		["bridge_at_night"] = "127753",
 		-- emoji:♨️; unicode = 2668-fe0f
@@ -19017,8 +19059,8 @@ addon.Emojis = {
 		-- emoji:🎠; unicode = 1f3a0
 		["carousel_horse"] = "127904",
 		-- emoji:🛝; unicode = 1f6dd
-		["playground_slide"] = "128733",
 		["slide"] = "128733",
+		["playground_slide"] = "128733",
 		-- emoji:🎡; unicode = 1f3a1
 		["ferris_wheel"] = "127905",
 		-- emoji:🎢; unicode = 1f3a2
@@ -19078,13 +19120,13 @@ addon.Emojis = {
 		-- emoji:🚘; unicode = 1f698
 		["oncoming_automobile"] = "128664",
 		-- emoji:🚙; unicode = 1f699
-		["blue_car"] = "128665",
 		["suv"] = "128665",
+		["blue_car"] = "128665",
 		-- emoji:🛻; unicode = 1f6fb
 		["pickup_truck"] = "128763",
 		-- emoji:🚚; unicode = 1f69a
-		["delivery_truck"] = "128666",
 		["truck"] = "128666",
+		["delivery_truck"] = "128666",
 		-- emoji:🚛; unicode = 1f69b
 		["articulated_lorry"] = "128667",
 		-- emoji:🚜; unicode = 1f69c
@@ -19102,8 +19144,8 @@ addon.Emojis = {
 		-- emoji:🛺; unicode = 1f6fa
 		["auto_rickshaw"] = "128762",
 		-- emoji:🚲; unicode = 1f6b2
-		["bicycle"] = "128690",
 		["bike"] = "128690",
+		["bicycle"] = "128690",
 		-- emoji:🛴; unicode = 1f6f4
 		["scooter"] = "128756",
 		-- emoji:🛹; unicode = 1f6f9
@@ -19129,8 +19171,8 @@ addon.Emojis = {
 		-- emoji:🚦; unicode = 1f6a6
 		["vertical_traffic_light"] = "128678",
 		-- emoji:🛑; unicode = 1f6d1
-		["octagonal_sign"] = "128721",
 		["stop_sign"] = "128721",
+		["octagonal_sign"] = "128721",
 		-- emoji:🚧; unicode = 1f6a7
 		["construction"] = "128679",
 		-- emoji:⚓; unicode = 2693
@@ -19278,16 +19320,16 @@ addon.Emojis = {
 		-- emoji:🌞; unicode = 1f31e
 		["sun_with_face"] = "127774",
 		-- emoji:🪐; unicode = 1fa90
-		["ringed_planet"] = "129680",
 		["saturn"] = "129680",
+		["ringed_planet"] = "129680",
 		-- emoji:⭐; unicode = 2b50
 		["star"] = "11088",
 		-- emoji:🌟; unicode = 1f31f
-		["glowing_star"] = "127775",
 		["star2"] = "127775",
+		["glowing_star"] = "127775",
 		-- emoji:🌠; unicode = 1f320
-		["shooting_star"] = "127776",
 		["stars"] = "127776",
+		["shooting_star"] = "127776",
 		-- emoji:🌌; unicode = 1f30c
 		["milky_way"] = "127756",
 		-- emoji:☁️; unicode = 2601-fe0f
@@ -19299,8 +19341,8 @@ addon.Emojis = {
 		["stormy"] = "9928_65039",
 		["thunder_cloud_and_rain"] = "9928_65039",
 		-- emoji:🌤️; unicode = 1f324-fe0f
-		["sun_behind_small_cloud"] = "127780_65039",
 		["sunny"] = "127780_65039",
+		["sun_behind_small_cloud"] = "127780_65039",
 		-- emoji:🌥️; unicode = 1f325-fe0f
 		["cloudy"] = "127781_65039",
 		["sun_behind_large_cloud"] = "127781_65039",
@@ -19308,14 +19350,14 @@ addon.Emojis = {
 		["sun_and_rain"] = "127782_65039",
 		["sun_behind_rain_cloud"] = "127782_65039",
 		-- emoji:🌧️; unicode = 1f327-fe0f
-		["cloud_with_rain"] = "127783_65039",
 		["rainy"] = "127783_65039",
+		["cloud_with_rain"] = "127783_65039",
 		-- emoji:🌨️; unicode = 1f328-fe0f
-		["cloud_with_snow"] = "127784_65039",
 		["snowy"] = "127784_65039",
+		["cloud_with_snow"] = "127784_65039",
 		-- emoji:🌩️; unicode = 1f329-fe0f
-		["cloud_with_lightning"] = "127785_65039",
 		["lightning"] = "127785_65039",
+		["cloud_with_lightning"] = "127785_65039",
 		-- emoji:🌪️; unicode = 1f32a-fe0f
 		["tornado"] = "127786_65039",
 		-- emoji:🌫️; unicode = 1f32b-fe0f
@@ -19336,8 +19378,8 @@ addon.Emojis = {
 		["beach_umbrella"] = "9969_65039",
 		["umbrella_on_ground"] = "9969_65039",
 		-- emoji:⚡; unicode = 26a1
-		["high_voltage"] = "9889",
 		["zap"] = "9889",
+		["high_voltage"] = "9889",
 		-- emoji:❄️; unicode = 2744-fe0f
 		["snowflake"] = "10052_65039",
 		-- emoji:☃️; unicode = 2603-fe0f
@@ -19368,9 +19410,9 @@ addon.Emojis = {
 		-- emoji:🎈; unicode = 1f388
 		["balloon"] = "127880",
 		-- emoji:🎉; unicode = 1f389
+		["tada"] = "127881",
 		["party"] = "127881",
 		["party_popper"] = "127881",
-		["tada"] = "127881",
 		-- emoji:🎊; unicode = 1f38a
 		["confetti_ball"] = "127882",
 		-- emoji:🎋; unicode = 1f38b
@@ -19380,13 +19422,13 @@ addon.Emojis = {
 		-- emoji:🎎; unicode = 1f38e
 		["dolls"] = "127886",
 		-- emoji:🎏; unicode = 1f38f
-		["carp_streamer"] = "127887",
 		["flags"] = "127887",
+		["carp_streamer"] = "127887",
 		-- emoji:🎐; unicode = 1f390
 		["wind_chime"] = "127888",
 		-- emoji:🎑; unicode = 1f391
-		["moon_ceremony"] = "127889",
 		["rice_scene"] = "127889",
+		["moon_ceremony"] = "127889",
 		-- emoji:🧧; unicode = 1f9e7
 		["red_envelope"] = "129511",
 		-- emoji:🎀; unicode = 1f380
@@ -19396,8 +19438,8 @@ addon.Emojis = {
 		-- emoji:🎗️; unicode = 1f397-fe0f
 		["reminder_ribbon"] = "127895_65039",
 		-- emoji:🎟️; unicode = 1f39f-fe0f
-		["admission_tickets"] = "127903_65039",
 		["tickets"] = "127903_65039",
+		["admission_tickets"] = "127903_65039",
 		-- emoji:🎫; unicode = 1f3ab
 		["ticket"] = "127915",
 		-- emoji:🎖️; unicode = 1f396-fe0f
@@ -19472,8 +19514,8 @@ addon.Emojis = {
 		-- emoji:🥌; unicode = 1f94c
 		["curling_stone"] = "129356",
 		-- emoji:🎯; unicode = 1f3af
-		["bullseye"] = "127919",
 		["dart"] = "127919",
+		["bullseye"] = "127919",
 		["direct_hit"] = "127919",
 		-- emoji:🪀; unicode = 1fa80
 		["yo_yo"] = "129664",
@@ -19530,8 +19572,8 @@ addon.Emojis = {
 		-- emoji:🎭; unicode = 1f3ad
 		["performing_arts"] = "127917",
 		-- emoji:🖼️; unicode = 1f5bc-fe0f
-		["frame_with_picture"] = "128444_65039",
 		["framed_picture"] = "128444_65039",
+		["frame_with_picture"] = "128444_65039",
 		-- emoji:🎨; unicode = 1f3a8
 		["art"] = "127912",
 		["palette"] = "127912",
@@ -19544,8 +19586,8 @@ addon.Emojis = {
 		-- emoji:🪢; unicode = 1faa2
 		["knot"] = "129698",
 		-- emoji:👓; unicode = 1f453
-		["eyeglasses"] = "128083",
 		["glasses"] = "128083",
+		["eyeglasses"] = "128083",
 		-- emoji:🕶️; unicode = 1f576-fe0f
 		["sunglasses"] = "128374_65039",
 		-- emoji:🥽; unicode = 1f97d
@@ -19591,8 +19633,8 @@ addon.Emojis = {
 		-- emoji:👜; unicode = 1f45c
 		["handbag"] = "128092",
 		-- emoji:👝; unicode = 1f45d
-		["clutch_bag"] = "128093",
 		["pouch"] = "128093",
+		["clutch_bag"] = "128093",
 		-- emoji:🛍️; unicode = 1f6cd-fe0f
 		["shopping_bags"] = "128717_65039",
 		-- emoji:🎒; unicode = 1f392
@@ -19603,8 +19645,8 @@ addon.Emojis = {
 		-- emoji:👞; unicode = 1f45e
 		["mans_shoe"] = "128094",
 		-- emoji:👟; unicode = 1f45f
-		["athletic_shoe"] = "128095",
 		["sneaker"] = "128095",
+		["athletic_shoe"] = "128095",
 		-- emoji:🥾; unicode = 1f97e
 		["hiking_boot"] = "129406",
 		-- emoji:🥿; unicode = 1f97f
@@ -19625,11 +19667,11 @@ addon.Emojis = {
 		-- emoji:👒; unicode = 1f452
 		["womans_hat"] = "128082",
 		-- emoji:🎩; unicode = 1f3a9
-		["top_hat"] = "127913",
 		["tophat"] = "127913",
+		["top_hat"] = "127913",
 		-- emoji:🎓; unicode = 1f393
-		["graduation_cap"] = "127891",
 		["mortar_board"] = "127891",
+		["graduation_cap"] = "127891",
 		-- emoji:🧢; unicode = 1f9e2
 		["billed_cap"] = "129506",
 		-- emoji:🪖; unicode = 1fa96
@@ -19649,15 +19691,15 @@ addon.Emojis = {
 		["mute"] = "128263",
 		["no_sound"] = "128263",
 		-- emoji:🔈; unicode = 1f508
+		["speaker"] = "128264",
 		["low_volume"] = "128264",
 		["quiet_sound"] = "128264",
-		["speaker"] = "128264",
 		-- emoji:🔉; unicode = 1f509
-		["medium_volumne"] = "128265",
 		["sound"] = "128265",
+		["medium_volumne"] = "128265",
 		-- emoji:🔊; unicode = 1f50a
-		["high_volume"] = "128266",
 		["loud_sound"] = "128266",
+		["high_volume"] = "128266",
 		-- emoji:📢; unicode = 1f4e2
 		["loudspeaker"] = "128226",
 		-- emoji:📣; unicode = 1f4e3
@@ -19674,8 +19716,8 @@ addon.Emojis = {
 		-- emoji:🎵; unicode = 1f3b5
 		["musical_note"] = "127925",
 		-- emoji:🎶; unicode = 1f3b6
-		["musical_notes"] = "127926",
 		["notes"] = "127926",
+		["musical_notes"] = "127926",
 		-- emoji:🎙️; unicode = 1f399-fe0f
 		["studio_microphone"] = "127897_65039",
 		-- emoji:🎚️; unicode = 1f39a-fe0f
@@ -19713,8 +19755,8 @@ addon.Emojis = {
 		-- emoji:🪉; unicode = 1fa89
 		["harp"] = "129673",
 		-- emoji:📱; unicode = 1f4f1
-		["android"] = "128241",
 		["iphone"] = "128241",
+		["android"] = "128241",
 		["mobile_phone"] = "128241",
 		-- emoji:📲; unicode = 1f4f2
 		["calling"] = "128242",
@@ -19748,8 +19790,8 @@ addon.Emojis = {
 		-- emoji:🖲️; unicode = 1f5b2-fe0f
 		["trackball"] = "128434_65039",
 		-- emoji:💽; unicode = 1f4bd
-		["computer_disk"] = "128189",
 		["minidisc"] = "128189",
+		["computer_disk"] = "128189",
 		-- emoji:💾; unicode = 1f4be
 		["floppy_disk"] = "128190",
 		-- emoji:💿; unicode = 1f4bf
@@ -19852,8 +19894,8 @@ addon.Emojis = {
 		-- emoji:✉️; unicode = 2709-fe0f
 		["envelope"] = "9993_65039",
 		-- emoji:📧; unicode = 1f4e7
-		["e-mail"] = "128231",
 		["email"] = "128231",
+		["e-mail"] = "128231",
 		-- emoji:📨; unicode = 1f4e8
 		["incoming_envelope"] = "128232",
 		-- emoji:📩; unicode = 1f4e9
@@ -19946,11 +19988,11 @@ addon.Emojis = {
 		["unlock"] = "128275",
 		["unlocked"] = "128275",
 		-- emoji:🔏; unicode = 1f50f
-		["lock_with_ink_pen"] = "128271",
 		["locked_with_pen"] = "128271",
+		["lock_with_ink_pen"] = "128271",
 		-- emoji:🔐; unicode = 1f510
-		["closed_lock_with_key"] = "128272",
 		["locked_with_key"] = "128272",
+		["closed_lock_with_key"] = "128272",
 		-- emoji:🔑; unicode = 1f511
 		["key"] = "128273",
 		-- emoji:🗝️; unicode = 1f5dd-fe0f
@@ -19993,8 +20035,8 @@ addon.Emojis = {
 		-- emoji:⚖️; unicode = 2696-fe0f
 		["scales"] = "9878_65039",
 		-- emoji:🦯; unicode = 1f9af
-		["probing_cane"] = "129455",
 		["white_cane"] = "129455",
+		["probing_cane"] = "129455",
 		-- emoji:🔗; unicode = 1f517
 		["link"] = "128279",
 		-- emoji:⛓️‍💥; unicode = 26d3-fe0f-200d-1f4a5
@@ -20033,15 +20075,15 @@ addon.Emojis = {
 		-- emoji:💊; unicode = 1f48a
 		["pill"] = "128138",
 		-- emoji:🩹; unicode = 1fa79
-		["adhesive_bandage"] = "129657",
 		["bandaid"] = "129657",
+		["adhesive_bandage"] = "129657",
 		-- emoji:🩼; unicode = 1fa7c
 		["crutch"] = "129660",
 		-- emoji:🩺; unicode = 1fa7a
 		["stethoscope"] = "129658",
 		-- emoji:🩻; unicode = 1fa7b
-		["x-ray"] = "129659",
 		["xray"] = "129659",
+		["x-ray"] = "129659",
 		-- emoji:🚪; unicode = 1f6aa
 		["door"] = "128682",
 		-- emoji:🛗; unicode = 1f6d7
@@ -20077,8 +20119,8 @@ addon.Emojis = {
 		-- emoji:🧺; unicode = 1f9fa
 		["basket"] = "129530",
 		-- emoji:🧻; unicode = 1f9fb
-		["roll_of_paper"] = "129531",
 		["toilet_paper"] = "129531",
+		["roll_of_paper"] = "129531",
 		-- emoji:🪣; unicode = 1faa3
 		["bucket"] = "129699",
 		-- emoji:🧼; unicode = 1f9fc
@@ -20094,8 +20136,8 @@ addon.Emojis = {
 		-- emoji:🛒; unicode = 1f6d2
 		["shopping_cart"] = "128722",
 		-- emoji:🚬; unicode = 1f6ac
-		["cigarette"] = "128684",
 		["smoking"] = "128684",
+		["cigarette"] = "128684",
 		-- emoji:⚰️; unicode = 26b0-fe0f
 		["coffin"] = "9904_65039",
 		-- emoji:🪦; unicode = 1faa6
@@ -20121,8 +20163,8 @@ addon.Emojis = {
 		-- emoji:🚰; unicode = 1f6b0
 		["potable_water"] = "128688",
 		-- emoji:♿; unicode = 267f
-		["handicapped"] = "9855",
 		["wheelchair"] = "9855",
+		["handicapped"] = "9855",
 		-- emoji:🚹; unicode = 1f6b9
 		["mens"] = "128697",
 		-- emoji:🚺; unicode = 1f6ba
@@ -20133,8 +20175,8 @@ addon.Emojis = {
 		-- emoji:🚼; unicode = 1f6bc
 		["baby_symbol"] = "128700",
 		-- emoji:🚾; unicode = 1f6be
-		["water_closet"] = "128702",
 		["wc"] = "128702",
+		["water_closet"] = "128702",
 		-- emoji:🛂; unicode = 1f6c2
 		["passport_control"] = "128706",
 		-- emoji:🛃; unicode = 1f6c3
@@ -20156,8 +20198,8 @@ addon.Emojis = {
 		-- emoji:🚭; unicode = 1f6ad
 		["no_smoking"] = "128685",
 		-- emoji:🚯; unicode = 1f6af
-		["do_not_litter"] = "128687",
 		["no_littering"] = "128687",
+		["do_not_litter"] = "128687",
 		-- emoji:🚱; unicode = 1f6b1
 		["non-potable_water"] = "128689",
 		-- emoji:🚷; unicode = 1f6b7
@@ -20165,8 +20207,8 @@ addon.Emojis = {
 		-- emoji:📵; unicode = 1f4f5
 		["no_mobile_phones"] = "128245",
 		-- emoji:🔞; unicode = 1f51e
-		["no_one_under_18"] = "128286",
 		["underage"] = "128286",
+		["no_one_under_18"] = "128286",
 		-- emoji:☢️; unicode = 2622-fe0f
 		["radioactive"] = "9762_65039",
 		-- emoji:☣️; unicode = 2623-fe0f
@@ -20202,11 +20244,11 @@ addon.Emojis = {
 		-- emoji:⤵️; unicode = 2935-fe0f
 		["arrow_heading_down"] = "10549_65039",
 		-- emoji:🔃; unicode = 1f503
-		["arrows_clockwise"] = "128259",
 		["clockwise"] = "128259",
+		["arrows_clockwise"] = "128259",
 		-- emoji:🔄; unicode = 1f504
-		["arrows_counterclockwise"] = "128260",
 		["counterclockwise"] = "128260",
+		["arrows_counterclockwise"] = "128260",
 		-- emoji:🔙; unicode = 1f519
 		["back"] = "128281",
 		-- emoji:🔚; unicode = 1f51a
@@ -20279,8 +20321,8 @@ addon.Emojis = {
 		-- emoji:🔂; unicode = 1f502
 		["repeat_one"] = "128258",
 		-- emoji:▶️; unicode = 25b6-fe0f
-		["arrow_forward"] = "9654_65039",
 		["play"] = "9654_65039",
+		["arrow_forward"] = "9654_65039",
 		-- emoji:⏩; unicode = 23e9
 		["fast_forward"] = "9193",
 		-- emoji:⏭️; unicode = 23ed-fe0f
@@ -20288,25 +20330,25 @@ addon.Emojis = {
 		-- emoji:⏯️; unicode = 23ef-fe0f
 		["play_pause"] = "9199_65039",
 		-- emoji:◀️; unicode = 25c0-fe0f
-		["arrow_backward"] = "9664_65039",
 		["reverse"] = "9664_65039",
+		["arrow_backward"] = "9664_65039",
 		-- emoji:⏪; unicode = 23ea
-		["fast_reverse"] = "9194",
 		["rewind"] = "9194",
+		["fast_reverse"] = "9194",
 		-- emoji:⏮️; unicode = 23ee-fe0f
 		["previous_track"] = "9198_65039",
 		-- emoji:🔼; unicode = 1f53c
-		["arrow_up_small"] = "128316",
 		["up"] = "128316",
+		["arrow_up_small"] = "128316",
 		-- emoji:⏫; unicode = 23eb
-		["arrow_double_up"] = "9195",
 		["fast_up"] = "9195",
+		["arrow_double_up"] = "9195",
 		-- emoji:🔽; unicode = 1f53d
-		["arrow_down_small"] = "128317",
 		["down"] = "128317",
+		["arrow_down_small"] = "128317",
 		-- emoji:⏬; unicode = 23ec
-		["arrow_double_down"] = "9196",
 		["fast_down"] = "9196",
+		["arrow_double_down"] = "9196",
 		-- emoji:⏸️; unicode = 23f8-fe0f
 		["pause"] = "9208_65039",
 		-- emoji:⏹️; unicode = 23f9-fe0f
@@ -20341,8 +20383,8 @@ addon.Emojis = {
 		-- emoji:⚧️; unicode = 26a7-fe0f
 		["transgender_symbol"] = "9895_65039",
 		-- emoji:✖️; unicode = 2716-fe0f
-		["multiplication"] = "10006_65039",
 		["multiply"] = "10006_65039",
+		["multiplication"] = "10006_65039",
 		-- emoji:➕; unicode = 2795
 		["plus"] = "10133",
 		-- emoji:➖; unicode = 2796
@@ -20358,8 +20400,8 @@ addon.Emojis = {
 		["bangbang"] = "8252_65039",
 		["double_exclamation"] = "8252_65039",
 		-- emoji:⁉️; unicode = 2049-fe0f
-		["exclamation_question"] = "8265_65039",
 		["interrobang"] = "8265_65039",
+		["exclamation_question"] = "8265_65039",
 		-- emoji:❓; unicode = 2753
 		["question"] = "10067",
 		-- emoji:❔; unicode = 2754
@@ -20389,27 +20431,27 @@ addon.Emojis = {
 		-- emoji:🔰; unicode = 1f530
 		["beginner"] = "128304",
 		-- emoji:⭕; unicode = 2b55
-		["hollow_red_circle"] = "11093",
 		["red_o"] = "11093",
+		["hollow_red_circle"] = "11093",
 		-- emoji:✅; unicode = 2705
-		["check_mark_button"] = "9989",
 		["white_check_mark"] = "9989",
+		["check_mark_button"] = "9989",
 		-- emoji:☑️; unicode = 2611-fe0f
 		["ballot_box_with_check"] = "9745_65039",
 		-- emoji:✔️; unicode = 2714-fe0f
 		["check_mark"] = "10004_65039",
 		["heavy_check_mark"] = "10004_65039",
 		-- emoji:❌; unicode = 274c
-		["cross_mark"] = "10060",
 		["x"] = "10060",
+		["cross_mark"] = "10060",
 		-- emoji:❎; unicode = 274e
 		["cross_mark_button"] = "10062",
 		["negative_squared_cross_mark"] = "10062",
 		-- emoji:➰; unicode = 27b0
 		["curly_loop"] = "10160",
 		-- emoji:➿; unicode = 27bf
-		["double_curly_loop"] = "10175",
 		["loop"] = "10175",
+		["double_curly_loop"] = "10175",
 		-- emoji:〽️; unicode = 303d-fe0f
 		["part_alternation_mark"] = "12349_65039",
 		-- emoji:✳️; unicode = 2733-fe0f
@@ -20504,8 +20546,8 @@ addon.Emojis = {
 		-- emoji:🆚; unicode = 1f19a
 		["vs"] = "127386",
 		-- emoji:🈁; unicode = 1f201
-		["ja_here"] = "127489",
 		["koko"] = "127489",
+		["ja_here"] = "127489",
 		-- emoji:🈂️; unicode = 1f202-fe0f
 		["ja_service_charge"] = "127490_65039",
 		-- emoji:🈷️; unicode = 1f237-fe0f
@@ -20515,8 +20557,8 @@ addon.Emojis = {
 		-- emoji:🈯; unicode = 1f22f
 		["ja_reserved"] = "127535",
 		-- emoji:🉐; unicode = 1f250
-		["ideograph_advantage"] = "127568",
 		["ja_bargain"] = "127568",
+		["ideograph_advantage"] = "127568",
 		-- emoji:🈹; unicode = 1f239
 		["ja_discount"] = "127545",
 		-- emoji:🈚; unicode = 1f21a
@@ -20536,8 +20578,8 @@ addon.Emojis = {
 		["congratulations"] = "12951_65039",
 		["ja_congratulations"] = "12951_65039",
 		-- emoji:㊙️; unicode = 3299-fe0f
-		["ja_secret"] = "12953_65039",
 		["secret"] = "12953_65039",
+		["ja_secret"] = "12953_65039",
 		-- emoji:🈺; unicode = 1f23a
 		["ja_open_for_business"] = "127546",
 		-- emoji:🈵; unicode = 1f235
@@ -20603,8 +20645,8 @@ addon.Emojis = {
 		-- emoji:🔻; unicode = 1f53b
 		["small_red_triangle_down"] = "128315",
 		-- emoji:💠; unicode = 1f4a0
-		["diamond_shape_with_a_dot_inside"] = "128160",
 		["diamond_with_a_dot"] = "128160",
+		["diamond_shape_with_a_dot_inside"] = "128160",
 		-- emoji:🔘; unicode = 1f518
 		["radio_button"] = "128280",
 		-- emoji:🔳; unicode = 1f533
@@ -20630,8 +20672,8 @@ addon.Emojis = {
 		["jolly_roger"] = "127988_8205_9760_65039",
 		["pirate_flag"] = "127988_8205_9760_65039",
 		-- emoji:🇦🇨; unicode = 1f1e6-1f1e8
-		["ascension_island"] = "127462_127464",
 		["flag_ac"] = "127462_127464",
+		["ascension_island"] = "127462_127464",
 		-- emoji:🇦🇩; unicode = 1f1e6-1f1e9
 		["andorra"] = "127462_127465",
 		["flag_ad"] = "127462_127465",
@@ -20639,14 +20681,14 @@ addon.Emojis = {
 		["flag_ae"] = "127462_127466",
 		["united_arab_emirates"] = "127462_127466",
 		-- emoji:🇦🇫; unicode = 1f1e6-1f1eb
-		["afghanistan"] = "127462_127467",
 		["flag_af"] = "127462_127467",
+		["afghanistan"] = "127462_127467",
 		-- emoji:🇦🇬; unicode = 1f1e6-1f1ec
-		["antigua_barbuda"] = "127462_127468",
 		["flag_ag"] = "127462_127468",
+		["antigua_barbuda"] = "127462_127468",
 		-- emoji:🇦🇮; unicode = 1f1e6-1f1ee
-		["anguilla"] = "127462_127470",
 		["flag_ai"] = "127462_127470",
+		["anguilla"] = "127462_127470",
 		-- emoji:🇦🇱; unicode = 1f1e6-1f1f1
 		["albania"] = "127462_127473",
 		["flag_al"] = "127462_127473",
@@ -20657,47 +20699,47 @@ addon.Emojis = {
 		["angola"] = "127462_127476",
 		["flag_ao"] = "127462_127476",
 		-- emoji:🇦🇶; unicode = 1f1e6-1f1f6
-		["antarctica"] = "127462_127478",
 		["flag_aq"] = "127462_127478",
+		["antarctica"] = "127462_127478",
 		-- emoji:🇦🇷; unicode = 1f1e6-1f1f7
-		["argentina"] = "127462_127479",
 		["flag_ar"] = "127462_127479",
+		["argentina"] = "127462_127479",
 		-- emoji:🇦🇸; unicode = 1f1e6-1f1f8
-		["american_samoa"] = "127462_127480",
 		["flag_as"] = "127462_127480",
+		["american_samoa"] = "127462_127480",
 		-- emoji:🇦🇹; unicode = 1f1e6-1f1f9
 		["austria"] = "127462_127481",
 		["flag_at"] = "127462_127481",
 		-- emoji:🇦🇺; unicode = 1f1e6-1f1fa
-		["australia"] = "127462_127482",
 		["flag_au"] = "127462_127482",
+		["australia"] = "127462_127482",
 		-- emoji:🇦🇼; unicode = 1f1e6-1f1fc
 		["aruba"] = "127462_127484",
 		["flag_aw"] = "127462_127484",
 		-- emoji:🇦🇽; unicode = 1f1e6-1f1fd
-		["aland_islands"] = "127462_127485",
 		["flag_ax"] = "127462_127485",
+		["aland_islands"] = "127462_127485",
 		-- emoji:🇦🇿; unicode = 1f1e6-1f1ff
-		["azerbaijan"] = "127462_127487",
 		["flag_az"] = "127462_127487",
+		["azerbaijan"] = "127462_127487",
 		-- emoji:🇧🇦; unicode = 1f1e7-1f1e6
-		["bosnia_herzegovina"] = "127463_127462",
 		["flag_ba"] = "127463_127462",
+		["bosnia_herzegovina"] = "127463_127462",
 		-- emoji:🇧🇧; unicode = 1f1e7-1f1e7
-		["barbados"] = "127463_127463",
 		["flag_bb"] = "127463_127463",
+		["barbados"] = "127463_127463",
 		-- emoji:🇧🇩; unicode = 1f1e7-1f1e9
-		["bangladesh"] = "127463_127465",
 		["flag_bd"] = "127463_127465",
+		["bangladesh"] = "127463_127465",
 		-- emoji:🇧🇪; unicode = 1f1e7-1f1ea
 		["belgium"] = "127463_127466",
 		["flag_be"] = "127463_127466",
 		-- emoji:🇧🇫; unicode = 1f1e7-1f1eb
-		["burkina_faso"] = "127463_127467",
 		["flag_bf"] = "127463_127467",
+		["burkina_faso"] = "127463_127467",
 		-- emoji:🇧🇬; unicode = 1f1e7-1f1ec
-		["bulgaria"] = "127463_127468",
 		["flag_bg"] = "127463_127468",
+		["bulgaria"] = "127463_127468",
 		-- emoji:🇧🇭; unicode = 1f1e7-1f1ed
 		["bahrain"] = "127463_127469",
 		["flag_bh"] = "127463_127469",
@@ -20720,8 +20762,8 @@ addon.Emojis = {
 		["bolivia"] = "127463_127476",
 		["flag_bo"] = "127463_127476",
 		-- emoji:🇧🇶; unicode = 1f1e7-1f1f6
-		["caribbean_netherlands"] = "127463_127478",
 		["flag_bq"] = "127463_127478",
+		["caribbean_netherlands"] = "127463_127478",
 		-- emoji:🇧🇷; unicode = 1f1e7-1f1f7
 		["brazil"] = "127463_127479",
 		["flag_br"] = "127463_127479",
@@ -20732,11 +20774,11 @@ addon.Emojis = {
 		["bhutan"] = "127463_127481",
 		["flag_bt"] = "127463_127481",
 		-- emoji:🇧🇻; unicode = 1f1e7-1f1fb
-		["bouvet_island"] = "127463_127483",
 		["flag_bv"] = "127463_127483",
+		["bouvet_island"] = "127463_127483",
 		-- emoji:🇧🇼; unicode = 1f1e7-1f1fc
-		["botswana"] = "127463_127484",
 		["flag_bw"] = "127463_127484",
+		["botswana"] = "127463_127484",
 		-- emoji:🇧🇾; unicode = 1f1e7-1f1fe
 		["belarus"] = "127463_127486",
 		["flag_by"] = "127463_127486",
@@ -20747,90 +20789,90 @@ addon.Emojis = {
 		["canada"] = "127464_127462",
 		["flag_ca"] = "127464_127462",
 		-- emoji:🇨🇨; unicode = 1f1e8-1f1e8
-		["cocos_islands"] = "127464_127464",
 		["flag_cc"] = "127464_127464",
+		["cocos_islands"] = "127464_127464",
 		-- emoji:🇨🇩; unicode = 1f1e8-1f1e9
-		["congo_kinshasa"] = "127464_127465",
 		["flag_cd"] = "127464_127465",
+		["congo_kinshasa"] = "127464_127465",
 		-- emoji:🇨🇫; unicode = 1f1e8-1f1eb
-		["central_african_republic"] = "127464_127467",
 		["flag_cf"] = "127464_127467",
+		["central_african_republic"] = "127464_127467",
 		-- emoji:🇨🇬; unicode = 1f1e8-1f1ec
-		["congo_brazzaville"] = "127464_127468",
 		["flag_cg"] = "127464_127468",
+		["congo_brazzaville"] = "127464_127468",
 		-- emoji:🇨🇭; unicode = 1f1e8-1f1ed
 		["flag_ch"] = "127464_127469",
 		["switzerland"] = "127464_127469",
 		-- emoji:🇨🇮; unicode = 1f1e8-1f1ee
-		["cote_divoire"] = "127464_127470",
 		["flag_ci"] = "127464_127470",
+		["cote_divoire"] = "127464_127470",
 		-- emoji:🇨🇰; unicode = 1f1e8-1f1f0
-		["cook_islands"] = "127464_127472",
 		["flag_ck"] = "127464_127472",
+		["cook_islands"] = "127464_127472",
 		-- emoji:🇨🇱; unicode = 1f1e8-1f1f1
 		["chile"] = "127464_127473",
 		["flag_cl"] = "127464_127473",
 		-- emoji:🇨🇲; unicode = 1f1e8-1f1f2
-		["cameroon"] = "127464_127474",
 		["flag_cm"] = "127464_127474",
+		["cameroon"] = "127464_127474",
 		-- emoji:🇨🇳; unicode = 1f1e8-1f1f3
 		["china"] = "127464_127475",
 		["flag_cn"] = "127464_127475",
 		-- emoji:🇨🇴; unicode = 1f1e8-1f1f4
-		["colombia"] = "127464_127476",
 		["flag_co"] = "127464_127476",
+		["colombia"] = "127464_127476",
 		-- emoji:🇨🇵; unicode = 1f1e8-1f1f5
-		["clipperton_island"] = "127464_127477",
 		["flag_cp"] = "127464_127477",
+		["clipperton_island"] = "127464_127477",
 		-- emoji:🇨🇶; unicode = 1f1e8-1f1f6
-		["flag_cq"] = "127464_127478",
 		["sark"] = "127464_127478",
+		["flag_cq"] = "127464_127478",
 		-- emoji:🇨🇷; unicode = 1f1e8-1f1f7
-		["costa_rica"] = "127464_127479",
 		["flag_cr"] = "127464_127479",
+		["costa_rica"] = "127464_127479",
 		-- emoji:🇨🇺; unicode = 1f1e8-1f1fa
 		["cuba"] = "127464_127482",
 		["flag_cu"] = "127464_127482",
 		-- emoji:🇨🇻; unicode = 1f1e8-1f1fb
-		["cape_verde"] = "127464_127483",
 		["flag_cv"] = "127464_127483",
+		["cape_verde"] = "127464_127483",
 		-- emoji:🇨🇼; unicode = 1f1e8-1f1fc
 		["curacao"] = "127464_127484",
 		["flag_cw"] = "127464_127484",
 		-- emoji:🇨🇽; unicode = 1f1e8-1f1fd
-		["christmas_island"] = "127464_127485",
 		["flag_cx"] = "127464_127485",
+		["christmas_island"] = "127464_127485",
 		-- emoji:🇨🇾; unicode = 1f1e8-1f1fe
 		["cyprus"] = "127464_127486",
 		["flag_cy"] = "127464_127486",
 		-- emoji:🇨🇿; unicode = 1f1e8-1f1ff
-		["czech_republic"] = "127464_127487",
 		["czechia"] = "127464_127487",
 		["flag_cz"] = "127464_127487",
+		["czech_republic"] = "127464_127487",
 		-- emoji:🇩🇪; unicode = 1f1e9-1f1ea
 		["flag_de"] = "127465_127466",
 		["germany"] = "127465_127466",
 		-- emoji:🇩🇬; unicode = 1f1e9-1f1ec
-		["diego_garcia"] = "127465_127468",
 		["flag_dg"] = "127465_127468",
+		["diego_garcia"] = "127465_127468",
 		-- emoji:🇩🇯; unicode = 1f1e9-1f1ef
-		["djibouti"] = "127465_127471",
 		["flag_dj"] = "127465_127471",
+		["djibouti"] = "127465_127471",
 		-- emoji:🇩🇰; unicode = 1f1e9-1f1f0
 		["denmark"] = "127465_127472",
 		["flag_dk"] = "127465_127472",
 		-- emoji:🇩🇲; unicode = 1f1e9-1f1f2
-		["dominica"] = "127465_127474",
 		["flag_dm"] = "127465_127474",
+		["dominica"] = "127465_127474",
 		-- emoji:🇩🇴; unicode = 1f1e9-1f1f4
-		["dominican_republic"] = "127465_127476",
 		["flag_do"] = "127465_127476",
+		["dominican_republic"] = "127465_127476",
 		-- emoji:🇩🇿; unicode = 1f1e9-1f1ff
 		["algeria"] = "127465_127487",
 		["flag_dz"] = "127465_127487",
 		-- emoji:🇪🇦; unicode = 1f1ea-1f1e6
-		["ceuta_melilla"] = "127466_127462",
 		["flag_ea"] = "127466_127462",
+		["ceuta_melilla"] = "127466_127462",
 		-- emoji:🇪🇨; unicode = 1f1ea-1f1e8
 		["ecuador"] = "127466_127464",
 		["flag_ec"] = "127466_127464",
@@ -20847,14 +20889,14 @@ addon.Emojis = {
 		["eritrea"] = "127466_127479",
 		["flag_er"] = "127466_127479",
 		-- emoji:🇪🇸; unicode = 1f1ea-1f1f8
-		["flag_es"] = "127466_127480",
 		["spain"] = "127466_127480",
+		["flag_es"] = "127466_127480",
 		-- emoji:🇪🇹; unicode = 1f1ea-1f1f9
-		["ethiopia"] = "127466_127481",
 		["flag_et"] = "127466_127481",
+		["ethiopia"] = "127466_127481",
 		-- emoji:🇪🇺; unicode = 1f1ea-1f1fa
-		["european_union"] = "127466_127482",
 		["flag_eu"] = "127466_127482",
+		["european_union"] = "127466_127482",
 		-- emoji:🇫🇮; unicode = 1f1eb-1f1ee
 		["finland"] = "127467_127470",
 		["flag_fi"] = "127467_127470",
@@ -20862,23 +20904,23 @@ addon.Emojis = {
 		["fiji"] = "127467_127471",
 		["flag_fj"] = "127467_127471",
 		-- emoji:🇫🇰; unicode = 1f1eb-1f1f0
-		["falkland_islands"] = "127467_127472",
 		["flag_fk"] = "127467_127472",
+		["falkland_islands"] = "127467_127472",
 		-- emoji:🇫🇲; unicode = 1f1eb-1f1f2
 		["flag_fm"] = "127467_127474",
 		["micronesia"] = "127467_127474",
 		-- emoji:🇫🇴; unicode = 1f1eb-1f1f4
-		["faroe_islands"] = "127467_127476",
 		["flag_fo"] = "127467_127476",
+		["faroe_islands"] = "127467_127476",
 		-- emoji:🇫🇷; unicode = 1f1eb-1f1f7
-		["flag_fr"] = "127467_127479",
 		["france"] = "127467_127479",
+		["flag_fr"] = "127467_127479",
 		-- emoji:🇬🇦; unicode = 1f1ec-1f1e6
-		["flag_ga"] = "127468_127462",
 		["gabon"] = "127468_127462",
+		["flag_ga"] = "127468_127462",
 		-- emoji:🇬🇧; unicode = 1f1ec-1f1e7
-		["flag_gb"] = "127468_127463",
 		["uk"] = "127468_127463",
+		["flag_gb"] = "127468_127463",
 		["united_kingdom"] = "127468_127463",
 		-- emoji:🇬🇩; unicode = 1f1ec-1f1e9
 		["flag_gd"] = "127468_127465",
@@ -20893,8 +20935,8 @@ addon.Emojis = {
 		["flag_gg"] = "127468_127468",
 		["guernsey"] = "127468_127468",
 		-- emoji:🇬🇭; unicode = 1f1ec-1f1ed
-		["flag_gh"] = "127468_127469",
 		["ghana"] = "127468_127469",
+		["flag_gh"] = "127468_127469",
 		-- emoji:🇬🇮; unicode = 1f1ec-1f1ee
 		["flag_gi"] = "127468_127470",
 		["gibraltar"] = "127468_127470",
@@ -20902,20 +20944,20 @@ addon.Emojis = {
 		["flag_gl"] = "127468_127473",
 		["greenland"] = "127468_127473",
 		-- emoji:🇬🇲; unicode = 1f1ec-1f1f2
-		["flag_gm"] = "127468_127474",
 		["gambia"] = "127468_127474",
+		["flag_gm"] = "127468_127474",
 		-- emoji:🇬🇳; unicode = 1f1ec-1f1f3
-		["flag_gn"] = "127468_127475",
 		["guinea"] = "127468_127475",
+		["flag_gn"] = "127468_127475",
 		-- emoji:🇬🇵; unicode = 1f1ec-1f1f5
 		["flag_gp"] = "127468_127477",
 		["guadeloupe"] = "127468_127477",
 		-- emoji:🇬🇶; unicode = 1f1ec-1f1f6
-		["equatorial_guinea"] = "127468_127478",
 		["flag_gq"] = "127468_127478",
+		["equatorial_guinea"] = "127468_127478",
 		-- emoji:🇬🇷; unicode = 1f1ec-1f1f7
-		["flag_gr"] = "127468_127479",
 		["greece"] = "127468_127479",
+		["flag_gr"] = "127468_127479",
 		-- emoji:🇬🇸; unicode = 1f1ec-1f1f8
 		["flag_gs"] = "127468_127480",
 		["south_georgia_south_sandwich_islands"] = "127468_127480",
@@ -20923,14 +20965,14 @@ addon.Emojis = {
 		["flag_gt"] = "127468_127481",
 		["guatemala"] = "127468_127481",
 		-- emoji:🇬🇺; unicode = 1f1ec-1f1fa
-		["flag_gu"] = "127468_127482",
 		["guam"] = "127468_127482",
+		["flag_gu"] = "127468_127482",
 		-- emoji:🇬🇼; unicode = 1f1ec-1f1fc
 		["flag_gw"] = "127468_127484",
 		["guinea_bissau"] = "127468_127484",
 		-- emoji:🇬🇾; unicode = 1f1ec-1f1fe
-		["flag_gy"] = "127468_127486",
 		["guyana"] = "127468_127486",
+		["flag_gy"] = "127468_127486",
 		-- emoji:🇭🇰; unicode = 1f1ed-1f1f0
 		["flag_hk"] = "127469_127472",
 		["hong_kong"] = "127469_127472",
@@ -20944,14 +20986,14 @@ addon.Emojis = {
 		["croatia"] = "127469_127479",
 		["flag_hr"] = "127469_127479",
 		-- emoji:🇭🇹; unicode = 1f1ed-1f1f9
-		["flag_ht"] = "127469_127481",
 		["haiti"] = "127469_127481",
+		["flag_ht"] = "127469_127481",
 		-- emoji:🇭🇺; unicode = 1f1ed-1f1fa
 		["flag_hu"] = "127469_127482",
 		["hungary"] = "127469_127482",
 		-- emoji:🇮🇨; unicode = 1f1ee-1f1e8
-		["canary_islands"] = "127470_127464",
 		["flag_ic"] = "127470_127464",
+		["canary_islands"] = "127470_127464",
 		-- emoji:🇮🇩; unicode = 1f1ee-1f1e9
 		["flag_id"] = "127470_127465",
 		["indonesia"] = "127470_127465",
@@ -20959,50 +21001,50 @@ addon.Emojis = {
 		["flag_ie"] = "127470_127466",
 		["ireland"] = "127470_127466",
 		-- emoji:🇮🇱; unicode = 1f1ee-1f1f1
-		["flag_il"] = "127470_127473",
 		["israel"] = "127470_127473",
+		["flag_il"] = "127470_127473",
 		-- emoji:🇮🇲; unicode = 1f1ee-1f1f2
 		["flag_im"] = "127470_127474",
 		["isle_of_man"] = "127470_127474",
 		-- emoji:🇮🇳; unicode = 1f1ee-1f1f3
-		["flag_in"] = "127470_127475",
 		["india"] = "127470_127475",
+		["flag_in"] = "127470_127475",
 		-- emoji:🇮🇴; unicode = 1f1ee-1f1f4
-		["british_indian_ocean_territory"] = "127470_127476",
 		["flag_io"] = "127470_127476",
+		["british_indian_ocean_territory"] = "127470_127476",
 		-- emoji:🇮🇶; unicode = 1f1ee-1f1f6
-		["flag_iq"] = "127470_127478",
 		["iraq"] = "127470_127478",
+		["flag_iq"] = "127470_127478",
 		-- emoji:🇮🇷; unicode = 1f1ee-1f1f7
-		["flag_ir"] = "127470_127479",
 		["iran"] = "127470_127479",
+		["flag_ir"] = "127470_127479",
 		-- emoji:🇮🇸; unicode = 1f1ee-1f1f8
 		["flag_is"] = "127470_127480",
 		["iceland"] = "127470_127480",
 		-- emoji:🇮🇹; unicode = 1f1ee-1f1f9
-		["flag_it"] = "127470_127481",
 		["italy"] = "127470_127481",
+		["flag_it"] = "127470_127481",
 		-- emoji:🇯🇪; unicode = 1f1ef-1f1ea
-		["flag_je"] = "127471_127466",
 		["jersey"] = "127471_127466",
+		["flag_je"] = "127471_127466",
 		-- emoji:🇯🇲; unicode = 1f1ef-1f1f2
 		["flag_jm"] = "127471_127474",
 		["jamaica"] = "127471_127474",
 		-- emoji:🇯🇴; unicode = 1f1ef-1f1f4
-		["flag_jo"] = "127471_127476",
 		["jordan"] = "127471_127476",
+		["flag_jo"] = "127471_127476",
 		-- emoji:🇯🇵; unicode = 1f1ef-1f1f5
-		["flag_jp"] = "127471_127477",
 		["japan"] = "127471_127477",
+		["flag_jp"] = "127471_127477",
 		-- emoji:🇰🇪; unicode = 1f1f0-1f1ea
-		["flag_ke"] = "127472_127466",
 		["kenya"] = "127472_127466",
+		["flag_ke"] = "127472_127466",
 		-- emoji:🇰🇬; unicode = 1f1f0-1f1ec
 		["flag_kg"] = "127472_127468",
 		["kyrgyzstan"] = "127472_127468",
 		-- emoji:🇰🇭; unicode = 1f1f0-1f1ed
-		["cambodia"] = "127472_127469",
 		["flag_kh"] = "127472_127469",
+		["cambodia"] = "127472_127469",
 		-- emoji:🇰🇮; unicode = 1f1f0-1f1ee
 		["flag_ki"] = "127472_127470",
 		["kiribati"] = "127472_127470",
@@ -21019,17 +21061,17 @@ addon.Emojis = {
 		["flag_kr"] = "127472_127479",
 		["south_korea"] = "127472_127479",
 		-- emoji:🇰🇼; unicode = 1f1f0-1f1fc
-		["flag_kw"] = "127472_127484",
 		["kuwait"] = "127472_127484",
+		["flag_kw"] = "127472_127484",
 		-- emoji:🇰🇾; unicode = 1f1f0-1f1fe
-		["cayman_islands"] = "127472_127486",
 		["flag_ky"] = "127472_127486",
+		["cayman_islands"] = "127472_127486",
 		-- emoji:🇰🇿; unicode = 1f1f0-1f1ff
 		["flag_kz"] = "127472_127487",
 		["kazakhstan"] = "127472_127487",
 		-- emoji:🇱🇦; unicode = 1f1f1-1f1e6
-		["flag_la"] = "127473_127462",
 		["laos"] = "127473_127462",
+		["flag_la"] = "127473_127462",
 		-- emoji:🇱🇧; unicode = 1f1f1-1f1e7
 		["flag_lb"] = "127473_127463",
 		["lebanon"] = "127473_127463",
@@ -21055,17 +21097,17 @@ addon.Emojis = {
 		["flag_lu"] = "127473_127482",
 		["luxembourg"] = "127473_127482",
 		-- emoji:🇱🇻; unicode = 1f1f1-1f1fb
-		["flag_lv"] = "127473_127483",
 		["latvia"] = "127473_127483",
+		["flag_lv"] = "127473_127483",
 		-- emoji:🇱🇾; unicode = 1f1f1-1f1fe
-		["flag_ly"] = "127473_127486",
 		["libya"] = "127473_127486",
+		["flag_ly"] = "127473_127486",
 		-- emoji:🇲🇦; unicode = 1f1f2-1f1e6
 		["flag_ma"] = "127474_127462",
 		["morocco"] = "127474_127462",
 		-- emoji:🇲🇨; unicode = 1f1f2-1f1e8
-		["flag_mc"] = "127474_127464",
 		["monaco"] = "127474_127464",
+		["flag_mc"] = "127474_127464",
 		-- emoji:🇲🇩; unicode = 1f1f2-1f1e9
 		["flag_md"] = "127474_127465",
 		["moldova"] = "127474_127465",
@@ -21085,8 +21127,8 @@ addon.Emojis = {
 		["flag_mk"] = "127474_127472",
 		["macedonia"] = "127474_127472",
 		-- emoji:🇲🇱; unicode = 1f1f2-1f1f1
-		["flag_ml"] = "127474_127473",
 		["mali"] = "127474_127473",
+		["flag_ml"] = "127474_127473",
 		-- emoji:🇲🇲; unicode = 1f1f2-1f1f2
 		["burma"] = "127474_127474",
 		["flag_mm"] = "127474_127474",
@@ -21095,9 +21137,9 @@ addon.Emojis = {
 		["flag_mn"] = "127474_127475",
 		["mongolia"] = "127474_127475",
 		-- emoji:🇲🇴; unicode = 1f1f2-1f1f4
-		["flag_mo"] = "127474_127476",
 		["macao"] = "127474_127476",
 		["macau"] = "127474_127476",
+		["flag_mo"] = "127474_127476",
 		-- emoji:🇲🇵; unicode = 1f1f2-1f1f5
 		["flag_mp"] = "127474_127477",
 		["northern_mariana_islands"] = "127474_127477",
@@ -21111,8 +21153,8 @@ addon.Emojis = {
 		["flag_ms"] = "127474_127480",
 		["montserrat"] = "127474_127480",
 		-- emoji:🇲🇹; unicode = 1f1f2-1f1f9
-		["flag_mt"] = "127474_127481",
 		["malta"] = "127474_127481",
+		["flag_mt"] = "127474_127481",
 		-- emoji:🇲🇺; unicode = 1f1f2-1f1fa
 		["flag_mu"] = "127474_127482",
 		["mauritius"] = "127474_127482",
@@ -21120,11 +21162,11 @@ addon.Emojis = {
 		["flag_mv"] = "127474_127483",
 		["maldives"] = "127474_127483",
 		-- emoji:🇲🇼; unicode = 1f1f2-1f1fc
-		["flag_mw"] = "127474_127484",
 		["malawi"] = "127474_127484",
+		["flag_mw"] = "127474_127484",
 		-- emoji:🇲🇽; unicode = 1f1f2-1f1fd
-		["flag_mx"] = "127474_127485",
 		["mexico"] = "127474_127485",
+		["flag_mx"] = "127474_127485",
 		-- emoji:🇲🇾; unicode = 1f1f2-1f1fe
 		["flag_my"] = "127474_127486",
 		["malaysia"] = "127474_127486",
@@ -21138,8 +21180,8 @@ addon.Emojis = {
 		["flag_nc"] = "127475_127464",
 		["new_caledonia"] = "127475_127464",
 		-- emoji:🇳🇪; unicode = 1f1f3-1f1ea
-		["flag_ne"] = "127475_127466",
 		["niger"] = "127475_127466",
+		["flag_ne"] = "127475_127466",
 		-- emoji:🇳🇫; unicode = 1f1f3-1f1eb
 		["flag_nf"] = "127475_127467",
 		["norfolk_island"] = "127475_127467",
@@ -21153,29 +21195,29 @@ addon.Emojis = {
 		["flag_nl"] = "127475_127473",
 		["netherlands"] = "127475_127473",
 		-- emoji:🇳🇴; unicode = 1f1f3-1f1f4
-		["flag_no"] = "127475_127476",
 		["norway"] = "127475_127476",
+		["flag_no"] = "127475_127476",
 		-- emoji:🇳🇵; unicode = 1f1f3-1f1f5
-		["flag_np"] = "127475_127477",
 		["nepal"] = "127475_127477",
+		["flag_np"] = "127475_127477",
 		-- emoji:🇳🇷; unicode = 1f1f3-1f1f7
-		["flag_nr"] = "127475_127479",
 		["nauru"] = "127475_127479",
+		["flag_nr"] = "127475_127479",
 		-- emoji:🇳🇺; unicode = 1f1f3-1f1fa
-		["flag_nu"] = "127475_127482",
 		["niue"] = "127475_127482",
+		["flag_nu"] = "127475_127482",
 		-- emoji:🇳🇿; unicode = 1f1f3-1f1ff
 		["flag_nz"] = "127475_127487",
 		["new_zealand"] = "127475_127487",
 		-- emoji:🇴🇲; unicode = 1f1f4-1f1f2
-		["flag_om"] = "127476_127474",
 		["oman"] = "127476_127474",
+		["flag_om"] = "127476_127474",
 		-- emoji:🇵🇦; unicode = 1f1f5-1f1e6
-		["flag_pa"] = "127477_127462",
 		["panama"] = "127477_127462",
+		["flag_pa"] = "127477_127462",
 		-- emoji:🇵🇪; unicode = 1f1f5-1f1ea
-		["flag_pe"] = "127477_127466",
 		["peru"] = "127477_127466",
+		["flag_pe"] = "127477_127466",
 		-- emoji:🇵🇫; unicode = 1f1f5-1f1eb
 		["flag_pf"] = "127477_127467",
 		["french_polynesia"] = "127477_127467",
@@ -21189,8 +21231,8 @@ addon.Emojis = {
 		["flag_pk"] = "127477_127472",
 		["pakistan"] = "127477_127472",
 		-- emoji:🇵🇱; unicode = 1f1f5-1f1f1
-		["flag_pl"] = "127477_127473",
 		["poland"] = "127477_127473",
+		["flag_pl"] = "127477_127473",
 		-- emoji:🇵🇲; unicode = 1f1f5-1f1f2
 		["flag_pm"] = "127477_127474",
 		["st_pierre_miquelon"] = "127477_127474",
@@ -21207,14 +21249,14 @@ addon.Emojis = {
 		["flag_pt"] = "127477_127481",
 		["portugal"] = "127477_127481",
 		-- emoji:🇵🇼; unicode = 1f1f5-1f1fc
-		["flag_pw"] = "127477_127484",
 		["palau"] = "127477_127484",
+		["flag_pw"] = "127477_127484",
 		-- emoji:🇵🇾; unicode = 1f1f5-1f1fe
 		["flag_py"] = "127477_127486",
 		["paraguay"] = "127477_127486",
 		-- emoji:🇶🇦; unicode = 1f1f6-1f1e6
-		["flag_qa"] = "127478_127462",
 		["qatar"] = "127478_127462",
+		["flag_qa"] = "127478_127462",
 		-- emoji:🇷🇪; unicode = 1f1f7-1f1ea
 		["flag_re"] = "127479_127466",
 		["reunion"] = "127479_127466",
@@ -21222,14 +21264,14 @@ addon.Emojis = {
 		["flag_ro"] = "127479_127476",
 		["romania"] = "127479_127476",
 		-- emoji:🇷🇸; unicode = 1f1f7-1f1f8
-		["flag_rs"] = "127479_127480",
 		["serbia"] = "127479_127480",
+		["flag_rs"] = "127479_127480",
 		-- emoji:🇷🇺; unicode = 1f1f7-1f1fa
-		["flag_ru"] = "127479_127482",
 		["russia"] = "127479_127482",
+		["flag_ru"] = "127479_127482",
 		-- emoji:🇷🇼; unicode = 1f1f7-1f1fc
-		["flag_rw"] = "127479_127484",
 		["rwanda"] = "127479_127484",
+		["flag_rw"] = "127479_127484",
 		-- emoji:🇸🇦; unicode = 1f1f8-1f1e6
 		["flag_sa"] = "127480_127462",
 		["saudi_arabia"] = "127480_127462",
@@ -21240,11 +21282,11 @@ addon.Emojis = {
 		["flag_sc"] = "127480_127464",
 		["seychelles"] = "127480_127464",
 		-- emoji:🇸🇩; unicode = 1f1f8-1f1e9
-		["flag_sd"] = "127480_127465",
 		["sudan"] = "127480_127465",
+		["flag_sd"] = "127480_127465",
 		-- emoji:🇸🇪; unicode = 1f1f8-1f1ea
-		["flag_se"] = "127480_127466",
 		["sweden"] = "127480_127466",
+		["flag_se"] = "127480_127466",
 		-- emoji:🇸🇬; unicode = 1f1f8-1f1ec
 		["flag_sg"] = "127480_127468",
 		["singapore"] = "127480_127468",
@@ -21282,17 +21324,17 @@ addon.Emojis = {
 		["flag_st"] = "127480_127481",
 		["sao_tome_principe"] = "127480_127481",
 		-- emoji:🇸🇻; unicode = 1f1f8-1f1fb
-		["el_salvador"] = "127480_127483",
 		["flag_sv"] = "127480_127483",
+		["el_salvador"] = "127480_127483",
 		-- emoji:🇸🇽; unicode = 1f1f8-1f1fd
 		["flag_sx"] = "127480_127485",
 		["sint_maarten"] = "127480_127485",
 		-- emoji:🇸🇾; unicode = 1f1f8-1f1fe
-		["flag_sy"] = "127480_127486",
 		["syria"] = "127480_127486",
+		["flag_sy"] = "127480_127486",
 		-- emoji:🇸🇿; unicode = 1f1f8-1f1ff
-		["eswatini"] = "127480_127487",
 		["flag_sz"] = "127480_127487",
+		["eswatini"] = "127480_127487",
 		["swaziland"] = "127480_127487",
 		-- emoji:🇹🇦; unicode = 1f1f9-1f1e6
 		["flag_ta"] = "127481_127462",
@@ -21307,8 +21349,8 @@ addon.Emojis = {
 		["flag_tf"] = "127481_127467",
 		["french_southern_territories"] = "127481_127467",
 		-- emoji:🇹🇬; unicode = 1f1f9-1f1ec
-		["flag_tg"] = "127481_127468",
 		["togo"] = "127481_127468",
+		["flag_tg"] = "127481_127468",
 		-- emoji:🇹🇭; unicode = 1f1f9-1f1ed
 		["flag_th"] = "127481_127469",
 		["thailand"] = "127481_127469",
@@ -21328,8 +21370,8 @@ addon.Emojis = {
 		["flag_tn"] = "127481_127475",
 		["tunisia"] = "127481_127475",
 		-- emoji:🇹🇴; unicode = 1f1f9-1f1f4
-		["flag_to"] = "127481_127476",
 		["tonga"] = "127481_127476",
+		["flag_to"] = "127481_127476",
 		-- emoji:🇹🇷; unicode = 1f1f9-1f1f7
 		["flag_tr"] = "127481_127479",
 		["turkey_tr"] = "127481_127479",
@@ -21337,11 +21379,11 @@ addon.Emojis = {
 		["flag_tt"] = "127481_127481",
 		["trinidad_tobago"] = "127481_127481",
 		-- emoji:🇹🇻; unicode = 1f1f9-1f1fb
-		["flag_tv"] = "127481_127483",
 		["tuvalu"] = "127481_127483",
+		["flag_tv"] = "127481_127483",
 		-- emoji:🇹🇼; unicode = 1f1f9-1f1fc
-		["flag_tw"] = "127481_127484",
 		["taiwan"] = "127481_127484",
+		["flag_tw"] = "127481_127484",
 		-- emoji:🇹🇿; unicode = 1f1f9-1f1ff
 		["flag_tz"] = "127481_127487",
 		["tanzania"] = "127481_127487",
@@ -21349,19 +21391,19 @@ addon.Emojis = {
 		["flag_ua"] = "127482_127462",
 		["ukraine"] = "127482_127462",
 		-- emoji:🇺🇬; unicode = 1f1fa-1f1ec
-		["flag_ug"] = "127482_127468",
 		["uganda"] = "127482_127468",
+		["flag_ug"] = "127482_127468",
 		-- emoji:🇺🇲; unicode = 1f1fa-1f1f2
 		["flag_um"] = "127482_127474",
 		["us_outlying_islands"] = "127482_127474",
 		-- emoji:🇺🇳; unicode = 1f1fa-1f1f3
-		["flag_un"] = "127482_127475",
 		["un"] = "127482_127475",
+		["flag_un"] = "127482_127475",
 		["united_nations"] = "127482_127475",
 		-- emoji:🇺🇸; unicode = 1f1fa-1f1f8
+		["usa"] = "127482_127480",
 		["flag_us"] = "127482_127480",
 		["united_states"] = "127482_127480",
-		["usa"] = "127482_127480",
 		-- emoji:🇺🇾; unicode = 1f1fa-1f1fe
 		["flag_uy"] = "127482_127486",
 		["uruguay"] = "127482_127486",
@@ -21378,8 +21420,8 @@ addon.Emojis = {
 		["flag_ve"] = "127483_127466",
 		["venezuela"] = "127483_127466",
 		-- emoji:🇻🇬; unicode = 1f1fb-1f1ec
-		["british_virgin_islands"] = "127483_127468",
 		["flag_vg"] = "127483_127468",
+		["british_virgin_islands"] = "127483_127468",
 		-- emoji:🇻🇮; unicode = 1f1fb-1f1ee
 		["flag_vi"] = "127483_127470",
 		["us_virgin_islands"] = "127483_127470",
@@ -21393,14 +21435,14 @@ addon.Emojis = {
 		["flag_wf"] = "127484_127467",
 		["wallis_futuna"] = "127484_127467",
 		-- emoji:🇼🇸; unicode = 1f1fc-1f1f8
-		["flag_ws"] = "127484_127480",
 		["samoa"] = "127484_127480",
+		["flag_ws"] = "127484_127480",
 		-- emoji:🇽🇰; unicode = 1f1fd-1f1f0
-		["flag_xk"] = "127485_127472",
 		["kosovo"] = "127485_127472",
+		["flag_xk"] = "127485_127472",
 		-- emoji:🇾🇪; unicode = 1f1fe-1f1ea
-		["flag_ye"] = "127486_127466",
 		["yemen"] = "127486_127466",
+		["flag_ye"] = "127486_127466",
 		-- emoji:🇾🇹; unicode = 1f1fe-1f1f9
 		["flag_yt"] = "127486_127481",
 		["mayotte"] = "127486_127481",
@@ -21408,8 +21450,8 @@ addon.Emojis = {
 		["flag_za"] = "127487_127462",
 		["south_africa"] = "127487_127462",
 		-- emoji:🇿🇲; unicode = 1f1ff-1f1f2
-		["flag_zm"] = "127487_127474",
 		["zambia"] = "127487_127474",
+		["flag_zm"] = "127487_127474",
 		-- emoji:🇿🇼; unicode = 1f1ff-1f1fc
 		["flag_zw"] = "127487_127484",
 		["zimbabwe"] = "127487_127484",
@@ -21417,11 +21459,11 @@ addon.Emojis = {
 		["england"] = "127988_917607_917602_917605_917614_917607_917631",
 		["flag_gbeng"] = "127988_917607_917602_917605_917614_917607_917631",
 		-- emoji:🏴󠁧󠁢󠁳󠁣󠁴󠁿; unicode = 1f3f4-e0067-e0062-e0073-e0063-e0074-e007f
-		["flag_gbsct"] = "127988_917607_917602_917619_917603_917620_917631",
 		["scotland"] = "127988_917607_917602_917619_917603_917620_917631",
+		["flag_gbsct"] = "127988_917607_917602_917619_917603_917620_917631",
 		-- emoji:🏴󠁧󠁢󠁷󠁬󠁳󠁿; unicode = 1f3f4-e0067-e0062-e0077-e006c-e0073-e007f
-		["flag_gbwls"] = "127988_917607_917602_917623_917612_917619_917631",
 		["wales"] = "127988_917607_917602_917623_917612_917619_917631",
+		["flag_gbwls"] = "127988_917607_917602_917623_917612_917619_917631",
 	},
 
 	-- ====================================================================
@@ -21430,18 +21472,18 @@ addon.Emojis = {
 	ShortcodeList = {
 		"grinning",
 		"grinning_face",
-		"grinning_face_with_big_eyes",
 		"smiley",
-		"grinning_face_with_closed_eyes",
+		"grinning_face_with_big_eyes",
 		"smile",
-		"beaming_face",
+		"grinning_face_with_closed_eyes",
 		"grin",
-		"laughing",
+		"beaming_face",
 		"lol",
+		"laughing",
 		"satisfied",
 		"squinting_face",
-		"grinning_face_with_sweat",
 		"sweat_smile",
+		"grinning_face_with_sweat",
 		"rofl",
 		"joy",
 		"lmao",
@@ -21460,19 +21502,19 @@ addon.Emojis = {
 		"heart_eyes",
 		"smiling_face_with_heart_eyes",
 		"star_struck",
-		"blowing_a_kiss",
 		"kissing_heart",
+		"blowing_a_kiss",
 		"kissing",
 		"kissing_face",
 		"relaxed",
 		"smiling_face",
 		"kissing_closed_eyes",
 		"kissing_face_with_closed_eyes",
-		"kissing_face_with_smiling_eyes",
 		"kissing_smiling_eyes",
+		"kissing_face_with_smiling_eyes",
 		"smiling_face_with_tear",
-		"savoring_food",
 		"yum",
+		"savoring_food",
 		"face_with_tongue",
 		"stuck_out_tongue",
 		"stuck_out_tongue_winking_eye",
@@ -21483,23 +21525,23 @@ addon.Emojis = {
 		"hug",
 		"hugging",
 		"hugging_face",
-		"face_with_hand_over_mouth",
 		"hand_over_mouth",
-		"face_with_open_eyes_hand_over_mouth",
+		"face_with_hand_over_mouth",
 		"gasp",
-		"face_with_peeking_eye",
+		"face_with_open_eyes_hand_over_mouth",
 		"peek",
+		"face_with_peeking_eye",
 		"shush",
 		"shushing_face",
+		"wtf",
 		"thinking",
 		"thinking_face",
-		"wtf",
 		"salute",
 		"saluting_face",
 		"zipper_mouth",
 		"zipper_mouth_face",
-		"face_with_raised_eyebrow",
 		"raised_eyebrow",
+		"face_with_raised_eyebrow",
 		"neutral",
 		"neutral_face",
 		"expressionless",
@@ -21540,8 +21582,8 @@ addon.Emojis = {
 		"face_with_head_bandage",
 		"nauseated",
 		"nauseated_face",
-		"face_vomiting",
 		"vomiting",
+		"face_vomiting",
 		"sneezing",
 		"sneezing_face",
 		"hot",
@@ -21561,9 +21603,9 @@ addon.Emojis = {
 		"partying_face",
 		"disguised",
 		"disguised_face",
-		"smiling_face_with_sunglasses",
-		"sunglasses_cool",
 		"too_cool",
+		"sunglasses_cool",
+		"smiling_face_with_sunglasses",
 		"nerd",
 		"nerd_face",
 		"face_with_monocle",
@@ -21574,8 +21616,8 @@ addon.Emojis = {
 		"worried_face",
 		"slightly_frowning_face",
 		"white_frowning_face",
-		"face_with_open_mouth",
 		"open_mouth",
+		"face_with_open_mouth",
 		"hushed",
 		"hushed_face",
 		"astonished",
@@ -21584,8 +21626,8 @@ addon.Emojis = {
 		"flushed_face",
 		"pleading",
 		"pleading_face",
-		"face_holding_back_tears",
 		"watery_eyes",
+		"face_holding_back_tears",
 		"frowning",
 		"frowning_face",
 		"anguished",
@@ -21593,14 +21635,14 @@ addon.Emojis = {
 		"fearful",
 		"fearful_face",
 		"anxious",
-		"anxious_face",
 		"cold_sweat",
-		"disappointed_relieved",
+		"anxious_face",
 		"sad_relieved_face",
+		"disappointed_relieved",
 		"cry",
 		"crying_face",
-		"loudly_crying_face",
 		"sob",
+		"loudly_crying_face",
 		"scream",
 		"screaming_in_fear",
 		"confounded",
@@ -21609,8 +21651,8 @@ addon.Emojis = {
 		"persevering_face",
 		"disappointed",
 		"disappointed_face",
-		"downcast_face",
 		"sweat",
+		"downcast_face",
 		"weary",
 		"weary_face",
 		"tired",
@@ -21618,26 +21660,26 @@ addon.Emojis = {
 		"yawn",
 		"yawning",
 		"yawning_face",
-		"nose_steam",
 		"triumph",
+		"nose_steam",
 		"pout",
-		"pouting_face",
 		"rage",
+		"pouting_face",
 		"angry",
 		"angry_face",
 		"censored",
 		"face_with_symbols_on_mouth",
 		"smiling_imp",
-		"angry_imp",
 		"imp",
+		"angry_imp",
 		"skull",
 		"skull_and_crossbones",
 		"poop",
 		"shit",
 		"clown",
 		"clown_face",
-		"japanese_ogre",
 		"ogre",
+		"japanese_ogre",
 		"goblin",
 		"japanese_goblin",
 		"ghost",
@@ -21646,10 +21688,10 @@ addon.Emojis = {
 		"space_invader",
 		"robot",
 		"robot_face",
-		"grinning_cat",
 		"smiley_cat",
-		"grinning_cat_with_closed_eyes",
+		"grinning_cat",
 		"smile_cat",
+		"grinning_cat_with_closed_eyes",
 		"joy_cat",
 		"tears_of_joy_cat",
 		"heart_eyes_cat",
@@ -21657,8 +21699,8 @@ addon.Emojis = {
 		"smirk_cat",
 		"wry_smile_cat",
 		"kissing_cat",
-		"scream_cat",
 		"weary_cat",
+		"scream_cat",
 		"crying_cat",
 		"pouting_cat",
 		"see_no_evil",
@@ -21670,10 +21712,10 @@ addon.Emojis = {
 		"gift_heart",
 		"heart_with_ribbon",
 		"sparkling_heart",
-		"growing_heart",
 		"heartpulse",
-		"beating_heart",
+		"growing_heart",
 		"heartbeat",
+		"beating_heart",
 		"revolving_hearts",
 		"two_hearts",
 		"heart_decoration",
@@ -21904,23 +21946,23 @@ addon.Emojis = {
 		"point_forward_tone4",
 		"point_forward_tone5",
 		"+1",
-		"thumbsup",
 		"yes",
+		"thumbsup",
 		"+1_tone1",
-		"thumbsup_tone1",
 		"yes_tone1",
+		"thumbsup_tone1",
 		"+1_tone2",
-		"thumbsup_tone2",
 		"yes_tone2",
+		"thumbsup_tone2",
 		"+1_tone3",
-		"thumbsup_tone3",
 		"yes_tone3",
+		"thumbsup_tone3",
 		"+1_tone4",
-		"thumbsup_tone4",
 		"yes_tone4",
+		"thumbsup_tone4",
 		"+1_tone5",
-		"thumbsup_tone5",
 		"yes_tone5",
+		"thumbsup_tone5",
 		"-1",
 		"no",
 		"thumbsdown",
@@ -22025,18 +22067,18 @@ addon.Emojis = {
 		"handshake_tone5-2",
 		"handshake_tone5-3",
 		"handshake_tone5-4",
-		"folded_hands",
 		"pray",
-		"folded_hands_tone1",
+		"folded_hands",
 		"pray_tone1",
-		"folded_hands_tone2",
+		"folded_hands_tone1",
 		"pray_tone2",
-		"folded_hands_tone3",
+		"folded_hands_tone2",
 		"pray_tone3",
-		"folded_hands_tone4",
+		"folded_hands_tone3",
 		"pray_tone4",
-		"folded_hands_tone5",
+		"folded_hands_tone4",
 		"pray_tone5",
+		"folded_hands_tone5",
 		"writing_hand",
 		"writing_hand_tone1",
 		"writing_hand_tone2",
@@ -22093,18 +22135,18 @@ addon.Emojis = {
 		"ear_tone3",
 		"ear_tone4",
 		"ear_tone5",
-		"ear_with_hearing_aid",
 		"hearing_aid",
-		"ear_with_hearing_aid_tone1",
+		"ear_with_hearing_aid",
 		"hearing_aid_tone1",
-		"ear_with_hearing_aid_tone2",
+		"ear_with_hearing_aid_tone1",
 		"hearing_aid_tone2",
-		"ear_with_hearing_aid_tone3",
+		"ear_with_hearing_aid_tone2",
 		"hearing_aid_tone3",
-		"ear_with_hearing_aid_tone4",
+		"ear_with_hearing_aid_tone3",
 		"hearing_aid_tone4",
-		"ear_with_hearing_aid_tone5",
+		"ear_with_hearing_aid_tone4",
 		"hearing_aid_tone5",
+		"ear_with_hearing_aid_tone5",
 		"nose",
 		"nose_tone1",
 		"nose_tone2",
@@ -22308,18 +22350,18 @@ addon.Emojis = {
 		"woman_frowning_tone3",
 		"woman_frowning_tone4",
 		"woman_frowning_tone5",
-		"person_pouting",
 		"pouting",
-		"person_pouting_tone1",
+		"person_pouting",
 		"pouting_tone1",
-		"person_pouting_tone2",
+		"person_pouting_tone1",
 		"pouting_tone2",
-		"person_pouting_tone3",
+		"person_pouting_tone2",
 		"pouting_tone3",
-		"person_pouting_tone4",
+		"person_pouting_tone3",
 		"pouting_tone4",
-		"person_pouting_tone5",
+		"person_pouting_tone4",
 		"pouting_tone5",
+		"person_pouting_tone5",
 		"man_pouting",
 		"man_pouting_tone1",
 		"man_pouting_tone2",
@@ -22482,18 +22524,18 @@ addon.Emojis = {
 		"woman_facepalming_tone3",
 		"woman_facepalming_tone4",
 		"woman_facepalming_tone5",
-		"person_shrugging",
 		"shrug",
-		"person_shrugging_tone1",
+		"person_shrugging",
 		"shrug_tone1",
-		"person_shrugging_tone2",
+		"person_shrugging_tone1",
 		"shrug_tone2",
-		"person_shrugging_tone3",
+		"person_shrugging_tone2",
 		"shrug_tone3",
-		"person_shrugging_tone4",
+		"person_shrugging_tone3",
 		"shrug_tone4",
-		"person_shrugging_tone5",
+		"person_shrugging_tone4",
 		"shrug_tone5",
+		"person_shrugging_tone5",
 		"man_shrugging",
 		"man_shrugging_tone1",
 		"man_shrugging_tone2",
@@ -22878,18 +22920,18 @@ addon.Emojis = {
 		"woman_construction_worker_tone3",
 		"woman_construction_worker_tone4",
 		"woman_construction_worker_tone5",
-		"person_with_crown",
 		"royalty",
-		"person_with_crown_tone1",
+		"person_with_crown",
 		"royalty_tone1",
-		"person_with_crown_tone2",
+		"person_with_crown_tone1",
 		"royalty_tone2",
-		"person_with_crown_tone3",
+		"person_with_crown_tone2",
 		"royalty_tone3",
-		"person_with_crown_tone4",
+		"person_with_crown_tone3",
 		"royalty_tone4",
-		"person_with_crown_tone5",
+		"person_with_crown_tone4",
 		"royalty_tone5",
+		"person_with_crown_tone5",
 		"prince",
 		"prince_tone1",
 		"prince_tone2",
@@ -23215,18 +23257,18 @@ addon.Emojis = {
 		"woman_getting_haircut_tone3",
 		"woman_getting_haircut_tone4",
 		"woman_getting_haircut_tone5",
-		"person_walking",
 		"walking",
-		"person_walking_tone1",
+		"person_walking",
 		"walking_tone1",
-		"person_walking_tone2",
+		"person_walking_tone1",
 		"walking_tone2",
-		"person_walking_tone3",
+		"person_walking_tone2",
 		"walking_tone3",
-		"person_walking_tone4",
+		"person_walking_tone3",
 		"walking_tone4",
-		"person_walking_tone5",
+		"person_walking_tone4",
 		"walking_tone5",
+		"person_walking_tone5",
 		"man_walking",
 		"man_walking_tone1",
 		"man_walking_tone2",
@@ -23257,18 +23299,18 @@ addon.Emojis = {
 		"man_walking_right_tone3",
 		"man_walking_right_tone4",
 		"man_walking_right_tone5",
-		"person_standing",
 		"standing",
-		"person_standing_tone1",
+		"person_standing",
 		"standing_tone1",
-		"person_standing_tone2",
+		"person_standing_tone1",
 		"standing_tone2",
-		"person_standing_tone3",
+		"person_standing_tone2",
 		"standing_tone3",
-		"person_standing_tone4",
+		"person_standing_tone3",
 		"standing_tone4",
-		"person_standing_tone5",
+		"person_standing_tone4",
 		"standing_tone5",
+		"person_standing_tone5",
 		"man_standing",
 		"man_standing_tone1",
 		"man_standing_tone2",
@@ -23323,54 +23365,54 @@ addon.Emojis = {
 		"man_kneeling_right_tone3",
 		"man_kneeling_right_tone4",
 		"man_kneeling_right_tone5",
-		"person_with_probing_cane",
 		"person_with_white_cane",
-		"person_with_probing_cane_tone1",
+		"person_with_probing_cane",
 		"person_with_white_cane_tone1",
-		"person_with_probing_cane_tone2",
+		"person_with_probing_cane_tone1",
 		"person_with_white_cane_tone2",
-		"person_with_probing_cane_tone3",
+		"person_with_probing_cane_tone2",
 		"person_with_white_cane_tone3",
-		"person_with_probing_cane_tone4",
+		"person_with_probing_cane_tone3",
 		"person_with_white_cane_tone4",
-		"person_with_probing_cane_tone5",
+		"person_with_probing_cane_tone4",
 		"person_with_white_cane_tone5",
+		"person_with_probing_cane_tone5",
 		"person_with_white_cane_right",
 		"person_with_white_cane_right_tone1",
 		"person_with_white_cane_right_tone2",
 		"person_with_white_cane_right_tone3",
 		"person_with_white_cane_right_tone4",
 		"person_with_white_cane_right_tone5",
-		"man_with_probing_cane",
 		"man_with_white_cane",
-		"man_with_probing_cane_tone1",
+		"man_with_probing_cane",
 		"man_with_white_cane_tone1",
-		"man_with_probing_cane_tone2",
+		"man_with_probing_cane_tone1",
 		"man_with_white_cane_tone2",
-		"man_with_probing_cane_tone3",
+		"man_with_probing_cane_tone2",
 		"man_with_white_cane_tone3",
-		"man_with_probing_cane_tone4",
+		"man_with_probing_cane_tone3",
 		"man_with_white_cane_tone4",
-		"man_with_probing_cane_tone5",
+		"man_with_probing_cane_tone4",
 		"man_with_white_cane_tone5",
+		"man_with_probing_cane_tone5",
 		"man_with_white_cane_right",
 		"man_with_white_cane_right_tone1",
 		"man_with_white_cane_right_tone2",
 		"man_with_white_cane_right_tone3",
 		"man_with_white_cane_right_tone4",
 		"man_with_white_cane_right_tone5",
-		"woman_with_probing_cane",
 		"woman_with_white_cane",
-		"woman_with_probing_cane_tone1",
+		"woman_with_probing_cane",
 		"woman_with_white_cane_tone1",
-		"woman_with_probing_cane_tone2",
+		"woman_with_probing_cane_tone1",
 		"woman_with_white_cane_tone2",
-		"woman_with_probing_cane_tone3",
+		"woman_with_probing_cane_tone2",
 		"woman_with_white_cane_tone3",
-		"woman_with_probing_cane_tone4",
+		"woman_with_probing_cane_tone3",
 		"woman_with_white_cane_tone4",
-		"woman_with_probing_cane_tone5",
+		"woman_with_probing_cane_tone4",
 		"woman_with_white_cane_tone5",
+		"woman_with_probing_cane_tone5",
 		"woman_with_white_cane_right",
 		"woman_with_white_cane_right_tone1",
 		"woman_with_white_cane_right_tone2",
@@ -23449,18 +23491,18 @@ addon.Emojis = {
 		"woman_in_manual_wheelchair_right_tone3",
 		"woman_in_manual_wheelchair_right_tone4",
 		"woman_in_manual_wheelchair_right_tone5",
-		"person_running",
 		"running",
-		"person_running_tone1",
+		"person_running",
 		"running_tone1",
-		"person_running_tone2",
+		"person_running_tone1",
 		"running_tone2",
-		"person_running_tone3",
+		"person_running_tone2",
 		"running_tone3",
-		"person_running_tone4",
+		"person_running_tone3",
 		"running_tone4",
-		"person_running_tone5",
+		"person_running_tone4",
 		"running_tone5",
+		"person_running_tone5",
 		"man_running",
 		"man_running_tone1",
 		"man_running_tone2",
@@ -23582,27 +23624,27 @@ addon.Emojis = {
 		"horse_racing_tone3",
 		"horse_racing_tone4",
 		"horse_racing_tone5",
-		"person_skiing",
 		"skier",
 		"skiing",
-		"person_snowboarding",
+		"person_skiing",
 		"snowboarder",
 		"snowboarding",
-		"person_snowboarding_tone1",
+		"person_snowboarding",
 		"snowboarder_tone1",
 		"snowboarding_tone1",
-		"person_snowboarding_tone2",
+		"person_snowboarding_tone1",
 		"snowboarder_tone2",
 		"snowboarding_tone2",
-		"person_snowboarding_tone3",
+		"person_snowboarding_tone2",
 		"snowboarder_tone3",
 		"snowboarding_tone3",
-		"person_snowboarding_tone4",
+		"person_snowboarding_tone3",
 		"snowboarder_tone4",
 		"snowboarding_tone4",
-		"person_snowboarding_tone5",
+		"person_snowboarding_tone4",
 		"snowboarder_tone5",
 		"snowboarding_tone5",
+		"person_snowboarding_tone5",
 		"golfer",
 		"golfing",
 		"person_golfing",
@@ -23633,24 +23675,24 @@ addon.Emojis = {
 		"woman_golfing_tone3",
 		"woman_golfing_tone4",
 		"woman_golfing_tone5",
-		"person_surfing",
 		"surfer",
 		"surfing",
-		"person_surfing_tone1",
+		"person_surfing",
 		"surfer_tone1",
 		"surfing_tone1",
-		"person_surfing_tone2",
+		"person_surfing_tone1",
 		"surfer_tone2",
 		"surfing_tone2",
-		"person_surfing_tone3",
+		"person_surfing_tone2",
 		"surfer_tone3",
 		"surfing_tone3",
-		"person_surfing_tone4",
+		"person_surfing_tone3",
 		"surfer_tone4",
 		"surfing_tone4",
-		"person_surfing_tone5",
+		"person_surfing_tone4",
 		"surfer_tone5",
 		"surfing_tone5",
+		"person_surfing_tone5",
 		"man_surfing",
 		"man_surfing_tone1",
 		"man_surfing_tone2",
@@ -23663,18 +23705,18 @@ addon.Emojis = {
 		"woman_surfing_tone3",
 		"woman_surfing_tone4",
 		"woman_surfing_tone5",
-		"person_rowing_boat",
 		"rowboat",
-		"person_rowing_boat_tone1",
+		"person_rowing_boat",
 		"rowboat_tone1",
-		"person_rowing_boat_tone2",
+		"person_rowing_boat_tone1",
 		"rowboat_tone2",
-		"person_rowing_boat_tone3",
+		"person_rowing_boat_tone2",
 		"rowboat_tone3",
-		"person_rowing_boat_tone4",
+		"person_rowing_boat_tone3",
 		"rowboat_tone4",
-		"person_rowing_boat_tone5",
+		"person_rowing_boat_tone4",
 		"rowboat_tone5",
+		"person_rowing_boat_tone5",
 		"man_rowing_boat",
 		"man_rowing_boat_tone1",
 		"man_rowing_boat_tone2",
@@ -23687,24 +23729,24 @@ addon.Emojis = {
 		"woman_rowing_boat_tone3",
 		"woman_rowing_boat_tone4",
 		"woman_rowing_boat_tone5",
-		"person_swimming",
 		"swimmer",
 		"swimming",
-		"person_swimming_tone1",
+		"person_swimming",
 		"swimmer_tone1",
 		"swimming_tone1",
-		"person_swimming_tone2",
+		"person_swimming_tone1",
 		"swimmer_tone2",
 		"swimming_tone2",
-		"person_swimming_tone3",
+		"person_swimming_tone2",
 		"swimmer_tone3",
 		"swimming_tone3",
-		"person_swimming_tone4",
+		"person_swimming_tone3",
 		"swimmer_tone4",
 		"swimming_tone4",
-		"person_swimming_tone5",
+		"person_swimming_tone4",
 		"swimmer_tone5",
 		"swimming_tone5",
+		"person_swimming_tone5",
 		"man_swimming",
 		"man_swimming_tone1",
 		"man_swimming_tone2",
@@ -23735,24 +23777,24 @@ addon.Emojis = {
 		"woman_bouncing_ball_tone3",
 		"woman_bouncing_ball_tone4",
 		"woman_bouncing_ball_tone5",
-		"person_lifting_weights",
 		"weight_lifter",
 		"weight_lifting",
-		"person_lifting_weights_tone1",
+		"person_lifting_weights",
 		"weight_lifter_tone1",
 		"weight_lifting_tone1",
-		"person_lifting_weights_tone2",
+		"person_lifting_weights_tone1",
 		"weight_lifter_tone2",
 		"weight_lifting_tone2",
-		"person_lifting_weights_tone3",
+		"person_lifting_weights_tone2",
 		"weight_lifter_tone3",
 		"weight_lifting_tone3",
-		"person_lifting_weights_tone4",
+		"person_lifting_weights_tone3",
 		"weight_lifter_tone4",
 		"weight_lifting_tone4",
-		"person_lifting_weights_tone5",
+		"person_lifting_weights_tone4",
 		"weight_lifter_tone5",
 		"weight_lifting_tone5",
+		"person_lifting_weights_tone5",
 		"man_lifting_weights",
 		"man_lifting_weights_tone1",
 		"man_lifting_weights_tone2",
@@ -23765,23 +23807,23 @@ addon.Emojis = {
 		"woman_lifting_weights_tone3",
 		"woman_lifting_weights_tone4",
 		"woman_lifting_weights_tone5",
-		"bicyclist",
 		"biking",
+		"bicyclist",
 		"person_biking",
-		"bicyclist_tone1",
 		"biking_tone1",
+		"bicyclist_tone1",
 		"person_biking_tone1",
-		"bicyclist_tone2",
 		"biking_tone2",
+		"bicyclist_tone2",
 		"person_biking_tone2",
-		"bicyclist_tone3",
 		"biking_tone3",
+		"bicyclist_tone3",
 		"person_biking_tone3",
-		"bicyclist_tone4",
 		"biking_tone4",
+		"bicyclist_tone4",
 		"person_biking_tone4",
-		"bicyclist_tone5",
 		"biking_tone5",
+		"bicyclist_tone5",
 		"person_biking_tone5",
 		"man_biking",
 		"man_biking_tone1",
@@ -23795,23 +23837,23 @@ addon.Emojis = {
 		"woman_biking_tone3",
 		"woman_biking_tone4",
 		"woman_biking_tone5",
-		"mountain_bicyclist",
 		"mountain_biking",
+		"mountain_bicyclist",
 		"person_mountain_biking",
-		"mountain_bicyclist_tone1",
 		"mountain_biking_tone1",
+		"mountain_bicyclist_tone1",
 		"person_mountain_biking_tone1",
-		"mountain_bicyclist_tone2",
 		"mountain_biking_tone2",
+		"mountain_bicyclist_tone2",
 		"person_mountain_biking_tone2",
-		"mountain_bicyclist_tone3",
 		"mountain_biking_tone3",
+		"mountain_bicyclist_tone3",
 		"person_mountain_biking_tone3",
-		"mountain_bicyclist_tone4",
 		"mountain_biking_tone4",
+		"mountain_bicyclist_tone4",
 		"person_mountain_biking_tone4",
-		"mountain_bicyclist_tone5",
 		"mountain_biking_tone5",
+		"mountain_bicyclist_tone5",
 		"person_mountain_biking_tone5",
 		"man_mountain_biking",
 		"man_mountain_biking_tone1",
@@ -23849,23 +23891,23 @@ addon.Emojis = {
 		"woman_cartwheeling_tone3",
 		"woman_cartwheeling_tone4",
 		"woman_cartwheeling_tone5",
-		"people_wrestling",
 		"wrestlers",
 		"wrestling",
+		"people_wrestling",
 		"men_wrestling",
 		"women_wrestling",
-		"person_playing_water_polo",
 		"water_polo",
-		"person_playing_water_polo_tone1",
+		"person_playing_water_polo",
 		"water_polo_tone1",
-		"person_playing_water_polo_tone2",
+		"person_playing_water_polo_tone1",
 		"water_polo_tone2",
-		"person_playing_water_polo_tone3",
+		"person_playing_water_polo_tone2",
 		"water_polo_tone3",
-		"person_playing_water_polo_tone4",
+		"person_playing_water_polo_tone3",
 		"water_polo_tone4",
-		"person_playing_water_polo_tone5",
+		"person_playing_water_polo_tone4",
 		"water_polo_tone5",
+		"person_playing_water_polo_tone5",
 		"man_playing_water_polo",
 		"man_playing_water_polo_tone1",
 		"man_playing_water_polo_tone2",
@@ -24078,58 +24120,58 @@ addon.Emojis = {
 		"two_men_holding_hands_tone5-3",
 		"two_men_holding_hands_tone5-4",
 		"two_men_holding_hands_tone5",
-		"couple_kiss",
 		"couplekiss",
-		"couple_kiss_tone1",
+		"couple_kiss",
 		"couplekiss_tone1",
-		"couple_kiss_tone2",
+		"couple_kiss_tone1",
 		"couplekiss_tone2",
-		"couple_kiss_tone3",
+		"couple_kiss_tone2",
 		"couplekiss_tone3",
-		"couple_kiss_tone4",
+		"couple_kiss_tone3",
 		"couplekiss_tone4",
-		"couple_kiss_tone5",
+		"couple_kiss_tone4",
 		"couplekiss_tone5",
-		"couple_kiss_tone1-2",
+		"couple_kiss_tone5",
 		"couplekiss_tone1-2",
-		"couple_kiss_tone1-3",
+		"couple_kiss_tone1-2",
 		"couplekiss_tone1-3",
-		"couple_kiss_tone1-4",
+		"couple_kiss_tone1-3",
 		"couplekiss_tone1-4",
-		"couple_kiss_tone1-5",
+		"couple_kiss_tone1-4",
 		"couplekiss_tone1-5",
-		"couple_kiss_tone2-1",
+		"couple_kiss_tone1-5",
 		"couplekiss_tone2-1",
-		"couple_kiss_tone2-3",
+		"couple_kiss_tone2-1",
 		"couplekiss_tone2-3",
-		"couple_kiss_tone2-4",
+		"couple_kiss_tone2-3",
 		"couplekiss_tone2-4",
-		"couple_kiss_tone2-5",
+		"couple_kiss_tone2-4",
 		"couplekiss_tone2-5",
-		"couple_kiss_tone3-1",
+		"couple_kiss_tone2-5",
 		"couplekiss_tone3-1",
-		"couple_kiss_tone3-2",
+		"couple_kiss_tone3-1",
 		"couplekiss_tone3-2",
-		"couple_kiss_tone3-4",
+		"couple_kiss_tone3-2",
 		"couplekiss_tone3-4",
-		"couple_kiss_tone3-5",
+		"couple_kiss_tone3-4",
 		"couplekiss_tone3-5",
-		"couple_kiss_tone4-1",
+		"couple_kiss_tone3-5",
 		"couplekiss_tone4-1",
-		"couple_kiss_tone4-2",
+		"couple_kiss_tone4-1",
 		"couplekiss_tone4-2",
-		"couple_kiss_tone4-3",
+		"couple_kiss_tone4-2",
 		"couplekiss_tone4-3",
-		"couple_kiss_tone4-5",
+		"couple_kiss_tone4-3",
 		"couplekiss_tone4-5",
-		"couple_kiss_tone5-1",
+		"couple_kiss_tone4-5",
 		"couplekiss_tone5-1",
-		"couple_kiss_tone5-2",
+		"couple_kiss_tone5-1",
 		"couplekiss_tone5-2",
-		"couple_kiss_tone5-3",
+		"couple_kiss_tone5-2",
 		"couplekiss_tone5-3",
-		"couple_kiss_tone5-4",
+		"couple_kiss_tone5-3",
 		"couplekiss_tone5-4",
+		"couple_kiss_tone5-4",
 		"kiss_mw",
 		"kiss_wm",
 		"kiss_mw_tone1",
@@ -24526,8 +24568,8 @@ addon.Emojis = {
 		"dragon_face",
 		"dragon",
 		"sauropod",
-		"t-rex",
 		"trex",
+		"t-rex",
 		"spouting_whale",
 		"whale",
 		"dolphin",
@@ -24587,8 +24629,8 @@ addon.Emojis = {
 		"maple_leaf",
 		"fallen_leaf",
 		"leaves",
-		"empty_nest",
 		"nest",
+		"empty_nest",
 		"nest_with_eggs",
 		"mushroom",
 		"leafless_tree",
@@ -24648,8 +24690,8 @@ addon.Emojis = {
 		"cut_of_meat",
 		"bacon",
 		"hamburger",
-		"french_fries",
 		"fries",
+		"french_fries",
 		"pizza",
 		"hotdog",
 		"sandwich",
@@ -24662,12 +24704,12 @@ addon.Emojis = {
 		"cooking",
 		"fried_egg",
 		"shallow_pan_of_food",
-		"pot_of_food",
 		"stew",
+		"pot_of_food",
 		"fondue",
 		"bowl_with_spoon",
-		"green_salad",
 		"salad",
+		"green_salad",
 		"popcorn",
 		"butter",
 		"salt",
@@ -24676,8 +24718,8 @@ addon.Emojis = {
 		"bento_box",
 		"rice_cracker",
 		"rice_ball",
-		"cooked_rice",
 		"rice",
+		"cooked_rice",
 		"curry",
 		"curry_rice",
 		"ramen",
@@ -24711,8 +24753,8 @@ addon.Emojis = {
 		"custard",
 		"honey_pot",
 		"baby_bottle",
-		"glass_of_milk",
 		"milk",
+		"glass_of_milk",
 		"coffee",
 		"teapot",
 		"tea",
@@ -24724,15 +24766,15 @@ addon.Emojis = {
 		"beer",
 		"beers",
 		"clinking_glasses",
-		"tumbler_glass",
 		"whisky",
+		"tumbler_glass",
 		"pour",
 		"pouring_liquid",
 		"cup_with_straw",
 		"boba_drink",
 		"bubble_tea",
-		"beverage_box",
 		"juice_box",
+		"beverage_box",
 		"mate",
 		"ice",
 		"ice_cube",
@@ -24759,13 +24801,13 @@ addon.Emojis = {
 		"beach",
 		"beach_with_umbrella",
 		"desert",
-		"desert_island",
 		"island",
+		"desert_island",
 		"national_park",
 		"stadium",
 		"classical_building",
-		"building_construction",
 		"construction_site",
+		"building_construction",
 		"bricks",
 		"rock",
 		"wood",
@@ -24807,13 +24849,13 @@ addon.Emojis = {
 		"sunrise_over_mountains",
 		"sunrise",
 		"city_dusk",
-		"city_sunrise",
 		"city_sunset",
+		"city_sunrise",
 		"bridge_at_night",
 		"hotsprings",
 		"carousel_horse",
-		"playground_slide",
 		"slide",
+		"playground_slide",
 		"ferris_wheel",
 		"roller_coaster",
 		"barber",
@@ -24844,11 +24886,11 @@ addon.Emojis = {
 		"car",
 		"red_car",
 		"oncoming_automobile",
-		"blue_car",
 		"suv",
+		"blue_car",
 		"pickup_truck",
-		"delivery_truck",
 		"truck",
+		"delivery_truck",
 		"articulated_lorry",
 		"tractor",
 		"racing_car",
@@ -24857,8 +24899,8 @@ addon.Emojis = {
 		"manual_wheelchair",
 		"motorized_wheelchair",
 		"auto_rickshaw",
-		"bicycle",
 		"bike",
+		"bicycle",
 		"scooter",
 		"skateboard",
 		"roller_skate",
@@ -24871,8 +24913,8 @@ addon.Emojis = {
 		"rotating_light",
 		"traffic_light",
 		"vertical_traffic_light",
-		"octagonal_sign",
 		"stop_sign",
+		"octagonal_sign",
 		"construction",
 		"anchor",
 		"lifebuoy",
@@ -24947,31 +24989,31 @@ addon.Emojis = {
 		"sun",
 		"full_moon_with_face",
 		"sun_with_face",
-		"ringed_planet",
 		"saturn",
+		"ringed_planet",
 		"star",
-		"glowing_star",
 		"star2",
-		"shooting_star",
+		"glowing_star",
 		"stars",
+		"shooting_star",
 		"milky_way",
 		"cloud",
 		"partly_sunny",
 		"sun_behind_cloud",
 		"stormy",
 		"thunder_cloud_and_rain",
-		"sun_behind_small_cloud",
 		"sunny",
+		"sun_behind_small_cloud",
 		"cloudy",
 		"sun_behind_large_cloud",
 		"sun_and_rain",
 		"sun_behind_rain_cloud",
-		"cloud_with_rain",
 		"rainy",
-		"cloud_with_snow",
+		"cloud_with_rain",
 		"snowy",
-		"cloud_with_lightning",
+		"cloud_with_snow",
 		"lightning",
+		"cloud_with_lightning",
 		"tornado",
 		"fog",
 		"wind_blowing_face",
@@ -24982,8 +25024,8 @@ addon.Emojis = {
 		"umbrella_with_rain",
 		"beach_umbrella",
 		"umbrella_on_ground",
-		"high_voltage",
 		"zap",
+		"high_voltage",
 		"snowflake",
 		"snowman2",
 		"snowman",
@@ -24999,24 +25041,24 @@ addon.Emojis = {
 		"firecracker",
 		"sparkles",
 		"balloon",
+		"tada",
 		"party",
 		"party_popper",
-		"tada",
 		"confetti_ball",
 		"tanabata_tree",
 		"bamboo",
 		"dolls",
-		"carp_streamer",
 		"flags",
+		"carp_streamer",
 		"wind_chime",
-		"moon_ceremony",
 		"rice_scene",
+		"moon_ceremony",
 		"red_envelope",
 		"ribbon",
 		"gift",
 		"reminder_ribbon",
-		"admission_tickets",
 		"tickets",
+		"admission_tickets",
 		"ticket",
 		"military_medal",
 		"trophy",
@@ -25056,8 +25098,8 @@ addon.Emojis = {
 		"ski",
 		"sled",
 		"curling_stone",
-		"bullseye",
 		"dart",
+		"bullseye",
 		"direct_hit",
 		"yo_yo",
 		"kite",
@@ -25089,16 +25131,16 @@ addon.Emojis = {
 		"mahjong",
 		"flower_playing_cards",
 		"performing_arts",
-		"frame_with_picture",
 		"framed_picture",
+		"frame_with_picture",
 		"art",
 		"palette",
 		"thread",
 		"sewing_needle",
 		"yarn",
 		"knot",
-		"eyeglasses",
 		"glasses",
+		"eyeglasses",
 		"sunglasses",
 		"goggles",
 		"lab_coat",
@@ -25121,15 +25163,15 @@ addon.Emojis = {
 		"folding_fan",
 		"purse",
 		"handbag",
-		"clutch_bag",
 		"pouch",
+		"clutch_bag",
 		"shopping_bags",
 		"backpack",
 		"school_satchel",
 		"thong_sandal",
 		"mans_shoe",
-		"athletic_shoe",
 		"sneaker",
+		"athletic_shoe",
 		"hiking_boot",
 		"flat_shoe",
 		"womans_flat_shoe",
@@ -25140,10 +25182,10 @@ addon.Emojis = {
 		"hair_pick",
 		"crown",
 		"womans_hat",
-		"top_hat",
 		"tophat",
-		"graduation_cap",
+		"top_hat",
 		"mortar_board",
+		"graduation_cap",
 		"billed_cap",
 		"military_helmet",
 		"helmet_with_cross",
@@ -25154,13 +25196,13 @@ addon.Emojis = {
 		"gem",
 		"mute",
 		"no_sound",
+		"speaker",
 		"low_volume",
 		"quiet_sound",
-		"speaker",
-		"medium_volumne",
 		"sound",
-		"high_volume",
+		"medium_volumne",
 		"loud_sound",
+		"high_volume",
 		"loudspeaker",
 		"mega",
 		"megaphone",
@@ -25169,8 +25211,8 @@ addon.Emojis = {
 		"no_bell",
 		"musical_score",
 		"musical_note",
-		"musical_notes",
 		"notes",
+		"musical_notes",
 		"studio_microphone",
 		"level_slider",
 		"control_knobs",
@@ -25189,8 +25231,8 @@ addon.Emojis = {
 		"maracas",
 		"flute",
 		"harp",
-		"android",
 		"iphone",
+		"android",
 		"mobile_phone",
 		"calling",
 		"mobile_phone_arrow",
@@ -25209,8 +25251,8 @@ addon.Emojis = {
 		"keyboard",
 		"computer_mouse",
 		"trackball",
-		"computer_disk",
 		"minidisc",
+		"computer_disk",
 		"floppy_disk",
 		"cd",
 		"optical_disk",
@@ -25264,8 +25306,8 @@ addon.Emojis = {
 		"receipt",
 		"chart",
 		"envelope",
-		"e-mail",
 		"email",
+		"e-mail",
 		"incoming_envelope",
 		"envelope_with_arrow",
 		"outbox_tray",
@@ -25314,10 +25356,10 @@ addon.Emojis = {
 		"locked",
 		"unlock",
 		"unlocked",
-		"lock_with_ink_pen",
 		"locked_with_pen",
-		"closed_lock_with_key",
+		"lock_with_ink_pen",
 		"locked_with_key",
+		"closed_lock_with_key",
 		"key",
 		"old_key",
 		"hammer",
@@ -25339,8 +25381,8 @@ addon.Emojis = {
 		"clamp",
 		"compression",
 		"scales",
-		"probing_cane",
 		"white_cane",
+		"probing_cane",
 		"link",
 		"broken_chain",
 		"chains",
@@ -25360,12 +25402,12 @@ addon.Emojis = {
 		"syringe",
 		"drop_of_blood",
 		"pill",
-		"adhesive_bandage",
 		"bandaid",
+		"adhesive_bandage",
 		"crutch",
 		"stethoscope",
-		"x-ray",
 		"xray",
+		"x-ray",
 		"door",
 		"elevator",
 		"mirror",
@@ -25383,8 +25425,8 @@ addon.Emojis = {
 		"safety_pin",
 		"broom",
 		"basket",
-		"roll_of_paper",
 		"toilet_paper",
+		"roll_of_paper",
 		"bucket",
 		"soap",
 		"bubbles",
@@ -25392,8 +25434,8 @@ addon.Emojis = {
 		"sponge",
 		"fire_extinguisher",
 		"shopping_cart",
-		"cigarette",
 		"smoking",
+		"cigarette",
 		"coffin",
 		"headstone",
 		"funeral_urn",
@@ -25407,15 +25449,15 @@ addon.Emojis = {
 		"litter_bin",
 		"put_litter_in_its_place",
 		"potable_water",
-		"handicapped",
 		"wheelchair",
+		"handicapped",
 		"mens",
 		"womens",
 		"bathroom",
 		"restroom",
 		"baby_symbol",
-		"water_closet",
 		"wc",
+		"water_closet",
 		"passport_control",
 		"customs",
 		"baggage_claim",
@@ -25426,13 +25468,13 @@ addon.Emojis = {
 		"no_entry_sign",
 		"no_bicycles",
 		"no_smoking",
-		"do_not_litter",
 		"no_littering",
+		"do_not_litter",
 		"non-potable_water",
 		"no_pedestrians",
 		"no_mobile_phones",
-		"no_one_under_18",
 		"underage",
+		"no_one_under_18",
 		"radioactive",
 		"biohazard",
 		"arrow_up",
@@ -25451,10 +25493,10 @@ addon.Emojis = {
 		"rightwards_arrow_with_hook",
 		"arrow_heading_up",
 		"arrow_heading_down",
-		"arrows_clockwise",
 		"clockwise",
-		"arrows_counterclockwise",
+		"arrows_clockwise",
 		"counterclockwise",
+		"arrows_counterclockwise",
 		"back",
 		"end",
 		"on",
@@ -25492,24 +25534,24 @@ addon.Emojis = {
 		"twisted_rightwards_arrows",
 		"repeat",
 		"repeat_one",
-		"arrow_forward",
 		"play",
+		"arrow_forward",
 		"fast_forward",
 		"next_track",
 		"play_pause",
-		"arrow_backward",
 		"reverse",
-		"fast_reverse",
+		"arrow_backward",
 		"rewind",
+		"fast_reverse",
 		"previous_track",
-		"arrow_up_small",
 		"up",
-		"arrow_double_up",
+		"arrow_up_small",
 		"fast_up",
-		"arrow_down_small",
+		"arrow_double_up",
 		"down",
-		"arrow_double_down",
+		"arrow_down_small",
 		"fast_down",
+		"arrow_double_down",
 		"pause",
 		"stop",
 		"record",
@@ -25529,8 +25571,8 @@ addon.Emojis = {
 		"male",
 		"male_sign",
 		"transgender_symbol",
-		"multiplication",
 		"multiply",
+		"multiplication",
 		"plus",
 		"minus",
 		"divide",
@@ -25539,8 +25581,8 @@ addon.Emojis = {
 		"infinity",
 		"bangbang",
 		"double_exclamation",
-		"exclamation_question",
 		"interrobang",
+		"exclamation_question",
 		"question",
 		"white_question",
 		"white_exclamation",
@@ -25556,20 +25598,20 @@ addon.Emojis = {
 		"trident",
 		"name_badge",
 		"beginner",
-		"hollow_red_circle",
 		"red_o",
-		"check_mark_button",
+		"hollow_red_circle",
 		"white_check_mark",
+		"check_mark_button",
 		"ballot_box_with_check",
 		"check_mark",
 		"heavy_check_mark",
-		"cross_mark",
 		"x",
+		"cross_mark",
 		"cross_mark_button",
 		"negative_squared_cross_mark",
 		"curly_loop",
-		"double_curly_loop",
 		"loop",
+		"double_curly_loop",
 		"part_alternation_mark",
 		"eight_spoked_asterisk",
 		"eight_pointed_black_star",
@@ -25620,14 +25662,14 @@ addon.Emojis = {
 		"sos",
 		"up2",
 		"vs",
-		"ja_here",
 		"koko",
+		"ja_here",
 		"ja_service_charge",
 		"ja_monthly_amount",
 		"ja_not_free_of_carge",
 		"ja_reserved",
-		"ideograph_advantage",
 		"ja_bargain",
+		"ideograph_advantage",
 		"ja_discount",
 		"ja_free_of_charge",
 		"ja_prohibited",
@@ -25638,8 +25680,8 @@ addon.Emojis = {
 		"ja_vacancy",
 		"congratulations",
 		"ja_congratulations",
-		"ja_secret",
 		"secret",
+		"ja_secret",
 		"ja_open_for_business",
 		"ja_no_vacancy",
 		"red_circle",
@@ -25672,8 +25714,8 @@ addon.Emojis = {
 		"small_blue_diamond",
 		"small_red_triangle",
 		"small_red_triangle_down",
-		"diamond_shape_with_a_dot_inside",
 		"diamond_with_a_dot",
+		"diamond_shape_with_a_dot_inside",
 		"radio_button",
 		"white_square_button",
 		"black_square_button",
@@ -25687,52 +25729,52 @@ addon.Emojis = {
 		"transgender_flag",
 		"jolly_roger",
 		"pirate_flag",
-		"ascension_island",
 		"flag_ac",
+		"ascension_island",
 		"andorra",
 		"flag_ad",
 		"flag_ae",
 		"united_arab_emirates",
-		"afghanistan",
 		"flag_af",
-		"antigua_barbuda",
+		"afghanistan",
 		"flag_ag",
-		"anguilla",
+		"antigua_barbuda",
 		"flag_ai",
+		"anguilla",
 		"albania",
 		"flag_al",
 		"armenia",
 		"flag_am",
 		"angola",
 		"flag_ao",
-		"antarctica",
 		"flag_aq",
-		"argentina",
+		"antarctica",
 		"flag_ar",
-		"american_samoa",
+		"argentina",
 		"flag_as",
+		"american_samoa",
 		"austria",
 		"flag_at",
-		"australia",
 		"flag_au",
+		"australia",
 		"aruba",
 		"flag_aw",
-		"aland_islands",
 		"flag_ax",
-		"azerbaijan",
+		"aland_islands",
 		"flag_az",
-		"bosnia_herzegovina",
+		"azerbaijan",
 		"flag_ba",
-		"barbados",
+		"bosnia_herzegovina",
 		"flag_bb",
-		"bangladesh",
+		"barbados",
 		"flag_bd",
+		"bangladesh",
 		"belgium",
 		"flag_be",
-		"burkina_faso",
 		"flag_bf",
-		"bulgaria",
+		"burkina_faso",
 		"flag_bg",
+		"bulgaria",
 		"bahrain",
 		"flag_bh",
 		"burundi",
@@ -25747,81 +25789,81 @@ addon.Emojis = {
 		"flag_bn",
 		"bolivia",
 		"flag_bo",
-		"caribbean_netherlands",
 		"flag_bq",
+		"caribbean_netherlands",
 		"brazil",
 		"flag_br",
 		"bahamas",
 		"flag_bs",
 		"bhutan",
 		"flag_bt",
-		"bouvet_island",
 		"flag_bv",
-		"botswana",
+		"bouvet_island",
 		"flag_bw",
+		"botswana",
 		"belarus",
 		"flag_by",
 		"belize",
 		"flag_bz",
 		"canada",
 		"flag_ca",
-		"cocos_islands",
 		"flag_cc",
-		"congo_kinshasa",
+		"cocos_islands",
 		"flag_cd",
-		"central_african_republic",
+		"congo_kinshasa",
 		"flag_cf",
-		"congo_brazzaville",
+		"central_african_republic",
 		"flag_cg",
+		"congo_brazzaville",
 		"flag_ch",
 		"switzerland",
-		"cote_divoire",
 		"flag_ci",
-		"cook_islands",
+		"cote_divoire",
 		"flag_ck",
+		"cook_islands",
 		"chile",
 		"flag_cl",
-		"cameroon",
 		"flag_cm",
+		"cameroon",
 		"china",
 		"flag_cn",
-		"colombia",
 		"flag_co",
-		"clipperton_island",
+		"colombia",
 		"flag_cp",
-		"flag_cq",
+		"clipperton_island",
 		"sark",
-		"costa_rica",
+		"flag_cq",
 		"flag_cr",
+		"costa_rica",
 		"cuba",
 		"flag_cu",
-		"cape_verde",
 		"flag_cv",
+		"cape_verde",
 		"curacao",
 		"flag_cw",
-		"christmas_island",
 		"flag_cx",
+		"christmas_island",
 		"cyprus",
 		"flag_cy",
-		"czech_republic",
 		"czechia",
 		"flag_cz",
+		"czech_republic",
 		"flag_de",
 		"germany",
-		"diego_garcia",
 		"flag_dg",
-		"djibouti",
+		"diego_garcia",
 		"flag_dj",
+		"djibouti",
 		"denmark",
 		"flag_dk",
-		"dominica",
 		"flag_dm",
-		"dominican_republic",
+		"dominica",
 		"flag_do",
+		"dominican_republic",
 		"algeria",
 		"flag_dz",
-		"ceuta_melilla",
 		"flag_ea",
+		"ceuta_melilla",
 		"ecuador",
 		"flag_ec",
 		"estonia",
@@ -25832,28 +25874,28 @@ addon.Emojis = {
 		"western_sahara",
 		"eritrea",
 		"flag_er",
-		"flag_es",
 		"spain",
-		"ethiopia",
+		"flag_es",
 		"flag_et",
-		"european_union",
+		"ethiopia",
 		"flag_eu",
+		"european_union",
 		"finland",
 		"flag_fi",
 		"fiji",
 		"flag_fj",
-		"falkland_islands",
 		"flag_fk",
+		"falkland_islands",
 		"flag_fm",
 		"micronesia",
-		"faroe_islands",
 		"flag_fo",
-		"flag_fr",
+		"faroe_islands",
 		"france",
-		"flag_ga",
+		"flag_fr",
 		"gabon",
-		"flag_gb",
+		"flag_ga",
 		"uk",
+		"flag_gb",
 		"united_kingdom",
 		"flag_gd",
 		"grenada",
@@ -25863,32 +25905,32 @@ addon.Emojis = {
 		"french_guiana",
 		"flag_gg",
 		"guernsey",
-		"flag_gh",
 		"ghana",
+		"flag_gh",
 		"flag_gi",
 		"gibraltar",
 		"flag_gl",
 		"greenland",
-		"flag_gm",
 		"gambia",
-		"flag_gn",
+		"flag_gm",
 		"guinea",
+		"flag_gn",
 		"flag_gp",
 		"guadeloupe",
-		"equatorial_guinea",
 		"flag_gq",
-		"flag_gr",
+		"equatorial_guinea",
 		"greece",
+		"flag_gr",
 		"flag_gs",
 		"south_georgia_south_sandwich_islands",
 		"flag_gt",
 		"guatemala",
-		"flag_gu",
 		"guam",
+		"flag_gu",
 		"flag_gw",
 		"guinea_bissau",
-		"flag_gy",
 		"guyana",
+		"flag_gy",
 		"flag_hk",
 		"hong_kong",
 		"flag_hm",
@@ -25897,46 +25939,46 @@ addon.Emojis = {
 		"honduras",
 		"croatia",
 		"flag_hr",
-		"flag_ht",
 		"haiti",
+		"flag_ht",
 		"flag_hu",
 		"hungary",
-		"canary_islands",
 		"flag_ic",
+		"canary_islands",
 		"flag_id",
 		"indonesia",
 		"flag_ie",
 		"ireland",
-		"flag_il",
 		"israel",
+		"flag_il",
 		"flag_im",
 		"isle_of_man",
-		"flag_in",
 		"india",
-		"british_indian_ocean_territory",
+		"flag_in",
 		"flag_io",
-		"flag_iq",
+		"british_indian_ocean_territory",
 		"iraq",
-		"flag_ir",
+		"flag_iq",
 		"iran",
+		"flag_ir",
 		"flag_is",
 		"iceland",
-		"flag_it",
 		"italy",
-		"flag_je",
+		"flag_it",
 		"jersey",
+		"flag_je",
 		"flag_jm",
 		"jamaica",
-		"flag_jo",
 		"jordan",
-		"flag_jp",
+		"flag_jo",
 		"japan",
-		"flag_ke",
+		"flag_jp",
 		"kenya",
+		"flag_ke",
 		"flag_kg",
 		"kyrgyzstan",
-		"cambodia",
 		"flag_kh",
+		"cambodia",
 		"flag_ki",
 		"kiribati",
 		"comoros",
@@ -25947,14 +25989,14 @@ addon.Emojis = {
 		"north_korea",
 		"flag_kr",
 		"south_korea",
-		"flag_kw",
 		"kuwait",
-		"cayman_islands",
+		"flag_kw",
 		"flag_ky",
+		"cayman_islands",
 		"flag_kz",
 		"kazakhstan",
-		"flag_la",
 		"laos",
+		"flag_la",
 		"flag_lb",
 		"lebanon",
 		"flag_lc",
@@ -25971,14 +26013,14 @@ addon.Emojis = {
 		"lithuania",
 		"flag_lu",
 		"luxembourg",
-		"flag_lv",
 		"latvia",
-		"flag_ly",
+		"flag_lv",
 		"libya",
+		"flag_ly",
 		"flag_ma",
 		"morocco",
-		"flag_mc",
 		"monaco",
+		"flag_mc",
 		"flag_md",
 		"moldova",
 		"flag_me",
@@ -25991,16 +26033,16 @@ addon.Emojis = {
 		"marshall_islands",
 		"flag_mk",
 		"macedonia",
-		"flag_ml",
 		"mali",
+		"flag_ml",
 		"burma",
 		"flag_mm",
 		"myanmar",
 		"flag_mn",
 		"mongolia",
-		"flag_mo",
 		"macao",
 		"macau",
+		"flag_mo",
 		"flag_mp",
 		"northern_mariana_islands",
 		"flag_mq",
@@ -26009,16 +26051,16 @@ addon.Emojis = {
 		"mauritania",
 		"flag_ms",
 		"montserrat",
-		"flag_mt",
 		"malta",
+		"flag_mt",
 		"flag_mu",
 		"mauritius",
 		"flag_mv",
 		"maldives",
-		"flag_mw",
 		"malawi",
-		"flag_mx",
+		"flag_mw",
 		"mexico",
+		"flag_mx",
 		"flag_my",
 		"malaysia",
 		"flag_mz",
@@ -26027,8 +26069,8 @@ addon.Emojis = {
 		"namibia",
 		"flag_nc",
 		"new_caledonia",
-		"flag_ne",
 		"niger",
+		"flag_ne",
 		"flag_nf",
 		"norfolk_island",
 		"flag_ng",
@@ -26037,22 +26079,22 @@ addon.Emojis = {
 		"nicaragua",
 		"flag_nl",
 		"netherlands",
-		"flag_no",
 		"norway",
-		"flag_np",
+		"flag_no",
 		"nepal",
-		"flag_nr",
+		"flag_np",
 		"nauru",
-		"flag_nu",
+		"flag_nr",
 		"niue",
+		"flag_nu",
 		"flag_nz",
 		"new_zealand",
-		"flag_om",
 		"oman",
-		"flag_pa",
+		"flag_om",
 		"panama",
-		"flag_pe",
+		"flag_pa",
 		"peru",
+		"flag_pe",
 		"flag_pf",
 		"french_polynesia",
 		"flag_pg",
@@ -26061,8 +26103,8 @@ addon.Emojis = {
 		"philippines",
 		"flag_pk",
 		"pakistan",
-		"flag_pl",
 		"poland",
+		"flag_pl",
 		"flag_pm",
 		"st_pierre_miquelon",
 		"flag_pn",
@@ -26073,32 +26115,32 @@ addon.Emojis = {
 		"palestinian_territories",
 		"flag_pt",
 		"portugal",
-		"flag_pw",
 		"palau",
+		"flag_pw",
 		"flag_py",
 		"paraguay",
-		"flag_qa",
 		"qatar",
+		"flag_qa",
 		"flag_re",
 		"reunion",
 		"flag_ro",
 		"romania",
-		"flag_rs",
 		"serbia",
-		"flag_ru",
+		"flag_rs",
 		"russia",
-		"flag_rw",
+		"flag_ru",
 		"rwanda",
+		"flag_rw",
 		"flag_sa",
 		"saudi_arabia",
 		"flag_sb",
 		"solomon_islands",
 		"flag_sc",
 		"seychelles",
-		"flag_sd",
 		"sudan",
-		"flag_se",
+		"flag_sd",
 		"sweden",
+		"flag_se",
 		"flag_sg",
 		"singapore",
 		"flag_sh",
@@ -26123,14 +26165,14 @@ addon.Emojis = {
 		"south_sudan",
 		"flag_st",
 		"sao_tome_principe",
-		"el_salvador",
 		"flag_sv",
+		"el_salvador",
 		"flag_sx",
 		"sint_maarten",
-		"flag_sy",
 		"syria",
-		"eswatini",
+		"flag_sy",
 		"flag_sz",
+		"eswatini",
 		"swaziland",
 		"flag_ta",
 		"tristan_da_cunha",
@@ -26140,8 +26182,8 @@ addon.Emojis = {
 		"flag_td",
 		"flag_tf",
 		"french_southern_territories",
-		"flag_tg",
 		"togo",
+		"flag_tg",
 		"flag_th",
 		"thailand",
 		"flag_tj",
@@ -26154,30 +26196,30 @@ addon.Emojis = {
 		"turkmenistan",
 		"flag_tn",
 		"tunisia",
-		"flag_to",
 		"tonga",
+		"flag_to",
 		"flag_tr",
 		"turkey_tr",
 		"flag_tt",
 		"trinidad_tobago",
-		"flag_tv",
 		"tuvalu",
-		"flag_tw",
+		"flag_tv",
 		"taiwan",
+		"flag_tw",
 		"flag_tz",
 		"tanzania",
 		"flag_ua",
 		"ukraine",
-		"flag_ug",
 		"uganda",
+		"flag_ug",
 		"flag_um",
 		"us_outlying_islands",
-		"flag_un",
 		"un",
+		"flag_un",
 		"united_nations",
+		"usa",
 		"flag_us",
 		"united_states",
-		"usa",
 		"flag_uy",
 		"uruguay",
 		"flag_uz",
@@ -26188,8 +26230,8 @@ addon.Emojis = {
 		"st_vincent_grenadines",
 		"flag_ve",
 		"venezuela",
-		"british_virgin_islands",
 		"flag_vg",
+		"british_virgin_islands",
 		"flag_vi",
 		"us_virgin_islands",
 		"flag_vn",
@@ -26198,26 +26240,26 @@ addon.Emojis = {
 		"vanuatu",
 		"flag_wf",
 		"wallis_futuna",
-		"flag_ws",
 		"samoa",
-		"flag_xk",
+		"flag_ws",
 		"kosovo",
-		"flag_ye",
+		"flag_xk",
 		"yemen",
+		"flag_ye",
 		"flag_yt",
 		"mayotte",
 		"flag_za",
 		"south_africa",
-		"flag_zm",
 		"zambia",
+		"flag_zm",
 		"flag_zw",
 		"zimbabwe",
 		"england",
 		"flag_gbeng",
-		"flag_gbsct",
 		"scotland",
-		"flag_gbwls",
+		"flag_gbsct",
 		"wales",
+		"flag_gbwls",
 		ShortcodeCount = 4790,
 	},
 
@@ -26233,29 +26275,29 @@ addon.Emojis = {
 	["128515"] = {
 		Name = "grinning face with big eyes",
 		Shortcodes = {
-			"grinning_face_with_big_eyes",
 			"smiley",
+			"grinning_face_with_big_eyes",
 		},
 	},
 	["128516"] = {
 		Name = "grinning face with smiling eyes",
 		Shortcodes = {
-			"grinning_face_with_closed_eyes",
 			"smile",
+			"grinning_face_with_closed_eyes",
 		},
 	},
 	["128513"] = {
 		Name = "beaming face with smiling eyes",
 		Shortcodes = {
-			"beaming_face",
 			"grin",
+			"beaming_face",
 		},
 	},
 	["128518"] = {
 		Name = "grinning squinting face",
 		Shortcodes = {
-			"laughing",
 			"lol",
+			"laughing",
 			"satisfied",
 			"squinting_face",
 		},
@@ -26263,8 +26305,8 @@ addon.Emojis = {
 	["128517"] = {
 		Name = "grinning face with sweat",
 		Shortcodes = {
-			"grinning_face_with_sweat",
 			"sweat_smile",
+			"grinning_face_with_sweat",
 		},
 	},
 	["129315"] = {
@@ -26346,8 +26388,8 @@ addon.Emojis = {
 	["128536"] = {
 		Name = "face blowing a kiss",
 		Shortcodes = {
-			"blowing_a_kiss",
 			"kissing_heart",
+			"blowing_a_kiss",
 		},
 	},
 	["128535"] = {
@@ -26374,8 +26416,8 @@ addon.Emojis = {
 	["128537"] = {
 		Name = "kissing face with smiling eyes",
 		Shortcodes = {
-			"kissing_face_with_smiling_eyes",
 			"kissing_smiling_eyes",
+			"kissing_face_with_smiling_eyes",
 		},
 	},
 	["129394"] = {
@@ -26390,8 +26432,8 @@ addon.Emojis = {
 	["128523"] = {
 		Name = "face savoring food",
 		Shortcodes = {
-			"savoring_food",
 			"yum",
+			"savoring_food",
 		},
 	},
 	["128539"] = {
@@ -26440,22 +26482,22 @@ addon.Emojis = {
 	["129325"] = {
 		Name = "face with hand over mouth",
 		Shortcodes = {
-			"face_with_hand_over_mouth",
 			"hand_over_mouth",
+			"face_with_hand_over_mouth",
 		},
 	},
 	["129762"] = {
 		Name = "face with open eyes and hand over mouth",
 		Shortcodes = {
-			"face_with_open_eyes_hand_over_mouth",
 			"gasp",
+			"face_with_open_eyes_hand_over_mouth",
 		},
 	},
 	["129763"] = {
 		Name = "face with peeking eye",
 		Shortcodes = {
-			"face_with_peeking_eye",
 			"peek",
+			"face_with_peeking_eye",
 		},
 	},
 	["129323"] = {
@@ -26468,9 +26510,9 @@ addon.Emojis = {
 	["129300"] = {
 		Name = "thinking face",
 		Shortcodes = {
+			"wtf",
 			"thinking",
 			"thinking_face",
-			"wtf",
 		},
 	},
 	["129761"] = {
@@ -26493,8 +26535,8 @@ addon.Emojis = {
 	["129320"] = {
 		Name = "face with raised eyebrow",
 		Shortcodes = {
-			"face_with_raised_eyebrow",
 			"raised_eyebrow",
+			"face_with_raised_eyebrow",
 		},
 	},
 	["128528"] = {
@@ -26666,8 +26708,8 @@ addon.Emojis = {
 	["129326"] = {
 		Name = "face vomiting",
 		Shortcodes = {
-			"face_vomiting",
 			"vomiting",
+			"face_vomiting",
 		},
 	},
 	["129319"] = {
@@ -26748,9 +26790,9 @@ addon.Emojis = {
 	["128526"] = {
 		Name = "smiling face with sunglasses",
 		Shortcodes = {
-			"smiling_face_with_sunglasses",
-			"sunglasses_cool",
 			"too_cool",
+			"sunglasses_cool",
+			"smiling_face_with_sunglasses",
 		},
 	},
 	["129299"] = {
@@ -26804,8 +26846,8 @@ addon.Emojis = {
 	["128558"] = {
 		Name = "face with open mouth",
 		Shortcodes = {
-			"face_with_open_mouth",
 			"open_mouth",
+			"face_with_open_mouth",
 		},
 	},
 	["128559"] = {
@@ -26839,8 +26881,8 @@ addon.Emojis = {
 	["129401"] = {
 		Name = "face holding back tears",
 		Shortcodes = {
-			"face_holding_back_tears",
 			"watery_eyes",
+			"face_holding_back_tears",
 		},
 	},
 	["128550"] = {
@@ -26868,15 +26910,15 @@ addon.Emojis = {
 		Name = "anxious face with sweat",
 		Shortcodes = {
 			"anxious",
-			"anxious_face",
 			"cold_sweat",
+			"anxious_face",
 		},
 	},
 	["128549"] = {
 		Name = "sad but relieved face",
 		Shortcodes = {
-			"disappointed_relieved",
 			"sad_relieved_face",
+			"disappointed_relieved",
 		},
 	},
 	["128546"] = {
@@ -26889,8 +26931,8 @@ addon.Emojis = {
 	["128557"] = {
 		Name = "loudly crying face",
 		Shortcodes = {
-			"loudly_crying_face",
 			"sob",
+			"loudly_crying_face",
 		},
 	},
 	["128561"] = {
@@ -26924,8 +26966,8 @@ addon.Emojis = {
 	["128531"] = {
 		Name = "downcast face with sweat",
 		Shortcodes = {
-			"downcast_face",
 			"sweat",
+			"downcast_face",
 		},
 	},
 	["128553"] = {
@@ -26956,16 +26998,16 @@ addon.Emojis = {
 	["128548"] = {
 		Name = "face with steam from nose",
 		Shortcodes = {
-			"nose_steam",
 			"triumph",
+			"nose_steam",
 		},
 	},
 	["128545"] = {
 		Name = "enraged face",
 		Shortcodes = {
 			"pout",
-			"pouting_face",
 			"rage",
+			"pouting_face",
 		},
 	},
 	["128544"] = {
@@ -26991,8 +27033,8 @@ addon.Emojis = {
 	["128127"] = {
 		Name = "angry face with horns",
 		Shortcodes = {
-			"angry_imp",
 			"imp",
+			"angry_imp",
 		},
 	},
 	["128128"] = {
@@ -27027,8 +27069,8 @@ addon.Emojis = {
 	["128121"] = {
 		Name = "ogre",
 		Shortcodes = {
-			"japanese_ogre",
 			"ogre",
+			"japanese_ogre",
 		},
 	},
 	["128122"] = {
@@ -27070,15 +27112,15 @@ addon.Emojis = {
 	["128570"] = {
 		Name = "grinning cat",
 		Shortcodes = {
-			"grinning_cat",
 			"smiley_cat",
+			"grinning_cat",
 		},
 	},
 	["128568"] = {
 		Name = "grinning cat with smiling eyes",
 		Shortcodes = {
-			"grinning_cat_with_closed_eyes",
 			"smile_cat",
+			"grinning_cat_with_closed_eyes",
 		},
 	},
 	["128569"] = {
@@ -27111,8 +27153,8 @@ addon.Emojis = {
 	["128576"] = {
 		Name = "weary cat",
 		Shortcodes = {
-			"scream_cat",
 			"weary_cat",
+			"scream_cat",
 		},
 	},
 	["128575"] = {
@@ -27180,15 +27222,15 @@ addon.Emojis = {
 	["128151"] = {
 		Name = "growing heart",
 		Shortcodes = {
-			"growing_heart",
 			"heartpulse",
+			"growing_heart",
 		},
 	},
 	["128147"] = {
 		Name = "beating heart",
 		Shortcodes = {
-			"beating_heart",
 			"heartbeat",
+			"beating_heart",
 		},
 	},
 	["128158"] = {
@@ -28605,8 +28647,8 @@ addon.Emojis = {
 		Name = "thumbs up",
 		Shortcodes = {
 			"+1",
-			"thumbsup",
 			"yes",
+			"thumbsup",
 		},
 		Variants = {
 			"128077_127995",
@@ -28620,40 +28662,40 @@ addon.Emojis = {
 		Name = "thumbs up: light skin tone",
 		Shortcodes = {
 			"+1_tone1",
-			"thumbsup_tone1",
 			"yes_tone1",
+			"thumbsup_tone1",
 		},
 	},
 	["128077_127996"] = {
 		Name = "thumbs up: medium-light skin tone",
 		Shortcodes = {
 			"+1_tone2",
-			"thumbsup_tone2",
 			"yes_tone2",
+			"thumbsup_tone2",
 		},
 	},
 	["128077_127997"] = {
 		Name = "thumbs up: medium skin tone",
 		Shortcodes = {
 			"+1_tone3",
-			"thumbsup_tone3",
 			"yes_tone3",
+			"thumbsup_tone3",
 		},
 	},
 	["128077_127998"] = {
 		Name = "thumbs up: medium-dark skin tone",
 		Shortcodes = {
 			"+1_tone4",
-			"thumbsup_tone4",
 			"yes_tone4",
+			"thumbsup_tone4",
 		},
 	},
 	["128077_127999"] = {
 		Name = "thumbs up: dark skin tone",
 		Shortcodes = {
 			"+1_tone5",
-			"thumbsup_tone5",
 			"yes_tone5",
+			"thumbsup_tone5",
 		},
 	},
 	["128078"] = {
@@ -29293,8 +29335,8 @@ addon.Emojis = {
 	["128591"] = {
 		Name = "folded hands",
 		Shortcodes = {
-			"folded_hands",
 			"pray",
+			"folded_hands",
 		},
 		Variants = {
 			"128591_127995",
@@ -29307,36 +29349,36 @@ addon.Emojis = {
 	["128591_127995"] = {
 		Name = "folded hands: light skin tone",
 		Shortcodes = {
-			"folded_hands_tone1",
 			"pray_tone1",
+			"folded_hands_tone1",
 		},
 	},
 	["128591_127996"] = {
 		Name = "folded hands: medium-light skin tone",
 		Shortcodes = {
-			"folded_hands_tone2",
 			"pray_tone2",
+			"folded_hands_tone2",
 		},
 	},
 	["128591_127997"] = {
 		Name = "folded hands: medium skin tone",
 		Shortcodes = {
-			"folded_hands_tone3",
 			"pray_tone3",
+			"folded_hands_tone3",
 		},
 	},
 	["128591_127998"] = {
 		Name = "folded hands: medium-dark skin tone",
 		Shortcodes = {
-			"folded_hands_tone4",
 			"pray_tone4",
+			"folded_hands_tone4",
 		},
 	},
 	["128591_127999"] = {
 		Name = "folded hands: dark skin tone",
 		Shortcodes = {
-			"folded_hands_tone5",
 			"pray_tone5",
+			"folded_hands_tone5",
 		},
 	},
 	-- =============================== sub group: hands end ===============================
@@ -29673,8 +29715,8 @@ addon.Emojis = {
 	["129467"] = {
 		Name = "ear with hearing aid",
 		Shortcodes = {
-			"ear_with_hearing_aid",
 			"hearing_aid",
+			"ear_with_hearing_aid",
 		},
 		Variants = {
 			"129467_127995",
@@ -29687,36 +29729,36 @@ addon.Emojis = {
 	["129467_127995"] = {
 		Name = "ear with hearing aid: light skin tone",
 		Shortcodes = {
-			"ear_with_hearing_aid_tone1",
 			"hearing_aid_tone1",
+			"ear_with_hearing_aid_tone1",
 		},
 	},
 	["129467_127996"] = {
 		Name = "ear with hearing aid: medium-light skin tone",
 		Shortcodes = {
-			"ear_with_hearing_aid_tone2",
 			"hearing_aid_tone2",
+			"ear_with_hearing_aid_tone2",
 		},
 	},
 	["129467_127997"] = {
 		Name = "ear with hearing aid: medium skin tone",
 		Shortcodes = {
-			"ear_with_hearing_aid_tone3",
 			"hearing_aid_tone3",
+			"ear_with_hearing_aid_tone3",
 		},
 	},
 	["129467_127998"] = {
 		Name = "ear with hearing aid: medium-dark skin tone",
 		Shortcodes = {
-			"ear_with_hearing_aid_tone4",
 			"hearing_aid_tone4",
+			"ear_with_hearing_aid_tone4",
 		},
 	},
 	["129467_127999"] = {
 		Name = "ear with hearing aid: dark skin tone",
 		Shortcodes = {
-			"ear_with_hearing_aid_tone5",
 			"hearing_aid_tone5",
+			"ear_with_hearing_aid_tone5",
 		},
 	},
 	["128067"] = {
@@ -31153,8 +31195,8 @@ addon.Emojis = {
 	["128590"] = {
 		Name = "person pouting",
 		Shortcodes = {
-			"person_pouting",
 			"pouting",
+			"person_pouting",
 		},
 		Variants = {
 			"128590_127995",
@@ -31167,36 +31209,36 @@ addon.Emojis = {
 	["128590_127995"] = {
 		Name = "person pouting: light skin tone",
 		Shortcodes = {
-			"person_pouting_tone1",
 			"pouting_tone1",
+			"person_pouting_tone1",
 		},
 	},
 	["128590_127996"] = {
 		Name = "person pouting: medium-light skin tone",
 		Shortcodes = {
-			"person_pouting_tone2",
 			"pouting_tone2",
+			"person_pouting_tone2",
 		},
 	},
 	["128590_127997"] = {
 		Name = "person pouting: medium skin tone",
 		Shortcodes = {
-			"person_pouting_tone3",
 			"pouting_tone3",
+			"person_pouting_tone3",
 		},
 	},
 	["128590_127998"] = {
 		Name = "person pouting: medium-dark skin tone",
 		Shortcodes = {
-			"person_pouting_tone4",
 			"pouting_tone4",
+			"person_pouting_tone4",
 		},
 	},
 	["128590_127999"] = {
 		Name = "person pouting: dark skin tone",
 		Shortcodes = {
-			"person_pouting_tone5",
 			"pouting_tone5",
+			"person_pouting_tone5",
 		},
 	},
 	["128590_8205_9794_65039"] = {
@@ -32215,8 +32257,8 @@ addon.Emojis = {
 	["129335"] = {
 		Name = "person shrugging",
 		Shortcodes = {
-			"person_shrugging",
 			"shrug",
+			"person_shrugging",
 		},
 		Variants = {
 			"129335_127995",
@@ -32229,36 +32271,36 @@ addon.Emojis = {
 	["129335_127995"] = {
 		Name = "person shrugging: light skin tone",
 		Shortcodes = {
-			"person_shrugging_tone1",
 			"shrug_tone1",
+			"person_shrugging_tone1",
 		},
 	},
 	["129335_127996"] = {
 		Name = "person shrugging: medium-light skin tone",
 		Shortcodes = {
-			"person_shrugging_tone2",
 			"shrug_tone2",
+			"person_shrugging_tone2",
 		},
 	},
 	["129335_127997"] = {
 		Name = "person shrugging: medium skin tone",
 		Shortcodes = {
-			"person_shrugging_tone3",
 			"shrug_tone3",
+			"person_shrugging_tone3",
 		},
 	},
 	["129335_127998"] = {
 		Name = "person shrugging: medium-dark skin tone",
 		Shortcodes = {
-			"person_shrugging_tone4",
 			"shrug_tone4",
+			"person_shrugging_tone4",
 		},
 	},
 	["129335_127999"] = {
 		Name = "person shrugging: dark skin tone",
 		Shortcodes = {
-			"person_shrugging_tone5",
 			"shrug_tone5",
+			"person_shrugging_tone5",
 		},
 	},
 	["129335_8205_9794_65039"] = {
@@ -34982,8 +35024,8 @@ addon.Emojis = {
 	["129733"] = {
 		Name = "person with crown",
 		Shortcodes = {
-			"person_with_crown",
 			"royalty",
+			"person_with_crown",
 		},
 		Variants = {
 			"129733_127995",
@@ -34996,36 +35038,36 @@ addon.Emojis = {
 	["129733_127995"] = {
 		Name = "person with crown: light skin tone",
 		Shortcodes = {
-			"person_with_crown_tone1",
 			"royalty_tone1",
+			"person_with_crown_tone1",
 		},
 	},
 	["129733_127996"] = {
 		Name = "person with crown: medium-light skin tone",
 		Shortcodes = {
-			"person_with_crown_tone2",
 			"royalty_tone2",
+			"person_with_crown_tone2",
 		},
 	},
 	["129733_127997"] = {
 		Name = "person with crown: medium skin tone",
 		Shortcodes = {
-			"person_with_crown_tone3",
 			"royalty_tone3",
+			"person_with_crown_tone3",
 		},
 	},
 	["129733_127998"] = {
 		Name = "person with crown: medium-dark skin tone",
 		Shortcodes = {
-			"person_with_crown_tone4",
 			"royalty_tone4",
+			"person_with_crown_tone4",
 		},
 	},
 	["129733_127999"] = {
 		Name = "person with crown: dark skin tone",
 		Shortcodes = {
-			"person_with_crown_tone5",
 			"royalty_tone5",
+			"person_with_crown_tone5",
 		},
 	},
 	["129332"] = {
@@ -37284,8 +37326,8 @@ addon.Emojis = {
 	["128694"] = {
 		Name = "person walking",
 		Shortcodes = {
-			"person_walking",
 			"walking",
+			"person_walking",
 		},
 		Variants = {
 			"128694_127995",
@@ -37298,36 +37340,36 @@ addon.Emojis = {
 	["128694_127995"] = {
 		Name = "person walking: light skin tone",
 		Shortcodes = {
-			"person_walking_tone1",
 			"walking_tone1",
+			"person_walking_tone1",
 		},
 	},
 	["128694_127996"] = {
 		Name = "person walking: medium-light skin tone",
 		Shortcodes = {
-			"person_walking_tone2",
 			"walking_tone2",
+			"person_walking_tone2",
 		},
 	},
 	["128694_127997"] = {
 		Name = "person walking: medium skin tone",
 		Shortcodes = {
-			"person_walking_tone3",
 			"walking_tone3",
+			"person_walking_tone3",
 		},
 	},
 	["128694_127998"] = {
 		Name = "person walking: medium-dark skin tone",
 		Shortcodes = {
-			"person_walking_tone4",
 			"walking_tone4",
+			"person_walking_tone4",
 		},
 	},
 	["128694_127999"] = {
 		Name = "person walking: dark skin tone",
 		Shortcodes = {
-			"person_walking_tone5",
 			"walking_tone5",
+			"person_walking_tone5",
 		},
 	},
 	["128694_8205_9794_65039"] = {
@@ -37548,8 +37590,8 @@ addon.Emojis = {
 	["129485"] = {
 		Name = "person standing",
 		Shortcodes = {
-			"person_standing",
 			"standing",
+			"person_standing",
 		},
 		Variants = {
 			"129485_127995",
@@ -37562,36 +37604,36 @@ addon.Emojis = {
 	["129485_127995"] = {
 		Name = "person standing: light skin tone",
 		Shortcodes = {
-			"person_standing_tone1",
 			"standing_tone1",
+			"person_standing_tone1",
 		},
 	},
 	["129485_127996"] = {
 		Name = "person standing: medium-light skin tone",
 		Shortcodes = {
-			"person_standing_tone2",
 			"standing_tone2",
+			"person_standing_tone2",
 		},
 	},
 	["129485_127997"] = {
 		Name = "person standing: medium skin tone",
 		Shortcodes = {
-			"person_standing_tone3",
 			"standing_tone3",
+			"person_standing_tone3",
 		},
 	},
 	["129485_127998"] = {
 		Name = "person standing: medium-dark skin tone",
 		Shortcodes = {
-			"person_standing_tone4",
 			"standing_tone4",
+			"person_standing_tone4",
 		},
 	},
 	["129485_127999"] = {
 		Name = "person standing: dark skin tone",
 		Shortcodes = {
-			"person_standing_tone5",
 			"standing_tone5",
+			"person_standing_tone5",
 		},
 	},
 	["129485_8205_9794_65039"] = {
@@ -37947,8 +37989,8 @@ addon.Emojis = {
 	["129489_8205_129455"] = {
 		Name = "person with white cane",
 		Shortcodes = {
-			"person_with_probing_cane",
 			"person_with_white_cane",
+			"person_with_probing_cane",
 		},
 		Variants = {
 			"129489_127995_8205_129455",
@@ -37961,36 +38003,36 @@ addon.Emojis = {
 	["129489_127995_8205_129455"] = {
 		Name = "person with white cane: light skin tone",
 		Shortcodes = {
-			"person_with_probing_cane_tone1",
 			"person_with_white_cane_tone1",
+			"person_with_probing_cane_tone1",
 		},
 	},
 	["129489_127996_8205_129455"] = {
 		Name = "person with white cane: medium-light skin tone",
 		Shortcodes = {
-			"person_with_probing_cane_tone2",
 			"person_with_white_cane_tone2",
+			"person_with_probing_cane_tone2",
 		},
 	},
 	["129489_127997_8205_129455"] = {
 		Name = "person with white cane: medium skin tone",
 		Shortcodes = {
-			"person_with_probing_cane_tone3",
 			"person_with_white_cane_tone3",
+			"person_with_probing_cane_tone3",
 		},
 	},
 	["129489_127998_8205_129455"] = {
 		Name = "person with white cane: medium-dark skin tone",
 		Shortcodes = {
-			"person_with_probing_cane_tone4",
 			"person_with_white_cane_tone4",
+			"person_with_probing_cane_tone4",
 		},
 	},
 	["129489_127999_8205_129455"] = {
 		Name = "person with white cane: dark skin tone",
 		Shortcodes = {
-			"person_with_probing_cane_tone5",
 			"person_with_white_cane_tone5",
+			"person_with_probing_cane_tone5",
 		},
 	},
 	["129489_8205_129455_8205_10145_65039"] = {
@@ -38039,8 +38081,8 @@ addon.Emojis = {
 	["128104_8205_129455"] = {
 		Name = "man with white cane",
 		Shortcodes = {
-			"man_with_probing_cane",
 			"man_with_white_cane",
+			"man_with_probing_cane",
 		},
 		Variants = {
 			"128104_127995_8205_129455",
@@ -38053,36 +38095,36 @@ addon.Emojis = {
 	["128104_127995_8205_129455"] = {
 		Name = "man with white cane: light skin tone",
 		Shortcodes = {
-			"man_with_probing_cane_tone1",
 			"man_with_white_cane_tone1",
+			"man_with_probing_cane_tone1",
 		},
 	},
 	["128104_127996_8205_129455"] = {
 		Name = "man with white cane: medium-light skin tone",
 		Shortcodes = {
-			"man_with_probing_cane_tone2",
 			"man_with_white_cane_tone2",
+			"man_with_probing_cane_tone2",
 		},
 	},
 	["128104_127997_8205_129455"] = {
 		Name = "man with white cane: medium skin tone",
 		Shortcodes = {
-			"man_with_probing_cane_tone3",
 			"man_with_white_cane_tone3",
+			"man_with_probing_cane_tone3",
 		},
 	},
 	["128104_127998_8205_129455"] = {
 		Name = "man with white cane: medium-dark skin tone",
 		Shortcodes = {
-			"man_with_probing_cane_tone4",
 			"man_with_white_cane_tone4",
+			"man_with_probing_cane_tone4",
 		},
 	},
 	["128104_127999_8205_129455"] = {
 		Name = "man with white cane: dark skin tone",
 		Shortcodes = {
-			"man_with_probing_cane_tone5",
 			"man_with_white_cane_tone5",
+			"man_with_probing_cane_tone5",
 		},
 	},
 	["128104_8205_129455_8205_10145_65039"] = {
@@ -38131,8 +38173,8 @@ addon.Emojis = {
 	["128105_8205_129455"] = {
 		Name = "woman with white cane",
 		Shortcodes = {
-			"woman_with_probing_cane",
 			"woman_with_white_cane",
+			"woman_with_probing_cane",
 		},
 		Variants = {
 			"128105_127995_8205_129455",
@@ -38145,36 +38187,36 @@ addon.Emojis = {
 	["128105_127995_8205_129455"] = {
 		Name = "woman with white cane: light skin tone",
 		Shortcodes = {
-			"woman_with_probing_cane_tone1",
 			"woman_with_white_cane_tone1",
+			"woman_with_probing_cane_tone1",
 		},
 	},
 	["128105_127996_8205_129455"] = {
 		Name = "woman with white cane: medium-light skin tone",
 		Shortcodes = {
-			"woman_with_probing_cane_tone2",
 			"woman_with_white_cane_tone2",
+			"woman_with_probing_cane_tone2",
 		},
 	},
 	["128105_127997_8205_129455"] = {
 		Name = "woman with white cane: medium skin tone",
 		Shortcodes = {
-			"woman_with_probing_cane_tone3",
 			"woman_with_white_cane_tone3",
+			"woman_with_probing_cane_tone3",
 		},
 	},
 	["128105_127998_8205_129455"] = {
 		Name = "woman with white cane: medium-dark skin tone",
 		Shortcodes = {
-			"woman_with_probing_cane_tone4",
 			"woman_with_white_cane_tone4",
+			"woman_with_probing_cane_tone4",
 		},
 	},
 	["128105_127999_8205_129455"] = {
 		Name = "woman with white cane: dark skin tone",
 		Shortcodes = {
-			"woman_with_probing_cane_tone5",
 			"woman_with_white_cane_tone5",
+			"woman_with_probing_cane_tone5",
 		},
 	},
 	["128105_8205_129455_8205_10145_65039"] = {
@@ -38739,8 +38781,8 @@ addon.Emojis = {
 	["127939"] = {
 		Name = "person running",
 		Shortcodes = {
-			"person_running",
 			"running",
+			"person_running",
 		},
 		Variants = {
 			"127939_127995",
@@ -38753,36 +38795,36 @@ addon.Emojis = {
 	["127939_127995"] = {
 		Name = "person running: light skin tone",
 		Shortcodes = {
-			"person_running_tone1",
 			"running_tone1",
+			"person_running_tone1",
 		},
 	},
 	["127939_127996"] = {
 		Name = "person running: medium-light skin tone",
 		Shortcodes = {
-			"person_running_tone2",
 			"running_tone2",
+			"person_running_tone2",
 		},
 	},
 	["127939_127997"] = {
 		Name = "person running: medium skin tone",
 		Shortcodes = {
-			"person_running_tone3",
 			"running_tone3",
+			"person_running_tone3",
 		},
 	},
 	["127939_127998"] = {
 		Name = "person running: medium-dark skin tone",
 		Shortcodes = {
-			"person_running_tone4",
 			"running_tone4",
+			"person_running_tone4",
 		},
 	},
 	["127939_127999"] = {
 		Name = "person running: dark skin tone",
 		Shortcodes = {
-			"person_running_tone5",
 			"running_tone5",
+			"person_running_tone5",
 		},
 	},
 	["127939_8205_9794_65039"] = {
@@ -39487,17 +39529,17 @@ addon.Emojis = {
 	["9975_65039"] = {
 		Name = "skier",
 		Shortcodes = {
-			"person_skiing",
 			"skier",
 			"skiing",
+			"person_skiing",
 		},
 	},
 	["127938"] = {
 		Name = "snowboarder",
 		Shortcodes = {
-			"person_snowboarding",
 			"snowboarder",
 			"snowboarding",
+			"person_snowboarding",
 		},
 		Variants = {
 			"127938_127995",
@@ -39510,41 +39552,41 @@ addon.Emojis = {
 	["127938_127995"] = {
 		Name = "snowboarder: light skin tone",
 		Shortcodes = {
-			"person_snowboarding_tone1",
 			"snowboarder_tone1",
 			"snowboarding_tone1",
+			"person_snowboarding_tone1",
 		},
 	},
 	["127938_127996"] = {
 		Name = "snowboarder: medium-light skin tone",
 		Shortcodes = {
-			"person_snowboarding_tone2",
 			"snowboarder_tone2",
 			"snowboarding_tone2",
+			"person_snowboarding_tone2",
 		},
 	},
 	["127938_127997"] = {
 		Name = "snowboarder: medium skin tone",
 		Shortcodes = {
-			"person_snowboarding_tone3",
 			"snowboarder_tone3",
 			"snowboarding_tone3",
+			"person_snowboarding_tone3",
 		},
 	},
 	["127938_127998"] = {
 		Name = "snowboarder: medium-dark skin tone",
 		Shortcodes = {
-			"person_snowboarding_tone4",
 			"snowboarder_tone4",
 			"snowboarding_tone4",
+			"person_snowboarding_tone4",
 		},
 	},
 	["127938_127999"] = {
 		Name = "snowboarder: dark skin tone",
 		Shortcodes = {
-			"person_snowboarding_tone5",
 			"snowboarder_tone5",
 			"snowboarding_tone5",
+			"person_snowboarding_tone5",
 		},
 	},
 	["127948_65039"] = {
@@ -39691,9 +39733,9 @@ addon.Emojis = {
 	["127940"] = {
 		Name = "person surfing",
 		Shortcodes = {
-			"person_surfing",
 			"surfer",
 			"surfing",
+			"person_surfing",
 		},
 		Variants = {
 			"127940_127995",
@@ -39706,41 +39748,41 @@ addon.Emojis = {
 	["127940_127995"] = {
 		Name = "person surfing: light skin tone",
 		Shortcodes = {
-			"person_surfing_tone1",
 			"surfer_tone1",
 			"surfing_tone1",
+			"person_surfing_tone1",
 		},
 	},
 	["127940_127996"] = {
 		Name = "person surfing: medium-light skin tone",
 		Shortcodes = {
-			"person_surfing_tone2",
 			"surfer_tone2",
 			"surfing_tone2",
+			"person_surfing_tone2",
 		},
 	},
 	["127940_127997"] = {
 		Name = "person surfing: medium skin tone",
 		Shortcodes = {
-			"person_surfing_tone3",
 			"surfer_tone3",
 			"surfing_tone3",
+			"person_surfing_tone3",
 		},
 	},
 	["127940_127998"] = {
 		Name = "person surfing: medium-dark skin tone",
 		Shortcodes = {
-			"person_surfing_tone4",
 			"surfer_tone4",
 			"surfing_tone4",
+			"person_surfing_tone4",
 		},
 	},
 	["127940_127999"] = {
 		Name = "person surfing: dark skin tone",
 		Shortcodes = {
-			"person_surfing_tone5",
 			"surfer_tone5",
 			"surfing_tone5",
+			"person_surfing_tone5",
 		},
 	},
 	["127940_8205_9794_65039"] = {
@@ -39832,8 +39874,8 @@ addon.Emojis = {
 	["128675"] = {
 		Name = "person rowing boat",
 		Shortcodes = {
-			"person_rowing_boat",
 			"rowboat",
+			"person_rowing_boat",
 		},
 		Variants = {
 			"128675_127995",
@@ -39846,36 +39888,36 @@ addon.Emojis = {
 	["128675_127995"] = {
 		Name = "person rowing boat: light skin tone",
 		Shortcodes = {
-			"person_rowing_boat_tone1",
 			"rowboat_tone1",
+			"person_rowing_boat_tone1",
 		},
 	},
 	["128675_127996"] = {
 		Name = "person rowing boat: medium-light skin tone",
 		Shortcodes = {
-			"person_rowing_boat_tone2",
 			"rowboat_tone2",
+			"person_rowing_boat_tone2",
 		},
 	},
 	["128675_127997"] = {
 		Name = "person rowing boat: medium skin tone",
 		Shortcodes = {
-			"person_rowing_boat_tone3",
 			"rowboat_tone3",
+			"person_rowing_boat_tone3",
 		},
 	},
 	["128675_127998"] = {
 		Name = "person rowing boat: medium-dark skin tone",
 		Shortcodes = {
-			"person_rowing_boat_tone4",
 			"rowboat_tone4",
+			"person_rowing_boat_tone4",
 		},
 	},
 	["128675_127999"] = {
 		Name = "person rowing boat: dark skin tone",
 		Shortcodes = {
-			"person_rowing_boat_tone5",
 			"rowboat_tone5",
+			"person_rowing_boat_tone5",
 		},
 	},
 	["128675_8205_9794_65039"] = {
@@ -39967,9 +40009,9 @@ addon.Emojis = {
 	["127946"] = {
 		Name = "person swimming",
 		Shortcodes = {
-			"person_swimming",
 			"swimmer",
 			"swimming",
+			"person_swimming",
 		},
 		Variants = {
 			"127946_127995",
@@ -39982,41 +40024,41 @@ addon.Emojis = {
 	["127946_127995"] = {
 		Name = "person swimming: light skin tone",
 		Shortcodes = {
-			"person_swimming_tone1",
 			"swimmer_tone1",
 			"swimming_tone1",
+			"person_swimming_tone1",
 		},
 	},
 	["127946_127996"] = {
 		Name = "person swimming: medium-light skin tone",
 		Shortcodes = {
-			"person_swimming_tone2",
 			"swimmer_tone2",
 			"swimming_tone2",
+			"person_swimming_tone2",
 		},
 	},
 	["127946_127997"] = {
 		Name = "person swimming: medium skin tone",
 		Shortcodes = {
-			"person_swimming_tone3",
 			"swimmer_tone3",
 			"swimming_tone3",
+			"person_swimming_tone3",
 		},
 	},
 	["127946_127998"] = {
 		Name = "person swimming: medium-dark skin tone",
 		Shortcodes = {
-			"person_swimming_tone4",
 			"swimmer_tone4",
 			"swimming_tone4",
+			"person_swimming_tone4",
 		},
 	},
 	["127946_127999"] = {
 		Name = "person swimming: dark skin tone",
 		Shortcodes = {
-			"person_swimming_tone5",
 			"swimmer_tone5",
 			"swimming_tone5",
+			"person_swimming_tone5",
 		},
 	},
 	["127946_8205_9794_65039"] = {
@@ -40237,9 +40279,9 @@ addon.Emojis = {
 	["127947_65039"] = {
 		Name = "person lifting weights",
 		Shortcodes = {
-			"person_lifting_weights",
 			"weight_lifter",
 			"weight_lifting",
+			"person_lifting_weights",
 		},
 		Variants = {
 			"127947_127995",
@@ -40252,41 +40294,41 @@ addon.Emojis = {
 	["127947_127995"] = {
 		Name = "person lifting weights: light skin tone",
 		Shortcodes = {
-			"person_lifting_weights_tone1",
 			"weight_lifter_tone1",
 			"weight_lifting_tone1",
+			"person_lifting_weights_tone1",
 		},
 	},
 	["127947_127996"] = {
 		Name = "person lifting weights: medium-light skin tone",
 		Shortcodes = {
-			"person_lifting_weights_tone2",
 			"weight_lifter_tone2",
 			"weight_lifting_tone2",
+			"person_lifting_weights_tone2",
 		},
 	},
 	["127947_127997"] = {
 		Name = "person lifting weights: medium skin tone",
 		Shortcodes = {
-			"person_lifting_weights_tone3",
 			"weight_lifter_tone3",
 			"weight_lifting_tone3",
+			"person_lifting_weights_tone3",
 		},
 	},
 	["127947_127998"] = {
 		Name = "person lifting weights: medium-dark skin tone",
 		Shortcodes = {
-			"person_lifting_weights_tone4",
 			"weight_lifter_tone4",
 			"weight_lifting_tone4",
+			"person_lifting_weights_tone4",
 		},
 	},
 	["127947_127999"] = {
 		Name = "person lifting weights: dark skin tone",
 		Shortcodes = {
-			"person_lifting_weights_tone5",
 			"weight_lifter_tone5",
 			"weight_lifting_tone5",
+			"person_lifting_weights_tone5",
 		},
 	},
 	["127947_65039_8205_9794_65039"] = {
@@ -40378,8 +40420,8 @@ addon.Emojis = {
 	["128692"] = {
 		Name = "person biking",
 		Shortcodes = {
-			"bicyclist",
 			"biking",
+			"bicyclist",
 			"person_biking",
 		},
 		Variants = {
@@ -40393,40 +40435,40 @@ addon.Emojis = {
 	["128692_127995"] = {
 		Name = "person biking: light skin tone",
 		Shortcodes = {
-			"bicyclist_tone1",
 			"biking_tone1",
+			"bicyclist_tone1",
 			"person_biking_tone1",
 		},
 	},
 	["128692_127996"] = {
 		Name = "person biking: medium-light skin tone",
 		Shortcodes = {
-			"bicyclist_tone2",
 			"biking_tone2",
+			"bicyclist_tone2",
 			"person_biking_tone2",
 		},
 	},
 	["128692_127997"] = {
 		Name = "person biking: medium skin tone",
 		Shortcodes = {
-			"bicyclist_tone3",
 			"biking_tone3",
+			"bicyclist_tone3",
 			"person_biking_tone3",
 		},
 	},
 	["128692_127998"] = {
 		Name = "person biking: medium-dark skin tone",
 		Shortcodes = {
-			"bicyclist_tone4",
 			"biking_tone4",
+			"bicyclist_tone4",
 			"person_biking_tone4",
 		},
 	},
 	["128692_127999"] = {
 		Name = "person biking: dark skin tone",
 		Shortcodes = {
-			"bicyclist_tone5",
 			"biking_tone5",
+			"bicyclist_tone5",
 			"person_biking_tone5",
 		},
 	},
@@ -40519,8 +40561,8 @@ addon.Emojis = {
 	["128693"] = {
 		Name = "person mountain biking",
 		Shortcodes = {
-			"mountain_bicyclist",
 			"mountain_biking",
+			"mountain_bicyclist",
 			"person_mountain_biking",
 		},
 		Variants = {
@@ -40534,40 +40576,40 @@ addon.Emojis = {
 	["128693_127995"] = {
 		Name = "person mountain biking: light skin tone",
 		Shortcodes = {
-			"mountain_bicyclist_tone1",
 			"mountain_biking_tone1",
+			"mountain_bicyclist_tone1",
 			"person_mountain_biking_tone1",
 		},
 	},
 	["128693_127996"] = {
 		Name = "person mountain biking: medium-light skin tone",
 		Shortcodes = {
-			"mountain_bicyclist_tone2",
 			"mountain_biking_tone2",
+			"mountain_bicyclist_tone2",
 			"person_mountain_biking_tone2",
 		},
 	},
 	["128693_127997"] = {
 		Name = "person mountain biking: medium skin tone",
 		Shortcodes = {
-			"mountain_bicyclist_tone3",
 			"mountain_biking_tone3",
+			"mountain_bicyclist_tone3",
 			"person_mountain_biking_tone3",
 		},
 	},
 	["128693_127998"] = {
 		Name = "person mountain biking: medium-dark skin tone",
 		Shortcodes = {
-			"mountain_bicyclist_tone4",
 			"mountain_biking_tone4",
+			"mountain_bicyclist_tone4",
 			"person_mountain_biking_tone4",
 		},
 	},
 	["128693_127999"] = {
 		Name = "person mountain biking: dark skin tone",
 		Shortcodes = {
-			"mountain_bicyclist_tone5",
 			"mountain_biking_tone5",
+			"mountain_bicyclist_tone5",
 			"person_mountain_biking_tone5",
 		},
 	},
@@ -40795,9 +40837,9 @@ addon.Emojis = {
 	["129340"] = {
 		Name = "people wrestling",
 		Shortcodes = {
-			"people_wrestling",
 			"wrestlers",
 			"wrestling",
+			"people_wrestling",
 		},
 	},
 	["129340_8205_9794_65039"] = {
@@ -40815,8 +40857,8 @@ addon.Emojis = {
 	["129341"] = {
 		Name = "person playing water polo",
 		Shortcodes = {
-			"person_playing_water_polo",
 			"water_polo",
+			"person_playing_water_polo",
 		},
 		Variants = {
 			"129341_127995",
@@ -40829,36 +40871,36 @@ addon.Emojis = {
 	["129341_127995"] = {
 		Name = "person playing water polo: light skin tone",
 		Shortcodes = {
-			"person_playing_water_polo_tone1",
 			"water_polo_tone1",
+			"person_playing_water_polo_tone1",
 		},
 	},
 	["129341_127996"] = {
 		Name = "person playing water polo: medium-light skin tone",
 		Shortcodes = {
-			"person_playing_water_polo_tone2",
 			"water_polo_tone2",
+			"person_playing_water_polo_tone2",
 		},
 	},
 	["129341_127997"] = {
 		Name = "person playing water polo: medium skin tone",
 		Shortcodes = {
-			"person_playing_water_polo_tone3",
 			"water_polo_tone3",
+			"person_playing_water_polo_tone3",
 		},
 	},
 	["129341_127998"] = {
 		Name = "person playing water polo: medium-dark skin tone",
 		Shortcodes = {
-			"person_playing_water_polo_tone4",
 			"water_polo_tone4",
+			"person_playing_water_polo_tone4",
 		},
 	},
 	["129341_127999"] = {
 		Name = "person playing water polo: dark skin tone",
 		Shortcodes = {
-			"person_playing_water_polo_tone5",
 			"water_polo_tone5",
+			"person_playing_water_polo_tone5",
 		},
 	},
 	["129341_8205_9794_65039"] = {
@@ -42191,8 +42233,8 @@ addon.Emojis = {
 	["128143"] = {
 		Name = "kiss",
 		Shortcodes = {
-			"couple_kiss",
 			"couplekiss",
+			"couple_kiss",
 		},
 		Variants = {
 			"128143_127995",
@@ -42205,43 +42247,43 @@ addon.Emojis = {
 	["128143_127995"] = {
 		Name = "kiss: light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone1",
 			"couplekiss_tone1",
+			"couple_kiss_tone1",
 		},
 	},
 	["128143_127996"] = {
 		Name = "kiss: medium-light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone2",
 			"couplekiss_tone2",
+			"couple_kiss_tone2",
 		},
 	},
 	["128143_127997"] = {
 		Name = "kiss: medium skin tone",
 		Shortcodes = {
-			"couple_kiss_tone3",
 			"couplekiss_tone3",
+			"couple_kiss_tone3",
 		},
 	},
 	["128143_127998"] = {
 		Name = "kiss: medium-dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone4",
 			"couplekiss_tone4",
+			"couple_kiss_tone4",
 		},
 	},
 	["128143_127999"] = {
 		Name = "kiss: dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone5",
 			"couplekiss_tone5",
+			"couple_kiss_tone5",
 		},
 	},
 	["129489_127995_8205_10084_65039_8205_128139_8205_129489_127996"] = {
 		Name = "kiss: person, person, light skin tone, medium-light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone1-2",
 			"couplekiss_tone1-2",
+			"couple_kiss_tone1-2",
 		},
 		Variants = {
 			"129489_127995_8205_10084_65039_8205_128139_8205_129489_127997",
@@ -42268,134 +42310,134 @@ addon.Emojis = {
 	["129489_127995_8205_10084_65039_8205_128139_8205_129489_127997"] = {
 		Name = "kiss: person, person, light skin tone, medium skin tone",
 		Shortcodes = {
-			"couple_kiss_tone1-3",
 			"couplekiss_tone1-3",
+			"couple_kiss_tone1-3",
 		},
 	},
 	["129489_127995_8205_10084_65039_8205_128139_8205_129489_127998"] = {
 		Name = "kiss: person, person, light skin tone, medium-dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone1-4",
 			"couplekiss_tone1-4",
+			"couple_kiss_tone1-4",
 		},
 	},
 	["129489_127995_8205_10084_65039_8205_128139_8205_129489_127999"] = {
 		Name = "kiss: person, person, light skin tone, dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone1-5",
 			"couplekiss_tone1-5",
+			"couple_kiss_tone1-5",
 		},
 	},
 	["129489_127996_8205_10084_65039_8205_128139_8205_129489_127995"] = {
 		Name = "kiss: person, person, medium-light skin tone, light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone2-1",
 			"couplekiss_tone2-1",
+			"couple_kiss_tone2-1",
 		},
 	},
 	["129489_127996_8205_10084_65039_8205_128139_8205_129489_127997"] = {
 		Name = "kiss: person, person, medium-light skin tone, medium skin tone",
 		Shortcodes = {
-			"couple_kiss_tone2-3",
 			"couplekiss_tone2-3",
+			"couple_kiss_tone2-3",
 		},
 	},
 	["129489_127996_8205_10084_65039_8205_128139_8205_129489_127998"] = {
 		Name = "kiss: person, person, medium-light skin tone, medium-dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone2-4",
 			"couplekiss_tone2-4",
+			"couple_kiss_tone2-4",
 		},
 	},
 	["129489_127996_8205_10084_65039_8205_128139_8205_129489_127999"] = {
 		Name = "kiss: person, person, medium-light skin tone, dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone2-5",
 			"couplekiss_tone2-5",
+			"couple_kiss_tone2-5",
 		},
 	},
 	["129489_127997_8205_10084_65039_8205_128139_8205_129489_127995"] = {
 		Name = "kiss: person, person, medium skin tone, light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone3-1",
 			"couplekiss_tone3-1",
+			"couple_kiss_tone3-1",
 		},
 	},
 	["129489_127997_8205_10084_65039_8205_128139_8205_129489_127996"] = {
 		Name = "kiss: person, person, medium skin tone, medium-light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone3-2",
 			"couplekiss_tone3-2",
+			"couple_kiss_tone3-2",
 		},
 	},
 	["129489_127997_8205_10084_65039_8205_128139_8205_129489_127998"] = {
 		Name = "kiss: person, person, medium skin tone, medium-dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone3-4",
 			"couplekiss_tone3-4",
+			"couple_kiss_tone3-4",
 		},
 	},
 	["129489_127997_8205_10084_65039_8205_128139_8205_129489_127999"] = {
 		Name = "kiss: person, person, medium skin tone, dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone3-5",
 			"couplekiss_tone3-5",
+			"couple_kiss_tone3-5",
 		},
 	},
 	["129489_127998_8205_10084_65039_8205_128139_8205_129489_127995"] = {
 		Name = "kiss: person, person, medium-dark skin tone, light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone4-1",
 			"couplekiss_tone4-1",
+			"couple_kiss_tone4-1",
 		},
 	},
 	["129489_127998_8205_10084_65039_8205_128139_8205_129489_127996"] = {
 		Name = "kiss: person, person, medium-dark skin tone, medium-light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone4-2",
 			"couplekiss_tone4-2",
+			"couple_kiss_tone4-2",
 		},
 	},
 	["129489_127998_8205_10084_65039_8205_128139_8205_129489_127997"] = {
 		Name = "kiss: person, person, medium-dark skin tone, medium skin tone",
 		Shortcodes = {
-			"couple_kiss_tone4-3",
 			"couplekiss_tone4-3",
+			"couple_kiss_tone4-3",
 		},
 	},
 	["129489_127998_8205_10084_65039_8205_128139_8205_129489_127999"] = {
 		Name = "kiss: person, person, medium-dark skin tone, dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone4-5",
 			"couplekiss_tone4-5",
+			"couple_kiss_tone4-5",
 		},
 	},
 	["129489_127999_8205_10084_65039_8205_128139_8205_129489_127995"] = {
 		Name = "kiss: person, person, dark skin tone, light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone5-1",
 			"couplekiss_tone5-1",
+			"couple_kiss_tone5-1",
 		},
 	},
 	["129489_127999_8205_10084_65039_8205_128139_8205_129489_127996"] = {
 		Name = "kiss: person, person, dark skin tone, medium-light skin tone",
 		Shortcodes = {
-			"couple_kiss_tone5-2",
 			"couplekiss_tone5-2",
+			"couple_kiss_tone5-2",
 		},
 	},
 	["129489_127999_8205_10084_65039_8205_128139_8205_129489_127997"] = {
 		Name = "kiss: person, person, dark skin tone, medium skin tone",
 		Shortcodes = {
-			"couple_kiss_tone5-3",
 			"couplekiss_tone5-3",
+			"couple_kiss_tone5-3",
 		},
 	},
 	["129489_127999_8205_10084_65039_8205_128139_8205_129489_127998"] = {
 		Name = "kiss: person, person, dark skin tone, medium-dark skin tone",
 		Shortcodes = {
-			"couple_kiss_tone5-4",
 			"couplekiss_tone5-4",
+			"couple_kiss_tone5-4",
 		},
 	},
 	["128105_8205_10084_65039_8205_128139_8205_128104"] = {
@@ -44638,8 +44680,8 @@ addon.Emojis = {
 	["129430"] = {
 		Name = "T-Rex",
 		Shortcodes = {
-			"t-rex",
 			"trex",
+			"t-rex",
 		},
 	},
 	-- =============================== sub group: animal-reptile end ===============================
@@ -45006,8 +45048,8 @@ addon.Emojis = {
 	["129721"] = {
 		Name = "empty nest",
 		Shortcodes = {
-			"empty_nest",
 			"nest",
+			"empty_nest",
 		},
 	},
 	["129722"] = {
@@ -45363,8 +45405,8 @@ addon.Emojis = {
 	["127839"] = {
 		Name = "french fries",
 		Shortcodes = {
-			"french_fries",
 			"fries",
+			"french_fries",
 		},
 	},
 	["127829"] = {
@@ -45437,8 +45479,8 @@ addon.Emojis = {
 	["127858"] = {
 		Name = "pot of food",
 		Shortcodes = {
-			"pot_of_food",
 			"stew",
+			"pot_of_food",
 		},
 	},
 	["129749"] = {
@@ -45456,8 +45498,8 @@ addon.Emojis = {
 	["129367"] = {
 		Name = "green salad",
 		Shortcodes = {
-			"green_salad",
 			"salad",
+			"green_salad",
 		},
 	},
 	["127871"] = {
@@ -45509,8 +45551,8 @@ addon.Emojis = {
 	["127834"] = {
 		Name = "cooked rice",
 		Shortcodes = {
-			"cooked_rice",
 			"rice",
+			"cooked_rice",
 		},
 	},
 	["127835"] = {
@@ -45695,8 +45737,8 @@ addon.Emojis = {
 	["129371"] = {
 		Name = "glass of milk",
 		Shortcodes = {
-			"glass_of_milk",
 			"milk",
+			"glass_of_milk",
 		},
 	},
 	["9749"] = {
@@ -45768,8 +45810,8 @@ addon.Emojis = {
 	["129347"] = {
 		Name = "tumbler glass",
 		Shortcodes = {
-			"tumbler_glass",
 			"whisky",
+			"tumbler_glass",
 		},
 	},
 	["129751"] = {
@@ -45795,8 +45837,8 @@ addon.Emojis = {
 	["129475"] = {
 		Name = "beverage box",
 		Shortcodes = {
-			"beverage_box",
 			"juice_box",
+			"beverage_box",
 		},
 	},
 	["129481"] = {
@@ -45954,8 +45996,8 @@ addon.Emojis = {
 	["127965_65039"] = {
 		Name = "desert island",
 		Shortcodes = {
-			"desert_island",
 			"island",
+			"desert_island",
 		},
 	},
 	["127966_65039"] = {
@@ -45982,8 +46024,8 @@ addon.Emojis = {
 	["127959_65039"] = {
 		Name = "building construction",
 		Shortcodes = {
-			"building_construction",
 			"construction_site",
+			"building_construction",
 		},
 	},
 	["129521"] = {
@@ -46226,8 +46268,8 @@ addon.Emojis = {
 	["127751"] = {
 		Name = "sunset",
 		Shortcodes = {
-			"city_sunrise",
 			"city_sunset",
+			"city_sunrise",
 		},
 	},
 	["127753"] = {
@@ -46251,8 +46293,8 @@ addon.Emojis = {
 	["128733"] = {
 		Name = "playground slide",
 		Shortcodes = {
-			"playground_slide",
 			"slide",
+			"playground_slide",
 		},
 	},
 	["127905"] = {
@@ -46431,8 +46473,8 @@ addon.Emojis = {
 	["128665"] = {
 		Name = "sport utility vehicle",
 		Shortcodes = {
-			"blue_car",
 			"suv",
+			"blue_car",
 		},
 	},
 	["128763"] = {
@@ -46444,8 +46486,8 @@ addon.Emojis = {
 	["128666"] = {
 		Name = "delivery truck",
 		Shortcodes = {
-			"delivery_truck",
 			"truck",
+			"delivery_truck",
 		},
 	},
 	["128667"] = {
@@ -46499,8 +46541,8 @@ addon.Emojis = {
 	["128690"] = {
 		Name = "bicycle",
 		Shortcodes = {
-			"bicycle",
 			"bike",
+			"bicycle",
 		},
 	},
 	["128756"] = {
@@ -46578,8 +46620,8 @@ addon.Emojis = {
 	["128721"] = {
 		Name = "stop sign",
 		Shortcodes = {
-			"octagonal_sign",
 			"stop_sign",
+			"octagonal_sign",
 		},
 	},
 	["128679"] = {
@@ -47034,8 +47076,8 @@ addon.Emojis = {
 	["129680"] = {
 		Name = "ringed planet",
 		Shortcodes = {
-			"ringed_planet",
 			"saturn",
+			"ringed_planet",
 		},
 	},
 	["11088"] = {
@@ -47047,15 +47089,15 @@ addon.Emojis = {
 	["127775"] = {
 		Name = "glowing star",
 		Shortcodes = {
-			"glowing_star",
 			"star2",
+			"glowing_star",
 		},
 	},
 	["127776"] = {
 		Name = "shooting star",
 		Shortcodes = {
-			"shooting_star",
 			"stars",
+			"shooting_star",
 		},
 	},
 	["127756"] = {
@@ -47087,8 +47129,8 @@ addon.Emojis = {
 	["127780_65039"] = {
 		Name = "sun behind small cloud",
 		Shortcodes = {
-			"sun_behind_small_cloud",
 			"sunny",
+			"sun_behind_small_cloud",
 		},
 	},
 	["127781_65039"] = {
@@ -47108,22 +47150,22 @@ addon.Emojis = {
 	["127783_65039"] = {
 		Name = "cloud with rain",
 		Shortcodes = {
-			"cloud_with_rain",
 			"rainy",
+			"cloud_with_rain",
 		},
 	},
 	["127784_65039"] = {
 		Name = "cloud with snow",
 		Shortcodes = {
-			"cloud_with_snow",
 			"snowy",
+			"cloud_with_snow",
 		},
 	},
 	["127785_65039"] = {
 		Name = "cloud with lightning",
 		Shortcodes = {
-			"cloud_with_lightning",
 			"lightning",
+			"cloud_with_lightning",
 		},
 	},
 	["127786_65039"] = {
@@ -47184,8 +47226,8 @@ addon.Emojis = {
 	["9889"] = {
 		Name = "high voltage",
 		Shortcodes = {
-			"high_voltage",
 			"zap",
+			"high_voltage",
 		},
 	},
 	["10052_65039"] = {
@@ -47281,9 +47323,9 @@ addon.Emojis = {
 	["127881"] = {
 		Name = "party popper",
 		Shortcodes = {
+			"tada",
 			"party",
 			"party_popper",
-			"tada",
 		},
 	},
 	["127882"] = {
@@ -47313,8 +47355,8 @@ addon.Emojis = {
 	["127887"] = {
 		Name = "carp streamer",
 		Shortcodes = {
-			"carp_streamer",
 			"flags",
+			"carp_streamer",
 		},
 	},
 	["127888"] = {
@@ -47326,8 +47368,8 @@ addon.Emojis = {
 	["127889"] = {
 		Name = "moon viewing ceremony",
 		Shortcodes = {
-			"moon_ceremony",
 			"rice_scene",
+			"moon_ceremony",
 		},
 	},
 	["129511"] = {
@@ -47357,8 +47399,8 @@ addon.Emojis = {
 	["127903_65039"] = {
 		Name = "admission tickets",
 		Shortcodes = {
-			"admission_tickets",
 			"tickets",
+			"admission_tickets",
 		},
 	},
 	["127915"] = {
@@ -47582,8 +47624,8 @@ addon.Emojis = {
 	["127919"] = {
 		Name = "bullseye",
 		Shortcodes = {
-			"bullseye",
 			"dart",
+			"bullseye",
 			"direct_hit",
 		},
 	},
@@ -47743,8 +47785,8 @@ addon.Emojis = {
 	["128444_65039"] = {
 		Name = "framed picture",
 		Shortcodes = {
-			"frame_with_picture",
 			"framed_picture",
+			"frame_with_picture",
 		},
 	},
 	["127912"] = {
@@ -47786,8 +47828,8 @@ addon.Emojis = {
 	["128083"] = {
 		Name = "glasses",
 		Shortcodes = {
-			"eyeglasses",
 			"glasses",
+			"eyeglasses",
 		},
 	},
 	["128374_65039"] = {
@@ -47925,8 +47967,8 @@ addon.Emojis = {
 	["128093"] = {
 		Name = "clutch bag",
 		Shortcodes = {
-			"clutch_bag",
 			"pouch",
+			"clutch_bag",
 		},
 	},
 	["128717_65039"] = {
@@ -47957,8 +47999,8 @@ addon.Emojis = {
 	["128095"] = {
 		Name = "running shoe",
 		Shortcodes = {
-			"athletic_shoe",
 			"sneaker",
+			"athletic_shoe",
 		},
 	},
 	["129406"] = {
@@ -48019,15 +48061,15 @@ addon.Emojis = {
 	["127913"] = {
 		Name = "top hat",
 		Shortcodes = {
-			"top_hat",
 			"tophat",
+			"top_hat",
 		},
 	},
 	["127891"] = {
 		Name = "graduation cap",
 		Shortcodes = {
-			"graduation_cap",
 			"mortar_board",
+			"graduation_cap",
 		},
 	},
 	["129506"] = {
@@ -48086,23 +48128,23 @@ addon.Emojis = {
 	["128264"] = {
 		Name = "speaker low volume",
 		Shortcodes = {
+			"speaker",
 			"low_volume",
 			"quiet_sound",
-			"speaker",
 		},
 	},
 	["128265"] = {
 		Name = "speaker medium volume",
 		Shortcodes = {
-			"medium_volumne",
 			"sound",
+			"medium_volumne",
 		},
 	},
 	["128266"] = {
 		Name = "speaker high volume",
 		Shortcodes = {
-			"high_volume",
 			"loud_sound",
+			"high_volume",
 		},
 	},
 	["128226"] = {
@@ -48154,8 +48196,8 @@ addon.Emojis = {
 	["127926"] = {
 		Name = "musical notes",
 		Shortcodes = {
-			"musical_notes",
 			"notes",
+			"musical_notes",
 		},
 	},
 	["127897_65039"] = {
@@ -48275,8 +48317,8 @@ addon.Emojis = {
 	["128241"] = {
 		Name = "mobile phone",
 		Shortcodes = {
-			"android",
 			"iphone",
+			"android",
 			"mobile_phone",
 		},
 	},
@@ -48373,8 +48415,8 @@ addon.Emojis = {
 	["128189"] = {
 		Name = "computer disk",
 		Shortcodes = {
-			"computer_disk",
 			"minidisc",
+			"computer_disk",
 		},
 	},
 	["128190"] = {
@@ -48685,8 +48727,8 @@ addon.Emojis = {
 	["128231"] = {
 		Name = "e-mail",
 		Shortcodes = {
-			"e-mail",
 			"email",
+			"e-mail",
 		},
 	},
 	["128232"] = {
@@ -48964,15 +49006,15 @@ addon.Emojis = {
 	["128271"] = {
 		Name = "locked with pen",
 		Shortcodes = {
-			"lock_with_ink_pen",
 			"locked_with_pen",
+			"lock_with_ink_pen",
 		},
 	},
 	["128272"] = {
 		Name = "locked with key",
 		Shortcodes = {
-			"closed_lock_with_key",
 			"locked_with_key",
+			"closed_lock_with_key",
 		},
 	},
 	["128273"] = {
@@ -49102,8 +49144,8 @@ addon.Emojis = {
 	["129455"] = {
 		Name = "white cane",
 		Shortcodes = {
-			"probing_cane",
 			"white_cane",
+			"probing_cane",
 		},
 	},
 	["128279"] = {
@@ -49224,8 +49266,8 @@ addon.Emojis = {
 	["129657"] = {
 		Name = "adhesive bandage",
 		Shortcodes = {
-			"adhesive_bandage",
 			"bandaid",
+			"adhesive_bandage",
 		},
 	},
 	["129660"] = {
@@ -49243,8 +49285,8 @@ addon.Emojis = {
 	["129659"] = {
 		Name = "x-ray",
 		Shortcodes = {
-			"x-ray",
 			"xray",
+			"x-ray",
 		},
 	},
 	-- =============================== sub group: medical end ===============================
@@ -49355,8 +49397,8 @@ addon.Emojis = {
 	["129531"] = {
 		Name = "roll of paper",
 		Shortcodes = {
-			"roll_of_paper",
 			"toilet_paper",
+			"roll_of_paper",
 		},
 	},
 	["129699"] = {
@@ -49407,8 +49449,8 @@ addon.Emojis = {
 	["128684"] = {
 		Name = "cigarette",
 		Shortcodes = {
-			"cigarette",
 			"smoking",
+			"cigarette",
 		},
 	},
 	["9904_65039"] = {
@@ -49487,8 +49529,8 @@ addon.Emojis = {
 	["9855"] = {
 		Name = "wheelchair symbol",
 		Shortcodes = {
-			"handicapped",
 			"wheelchair",
+			"handicapped",
 		},
 	},
 	["128697"] = {
@@ -49519,8 +49561,8 @@ addon.Emojis = {
 	["128702"] = {
 		Name = "water closet",
 		Shortcodes = {
-			"water_closet",
 			"wc",
+			"water_closet",
 		},
 	},
 	["128706"] = {
@@ -49589,8 +49631,8 @@ addon.Emojis = {
 	["128687"] = {
 		Name = "no littering",
 		Shortcodes = {
-			"do_not_litter",
 			"no_littering",
+			"do_not_litter",
 		},
 	},
 	["128689"] = {
@@ -49614,8 +49656,8 @@ addon.Emojis = {
 	["128286"] = {
 		Name = "no one under eighteen",
 		Shortcodes = {
-			"no_one_under_18",
 			"underage",
+			"no_one_under_18",
 		},
 	},
 	["9762_65039"] = {
@@ -49722,15 +49764,15 @@ addon.Emojis = {
 	["128259"] = {
 		Name = "clockwise vertical arrows",
 		Shortcodes = {
-			"arrows_clockwise",
 			"clockwise",
+			"arrows_clockwise",
 		},
 	},
 	["128260"] = {
 		Name = "counterclockwise arrows button",
 		Shortcodes = {
-			"arrows_counterclockwise",
 			"counterclockwise",
+			"arrows_counterclockwise",
 		},
 	},
 	["128281"] = {
@@ -49952,8 +49994,8 @@ addon.Emojis = {
 	["9654_65039"] = {
 		Name = "play button",
 		Shortcodes = {
-			"arrow_forward",
 			"play",
+			"arrow_forward",
 		},
 	},
 	["9193"] = {
@@ -49977,15 +50019,15 @@ addon.Emojis = {
 	["9664_65039"] = {
 		Name = "reverse button",
 		Shortcodes = {
-			"arrow_backward",
 			"reverse",
+			"arrow_backward",
 		},
 	},
 	["9194"] = {
 		Name = "fast reverse button",
 		Shortcodes = {
-			"fast_reverse",
 			"rewind",
+			"fast_reverse",
 		},
 	},
 	["9198_65039"] = {
@@ -49997,29 +50039,29 @@ addon.Emojis = {
 	["128316"] = {
 		Name = "upwards button",
 		Shortcodes = {
-			"arrow_up_small",
 			"up",
+			"arrow_up_small",
 		},
 	},
 	["9195"] = {
 		Name = "fast up button",
 		Shortcodes = {
-			"arrow_double_up",
 			"fast_up",
+			"arrow_double_up",
 		},
 	},
 	["128317"] = {
 		Name = "downwards button",
 		Shortcodes = {
-			"arrow_down_small",
 			"down",
+			"arrow_down_small",
 		},
 	},
 	["9196"] = {
 		Name = "fast down button",
 		Shortcodes = {
-			"arrow_double_down",
 			"fast_down",
+			"arrow_double_down",
 		},
 	},
 	["9208_65039"] = {
@@ -50120,8 +50162,8 @@ addon.Emojis = {
 	["10006_65039"] = {
 		Name = "multiply",
 		Shortcodes = {
-			"multiplication",
 			"multiply",
+			"multiplication",
 		},
 	},
 	["10133"] = {
@@ -50168,8 +50210,8 @@ addon.Emojis = {
 	["8265_65039"] = {
 		Name = "exclamation question mark",
 		Shortcodes = {
-			"exclamation_question",
 			"interrobang",
+			"exclamation_question",
 		},
 	},
 	["10067"] = {
@@ -50261,15 +50303,15 @@ addon.Emojis = {
 	["11093"] = {
 		Name = "hollow red circle",
 		Shortcodes = {
-			"hollow_red_circle",
 			"red_o",
+			"hollow_red_circle",
 		},
 	},
 	["9989"] = {
 		Name = "check mark button",
 		Shortcodes = {
-			"check_mark_button",
 			"white_check_mark",
+			"check_mark_button",
 		},
 	},
 	["9745_65039"] = {
@@ -50288,8 +50330,8 @@ addon.Emojis = {
 	["10060"] = {
 		Name = "cross mark",
 		Shortcodes = {
-			"cross_mark",
 			"x",
+			"cross_mark",
 		},
 	},
 	["10062"] = {
@@ -50308,8 +50350,8 @@ addon.Emojis = {
 	["10175"] = {
 		Name = "double curly loop",
 		Shortcodes = {
-			"double_curly_loop",
 			"loop",
+			"double_curly_loop",
 		},
 	},
 	["12349_65039"] = {
@@ -50586,8 +50628,8 @@ addon.Emojis = {
 	["127489"] = {
 		Name = "Japanese “here” button",
 		Shortcodes = {
-			"ja_here",
 			"koko",
+			"ja_here",
 		},
 	},
 	["127490_65039"] = {
@@ -50617,8 +50659,8 @@ addon.Emojis = {
 	["127568"] = {
 		Name = "Japanese “bargain” button",
 		Shortcodes = {
-			"ideograph_advantage",
 			"ja_bargain",
+			"ideograph_advantage",
 		},
 	},
 	["127545"] = {
@@ -50674,8 +50716,8 @@ addon.Emojis = {
 	["12953_65039"] = {
 		Name = "Japanese “secret” button",
 		Shortcodes = {
-			"ja_secret",
 			"secret",
+			"ja_secret",
 		},
 	},
 	["127546"] = {
@@ -50876,8 +50918,8 @@ addon.Emojis = {
 	["128160"] = {
 		Name = "diamond with a dot",
 		Shortcodes = {
-			"diamond_shape_with_a_dot_inside",
 			"diamond_with_a_dot",
+			"diamond_shape_with_a_dot_inside",
 		},
 	},
 	["128280"] = {
@@ -50959,8 +51001,8 @@ addon.Emojis = {
 	["127462_127464"] = {
 		Name = "flag: Ascension Island",
 		Shortcodes = {
-			"ascension_island",
 			"flag_ac",
+			"ascension_island",
 		},
 	},
 	["127462_127465"] = {
@@ -50980,22 +51022,22 @@ addon.Emojis = {
 	["127462_127467"] = {
 		Name = "flag: Afghanistan",
 		Shortcodes = {
-			"afghanistan",
 			"flag_af",
+			"afghanistan",
 		},
 	},
 	["127462_127468"] = {
 		Name = "flag: Antigua & Barbuda",
 		Shortcodes = {
-			"antigua_barbuda",
 			"flag_ag",
+			"antigua_barbuda",
 		},
 	},
 	["127462_127470"] = {
 		Name = "flag: Anguilla",
 		Shortcodes = {
-			"anguilla",
 			"flag_ai",
+			"anguilla",
 		},
 	},
 	["127462_127473"] = {
@@ -51022,22 +51064,22 @@ addon.Emojis = {
 	["127462_127478"] = {
 		Name = "flag: Antarctica",
 		Shortcodes = {
-			"antarctica",
 			"flag_aq",
+			"antarctica",
 		},
 	},
 	["127462_127479"] = {
 		Name = "flag: Argentina",
 		Shortcodes = {
-			"argentina",
 			"flag_ar",
+			"argentina",
 		},
 	},
 	["127462_127480"] = {
 		Name = "flag: American Samoa",
 		Shortcodes = {
-			"american_samoa",
 			"flag_as",
+			"american_samoa",
 		},
 	},
 	["127462_127481"] = {
@@ -51050,8 +51092,8 @@ addon.Emojis = {
 	["127462_127482"] = {
 		Name = "flag: Australia",
 		Shortcodes = {
-			"australia",
 			"flag_au",
+			"australia",
 		},
 	},
 	["127462_127484"] = {
@@ -51064,36 +51106,36 @@ addon.Emojis = {
 	["127462_127485"] = {
 		Name = "flag: Åland Islands",
 		Shortcodes = {
-			"aland_islands",
 			"flag_ax",
+			"aland_islands",
 		},
 	},
 	["127462_127487"] = {
 		Name = "flag: Azerbaijan",
 		Shortcodes = {
-			"azerbaijan",
 			"flag_az",
+			"azerbaijan",
 		},
 	},
 	["127463_127462"] = {
 		Name = "flag: Bosnia & Herzegovina",
 		Shortcodes = {
-			"bosnia_herzegovina",
 			"flag_ba",
+			"bosnia_herzegovina",
 		},
 	},
 	["127463_127463"] = {
 		Name = "flag: Barbados",
 		Shortcodes = {
-			"barbados",
 			"flag_bb",
+			"barbados",
 		},
 	},
 	["127463_127465"] = {
 		Name = "flag: Bangladesh",
 		Shortcodes = {
-			"bangladesh",
 			"flag_bd",
+			"bangladesh",
 		},
 	},
 	["127463_127466"] = {
@@ -51106,15 +51148,15 @@ addon.Emojis = {
 	["127463_127467"] = {
 		Name = "flag: Burkina Faso",
 		Shortcodes = {
-			"burkina_faso",
 			"flag_bf",
+			"burkina_faso",
 		},
 	},
 	["127463_127468"] = {
 		Name = "flag: Bulgaria",
 		Shortcodes = {
-			"bulgaria",
 			"flag_bg",
+			"bulgaria",
 		},
 	},
 	["127463_127469"] = {
@@ -51169,8 +51211,8 @@ addon.Emojis = {
 	["127463_127478"] = {
 		Name = "flag: Caribbean Netherlands",
 		Shortcodes = {
-			"caribbean_netherlands",
 			"flag_bq",
+			"caribbean_netherlands",
 		},
 	},
 	["127463_127479"] = {
@@ -51197,15 +51239,15 @@ addon.Emojis = {
 	["127463_127483"] = {
 		Name = "flag: Bouvet Island",
 		Shortcodes = {
-			"bouvet_island",
 			"flag_bv",
+			"bouvet_island",
 		},
 	},
 	["127463_127484"] = {
 		Name = "flag: Botswana",
 		Shortcodes = {
-			"botswana",
 			"flag_bw",
+			"botswana",
 		},
 	},
 	["127463_127486"] = {
@@ -51232,29 +51274,29 @@ addon.Emojis = {
 	["127464_127464"] = {
 		Name = "flag: Cocos (Keeling) Islands",
 		Shortcodes = {
-			"cocos_islands",
 			"flag_cc",
+			"cocos_islands",
 		},
 	},
 	["127464_127465"] = {
 		Name = "flag: Congo - Kinshasa",
 		Shortcodes = {
-			"congo_kinshasa",
 			"flag_cd",
+			"congo_kinshasa",
 		},
 	},
 	["127464_127467"] = {
 		Name = "flag: Central African Republic",
 		Shortcodes = {
-			"central_african_republic",
 			"flag_cf",
+			"central_african_republic",
 		},
 	},
 	["127464_127468"] = {
 		Name = "flag: Congo - Brazzaville",
 		Shortcodes = {
-			"congo_brazzaville",
 			"flag_cg",
+			"congo_brazzaville",
 		},
 	},
 	["127464_127469"] = {
@@ -51267,15 +51309,15 @@ addon.Emojis = {
 	["127464_127470"] = {
 		Name = "flag: Côte d’Ivoire",
 		Shortcodes = {
-			"cote_divoire",
 			"flag_ci",
+			"cote_divoire",
 		},
 	},
 	["127464_127472"] = {
 		Name = "flag: Cook Islands",
 		Shortcodes = {
-			"cook_islands",
 			"flag_ck",
+			"cook_islands",
 		},
 	},
 	["127464_127473"] = {
@@ -51288,8 +51330,8 @@ addon.Emojis = {
 	["127464_127474"] = {
 		Name = "flag: Cameroon",
 		Shortcodes = {
-			"cameroon",
 			"flag_cm",
+			"cameroon",
 		},
 	},
 	["127464_127475"] = {
@@ -51302,29 +51344,29 @@ addon.Emojis = {
 	["127464_127476"] = {
 		Name = "flag: Colombia",
 		Shortcodes = {
-			"colombia",
 			"flag_co",
+			"colombia",
 		},
 	},
 	["127464_127477"] = {
 		Name = "flag: Clipperton Island",
 		Shortcodes = {
-			"clipperton_island",
 			"flag_cp",
+			"clipperton_island",
 		},
 	},
 	["127464_127478"] = {
 		Name = "flag: Sark",
 		Shortcodes = {
-			"flag_cq",
 			"sark",
+			"flag_cq",
 		},
 	},
 	["127464_127479"] = {
 		Name = "flag: Costa Rica",
 		Shortcodes = {
-			"costa_rica",
 			"flag_cr",
+			"costa_rica",
 		},
 	},
 	["127464_127482"] = {
@@ -51337,8 +51379,8 @@ addon.Emojis = {
 	["127464_127483"] = {
 		Name = "flag: Cape Verde",
 		Shortcodes = {
-			"cape_verde",
 			"flag_cv",
+			"cape_verde",
 		},
 	},
 	["127464_127484"] = {
@@ -51351,8 +51393,8 @@ addon.Emojis = {
 	["127464_127485"] = {
 		Name = "flag: Christmas Island",
 		Shortcodes = {
-			"christmas_island",
 			"flag_cx",
+			"christmas_island",
 		},
 	},
 	["127464_127486"] = {
@@ -51365,9 +51407,9 @@ addon.Emojis = {
 	["127464_127487"] = {
 		Name = "flag: Czechia",
 		Shortcodes = {
-			"czech_republic",
 			"czechia",
 			"flag_cz",
+			"czech_republic",
 		},
 	},
 	["127465_127466"] = {
@@ -51380,15 +51422,15 @@ addon.Emojis = {
 	["127465_127468"] = {
 		Name = "flag: Diego Garcia",
 		Shortcodes = {
-			"diego_garcia",
 			"flag_dg",
+			"diego_garcia",
 		},
 	},
 	["127465_127471"] = {
 		Name = "flag: Djibouti",
 		Shortcodes = {
-			"djibouti",
 			"flag_dj",
+			"djibouti",
 		},
 	},
 	["127465_127472"] = {
@@ -51401,15 +51443,15 @@ addon.Emojis = {
 	["127465_127474"] = {
 		Name = "flag: Dominica",
 		Shortcodes = {
-			"dominica",
 			"flag_dm",
+			"dominica",
 		},
 	},
 	["127465_127476"] = {
 		Name = "flag: Dominican Republic",
 		Shortcodes = {
-			"dominican_republic",
 			"flag_do",
+			"dominican_republic",
 		},
 	},
 	["127465_127487"] = {
@@ -51422,8 +51464,8 @@ addon.Emojis = {
 	["127466_127462"] = {
 		Name = "flag: Ceuta & Melilla",
 		Shortcodes = {
-			"ceuta_melilla",
 			"flag_ea",
+			"ceuta_melilla",
 		},
 	},
 	["127466_127464"] = {
@@ -51464,22 +51506,22 @@ addon.Emojis = {
 	["127466_127480"] = {
 		Name = "flag: Spain",
 		Shortcodes = {
-			"flag_es",
 			"spain",
+			"flag_es",
 		},
 	},
 	["127466_127481"] = {
 		Name = "flag: Ethiopia",
 		Shortcodes = {
-			"ethiopia",
 			"flag_et",
+			"ethiopia",
 		},
 	},
 	["127466_127482"] = {
 		Name = "flag: European Union",
 		Shortcodes = {
-			"european_union",
 			"flag_eu",
+			"european_union",
 		},
 	},
 	["127467_127470"] = {
@@ -51499,8 +51541,8 @@ addon.Emojis = {
 	["127467_127472"] = {
 		Name = "flag: Falkland Islands",
 		Shortcodes = {
-			"falkland_islands",
 			"flag_fk",
+			"falkland_islands",
 		},
 	},
 	["127467_127474"] = {
@@ -51513,29 +51555,29 @@ addon.Emojis = {
 	["127467_127476"] = {
 		Name = "flag: Faroe Islands",
 		Shortcodes = {
-			"faroe_islands",
 			"flag_fo",
+			"faroe_islands",
 		},
 	},
 	["127467_127479"] = {
 		Name = "flag: France",
 		Shortcodes = {
-			"flag_fr",
 			"france",
+			"flag_fr",
 		},
 	},
 	["127468_127462"] = {
 		Name = "flag: Gabon",
 		Shortcodes = {
-			"flag_ga",
 			"gabon",
+			"flag_ga",
 		},
 	},
 	["127468_127463"] = {
 		Name = "flag: United Kingdom",
 		Shortcodes = {
-			"flag_gb",
 			"uk",
+			"flag_gb",
 			"united_kingdom",
 		},
 	},
@@ -51570,8 +51612,8 @@ addon.Emojis = {
 	["127468_127469"] = {
 		Name = "flag: Ghana",
 		Shortcodes = {
-			"flag_gh",
 			"ghana",
+			"flag_gh",
 		},
 	},
 	["127468_127470"] = {
@@ -51591,15 +51633,15 @@ addon.Emojis = {
 	["127468_127474"] = {
 		Name = "flag: Gambia",
 		Shortcodes = {
-			"flag_gm",
 			"gambia",
+			"flag_gm",
 		},
 	},
 	["127468_127475"] = {
 		Name = "flag: Guinea",
 		Shortcodes = {
-			"flag_gn",
 			"guinea",
+			"flag_gn",
 		},
 	},
 	["127468_127477"] = {
@@ -51612,15 +51654,15 @@ addon.Emojis = {
 	["127468_127478"] = {
 		Name = "flag: Equatorial Guinea",
 		Shortcodes = {
-			"equatorial_guinea",
 			"flag_gq",
+			"equatorial_guinea",
 		},
 	},
 	["127468_127479"] = {
 		Name = "flag: Greece",
 		Shortcodes = {
-			"flag_gr",
 			"greece",
+			"flag_gr",
 		},
 	},
 	["127468_127480"] = {
@@ -51640,8 +51682,8 @@ addon.Emojis = {
 	["127468_127482"] = {
 		Name = "flag: Guam",
 		Shortcodes = {
-			"flag_gu",
 			"guam",
+			"flag_gu",
 		},
 	},
 	["127468_127484"] = {
@@ -51654,8 +51696,8 @@ addon.Emojis = {
 	["127468_127486"] = {
 		Name = "flag: Guyana",
 		Shortcodes = {
-			"flag_gy",
 			"guyana",
+			"flag_gy",
 		},
 	},
 	["127469_127472"] = {
@@ -51689,8 +51731,8 @@ addon.Emojis = {
 	["127469_127481"] = {
 		Name = "flag: Haiti",
 		Shortcodes = {
-			"flag_ht",
 			"haiti",
+			"flag_ht",
 		},
 	},
 	["127469_127482"] = {
@@ -51703,8 +51745,8 @@ addon.Emojis = {
 	["127470_127464"] = {
 		Name = "flag: Canary Islands",
 		Shortcodes = {
-			"canary_islands",
 			"flag_ic",
+			"canary_islands",
 		},
 	},
 	["127470_127465"] = {
@@ -51724,8 +51766,8 @@ addon.Emojis = {
 	["127470_127473"] = {
 		Name = "flag: Israel",
 		Shortcodes = {
-			"flag_il",
 			"israel",
+			"flag_il",
 		},
 	},
 	["127470_127474"] = {
@@ -51738,29 +51780,29 @@ addon.Emojis = {
 	["127470_127475"] = {
 		Name = "flag: India",
 		Shortcodes = {
-			"flag_in",
 			"india",
+			"flag_in",
 		},
 	},
 	["127470_127476"] = {
 		Name = "flag: British Indian Ocean Territory",
 		Shortcodes = {
-			"british_indian_ocean_territory",
 			"flag_io",
+			"british_indian_ocean_territory",
 		},
 	},
 	["127470_127478"] = {
 		Name = "flag: Iraq",
 		Shortcodes = {
-			"flag_iq",
 			"iraq",
+			"flag_iq",
 		},
 	},
 	["127470_127479"] = {
 		Name = "flag: Iran",
 		Shortcodes = {
-			"flag_ir",
 			"iran",
+			"flag_ir",
 		},
 	},
 	["127470_127480"] = {
@@ -51773,15 +51815,15 @@ addon.Emojis = {
 	["127470_127481"] = {
 		Name = "flag: Italy",
 		Shortcodes = {
-			"flag_it",
 			"italy",
+			"flag_it",
 		},
 	},
 	["127471_127466"] = {
 		Name = "flag: Jersey",
 		Shortcodes = {
-			"flag_je",
 			"jersey",
+			"flag_je",
 		},
 	},
 	["127471_127474"] = {
@@ -51794,22 +51836,22 @@ addon.Emojis = {
 	["127471_127476"] = {
 		Name = "flag: Jordan",
 		Shortcodes = {
-			"flag_jo",
 			"jordan",
+			"flag_jo",
 		},
 	},
 	["127471_127477"] = {
 		Name = "flag: Japan",
 		Shortcodes = {
-			"flag_jp",
 			"japan",
+			"flag_jp",
 		},
 	},
 	["127472_127466"] = {
 		Name = "flag: Kenya",
 		Shortcodes = {
-			"flag_ke",
 			"kenya",
+			"flag_ke",
 		},
 	},
 	["127472_127468"] = {
@@ -51822,8 +51864,8 @@ addon.Emojis = {
 	["127472_127469"] = {
 		Name = "flag: Cambodia",
 		Shortcodes = {
-			"cambodia",
 			"flag_kh",
+			"cambodia",
 		},
 	},
 	["127472_127470"] = {
@@ -51864,15 +51906,15 @@ addon.Emojis = {
 	["127472_127484"] = {
 		Name = "flag: Kuwait",
 		Shortcodes = {
-			"flag_kw",
 			"kuwait",
+			"flag_kw",
 		},
 	},
 	["127472_127486"] = {
 		Name = "flag: Cayman Islands",
 		Shortcodes = {
-			"cayman_islands",
 			"flag_ky",
+			"cayman_islands",
 		},
 	},
 	["127472_127487"] = {
@@ -51885,8 +51927,8 @@ addon.Emojis = {
 	["127473_127462"] = {
 		Name = "flag: Laos",
 		Shortcodes = {
-			"flag_la",
 			"laos",
+			"flag_la",
 		},
 	},
 	["127473_127463"] = {
@@ -51948,15 +51990,15 @@ addon.Emojis = {
 	["127473_127483"] = {
 		Name = "flag: Latvia",
 		Shortcodes = {
-			"flag_lv",
 			"latvia",
+			"flag_lv",
 		},
 	},
 	["127473_127486"] = {
 		Name = "flag: Libya",
 		Shortcodes = {
-			"flag_ly",
 			"libya",
+			"flag_ly",
 		},
 	},
 	["127474_127462"] = {
@@ -51969,8 +52011,8 @@ addon.Emojis = {
 	["127474_127464"] = {
 		Name = "flag: Monaco",
 		Shortcodes = {
-			"flag_mc",
 			"monaco",
+			"flag_mc",
 		},
 	},
 	["127474_127465"] = {
@@ -52018,8 +52060,8 @@ addon.Emojis = {
 	["127474_127473"] = {
 		Name = "flag: Mali",
 		Shortcodes = {
-			"flag_ml",
 			"mali",
+			"flag_ml",
 		},
 	},
 	["127474_127474"] = {
@@ -52040,9 +52082,9 @@ addon.Emojis = {
 	["127474_127476"] = {
 		Name = "flag: Macao SAR China",
 		Shortcodes = {
-			"flag_mo",
 			"macao",
 			"macau",
+			"flag_mo",
 		},
 	},
 	["127474_127477"] = {
@@ -52076,8 +52118,8 @@ addon.Emojis = {
 	["127474_127481"] = {
 		Name = "flag: Malta",
 		Shortcodes = {
-			"flag_mt",
 			"malta",
+			"flag_mt",
 		},
 	},
 	["127474_127482"] = {
@@ -52097,15 +52139,15 @@ addon.Emojis = {
 	["127474_127484"] = {
 		Name = "flag: Malawi",
 		Shortcodes = {
-			"flag_mw",
 			"malawi",
+			"flag_mw",
 		},
 	},
 	["127474_127485"] = {
 		Name = "flag: Mexico",
 		Shortcodes = {
-			"flag_mx",
 			"mexico",
+			"flag_mx",
 		},
 	},
 	["127474_127486"] = {
@@ -52139,8 +52181,8 @@ addon.Emojis = {
 	["127475_127466"] = {
 		Name = "flag: Niger",
 		Shortcodes = {
-			"flag_ne",
 			"niger",
+			"flag_ne",
 		},
 	},
 	["127475_127467"] = {
@@ -52174,29 +52216,29 @@ addon.Emojis = {
 	["127475_127476"] = {
 		Name = "flag: Norway",
 		Shortcodes = {
-			"flag_no",
 			"norway",
+			"flag_no",
 		},
 	},
 	["127475_127477"] = {
 		Name = "flag: Nepal",
 		Shortcodes = {
-			"flag_np",
 			"nepal",
+			"flag_np",
 		},
 	},
 	["127475_127479"] = {
 		Name = "flag: Nauru",
 		Shortcodes = {
-			"flag_nr",
 			"nauru",
+			"flag_nr",
 		},
 	},
 	["127475_127482"] = {
 		Name = "flag: Niue",
 		Shortcodes = {
-			"flag_nu",
 			"niue",
+			"flag_nu",
 		},
 	},
 	["127475_127487"] = {
@@ -52209,22 +52251,22 @@ addon.Emojis = {
 	["127476_127474"] = {
 		Name = "flag: Oman",
 		Shortcodes = {
-			"flag_om",
 			"oman",
+			"flag_om",
 		},
 	},
 	["127477_127462"] = {
 		Name = "flag: Panama",
 		Shortcodes = {
-			"flag_pa",
 			"panama",
+			"flag_pa",
 		},
 	},
 	["127477_127466"] = {
 		Name = "flag: Peru",
 		Shortcodes = {
-			"flag_pe",
 			"peru",
+			"flag_pe",
 		},
 	},
 	["127477_127467"] = {
@@ -52258,8 +52300,8 @@ addon.Emojis = {
 	["127477_127473"] = {
 		Name = "flag: Poland",
 		Shortcodes = {
-			"flag_pl",
 			"poland",
+			"flag_pl",
 		},
 	},
 	["127477_127474"] = {
@@ -52300,8 +52342,8 @@ addon.Emojis = {
 	["127477_127484"] = {
 		Name = "flag: Palau",
 		Shortcodes = {
-			"flag_pw",
 			"palau",
+			"flag_pw",
 		},
 	},
 	["127477_127486"] = {
@@ -52314,8 +52356,8 @@ addon.Emojis = {
 	["127478_127462"] = {
 		Name = "flag: Qatar",
 		Shortcodes = {
-			"flag_qa",
 			"qatar",
+			"flag_qa",
 		},
 	},
 	["127479_127466"] = {
@@ -52335,22 +52377,22 @@ addon.Emojis = {
 	["127479_127480"] = {
 		Name = "flag: Serbia",
 		Shortcodes = {
-			"flag_rs",
 			"serbia",
+			"flag_rs",
 		},
 	},
 	["127479_127482"] = {
 		Name = "flag: Russia",
 		Shortcodes = {
-			"flag_ru",
 			"russia",
+			"flag_ru",
 		},
 	},
 	["127479_127484"] = {
 		Name = "flag: Rwanda",
 		Shortcodes = {
-			"flag_rw",
 			"rwanda",
+			"flag_rw",
 		},
 	},
 	["127480_127462"] = {
@@ -52377,15 +52419,15 @@ addon.Emojis = {
 	["127480_127465"] = {
 		Name = "flag: Sudan",
 		Shortcodes = {
-			"flag_sd",
 			"sudan",
+			"flag_sd",
 		},
 	},
 	["127480_127466"] = {
 		Name = "flag: Sweden",
 		Shortcodes = {
-			"flag_se",
 			"sweden",
+			"flag_se",
 		},
 	},
 	["127480_127468"] = {
@@ -52475,8 +52517,8 @@ addon.Emojis = {
 	["127480_127483"] = {
 		Name = "flag: El Salvador",
 		Shortcodes = {
-			"el_salvador",
 			"flag_sv",
+			"el_salvador",
 		},
 	},
 	["127480_127485"] = {
@@ -52489,15 +52531,15 @@ addon.Emojis = {
 	["127480_127486"] = {
 		Name = "flag: Syria",
 		Shortcodes = {
-			"flag_sy",
 			"syria",
+			"flag_sy",
 		},
 	},
 	["127480_127487"] = {
 		Name = "flag: Eswatini",
 		Shortcodes = {
-			"eswatini",
 			"flag_sz",
+			"eswatini",
 			"swaziland",
 		},
 	},
@@ -52532,8 +52574,8 @@ addon.Emojis = {
 	["127481_127468"] = {
 		Name = "flag: Togo",
 		Shortcodes = {
-			"flag_tg",
 			"togo",
+			"flag_tg",
 		},
 	},
 	["127481_127469"] = {
@@ -52581,8 +52623,8 @@ addon.Emojis = {
 	["127481_127476"] = {
 		Name = "flag: Tonga",
 		Shortcodes = {
-			"flag_to",
 			"tonga",
+			"flag_to",
 		},
 	},
 	["127481_127479"] = {
@@ -52602,15 +52644,15 @@ addon.Emojis = {
 	["127481_127483"] = {
 		Name = "flag: Tuvalu",
 		Shortcodes = {
-			"flag_tv",
 			"tuvalu",
+			"flag_tv",
 		},
 	},
 	["127481_127484"] = {
 		Name = "flag: Taiwan",
 		Shortcodes = {
-			"flag_tw",
 			"taiwan",
+			"flag_tw",
 		},
 	},
 	["127481_127487"] = {
@@ -52630,8 +52672,8 @@ addon.Emojis = {
 	["127482_127468"] = {
 		Name = "flag: Uganda",
 		Shortcodes = {
-			"flag_ug",
 			"uganda",
+			"flag_ug",
 		},
 	},
 	["127482_127474"] = {
@@ -52644,17 +52686,17 @@ addon.Emojis = {
 	["127482_127475"] = {
 		Name = "flag: United Nations",
 		Shortcodes = {
-			"flag_un",
 			"un",
+			"flag_un",
 			"united_nations",
 		},
 	},
 	["127482_127480"] = {
 		Name = "flag: United States",
 		Shortcodes = {
+			"usa",
 			"flag_us",
 			"united_states",
-			"usa",
 		},
 	},
 	["127482_127486"] = {
@@ -52695,8 +52737,8 @@ addon.Emojis = {
 	["127483_127468"] = {
 		Name = "flag: British Virgin Islands",
 		Shortcodes = {
-			"british_virgin_islands",
 			"flag_vg",
+			"british_virgin_islands",
 		},
 	},
 	["127483_127470"] = {
@@ -52730,22 +52772,22 @@ addon.Emojis = {
 	["127484_127480"] = {
 		Name = "flag: Samoa",
 		Shortcodes = {
-			"flag_ws",
 			"samoa",
+			"flag_ws",
 		},
 	},
 	["127485_127472"] = {
 		Name = "flag: Kosovo",
 		Shortcodes = {
-			"flag_xk",
 			"kosovo",
+			"flag_xk",
 		},
 	},
 	["127486_127466"] = {
 		Name = "flag: Yemen",
 		Shortcodes = {
-			"flag_ye",
 			"yemen",
+			"flag_ye",
 		},
 	},
 	["127486_127481"] = {
@@ -52765,8 +52807,8 @@ addon.Emojis = {
 	["127487_127474"] = {
 		Name = "flag: Zambia",
 		Shortcodes = {
-			"flag_zm",
 			"zambia",
+			"flag_zm",
 		},
 	},
 	["127487_127484"] = {
@@ -52789,15 +52831,15 @@ addon.Emojis = {
 	["127988_917607_917602_917619_917603_917620_917631"] = {
 		Name = "flag: Scotland",
 		Shortcodes = {
-			"flag_gbsct",
 			"scotland",
+			"flag_gbsct",
 		},
 	},
 	["127988_917607_917602_917623_917612_917619_917631"] = {
 		Name = "flag: Wales",
 		Shortcodes = {
-			"flag_gbwls",
 			"wales",
+			"flag_gbwls",
 		},
 	},
 	-- =============================== sub group: subdivision-flag end ===============================
