@@ -36,7 +36,10 @@ if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
 else
     KeyboardDialog = CreateFrame("Frame", nil, UIParent, "TooltipBackdropTemplate")
 end
+KeyboardDialog:SetFrameStrata("DIALOG")
+KeyboardDialog:SetToplevel(true)
 KeyboardDialog:Hide()
+KeyboardDialog.Positions = {}
 
 -- 创建搜索框
 local function CreateSearchBox()
@@ -72,6 +75,13 @@ local function CreateDivider()
     divider3:SetPoint("LEFT", 15, 0)
     divider3:SetPoint("RIGHT", -13, 0)
     divider3:SetPoint("BOTTOM", KeyboardDialog.EmojiGroupList, "TOP", 0, 5)
+end
+
+-- 创建关闭按钮
+local function CreateCloser()
+    local closer = CreateFrame("Button", nil, KeyboardDialog, "UIPanelCloseButton")
+    closer:SetSize(16, 16)
+    closer:SetPoint("TOPRIGHT", -1.5, 0)
 end
 
 -- 创建框体缩放指示器
@@ -221,7 +231,6 @@ function EmojiKeyboardEmojiItemButtonMixin:OnEnter()
         GameTooltip:AddDoubleLine(L["keyboard_emoji_shortcode_title"], shortcode, nil, nil, nil, 1, 1, 1)
     end
     if emoji.Variants then
-        GameTooltip_AddBlankLinesToTooltip(GameTooltip, 1)
         GameTooltip:AddDoubleLine(L["keyboard_emoji_variants_number_title"], #emoji.Variants, nil, nil, nil, 1, 1, 1)
     end
     GameTooltip:Show()
@@ -505,7 +514,6 @@ end
 
 -- 刷新键盘
 function KeyboardDialog:RefreshKeyBoard()
-    print("RefreshKeyBoard")
     local pack = self:GetSelectedEmojiPack()
     if not pack then return end
 
@@ -583,7 +591,6 @@ function KeyboardDialog:RefreshKeyBoard()
 end
 
 function KeyboardDialog:SelectEmojiPack(pack)
-    print("SelectEmojiPack", pack)
     self.EmojiPackList.SelectionBehavior:SelectElementData(pack)
 end
 
@@ -607,10 +614,38 @@ function KeyboardDialog:SelectGroup(groupIndex)
     end)
 end
 
+-- 附着到EditBox
+function KeyboardDialog:Attach(editBox)
+    self.EditBox = editBox
+    local positionCache = self.Positions[editBox]
+
+    if positionCache then
+    else
+        self:ClearAllPoints()
+        local height = self:GetHeight()
+        local top = self:GetParent():GetHeight() - editBox:GetTop()
+        local relativePoint = "TOP"
+        local point = "BOTTOM"
+        if top + 20 <= height then
+            point = "TOP"
+            relativePoint = "BOTTOM"
+        end
+        self:SetPoint(point, editBox, relativePoint)
+    end
+
+    self:Show()
+end
+
+-- 停止附着到editBox
+function KeyboardDialog:Detach(editBox)
+    if editBox ~= self.EditBox then return end
+
+    self:Hide()
+end
+
 -- 创建弹窗
 local function CreateKeyboardDialog()
     KeyboardDialog:SetSize(270, 320)
-    KeyboardDialog:SetPoint("CENTER")
     KeyboardDialog:SetFrameStrata("HIGH")
     KeyboardDialog:SetMovable(true)
     KeyboardDialog:SetResizable(true)
@@ -627,6 +662,7 @@ local function LoadKeyboardDialog()
         CreateSearchBox, 
         CreateDivider, 
         CreateKeyboard, 
+        CreateCloser,
         CreateResizer, 
         CreateDragger, 
         GenerateClosure(KeyboardDialog.SelectEmojiPack, KeyboardDialog, KeyboardDialog:GetSelectedEmojiPack())
@@ -638,51 +674,73 @@ end
 -- ======================================================================
 
 -- 键盘开关
-local KeyboardEnabler = CreateFrame("Button", nil, UIParent)
-KeyboardEnabler:Hide()
-KeyboardEnabler:SetFrameStrata("DIALOG")
-KeyboardEnabler:SetSize(32, 32)
-KeyboardEnabler:SetNormalTexture([[Interface\Buttons\UI-CheckBox-Up]])
-KeyboardEnabler.Icon = KeyboardEnabler:CreateTexture(nil, "OVERLAY")
-KeyboardEnabler.Icon:SetSize(16, 16)
-KeyboardEnabler.Icon:SetPoint("CENTER")
-KeyboardEnabler.Icon:SetTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]])
 
-function KeyboardEnabler:OnClick()
+local function OnKeyboardEnablerClick(self)
     if not KeyboardDialog.Loaded then
         KeyboardDialog.Loaded = true
         LoadKeyboardDialog()
     end
+
+    local editBox = self.EditBox
+    if not editBox then return end
+
     if KeyboardDialog:IsShown() then
-        KeyboardDialog:Hide()
+        KeyboardDialog:Detach(editBox)
     else
-        KeyboardDialog:Show()
+        KeyboardDialog:Attach(editBox)
     end
+
+    self:HideIfNeed()
 end
-KeyboardEnabler:SetScript("OnClick", KeyboardEnabler.OnClick)
+
+local function OnKeyboardEnablerHide(self)
+    self:SetParent(self.EditBox)
+end
+
+local function OnKeyboardEnablerLeave(self)
+    self:HideIfNeed()
+end
 
 local function OnEditBoxFocusGained(self)
-    KeyboardEnabler:ClearAllPoints()
-    KeyboardEnabler.EditBox = self
-    KeyboardEnabler:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT", -3, -10)
-    KeyboardEnabler:Show()
+    -- 需要改变parent，否则点击时，editbox会失去焦点，然后会跟随消失，导致无法获取到点击事件
+    self.KeyboardEnabler:SetParent(UIParent)
+    self.KeyboardEnabler:Show()
 end
 
 local function OnEditBoxFocusLost(self)
-    if KeyboardEnabler.EditBox == self and not KeyboardEnabler:IsMouseOver() then
-        KeyboardEnabler.EditBox = nil
-        KeyboardEnabler:Hide()
+    self.KeyboardEnabler:HideIfNeed()
+end
+
+local function CreateKeyboardEnablerForEditBox(editBox)
+    local KeyboardEnabler = CreateFrame("Button", nil, editBox)
+    editBox.KeyboardEnabler = KeyboardEnabler
+    KeyboardEnabler.EditBox = editBox
+
+    KeyboardEnabler:SetSize(24, 24)
+    KeyboardEnabler:SetNormalTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]])
+    KeyboardEnabler:GetNormalTexture():SetDesaturated(true)
+    KeyboardEnabler:SetHighlightTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]], "ADD")
+    KeyboardEnabler:SetPoint("BOTTOMRIGHT", editBox, "TOPRIGHT", -3, 0)
+
+    function KeyboardEnabler:HideIfNeed()
+        if not self.EditBox:HasFocus() and not self:IsMouseOver() then
+            self:Hide()
+        end
     end
+
+    KeyboardEnabler:SetScript("OnClick", OnKeyboardEnablerClick)
+    KeyboardEnabler:SetScript("OnHide", OnKeyboardEnablerHide)
+    KeyboardEnabler:SetScript("OnLeave", OnKeyboardEnablerLeave)
+    
+    editBox:HookScript("OnEditFocusGained", OnEditBoxFocusGained)
+    editBox:HookScript("OnEditFocusLost", OnEditBoxFocusLost)
 end
 
 -- 为editbox启用键盘功能
 function addon:EnableEmojiKeyboardForEditBox(editBox)
-    if editBox.emojiKeyboardEnabled then
+    if editBox.KeyboardEnabler then
         return 
     end
 
-    editBox:HookScript("OnEditFocusGained", OnEditBoxFocusGained)
-    editBox:HookScript("OnEditFocusLost", OnEditBoxFocusLost)
-
-    editBox.emojiKeyboardEnabled = true
+    CreateKeyboardEnablerForEditBox(editBox)
 end
