@@ -215,7 +215,7 @@ local EmojiKeyboardEmojiButtonPool
 if WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC then
     EmojiKeyboardEmojiButtonPool = CreateFramePool("Button", KeyboardDialog, "EmojiKeyboardEmojiItemButtonTemplate")
 else
-    CreateUnsecuredFramePool("Button", KeyboardDialog, "EmojiKeyboardEmojiItemButtonTemplate")
+    EmojiKeyboardEmojiButtonPool = CreateUnsecuredFramePool("Button", KeyboardDialog, "EmojiKeyboardEmojiItemButtonTemplate")
 end
 
 EmojiKeyboardEmojiItemButtonMixin = {}
