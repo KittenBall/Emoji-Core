@@ -98,7 +98,7 @@ local function CreateResizer()
     end)
     resizer:SetScript("OnMouseUp", function(self)
         local parent = self:GetParent()
-        parent:StopMovingOrSizing()
+        parent:OnMovingOrSizingStop()
         C_Timer.After(0.1, GenerateClosure(KeyboardDialog.RefreshKeyBoard, KeyboardDialog))
     end)
 end
@@ -116,7 +116,7 @@ local function CreateDragger()
         self:GetParent():StartMoving()
     end)
     dragger:SetScript("OnDragStop", function(self)
-        self:GetParent():StopMovingOrSizing()
+        self:GetParent():OnMovingOrSizingStop()
     end)
 end
 
@@ -216,6 +216,7 @@ local EmojiKeyboardEmojiButtonPool = CreateUnsecuredFramePool("Button", Keyboard
 EmojiKeyboardEmojiItemButtonMixin = {}
 
 function EmojiKeyboardEmojiItemButtonMixin:Update(key, emoji)
+    self.EmojiKey = key
     self.Emoji = emoji
 
     local emoji = addon:GetEmojiIconByUnicodeKey(key) or UNKNOWN_EMOJI
@@ -227,6 +228,7 @@ function EmojiKeyboardEmojiItemButtonMixin:OnEnter()
     GameTooltip:SetOwner(self)
     GameTooltip:AddLine(emoji.Name)
     GameTooltip_AddBlankLinesToTooltip(GameTooltip, 1)
+    
     for _, shortcode in ipairs(emoji.Shortcodes) do
         GameTooltip:AddDoubleLine(L["keyboard_emoji_shortcode_title"], shortcode, nil, nil, nil, 1, 1, 1)
     end
@@ -241,6 +243,7 @@ function EmojiKeyboardEmojiItemButtonMixin:OnLeave()
 end
 
 function EmojiKeyboardEmojiItemButtonMixin:OnClick()
+    KeyboardDialog:HandleEmojiPressed(self.EmojiKey, self.Emoji)
 end
 
 EmojiKeyboardEmojiItemMixin = {}
@@ -351,9 +354,7 @@ local function CreateKeyboard()
     keyboardView:SetElementExtentCalculator(KeyboardListItemExtentCalculator)
     keyboardView:SetElementFactory(KeyboardListTreeFactory)
 
-    local dataProvider = CreateTreeDataProvider()
     Keyboard:Init(keyboardView)
-    Keyboard:SetDataProvider(dataProvider)
 
     Keyboard:RegisterCallback(BaseScrollBoxEvents.OnScroll, OnKeyboardScroll)
 end
@@ -431,7 +432,6 @@ local function CreateEmojiGroupList()
     emojiGroupView:SetHorizontal(true)
 
     emojiGroupList:Init(emojiGroupView)
-    emojiGroupList:SetDataProvider(CreateDataProvider())
 
 	emojiGroupList.SelectionBehavior:RegisterCallback(SelectionBehaviorMixin.Event.OnSelectionChanged, EmojiGroupListItemOnSelectionChanged)
 end
@@ -441,41 +441,52 @@ end
 -- ======================================================================
 
 do
-    --[[
-        pack:{
-            Icon or IconUnicode: Pack icon
-            Name: Pack name,
-            Source: see emojis.lua
-        }
-    ]]--
-    -- -- 最近
-    -- Emojis.Popular.Name = L["keyboard_emoji_pack_recent_sub_group_frequent"]
-    -- local defaultRecentGroup = {
-    --     SubGroupCount = 1,
-    --     EmojiCount = Emojis.Popular.EmojiCount,
-    --     Emojis.Popular
-    -- }
-    -- local recentPack = {
-    --     Name = L["keyboard_emoji_pack_recent"],
-    --     Icon = [[Interface\Addons\Emoji-Core\Media\recent.png]],
-    --     GroupCount = 1,
-    --     GetGroup = function(self, index)
-    --         return defaultRecentGroup
-    --     end,
-    --     GetEmoji = function(self, groupIndex, subGroupIndex, emojiIndex)
-    --         local key = defaultRecentGroup[subGroupIndex][emojiIndex]
-    --         return key, Emojis[key]
-    --     end
-    -- }
+    -- 获取分组：最近使用
+    local function GetRecentSubGroup()
+        local group = { Name = L["keyboard_emoji_pack_recent_sub_group_recent"] }
+        
+        local recentEmojis = addon:GetRecentEmojis()
+        local count = #recentEmojis
+
+        group.EmojiCount = count
+
+        for i = 1, count do
+            group[i] = recentEmojis[i]
+        end
+    end
+
+    -- recent pack
+    local recentPack = {
+        Name = L["keyboard_emoji_pack_recent"],
+        Icon = [[Interface\Addons\Emoji-Core\Media\recent.png]],
+        Dynamic = true,
+        Searchable = false,
+        GetSource = function(self)
+            local recentSubGroup = GetRecentSubGroup()
+
+            return {
+                GroupInfo = { 
+                    GroupCount = 1,
+                    {
+                        SubGroupCount = 2,
+                        recentSubGroup,
+                        Emojis.Popular,
+                    },
+                }
+            }
+        end
+    }
 
     -- emoji pack
     local emojiPack = {
         Name = L["keyboard_emoji_pack_emoji"],
         IconUnicode = "128512",
-        Source = Emojis
+        Source = Emojis,
+        Dynamic = false
     }
 
     local Packs = {
+        recentPack,
         emojiPack,
         SelectedIndex = 1
     }
@@ -512,15 +523,15 @@ end
 -- ==================== Emoji Keyborad Dialog ===========================
 -- ======================================================================
 
--- 刷新键盘
-function KeyboardDialog:RefreshKeyBoard()
+-- 刷新emoji表情包键盘
+function KeyboardDialog:RefreshEmojiPackKeyBoard()
     local pack = self:GetSelectedEmojiPack()
     if not pack then return end
 
     local Keyboard = self.Keyboard
     local EmojiGroupList = self.EmojiGroupList
     
-    local source = pack.Source
+    local source = pack.Dynamic and pack.Source or pack:GetSource()
     local groupInfo = source.GroupInfo
     local groupCount = groupInfo.GroupCount
     local showGroupList = groupCount > 1
@@ -533,22 +544,29 @@ function KeyboardDialog:RefreshKeyBoard()
         Keyboard:SetPoint("BOTTOM", KeyboardDialog.EmojiGroupList, "TOP", 0, 10)
 
         -- 显示组列表
-        local dataProvider = EmojiGroupList:GetDataProvider()
-        dataProvider:Flush()
+        local dataProvider = pack.GroupDataProvider
+        if not dataProvider then
+            dataProvider = CreateDataProvider()
+            pack.GroupDataProvider = dataProvider
 
-        for i = 1, groupCount do
-            local group = groupInfo[i]
-            -- 没有图标的组就不显示了
-            if group.Icon or group.IconUnicode then
-                local node = {
-                    Icon = group.Icon or addon:GetEmojiIconByUnicodeKey(group.IconUnicode),
-                    GroupIndex = i,
-                    EmojiCount = group.EmojiCount,
-                    SubGroupCount = group.SubGroupCount,
-                    Name = group.Name
-                }
-                dataProvider:Insert(node)
+            for i = 1, groupCount do
+                local group = groupInfo[i]
+                -- 没有图标的组就不显示了
+                if group.Icon or group.IconUnicode then
+                    local node = {
+                        Icon = group.Icon or addon:GetEmojiIconByUnicodeKey(group.IconUnicode),
+                        GroupIndex = i,
+                        EmojiCount = group.EmojiCount,
+                        SubGroupCount = group.SubGroupCount,
+                        Name = group.Name
+                    }
+                    dataProvider:Insert(node)
+                end
             end
+        end
+
+        if dataProvider ~= EmojiGroupList:GetDataProvider() then
+            EmojiGroupList:SetDataProvider(dataProvider)
         end
     else
         EmojiGroupList:Hide()
@@ -556,38 +574,51 @@ function KeyboardDialog:RefreshKeyBoard()
         Keyboard:SetPoint("BOTTOM", 0, 10)
     end
 
-    --@todo 分帧加入
-    local dataProvider = Keyboard:GetDataProvider()
-    dataProvider:Flush()
-
     local keyboardWidth = Keyboard:GetWidth()
     local padding = Keyboard:GetPadding()
     local usableWidth = keyboardWidth - padding:GetLeft() - padding:GetRight()
     local column = floor(usableWidth / (KeyboardEmojiIconSize + 10))
 
-    for i = 1, groupCount do
-        local group = groupInfo[i]
+    local dataProvider = pack.KeyboardDataProvider
+    if not dataProvider or pack.Dynamic or column ~= dataProvider.Column then
+        dataProvider = CreateTreeDataProvider()
+        pack.KeyboardDataProvider = dataProvider
+        dataProvider.Column = column
+
+        -- 由于是新建的DataProvider，所以不会一直触发刷新
+        for i = 1, groupCount do
+            local group = groupInfo[i]
+
+            if showGroupList then
+                if showGroupList then
+                    dataProvider:Insert({ IsGroup = true, GroupIndex = i, Title = group.Name, EmojiCount = group.EmojiCount  })
+                end
         
-        if showGroupList then
-            dataProvider:Insert({ IsGroup = true, GroupIndex = i, Title = group.Name, EmojiCount = group.EmojiCount  })
-        end
-
-        for j = 1, group.SubGroupCount do
-            local subGroup = group[j]
-            
-            local groupNode
-            if subGroup.Name then
-                groupNode = dataProvider:Insert({ IsSubGroup = true, GroupIndex = i, SubGroupIndex = j, Title = subGroup.Name, EmojiCount = subGroup.EmojiCount })
-            else
-                groupNode = dataProvider
+                for j = 1, group.SubGroupCount do
+                    local subGroup = group[j]
+                    
+                    local groupNode
+                    if subGroup.Name then
+                        groupNode = dataProvider:Insert({ IsSubGroup = true, GroupIndex = i, SubGroupIndex = j, Title = subGroup.Name, EmojiCount = subGroup.EmojiCount })
+                    else
+                        groupNode = dataProvider
+                    end
+        
+                    for k = 1, subGroup.EmojiCount, column do
+                        local count = min(column, subGroup.EmojiCount - k + 1)
+                        groupNode:Insert({ GroupIndex = i, SubGroupIndex = j, EmojiIndex = k, EmojiCount = count, Column = column, Source = source })
+                    end
+                end
             end
 
-            for k = 1, subGroup.EmojiCount, column do
-                local count = min(column, subGroup.EmojiCount - k + 1)
-                groupNode:Insert({ GroupIndex = i, SubGroupIndex = j, EmojiIndex = k, EmojiCount = count, Column = column, Source = source })
-            end
+            Keyboard:SetDataProvider(dataProvider)
         end
     end
+end
+
+-- 刷新键盘
+function KeyboardDialog:RefreshKeyBoard()
+    self:RefreshEmojiPackKeyBoard()
 end
 
 function KeyboardDialog:SelectEmojiPack(pack)
@@ -614,16 +645,39 @@ function KeyboardDialog:SelectGroup(groupIndex)
     end)
 end
 
+function KeyboardDialog:OnMovingOrSizingStop()
+    self:StopMovingOrSizing()
+
+    local editBox = self.EditBox
+    if not editBox then return end
+
+    -- 记住位置
+    local x, y = self:GetScaledRect()
+    self.Positions[editBox] = { X = x, Y = y }
+end
+
+-- 每次隐藏时，刷新一下键盘
+function KeyboardDialog:OnHide()
+    self:RefreshKeyBoard()
+end
+
+-- 是否已附着到editBox
+function KeyboardDialog:IsAttached(editBox)
+    return self.EditBox == editBox and self:IsShown()
+end
+
 -- 附着到EditBox
 function KeyboardDialog:Attach(editBox)
     self.EditBox = editBox
     local positionCache = self.Positions[editBox]
 
     if positionCache then
+        local scale = self:GetEffectiveScale()
+        self:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", positionCache.X / scale, positionCache.Y / scale)
     else
         self:ClearAllPoints()
         local height = self:GetHeight()
-        local top = self:GetParent():GetHeight() - editBox:GetTop()
+        local top = UIParent:GetHeight() - editBox:GetTop()
         local relativePoint = "TOP"
         local point = "BOTTOM"
         if top + 20 <= height then
@@ -639,8 +693,36 @@ end
 -- 停止附着到editBox
 function KeyboardDialog:Detach(editBox)
     if editBox ~= self.EditBox then return end
-
+    
     self:Hide()
+    self.EditBox = nil
+end
+
+-- 处理表情输入
+function KeyboardDialog:HandleEmojiPressed(emojiKey, emoji)
+    if not emojiKey or not emoji then return end
+
+    local editBox = self.EditBox or ChatEdit_GetActiveWindow or ChatEdit_ChooseBoxForSend
+    if not editBox then return end
+
+    local shortcode = addon:WrapperShortcodeWithDelimiter(emoji.Shortcodes[1], "all")
+    editBox:Insert(shortcode)
+
+    addon:AddRecentEmoji(emojiKey)
+end
+
+-- 每帧刷新
+function KeyboardDialog:OnUpdate()
+end
+
+-- 开始搜索
+function KeyboardDialog:StartSearch()
+    self.SetScript("OnUpdate", self.OnUpdate)
+end
+
+-- 停止搜索
+function KeyboardDialog:StopSearch()
+    self.SetScript("OnUpdate", nil)
 end
 
 -- 创建弹窗
@@ -651,6 +733,8 @@ local function CreateKeyboardDialog()
     KeyboardDialog:SetResizable(true)
     KeyboardDialog:SetResizeBounds(200, 240, 480, 560)
     KeyboardDialog:SetClampedToScreen(true)
+
+    KeyboardDialog:SetScript("OnHide", KeyboardDialog.OnHide)
 end
 
 -- 加载键盘弹窗
@@ -665,6 +749,7 @@ local function LoadKeyboardDialog()
         CreateCloser,
         CreateResizer, 
         CreateDragger, 
+        -- 默认选中
         GenerateClosure(KeyboardDialog.SelectEmojiPack, KeyboardDialog, KeyboardDialog:GetSelectedEmojiPack())
     )
 end
@@ -674,73 +759,78 @@ end
 -- ======================================================================
 
 -- 键盘开关
+local KeyboardEnablerMinxin = {}
 
-local function OnKeyboardEnablerClick(self)
+local function OnEditBoxFocusGained(editBox)
+    editBox.KeyboardEnabler:OnEditBoxFocusGained()
+end
+
+local function OnEditBoxFocusLost(editBox)
+    editBox.KeyboardEnabler:OnEditBoxFocusLost()
+end
+
+function KeyboardEnablerMinxin:Load(editBox)
+    self.EditBox = editBox
+    editBox.KeyboardEnabler = self
+    
+    self:SetSize(24, 24)
+    self:SetNormalTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]])
+    self:GetNormalTexture():SetDesaturated(true)
+    self:SetHighlightTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]], "ADD")
+    self:SetPoint("BOTTOMRIGHT", editBox, "TOPRIGHT", -3, 0)
+
+    self:SetScript("OnClick", self.OnClick)
+    self:SetScript("OnEnter", self.OnEnter)
+    self:SetScript("OnLeave", self.OnLeave)
+
+    self:FadeIfPossible()
+end
+
+function KeyboardEnablerMinxin:OnClick()
     if not KeyboardDialog.Loaded then
         KeyboardDialog.Loaded = true
         LoadKeyboardDialog()
     end
 
     local editBox = self.EditBox
-    if not editBox then return end
-
-    if KeyboardDialog:IsShown() then
+    if KeyboardDialog:IsAttached(editBox) then
         KeyboardDialog:Detach(editBox)
     else
         KeyboardDialog:Attach(editBox)
     end
 
-    self:HideIfNeed()
+    self:FadeIfPossible()
 end
 
-local function OnKeyboardEnablerHide(self)
-    self:SetParent(self.EditBox)
+function KeyboardEnablerMinxin:OnEnter()
+    self:SetAlpha(1)
 end
 
-local function OnKeyboardEnablerLeave(self)
-    self:HideIfNeed()
+function KeyboardEnablerMinxin:OnLeave()
+    self:FadeIfPossible()
 end
 
-local function OnEditBoxFocusGained(self)
-    -- 需要改变parent，否则点击时，editbox会失去焦点，然后会跟随消失，导致无法获取到点击事件
-    self.KeyboardEnabler:SetParent(UIParent)
-    self.KeyboardEnabler:Show()
-end
-
-local function OnEditBoxFocusLost(self)
-    self.KeyboardEnabler:HideIfNeed()
-end
-
-local function CreateKeyboardEnablerForEditBox(editBox)
-    local KeyboardEnabler = CreateFrame("Button", nil, editBox)
-    editBox.KeyboardEnabler = KeyboardEnabler
-    KeyboardEnabler.EditBox = editBox
-
-    KeyboardEnabler:SetSize(24, 24)
-    KeyboardEnabler:SetNormalTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]])
-    KeyboardEnabler:GetNormalTexture():SetDesaturated(true)
-    KeyboardEnabler:SetHighlightTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]], "ADD")
-    KeyboardEnabler:SetPoint("BOTTOMRIGHT", editBox, "TOPRIGHT", -3, 0)
-
-    function KeyboardEnabler:HideIfNeed()
-        if not self.EditBox:HasFocus() and not self:IsMouseOver() then
-            self:Hide()
-        end
+function KeyboardEnablerMinxin:FadeIfPossible()
+    if not self:IsMouseOver() and not self.EditBox:HasFocus() then
+        self:SetAlpha(0)
     end
-
-    KeyboardEnabler:SetScript("OnClick", OnKeyboardEnablerClick)
-    KeyboardEnabler:SetScript("OnHide", OnKeyboardEnablerHide)
-    KeyboardEnabler:SetScript("OnLeave", OnKeyboardEnablerLeave)
-    
-    editBox:HookScript("OnEditFocusGained", OnEditBoxFocusGained)
-    editBox:HookScript("OnEditFocusLost", OnEditBoxFocusLost)
 end
 
--- 为editbox启用键盘功能
-function addon:EnableEmojiKeyboardForEditBox(editBox)
+function KeyboardEnablerMinxin:OnEditBoxFocusGained()
+    self:SetAlpha(1)
+end
+
+function KeyboardEnablerMinxin:OnEditBoxFocusLost()
+    self:FadeIfPossible()
+end
+
+-- 为ChatFrame启用键盘功能
+function addon:EnableEmojiKeyboardForChatFrame(chatFrame)
+    local editBox = chatFrame.editBox
     if editBox.KeyboardEnabler then
         return 
     end
 
-    CreateKeyboardEnablerForEditBox(editBox)
+    local KeyboardEnabler = Mixin(CreateFrame("Button", nil, chatFrame), KeyboardEnablerMinxin)
+    KeyboardEnabler:Load(editBox)
 end

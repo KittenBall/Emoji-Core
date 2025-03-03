@@ -94,7 +94,7 @@ function AutoCompleteFrame:Attach(editBox)
     self.EditBoxArrowKeyMode = editBox:GetAltArrowKeyMode()
 
     local height = self:CalcHeight(AUTOCOMPLETE_MAX_BUTTONS)
-    local top = self:GetParent():GetHeight() - editBox:GetTop()
+    local top = UIParent:GetHeight() - editBox:GetTop()
     local relativePoint = "TOP"
     local point = "BOTTOM"
     if top + 20 <= height then

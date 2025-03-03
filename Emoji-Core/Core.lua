@@ -1,6 +1,15 @@
 local addonName, addon = ...
 
 local Emojis = addon.Emojis
+local EmojiPacks = {}
+-- 短代码开始/结束
+local emojiShortcodeStartCodePoint = Emojis.ShortcodeStartCodePoint
+local emojiShortcodeCompleteCodePoint = Emojis.ShortcodeCompleteCodePoint
+local shortcodeStartDelimiter = addon.Emojis.ShortcodeStartDelimiter
+local shortcodeCompleteDelimiter = addon.Emojis.ShortcodeEndDelimiter
+-- emoji名字->unicode key
+local ShortcodesToUnicodeKey = Emojis.ShortcodesToUnicodeKey
+
 -- 最近一次解析的字符串的codepoint序列
 local codePointArray = {}
 -- 存codepoint在最近一次解析的字符串中的开始索引
@@ -52,12 +61,6 @@ local emojiInitFlag = 0
 local emojiMaybeFlag = 1
 -- emoji字符结束标志
 local emojiEndFlag = 2
-
--- 短代码开始/结束
-local emojiShortcodeStartCodePoint = Emojis.ShortcodeStartCodePoint
-local emojiShortcodeCompleteCodePoint = Emojis.ShortcodeCompleteCodePoint
--- emoji名字->unicode key
-local ShortcodesToUnicodeKey = Emojis.ShortcodesToUnicodeKey
 
 -- 将emoji替换为名字或图片
 -- @param text: 字符串
@@ -253,167 +256,57 @@ function addon:ReplaceEmojiToIcon(text)
     return self:ReplaceEmojiTo(text, "icon")
 end
 
-do
-    -- 支持频道显示
-    local CHAT_MSG_TYPES = {
-        'AFK',
-        'BATTLEGROUND_LEADER',
-        'BATTLEGROUND',
-        'CHANNEL',
-        'DND',
-        'EMOTE',
-        'GUILD',
-        'OFFICER',
-        'PARTY_LEADER',
-        'PARTY',
-        'RAID_LEADER',
-        'RAID_WARNING',
-        'RAID',
-        'SAY',
-        'WHISPER',
-        'WHISPER_INFORM',
-        'BN_WHISPER',
-        'BN_WHISPER_INFORM',
-        'YELL',
-        'INSTANCE_CHAT',
-        'INSTANCE_CHAT_LEADER'
+-- 注册emoji包
+-- emoji包必须为这样的格式
+--[[
+    {
+        Name = "packName",
+        IconDir = "Interface\\Addons\\Emoji-OpenMoji\\"
+        Icons = {
+            -- unicode key = icon path, eg:
+            ["127486_127466"] = "127486-127466.png"
+            -- etc
+        }
     }
-
-    local function replaceEmojiToIcon(chatFrame, event, text, ...)
-        return false, addon:ReplaceEmojiToIcon(text), ...
-    end
-
-    for _, msgType in pairs(CHAT_MSG_TYPES) do
-        ChatFrame_AddMessageEventFilter('CHAT_MSG_' .. msgType, replaceEmojiToIcon)
-    end
+]]--
+function addon:RegisterEmojiPack(pack)
+    self.EmojiPacks = EmojiPacks
+    tinsert(EmojiPacks, pack)
 end
 
-do
-    -- 支持输入框显示
-    for i = 1, 10 do
-        local editBox = _G["ChatFrame" .. i .. "EditBox"]
-        addon:EnableEmojiCompleterForEditBox(editBox)
-        addon:EnableEmojiKeyboardForEditBox(editBox)
-    end
-
-    local function enableEmojiFeaturesForFloatingChatFrame(chatFrame)
-        if chatFrame.editBox then
-            addon:EnableEmojiCompleterForEditBox(chatFrame.editBox)
-            addon:EnableEmojiKeyboardForEditBox(chatFrame.editBox)
-        end
-    end
-
-    hooksecurefunc(_G, "FloatingChatFrame_OnLoad", enableEmojiFeaturesForFloatingChatFrame)
-
-    if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
-        -- 公会/社区输入框
-        if C_AddOns.IsAddOnLoaded("Blizzard_Communities") then
-            addon:EnableEmojiCompleterForEditBox(CommunitiesFrame.ChatEditBox)
-            addon:EnableEmojiKeyboardForEditBox(CommunitiesFrame.ChatEditBox)
-        else
-            local function OnAddonLoaded()
-                addon:EnableEmojiCompleterForEditBox(CommunitiesFrame.ChatEditBox)
-                addon:EnableEmojiKeyboardForEditBox(CommunitiesFrame.ChatEditBox)
+-- 根据unicode key获取emoji图标
+function addon:GetEmojiIconByUnicodeKey(key, withEscapeSequences)
+    for _, pack in pairs(EmojiPacks) do
+        local iconFile = pack.Icons[key]
+        if iconFile then
+            local path = pack.IconDir .. iconFile
+            if withEscapeSequences then
+                path = "|T" .. path .. ":22|t"
             end
-            EventRegistry:ContinueOnAddOnLoaded("Blizzard_Communities", OnAddonLoaded)
+            return path
         end
     end
 end
 
-do
-    -- 支持输入法显示
-    local function replaceIMEEmojiToIcon(self)
-        for i = 1, 9 do
-            local candidate = self["c" .. i].candidate
-            candidate:SetText(addon:ReplaceEmojiToIcon(candidate:GetText()))
-        end
-    end
+-- 根据unicode key获取emoji短代码
+-- @param shortcodeDelimiter 短代码分隔符 left, right, all or nil
+function addon:GetEmojiShortcodeByUnicodeKey(key, shortcodeDelimiter)
+    if not key then return end
 
-    IMECandidatesFrame.EmojiTimer = 0
-    IMECandidatesFrame:HookScript("OnUpdate", function(self, elapsed)
-        self.EmojiTimer = self.EmojiTimer + elapsed
-        if self.EmojiTimer > 0.2 then
-            self.EmojiTimer = 0
-            replaceIMEEmojiToIcon(self)
-        end
-    end)
+    local emoji = Emojis[key]
+    local shortcode = emoji and emoji.Shortcodes[1] or nil
+    return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
 end
 
-do
-    -- 支持聊天气泡
-    local frame = CreateFrame("Frame")
-    frame.taskEndTime = 0
-    frame.timer = 0
-    frame:Hide()
-
-    local function replaceChatBubbleEmojiToIcon(self, elpased)
-        if GetTime() > self.taskEndTime then
-            self:Hide()
-            return
-        end
-
-        self.timer = self.timer + elpased
-        if self.timer > 0.1 then
-            self.timer = 0
-            local chatBubbles = C_ChatBubbles.GetAllChatBubbles()
-            for _, chatBubble in ipairs(chatBubbles) do
-                local child = chatBubble:GetChildren()
-                if child and child.String then
-                    local fontString = child.String
-                    fontString:SetText(addon:ReplaceEmojiToIcon(fontString:GetText()))
-                end
-            end
-        end
+function addon:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
+    if not shortcode then return end
+    if shortcodeDelimiter == "left" then
+        return shortcodeStartDelimiter .. shortcode
+    elseif shortcodeDelimiter == "right" then
+        return shortcode .. shortcodeCompleteDelimiter
+    elseif shortcodeDelimiter == "all" then
+        return shortcodeStartDelimiter .. shortcode .. shortcodeCompleteDelimiter
+    else
+        return shortcode
     end
-
-    frame:SetScript("OnUpdate", replaceChatBubbleEmojiToIcon)
-
-    local function startChatBubbleTask()
-        frame.taskEndTime = GetTime() + 2
-        frame:Show()
-    end
-
-    local function stopChatBubbleTask()
-        frame:Hide()
-    end
-
-    local function enableOrDisableChatBubble()
-        local chatBubbles = C_CVar.GetCVarBool("chatBubbles")
-		local chatBubblesParty = C_CVar.GetCVarBool("chatBubblesParty")
-        local isInInstance = IsInInstance()
-        if isInInstance then
-            stopChatBubbleTask()
-            EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_YELL", startChatBubbleTask)
-            EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_SAY", startChatBubbleTask)
-            EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_PARTY", startChatBubbleTask)
-            EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_PARTY_LEADER", startChatBubbleTask)
-        else
-            if chatBubbles then
-                EventRegistry:RegisterFrameEventAndCallback("CHAT_MSG_YELL", startChatBubbleTask)
-                EventRegistry:RegisterFrameEventAndCallback("CHAT_MSG_SAY", startChatBubbleTask)
-            else
-                stopChatBubbleTask()
-                EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_YELL", startChatBubbleTask)
-                EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_SAY", startChatBubbleTask)
-            end
-            
-            if chatBubblesParty then
-                EventRegistry:RegisterFrameEventAndCallback("CHAT_MSG_PARTY", startChatBubbleTask)
-                EventRegistry:RegisterFrameEventAndCallback("CHAT_MSG_PARTY_LEADER", startChatBubbleTask)
-            else
-                stopChatBubbleTask()
-                EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_PARTY", startChatBubbleTask)
-                EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_PARTY_LEADER", startChatBubbleTask)
-            end
-        end
-    end
-
-    local function onCVarUpdate(_, eventName, value)
-        if eventName == "chatBubbles" or eventName == "chatBubblesParty" then
-            enableOrDisableChatBubble()
-        end
-    end
-
-    EventRegistry:RegisterFrameEventAndCallback("PLAYER_ENTERING_WORLD", enableOrDisableChatBubble)
-    EventRegistry:RegisterFrameEventAndCallback("CVAR_UPDATE", onCVarUpdate)
 end

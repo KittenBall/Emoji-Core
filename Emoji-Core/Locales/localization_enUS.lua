@@ -8,7 +8,6 @@ if not L then return end
 L["auto_complete_keyboard_press_tips"] = "Press space or number"
 L["keyboard_emoji_pack_recent"] = "Recent"
 L["keyboard_emoji_pack_recent_sub_group_recent"] = "Recent"
-L["keyboard_emoji_pack_recent_sub_group_frequent"] = "Frequent"
 L["keyboard_emoji_pack_emoji"] = "Emoji"
 L["keyboard_group_format"] = "%s(%d)"
 L["keyboard_group_subgroup_count_title"] = "Subgroup count:"

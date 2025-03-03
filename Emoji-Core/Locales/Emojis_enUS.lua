@@ -4,6 +4,7 @@ if GetLocale() ~= "enUS" then return end
 
 addon.Emojis = {
 	Popular = {
+		Name = "Popular",
 		EmojiCount = 133,
 		"128514",
 		"10084_65039",
