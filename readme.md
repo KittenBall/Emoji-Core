@@ -13,11 +13,11 @@ This addon is designed to display emojis in the game.
 *   Chat bubbles display emojis.
 *   Emoji auto complete
 *   Support synonym suggestions.
+*   Emoji keyboard.
 
 #### Features under development
 
 *   Management of emoji image packs. This will allow you to use different emoji image packs for replacement display.
-*   Emoji keyboard.
 
 #### Emoji Pack
 
