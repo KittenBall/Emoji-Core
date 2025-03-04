@@ -208,7 +208,11 @@ EmojiKeyboardGroupItemMixin = {}
 
 function EmojiKeyboardGroupItemMixin:Update()
     local data = self:GetElementData():GetData()
-    self.Label:SetText(L["keyboard_group_format"]:format(data.Title, data.EmojiCount))
+    if data.EmojiCount then
+        self.Label:SetText(L["keyboard_group_format"]:format(data.Title, data.EmojiCount))
+    else
+        self.Label:SetText(L["keyboard_group_format"])
+    end
     local color = data.IsGroup and NORMAL_FONT_COLOR or WHITE_FONT_COLOR
     self.Label:SetTextColor(color:GetRGB())
 end
@@ -222,18 +226,18 @@ end
 
 EmojiKeyboardEmojiItemButtonMixin = {}
 
-function EmojiKeyboardEmojiItemButtonMixin:Update(key, emoji)
-    self.EmojiKey = key
-    self.Emoji = emoji
+function EmojiKeyboardEmojiItemButtonMixin:Update(data)
+    self.Data = data
 
-    local emoji = addon:GetEmojiIconByUnicodeKey(key) or UNKNOWN_EMOJI
+    local emoji = addon:GetEmojiIconByUnicodeKey(data.Key) or UNKNOWN_EMOJI
     self:SetNormalTexture(emoji)
 end
 
 function EmojiKeyboardEmojiItemButtonMixin:OnEnter()
-    local emoji = self.Emoji
-    if not emoji then return end
+    local data = self.Data
+    if not data then return end
 
+    local emoji = data.Emoji
     GameTooltip:SetOwner(self)
     GameTooltip:AddLine(emoji.Name)
     GameTooltip_AddBlankLinesToTooltip(GameTooltip, 1)
@@ -252,7 +256,7 @@ function EmojiKeyboardEmojiItemButtonMixin:OnLeave()
 end
 
 function EmojiKeyboardEmojiItemButtonMixin:OnClick()
-    KeyboardDialog:HandleEmojiPressed(self.EmojiKey, self.Emoji)
+    KeyboardDialog:HandleEmojiPressed(self.Data)
 end
 
 EmojiKeyboardEmojiItemMixin = {}
@@ -287,18 +291,14 @@ function EmojiKeyboardEmojiItemMixin:Update()
     local width, height = self:GetSize()
     local iconHorizontalSpace = (width - KeyboardEmojiIconSize * column) / (column + 1)
     local iconVerticalSpace = (height - KeyboardEmojiIconSize) / 2
-    local emojiCount = data.EmojiCount
+    local emojiCount = data.Count
 
     for i = 1, max(#self.Buttons, emojiCount) do
         if i <= emojiCount then
             local button = self:GetOrCreateButton(i)
 
-            local pack = data.Pack
-            local group = data.Group
-            local key = group[data.EmojiIndex + i - 1]
-            local emoji = pack:GetEmoji(key)
-
-            button:Update(key, emoji)
+            local emojiData = self[i]
+            button:Update(emojiData)
             button:ClearAllPoints()
             button:SetSize(KeyboardEmojiIconSize, KeyboardEmojiIconSize)
             button:SetPoint("TOP", self, "TOP", 0, -iconVerticalSpace)
@@ -451,7 +451,91 @@ end
 -- ======================================================================
 
 do
-    -- 获取分组：最近使用
+    -- ======================================================================
+    -- ============================== Packs =================================
+    -- ======================================================================
+
+    -- 表情包：最近 永远在第一个
+    local RECENT_PACK_INDEX = 1
+
+    local Packs = {
+        SelectedIndex = RECENT_PACK_INDEX,
+        SearchIndexes = {}
+    }
+
+    -- 添加表情包
+    function Packs:AddPack(pack)
+        table.insert(self, pack)
+    end
+
+    function Packs:AddPacks(...)
+        local count = select("#", ...)
+        for index = 1, count do
+            local value = select(index, ...)
+            table.insert(self, value)
+        end
+        self:UpdateSearchIndexes()
+    end
+
+    -- 更新搜索索引
+    function Packs:UpdateSearchIndexes()
+        local searchIndexes = self.SearchIndexes
+        local selectedIndex = self.SelectedIndex
+
+        if selectedIndex ~= RECENT_PACK_INDEX then
+            table.insert(searchIndexes, selectedIndex)
+        end
+
+        local count = #self
+        for i = 1, count do
+            if i ~= selectedIndex and i ~= RECENT_PACK_INDEX then
+                table.insert(searchIndexes, i)
+            end
+        end
+    end
+
+    -- 获取搜索索引
+    function Packs:GetSearchIndexes()
+        return self.SearchIndexes
+    end
+
+    -- 获取index对应的需要搜索的表情包
+    function Packs:GetSearchPack(index)
+        local packIndex = self.SearchIndexes[index]
+        return packIndex and self[packIndex]
+    end
+
+    function Packs:GetSelectedPack()
+        return self[self.SelectedIndex]
+    end
+
+    function Packs:SetSelectedPack(pack)
+        local index
+        local count = #self
+        for i = 1, count do
+            local p = self[i]
+            if p.Name == pack.Name then
+                index = i
+                break
+            end
+        end
+
+        if index == nil then
+            index = 1
+        elseif index <= 0 then
+            index = 1
+        elseif index > count then
+            index = count
+        end
+    
+        self.SelectedIndex = index
+    end
+    
+    -- ======================================================================
+    -- =============================== Pack =================================
+    -- ======================================================================
+
+    -- recent pack: 最近使用
     local function GetRecentSubGroup()
         local group = { Name = L["keyboard_emoji_pack_recent_sub_group_recent"] }
         
@@ -500,36 +584,8 @@ do
         end
     }
 
-    local Packs = {
-        recentPack,
-        emojiPack,
-        SelectedIndex = 1
-    }
-
-    function Packs:GetSelectedPack()
-        return self[self.SelectedIndex]
-    end
-
-    function Packs:SetSelectedPack(pack)
-        local index
-        for i, p in ipairs(self) do
-            if p.Name == pack.Name then
-                index = i
-                break
-            end
-        end
-
-        local count = #self
-        if index == nil then
-            index = 1
-        elseif index <= 0 then
-            index = 1
-        elseif index > count then
-            index = count
-        end
-    
-        self.SelectedIndex = index
-    end
+    Packs:AddPack(recentPack)
+    Packs:AddPack(emojiPack)
 
     KeyboardDialog.EmojiPacks = Packs
 end
@@ -537,6 +593,107 @@ end
 -- ======================================================================
 -- ==================== Emoji Keyborad Dialog ===========================
 -- ======================================================================
+
+-- emoji表情包键盘刷新
+local function OnEmojiKeyboardUpdate(self)
+    local pack = self:GetSelectedEmojiPack()
+    if not pack then
+        self:StopUpdateTask()
+        return
+    end
+
+    local dataProvider = pack.KeyboardDataProvider
+    if dataProvider.Completed then
+        self:StopUpdateTask()
+        return
+    end
+
+    local groupInfo = pack.Dynamic and pack:GetGroupInfo() or pack.GroupInfo
+
+    local groupIndex = dataProvider.UpdateGroupIndex
+    local subGroupIndex = dataProvider.UpdateSubGroupIndex
+    local emojiIndex = dataProvider.UpdateEmojiIndex
+
+    local pendingGroupNode = dataProvider.PendingGroupNode
+    local pendingSubGroupNode = dataProvider.PendingSubGroupNode 
+    local pendingEmojiNodeData = dataProvider.PendingEmojiNodeData
+
+    -- 每一帧，我们只显示一行
+    local foundRow = 0
+    while foundRow < 1  do
+        if groupIndex > groupInfo.GroupCount then
+            dataProvider.Completed = true
+            pendingGroupNode = nil
+        else
+            local group = groupInfo[groupIndex]
+
+            if dataProvider.ShowGroup then
+                if pendingGroupNode and pendingGroupNode:GetData().GroupIndex ~= groupIndex then
+                    -- 换Group了，group置nil
+                    pendingGroupNode = nil
+                end
+                if not pendingGroupNode then
+                    -- 对于keyboard键盘，group和subgroup在列表中实际上是同级的，即：无法collapse
+                    pendingGroupNode = dataProvider:Insert({ IsGroup = true, GroupIndex = groupIndex, Title = group.Name, EmojiCount = group.EmojiCount })
+                end
+            end
+
+            if subGroupIndex > group.SubGroupCount then
+                groupIndex = groupIndex + 1
+                subGroupIndex = 1
+                emojiIndex = 1
+
+                -- 换Group了，subGroup置nil
+                pendingSubGroupNode = nil
+            else
+                local subGroup = group[subGroupIndex]
+
+                if pendingSubGroupNode and pendingSubGroupNode:GetData().SubGroupIndex ~= subGroupIndex then
+                    -- 换SubGroup了， subGroup置nil
+                    pendingSubGroupNode = nil
+                end
+
+                if not pendingSubGroupNode then
+                    pendingSubGroupNode = dataProvider:Insert({ IsSubGroup = true, GroupIndex = groupIndex, SubGroupIndex = subGroupIndex, Title = subGroup.Name, EmojiCount = subGroup.EmojiCount })
+                end
+
+                if emojiIndex > subGroup.EmojiCount then
+                    subGroupIndex = subGroupIndex + 1
+                    emojiIndex = 1
+
+                    -- 换SubGroup了 emojiNodeData置nil
+                    if pendingEmojiNodeData then
+                        pendingSubGroupNode:Insert(pendingEmojiNodeData)
+                    end
+
+                    pendingEmojiNodeData = nil
+                else
+                    local emojiKey = subGroup[emojiIndex]
+                    emojiIndex = emojiIndex + 1
+
+                    local emoji = pack:GetEmoji(emojiKey)
+                    
+                    if not pendingEmojiNodeData then
+                        pendingEmojiNodeData = { Count = 0, Column = dataProvider.Column }
+                    end
+
+                    pendingEmojiNodeData.Count = pendingEmojiNodeData.Count + 1
+                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Emoji = emoji }
+
+                    if pendingEmojiNodeData.Count == dataProvider.Column then
+                        foundRow = foundRow + 1
+                        pendingSubGroupNode:Insert(pendingEmojiNodeData)
+                        pendingEmojiNodeData = nil
+                    end
+                end
+            end
+        end
+    end
+
+    dataProvider.PendingGroupNode = pendingGroupNode
+    dataProvider.PendingSubGroupNode = pendingSubGroupNode
+    dataProvider.PendingEmojiNodeData = pendingEmojiNodeData
+end
 
 -- 刷新emoji表情包键盘
 function KeyboardDialog:RefreshEmojiPackKeyBoard()
@@ -590,53 +747,163 @@ function KeyboardDialog:RefreshEmojiPackKeyBoard()
         dataProvider = CreateTreeDataProvider()
         pack.KeyboardDataProvider = dataProvider
         dataProvider.Column = column
-
-        -- 由于是新建的DataProvider，所以不会一直触发刷新
-        for i = 1, groupCount do
-            local group = groupInfo[i]
-
-            if showGroupList then
-                dataProvider:Insert({ IsGroup = true, GroupIndex = i, Title = group.Name, EmojiCount = group.EmojiCount })
-            end
-    
-            for j = 1, group.SubGroupCount do
-                local subGroup = group[j]
-                
-                local groupNode
-                if subGroup.Name then
-                    groupNode = dataProvider:Insert({ IsSubGroup = true, GroupIndex = i, SubGroupIndex = j, Title = subGroup.Name, EmojiCount = subGroup.EmojiCount })
-                else
-                    groupNode = dataProvider
-                end
-    
-                for k = 1, subGroup.EmojiCount, column do
-                    local count = min(column, subGroup.EmojiCount - k + 1)
-                    groupNode:Insert({ Pack = pack, Group = subGroup, EmojiIndex = k, EmojiCount = count, Column = column })
-                end
-            end
-        end
+        dataProvider.ShowGroup = showGroupList
+        dataProvider.UpdateGroupIndex = 1
+        dataProvider.UpdateSubGroupIndex = 1
+        dataProvider.UpdateEmojiIndex = 1
+        dataProvider.PendingGroupNode = nil
+        dataProvider.PendingSubGroupNode = nil
+        dataProvider.PendingEmojiNodeData = nil
     end
 
     if dataProvider ~= Keyboard:GetDataProvider() then
         Keyboard:SetDataProvider(dataProvider)
     end
+    self:StartUpdateTask(OnEmojiKeyboardUpdate)
+end
+
+-- 搜索键盘刷新
+local function OnSearchKeyboardUpdate(self)
+    local dataProvider = self.SearchDataProvider
+    if not dataProvider or dataProvider.Completed then
+        self:StopUpdateTask()
+        return
+    end
+
+    local pack = self.EmojiPacks:GetSearchPack(dataProvider.SearchPackIndex)
+    if not pack then
+        self:StopUpdateTask()
+        return
+    end
+
+    local groupInfo = pack.Dynamic and pack:GetGroupInfo() or pack.GroupInfo
+    if not groupInfo then
+        dataProvider.SearchPackIndex = dataProvider.SearchPackIndex + 1
+        return 
+    end
+
+    local searchText = self.SearchText
+
+    local groupIndex = dataProvider.SearchPackGroupIndex
+    local subGroupIndex = dataProvider.SearchPackSubGroupIndex
+    local emojiIndex = dataProvider.SearchPackEmojiIndex
+
+    local pendingPackNode = dataProvider.PendingPackNode 
+    local pendingEmojiNodeData = dataProvider.PendingEmojiNodeData
+    
+    if pendingPackNode and pendingPackNode:GetData().Title ~= pack.Name then
+        -- 换pack了
+        if pendingEmojiNodeData then
+            pendingPackNode:Insert(pendingEmojiNodeData)
+            pendingEmojiNodeData = nil
+        end
+
+        pendingPackNode = nil
+    end
+
+    -- 搜索时，我们每帧只匹配100个，或只添加一行
+    -- 因为TreeListDataProvider不支持批量添加
+    -- 尽管我们自己很容易实现这个，但意义不大
+    local matchedCount = 0
+    local foundRow = 0
+    while matchedCount < 100 and foundRow < 1  do
+        if groupIndex > groupInfo.GroupCount then
+            dataProvider.SearchPackIndex = dataProvider.SearchPackIndex + 1
+            return
+        end
+
+        local group = groupInfo[groupIndex]
+        
+        if subGroupIndex > group.SubGroupCount then
+            groupIndex = groupIndex + 1
+            subGroupIndex = 1
+            emojiIndex = 1
+        else
+            local subGroup = group[subGroupIndex]
+            
+            if emojiIndex > subGroup.EmojiCount then
+                subGroupIndex = subGroupIndex + 1
+                emojiIndex = 1
+            else
+                matchedCount = matchedCount + 1
+
+                local emojiKey = subGroup[emojiIndex]
+                emojiIndex = emojiIndex + 1
+                
+                local match = false
+                local emoji = pack:GetEmoji(emojiKey)
+                if emoji.Name:match(searchText) then
+                    match = true
+                else
+                    for _, shortcode in ipairs(emoji.Shortcodes) do
+                        if shortcode:match(searchText) then
+                            match = true
+                            break
+                        end
+                    end
+                end
+
+                if match then
+                    if not pendingPackNode then
+                        pendingPackNode = dataProvider:Insert({ IsSubGroup = true, Title = pack.Name })
+                    end
+
+                    if not pendingEmojiNodeData then
+                        pendingEmojiNodeData = { Count = 0, Column = dataProvider.Column }
+                    end
+
+                    pendingEmojiNodeData.Count = pendingEmojiNodeData.Count + 1
+                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Emoji = emoji }
+
+                    if pendingEmojiNodeData.Count == dataProvider.Column then
+                        foundRow = foundRow + 1
+                        pendingPackNode:Insert(pendingEmojiNodeData)
+                        pendingEmojiNodeData = nil
+                    end
+                end
+            end
+        end
+    end
+
+    dataProvider.SearchPackGroupIndex = groupIndex
+    dataProvider.SearchPackSubGroupIndex = subGroupIndex
+    dataProvider.SearchPackEmojiIndex = emojiIndex
+    dataProvider.PendingPackNode = pendingPackNode
+    dataProvider.PendingEmojiNodeData = pendingEmojiNodeData
 end
 
 -- 刷新搜索键盘
 function KeyboardDialog:RefreshSearchKeyBoard()
     self:SetEmojiGroupListShown(false)
-    print("RefreshSearchKeyBoard")
+    
+    local keyboardWidth = self.Keyboard:GetWidth()
+    local padding = self.Keyboard:GetPadding()
+    local usableWidth = keyboardWidth - padding:GetLeft() - padding:GetRight()
+    local column = floor(usableWidth / (KeyboardEmojiIconSize + 10))
+    self.SearchDataProvider:Flush()
+    self.SearchDataProvider.Column = column
+
     self.Keyboard:SetDataProvider(self.SearchDataProvider)
+    self:StartUpdateTask(OnSearchKeyboardUpdate)
 end
 
 -- 刷新键盘
 function KeyboardDialog:RefreshKeyBoard()
-    print("RefreshKeyBoard", self:IsSearching())
     if self:IsSearching() then
         self:RefreshSearchKeyBoard()
     else
         self:RefreshEmojiPackKeyBoard()
     end
+end
+
+-- 开始分帧任务
+function KeyboardDialog:StartUpdateTask(task)
+    self:SetScript("OnUpdate", task)
+end
+
+-- 停止分帧任务
+function KeyboardDialog:StopUpdateTask()
+    self:SetScript("OnUpdate", nil)
 end
 
 -- 设置emoji组是否显示
@@ -735,8 +1002,10 @@ function KeyboardDialog:Detach(chatFrame)
 end
 
 -- 处理表情输入
-function KeyboardDialog:HandleEmojiPressed(emojiKey, emoji)
-    if not emojiKey or not emoji then return end
+function KeyboardDialog:HandleEmojiPressed(data)
+    if not data then return end
+
+    local emoji = data.Emoji
 
     local chatFrame = self.ChatFrame
     local shortcode = addon:WrapperShortcodeWithDelimiter(emoji.Shortcodes[1], "all")
@@ -753,7 +1022,7 @@ function KeyboardDialog:HandleEmojiPressed(emojiKey, emoji)
         editBox:SetFocus()
     end
 
-    addon:AddRecentEmoji(emojiKey)
+    addon:AddRecentEmoji(data.Key)
 end
 
 -- 是否正在搜索
@@ -767,7 +1036,6 @@ function KeyboardDialog:OnSearchTextChanged(userInput)
     if searchBox:IsInIMECompositionMode() then return end
 
     local text = searchBox:GetText()
-    print("OnSearchTextChanged", text)
     if text and text ~= "" then
         self:StartSearch(text)
     else
@@ -775,20 +1043,11 @@ function KeyboardDialog:OnSearchTextChanged(userInput)
     end
 end
 
--- 每帧刷新
-function KeyboardDialog:OnUpdate()
-    local pack = self:GetSelectedEmojiPack()
-    local groupInfo = pack.Dynamic and pack:GetGroupInfo() or pack.GroupInfo
-    if not groupInfo then return end
-end
-
 -- 开始搜索
 function KeyboardDialog:StartSearch(searchText)
     if not searchText or searchText == self.SearchText then return end
     print("Start search", searchText)
 
-    self.SearchText = searchText
-    
     local dataProvider = self.SearchDataProvider
     if not dataProvider then
         dataProvider = CreateTreeDataProvider()
@@ -796,15 +1055,22 @@ function KeyboardDialog:StartSearch(searchText)
     end
     dataProvider:Flush()
 
-    self:SetScript("OnUpdate", self.OnUpdate)
+    -- 重置搜索参数
+    self.SearchText = searchText:gsub("%p", function(char) return "%" .. char end):lower()
+    dataProvider.SearchPackIndex = 1
+    dataProvider.SearchPackGroupIndex = 1
+    dataProvider.SearchPackSubGroupIndex = 1
+    dataProvider.SearchPackEmojiIndex = 1
+    dataProvider.PendingPackNode = nil
+    dataProvider.PendingEmojiNodeData = nil
+
     self:RefreshKeyBoard()
 end
 
 -- 停止搜索
 function KeyboardDialog:StopSearch()
-    self:SetScript("OnUpdate", nil)
+    print("Stop search")
     self.SearchText = nil
-
     self:RefreshKeyBoard()
 end
 

@@ -24,4 +24,4 @@ This addon is designed to display emojis in the game.
 *   Currently, the addon comes with an emoji image pack that uses [Google-Noto](https://github.com/googlefonts/noto-emoji), which supports up to Unicode 16.0.
 *   In the future, emoji image packs from more different platforms will be added.
 
-If you have any thoughts, feel free to join the discussion on [Discord!](https://discord.gg/NsB9RywS)
+If you have any thoughts, feel free to join the discussion on [Discord!](https://discord.gg/tggYseqA)
