@@ -52,6 +52,8 @@ local function CreateSearchBox()
     searchBox:SetPoint("TOP", KeyboardDialog.EmojiPackList, "BOTTOM", 0, -3)
     searchBox:SetPoint("LEFT", 20, 0)
     searchBox:SetPoint("RIGHT", -16, 0)
+    
+    searchBox:HookScript("OnTextChanged", function(self, userInput) KeyboardDialog:OnSearchTextChanged(userInput) end)
 end
 
 -- 创建分割线
@@ -548,13 +550,9 @@ function KeyboardDialog:RefreshEmojiPackKeyBoard()
     local groupCount = groupInfo.GroupCount
     local showGroupList = groupCount > 1
 
-    Keyboard:ClearPoint("BOTTOM")
+    self:SetEmojiGroupListShown(showGroupList)
 
     if showGroupList then
-        EmojiGroupList:Show()
-        EmojiGroupList.Divider:Show()
-        Keyboard:SetPoint("BOTTOM", KeyboardDialog.EmojiGroupList, "TOP", 0, 10)
-
         -- 显示组列表
         local dataProvider = pack.GroupDataProvider
         if not dataProvider then
@@ -580,10 +578,6 @@ function KeyboardDialog:RefreshEmojiPackKeyBoard()
         if dataProvider ~= EmojiGroupList:GetDataProvider() then
             EmojiGroupList:SetDataProvider(dataProvider)
         end
-    else
-        EmojiGroupList:Hide()
-        EmojiGroupList.Divider:Hide()
-        Keyboard:SetPoint("BOTTOM", 0, 10)
     end
 
     local keyboardWidth = Keyboard:GetWidth()
@@ -628,9 +622,38 @@ function KeyboardDialog:RefreshEmojiPackKeyBoard()
     end
 end
 
+-- 刷新搜索键盘
+function KeyboardDialog:RefreshSearchKeyBoard()
+    self:SetEmojiGroupListShown(false)
+    print("RefreshSearchKeyBoard")
+    self.Keyboard:SetDataProvider(self.SearchDataProvider)
+end
+
 -- 刷新键盘
 function KeyboardDialog:RefreshKeyBoard()
-    self:RefreshEmojiPackKeyBoard()
+    print("RefreshKeyBoard", self:IsSearching())
+    if self:IsSearching() then
+        self:RefreshSearchKeyBoard()
+    else
+        self:RefreshEmojiPackKeyBoard()
+    end
+end
+
+-- 设置emoji组是否显示
+function KeyboardDialog:SetEmojiGroupListShown(show)
+    local Keyboard = self.Keyboard
+    local EmojiGroupList = self.EmojiGroupList
+
+    Keyboard:ClearPoint("BOTTOM")
+    if show then
+        EmojiGroupList:Show()
+        EmojiGroupList.Divider:Show()
+        Keyboard:SetPoint("BOTTOM", EmojiGroupList, "TOP", 0, 10)
+    else
+        EmojiGroupList:Hide()
+        EmojiGroupList.Divider:Hide()
+        Keyboard:SetPoint("BOTTOM", 0, 10)
+    end
 end
 
 function KeyboardDialog:SelectEmojiPack(pack)
@@ -733,18 +756,56 @@ function KeyboardDialog:HandleEmojiPressed(emojiKey, emoji)
     addon:AddRecentEmoji(emojiKey)
 end
 
+-- 是否正在搜索
+function KeyboardDialog:IsSearching()
+    return self.SearchText ~= nil
+end
+
+function KeyboardDialog:OnSearchTextChanged(userInput)
+    if not userInput then return end
+    local searchBox = self.SearchBox
+    if searchBox:IsInIMECompositionMode() then return end
+
+    local text = searchBox:GetText()
+    print("OnSearchTextChanged", text)
+    if text and text ~= "" then
+        self:StartSearch(text)
+    else
+        self:StopSearch()
+    end
+end
+
 -- 每帧刷新
 function KeyboardDialog:OnUpdate()
+    local pack = self:GetSelectedEmojiPack()
+    local groupInfo = pack.Dynamic and pack:GetGroupInfo() or pack.GroupInfo
+    if not groupInfo then return end
 end
 
 -- 开始搜索
-function KeyboardDialog:StartSearch()
-    self.SetScript("OnUpdate", self.OnUpdate)
+function KeyboardDialog:StartSearch(searchText)
+    if not searchText or searchText == self.SearchText then return end
+    print("Start search", searchText)
+
+    self.SearchText = searchText
+    
+    local dataProvider = self.SearchDataProvider
+    if not dataProvider then
+        dataProvider = CreateTreeDataProvider()
+        self.SearchDataProvider = dataProvider
+    end
+    dataProvider:Flush()
+
+    self:SetScript("OnUpdate", self.OnUpdate)
+    self:RefreshKeyBoard()
 end
 
 -- 停止搜索
 function KeyboardDialog:StopSearch()
-    self.SetScript("OnUpdate", nil)
+    self:SetScript("OnUpdate", nil)
+    self.SearchText = nil
+
+    self:RefreshKeyBoard()
 end
 
 -- 创建弹窗
