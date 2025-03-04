@@ -211,7 +211,7 @@ function EmojiKeyboardGroupItemMixin:Update()
     if data.EmojiCount then
         self.Label:SetText(L["keyboard_group_format"]:format(data.Title, data.EmojiCount))
     else
-        self.Label:SetText(L["keyboard_group_format"])
+        self.Label:SetText(data.Title)
     end
     local color = data.IsGroup and NORMAL_FONT_COLOR or WHITE_FONT_COLOR
     self.Label:SetTextColor(color:GetRGB())
@@ -245,9 +245,16 @@ function EmojiKeyboardEmojiItemButtonMixin:OnEnter()
     for _, shortcode in ipairs(emoji.Shortcodes) do
         GameTooltip:AddDoubleLine(L["keyboard_emoji_shortcode_title"], shortcode, nil, nil, nil, 1, 1, 1)
     end
+
     if emoji.Variants then
         GameTooltip:AddDoubleLine(L["keyboard_emoji_variants_number_title"], #emoji.Variants, nil, nil, nil, 1, 1, 1)
     end
+
+    GameTooltip_AddBlankLinesToTooltip(GameTooltip, 1)
+    for _, keyword in ipairs(emoji.Keywords) do
+        GameTooltip:AddDoubleLine(L["keyboard_emoji_keyword_title"], keyword, nil, nil, nil, 1, 1, 1)
+    end
+
     GameTooltip:Show()
 end
 
@@ -297,7 +304,7 @@ function EmojiKeyboardEmojiItemMixin:Update()
         if i <= emojiCount then
             local button = self:GetOrCreateButton(i)
 
-            local emojiData = self[i]
+            local emojiData = data[i]
             button:Update(emojiData)
             button:ClearAllPoints()
             button:SetSize(KeyboardEmojiIconSize, KeyboardEmojiIconSize)
@@ -466,6 +473,7 @@ do
     -- 添加表情包
     function Packs:AddPack(pack)
         table.insert(self, pack)
+        self:UpdateSearchIndexes()
     end
 
     function Packs:AddPacks(...)
@@ -481,6 +489,7 @@ do
     function Packs:UpdateSearchIndexes()
         local searchIndexes = self.SearchIndexes
         local selectedIndex = self.SelectedIndex
+        table.wipe(searchIndexes)
 
         if selectedIndex ~= RECENT_PACK_INDEX then
             table.insert(searchIndexes, selectedIndex)
@@ -624,6 +633,7 @@ local function OnEmojiKeyboardUpdate(self)
         if groupIndex > groupInfo.GroupCount then
             dataProvider.Completed = true
             pendingGroupNode = nil
+            break
         else
             local group = groupInfo[groupIndex]
 
@@ -689,6 +699,10 @@ local function OnEmojiKeyboardUpdate(self)
             end
         end
     end
+
+    dataProvider.UpdateGroupIndex = groupIndex
+    dataProvider.UpdateSubGroupIndex = subGroupIndex
+    dataProvider.UpdateEmojiIndex = emojiIndex
 
     dataProvider.PendingGroupNode = pendingGroupNode
     dataProvider.PendingSubGroupNode = pendingSubGroupNode
@@ -770,7 +784,31 @@ local function OnSearchKeyboardUpdate(self)
         return
     end
 
+    --这里传的是搜索的包的索引
+    --第1个需要搜索的表情包为当前表情包
+    --其维护在Packs内
     local pack = self.EmojiPacks:GetSearchPack(dataProvider.SearchPackIndex)
+    
+
+    local searchText = self.SearchText
+
+    local groupIndex = dataProvider.SearchPackGroupIndex
+    local subGroupIndex = dataProvider.SearchPackSubGroupIndex
+    local emojiIndex = dataProvider.SearchPackEmojiIndex
+
+    local pendingPackNode = dataProvider.PendingPackNode 
+    local pendingEmojiNodeData = dataProvider.PendingEmojiNodeData
+    
+    if not pack or (pendingPackNode and pendingPackNode:GetData().Title ~= pack.Name) then
+        -- 换pack了
+        if pendingEmojiNodeData then
+            pendingPackNode:Insert(pendingEmojiNodeData)
+            pendingEmojiNodeData = nil
+        end
+
+        pendingPackNode = nil
+    end
+
     if not pack then
         self:StopUpdateTask()
         return
@@ -782,34 +820,15 @@ local function OnSearchKeyboardUpdate(self)
         return 
     end
 
-    local searchText = self.SearchText
-
-    local groupIndex = dataProvider.SearchPackGroupIndex
-    local subGroupIndex = dataProvider.SearchPackSubGroupIndex
-    local emojiIndex = dataProvider.SearchPackEmojiIndex
-
-    local pendingPackNode = dataProvider.PendingPackNode 
-    local pendingEmojiNodeData = dataProvider.PendingEmojiNodeData
-    
-    if pendingPackNode and pendingPackNode:GetData().Title ~= pack.Name then
-        -- 换pack了
-        if pendingEmojiNodeData then
-            pendingPackNode:Insert(pendingEmojiNodeData)
-            pendingEmojiNodeData = nil
-        end
-
-        pendingPackNode = nil
-    end
-
-    -- 搜索时，我们每帧只匹配100个，或只添加一行
+    -- 搜索时，我们每帧只匹配80个，或只添加一行
     -- 因为TreeListDataProvider不支持批量添加
     -- 尽管我们自己很容易实现这个，但意义不大
     local matchedCount = 0
     local foundRow = 0
-    while matchedCount < 100 and foundRow < 1  do
+    while matchedCount < 50 and foundRow < 1  do
         if groupIndex > groupInfo.GroupCount then
             dataProvider.SearchPackIndex = dataProvider.SearchPackIndex + 1
-            return
+            break
         end
 
         local group = groupInfo[groupIndex]
@@ -818,6 +837,7 @@ local function OnSearchKeyboardUpdate(self)
             groupIndex = groupIndex + 1
             subGroupIndex = 1
             emojiIndex = 1
+            
         else
             local subGroup = group[subGroupIndex]
             
@@ -839,6 +859,15 @@ local function OnSearchKeyboardUpdate(self)
                         if shortcode:match(searchText) then
                             match = true
                             break
+                        end
+                    end
+                    
+                    if not match then
+                        for _, keyword in ipairs(emoji.Keywords) do
+                            if keyword:match(searchText) then
+                                match = true
+                                break
+                            end
                         end
                     end
                 end
@@ -1031,7 +1060,6 @@ function KeyboardDialog:IsSearching()
 end
 
 function KeyboardDialog:OnSearchTextChanged(userInput)
-    if not userInput then return end
     local searchBox = self.SearchBox
     if searchBox:IsInIMECompositionMode() then return end
 
@@ -1046,7 +1074,6 @@ end
 -- 开始搜索
 function KeyboardDialog:StartSearch(searchText)
     if not searchText or searchText == self.SearchText then return end
-    print("Start search", searchText)
 
     local dataProvider = self.SearchDataProvider
     if not dataProvider then
@@ -1069,7 +1096,7 @@ end
 
 -- 停止搜索
 function KeyboardDialog:StopSearch()
-    print("Stop search")
+    if self.SearchText == nil then return end
     self.SearchText = nil
     self:RefreshKeyBoard()
 end
