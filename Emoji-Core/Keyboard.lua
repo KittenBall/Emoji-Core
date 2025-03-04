@@ -141,7 +141,8 @@ function EmojiKeyboardPackListItemMixin:OnLeave()
 end
 
 function EmojiKeyboardPackListItemMixin:OnClick()
-    KeyboardDialog.EmojiPackList.SelectionBehavior:Select(self)
+    KeyboardDialog:ClearSearch()
+    KeyboardDialog:SelectEmojiPack(self:GetElementData())
 end
 
 function EmojiKeyboardPackListItemMixin:Update()
@@ -234,8 +235,20 @@ function EmojiKeyboardEmojiItemButtonMixin:Update(data)
 end
 
 function EmojiKeyboardEmojiItemButtonMixin:OnEnter()
+    self:RegisterEvent("MODIFIER_STATE_CHANGED")
+    self:ShowTooltip()
+end
+
+function EmojiKeyboardEmojiItemButtonMixin:OnLeave()
+    self:UnregisterEvent("MODIFIER_STATE_CHANGED")
+    GameTooltip:Hide()
+end
+
+function EmojiKeyboardEmojiItemButtonMixin:ShowTooltip()
     local data = self.Data
-    if not data then return end
+    if not data or not self:IsMouseOver() then return end
+
+    GameTooltip:ClearLines()
 
     local emoji = data.Emoji
     GameTooltip:SetOwner(self)
@@ -250,16 +263,20 @@ function EmojiKeyboardEmojiItemButtonMixin:OnEnter()
         GameTooltip:AddDoubleLine(L["keyboard_emoji_variants_number_title"], #emoji.Variants, nil, nil, nil, 1, 1, 1)
     end
 
-    GameTooltip_AddBlankLinesToTooltip(GameTooltip, 1)
-    for _, keyword in ipairs(emoji.Keywords) do
-        GameTooltip:AddDoubleLine(L["keyboard_emoji_keyword_title"], keyword, nil, nil, nil, 1, 1, 1)
+    if IsModifierKeyDown() then
+        GameTooltip_AddBlankLinesToTooltip(GameTooltip, 1)
+        for _, keyword in ipairs(emoji.Keywords) do
+            GameTooltip:AddDoubleLine(L["keyboard_emoji_keyword_title"], keyword, nil, nil, nil, 1, 1, 1)
+        end
     end
 
     GameTooltip:Show()
 end
 
-function EmojiKeyboardEmojiItemButtonMixin:OnLeave()
-    GameTooltip:Hide()
+function EmojiKeyboardEmojiItemButtonMixin:OnEvent(event, ...)
+    if event == "MODIFIER_STATE_CHANGED" then
+        self:ShowTooltip()
+    end
 end
 
 function EmojiKeyboardEmojiItemButtonMixin:OnClick()
@@ -1052,6 +1069,12 @@ function KeyboardDialog:HandleEmojiPressed(data)
     end
 
     addon:AddRecentEmoji(data.Key)
+end
+
+-- 清除搜索
+function KeyboardDialog:ClearSearch()
+    self.SearchBox:SetText("")
+    self.SearchBox:ClearFocus()
 end
 
 -- 是否正在搜索

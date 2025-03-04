@@ -31,6 +31,7 @@
     <Button name="EmojiKeyboardEmojiItemButtonTemplate" mixin="EmojiKeyboardEmojiItemButtonMixin" virtual="true">
 		<HighlightTexture alphaMode="ADD" file="Interface\Buttons\ButtonHilight-Square"/>
         <Scripts>
+            <OnEvent method="OnEvent"/>
             <OnEnter method="OnEnter"/>
             <OnLeave method="OnLeave"/>
             <OnCLick method="OnClick"/>
