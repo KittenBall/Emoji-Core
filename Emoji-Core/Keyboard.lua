@@ -765,7 +765,7 @@ end
 -- 搜索键盘刷新
 local function OnSearchKeyboardUpdate(self)
     local dataProvider = self.SearchDataProvider
-    if not dataProvider or dataProvider.Completed then
+    if not dataProvider then
         self:StopUpdateTask()
         return
     end
