@@ -1,14 +1,12 @@
 local addonName, addon = ...
 
 local Emojis = addon.Emojis
-local EmojiPacks = {}
 -- 短代码开始/结束
 local emojiShortcodeStartCodePoint = Emojis.ShortcodeStartCodePoint
 local emojiShortcodeCompleteCodePoint = Emojis.ShortcodeCompleteCodePoint
 local shortcodeStartDelimiter = addon.Emojis.ShortcodeStartDelimiter
 local shortcodeCompleteDelimiter = addon.Emojis.ShortcodeEndDelimiter
--- emoji名字->unicode key
-local ShortcodesToUnicodeKey = Emojis.ShortcodesToUnicodeKey
+local EmojisShortcodesToKey = Emojis.ShortcodesToKey
 
 -- 最近一次解析的字符串的codepoint序列
 local codePointArray = {}
@@ -168,13 +166,13 @@ function addon:ReplaceEmojiTo(text, type)
                 -- 无论该短代码是否能转换为图标，都认为这一段已经结束了
                 shortcodeStartIndex = 0
 
-                local unicodeKey = ShortcodesToUnicodeKey[shortCode]
+                local unicodeKey = addon:GetEmojiKeyByShortcode(shortCode)
                 if unicodeKey then
                     findShortcode = true
                     hasEmoji = true
 
                     if showIcon then
-                        local icon = self:GetEmojiIconByUnicodeKey(unicodeKey, true)
+                        local icon = self:GetEmojiIconByKey(unicodeKey, true)
                         if icon then
                             -- 组合中间非emoji部分，这里-2是因为要去掉短代码开始符
                             result = result .. text:sub(emojiEndIndex, shortCodeByteStartIndex - 2)
@@ -208,9 +206,9 @@ function addon:ReplaceEmojiTo(text, type)
     
                 local replacement
                 if showIcon then
-                    replacement = self:GetEmojiIconByUnicodeKey(unicodeKey, true) or self:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all")
+                    replacement = self:GetEmojiIconByKey(unicodeKey, true) or self:GetEmojiShortcodeByKey(unicodeKey, "all")
                 else
-                    replacement = self:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all")
+                    replacement = self:GetEmojiShortcodeByKey(unicodeKey, "all")
                 end
                 
                 if replacement then
@@ -256,8 +254,13 @@ function addon:ReplaceEmojiToIcon(text)
     return self:ReplaceEmojiTo(text, "icon")
 end
 
--- 注册emoji包
--- emoji包必须为这样的格式
+local EmojiPacks = {}
+local EmojiPacksCount = 0
+local StickerPacks = {}
+local StickerPackCount = 0
+
+-- 注册标准emoji包
+-- emoji包必须为这样的格式，这是对于标准emoji来说的
 --[[
     {
         Name = "packName",
@@ -270,13 +273,42 @@ end
     }
 ]]--
 function addon:RegisterEmojiPack(pack)
-    self.EmojiPacks = EmojiPacks
-    tinsert(EmojiPacks, pack)
+    EmojiPacksCount = EmojiPacksCount + 1
+    EmojiPacks[EmojiPacksCount] = pack
 end
 
--- 根据unicode key获取emoji图标
-function addon:GetEmojiIconByUnicodeKey(key, withEscapeSequences)
-    for _, pack in pairs(EmojiPacks) do
+-- 注册自定义表情包
+-- 对于非标准emoji，参见Emojis_zhCN.lua
+function addon:RegisterStickerPack(pack)
+    StickerPackCount = StickerPackCount + 1
+    StickerPacks[StickerPackCount] = pack
+    -- 必须用addon调用
+    addon:OnStickerPackListChanged()
+end
+
+-- 获取所有自定义表情包
+function addon:GetStickerPacks()
+    return StickerPacks
+end
+
+-- 根据key获取emoji图标
+-- @todo 提前获取可能的表情包
+function addon:GetEmojiIconByKey(key, withEscapeSequences)
+    for _, pack in ipairs(StickerPacks) do
+        local emoji = pack[key]
+        if emoji then
+            local iconFile = pack.Icons[key]
+            if iconFile then
+                local path = pack.IconDir .. iconFile
+                if withEscapeSequences then
+                    path = "|T" .. path .. ":22|t"
+                end
+                return path
+            end
+        end
+    end
+
+    for _, pack in ipairs(EmojiPacks) do
         local iconFile = pack.Icons[key]
         if iconFile then
             local path = pack.IconDir .. iconFile
@@ -288,14 +320,47 @@ function addon:GetEmojiIconByUnicodeKey(key, withEscapeSequences)
     end
 end
 
+-- 根据key获取emoji
+function addon:GetEmojiByKey(key)
+    for _, pack in ipairs(StickerPacks) do
+        local emoji = pack[key]
+        if emoji then
+            return emoji
+        end
+    end
+
+    return Emojis[key]
+end
+
+-- 通过shortcode获取emoji key
+function addon:GetEmojiKeyByShortcode(shortcode)
+    for _, pack in ipairs(StickerPacks) do
+        local key = pack.ShortcodesToKey[shortcode]
+        if key then
+            return key
+        end
+    end
+
+    return EmojisShortcodesToKey[shortcode]
+end
+
 -- 根据unicode key获取emoji短代码
 -- @param shortcodeDelimiter 短代码分隔符 left, right, all or nil
-function addon:GetEmojiShortcodeByUnicodeKey(key, shortcodeDelimiter)
+function addon:GetEmojiShortcodeByKey(key, shortcodeDelimiter)
     if not key then return end
 
+    for _, pack in ipairs(StickerPacks) do
+        local emoji = pack[key]
+        if emoji then
+            return emoji.Shorcodes[1]
+        end
+    end
+
     local emoji = Emojis[key]
-    local shortcode = emoji and emoji.Shortcodes[1] or nil
-    return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
+    if emoji then
+        local shortcode = emoji and emoji.Shortcodes[1] or nil
+        return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
+    end
 end
 
 function addon:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)

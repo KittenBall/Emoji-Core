@@ -147,11 +147,13 @@ end
 
 function EmojiKeyboardPackListItemMixin:Update()
     local data = self:GetElementData()
-    local icon = data.Icon or addon:GetEmojiIconByUnicodeKey(data.IconUnicode)
+    local icon = data.Icon or addon:GetEmojiIconByKey(data.IconKey) or UNKNOWN_EMOJI
+    local selected = self:IsSelected()
     self:SetNormalTexture(icon)
-    self:GetNormalTexture():SetDesaturated(not self:IsSelected())
+    self:GetNormalTexture():SetDesaturated(not selected)
     self:SetHighlightTexture(icon)
     self:GetHighlightTexture():SetBlendMode("BLEND")
+    self:GetHighlightTexture():SetVertexColor(1, 0.9843, 0.0078)
 end
 
 function EmojiKeyboardPackListItemMixin:SetSelected(selected)
@@ -209,10 +211,12 @@ EmojiKeyboardGroupItemMixin = {}
 
 function EmojiKeyboardGroupItemMixin:Update()
     local data = self:GetElementData():GetData()
-    if data.EmojiCount then
+    if data.EmojiCount and data.Title then
         self.Label:SetText(L["keyboard_group_format"]:format(data.Title, data.EmojiCount))
-    else
+    elseif data.Title then
         self.Label:SetText(data.Title)
+    else
+        self.Label:SetText("")
     end
     local color = data.IsGroup and NORMAL_FONT_COLOR or WHITE_FONT_COLOR
     self.Label:SetTextColor(color:GetRGB())
@@ -230,7 +234,7 @@ EmojiKeyboardEmojiItemButtonMixin = {}
 function EmojiKeyboardEmojiItemButtonMixin:Update(data)
     self.Data = data
 
-    local emoji = addon:GetEmojiIconByUnicodeKey(data.Key) or UNKNOWN_EMOJI
+    local emoji = addon:GetEmojiIconByKey(data.Key) or UNKNOWN_EMOJI
     self:SetNormalTexture(emoji)
 end
 
@@ -351,10 +355,12 @@ end
 
 local function KeyboardListItemExtentCalculator(index, node)
     local data = node:GetData()
-    if data.IsGroup then
+    if data.IsGroup and data.Title then
         return 30
-    elseif data.IsSubGroup then
+    elseif data.IsSubGroup and data.Title then
         return 25
+    elseif data.IsGroup or data.IsSubGroup then
+        return 1
     else
         return KeyboardEmojiIconSize + 6
     end
@@ -419,9 +425,9 @@ end
 
 function EmojiKeyboardGroupListItemMixin:Update()
     local data = self:GetElementData()
-    self:SetNormalTexture(data.Icon)
+    self:SetNormalTexture(data.Icon or UNKNOWN_EMOJI)
     self:GetNormalTexture():SetDesaturated(true)
-    self:SetHighlightTexture(data.Icon)
+    self:SetHighlightTexture(data.Icon or UNKNOWN_EMOJI)
     self:GetHighlightTexture():SetBlendMode("BLEND")
 end
 
@@ -489,6 +495,11 @@ do
 
     -- 添加表情包
     function Packs:AddPack(pack)
+        for _, p in ipairs(self) do
+            if p.Name == pack.Name then
+                return
+            end
+        end
         table.insert(self, pack)
         self:UpdateSearchIndexes()
     end
@@ -508,14 +519,17 @@ do
         local selectedIndex = self.SelectedIndex
         table.wipe(searchIndexes)
 
+        local count = #self
+        local index = 1
         if selectedIndex ~= RECENT_PACK_INDEX then
-            table.insert(searchIndexes, selectedIndex)
+            searchIndexes[index] = selectedIndex
+            index = index + 1
         end
 
-        local count = #self
         for i = 1, count do
             if i ~= selectedIndex and i ~= RECENT_PACK_INDEX then
-                table.insert(searchIndexes, i)
+                searchIndexes[index] = i
+                index = index + 1
             end
         end
     end
@@ -555,6 +569,7 @@ do
         end
     
         self.SelectedIndex = index
+        self:UpdateSearchIndexes()
     end
     
     -- ======================================================================
@@ -595,14 +610,14 @@ do
             }
         end,
         GetEmoji = function(self, key)
-            return Emojis[key]
+            return addon:GetEmojiByKey(key)
         end
     }
 
     -- emoji pack
     local emojiPack = {
         Name = L["keyboard_emoji_pack_emoji"],
-        IconUnicode = "128512",
+        IconKey = "128512",
         Dynamic = false,
         GroupInfo = Emojis.GroupInfo,
         GetEmoji = function(self, key)
@@ -649,7 +664,9 @@ local function OnEmojiKeyboardUpdate(self)
     while foundRow < 1  do
         if groupIndex > groupInfo.GroupCount then
             dataProvider.Completed = true
-            pendingGroupNode = nil
+            groupIndex = 1
+            subGroupIndex = 1
+            emojiIndex = 1
             break
         else
             local group = groupInfo[groupIndex]
@@ -750,9 +767,9 @@ function KeyboardDialog:RefreshEmojiPackKeyBoard()
             for i = 1, groupCount do
                 local group = groupInfo[i]
                 -- 没有图标的组就不显示了
-                if group.Icon or group.IconUnicode then
+                if group.Icon or group.IconKey then
                     local node = {
-                        Icon = group.Icon or addon:GetEmojiIconByUnicodeKey(group.IconUnicode),
+                        Icon = group.Icon or addon:GetEmojiIconByKey(group.IconKey),
                         GroupIndex = i,
                         EmojiCount = group.EmojiCount,
                         SubGroupCount = group.SubGroupCount,
@@ -805,7 +822,6 @@ local function OnSearchKeyboardUpdate(self)
     --第1个需要搜索的表情包为当前表情包
     --其维护在Packs内
     local pack = self.EmojiPacks:GetSearchPack(dataProvider.SearchPackIndex)
-    
 
     local searchText = self.SearchText
 
@@ -845,6 +861,9 @@ local function OnSearchKeyboardUpdate(self)
     while matchedCount < 50 and foundRow < 1  do
         if groupIndex > groupInfo.GroupCount then
             dataProvider.SearchPackIndex = dataProvider.SearchPackIndex + 1
+            groupIndex = 1
+            subGroupIndex = 1
+            emojiIndex = 1
             break
         end
 
@@ -869,6 +888,7 @@ local function OnSearchKeyboardUpdate(self)
                 
                 local match = false
                 local emoji = pack:GetEmoji(emojiKey)
+                
                 if emoji.Name:match(searchText) then
                     match = true
                 else
@@ -879,7 +899,7 @@ local function OnSearchKeyboardUpdate(self)
                         end
                     end
                     
-                    if not match then
+                    if not match and emoji.Keywords then
                         for _, keyword in ipairs(emoji.Keywords) do
                             if keyword:match(searchText) then
                                 match = true
@@ -1122,6 +1142,36 @@ function KeyboardDialog:StopSearch()
     if self.SearchText == nil then return end
     self.SearchText = nil
     self:RefreshKeyBoard()
+end
+
+-- 添加表情包
+function KeyboardDialog:AddStickerPacks(packs)
+    for _, pack in ipairs(packs) do
+        local newPack = {
+            Name = pack.Name,
+            Icon = pack.Icon,
+            Dynamic = false,
+            GroupInfo = pack.GroupInfo,
+            Data = pack,
+            GetEmoji = function(self, key)
+                return self.Data[key]
+            end
+        }
+        self.EmojiPacks:AddPack(newPack)
+    end
+
+
+    -- 此时可能还未初始化
+    if self.EmojiPackList then
+        local dataProvider = self.EmojiPackList:GetDataProvider()
+        dataProvider:Flush()
+        dataProvider:InsertTable(self.EmojiPacks)
+    end
+end
+
+-- Emo表情包列表变更
+function addon:OnStickerPackListChanged()
+    KeyboardDialog:AddStickerPacks(self:GetStickerPacks())
 end
 
 -- 创建弹窗

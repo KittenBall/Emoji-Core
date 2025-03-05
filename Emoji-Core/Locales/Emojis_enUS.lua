@@ -189,7 +189,7 @@ addon.Emojis = {
 		-- =============================== group: Smileys & Emotion begin ===============================
 		{
 			Name = "Smileys & Emotion",
-			IconUnicode = "128512",
+			IconKey = "128512",
 			SubGroupCount = 16,
 			EmojiCount = 169,
 			-- =============================== sub group: face-smiling begin ===============================
@@ -478,7 +478,7 @@ addon.Emojis = {
 		-- =============================== group: People & Body begin ===============================
 		{
 			Name = "People & Body",
-			IconUnicode = "129489",
+			IconKey = "129489",
 			SubGroupCount = 16,
 			EmojiCount = 376,
 			-- =============================== sub group: hand-fingers-open begin ===============================
@@ -997,7 +997,7 @@ addon.Emojis = {
 		-- =============================== group: Animals & Nature begin ===============================
 		{
 			Name = "Animals & Nature",
-			IconUnicode = "128059",
+			IconKey = "128059",
 			SubGroupCount = 8,
 			EmojiCount = 159,
 			-- =============================== sub group: animal-mammal begin ===============================
@@ -1220,7 +1220,7 @@ addon.Emojis = {
 		-- =============================== group: Food & Drink begin ===============================
 		{
 			Name = "Food & Drink",
-			IconUnicode = "127828",
+			IconKey = "127828",
 			SubGroupCount = 7,
 			EmojiCount = 131,
 			-- =============================== sub group: food-fruit begin ===============================
@@ -1408,7 +1408,7 @@ addon.Emojis = {
 		-- =============================== group: Travel & Places begin ===============================
 		{
 			Name = "Travel & Places",
-			IconUnicode = "128640",
+			IconKey = "128640",
 			SubGroupCount = 11,
 			EmojiCount = 218,
 			-- =============================== sub group: place-map begin ===============================
@@ -1711,7 +1711,7 @@ addon.Emojis = {
 		-- =============================== group: Activities begin ===============================
 		{
 			Name = "Activities",
-			IconUnicode = "9917",
+			IconKey = "9917",
 			SubGroupCount = 5,
 			EmojiCount = 85,
 			-- =============================== sub group: event begin ===============================
@@ -1839,7 +1839,7 @@ addon.Emojis = {
 		-- =============================== group: Objects begin ===============================
 		{
 			Name = "Objects",
-			IconUnicode = "128161",
+			IconKey = "128161",
 			SubGroupCount = 18,
 			EmojiCount = 264,
 			-- =============================== sub group: clothing begin ===============================
@@ -2237,7 +2237,7 @@ addon.Emojis = {
 		-- =============================== group: Symbols begin ===============================
 		{
 			Name = "Symbols",
-			IconUnicode = "128149",
+			IconKey = "128149",
 			SubGroupCount = 14,
 			EmojiCount = 224,
 			-- =============================== sub group: transport-sign begin ===============================
@@ -2567,7 +2567,7 @@ addon.Emojis = {
 		-- =============================== group: Flags begin ===============================
 		{
 			Name = "Flags",
-			IconUnicode = "128681",
+			IconKey = "128681",
 			SubGroupCount = 3,
 			EmojiCount = 270,
 			-- =============================== sub group: flag begin ===============================
@@ -2866,9 +2866,9 @@ addon.Emojis = {
 	},
 
 	-- ====================================================================
-	-- ===================== unicode key to shortcode =====================
+	-- ========================= key to shortcode =========================
 	-- ====================================================================
-	UnicodeKeysToShortcode = {
+	KeyToShortcode = {
 		-- emoji:😀; unicode = 1f600
 		["128512"] = "grinning",
 		["128512_65039"] = "grinning",
@@ -12881,9 +12881,9 @@ addon.Emojis = {
 	},
 
 	-- ====================================================================
-	-- =================== short code(s) to unicode key ===================
+	-- ======================= short code(s) to  key ======================
 	-- ====================================================================
-	ShortcodesToUnicodeKey = {
+	ShortcodesToKey = {
 		-- emoji:😀; unicode = 1f600
 		["grinning"] = "128512",
 		["grinning_face"] = "128512",

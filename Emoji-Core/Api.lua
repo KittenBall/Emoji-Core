@@ -9,10 +9,11 @@ local exportApis = {
     "ReplaceEmojiTo",
     "ReplaceEmojiToName",
     "ReplaceEmojiToIcon",
-    "GetEmojiIconByUnicodeKey",
-    "GetEmojiShortcodeByUnicodeKey",
+    "GetEmojiIconByKey",
+    "GetEmojiShortcodeByKey",
     "WrapperShortcodeWithDelimiter",
     "RegisterEmojiPack",
+    "RegisterStickerPack",
     "EnableEmojiCompleterForEditBox"
 }
 

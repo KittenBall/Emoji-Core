@@ -2,7 +2,7 @@ local addonName, addon = ...
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 
 local Emojis = addon.Emojis
-local ShortcodesToUnicodeKey = Emojis.ShortcodesToUnicodeKey
+local ShortcodesToKey = Emojis.ShortcodesToKey
 local ShortcodeList = Emojis.ShortcodeList
 local ShortcodeCount = ShortcodeList.ShortcodeCount
 local EmojiKeywordIndexes = Emojis.KeywordIndexes
@@ -276,10 +276,10 @@ function AutoCompleteFrame:GetResult(index)
     local unicodeKey = results[index]
     if not unicodeKey then return end
 
-    local icon = addon:GetEmojiIconByUnicodeKey(unicodeKey) or UNKNOWN_EMOJI
+    local icon = addon:GetEmojiIconByKey(unicodeKey) or UNKNOWN_EMOJI
     local shortcode = results[unicodeKey]
     if type(shortcode) ~= "string" then
-        shortcode = addon:GetEmojiShortcodeByUnicodeKey(unicodeKey, "all")
+        shortcode = addon:GetEmojiShortcodeByKey(unicodeKey, "all")
     end
 
     return unicodeKey, shortcode, icon
@@ -369,7 +369,7 @@ local function OnEditBoxUpdate(self)
         for i = nameIndex + 1, endIndex do
             local name = ShortcodeList[i]
             if name:match(regex) then
-                local unicodeKey = ShortcodesToUnicodeKey[name]
+                local unicodeKey = ShortcodesToKey[name]
                 AutoCompleteFrame:AddResult(unicodeKey, name)
             end
         end
@@ -415,7 +415,7 @@ local function startAutoComplete(editBox, startByShortCodeDelimiter, shortCode, 
     AutoCompleteFrame:Reset(startByShortCodeDelimiter)
     AutoCompleteFrame:Attach(editBox)
 
-    local unicodeKeys = ShortcodesToUnicodeKey[shortCode]
+    local unicodeKeys = ShortcodesToKey[shortCode]
     if unicodeKeys then
         AutoCompleteFrame:AddResult(unicodeKeys, shortCode)
     end
