@@ -263,7 +263,7 @@ function EmojiKeyboardEmojiItemButtonMixin:ShowTooltip()
         GameTooltip:AddDoubleLine(L["keyboard_emoji_variants_number_title"], #emoji.Variants, nil, nil, nil, 1, 1, 1)
     end
 
-    if IsModifierKeyDown() then
+    if IsModifierKeyDown() and emoji.Keywords then
         GameTooltip_AddBlankLinesToTooltip(GameTooltip, 1)
         for _, keyword in ipairs(emoji.Keywords) do
             GameTooltip:AddDoubleLine(L["keyboard_emoji_keyword_title"], keyword, nil, nil, nil, 1, 1, 1)
