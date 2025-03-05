@@ -576,22 +576,6 @@ do
     -- =============================== Pack =================================
     -- ======================================================================
 
-    -- recent pack: 最近使用
-    local function GetRecentSubGroup()
-        local group = { Name = L["keyboard_emoji_pack_recent_sub_group_recent"] }
-        
-        local recentEmojis = addon:GetRecentEmojis()
-        local count = #recentEmojis
-
-        group.EmojiCount = count
-
-        for i = 1, count do
-            group[i] = recentEmojis[i]
-        end
-
-        return group
-    end
-
     -- recent pack
     local recentPack = {
         Name = L["keyboard_emoji_pack_recent"],
@@ -599,7 +583,23 @@ do
         Dynamic = true,
         Searchable = false,
         GetGroupInfo = function(self)
-            local recentSubGroup = GetRecentSubGroup()
+            local recentSubGroup = { Name = L["keyboard_emoji_pack_recent_sub_group_recent"] }
+            local recentEmojis = addon:GetRecentEmojis()
+            local count = #recentEmojis
+
+            local realCount = 0
+
+            for i = 1, count do
+                local key = recentEmojis[i]
+                local emoji = addon:GetEmojiByKey(key)
+                if emoji then
+                    realCount = realCount + 1
+                    recentSubGroup[realCount] = key
+                end
+            end
+
+            recentSubGroup.EmojiCount = realCount
+
             return {
                 GroupCount = 1,
                 {
