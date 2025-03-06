@@ -288,22 +288,14 @@ end
 
 -- 获取所有自定义表情包
 function addon:GetStickerPacks()
-    return StickerPacks
-end
-
--- 通过index获取表情包，无视类型
-function addon:GetPackByIndexIgnoreType(index)
-    if index <= StickerPackCount then
-        return StickerPacks(index)
-    else
-        return EmojiPacks(index - StickerPackCount)
-    end
+    return StickerPacks, StickerPackCount
 end
 
 -- 根据key获取emoji图标
 -- @todo 提前获取可能的表情包
 function addon:GetEmojiIconByKey(key, withEscapeSequences)
-    for _, pack in ipairs(StickerPacks) do
+    for i = 1, StickerPackCount do
+        local pack = StickerPacks[i]
         local emoji = pack[key]
         if emoji then
             local iconFile = pack.Icons[key]
@@ -317,7 +309,8 @@ function addon:GetEmojiIconByKey(key, withEscapeSequences)
         end
     end
 
-    for _, pack in ipairs(EmojiPacks) do
+    for i = 1, EmojiPacksCount do
+        local pack = EmojiPacks[i]
         local iconFile = pack.Icons[key]
         if iconFile then
             local path = pack.IconDir .. iconFile
@@ -331,7 +324,8 @@ end
 
 -- 根据key获取emoji
 function addon:GetEmojiByKey(key)
-    for _, pack in ipairs(StickerPacks) do
+    for i = 1, StickerPackCount do
+        local pack = StickerPacks[i]
         local emoji = pack[key]
         if emoji then
             return emoji
@@ -343,7 +337,8 @@ end
 
 -- 通过shortcode获取emoji key
 function addon:GetEmojiKeyByShortcode(shortcode)
-    for _, pack in ipairs(StickerPacks) do
+    for i = 1, StickerPackCount do
+        local pack = StickerPacks[i]
         local key = pack.ShortcodesToKey[shortcode]
         if key then
             return key
@@ -360,8 +355,9 @@ do
     -- 注意返回的边界
     function addon:GetEmojiKeysByShortcode(shortcode)
         local count = 0
-        for _, pack in ipairs(StickerPacks) do
-            local key = pack.ShortcodesToKey(shortcode)
+        for i = 1, StickerPackCount do
+            local pack = StickerPacks[i]
+            local key = pack.ShortcodesToKey[shortcode]
             if key then
                 count = count + 1
                 result[count] = key
@@ -385,10 +381,11 @@ end
 function addon:GetEmojiShortcodeByKey(key, shortcodeDelimiter)
     if not key then return end
 
-    for _, pack in ipairs(StickerPacks) do
+    for i = 1, StickerPackCount do
+        local pack = StickerPacks[i]
         local emoji = pack[key]
         if emoji then
-            return emoji.Shorcodes[1]
+            return emoji.Shortcodes[1]
         end
     end
 

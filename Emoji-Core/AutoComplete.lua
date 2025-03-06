@@ -389,6 +389,16 @@ end
 
 local autoCompleteResult = {}
 
+-- 通过index获取表情包，无视类型
+local function GetPackByIndex(index)
+    local stickerPacks, count = addon:GetStickerPacks()
+    if index <= count then
+        return stickerPacks[index]
+    elseif index == count + 1 then
+        return addon.Emojis
+    end
+end
+
 -- 分帧检查
 local function OnEditBoxUpdate(self)
     local shortCode = self.ShortcodePendingComplete
@@ -397,11 +407,12 @@ local function OnEditBoxUpdate(self)
 
     -- 先检查是否有名字匹配的
     if not self.ShortcodeCompleteMatchNameFlag then
-        local pack = addon:GetPackByIndexIgnore(self.ShortcodeCompletePackIndex)
+        local pack = GetPackByIndex(self.ShortcodeCompletePackIndex)
         if not pack then
             self.ShortcodeCompleteMatchNameFlag = true
             self.ShortcodeCompletePackIndex = 1
             self.ShortcodeCompleteMatchIndex = 0
+
             return
         end
 
@@ -438,7 +449,7 @@ local function OnEditBoxUpdate(self)
 
     -- 再检查是否有关键字相同的
     if not self.ShortcodeCompleteCompareKeywordFlag then
-        local pack = addon:GetPackByIndexIgnore(self.ShortcodeCompletePackIndex)
+        local pack = GetPackByIndex(self.ShortcodeCompletePackIndex)
         if not pack then
             self.ShortcodeCompleteCompareKeywordFlag = true
             self.ShortcodeCompletePackIndex = 1
@@ -447,7 +458,7 @@ local function OnEditBoxUpdate(self)
 
         local keys = pack.KeywordIndexes[shortCode]
         if keys then
-            AutoCompleteFrame:AddResults(keys, #keys, shortCode)
+            AutoCompleteFrame:AddResults(keys, #keys)
         end
 
         self.ShortcodeCompletePackIndex = self.ShortcodeCompletePackIndex + 1
@@ -457,7 +468,7 @@ local function OnEditBoxUpdate(self)
 
     -- 最后检查是否有关键字匹配的
     if not self.ShortcodeCompleteMatchKeywordFlag then
-        local pack = addon:GetPackByIndexIgnore(self.ShortcodeCompletePackIndex)
+        local pack = GetPackByIndex(self.ShortcodeCompletePackIndex)
         if not pack then
             self.ShortcodeCompleteMatchKeywordFlag = true
             self.ShortcodeCompletePackIndex = 1
@@ -478,7 +489,7 @@ local function OnEditBoxUpdate(self)
                 local keyword = keywordList[i]
                 if keyword:match(regex) then
                     local keys = keywordIndexes[keyword]
-                    AutoCompleteFrame:AddResults(keys, #keys, shortCode)
+                    AutoCompleteFrame:AddResults(keys, #keys)
                 end
             end
         else
@@ -488,8 +499,6 @@ local function OnEditBoxUpdate(self)
 
         -- 需return，否则就乱了
         return
-    else
-        stopAutoComplete(self)
     end
 end
 

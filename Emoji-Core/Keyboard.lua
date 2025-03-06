@@ -1145,8 +1145,9 @@ function KeyboardDialog:StopSearch()
 end
 
 -- 添加表情包
-function KeyboardDialog:AddStickerPacks(packs)
-    for _, pack in ipairs(packs) do
+function KeyboardDialog:AddStickerPacks(packs, packCount)
+    for i = 1, packCount do
+        local pack = packs[i]
         local newPack = {
             Name = pack.Name,
             Icon = pack.Icon,
@@ -1159,7 +1160,6 @@ function KeyboardDialog:AddStickerPacks(packs)
         }
         self.EmojiPacks:AddPack(newPack)
     end
-
 
     -- 此时可能还未初始化
     if self.EmojiPackList then
