@@ -1,15 +1,8 @@
 local addonName, addon = ...
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 
-local Emojis = addon.Emojis
-local ShortcodesToKey = Emojis.ShortcodesToKey
-local ShortcodeList = Emojis.ShortcodeList
-local ShortcodeCount = ShortcodeList.ShortcodeCount
-local EmojiKeywordIndexes = Emojis.KeywordIndexes
-local EmojiKeywordList = Emojis.KeywordList
-local EmojiKeywordListSize = EmojiKeywordList.KeywordListCount
-local EmojiAutoCompleteMinLength = Emojis.AutoCompleteMinLength
-local EmojiAutoCompleteMaxLength = Emojis.AutoCompleteMaxLength
+local EmojiAutoCompleteMinLength = addon.Emojis.AutoCompleteMinLength
+local EmojiAutoCompleteMaxLength = addon.Emojis.AutoCompleteMaxLength
 
 local AUTOCOMPLETE_MAX_BUTTONS = 6
 local UNKNOWN_EMOJI = [[Interface\ICONS\INV_Misc_QuestionMark]]
@@ -177,8 +170,8 @@ function AutoCompleteFrame:OnEditBoxSpacePressed(editBox)
     if editBox ~= self.EditBox or not self:IsShown() then return end
 
     local seletedIndex = self.SelectedIndex + 1
-    local unicodeKey, shortcode, icon = self:GetResult(seletedIndex)
-    if not unicodeKey then return end
+    local key, shortcode, icon = self:GetResult(seletedIndex)
+    if not key then return end
 
     local text = editBox:GetText()
 
@@ -197,8 +190,8 @@ function AutoCompleteFrame:OnEditBoxChar(editBox, char)
     local number = tonumber(char)
     if not number or number > min(AUTOCOMPLETE_MAX_BUTTONS, resultCount) or number <= 0 then return end
 
-    local unicodeKey, shortcode, icon = self:GetResult(self.StartIndex + number)
-    if not unicodeKey then return end
+    local key, shortcode, icon = self:GetResult(self.StartIndex + number)
+    if not key then return end
 
     self:InsertResultToEditBox(shortcode, char)
 end
@@ -211,8 +204,8 @@ function AutoCompleteFrame:OnAutoCompleteButtonClick(index)
     local resultCount = self.ResultCount
     if resultCount <= 0 then return end
 
-    local unicodeKey, shortcode, icon = self:GetResult(self.StartIndex + index)
-    if not unicodeKey then return end
+    local key, shortcode, icon = self:GetResult(self.StartIndex + index)
+    if not key then return end
 
     self:InsertResultToEditBox(shortcode)
     editBox:SetFocus()
@@ -256,33 +249,48 @@ function AutoCompleteFrame:InsertResultToEditBox(shortcode, removeLastCharIfSame
 end
 
 -- 添加结果
-function AutoCompleteFrame:AddResult(unicodeKey, shortcode)
+function AutoCompleteFrame:AddResult(key, shortcode)
     local results = self.Results
-    if not results[unicodeKey] then
-        -- 这里将unicodekey对应的shortcode存下来
-        -- 因为一个unicodekey可以对应多个shortcode
+    if not results[key] then
+        -- 这里将key对应的shortcode存下来
+        -- 因为一个key可以对应多个shortcode
         -- 我们尽可能让用户输入的是其想要的那个
-        results[unicodeKey] = shortcode and addon:WrapperShortcodeWithDelimiter(shortcode, "all") or true
+        results[key] = shortcode and addon:WrapperShortcodeWithDelimiter(shortcode, "all") or true
         self.ResultCount = self.ResultCount + 1
-        results[self.ResultCount] = unicodeKey
+        results[self.ResultCount] = key
         
         self:UpdateResults()
     end
 end
 
+-- 添加结果集
+function AutoCompleteFrame:AddResults(keys, count, shortcode)
+    local results = self.Results
+    for i = 1, count do
+        local key = keys[i]
+        if not results[key] then
+            results[key] = shortcode and addon:WrapperShortcodeWithDelimiter(shortcode, "all") or true
+            self.ResultCount = self.ResultCount + 1
+            results[self.ResultCount] = key
+        end
+    end
+
+    self:UpdateResults()
+end
+
 -- 获取结果
 function AutoCompleteFrame:GetResult(index)
     local results = self.Results
-    local unicodeKey = results[index]
-    if not unicodeKey then return end
+    local key = results[index]
+    if not key then return end
 
-    local icon = addon:GetEmojiIconByKey(unicodeKey) or UNKNOWN_EMOJI
-    local shortcode = results[unicodeKey]
+    local icon = addon:GetEmojiIconByKey(key) or UNKNOWN_EMOJI
+    local shortcode = results[key]
     if type(shortcode) ~= "string" then
-        shortcode = addon:GetEmojiShortcodeByKey(unicodeKey, "all")
+        shortcode = addon:GetEmojiShortcodeByKey(key, "all")
     end
 
-    return unicodeKey, shortcode, icon
+    return key, shortcode, icon
 end
 
 -- 更新显示结果
@@ -325,7 +333,7 @@ function AutoCompleteFrame:UpdateResults()
                 else
                     button.Icon:Show()
 
-                    local unicodeKey, shortcode, icon = self:GetResult(resultIndex)
+                    local _, shortcode, icon = self:GetResult(resultIndex)
                     button.Icon:SetTexture(icon)
                     button.Name:SetText(shortcode)
                     maxWidth = max(maxWidth, button.Name:GetWidth() + 95)
@@ -355,97 +363,156 @@ function AutoCompleteFrame:UpdateResults()
     end
 end
 
--- 分帧检查
-local function OnEditBoxUpdate(self)
-    local shortCode = self.shortCodePendingComplete
-    local regex = self.shortCodeRegex
-    if not shortCode or not regex then return end
-
-    local nameIndex = self.shortCodeCompleteNameIndex
-    if nameIndex < ShortcodeCount then
-        local endIndex = min(ShortcodeCount, nameIndex + 300)
-        self.shortCodeCompleteNameIndex = endIndex
-        
-        for i = nameIndex + 1, endIndex do
-            local name = ShortcodeList[i]
-            if name:match(regex) then
-                local unicodeKey = ShortcodesToKey[name]
-                AutoCompleteFrame:AddResult(unicodeKey, name)
-            end
-        end
-
-        if endIndex < ShortcodeCount then return end
-    end
-
-    if not self.shortCodeKeywordCompareFlag then
-        self.shortCodeKeywordCompareFlag = true
-        local unicodeKeys = EmojiKeywordIndexes[shortCode]
-        if unicodeKeys then
-            for _, unicodeKey in ipairs(unicodeKeys) do
-                AutoCompleteFrame:AddResult(unicodeKey)
-            end
-        end
-    end
-
-    local keywordIndex = self.shortCodeCompleteKeywordIndex
-    if keywordIndex < EmojiKeywordListSize then
-        local endIndex = min(EmojiKeywordListSize, keywordIndex + 300)
-        self.shortCodeCompleteKeywordIndex = endIndex
-        
-        for i = keywordIndex + 1, endIndex do
-            local keyword = EmojiKeywordList[i]
-            if keyword:match(regex) then
-                local unicodeKeys = EmojiKeywordIndexes[keyword]
-                for _, unicodeKey in ipairs(unicodeKeys) do
-                    AutoCompleteFrame:AddResult(unicodeKey)
-                end
-            end
-        end
-    end
-end
-
-local function startAutoComplete(editBox, startByShortCodeDelimiter, shortCode, shortCodeStartByteIndex, shortCodeEndByteIndex)
-    editBox.shortCodePendingComplete = shortCode
-    editBox.shortCodeRegex = shortCode:gsub("%p", function(char) return "%" .. char end):lower()
-    editBox.shortCodeStartByteIndex = shortCodeStartByteIndex
-    editBox.shortCodeEndByteIndex = shortCodeEndByteIndex
-    editBox.shortCodeCompleteKeywordIndex = 0
-    editBox.shortCodeCompleteNameIndex = 0
-    editBox.shortCodeKeywordCompareFlag = false
-    AutoCompleteFrame:Reset(startByShortCodeDelimiter)
+local function startAutoComplete(editBox, startByShortcodeDelimiter, shortCode, shortCodeStartByteIndex, shortCodeEndByteIndex)
+    editBox.ShortcodePendingComplete = shortCode
+    editBox.ShortcodeRegex = shortCode:gsub("%p", function(char) return "%" .. char end):lower()
+    editBox.ShortcodeStartByteIndex = shortCodeStartByteIndex
+    editBox.ShortcodeEndByteIndex = shortCodeEndByteIndex
+    editBox.ShortcodeCompleteMatchNameFlag = false
+    editBox.ShortcodeCompleteCompareKeywordFlag = false
+    editBox.ShortcodeCompleteMatchKeywordFlag = false
+    editBox.ShortcodeCompletePackIndex = 1
+    editBox.ShortcodeCompleteMatchIndex = 0
+    AutoCompleteFrame:Reset(startByShortcodeDelimiter)
     AutoCompleteFrame:Attach(editBox)
 
-    local unicodeKeys = ShortcodesToKey[shortCode]
-    if unicodeKeys then
-        AutoCompleteFrame:AddResult(unicodeKeys, shortCode)
+    local keys, count = addon:GetEmojiKeysByShortcode(shortCode)
+    if keys then
+        AutoCompleteFrame:AddResults(keys, count, shortCode)
     end
 end
 
 local function stopAutoComplete(editBox)
-    editBox.shortCodePendingComplete = nil
+    editBox.ShortcodePendingComplete = nil
     AutoCompleteFrame:Reset()
+end
+
+local autoCompleteResult = {}
+
+-- 分帧检查
+local function OnEditBoxUpdate(self)
+    local shortCode = self.ShortcodePendingComplete
+    local regex = self.ShortcodeRegex
+    if not shortCode or not regex then return end
+
+    -- 先检查是否有名字匹配的
+    if not self.ShortcodeCompleteMatchNameFlag then
+        local pack = addon:GetPackByIndexIgnore(self.ShortcodeCompletePackIndex)
+        if not pack then
+            self.ShortcodeCompleteMatchNameFlag = true
+            self.ShortcodeCompletePackIndex = 1
+            self.ShortcodeCompleteMatchIndex = 0
+            return
+        end
+
+        local nameIndex = self.ShortcodeCompleteMatchIndex
+        local shortcodeList = pack.ShortcodeList
+        local shortcodeCount = shortcodeList.ShortcodeCount
+        if nameIndex < shortcodeCount then
+            local endIndex = min(shortcodeCount, nameIndex + 200)
+            self.ShortcodeCompleteMatchIndex = endIndex
+
+            local shortcodesToKey = pack.ShortcodesToKey
+            local resultCount = 0
+
+            for i = nameIndex + 1, endIndex do
+                local name = shortcodeList[i]
+                if name:match(regex) then
+                    local key = shortcodesToKey[name]
+                    resultCount = resultCount + 1
+                    autoCompleteResult[resultCount] = key
+                end
+            end
+
+            if resultCount > 0 then
+                AutoCompleteFrame:AddResults(autoCompleteResult, resultCount, shortCode)
+            end
+        else
+            self.ShortcodeCompletePackIndex = self.ShortcodeCompletePackIndex + 1
+            self.ShortcodeCompleteMatchIndex = 0
+        end
+
+        -- 需return，否则就乱了
+        return
+    end
+
+    -- 再检查是否有关键字相同的
+    if not self.ShortcodeCompleteCompareKeywordFlag then
+        local pack = addon:GetPackByIndexIgnore(self.ShortcodeCompletePackIndex)
+        if not pack then
+            self.ShortcodeCompleteCompareKeywordFlag = true
+            self.ShortcodeCompletePackIndex = 1
+            return
+        end
+
+        local keys = pack.KeywordIndexes[shortCode]
+        if keys then
+            AutoCompleteFrame:AddResults(keys, #keys, shortCode)
+        end
+
+        self.ShortcodeCompletePackIndex = self.ShortcodeCompletePackIndex + 1
+
+        return
+    end
+
+    -- 最后检查是否有关键字匹配的
+    if not self.ShortcodeCompleteMatchKeywordFlag then
+        local pack = addon:GetPackByIndexIgnore(self.ShortcodeCompletePackIndex)
+        if not pack then
+            self.ShortcodeCompleteMatchKeywordFlag = true
+            self.ShortcodeCompletePackIndex = 1
+            self.ShortcodeCompleteMatchIndex = 0
+            return
+        end
+
+        local keywordIndex = self.ShortcodeCompleteMatchIndex
+        local keywordList = pack.KeywordList
+        local keywordCount = keywordList.KeywordCount
+        if keywordIndex < keywordCount then
+            local endIndex = min(keywordCount, keywordCount + 200)
+            self.ShortcodeCompleteMatchIndex = endIndex
+
+            local keywordIndexes = pack.KeywordIndexes
+
+            for i = keywordIndex + 1, endIndex do
+                local keyword = keywordList[i]
+                if keyword:match(regex) then
+                    local keys = keywordIndexes[keyword]
+                    AutoCompleteFrame:AddResults(keys, #keys, shortCode)
+                end
+            end
+        else
+            self.ShortcodeCompletePackIndex = self.ShortcodeCompletePackIndex + 1
+            self.ShortcodeCompleteMatchIndex = 0
+        end
+
+        -- 需return，否则就乱了
+        return
+    else
+        stopAutoComplete(self)
+    end
 end
 
 local function OnEditBoxTextChanged(self)
     local text = self:GetText()
     if not text or self:IsInIMECompositionMode() then stopAutoComplete(self) return end
 
-    local newText, hasEmoji, uncompletedShortCode, uncompletedShortCodeStartByteIndex, uncompletedShortCodeEndByteIndex = addon:ReplaceEmojiToName(text)
-    local startByShortCodeDelimiter = true
+    local newText, hasEmoji, uncompletedShortcode, uncompletedShortcodeStartByteIndex, uncompletedShortcodeEndByteIndex = addon:ReplaceEmojiToName(text)
+    local startByShortcodeDelimiter = true
     
-    if not uncompletedShortCode and not hasEmoji and not newText:match("/") then
+    if not uncompletedShortcode and not hasEmoji and not newText:match("/") then
         local textLen = strlenutf8(newText)
         if textLen >= EmojiAutoCompleteMinLength and textLen <= EmojiAutoCompleteMaxLength then
-            uncompletedShortCode = newText
-            uncompletedShortCodeStartByteIndex = 0
-            uncompletedShortCodeEndByteIndex = strlen(newText)
-            startByShortCodeDelimiter = false
+            uncompletedShortcode = newText
+            uncompletedShortcodeStartByteIndex = 0
+            uncompletedShortcodeEndByteIndex = strlen(newText)
+            startByShortcodeDelimiter = false
         end
     end
 
-    if uncompletedShortCode and AutoCompleteBox.parent ~= self and not AutoCompleteBox:IsShown() then
-        if uncompletedShortCode ~= self.shortCodePendingComplete then
-            startAutoComplete(self, startByShortCodeDelimiter, uncompletedShortCode, uncompletedShortCodeStartByteIndex, uncompletedShortCodeEndByteIndex)
+    if uncompletedShortcode and AutoCompleteBox.parent ~= self and not AutoCompleteBox:IsShown() then
+        if uncompletedShortcode ~= self.shortCodePendingComplete then
+            startAutoComplete(self, startByShortcodeDelimiter, uncompletedShortcode, uncompletedShortcodeStartByteIndex, uncompletedShortcodeEndByteIndex)
         end
     else
         stopAutoComplete(self)

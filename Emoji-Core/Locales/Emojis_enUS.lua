@@ -331581,7 +331581,7 @@ addon.Emojis = {
 		"covetous",
 		"rival",
 		"straightaway",
-		KeywordListCount = 16608
+		KeywordCount = 16608
 	},
 
 	KeywordIndexes = {

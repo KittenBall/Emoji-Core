@@ -65,9 +65,9 @@ local emojiEndFlag = 2
 -- @param type: "name": 名字 "icon": 图片
 -- @return newText: emoji被替换为对应的类型之后的文本
 -- @return hasEmoji: 替换之后的文本是否含有emoji 
--- @return uncompletedShortCode: 未完成的短代码，可能为nil
--- @return uncompletedShortCodeStartByteIndex: 未完成的短代码，byte起始位置（含emojiShortcodeStartCodePoint），可能为nil
--- @return uncompletedShortCodeEndByteIndex: 未完成的短代码，byte结束位置，可能为nil
+-- @return uncompletedShortcode: 未完成的短代码，可能为nil
+-- @return uncompletedShortcodeStartByteIndex: 未完成的短代码，byte起始位置（含emojiShortcodeStartCodePoint），可能为nil
+-- @return uncompletedShortcodeEndByteIndex: 未完成的短代码，byte结束位置，可能为nil
 function addon:ReplaceEmojiTo(text, type)
     local codePointArray, codePointStartIndexes, codePointEndIndexes, codePointLen, textLen = GetStringCodePoints(text)
     if not codePointArray then return text end
@@ -231,17 +231,17 @@ function addon:ReplaceEmojiTo(text, type)
     end
 
     -- 未完成的短代码
-    local uncompletedShortCode
-    local uncompletedShortCodeStartByteIndex
-    local uncompletedShortCodeEndByteIndex
+    local uncompletedShortcode
+    local uncompletedShortcodeStartByteIndex
+    local uncompletedShortcodeEndByteIndex
     if shortcodeStartIndex > 0 and shortcodeStartIndex < codePointLen then
         local startByteIndex = codePointStartIndexes[shortcodeStartIndex + 1]
-        uncompletedShortCodeStartByteIndex = startByteIndex - 1
-        uncompletedShortCodeEndByteIndex = textLen
-        uncompletedShortCode = text:sub(startByteIndex, uncompletedShortCodeEndByteIndex)
+        uncompletedShortcodeStartByteIndex = startByteIndex - 1
+        uncompletedShortcodeEndByteIndex = textLen
+        uncompletedShortcode = text:sub(startByteIndex, uncompletedShortcodeEndByteIndex)
     end
 
-    return result, hasEmoji, uncompletedShortCode, uncompletedShortCodeStartByteIndex, uncompletedShortCodeEndByteIndex
+    return result, hasEmoji, uncompletedShortcode, uncompletedShortcodeStartByteIndex, uncompletedShortcodeEndByteIndex
 end
 
 -- 将字符串内的emoji替换为名称
@@ -289,6 +289,15 @@ end
 -- 获取所有自定义表情包
 function addon:GetStickerPacks()
     return StickerPacks
+end
+
+-- 通过index获取表情包，无视类型
+function addon:GetPackByIndexIgnoreType(index)
+    if index <= StickerPackCount then
+        return StickerPacks(index)
+    else
+        return EmojiPacks(index - StickerPackCount)
+    end
 end
 
 -- 根据key获取emoji图标
@@ -342,6 +351,33 @@ function addon:GetEmojiKeyByShortcode(shortcode)
     end
 
     return EmojisShortcodesToKey[shortcode]
+end
+
+do
+    local result = {}
+
+    -- 通过shortcode获取所有emoji key
+    -- 注意返回的边界
+    function addon:GetEmojiKeysByShortcode(shortcode)
+        local count = 0
+        for _, pack in ipairs(StickerPacks) do
+            local key = pack.ShortcodesToKey(shortcode)
+            if key then
+                count = count + 1
+                result[count] = key
+            end
+        end
+
+        local key = EmojisShortcodesToKey[shortcode]
+        if key then
+            count = count + 1
+            result[count] = key
+        end
+        
+        if count > 0 then
+            return result, count            
+        end
+    end
 end
 
 -- 根据unicode key获取emoji短代码

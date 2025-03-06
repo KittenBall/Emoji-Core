@@ -157202,7 +157202,7 @@ addon.Emojis = {
 		"怀念",
 		"城市",
 		"求援",
-		KeywordListCount = 13610
+		KeywordCount = 13610
 	},
 
 	KeywordIndexes = {
