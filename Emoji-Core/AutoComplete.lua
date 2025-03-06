@@ -225,9 +225,9 @@ function AutoCompleteFrame:InsertResultToEditBox(shortcode, removeLastCharIfSame
     local editBox = self.EditBox
     if not editBox then return end
 
-    local startByteIndex = editBox.shortCodeStartByteIndex
+    local startByteIndex = editBox.ShortcodeStartByteIndex
     if not startByteIndex then return end
-    local endByteIndex = editBox.shortCodeEndByteIndex
+    local endByteIndex = editBox.ShortcodeEndByteIndex
 
     local text = editBox:GetText()
     if not text then return end
@@ -363,11 +363,11 @@ function AutoCompleteFrame:UpdateResults()
     end
 end
 
-local function startAutoComplete(editBox, startByShortcodeDelimiter, shortCode, shortCodeStartByteIndex, shortCodeEndByteIndex)
+local function startAutoComplete(editBox, startByShortcodeDelimiter, shortCode, shortcodeStartByteIndex, shortcodeEndByteIndex)
     editBox.ShortcodePendingComplete = shortCode
     editBox.ShortcodeRegex = shortCode:gsub("%p", function(char) return "%" .. char end):lower()
-    editBox.ShortcodeStartByteIndex = shortCodeStartByteIndex
-    editBox.ShortcodeEndByteIndex = shortCodeEndByteIndex
+    editBox.ShortcodeStartByteIndex = shortcodeStartByteIndex
+    editBox.ShortcodeEndByteIndex = shortcodeEndByteIndex
     editBox.ShortcodeCompleteMatchNameFlag = false
     editBox.ShortcodeCompleteCompareKeywordFlag = false
     editBox.ShortcodeCompleteMatchKeywordFlag = false
@@ -386,8 +386,6 @@ local function stopAutoComplete(editBox)
     editBox.ShortcodePendingComplete = nil
     AutoCompleteFrame:Reset()
 end
-
-local autoCompleteResult = {}
 
 -- 通过index获取表情包，无视类型
 local function GetPackByIndex(index)
@@ -424,19 +422,13 @@ local function OnEditBoxUpdate(self)
             self.ShortcodeCompleteMatchIndex = endIndex
 
             local shortcodesToKey = pack.ShortcodesToKey
-            local resultCount = 0
 
             for i = nameIndex + 1, endIndex do
                 local name = shortcodeList[i]
                 if name:match(regex) then
                     local key = shortcodesToKey[name]
-                    resultCount = resultCount + 1
-                    autoCompleteResult[resultCount] = key
+                    AutoCompleteFrame:AddResult(key, name)
                 end
-            end
-
-            if resultCount > 0 then
-                AutoCompleteFrame:AddResults(autoCompleteResult, resultCount, shortCode)
             end
         else
             self.ShortcodeCompletePackIndex = self.ShortcodeCompletePackIndex + 1
