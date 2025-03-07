@@ -2,6 +2,7 @@ local addonName, addon = ...
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 
 local pack = {
+	ID = "GoogleNoto",
 	Name = L["addon_name"],
 	IconDir = "Interface\\addOns\\Emoji-Noto\\Icons\\",
 	Icons = {

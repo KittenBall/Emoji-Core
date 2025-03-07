@@ -258,11 +258,24 @@ local EmojiPacks = {}
 local EmojiPacksCount = 0
 local StickerPacks = {}
 local StickerPackCount = 0
+local PackIds = {}
+
+local function checkPackValid(pack)
+    if not pack or not pack.ID then
+        error("pack is nil or pack does not have a ID")
+    end
+    if PackIds[pack.ID] then
+        error("Pack id(" .. pack.ID .. ") is register already")
+    end
+
+    PackIds[pack.ID] = true
+end
 
 -- 注册标准emoji包
 -- emoji包必须为这样的格式，这是对于标准emoji来说的
 --[[
     {
+        ID = "id", should be unique
         Name = "packName",
         IconDir = "Interface\\Addons\\Emoji-OpenMoji\\"
         Icons = {
@@ -273,6 +286,8 @@ local StickerPackCount = 0
     }
 ]]--
 function addon:RegisterEmojiPack(pack)
+    checkPackValid(pack)
+
     EmojiPacksCount = EmojiPacksCount + 1
     EmojiPacks[EmojiPacksCount] = pack
 end
@@ -280,6 +295,8 @@ end
 -- 注册自定义表情包
 -- 对于非标准emoji，参见Emojis_zhCN.lua
 function addon:RegisterStickerPack(pack)
+    checkPackValid(pack)
+
     StickerPackCount = StickerPackCount + 1
     StickerPacks[StickerPackCount] = pack
     -- 必须用addon调用
