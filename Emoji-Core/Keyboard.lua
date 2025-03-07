@@ -25,7 +25,7 @@ local function RunOrdering(...)
 end
 
 -- 键盘图标大小
-local KeyboardEmojiIconSize = 24
+local KeyboardEmojiIconSize = 30
 -- 键盘弹窗
 local KeyboardDialog
 if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
@@ -774,7 +774,7 @@ function KeyboardDialog:RefreshEmojiPackKeyBoard()
                 -- 没有图标的组就不显示了
                 if group.Icon or group.IconKey then
                     local node = {
-                        Icon = group.Icon or pack:GetEmoji(group.IconKey),
+                        Icon = group.Icon or pack:GetIcon(group.IconKey),
                         GroupIndex = i,
                         EmojiCount = group.EmojiCount,
                         SubGroupCount = group.SubGroupCount,
@@ -924,7 +924,7 @@ local function OnSearchKeyboardUpdate(self)
                     end
 
                     pendingEmojiNodeData.Count = pendingEmojiNodeData.Count + 1
-                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Emoji = emoji }
+                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Icon = pack:GetIcon(emojiKey), Emoji = emoji }
 
                     if pendingEmojiNodeData.Count == dataProvider.Column then
                         foundRow = foundRow + 1
@@ -1163,7 +1163,7 @@ function KeyboardDialog:AddStickerPacks(packs, packCount)
                 return self.Data[key]
             end,
             GetIcon = function(self, key)
-                return self.Data.Icons[key]
+                return self.Data.IconDir .. self.Data.Icons[key]
             end
         }
         self.EmojiPacks:AddPack(newPack)

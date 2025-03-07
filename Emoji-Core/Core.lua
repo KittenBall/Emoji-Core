@@ -413,15 +413,19 @@ end
 function addon:GetEmojiShortcodeByKey(key, shortcodeDelimiter)
     if not key then return end
 
+    local emoji
     for i = 1, StickerPackCount do
         local pack = StickerPacks[i]
-        local emoji = pack[key]
+        emoji = pack[key]
         if emoji then
-            return emoji.Shortcodes[1]
+            break
         end
     end
 
-    local emoji = Emojis[key]
+    if not emoji then
+        emoji = Emojis[key]
+    end
+    
     if emoji then
         local shortcode = emoji and emoji.Shortcodes[1] or nil
         return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
