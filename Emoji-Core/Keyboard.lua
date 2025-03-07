@@ -147,7 +147,7 @@ end
 
 function EmojiKeyboardPackListItemMixin:Update()
     local data = self:GetElementData()
-    local icon = data.Icon or addon:GetEmojiIconByKey(data.IconKey) or UNKNOWN_EMOJI
+    local icon = data.Icon or data:GetIcon(data.IconKey) or UNKNOWN_EMOJI
     local selected = self:IsSelected()
     self:SetNormalTexture(icon)
     self:GetNormalTexture():SetDesaturated(not selected)
@@ -234,7 +234,7 @@ EmojiKeyboardEmojiItemButtonMixin = {}
 function EmojiKeyboardEmojiItemButtonMixin:Update(data)
     self.Data = data
 
-    local emoji = addon:GetEmojiIconByKey(data.Key) or UNKNOWN_EMOJI
+    local emoji = data.Icon or UNKNOWN_EMOJI
     self:SetNormalTexture(emoji)
 end
 
@@ -581,7 +581,6 @@ do
         Name = L["keyboard_emoji_pack_recent"],
         Icon = [[Interface\Addons\Emoji-Core\Media\recent.png]],
         Dynamic = true,
-        Searchable = false,
         GetGroupInfo = function(self)
             local recentSubGroup = { Name = L["keyboard_emoji_pack_recent_sub_group_recent"] }
             local recentEmojis = addon:GetRecentEmojis()
@@ -611,6 +610,9 @@ do
         end,
         GetEmoji = function(self, key)
             return addon:GetEmojiByKey(key)
+        end,
+        GetIcon = function(self, key)
+            return addon:GetEmojiIconByKey(key)
         end
     }
 
@@ -622,6 +624,9 @@ do
         GroupInfo = Emojis.GroupInfo,
         GetEmoji = function(self, key)
             return Emojis[key]
+        end,
+        GetIcon = function(self, key)
+            return addon:GetEmojiIconByKeyIgnoreSticker(key)
         end
     }
 
@@ -722,7 +727,7 @@ local function OnEmojiKeyboardUpdate(self)
                     end
 
                     pendingEmojiNodeData.Count = pendingEmojiNodeData.Count + 1
-                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Emoji = emoji }
+                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Icon = pack:GetIcon(emojiKey), Emoji = emoji }
 
                     if pendingEmojiNodeData.Count == dataProvider.Column then
                         foundRow = foundRow + 1
@@ -769,7 +774,7 @@ function KeyboardDialog:RefreshEmojiPackKeyBoard()
                 -- 没有图标的组就不显示了
                 if group.Icon or group.IconKey then
                     local node = {
-                        Icon = group.Icon or addon:GetEmojiIconByKey(group.IconKey),
+                        Icon = group.Icon or pack:GetEmoji(group.IconKey),
                         GroupIndex = i,
                         EmojiCount = group.EmojiCount,
                         SubGroupCount = group.SubGroupCount,
@@ -1156,6 +1161,9 @@ function KeyboardDialog:AddStickerPacks(packs, packCount)
             Data = pack,
             GetEmoji = function(self, key)
                 return self.Data[key]
+            end,
+            GetIcon = function(self, key)
+                return self.Data.Icons[key]
             end
         }
         self.EmojiPacks:AddPack(newPack)

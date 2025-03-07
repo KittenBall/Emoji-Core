@@ -339,6 +339,21 @@ function addon:GetEmojiIconByKey(key, withEscapeSequences)
     end
 end
 
+-- 根据key获取emoji图标，这个函数会无视sticker
+function addon:GetEmojiIconByKeyIgnoreSticker(key, withEscapeSequences)
+    for i = 1, EmojiPacksCount do
+        local pack = EmojiPacks[i]
+        local iconFile = pack.Icons[key]
+        if iconFile then
+            local path = pack.IconDir .. iconFile
+            if withEscapeSequences then
+                path = "|T" .. path .. ":22|t"
+            end
+            return path
+        end
+    end
+end
+
 -- 根据key获取emoji
 function addon:GetEmojiByKey(key)
     for i = 1, StickerPackCount do
