@@ -26,11 +26,30 @@ function addon:GetRecentEmojis()
     return self.Saved.RecentEmojis
 end
 
+-- 获取配置
+function addon:GetOptions()
+    return self.Saved.Options
+end
+
+-- 生成配置结构
+local function generateOptionsStructure(parent, options)
+    for k, v in pairs(options) do
+        if type(k) == "string" and type(v) == "table" then
+            parent[k] = {}
+            generateOptionsStructure(parent[k], v)
+        end
+    end
+end
+
 local function OnAddonLoaded()
     EmojiCoreSaved = EmojiCoreSaved or {}
     addon.Saved = Mixin(EmojiCoreSaved, Saved)
 
     EmojiCoreSaved.RecentEmojis = EmojiCoreSaved.RecentEmojis or {}
+
+    EmojiCoreSaved.Options = EmojiCoreSaved.Options or {}
+    -- addon.Options在Settings.lua内定义
+    generateOptionsStructure(EmojiCoreSaved.Options, addon.Options)
 end
 
 EventUtil.ContinueOnAddOnLoaded(addonName, OnAddonLoaded)

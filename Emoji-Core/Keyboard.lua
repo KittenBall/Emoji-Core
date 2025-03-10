@@ -1176,14 +1176,26 @@ function KeyboardDialog:AddStickerPacks(packs, packCount)
     end
 end
 
--- Emo表情包列表变更
+-- Emoji表情包列表变更
 function addon:OnStickerPackListChanged()
     KeyboardDialog:AddStickerPacks(self:GetStickerPacks())
 end
 
+local function OnKeyboardPackIconSizeOptionChanged(self)
+    self.EmojiPackList:Rebuild()
+end
+
+local function OnKeyboardEmojiIconSizeOptionChanged(self)
+    self.Keyboard:Rebuild()
+end
+
+local function OnKeyboardGroupIconSizeOptionChanged(self)
+    self.EmojiGroupList:Rebuild()
+end
+
 -- 创建弹窗
 local function CreateKeyboardDialog()
-    KeyboardDialog:SetSize(270, 320)
+    KeyboardDialog:SetSize(addon:GetOptionValue(addon.Options.Keyboard.DefaultWidth), addon:GetOptionValue(addon.Options.Keyboard.DefaultHeight))
     KeyboardDialog:SetFrameStrata("HIGH")
     KeyboardDialog:SetMovable(true)
     KeyboardDialog:SetResizable(true)
@@ -1191,6 +1203,10 @@ local function CreateKeyboardDialog()
     KeyboardDialog:SetClampedToScreen(true)
 
     KeyboardDialog:SetScript("OnHide", KeyboardDialog.OnHide)
+
+    addon:RegisterOptionChangedCallback(addon.Options.Keyboard.PackIconSize, OnKeyboardPackIconSizeOptionChanged, KeyboardDialog)
+    addon:RegisterOptionChangedCallback(addon.Options.Keyboard.EmojiIconSize, OnKeyboardEmojiIconSizeOptionChanged, KeyboardDialog)
+    addon:RegisterOptionChangedCallback(addon.Options.Keyboard.GroupIconSize, OnKeyboardGroupIconSizeOptionChanged, KeyboardDialog)
 end
 
 -- 加载键盘弹窗

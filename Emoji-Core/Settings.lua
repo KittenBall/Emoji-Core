@@ -1,85 +1,169 @@
 local addonName, addon = ...
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 
-MyAddOn_SavedVars = {}
+local Options = {
+	-- 表情键盘
+    {
+		Key = "Keyboard",
+		Name = L["settings_keyboard_section_title"],
 
-local category, layout = Settings.RegisterVerticalLayoutCategory("My AddOn")
+        -- 键盘：默认宽度
+        {
+			Key = "DefaultWidth",
+			Name = L["settings_keyboard_default_width_title"],
+			Default = 270,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 220,
+				Max = 480,
+				Step = 5,
+				Tooltip = L["settings_keyboard_default_width_tooltip"]
+			}
+		},
+        -- 键盘：默认高度
+        {
+			Key = "DefaultHeight",
+			Name = L["settings_keyboard_default_height_title"],
+			Default = 330,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 250,
+				Max = 560,
+				Step = 5,
+				Tooltip = L["settings_keyboard_default_height_tooltip"]
+			}
+		},
+        -- 键盘：表情包图标尺寸
+        {
+			Key = "PackIconSize",
+			Name = L["settings_keyboard_pack_icon_size_title"],
+			Default = 24,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 16,
+				Max = 36,
+				Step = 1,
+				Tooltip = L["settings_keyboard_pack_icon_size_tooltip"]
+			}
+		},
+        -- 键盘：表情图标尺寸
+        {
+			Key = "EmojiIconSize",
+			Name = L["settings_keyboard_emoji_icon_size_title"],
+			Default = 30,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 24,
+				Max = 48,
+				Step = 1,
+				Tooltip = L["settings_keyboard_emoji_icon_size_tooltip"]
+			}
+		},
+        -- 键盘：表情类别图标尺寸
+        {
+			Key = "GroupIconSize",
+			Name = L["settings_keyboard_group_icon_size_title"],
+			Default = 20,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 16,
+				Max = 36,
+				Step = 1,
+				Tooltip = L["settings_keyboard_group_icon_size_tooltip"]
+			}
+		}
+    }
+}
 
-layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(ACCESSIBILITY_ADV_FLY_LABEL))
+-- 生成OptionKeys
+do
+	-- 注意：addon.Options和addon.Saved.Options有区别，前者主要是用于定义配置，后者是用于存储
+	addon.Options = {}
+
+	local function GetOptionValue(self, groupKey, itemKey)
+		local options = self:GetOptions()
+		local group = options[groupKey]
+		return group and group[itemKey]
+	end
+
+	local function GetOptionSavedTbl(self)
+		return addon:GetOptions()[self.ParentKey]
+	end
+
+	local function GetOptionValue(self)
+		return self:GetOptionSavedTbl()[self.Key]
+	end
+
+	local function GetOptionItemName(self)
+		return addonName .. "." .. self.ParentKey .. "." .. self.Key
+	end
+	
+	-- 生成配置枚举，会生类似下面的条目
+	-- addon.Options.Keyboard.DefaultWidth = Emoji-Core.Keyboard.DefaultWidth
+	-- addon.Options["Emoji-Core.Keyboard.DefaultWidth"] = option
+	for _, optionGroup in ipairs(Options) do
+		local groupItems = {}
+
+		for _, optionItem in ipairs(optionGroup) do
+			optionItem.ParentKey = optionGroup.Key
+			optionItem.GetOptionItemName = GetOptionItemName
+			optionItem.GetOptionSavedTbl = GetOptionSavedTbl
+			optionItem.GetOptionValue = GetOptionValue
+			
+			local itemName = optionItem:GetOptionItemName()
+			groupItems[optionItem.Key] = itemName
+			Options[itemName] = optionItem
+		end
+
+		addon.Options[optionGroup.Key] = groupItems
+	end
+end
+
+-- 获取配置值
+-- 这里传入的optionItem是枚举字符串
+function addon:GetOptionValue(optionItem)
+	return Options[optionItem]:GetOptionValue()
+end
+
+function addon:RegisterOptionChangedCallback(optionItem, callback, owner, ...)
+    EventRegistry:RegisterCallback(optionItem, callback, owner, ...)
+end
+
+function addon:UnregisterOptionChangedCallback(optionItem, owner)
+    EventRegistry:UnregisterCallback(optionItem, owner)
+end
 
 local function OnSettingChanged(setting, value)
-	-- This callback will be invoked whenever a setting is modified.
-	print("Setting changed:", setting:GetVariable(), value)
+    local optionItemName = setting:GetName()
+    EventRegistry:TriggerEvent(optionItemName, value)
 end
 
-do 
-	-- RegisterAddOnSetting example. This will read/write the setting directly
-	-- to `MyAddOn_SavedVars.toggle`.
-
-    local name = "Test Checkbox"
-    local variable = "MyAddOn_Toggle"
-	local variableKey = "toggle"
-	local variableTbl = MyAddOn_SavedVars
-    local defaultValue = false
-
-    local setting = Settings.RegisterAddOnSetting(category, variable, variableKey, variableTbl, type(defaultValue), name, defaultValue)
-	setting:SetValueChangedCallback(OnSettingChanged)
-
-    local tooltip = "This is a tooltip for the checkbox."
-	Settings.CreateCheckbox(category, setting, tooltip)
+-- 注册插件设置
+local function RegisterAddOnSetting(category, optionItem)
+    local settings = Settings.RegisterAddOnSetting(category, optionItem:GetOptionItemName(), optionItem.Key, optionItem:GetOptionSavedTbl(), type(optionItem.Default), optionItem.Name, optionItem.Default)
+    settings:SetValueChangedCallback(OnSettingChanged)
+    return settings
 end
 
-layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(ACCESSIBILITY_ADV_FLY_LABEL))
-do
-	-- RegisterProxySetting example. This will run the GetValue and SetValue
-	-- callbacks whenever access to the setting is required.
-
-	local name = "Test Slider"
-	local variable = "MyAddOn_Slider"
-    local defaultValue = 180
-    local minValue = 90
-    local maxValue = 360
-    local step = 10
-
-	local function GetValue()
-		return MyAddOn_SavedVars.slider or defaultValue
+-- 创建设置控件
+local function createSettingControl(category, setting, controlInfo)
+	if controlInfo.Type == "Slider" then
+		local options = Settings.CreateSliderOptions(controlInfo.Min, controlInfo.Max, controlInfo.Step)
+		options:SetLabelFormatter(MinimalSliderWithSteppersMixin.Label.Right)
+		Settings.CreateSlider(category, setting, options, controlInfo.Tooltip)
 	end
-
-	local function SetValue(value)
-		MyAddOn_SavedVars.slider = value
-	end
-
-	local setting = Settings.RegisterProxySetting(category, variable, type(defaultValue), name, defaultValue, GetValue, SetValue)
-	setting:SetValueChangedCallback(OnSettingChanged)
-
-	local tooltip = "This is a tooltip for the slider."
-    local options = Settings.CreateSliderOptions(minValue, maxValue, step)
-    options:SetLabelFormatter(MinimalSliderWithSteppersMixin.Label.Right);
-    Settings.CreateSlider(category, setting, options, tooltip)
 end
-
-Settings.RegisterAddOnCategory(category)
-
-Settings.RegisterVerticalLayoutSubcategory(category, "My Addon Subcategory")
-
--- 键盘使能
-local OPTIONS_ITEM_KEYBOARD_PACK_ICON_SIZE = "KeyboardPackIconSize"
 
 local function RegisterSettings()
 	local category, layout = Settings.RegisterVerticalLayoutCategory(L["settings_category_name"])
 
-	-- keybaord
-	layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(L["settings_keyboard_section_title"]))
-
-	-- pack icon size
-	do
-		local function GetValue()
-		end
-
-		local function SetValue(value)
-		end
-
+	for _, optionGroup in ipairs(Options) do
+		layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(optionGroup.Name))
 		
+		for _, optionItem in ipairs(optionGroup) do
+			local setting = RegisterAddOnSetting(category, optionItem)
+			createSettingControl(category, setting, optionItem.ControlInfo)
+		end
 	end
 
 	Settings.RegisterAddOnCategory(category)
