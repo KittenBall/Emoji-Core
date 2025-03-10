@@ -53,8 +53,8 @@ local Options = {
 			Default = 30,
 			ControlInfo = {
 				Type = "Slider",
-				Min = 24,
-				Max = 48,
+				Min = 16,
+				Max = 64,
 				Step = 1,
 				Tooltip = L["settings_keyboard_emoji_icon_size_tooltip"]
 			}
@@ -63,7 +63,7 @@ local Options = {
         {
 			Key = "GroupIconSize",
 			Name = L["settings_keyboard_group_icon_size_title"],
-			Default = 20,
+			Default = 24,
 			ControlInfo = {
 				Type = "Slider",
 				Min = 16,
@@ -91,7 +91,7 @@ do
 	end
 
 	local function GetOptionValue(self)
-		return self:GetOptionSavedTbl()[self.Key]
+		return self:GetOptionSavedTbl()[self.Key] or self.Default
 	end
 
 	local function GetOptionItemName(self)
@@ -134,8 +134,7 @@ function addon:UnregisterOptionChangedCallback(optionItem, owner)
 end
 
 local function OnSettingChanged(setting, value)
-    local optionItemName = setting:GetName()
-    EventRegistry:TriggerEvent(optionItemName, value)
+    EventRegistry:TriggerEvent(setting:GetVariable(), value)
 end
 
 -- 注册插件设置

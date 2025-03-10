@@ -3,7 +3,6 @@ local addonName, addon = ...
 --最近使用的最大表情数
 local MAX_RECENT_EMOJIS_COUNT = 30
 
-local Saved = {}
 
 -- 添加一个最近使用的emoji
 function addon:AddRecentEmoji(emojiKey)
@@ -35,7 +34,7 @@ end
 local function generateOptionsStructure(parent, options)
     for k, v in pairs(options) do
         if type(k) == "string" and type(v) == "table" then
-            parent[k] = {}
+            parent[k] = parent[k] or {}
             generateOptionsStructure(parent[k], v)
         end
     end
@@ -43,7 +42,7 @@ end
 
 local function OnAddonLoaded()
     EmojiCoreSaved = EmojiCoreSaved or {}
-    addon.Saved = Mixin(EmojiCoreSaved, Saved)
+    addon.Saved = EmojiCoreSaved
 
     EmojiCoreSaved.RecentEmojis = EmojiCoreSaved.RecentEmojis or {}
 
