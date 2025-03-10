@@ -17,3 +17,8 @@ L["keyboard_emoji_name_title"] = "名称："
 L["keyboard_emoji_shortcode_title"] = "短代码："
 L["keyboard_emoji_variants_number_title"] = "变体数量："
 L["keyboard_emoji_keyword_title"] = "关键词："
+
+L["settings_category_name"] = "Emoji"
+
+L["settings_keyboard_section_title"] = "表情键盘"
+L["settings_keyboard_pack_icon_size_title"] = "表情包图标尺寸"

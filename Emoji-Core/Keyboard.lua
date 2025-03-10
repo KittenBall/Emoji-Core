@@ -153,7 +153,6 @@ function EmojiKeyboardPackListItemMixin:Update()
     self:GetNormalTexture():SetDesaturated(not selected)
     self:SetHighlightTexture(icon)
     self:GetHighlightTexture():SetBlendMode("BLEND")
-    self:GetHighlightTexture():SetVertexColor(1, 0.9843, 0.0078)
 end
 
 function EmojiKeyboardPackListItemMixin:SetSelected(selected)

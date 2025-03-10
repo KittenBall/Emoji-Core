@@ -26,5 +26,6 @@ Keyboard.xml
 Core.lua
 Features.lua
 Saved.lua
+Settings.lua
 
 Api.lua
