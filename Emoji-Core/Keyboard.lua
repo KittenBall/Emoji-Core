@@ -24,8 +24,6 @@ local function RunOrdering(...)
     C_Timer.After(0, run)
 end
 
--- 键盘图标大小
-local KeyboardEmojiIconSize = 30
 -- 键盘弹窗
 local KeyboardDialog
 if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
@@ -186,12 +184,13 @@ local function CreateEmojiPackList()
     emojiPackList:SetPoint("TOP", 0, -20)
     emojiPackList:SetPoint("LEFT", 10, 0)
     emojiPackList:SetPoint("RIGHT", -10, 0)
-    emojiPackList:SetHeight(KeyboardEmojiIconSize + 6)
+    local iconSize = addon:GetOptionValue(addon.Options.Keyboard.PackIconSize)
+    emojiPackList:SetHeight(iconSize + 6)
 
     emojiPackList.SelectionBehavior = ScrollUtil.AddSelectionBehavior(emojiPackList)
 
     local emojiPackView = CreateScrollBoxListLinearView(3, 3, 5, 5, 15)
-    emojiPackView:SetElementExtent(KeyboardEmojiIconSize)
+    emojiPackView:SetElementExtent(iconSize)
     emojiPackView:SetElementInitializer("EmojiKeyboardPackListItemTemplate", EmojiPackListItemUpdater)
     emojiPackView:SetHorizontal(true)
 
@@ -316,8 +315,8 @@ function EmojiKeyboardEmojiItemMixin:Update()
     local column = data.Column
 
     local width, height = self:GetSize()
-    local iconHorizontalSpace = (width - KeyboardEmojiIconSize * column) / (column + 1)
-    local iconVerticalSpace = (height - KeyboardEmojiIconSize) / 2
+    local iconHorizontalSpace = (width - data.Size * column) / (column + 1)
+    local iconVerticalSpace = (height - data.Size) / 2
     local emojiCount = data.Count
 
     for i = 1, max(#self.Buttons, emojiCount) do
@@ -327,9 +326,9 @@ function EmojiKeyboardEmojiItemMixin:Update()
             local emojiData = data[i]
             button:Update(emojiData)
             button:ClearAllPoints()
-            button:SetSize(KeyboardEmojiIconSize, KeyboardEmojiIconSize)
+            button:SetSize(data.Size, data.Size)
             button:SetPoint("TOP", self, "TOP", 0, -iconVerticalSpace)
-            button:SetPoint("LEFT", self, "LEFT", iconHorizontalSpace * i + KeyboardEmojiIconSize * (i - 1), 0)
+            button:SetPoint("LEFT", self, "LEFT", iconHorizontalSpace * i + data.Size * (i - 1), 0)
 
             button:Show()
         else
@@ -361,7 +360,7 @@ local function KeyboardListItemExtentCalculator(index, node)
     elseif data.IsGroup or data.IsSubGroup then
         return 1
     else
-        return KeyboardEmojiIconSize + 6
+        return addon:GetOptionValue(addon.Options.Keyboard.EmojiIconSize) + 6
     end
 end
 
@@ -401,8 +400,6 @@ end
 -- ======================================================================
 -- ==================== Emoji Keyborad Group ============================
 -- ======================================================================
-
-local EmojiGroupIconSize = 20
 
 -- Emoji分组列表项
 EmojiKeyboardGroupListItemMixin = {}
@@ -460,13 +457,14 @@ local function CreateEmojiGroupList()
     KeyboardDialog.EmojiGroupList = emojiGroupList
     emojiGroupList:SetPoint("BOTTOMLEFT", 10, 10)
     emojiGroupList:SetPoint("BOTTOMRIGHT", -16, 10)
-    emojiGroupList:SetHeight(EmojiGroupIconSize + 4)
+    local iconSize = addon:GetOptionValue(addon.Options.Keyboard.GroupIconSize)
+    emojiGroupList:SetHeight(iconSize + 4)
     emojiGroupList:Hide()
 
     emojiGroupList.SelectionBehavior = ScrollUtil.AddSelectionBehavior(emojiGroupList)
 
     local emojiGroupView = CreateScrollBoxListLinearView(2, 2, 5, 5, 6)
-    emojiGroupView:SetElementExtent(EmojiGroupIconSize)
+    emojiGroupView:SetElementExtent(iconSize)
     emojiGroupView:SetElementInitializer("EmojiKeyboardGroupListItemTemplate", EmojiGroupListItemUpdater)
     emojiGroupView:SetHorizontal(true)
 
@@ -662,6 +660,7 @@ local function OnEmojiKeyboardUpdate(self)
     local pendingGroupNode = dataProvider.PendingGroupNode
     local pendingSubGroupNode = dataProvider.PendingSubGroupNode 
     local pendingEmojiNodeData = dataProvider.PendingEmojiNodeData
+    local iconSize = dataProvider.IconSize
 
     -- 每一帧，我们只显示一行
     local foundRow = 0
@@ -722,7 +721,7 @@ local function OnEmojiKeyboardUpdate(self)
                     local emoji = pack:GetEmoji(emojiKey)
                     
                     if not pendingEmojiNodeData then
-                        pendingEmojiNodeData = { Count = 0, Column = dataProvider.Column }
+                        pendingEmojiNodeData = { Count = 0, Column = dataProvider.Column, Size = iconSize, GroupIndex = groupIndex, SubGroupIndex = subGroupIndex }
                     end
 
                     pendingEmojiNodeData.Count = pendingEmojiNodeData.Count + 1
@@ -792,13 +791,15 @@ function KeyboardDialog:RefreshEmojiPackKeyBoard()
     local keyboardWidth = Keyboard:GetWidth()
     local padding = Keyboard:GetPadding()
     local usableWidth = keyboardWidth - padding:GetLeft() - padding:GetRight()
-    local column = floor(usableWidth / (KeyboardEmojiIconSize + 10))
+    local iconSize = addon:GetOptionValue(addon.Options.Keyboard.EmojiIconSize)
+    local column = floor(usableWidth / (iconSize + 10))
 
     local dataProvider = pack.KeyboardDataProvider
-    if not dataProvider or pack.Dynamic or column ~= dataProvider.Column then
+    if not dataProvider or pack.Dynamic or column ~= dataProvider.Column or iconSize ~= dataProvider.IconSize then
         dataProvider = CreateTreeDataProvider()
         pack.KeyboardDataProvider = dataProvider
         dataProvider.Column = column
+        dataProvider.IconSize = iconSize
         dataProvider.ShowGroup = showGroupList
         dataProvider.UpdateGroupIndex = 1
         dataProvider.UpdateSubGroupIndex = 1
@@ -835,6 +836,7 @@ local function OnSearchKeyboardUpdate(self)
 
     local pendingPackNode = dataProvider.PendingPackNode 
     local pendingEmojiNodeData = dataProvider.PendingEmojiNodeData
+    local iconSize = dataProvider.IconSize
     
     if not pack or (pendingPackNode and pendingPackNode:GetData().Title ~= pack.Name) then
         -- 换pack了
@@ -919,11 +921,11 @@ local function OnSearchKeyboardUpdate(self)
                     end
 
                     if not pendingEmojiNodeData then
-                        pendingEmojiNodeData = { Count = 0, Column = dataProvider.Column }
+                        pendingEmojiNodeData = { Count = 0, Column = dataProvider.Column, Size = iconSize }
                     end
 
                     pendingEmojiNodeData.Count = pendingEmojiNodeData.Count + 1
-                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Icon = pack:GetIcon(emojiKey), Emoji = emoji }
+                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Icon = pack:GetIcon(emojiKey), Emoji = emoji, GroupIndex = groupIndex, SubGroupIndex = subGroupIndex }
 
                     if pendingEmojiNodeData.Count == dataProvider.Column then
                         foundRow = foundRow + 1
@@ -949,9 +951,11 @@ function KeyboardDialog:RefreshSearchKeyBoard()
     local keyboardWidth = self.Keyboard:GetWidth()
     local padding = self.Keyboard:GetPadding()
     local usableWidth = keyboardWidth - padding:GetLeft() - padding:GetRight()
-    local column = floor(usableWidth / (KeyboardEmojiIconSize + 10))
+    local iconSize = addon:GetOptionValue(addon.Options.Keyboard.EmojiIconSize)
+    local column = floor(usableWidth / (iconSize + 10))
     self.SearchDataProvider:Flush()
     self.SearchDataProvider.Column = column
+    self.SearchDataProvider.IconSize = iconSize
 
     self.Keyboard:SetDataProvider(self.SearchDataProvider)
     self:StartUpdateTask(OnSearchKeyboardUpdate)
@@ -1182,15 +1186,31 @@ function addon:OnStickerPackListChanged()
 end
 
 local function OnKeyboardPackIconSizeOptionChanged(self)
+    local iconSize = addon:GetOptionValue(addon.Options.Keyboard.PackIconSize)
+    self.EmojiPackList:SetHeight(iconSize + 6)
+    self.EmojiPackList:GetView():SetElementExtent(iconSize)
     self.EmojiPackList:Rebuild()
 end
 
 local function OnKeyboardEmojiIconSizeOptionChanged(self)
-    self.Keyboard:Rebuild()
+    self:RefreshKeyBoard()
 end
 
 local function OnKeyboardGroupIconSizeOptionChanged(self)
+    local dataProvider = self.EmojiGroupList:GetDataProvider()
+    if not dataProvider then return end
+
+    local iconSize = addon:GetOptionValue(addon.Options.Keyboard.GroupIconSize)
+    self.EmojiGroupList:SetHeight(iconSize + 4)
+    self.EmojiGroupList:GetView():SetElementExtent(iconSize)
     self.EmojiGroupList:Rebuild()
+end
+
+local function OnKeyboardSizeOptionChanged(self)
+    local width = addon:GetOptionValue(addon.Options.Keyboard.DefaultWidth)
+    local height = addon:GetOptionValue(addon.Options.Keyboard.DefaultHeight)
+    self:SetSize(width, height)
+    self:RefreshKeyBoard()
 end
 
 -- 创建弹窗
@@ -1203,7 +1223,11 @@ local function CreateKeyboardDialog()
     KeyboardDialog:SetClampedToScreen(true)
 
     KeyboardDialog:SetScript("OnHide", KeyboardDialog.OnHide)
+end
 
+local function RegisterEvents()
+    addon:RegisterOptionChangedCallback(addon.Options.Keyboard.DefaultWidth, OnKeyboardSizeOptionChanged, KeyboardDialog)
+    addon:RegisterOptionChangedCallback(addon.Options.Keyboard.DefaultHeight, OnKeyboardSizeOptionChanged, KeyboardDialog)
     addon:RegisterOptionChangedCallback(addon.Options.Keyboard.PackIconSize, OnKeyboardPackIconSizeOptionChanged, KeyboardDialog)
     addon:RegisterOptionChangedCallback(addon.Options.Keyboard.EmojiIconSize, OnKeyboardEmojiIconSizeOptionChanged, KeyboardDialog)
     addon:RegisterOptionChangedCallback(addon.Options.Keyboard.GroupIconSize, OnKeyboardGroupIconSizeOptionChanged, KeyboardDialog)
@@ -1221,6 +1245,7 @@ local function LoadKeyboardDialog()
         CreateCloser,
         CreateResizer, 
         CreateDragger, 
+        RegisterEvents,
         -- 默认选中
         GenerateClosure(KeyboardDialog.SelectEmojiPack, KeyboardDialog, KeyboardDialog:GetSelectedEmojiPack())
     )
