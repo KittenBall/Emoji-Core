@@ -721,7 +721,7 @@ local function OnEmojiKeyboardUpdate(self)
                     local emoji = pack:GetEmoji(emojiKey)
                     
                     if not pendingEmojiNodeData then
-                        pendingEmojiNodeData = { Count = 0, Column = dataProvider.Column, Size = iconSize }
+                        pendingEmojiNodeData = { Count = 0, Column = dataProvider.Column, Size = iconSize, GroupIndex = groupIndex, SubGroupIndex = subGroupIndex }
                     end
 
                     pendingEmojiNodeData.Count = pendingEmojiNodeData.Count + 1
@@ -925,7 +925,7 @@ local function OnSearchKeyboardUpdate(self)
                     end
 
                     pendingEmojiNodeData.Count = pendingEmojiNodeData.Count + 1
-                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Icon = pack:GetIcon(emojiKey), Emoji = emoji }
+                    pendingEmojiNodeData[pendingEmojiNodeData.Count] = { Key = emojiKey, Icon = pack:GetIcon(emojiKey), Emoji = emoji, GroupIndex = groupIndex, SubGroupIndex = subGroupIndex }
 
                     if pendingEmojiNodeData.Count == dataProvider.Column then
                         foundRow = foundRow + 1
