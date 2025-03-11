@@ -189993,6 +189993,8 @@ addon.Emojis = {
 	AutoCompleteMinLength = 2,
 	AutoCompleteMaxLength = 9,
 
+	-- ·: 0x183
+	StickerDelimiterCodePoint = 183
 	-- :: 0x3a
 	ShortcodeStartCodePoint = 58,
 	-- :: 0x3a

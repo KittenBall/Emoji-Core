@@ -1,8 +1,6 @@
 local addonName, addon = ...
 
 -- export api
-Emojis = addon
-
 Emojis = {}
 
 local exportApis = {
