@@ -15,7 +15,8 @@ local Options = {
 			ControlInfo = {
 				Type = "Slider",
 				Min = 12,
-				Max = 36
+				Max = 36,
+				Tooltip = L["settings_general_emoji_icon_size_tooltip"]
 			}
 		},
 	},
