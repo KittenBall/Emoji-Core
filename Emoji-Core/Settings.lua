@@ -2,6 +2,23 @@ local addonName, addon = ...
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 
 local Options = {
+	-- 综合
+	{
+		Key = "General",
+		Name = L["settings_general_section_title"],
+
+		-- 表情大小
+		{
+			Key = "EmojiIconSize",
+			Name = L["settings_general_emoji_icon_size_title"],
+			Default = 22,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 12,
+				Max = 36
+			}
+		},
+	},
 	-- 表情键盘
     {
 		Key = "Keyboard",

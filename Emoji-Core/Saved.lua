@@ -9,7 +9,7 @@ function addon:AddRecentEmoji(emojiKey)
     
     local size = #recentEmojis
     for i = 1, size do
-        if i == MAX_RECENT_EMOJIS_COUNT then
+        if i >= MAX_RECENT_EMOJIS_COUNT then
             recentEmojis[i] = nil
         elseif recentEmojis[i] == emojiKey then
             table.remove(recentEmojis, i)
