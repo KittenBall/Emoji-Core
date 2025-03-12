@@ -3,7 +3,6 @@ local addonName, addon = ...
 --最近使用的最大表情数
 local MAX_RECENT_EMOJIS_COUNT = 30
 
-
 -- 添加一个最近使用的emoji
 function addon:AddRecentEmoji(emojiKey)
     local recentEmojis = self.Saved.RecentEmojis
@@ -40,7 +39,8 @@ local function generateOptionsStructure(parent, options)
     end
 end
 
-local function OnAddonLoaded()
+-- 初始化存储环境
+function addon:SetupSavedEnvironment()
     EmojiCoreSaved = EmojiCoreSaved or {}
     addon.Saved = EmojiCoreSaved
 
@@ -50,6 +50,4 @@ local function OnAddonLoaded()
     -- addon.Options在Settings.lua内定义
     generateOptionsStructure(EmojiCoreSaved.Options, addon.Options)
 end
-
-EventUtil.ContinueOnAddOnLoaded(addonName, OnAddonLoaded)
 

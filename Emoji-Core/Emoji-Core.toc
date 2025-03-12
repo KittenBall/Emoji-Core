@@ -20,6 +20,7 @@ Locales\localization_enUS.lua
 Locales\Emojis_zhCN.lua
 Locales\Emojis_enUS.lua
 
+Init.lua
 CodePoints.lua
 AutoComplete.lua
 Keyboard.xml

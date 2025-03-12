@@ -153,7 +153,8 @@ local function createSettingControl(category, setting, controlInfo)
 	end
 end
 
-local function RegisterSettings()
+-- 注册设置项
+function addon:RegisterSettings()
 	local category, layout = Settings.RegisterVerticalLayoutCategory(L["settings_category_name"])
 
 	for _, optionGroup in ipairs(Options) do
@@ -167,5 +168,3 @@ local function RegisterSettings()
 
 	Settings.RegisterAddOnCategory(category)
 end
-
-EventUtil.ContinueOnAddOnLoaded(addonName, RegisterSettings)
