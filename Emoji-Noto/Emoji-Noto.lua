@@ -16213,4 +16213,8 @@ local pack = {
 	}
 }
 
-Emojis:RegisterEmojiPack(pack)
+local function OnAddonLoaded()
+    Emojis:RegisterEmojiPack(pack)
+end
+
+EventUtil.ContinueOnAddOnLoaded(addonName, OnAddonLoaded)

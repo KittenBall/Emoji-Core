@@ -3,7 +3,7 @@
 ## Interface-Wrath: 30403
 ## Interface-Cata: 40402
 ## Author: KittenBall
-## Version: 20250312190416
+## Version: 20250313143151
 ## Notes: EmojiPack: Google Noto
 ## Notes-zhCN: Emoji表情包：Google Noto
 ## DefaultState: enabled

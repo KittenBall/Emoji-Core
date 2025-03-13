@@ -330,13 +330,17 @@ local function checkPackValid(pack)
     if not pack or not pack.ID then
         error("pack is nil or pack does not have a ID")
     end
+    
     if PacksByID[pack.ID] then
-        error("Pack id(" .. pack.ID .. ") is registered already")
+        error("Pack id(" .. pack.ID .. ") is registered already.")
     end
-
     PacksByID[pack.ID] = pack
+    
     local shortcodePrefix = pack.ShortcodePrefix
     if shortcodePrefix and shortcodePrefix ~= "" then
+        if PacksByShortcodePrefix[shortcodePrefix] then
+            error("Pack shortcode prefix(" .. shortcodePrefix .. ") is registered already.")
+        end
         PacksByShortcodePrefix[shortcodePrefix] = pack
     end
 end

@@ -1,6 +1,6 @@
 local addonName, addon = ...
 
-local function OnAddonLoaded(self)
+local function OnAddonLoaded()
     addon:SetupSavedEnvironment()
     addon:RegisterSettings()
     addon:SetupEmojiSizeInFontString()
