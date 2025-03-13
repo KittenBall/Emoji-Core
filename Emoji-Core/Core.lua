@@ -277,9 +277,9 @@ end
     {
         ID = "id", should be unique
         Name = "packName",
-        IconDir = "Interface\\Addons\\Emoji-OpenMoji\\"
+        IconDir = "Interface\\Addons\\" .. "path"
         Icons = {
-            -- unicode key = icon path, eg:
+            -- key = icon path, eg:
             ["127486_127466"] = "127486-127466.png"
             -- etc
         }
@@ -308,51 +308,70 @@ function addon:GetStickerPacks()
     return StickerPacks, StickerPackCount
 end
 
--- 根据key获取emoji图标
--- @todo 提前获取可能的表情包
-function addon:GetEmojiIconByKey(key, withEscapeSequences)
-    for i = 1, StickerPackCount do
-        local pack = StickerPacks[i]
-        local emoji = pack[key]
-        if emoji then
+do
+    local emojiIconSize
+
+    local function OnEmojiIconSizeChanged(_, _, size)
+        emojiIconSize = size
+    end
+
+    -- 设置emoji在FontString中的大小
+    function addon:SetupEmojiSizeInFontString()
+        emojiIconSize = self:GetOptionValue(addon.Options.General.EmojiIconSize)
+        self:RegisterOptionChangedCallback(addon.Options.General.EmojiIconSize, OnEmojiIconSizeChanged)
+    end
+
+    function addon:WrapperIconPathWithEscapeSequences(path)
+        return "|T" .. path .. ":" .. emojiIconSize .. "|t"
+    end
+
+    -- 根据key获取emoji图标
+    -- @todo 提前获取可能的表情包
+    function addon:GetEmojiIconByKey(key, withEscapeSequences)
+        for i = 1, StickerPackCount do
+            local pack = StickerPacks[i]
+            local emoji = pack[key]
+            if emoji then
+                local iconFile = pack.Icons[key]
+                if iconFile then
+                    local path = pack.IconDir .. iconFile
+                    if withEscapeSequences then
+                        path = self:WrapperIconPathWithEscapeSequences(path)
+                    end
+                    return path
+                end
+            end
+        end
+
+        for i = 1, EmojiPacksCount do
+            local pack = EmojiPacks[i]
             local iconFile = pack.Icons[key]
             if iconFile then
                 local path = pack.IconDir .. iconFile
                 if withEscapeSequences then
-                    path = "|T" .. path .. ":22|t"
+                    path = self:WrapperIconPathWithEscapeSequences(path)
                 end
                 return path
             end
         end
     end
 
-    for i = 1, EmojiPacksCount do
-        local pack = EmojiPacks[i]
-        local iconFile = pack.Icons[key]
-        if iconFile then
-            local path = pack.IconDir .. iconFile
-            if withEscapeSequences then
-                path = "|T" .. path .. ":22|t"
+    -- 根据key获取emoji图标，这个函数会无视sticker
+    function addon:GetEmojiIconByKeyIgnoreSticker(key, withEscapeSequences)
+        for i = 1, EmojiPacksCount do
+            local pack = EmojiPacks[i]
+            local iconFile = pack.Icons[key]
+            if iconFile then
+                local path = pack.IconDir .. iconFile
+                if withEscapeSequences then
+                    path = self:WrapperIconPathWithEscapeSequences(path)
+                end
+                return path
             end
-            return path
         end
     end
 end
 
--- 根据key获取emoji图标，这个函数会无视sticker
-function addon:GetEmojiIconByKeyIgnoreSticker(key, withEscapeSequences)
-    for i = 1, EmojiPacksCount do
-        local pack = EmojiPacks[i]
-        local iconFile = pack.Icons[key]
-        if iconFile then
-            local path = pack.IconDir .. iconFile
-            if withEscapeSequences then
-                path = "|T" .. path .. ":22|t"
-            end
-            return path
-        end
-    end
-end
 
 -- 根据key获取emoji
 function addon:GetEmojiByKey(key)
@@ -401,46 +420,50 @@ do
             count = count + 1
             result[count] = key
         end
-        
+
         if count > 0 then
-            return result, count            
+            return result, count
         end
     end
-end
 
--- 根据unicode key获取emoji短代码
--- @param shortcodeDelimiter 短代码分隔符 left, right, all or nil
-function addon:GetEmojiShortcodeByKey(key, shortcodeDelimiter)
-    if not key then return end
+    -- 根据key获取emoji短代码
+    -- @param shortcodeDelimiter 短代码分隔符 left, right, all or nil
+    function addon:GetEmojiShortcodeByKey(key, shortcodeDelimiter)
+        if not key then
+            return
+        end
 
-    local emoji
-    for i = 1, StickerPackCount do
-        local pack = StickerPacks[i]
-        emoji = pack[key]
+        local emoji
+        for i = 1, StickerPackCount do
+            local pack = StickerPacks[i]
+            emoji = pack[key]
+            if emoji then
+                break
+            end
+        end
+
+        if not emoji then
+            emoji = Emojis[key]
+        end
+
         if emoji then
-            break
+            local shortcode = emoji and emoji.Shortcodes[1] or nil
+            return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
         end
     end
 
-    if not emoji then
-        emoji = Emojis[key]
-    end
-    
-    if emoji then
-        local shortcode = emoji and emoji.Shortcodes[1] or nil
-        return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
-    end
-end
-
-function addon:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
-    if not shortcode then return end
-    if shortcodeDelimiter == "left" then
-        return shortcodeStartDelimiter .. shortcode
-    elseif shortcodeDelimiter == "right" then
-        return shortcode .. shortcodeCompleteDelimiter
-    elseif shortcodeDelimiter == "all" then
-        return shortcodeStartDelimiter .. shortcode .. shortcodeCompleteDelimiter
-    else
-        return shortcode
+    function addon:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
+        if not shortcode then
+            return
+        end
+        if shortcodeDelimiter == "left" then
+            return shortcodeStartDelimiter .. shortcode
+        elseif shortcodeDelimiter == "right" then
+            return shortcode .. shortcodeCompleteDelimiter
+        elseif shortcodeDelimiter == "all" then
+            return shortcodeStartDelimiter .. shortcode .. shortcodeCompleteDelimiter
+        else
+            return shortcode
+        end
     end
 end
