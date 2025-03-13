@@ -17,6 +17,8 @@ L["keyboard_emoji_keyword_title"] = "Keyword:"
 L["settings_category_name"] = "Emoji"
 L["settings_general_emoji_icon_size_title"] = "Emoji Size"
 L["settings_general_emoji_icon_size_tooltip"] = "Adjust emoji size in chat messages."
+L["settings_general_pure_emoji_icon_size_multiplier_title"] = "Pure Emoji Icon Size Multiplier"
+L["settings_general_pure_emoji_icon_size_multiplier_tooltip"] = "Adjusts the size multiplier for emojis in pure emoji messages relative to their normal size."
 
 L["settings_keyboard_section_title"] = "Emoji Keyboard"
 L["settings_keyboard_default_width_title"] = "Default Width"

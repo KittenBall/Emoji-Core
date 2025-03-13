@@ -52,196 +52,248 @@ local function GetStringCodePoints(text)
     return codePointArray, codePointStartIndexes, codePointEndIndexes, codePointLen, len
 end
 
-local codePointEmojiStatusArray = {}
--- emoji初始化标识
-local emojiInitFlag = 0
--- 可能是emoji字符的标识
-local emojiMaybeFlag = 1
--- emoji字符结束标志
-local emojiEndFlag = 2
+do
+    local codePointEmojiStatusArray = {}
+    -- emoji初始化标识
+    local emojiInitFlag = 0
+    -- 可能是emoji字符的标识
+    local emojiMaybeFlag = 1
+    -- emoji字符结束标识
+    local emojiEndFlag = 2
 
--- 将emoji替换为名字或图片
--- @param text: 字符串
--- @param type: "name": 名字 "icon": 图片
--- @return newText: emoji被替换为对应的类型之后的文本
--- @return hasEmoji: 替换之后的文本是否含有emoji 
--- @return uncompletedShortcode: 未完成的短代码，可能为nil
--- @return uncompletedShortcodeStartByteIndex: 未完成的短代码，byte起始位置（含emojiShortcodeStartCodePoint），可能为nil
--- @return uncompletedShortcodeEndByteIndex: 未完成的短代码，byte结束位置，可能为nil
-function addon:ReplaceEmojiTo(text, type)
-    local codePointArray, codePointStartIndexes, codePointEndIndexes, codePointLen, textLen = GetStringCodePoints(text)
-    if not codePointArray then return text end
+    -- 最终结果
+    local resultTexts = {}
+    local resultTextFlags = {}
 
-    local rIndex = 1
-    while rIndex <= codePointLen do
-        local index = rIndex
-        rIndex = rIndex + 1
+    -- 表情标识
+    local resultEmojiFlag = 1
+    -- 文本标识
+    local resultTextFlag = 0
 
-        -- 重置状态
-        codePointEmojiStatusArray[index] = emojiInitFlag
-        local codePoint = codePointArray[index]
+    -- 将emoji替换为名字或图片
+    -- @param text: 字符串
+    -- @param type: "name": 名字 "icon": 图片
+    -- @return newText: emoji被替换为对应的类型之后的文本
+    -- @return hasEmoji: 替换之后的文本是否含有emoji 
+    -- @return uncompletedShortcode: 未完成的短代码，可能为nil
+    -- @return uncompletedShortcodeStartByteIndex: 未完成的短代码，byte起始位置（含emojiShortcodeStartCodePoint），可能为nil
+    -- @return uncompletedShortcodeEndByteIndex: 未完成的短代码，byte结束位置，可能为nil
+    function addon:ReplaceEmojiTo(text, type)
+        local codePointArray, codePointStartIndexes, codePointEndIndexes, codePointLen, textLen = GetStringCodePoints(text)
+        if not codePointArray then
+            return text
+        end
 
-        local isEmoji, before, after, combineFlag = self:CodePointIsEmoji(codePoint)
-        
-        if isEmoji then
-            codePointEmojiStatusArray[index] = emojiEndFlag
+        local rIndex = 1
+        while rIndex <= codePointLen do
+            local index = rIndex
+            rIndex = rIndex + 1
 
-            if before and before > 0 then
-                local start = index - before
-                if start > 0 then
-                    -- 如果该码点之前的码点可能是emoji，做个标记
-                    for i = start, index - 1 do
-                        codePointEmojiStatusArray[i] = emojiMaybeFlag
-                    end
-                end
-            end
+            -- 重置状态
+            codePointEmojiStatusArray[index] = emojiInitFlag
+            local codePoint = codePointArray[index]
 
-            if after and after > 0 then
-                local last = index + after
-                -- 如果该码点之后的码点可能是emoji，做个标记，同时跳过后续若干码点的检测
-                if last <= codePointLen then
-                    for i = index, last do
-                        if i == last then
-                            codePointEmojiStatusArray[i] = emojiEndFlag
-                        else
-                            codePointEmojiStatusArray[i] = emojiMaybeFlag
-                        end
-                    end
+            local isEmoji, before, after, combineFlag = self:CodePointIsEmoji(codePoint)
 
-                    rIndex = last + 1
-                end
-            end
-        elseif combineFlag then
-            -- 按相同的combineFlag合并成一个emoji
-            -- 目前只有国旗系列会用到这个特性
-            codePointEmojiStatusArray[index] = combineFlag
+            if isEmoji then
+                codePointEmojiStatusArray[index] = emojiEndFlag
 
-            if before and before > 0 then
-                local start = index - before
-                if start > 0 then
-                    local shouldCombine = true
-                    for i = start, index - 1 do
-                        if codePointEmojiStatusArray[i] ~= combineFlag then
-                            shouldCombine = false
-                            break
-                        end
-                    end
-
-                    if shouldCombine then
+                if before and before > 0 then
+                    local start = index - before
+                    if start > 0 then
+                        -- 如果该码点之前的码点可能是emoji，做个标记
                         for i = start, index - 1 do
                             codePointEmojiStatusArray[i] = emojiMaybeFlag
                         end
-                        codePointEmojiStatusArray[index] = emojiEndFlag
+                    end
+                end
+
+                if after and after > 0 then
+                    local last = index + after
+                    -- 如果该码点之后的码点可能是emoji，做个标记，同时跳过后续若干码点的检测
+                    if last <= codePointLen then
+                        for i = index, last do
+                            if i == last then
+                                codePointEmojiStatusArray[i] = emojiEndFlag
+                            else
+                                codePointEmojiStatusArray[i] = emojiMaybeFlag
+                            end
+                        end
+
+                        rIndex = last + 1
+                    end
+                end
+            elseif combineFlag then
+                -- 按相同的combineFlag合并成一个emoji
+                -- 目前只有国旗系列会用到这个特性
+                codePointEmojiStatusArray[index] = combineFlag
+
+                if before and before > 0 then
+                    local start = index - before
+                    if start > 0 then
+                        local shouldCombine = true
+                        for i = start, index - 1 do
+                            if codePointEmojiStatusArray[i] ~= combineFlag then
+                                shouldCombine = false
+                                break
+                            end
+                        end
+
+                        if shouldCombine then
+                            for i = start, index - 1 do
+                                codePointEmojiStatusArray[i] = emojiMaybeFlag
+                            end
+                            codePointEmojiStatusArray[index] = emojiEndFlag
+                        end
                     end
                 end
             end
         end
-    end
 
-    -- print(table.concat(codePointArray, ",", 1, codePointLen))
-    -- print(table.concat(codePointEmojiStatusArray, ",", 1, codePointLen))
+        -- print(table.concat(codePointArray, ",", 1, codePointLen))
+        -- print(table.concat(codePointEmojiStatusArray, ",", 1, codePointLen))
 
-    -- byte index
-    local emojiEndIndex = 1
-    local result = ""
-    local hasEmoji = false
+        -- byte index
+        local emojiEndIndex = 1
+        local hasEmoji = false
 
-    -- codepoint index
-    local startIndex = nil
-    local shortcodeStartIndex = 0
-    local showIcon = type == "icon"
+        -- codepoint index
+        local startIndex = nil
+        local shortcodeStartIndex = 0
 
-    for index = 1, codePointLen do
-        local status = codePointEmojiStatusArray[index]
-        local codePoint = codePointArray[index]
-        if (codePoint == emojiShortcodeStartCodePoint or codePoint == emojiShortcodeCompleteCodePoint) then
-            -- 查短代码
-            local findShortcode = false
-            if codePoint == emojiShortcodeCompleteCodePoint and shortcodeStartIndex > 0 and index - shortcodeStartIndex > 1 then
-                -- 中间可能有emoji短代码
-                local shortCodeByteStartIndex = codePointStartIndexes[shortcodeStartIndex + 1]
-                local shortCodeByteEndIndex = codePointEndIndexes[index - 1]
-                local shortCode = text:sub(shortCodeByteStartIndex, shortCodeByteEndIndex)
+        local showIcon = type == "icon"
+        -- 是否为纯表情
+        local pureEmoji = showIcon or false
+        local resultTextsLen = 0
 
-                -- 无论该短代码是否能转换为图标，都认为这一段已经结束了
-                shortcodeStartIndex = 0
+        for index = 1, codePointLen do
+            local status = codePointEmojiStatusArray[index]
+            local codePoint = codePointArray[index]
+            if (codePoint == emojiShortcodeStartCodePoint or codePoint == emojiShortcodeCompleteCodePoint) then
+                -- 查短代码
+                local findShortcode = false
+                if codePoint == emojiShortcodeCompleteCodePoint and shortcodeStartIndex > 0 
+                    and index - shortcodeStartIndex > 1 then
+                    -- 中间可能有emoji短代码
+                    local shortCodeByteStartIndex = codePointStartIndexes[shortcodeStartIndex + 1]
+                    local shortCodeByteEndIndex = codePointEndIndexes[index - 1]
+                    local shortCode = text:sub(shortCodeByteStartIndex, shortCodeByteEndIndex)
 
-                local unicodeKey = addon:GetEmojiKeyByShortcode(shortCode)
-                if unicodeKey then
-                    findShortcode = true
-                    hasEmoji = true
+                    -- 无论该短代码是否能转换为图标，都认为这一段已经结束了
+                    shortcodeStartIndex = 0
 
+                    local key = addon:GetEmojiKeyByShortcode(shortCode)
+                    if key then
+                        findShortcode = true
+                        hasEmoji = true
+
+                        if showIcon then
+                            local icon = self:GetEmojiIconByKey(key)
+                            if icon then
+                                -- 显然，如果有其它文本，该字符串就不是纯emoji了
+                                if emojiEndIndex <= shortCodeByteEndIndex - 2 then
+                                    pureEmoji = false
+                                    -- 组合中间非emoji部分，这里-2是因为要去掉短代码开始符
+                                    resultTextsLen = resultTextsLen + 1
+                                    resultTexts[resultTextsLen] = text:sub(emojiEndIndex, shortCodeByteStartIndex - 2)
+                                    resultTextFlags[resultTextsLen] = resultTextFlag
+                                end
+                                resultTextsLen = resultTextsLen + 1
+                                resultTexts[resultTextsLen] = icon
+                                resultTextFlags[resultTextsLen] = resultEmojiFlag
+
+                                emojiEndIndex = codePointEndIndexes[index] + 1
+                            end
+                        end
+                    end
+                end
+
+                -- 因为英文语系下，开始和结束都是：，所以需要判断findShortcode，否则会一个冒号当两个用
+                if codePoint == emojiShortcodeStartCodePoint and not findShortcode then
+                    shortcodeStartIndex = index
+                end
+            else
+                if status == emojiInitFlag then
+                    startIndex = nil
+                elseif status == emojiMaybeFlag then
+                    if not startIndex then
+                        startIndex = index
+                    end
+                elseif status == emojiEndFlag then
+                    -- codePointEmojiStatusArray内的flag是以下形式时：
+                    -- 0, 0, 1, 1, 2; 此时认为，1, 1, 2 可能为emoji
+                    -- 0, 2, 2, 1, 2；此时认为有3个emoji
+                    local start = startIndex or index
+                    startIndex = nil
+
+                    local unicodeKey = table.concat(codePointArray, "_", start, index)
+
+                    local replacement
+                    local replacementIsIcon = true
                     if showIcon then
-                        local icon = self:GetEmojiIconByKey(unicodeKey, true)
-                        if icon then
-                            -- 组合中间非emoji部分，这里-2是因为要去掉短代码开始符
-                            result = result .. text:sub(emojiEndIndex, shortCodeByteStartIndex - 2)
-                            result = result .. icon
-    
-                            emojiEndIndex = codePointEndIndexes[index] + 1
-                        end 
+                        replacement = self:GetEmojiIconByKey(unicodeKey)
                     end
-                end          
-            end
-
-            -- 因为英文语系下，开始和结束都是：，所以需要判断findShortcode，否则会一个冒号当两个用
-            if codePoint == emojiShortcodeStartCodePoint and not findShortcode then
-                shortcodeStartIndex = index
-            end
-        else
-            if status == emojiInitFlag then
-                startIndex = nil
-            elseif status == emojiMaybeFlag then
-                if not startIndex then
-                    startIndex = index
-                end
-            elseif status == emojiEndFlag then
-                -- codePointEmojiStatusArray内的flag是以下形式时：
-                -- 0, 0, 1, 1, 2; 此时认为，1, 1, 2 可能为emoji
-                -- 0, 2, 2, 1, 2；此时认为有3个emoji
-                local start = startIndex or index
-                startIndex = nil
-                
-                local unicodeKey = table.concat(codePointArray, "_", start, index)
-    
-                local replacement
-                if showIcon then
-                    replacement = self:GetEmojiIconByKey(unicodeKey, true) or self:GetEmojiShortcodeByKey(unicodeKey, "all")
-                else
-                    replacement = self:GetEmojiShortcodeByKey(unicodeKey, "all")
-                end
-                
-                if replacement then
-                    hasEmoji = true
-
-                    local emojiStartIndex = codePointStartIndexes[start]
-                    if emojiStartIndex - emojiEndIndex > 0 then
-                        -- 组合中间非emoji部分
-                        result = result .. text:sub(emojiEndIndex, emojiStartIndex - 1)
+                    if not replacement then
+                        replacement = self:GetEmojiShortcodeByKey(unicodeKey, "all")
+                        pureEmoji = false
+                        replacementIsIcon = false
                     end
-                    result = result .. replacement
-                    emojiEndIndex = codePointEndIndexes[index] + 1
+
+                    if replacement then
+                        hasEmoji = true
+
+                        local emojiStartIndex = codePointStartIndexes[start]
+                        if emojiStartIndex > emojiEndIndex then
+                            pureEmoji = false
+                            -- 组合中间非emoji部分
+                            resultTextsLen = resultTextsLen + 1
+                            resultTexts[resultTextsLen] = text:sub(emojiEndIndex, emojiStartIndex - 1)
+                            resultTextFlags[resultTextsLen] = resultTextFlag
+                        end
+                        resultTextsLen = resultTextsLen + 1
+                        resultTexts[resultTextsLen] = replacement
+                        resultTextFlags[resultTextsLen] = replacementIsIcon and resultEmojiFlag or resultTextFlag
+
+                        emojiEndIndex = codePointEndIndexes[index] + 1
+                    end
                 end
             end
         end
-    end
 
-    if emojiEndIndex <= textLen then
-        result = result .. text:sub(emojiEndIndex, textLen)
-    end
+        if emojiEndIndex <= textLen then
+            pureEmoji = false
 
-    -- 未完成的短代码
-    local uncompletedShortcode
-    local uncompletedShortcodeStartByteIndex
-    local uncompletedShortcodeEndByteIndex
-    if shortcodeStartIndex > 0 and shortcodeStartIndex < codePointLen then
-        local startByteIndex = codePointStartIndexes[shortcodeStartIndex + 1]
-        uncompletedShortcodeStartByteIndex = startByteIndex - 1
-        uncompletedShortcodeEndByteIndex = textLen
-        uncompletedShortcode = text:sub(startByteIndex, uncompletedShortcodeEndByteIndex)
-    end
+            resultTextsLen = resultTextsLen + 1
+            resultTexts[resultTextsLen] = text:sub(emojiEndIndex, textLen)
+            resultTextFlags[resultTextsLen] = resultTextFlag
+        end
 
-    return result, hasEmoji, uncompletedShortcode, uncompletedShortcodeStartByteIndex, uncompletedShortcodeEndByteIndex
+        local result = ""
+        for i = 1, resultTextsLen do
+            local text = resultTextFlag[i]
+            local flag = resultTextFlags[i]
+            
+            if flag == resultEmojiFlag then
+                result = result .. self:WrapperIconPathWithEscapeSequences(text, pureEmoji)
+            else
+                result = result .. text
+            end
+        end
+
+        -- 未完成的短代码
+        local uncompletedShortcode
+        local uncompletedShortcodeStartByteIndex
+        local uncompletedShortcodeEndByteIndex
+        if shortcodeStartIndex > 0 and shortcodeStartIndex < codePointLen then
+            local startByteIndex = codePointStartIndexes[shortcodeStartIndex + 1]
+            uncompletedShortcodeStartByteIndex = startByteIndex - 1
+            uncompletedShortcodeEndByteIndex = textLen
+            uncompletedShortcode = text:sub(startByteIndex, uncompletedShortcodeEndByteIndex)
+        end
+
+        return result, hasEmoji, uncompletedShortcode, uncompletedShortcodeStartByteIndex,
+            uncompletedShortcodeEndByteIndex
+    end
 end
 
 -- 将字符串内的emoji替换为名称
@@ -310,19 +362,28 @@ end
 
 do
     local emojiIconSize
+    local pureEmojiIconSize
 
     local function OnEmojiIconSizeChanged(_, _, size)
         emojiIconSize = size
+        pureEmojiIconSize = emojiIconSize * self:GetOptionValue(addon.Options.General.EmojiIconSize)
+    end
+
+    local function OnPureEmojiIconSizeMultiplier(_, _, multiplier)
+        pureEmojiIconSize = emojiIconSize * multiplier
     end
 
     -- 设置emoji在FontString中的大小
     function addon:SetupEmojiSizeInFontString()
         emojiIconSize = self:GetOptionValue(addon.Options.General.EmojiIconSize)
+        pureEmojiIconSize = emojiIconSize * self:GetOptionValue(addon.Options.General.PureEmojiIconSizeMultiplier)
         self:RegisterOptionChangedCallback(addon.Options.General.EmojiIconSize, OnEmojiIconSizeChanged)
+        self:RegisterOptionChangedCallback(addon.Options.General.PureEmojiIconSizeMultiplier, OnPureEmojiIconSizeMultiplier)
     end
 
-    function addon:WrapperIconPathWithEscapeSequences(path)
-        return "|T" .. path .. ":" .. emojiIconSize .. "|t"
+    function addon:WrapperIconPathWithEscapeSequences(path, isInPureEmojiText)
+        local iconSize = isInPureEmojiText and pureEmojiIconSize or emojiIconSize
+        return "|T" .. path .. ":" .. iconSize .. "|t"
     end
 
     -- 根据key获取emoji图标

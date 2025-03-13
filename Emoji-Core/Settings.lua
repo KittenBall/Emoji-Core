@@ -19,6 +19,18 @@ local Options = {
 				Tooltip = L["settings_general_emoji_icon_size_tooltip"]
 			}
 		},
+		-- 纯表情放大比例
+		{
+			Key = "PureEmojiIconSizeMultiplier",
+			Name = L["settings_general_pure_emoji_icon_size_multiplier_title"],
+			Default = 1.5,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 1,
+				Max = 3,
+				Tooltip = L["settings_general_pure_emoji_icon_size_multiplier_tooltip"]
+			}
+		}
 	},
 	-- 表情键盘
     {

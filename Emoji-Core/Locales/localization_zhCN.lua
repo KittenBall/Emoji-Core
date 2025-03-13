@@ -23,6 +23,8 @@ L["settings_category_name"] = "Emoji"
 L["settings_general_section_title"] = "综合"
 L["settings_general_emoji_icon_size_title"] = "表情尺寸"
 L["settings_general_emoji_icon_size_tooltip"] = "调整表情在聊天消息中的尺寸"
+L["settings_general_pure_emoji_icon_size_multiplier_title"] = "纯表情尺寸放大比例"
+L["settings_general_pure_emoji_icon_size_multiplier_tooltip"] = "调整纯表情消息中表情相对于正常表情尺寸的放大比例。"
 
 L["settings_keyboard_section_title"] = "表情键盘"
 L["settings_keyboard_default_width_title"] = "默认宽度"
