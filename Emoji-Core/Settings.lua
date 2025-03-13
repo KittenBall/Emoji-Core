@@ -23,11 +23,11 @@ local Options = {
 		{
 			Key = "PureEmojiIconSizeMultiplier",
 			Name = L["settings_general_pure_emoji_icon_size_multiplier_title"],
-			Default = 1.5,
+			Default = 2.5,
 			ControlInfo = {
 				Type = "Slider",
 				Min = 1,
-				Max = 3,
+				Max = 10,
 				Tooltip = L["settings_general_pure_emoji_icon_size_multiplier_tooltip"]
 			}
 		}

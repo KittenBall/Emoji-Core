@@ -4,6 +4,8 @@ local Emojis = addon.Emojis
 -- 短代码开始/结束
 local emojiShortcodeStartCodePoint = Emojis.ShortcodeStartCodePoint
 local emojiShortcodeCompleteCodePoint = Emojis.ShortcodeCompleteCodePoint
+-- 自定义表情分隔符
+local stickerDelimiterCodePoint = Emojis.StickerDelimiterCodePoint
 local shortcodeStartDelimiter = addon.Emojis.ShortcodeStartDelimiter
 local shortcodeCompleteDelimiter = addon.Emojis.ShortcodeEndDelimiter
 local EmojisShortcodesToKey = Emojis.ShortcodesToKey
@@ -74,7 +76,7 @@ do
     -- @param text: 字符串
     -- @param type: "name": 名字 "icon": 图片
     -- @return newText: emoji被替换为对应的类型之后的文本
-    -- @return hasEmoji: 替换之后的文本是否含有emoji 
+    -- @return emojiCount: 替换之后的文本的emoji个数，注意：shortcode和icon都会被计算在内
     -- @return uncompletedShortcode: 未完成的短代码，可能为nil
     -- @return uncompletedShortcodeStartByteIndex: 未完成的短代码，byte起始位置（含emojiShortcodeStartCodePoint），可能为nil
     -- @return uncompletedShortcodeEndByteIndex: 未完成的短代码，byte结束位置，可能为nil
@@ -155,20 +157,26 @@ do
 
         -- byte index
         local emojiEndIndex = 1
-        local hasEmoji = false
 
         -- codepoint index
         local startIndex = nil
         local shortcodeStartIndex = 0
+        local stickerDelimiterIndex = 0
 
         local showIcon = type == "icon"
         -- 是否为纯表情
         local pureEmoji = showIcon or false
+        local emojiCount = 0
         local resultTextsLen = 0
 
         for index = 1, codePointLen do
             local status = codePointEmojiStatusArray[index]
             local codePoint = codePointArray[index]
+
+            if codePoint == stickerDelimiterCodePoint then
+                stickerDelimiterIndex = index
+            end
+
             if (codePoint == emojiShortcodeStartCodePoint or codePoint == emojiShortcodeCompleteCodePoint) then
                 -- 查短代码
                 local findShortcode = false
@@ -179,16 +187,24 @@ do
                     local shortCodeByteEndIndex = codePointEndIndexes[index - 1]
                     local shortCode = text:sub(shortCodeByteStartIndex, shortCodeByteEndIndex)
 
+                    -- 获取可能的emoji表情包，提升查找效率
+                    local stickerShortcodePrefix
+                    if stickerDelimiterIndex > shortcodeStartIndex and stickerDelimiterIndex < index - 1 then
+                        stickerShortcodePrefix = text:sub(shortCodeByteStartIndex, codePointEndIndexes[stickerDelimiterIndex - 1])
+                    end
+
+                    print("find shortcode:", shortCode, "shortcodePrefix:", stickerShortcodePrefix)
+
                     -- 无论该短代码是否能转换为图标，都认为这一段已经结束了
                     shortcodeStartIndex = 0
 
-                    local key = addon:GetEmojiKeyByShortcode(shortCode)
+                    local key, packId = addon:GetEmojiKeyByShortcode(shortCode, stickerShortcodePrefix)
                     if key then
                         findShortcode = true
-                        hasEmoji = true
+                        emojiCount = emojiCount + 1
 
                         if showIcon then
-                            local icon = self:GetEmojiIconByKey(key)
+                            local icon = self:GetEmojiIconByKey(key, packId)
                             if icon then
                                 -- 显然，如果有其它文本，该字符串就不是纯emoji了
                                 if emojiEndIndex <= shortCodeByteEndIndex - 2 then
@@ -212,50 +228,48 @@ do
                 if codePoint == emojiShortcodeStartCodePoint and not findShortcode then
                     shortcodeStartIndex = index
                 end
-            else
-                if status == emojiInitFlag then
-                    startIndex = nil
-                elseif status == emojiMaybeFlag then
-                    if not startIndex then
-                        startIndex = index
-                    end
-                elseif status == emojiEndFlag then
-                    -- codePointEmojiStatusArray内的flag是以下形式时：
-                    -- 0, 0, 1, 1, 2; 此时认为，1, 1, 2 可能为emoji
-                    -- 0, 2, 2, 1, 2；此时认为有3个emoji
-                    local start = startIndex or index
-                    startIndex = nil
+            end
 
-                    local unicodeKey = table.concat(codePointArray, "_", start, index)
+            if status == emojiInitFlag then
+                startIndex = nil
+            elseif status == emojiMaybeFlag then
+                if not startIndex then
+                    startIndex = index
+                end
+            elseif status == emojiEndFlag then
+                -- codePointEmojiStatusArray内的flag是以下形式时：
+                -- 0, 0, 1, 1, 2; 此时认为，1, 1, 2 可能为emoji
+                -- 0, 2, 2, 1, 2；此时认为有3个emoji
+                local start = startIndex or index
+                startIndex = nil
 
-                    local replacement
-                    local replacementIsIcon = true
-                    if showIcon then
-                        replacement = self:GetEmojiIconByKey(unicodeKey)
-                    end
-                    if not replacement then
-                        replacement = self:GetEmojiShortcodeByKey(unicodeKey, "all")
+                local unicodeKey = table.concat(codePointArray, "_", start, index)
+
+                local replacement
+                local replacementIsIcon = true
+                if showIcon then
+                    replacement = self:GetEmojiIconByKey(unicodeKey)
+                end
+                if not replacement then
+                    replacement = self:GetEmojiShortcodeByKey(unicodeKey, "all")
+                    pureEmoji = false
+                    replacementIsIcon = false
+                end
+
+                if replacement then
+                    emojiCount = emojiCount + 1
+                    local emojiStartIndex = codePointStartIndexes[start]
+                    if emojiStartIndex > emojiEndIndex then
                         pureEmoji = false
-                        replacementIsIcon = false
-                    end
-
-                    if replacement then
-                        hasEmoji = true
-
-                        local emojiStartIndex = codePointStartIndexes[start]
-                        if emojiStartIndex > emojiEndIndex then
-                            pureEmoji = false
-                            -- 组合中间非emoji部分
-                            resultTextsLen = resultTextsLen + 1
-                            resultTexts[resultTextsLen] = text:sub(emojiEndIndex, emojiStartIndex - 1)
-                            resultTextFlags[resultTextsLen] = resultTextFlag
-                        end
+                        -- 组合中间非emoji部分
                         resultTextsLen = resultTextsLen + 1
-                        resultTexts[resultTextsLen] = replacement
-                        resultTextFlags[resultTextsLen] = replacementIsIcon and resultEmojiFlag or resultTextFlag
-
-                        emojiEndIndex = codePointEndIndexes[index] + 1
+                        resultTexts[resultTextsLen] = text:sub(emojiEndIndex, emojiStartIndex - 1)
+                        resultTextFlags[resultTextsLen] = resultTextFlag
                     end
+                    resultTextsLen = resultTextsLen + 1
+                    resultTexts[resultTextsLen] = replacement
+                    resultTextFlags[resultTextsLen] = replacementIsIcon and resultEmojiFlag or resultTextFlag
+                    emojiEndIndex = codePointEndIndexes[index] + 1
                 end
             end
         end
@@ -291,8 +305,7 @@ do
             uncompletedShortcode = text:sub(startByteIndex, uncompletedShortcodeEndByteIndex)
         end
 
-        return result, hasEmoji, uncompletedShortcode, uncompletedShortcodeStartByteIndex,
-            uncompletedShortcodeEndByteIndex
+        return result, emojiCount, uncompletedShortcode, uncompletedShortcodeStartByteIndex, uncompletedShortcodeEndByteIndex
     end
 end
 
@@ -310,17 +323,22 @@ local EmojiPacks = {}
 local EmojiPacksCount = 0
 local StickerPacks = {}
 local StickerPackCount = 0
-local PackIds = {}
+local PacksByID = {}
+local PacksByShortcodePrefix = {}
 
 local function checkPackValid(pack)
     if not pack or not pack.ID then
         error("pack is nil or pack does not have a ID")
     end
-    if PackIds[pack.ID] then
-        error("Pack id(" .. pack.ID .. ") is register already")
+    if PacksByID[pack.ID] then
+        error("Pack id(" .. pack.ID .. ") is registered already")
     end
 
-    PackIds[pack.ID] = true
+    PacksByID[pack.ID] = pack
+    local shortcodePrefix = pack.ShortcodePrefix
+    if shortcodePrefix and shortcodePrefix ~= "" then
+        PacksByShortcodePrefix[shortcodePrefix] = pack
+    end
 end
 
 -- 注册标准emoji包
@@ -342,6 +360,7 @@ function addon:RegisterEmojiPack(pack)
 
     EmojiPacksCount = EmojiPacksCount + 1
     EmojiPacks[EmojiPacksCount] = pack
+    EmojiPacks[pack.ID] = pack
 end
 
 -- 注册自定义表情包
@@ -351,6 +370,7 @@ function addon:RegisterStickerPack(pack)
 
     StickerPackCount = StickerPackCount + 1
     StickerPacks[StickerPackCount] = pack
+    StickerPacks[pack.ID] = pack
     -- 必须用addon调用
     addon:OnStickerPackListChanged()
 end
@@ -388,7 +408,19 @@ do
 
     -- 根据key获取emoji图标
     -- @todo 提前获取可能的表情包
-    function addon:GetEmojiIconByKey(key, withEscapeSequences)
+    function addon:GetEmojiIconByKey(key, packId, withEscapeSequences)
+        if packId then
+            local pack = PacksByID[packId]
+            if pack then
+                local iconFile = pack.Icons[key]
+                local path = pack.IconDir .. iconFile
+                if withEscapeSequences then
+                    path = self:WrapperIconPathWithEscapeSequences(path)
+                end
+                return path
+            end    
+        end
+
         for i = 1, StickerPackCount do
             local pack = StickerPacks[i]
             local emoji = pack[key]
@@ -418,7 +450,19 @@ do
     end
 
     -- 根据key获取emoji图标，这个函数会无视sticker
-    function addon:GetEmojiIconByKeyIgnoreSticker(key, withEscapeSequences)
+    function addon:GetEmojiIconByKeyIgnoreSticker(key, packId, withEscapeSequences)
+        if packId then
+            local pack = PacksByID[packId]
+            if pack then
+                local iconFile = pack.Icons[key]
+                local path = pack.IconDir .. iconFile
+                if withEscapeSequences then
+                    path = self:WrapperIconPathWithEscapeSequences(path)
+                end
+                return path
+            end    
+        end
+
         for i = 1, EmojiPacksCount do
             local pack = EmojiPacks[i]
             local iconFile = pack.Icons[key]
@@ -432,7 +476,6 @@ do
         end
     end
 end
-
 
 -- 根据key获取emoji
 function addon:GetEmojiByKey(key)
@@ -448,12 +491,24 @@ function addon:GetEmojiByKey(key)
 end
 
 -- 通过shortcode获取emoji key
-function addon:GetEmojiKeyByShortcode(shortcode)
+-- @return key: 表情key
+-- @return packID: 表情包id 只有自定义表情包会返回该值，标准emoji返回为nil
+function addon:GetEmojiKeyByShortcode(shortcode, shortcodePrefix)
+    if shortcodePrefix then
+        local pack = PacksByShortcodePrefix[shortcodePrefix]
+        if pack then
+            local key = pack.ShortcodesToKey[shortcode]
+            if key then
+                return key, pack.ID
+            end
+        end
+    end
+
     for i = 1, StickerPackCount do
         local pack = StickerPacks[i]
         local key = pack.ShortcodesToKey[shortcode]
         if key then
-            return key
+            return key, pack.ID
         end
     end
 
@@ -464,6 +519,7 @@ do
     local result = {}
 
     -- 通过shortcode获取所有emoji key
+    -- 这个函数主要是用于处理大脚和标准emoji的，因为只有大脚表情和标准emoji因为兼容的原因，key可能相同
     -- 注意返回的边界
     function addon:GetEmojiKeysByShortcode(shortcode)
         local count = 0
@@ -486,45 +542,46 @@ do
             return result, count
         end
     end
+end
 
-    -- 根据key获取emoji短代码
-    -- @param shortcodeDelimiter 短代码分隔符 left, right, all or nil
-    function addon:GetEmojiShortcodeByKey(key, shortcodeDelimiter)
-        if not key then
-            return
-        end
+-- 根据key获取emoji短代码
+-- @param shortcodeDelimiter 短代码分隔符 left, right, all or nil
+function addon:GetEmojiShortcodeByKey(key, shortcodeDelimiter)
+    if not key then
+        return
+    end
 
-        local emoji
-        for i = 1, StickerPackCount do
-            local pack = StickerPacks[i]
-            emoji = pack[key]
-            if emoji then
-                break
-            end
-        end
-
-        if not emoji then
-            emoji = Emojis[key]
-        end
-
+    local emoji
+    for i = 1, StickerPackCount do
+        local pack = StickerPacks[i]
+        emoji = pack[key]
         if emoji then
-            local shortcode = emoji and emoji.Shortcodes[1] or nil
-            return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
+            break
         end
     end
 
-    function addon:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
-        if not shortcode then
-            return
-        end
-        if shortcodeDelimiter == "left" then
-            return shortcodeStartDelimiter .. shortcode
-        elseif shortcodeDelimiter == "right" then
-            return shortcode .. shortcodeCompleteDelimiter
-        elseif shortcodeDelimiter == "all" then
-            return shortcodeStartDelimiter .. shortcode .. shortcodeCompleteDelimiter
-        else
-            return shortcode
-        end
+    if not emoji then
+        emoji = Emojis[key]
+    end
+
+    if emoji then
+        local shortcode = emoji and emoji.Shortcodes[1] or nil
+        return self:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
     end
 end
+
+function addon:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
+    if not shortcode then
+        return
+    end
+    if shortcodeDelimiter == "left" then
+        return shortcodeStartDelimiter .. shortcode
+    elseif shortcodeDelimiter == "right" then
+        return shortcode .. shortcodeCompleteDelimiter
+    elseif shortcodeDelimiter == "all" then
+        return shortcodeStartDelimiter .. shortcode .. shortcodeCompleteDelimiter
+    else
+        return shortcode
+    end
+end
+
