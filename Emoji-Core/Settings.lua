@@ -11,7 +11,7 @@ local Options = {
 		{
 			Key = "EmojiIconSize",
 			Name = L["settings_general_emoji_icon_size_title"],
-			Default = 22,
+			Default = 26,
 			ControlInfo = {
 				Type = "Slider",
 				Min = 12,
@@ -28,7 +28,7 @@ local Options = {
 			ControlInfo = {
 				Type = "Slider",
 				Min = 1,
-				Max = 3,
+				Max = 4,
 				Step = 0.1,
 				Tooltip = L["settings_general_pure_emoji_enlarge_max_multiplier_tooltip"],
 				Formatter = function(value)

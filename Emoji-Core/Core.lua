@@ -435,8 +435,6 @@ do
             local radians = (pi / 2) * (x ^ 0.95)
             multiplier = pureEmojiIconEnlargeMinMultiplier + (pureEmojiIconEnlargeMaxMultiplier - pureEmojiIconEnlargeMinMultiplier) * cos(radians)
         end
-
-        print("multiplier", multiplier)
         return multiplier * emojiIconSize
     end
 
