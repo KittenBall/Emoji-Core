@@ -498,10 +498,10 @@ local function OnEditBoxTextChanged(self)
     local text = self:GetText()
     if not text or self:IsInIMECompositionMode() then stopAutoComplete(self) return end
 
-    local newText, hasEmoji, uncompletedShortcode, uncompletedShortcodeStartByteIndex, uncompletedShortcodeEndByteIndex = addon:ReplaceEmojiToName(text)
+    local newText, emojiCount, uncompletedShortcode, uncompletedShortcodeStartByteIndex, uncompletedShortcodeEndByteIndex = addon:ReplaceEmojiToName(text)
     local startByShortcodeDelimiter = true
     
-    if not uncompletedShortcode and not hasEmoji and not newText:match("/") then
+    if not uncompletedShortcode and (not emojiCount or emojiCount <= 0) and not newText:match("/") then
         local textLen = strlenutf8(newText)
         if textLen >= EmojiAutoCompleteMinLength and textLen <= EmojiAutoCompleteMaxLength then
             uncompletedShortcode = newText

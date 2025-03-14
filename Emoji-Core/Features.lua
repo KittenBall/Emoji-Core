@@ -68,7 +68,7 @@ do
     local function replaceIMEEmojiToIcon(self)
         for i = 1, 9 do
             local candidate = self["c" .. i].candidate
-            candidate:SetText(addon:ReplaceEmojiToIcon(candidate:GetText()))
+            candidate:SetText(addon:ReplaceEmojiToIcon(candidate:GetText(), 22))
         end
     end
 

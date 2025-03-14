@@ -15,22 +15,40 @@ local Options = {
 			ControlInfo = {
 				Type = "Slider",
 				Min = 12,
-				Max = 36,
+				Max = 48,
+				Step = 1,
 				Tooltip = L["settings_general_emoji_icon_size_tooltip"]
 			}
 		},
-		-- 纯表情放大比例
+		-- 纯表情 最大放大系数
 		{
-			Key = "PureEmojiIconSizeMultiplier",
-			Name = L["settings_general_pure_emoji_icon_size_multiplier_title"],
-			Default = 2.5,
+			Key = "PureEmojiIconEnlargeMaxMultiplier",
+			Name = L["settings_general_pure_emoji_enlarge_max_multiplier_title"],
+			Default = 2,
 			ControlInfo = {
 				Type = "Slider",
 				Min = 1,
-				Max = 10,
-				Tooltip = L["settings_general_pure_emoji_icon_size_multiplier_tooltip"]
+				Max = 3,
+				Step = 0.1,
+				Tooltip = L["settings_general_pure_emoji_enlarge_max_multiplier_tooltip"],
+				Formatter = function(value)
+					return FormatPercentage(value, true)
+				end
 			}
-		}
+		},
+		-- 纯表情 动态放大阈值
+		{
+			Key = "PureEmojiIconEnlargeCountThreshold",
+			Name = L["settings_general_pure_emoji_enlarge_count_threshold_title"],
+			Default = 8,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 2,
+				Max = 10,
+				Step = 1,
+				Tooltip = L["settings_general_pure_emoji_enlarge_count_threshold_tooltip"],
+			}
+		},
 	},
 	-- 表情键盘
     {
@@ -178,7 +196,7 @@ end
 local function createSettingControl(category, setting, controlInfo)
 	if controlInfo.Type == "Slider" then
 		local options = Settings.CreateSliderOptions(controlInfo.Min, controlInfo.Max, controlInfo.Step)
-		options:SetLabelFormatter(MinimalSliderWithSteppersMixin.Label.Right)
+		options:SetLabelFormatter(MinimalSliderWithSteppersMixin.Label.Right, controlInfo.Formatter)
 		Settings.CreateSlider(category, setting, options, controlInfo.Tooltip)
 	end
 end

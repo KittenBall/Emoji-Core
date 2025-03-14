@@ -75,12 +75,13 @@ do
     -- 将emoji替换为名字或图片
     -- @param text: 字符串
     -- @param type: "name": 名字 "icon": 图片
+    -- @param iconSize: 当type="icon"时，图片在文本中的大小，可以为nil
     -- @return newText: emoji被替换为对应的类型之后的文本
-    -- @return emojiCount: 替换之后的文本的emoji个数，注意：shortcode和icon都会被计算在内
+    -- @return emojiCount: 替换之后的文本的emoji个数，注意：shortcode和icon都会被计算在内，可能为nil
     -- @return uncompletedShortcode: 未完成的短代码，可能为nil
     -- @return uncompletedShortcodeStartByteIndex: 未完成的短代码，byte起始位置（含emojiShortcodeStartCodePoint），可能为nil
     -- @return uncompletedShortcodeEndByteIndex: 未完成的短代码，byte结束位置，可能为nil
-    function addon:ReplaceEmojiTo(text, type)
+    function addon:ReplaceEmojiTo(text, type, iconSize)
         local codePointArray, codePointStartIndexes, codePointEndIndexes, codePointLen, textLen = GetStringCodePoints(text)
         if not codePointArray then
             return text
@@ -167,6 +168,7 @@ do
         -- 是否为纯表情
         local pureEmoji = showIcon or false
         local emojiCount = 0
+        local iconCount = 0
         local resultTextsLen = 0
 
         for index = 1, codePointLen do
@@ -193,8 +195,6 @@ do
                         stickerShortcodePrefix = text:sub(shortCodeByteStartIndex, codePointEndIndexes[stickerDelimiterIndex - 1])
                     end
 
-                    print("find shortcode:", shortCode, "shortcodePrefix:", stickerShortcodePrefix)
-
                     -- 无论该短代码是否能转换为图标，都认为这一段已经结束了
                     shortcodeStartIndex = 0
 
@@ -206,8 +206,10 @@ do
                         if showIcon then
                             local icon = self:GetEmojiIconByKey(key, packId)
                             if icon then
+                                iconCount = iconCount + 1
+
                                 -- 显然，如果有其它文本，该字符串就不是纯emoji了
-                                if emojiEndIndex <= shortCodeByteEndIndex - 2 then
+                                if emojiEndIndex <= shortCodeByteStartIndex - 2 then
                                     pureEmoji = false
                                     -- 组合中间非emoji部分，这里-2是因为要去掉短代码开始符
                                     resultTextsLen = resultTextsLen + 1
@@ -270,6 +272,10 @@ do
                     resultTexts[resultTextsLen] = replacement
                     resultTextFlags[resultTextsLen] = replacementIsIcon and resultEmojiFlag or resultTextFlag
                     emojiEndIndex = codePointEndIndexes[index] + 1
+
+                    if replacementIsIcon then
+                        iconCount = iconCount + 1
+                    end
                 end
             end
         end
@@ -283,12 +289,13 @@ do
         end
 
         local result = ""
+        local pureEmojiSize = pureEmoji and self:CalcPureEmojiIconSize(iconCount)
         for i = 1, resultTextsLen do
-            local text = resultTextFlag[i]
+            local text = resultTexts[i]
             local flag = resultTextFlags[i]
             
             if flag == resultEmojiFlag then
-                result = result .. self:WrapperIconPathWithEscapeSequences(text, pureEmoji)
+                result = result .. (iconSize and self:CreateEmojiIconTextureMarkup(text, iconSize) or pureEmoji and self:CreateEmojiIconTextureMarkup(text, pureEmojiSize) or self:CreateEmojiIconTextureMarkup(text))
             else
                 result = result .. text
             end
@@ -315,8 +322,8 @@ function addon:ReplaceEmojiToName(text)
 end
 
 -- 将字符串内的emoji替换为图标
-function addon:ReplaceEmojiToIcon(text)
-    return self:ReplaceEmojiTo(text, "icon")
+function addon:ReplaceEmojiToIcon(text, iconSize)
+    return self:ReplaceEmojiTo(text, "icon", iconSize)
 end
 
 local EmojiPacks = {}
@@ -385,43 +392,70 @@ function addon:GetStickerPacks()
 end
 
 do
-    local emojiIconSize
-    local pureEmojiIconSize
+    local emojiIconSize = 22
+    local pureEmojiIconEnlargeMaxMultiplier = 2
+    local pureEmojiIconEnlargeMinMultiplier = 1
+    local pureEmojiIconEnlargeCountThreshold = 8
+    local pi = math.pi
+    local cos = math.cos
 
-    local function OnEmojiIconSizeChanged(_, _, size)
+    local function OnEmojiIconSizeChanged(_, size)
         emojiIconSize = size
-        pureEmojiIconSize = emojiIconSize * self:GetOptionValue(addon.Options.General.EmojiIconSize)
+        pureEmojiIconEnlargeMaxMultiplier = addon:GetOptionValue(addon.Options.General.PureEmojiIconEnlargeMaxMultiplier)
     end
 
-    local function OnPureEmojiIconSizeMultiplier(_, _, multiplier)
-        pureEmojiIconSize = emojiIconSize * multiplier
+    local function OnPureEmojiIconSizeMultiplierChanged(_, multiplier)
+        pureEmojiIconEnlargeMaxMultiplier = multiplier
+    end
+
+    local function OnPureEmojiIconEnlargeCountThresholdChanged(_, threshold)
+        pureEmojiIconEnlargeCountThreshold = threshold
     end
 
     -- 设置emoji在FontString中的大小
     function addon:SetupEmojiSizeInFontString()
         emojiIconSize = self:GetOptionValue(addon.Options.General.EmojiIconSize)
-        pureEmojiIconSize = emojiIconSize * self:GetOptionValue(addon.Options.General.PureEmojiIconSizeMultiplier)
+        pureEmojiIconEnlargeMaxMultiplier = self:GetOptionValue(addon.Options.General.PureEmojiIconEnlargeMaxMultiplier)
+        pureEmojiIconEnlargeCountThreshold = self:GetOptionValue(addon.Options.General.PureEmojiIconEnlargeCountThreshold)
         self:RegisterOptionChangedCallback(addon.Options.General.EmojiIconSize, OnEmojiIconSizeChanged)
-        self:RegisterOptionChangedCallback(addon.Options.General.PureEmojiIconSizeMultiplier, OnPureEmojiIconSizeMultiplier)
+        self:RegisterOptionChangedCallback(addon.Options.General.PureEmojiIconEnlargeMaxMultiplier, OnPureEmojiIconSizeMultiplierChanged)
+        self:RegisterOptionChangedCallback(addon.Options.General.PureEmojiIconEnlargeCountThreshold, OnPureEmojiIconEnlargeCountThresholdChanged)
     end
 
-    function addon:WrapperIconPathWithEscapeSequences(path, isInPureEmojiText)
-        local iconSize = isInPureEmojiText and pureEmojiIconSize or emojiIconSize
-        return "|T" .. path .. ":" .. iconSize .. "|t"
+    -- 计算纯表情size
+    -- 如果这里效率不够，可以考虑使用查找表，即预存结果
+    function addon:CalcPureEmojiIconSize(emojiCount)
+        local multiplier
+        if emojiCount <= 1 then
+            multiplier = pureEmojiIconEnlargeMaxMultiplier
+        elseif emojiCount >= pureEmojiIconEnlargeCountThreshold or pureEmojiIconEnlargeMaxMultiplier <= pureEmojiIconEnlargeMinMultiplier then
+            multiplier = pureEmojiIconEnlargeMinMultiplier
+        else
+            local x = (emojiCount - 1) / (pureEmojiIconEnlargeCountThreshold - 1)
+            local radians = (pi / 2) * (x ^ 0.95)
+            multiplier = pureEmojiIconEnlargeMinMultiplier + (pureEmojiIconEnlargeMaxMultiplier - pureEmojiIconEnlargeMinMultiplier) * cos(radians)
+        end
+
+        print("multiplier", multiplier)
+        return multiplier * emojiIconSize
     end
+
+    function addon:CreateEmojiIconTextureMarkup(path, size)
+        return "|T" .. path .. ":" .. (size or emojiIconSize) .. "|t"
+    end
+
+    -- function addon:WrapperIconPathWi
 
     -- 根据key获取emoji图标
     -- @todo 提前获取可能的表情包
-    function addon:GetEmojiIconByKey(key, packId, withEscapeSequences)
+    function addon:GetEmojiIconByKey(key, packId)
         if packId then
             local pack = PacksByID[packId]
             if pack then
                 local iconFile = pack.Icons[key]
-                local path = pack.IconDir .. iconFile
-                if withEscapeSequences then
-                    path = self:WrapperIconPathWithEscapeSequences(path)
+                if iconFile then
+                    return pack.IconDir .. iconFile
                 end
-                return path
             end    
         end
 
@@ -431,11 +465,7 @@ do
             if emoji then
                 local iconFile = pack.Icons[key]
                 if iconFile then
-                    local path = pack.IconDir .. iconFile
-                    if withEscapeSequences then
-                        path = self:WrapperIconPathWithEscapeSequences(path)
-                    end
-                    return path
+                    return pack.IconDir .. iconFile
                 end
             end
         end
@@ -444,26 +474,20 @@ do
             local pack = EmojiPacks[i]
             local iconFile = pack.Icons[key]
             if iconFile then
-                local path = pack.IconDir .. iconFile
-                if withEscapeSequences then
-                    path = self:WrapperIconPathWithEscapeSequences(path)
-                end
-                return path
+                return pack.IconDir .. iconFile
             end
         end
     end
 
     -- 根据key获取emoji图标，这个函数会无视sticker
-    function addon:GetEmojiIconByKeyIgnoreSticker(key, packId, withEscapeSequences)
+    function addon:GetEmojiIconByKeyIgnoreSticker(key, packId)
         if packId then
             local pack = PacksByID[packId]
             if pack then
                 local iconFile = pack.Icons[key]
-                local path = pack.IconDir .. iconFile
-                if withEscapeSequences then
-                    path = self:WrapperIconPathWithEscapeSequences(path)
+                if iconFile then
+                    return pack.IconDir .. iconFile
                 end
-                return path
             end    
         end
 
@@ -471,11 +495,7 @@ do
             local pack = EmojiPacks[i]
             local iconFile = pack.Icons[key]
             if iconFile then
-                local path = pack.IconDir .. iconFile
-                if withEscapeSequences then
-                    path = self:WrapperIconPathWithEscapeSequences(path)
-                end
-                return path
+                return pack.IconDir .. iconFile
             end
         end
     end
