@@ -396,56 +396,65 @@ do
     local pureEmojiIconEnlargeMaxMultiplier = 2
     local pureEmojiIconEnlargeMinMultiplier = 1
     local pureEmojiIconEnlargeCountThreshold = 8
-    local pi = math.pi
-    local cos = math.cos
+
+    local pureEmojiIconSizes = {}
+    local pureEmojiIconMinSize = emojiIconSize * pureEmojiIconEnlargeMinMultiplier
+    
+    local function PreCalcPureEmojiIconSizes()
+        pureEmojiIconMinSize = emojiIconSize * pureEmojiIconEnlargeMinMultiplier
+
+        for emojiCount = 1, pureEmojiIconEnlargeCountThreshold do
+            local multiplier
+            if emojiCount <= 1 then
+                multiplier = pureEmojiIconEnlargeMaxMultiplier
+            elseif emojiCount >= pureEmojiIconEnlargeCountThreshold or pureEmojiIconEnlargeMaxMultiplier <= pureEmojiIconEnlargeMinMultiplier then
+                multiplier = pureEmojiIconEnlargeMinMultiplier
+            else
+                local x = (emojiCount - 1) / (pureEmojiIconEnlargeCountThreshold - 1)
+                local radians = (math.pi / 2) * (x ^ 0.95)
+                multiplier = pureEmojiIconEnlargeMinMultiplier + (pureEmojiIconEnlargeMaxMultiplier - pureEmojiIconEnlargeMinMultiplier) * math.cos(radians)
+            end
+            pureEmojiIconSizes[emojiCount] = multiplier * emojiIconSize
+        end
+    end
 
     local function OnEmojiIconSizeChanged(_, size)
         emojiIconSize = size
         pureEmojiIconEnlargeMaxMultiplier = addon:GetOptionValue(addon.Options.General.PureEmojiIconEnlargeMaxMultiplier)
+        PreCalcPureEmojiIconSizes()
     end
 
     local function OnPureEmojiIconSizeMultiplierChanged(_, multiplier)
         pureEmojiIconEnlargeMaxMultiplier = multiplier
+        PreCalcPureEmojiIconSizes()
     end
 
     local function OnPureEmojiIconEnlargeCountThresholdChanged(_, threshold)
         pureEmojiIconEnlargeCountThreshold = threshold
+        PreCalcPureEmojiIconSizes()
     end
 
-    -- 设置emoji在FontString中的大小
-    function addon:SetupEmojiSizeInFontString()
-        emojiIconSize = self:GetOptionValue(addon.Options.General.EmojiIconSize)
-        pureEmojiIconEnlargeMaxMultiplier = self:GetOptionValue(addon.Options.General.PureEmojiIconEnlargeMaxMultiplier)
-        pureEmojiIconEnlargeCountThreshold = self:GetOptionValue(addon.Options.General.PureEmojiIconEnlargeCountThreshold)
-        self:RegisterOptionChangedCallback(addon.Options.General.EmojiIconSize, OnEmojiIconSizeChanged)
-        self:RegisterOptionChangedCallback(addon.Options.General.PureEmojiIconEnlargeMaxMultiplier, OnPureEmojiIconSizeMultiplierChanged)
-        self:RegisterOptionChangedCallback(addon.Options.General.PureEmojiIconEnlargeCountThreshold, OnPureEmojiIconEnlargeCountThresholdChanged)
+    do
+        PreCalcPureEmojiIconSizes()
+        addon:RegisterOptionChangedCallback(addon.Options.General.EmojiIconSize, OnEmojiIconSizeChanged)
+        addon:RegisterOptionChangedCallback(addon.Options.General.PureEmojiIconEnlargeMaxMultiplier, OnPureEmojiIconSizeMultiplierChanged)
+        addon:RegisterOptionChangedCallback(addon.Options.General.PureEmojiIconEnlargeCountThreshold, OnPureEmojiIconEnlargeCountThresholdChanged)
     end
 
     -- 计算纯表情size
-    -- 如果这里效率不够，可以考虑使用查找表，即预存结果
     function addon:CalcPureEmojiIconSize(emojiCount)
-        local multiplier
-        if emojiCount <= 1 then
-            multiplier = pureEmojiIconEnlargeMaxMultiplier
-        elseif emojiCount >= pureEmojiIconEnlargeCountThreshold or pureEmojiIconEnlargeMaxMultiplier <= pureEmojiIconEnlargeMinMultiplier then
-            multiplier = pureEmojiIconEnlargeMinMultiplier
+        if emojiCount >= pureEmojiIconEnlargeCountThreshold then
+            return pureEmojiIconMinSize
         else
-            local x = (emojiCount - 1) / (pureEmojiIconEnlargeCountThreshold - 1)
-            local radians = (pi / 2) * (x ^ 0.95)
-            multiplier = pureEmojiIconEnlargeMinMultiplier + (pureEmojiIconEnlargeMaxMultiplier - pureEmojiIconEnlargeMinMultiplier) * cos(radians)
+            return pureEmojiIconSizes[emojiCount]
         end
-        return multiplier * emojiIconSize
     end
 
     function addon:CreateEmojiIconTextureMarkup(path, size)
         return "|T" .. path .. ":" .. (size or emojiIconSize) .. "|t"
     end
 
-    -- function addon:WrapperIconPathWi
-
     -- 根据key获取emoji图标
-    -- @todo 提前获取可能的表情包
     function addon:GetEmojiIconByKey(key, packId)
         if packId then
             local pack = PacksByID[packId]

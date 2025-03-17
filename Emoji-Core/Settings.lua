@@ -49,6 +49,32 @@ local Options = {
 				Tooltip = L["settings_general_pure_emoji_enlarge_count_threshold_tooltip"],
 			}
 		},
+		-- 聊天气泡，表情尺寸
+		{
+			Key = "ChatBubbleEmojiIconSize",
+			Name = L["settings_general_chat_bubble_emoji_icon_size_title"],
+			Default = 24,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 16,
+				Max = 40,
+				Step = 1,
+				Tooltip = L["settings_general_chat_bubble_emoji_icon_size_tooltip"]
+			}
+		},
+		-- 输入法候选词表情尺寸
+		{
+			Key = "IMECandidatesEmojiIconSize",
+			Name = L["settings_general_ime_emoji_icon_size_title"],
+			Default = 22,
+			ControlInfo = {
+				Type = "Slider",
+				Min = 16,
+				Max = 36,
+				Step = 1,
+				Tooltip = L["settings_general_ime_emoji_icon_size_tooltip"]
+			}
+		}
 	},
 	-- 表情键盘
     {
@@ -179,6 +205,15 @@ end
 
 function addon:UnregisterOptionChangedCallback(optionItem, owner)
     EventRegistry:UnregisterCallback(optionItem, owner)
+end
+
+-- 配置加载完成时，我们发送事件
+function addon:OnOptionsLoaded()
+	for _, groupItem in ipairs(Options) do
+		for _, optionItem in ipairs(groupItem) do
+			EventRegistry:TriggerEvent(optionItem:GetOptionItemName(), self:GetOptionValue(optionItem:GetOptionItemName()))
+		end
+	end
 end
 
 local function OnSettingChanged(setting, value)

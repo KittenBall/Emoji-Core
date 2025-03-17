@@ -30,7 +30,7 @@ do
         return false, addon:ReplaceEmojiToIcon(text), ...
     end
 
-    for _, msgType in pairs(CHAT_MSG_TYPES) do
+    for _, msgType in ipairs(CHAT_MSG_TYPES) do
         ChatFrame_AddMessageEventFilter('CHAT_MSG_' .. msgType, replaceEmojiToIcon)
     end
 end
@@ -64,11 +64,19 @@ do
 end
 
 do
+    local imeEmojiIconSize = 22
+
+    local function OnIMECandiatesEmojiIconSizeChanged(_, size)
+        imeEmojiIconSize = size
+    end
+
+    addon:RegisterOptionChangedCallback(addon.Options.Genernal.IMECandidatesEmojiIconSize, OnIMECandiatesEmojiIconSizeChanged)
+
     -- 支持输入法显示
     local function replaceIMEEmojiToIcon(self)
         for i = 1, 9 do
             local candidate = self["c" .. i].candidate
-            candidate:SetText(addon:ReplaceEmojiToIcon(candidate:GetText(), 22))
+            candidate:SetText(addon:ReplaceEmojiToIcon(candidate:GetText(), imeEmojiIconSize))
         end
     end
 
@@ -83,6 +91,14 @@ do
 end
 
 do
+    local chatBubbleEmojiIconSize = 24
+
+    local function OnChatBubbleEmojiIconSizeChanged(_, size)
+        chatBubbleEmojiIconSize = size
+    end
+
+    addon:RegisterOptionChangedCallback(addon.Options.Genernal.ChatBubbleEmojiIconSize, OnChatBubbleEmojiIconSizeChanged)
+
     -- 支持聊天气泡
     local frame = CreateFrame("Frame")
     frame.taskEndTime = 0
@@ -103,7 +119,7 @@ do
                 local child = chatBubble:GetChildren()
                 if child and child.String then
                     local fontString = child.String
-                    fontString:SetText(addon:ReplaceEmojiToIcon(fontString:GetText()))
+                    fontString:SetText(addon:ReplaceEmojiToIcon(fontString:GetText(), chatBubbleEmojiIconSize))
                 end
             end
         end

@@ -27,6 +27,10 @@ L["settings_general_pure_emoji_enlarge_max_multiplier_title"] = "纯表情消息
 L["settings_general_pure_emoji_enlarge_max_multiplier_tooltip"] = "调整纯表情消息中表情相对于正常表情尺寸的最大放大系数。当消息为纯表情消息时，表情大小会根据表情个数进行动态放大。"
 L["settings_general_pure_emoji_enlarge_count_threshold_title"] = "纯表情消息放大个数阈值"
 L["settings_general_pure_emoji_enlarge_count_threshold_tooltip"] = "调整纯表情消息动态放大的表情个数阈值。当消息为纯表情消息且表情个数不少于该阈值时，不再放大表情。"
+L["settings_general_chat_bubble_emoji_icon_size_title"] = "聊天气泡表情尺寸"
+L["settings_general_chat_bubble_emoji_icon_size_tooltip"] = "调整表情在聊天气泡中的尺寸"
+L["settings_general_ime_emoji_icon_size_title"] = "输入法候选框表情尺寸"
+L["settings_general_ime_emoji_icon_size_tooltip"] = "调整表情在输入法候选框内的尺寸。该选项仅在部分地区有效，因为输入法候选框只在部分地区被启用。"
 
 L["settings_keyboard_section_title"] = "表情键盘"
 L["settings_keyboard_default_width_title"] = "默认宽度"

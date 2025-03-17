@@ -3,7 +3,7 @@ local addonName, addon = ...
 local function OnAddonLoaded()
     addon:SetupSavedEnvironment()
     addon:RegisterSettings()
-    addon:SetupEmojiSizeInFontString()
+    addon:OnOptionsLoaded()
 end
 
 EventUtil.ContinueOnAddOnLoaded(addonName, OnAddonLoaded)
