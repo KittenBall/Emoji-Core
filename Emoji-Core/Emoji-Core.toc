@@ -21,12 +21,12 @@ Locales\Emojis_zhCN.lua
 Locales\Emojis_enUS.lua
 
 Init.lua
+Settings.lua
 CodePoints.lua
 AutoComplete.lua
 Keyboard.xml
 Core.lua
 Features.lua
 Saved.lua
-Settings.lua
 
 Api.lua

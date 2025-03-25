@@ -70,7 +70,7 @@ do
         imeEmojiIconSize = size
     end
 
-    addon:RegisterOptionChangedCallback(addon.Options.Genernal.IMECandidatesEmojiIconSize, OnIMECandiatesEmojiIconSizeChanged)
+    addon:RegisterOptionChangedCallback(addon.Options.General.IMECandidatesEmojiIconSize, OnIMECandiatesEmojiIconSizeChanged)
 
     -- 支持输入法显示
     local function replaceIMEEmojiToIcon(self)
@@ -97,7 +97,7 @@ do
         chatBubbleEmojiIconSize = size
     end
 
-    addon:RegisterOptionChangedCallback(addon.Options.Genernal.ChatBubbleEmojiIconSize, OnChatBubbleEmojiIconSizeChanged)
+    addon:RegisterOptionChangedCallback(addon.Options.General.ChatBubbleEmojiIconSize, OnChatBubbleEmojiIconSizeChanged)
 
     -- 支持聊天气泡
     local frame = CreateFrame("Frame")

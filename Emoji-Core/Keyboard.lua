@@ -953,7 +953,6 @@ function KeyboardDialog:RefreshSearchKeyBoard()
     local usableWidth = keyboardWidth - padding:GetLeft() - padding:GetRight()
     local iconSize = addon:GetOptionValue(addon.Options.Keyboard.EmojiIconSize)
     local column = floor(usableWidth / (iconSize + 10))
-    self.SearchDataProvider:Flush()
     self.SearchDataProvider.Column = column
     self.SearchDataProvider.IconSize = iconSize
 
@@ -1032,8 +1031,8 @@ function KeyboardDialog:OnMovingOrSizingStop()
     self.Positions[chatFrame] = { X = x, Y = y }
 end
 
--- 每次隐藏时，刷新一下键盘
-function KeyboardDialog:OnHide()
+-- 每次显示时，刷新一下键盘
+function KeyboardDialog:OnShow()
     self:RefreshKeyBoard()
 end
 
@@ -1221,16 +1220,16 @@ local function CreateKeyboardDialog()
     KeyboardDialog:SetResizable(true)
     KeyboardDialog:SetResizeBounds(200, 240, 480, 560)
     KeyboardDialog:SetClampedToScreen(true)
-
-    KeyboardDialog:SetScript("OnHide", KeyboardDialog.OnHide)
 end
 
-local function RegisterEvents()
+local function OnKeyboardLoadCompleted()
     addon:RegisterOptionChangedCallback(addon.Options.Keyboard.DefaultWidth, OnKeyboardSizeOptionChanged, KeyboardDialog)
     addon:RegisterOptionChangedCallback(addon.Options.Keyboard.DefaultHeight, OnKeyboardSizeOptionChanged, KeyboardDialog)
     addon:RegisterOptionChangedCallback(addon.Options.Keyboard.PackIconSize, OnKeyboardPackIconSizeOptionChanged, KeyboardDialog)
     addon:RegisterOptionChangedCallback(addon.Options.Keyboard.EmojiIconSize, OnKeyboardEmojiIconSizeOptionChanged, KeyboardDialog)
     addon:RegisterOptionChangedCallback(addon.Options.Keyboard.GroupIconSize, OnKeyboardGroupIconSizeOptionChanged, KeyboardDialog)
+
+    KeyboardDialog:SetScript("OnShow", KeyboardDialog.OnShow)
 end
 
 -- 加载键盘弹窗
@@ -1245,7 +1244,7 @@ local function LoadKeyboardDialog()
         CreateCloser,
         CreateResizer, 
         CreateDragger, 
-        RegisterEvents,
+        OnKeyboardLoadCompleted,
         -- 默认选中
         GenerateClosure(KeyboardDialog.SelectEmojiPack, KeyboardDialog, KeyboardDialog:GetSelectedEmojiPack())
     )
@@ -1276,7 +1275,7 @@ function KeyboardEnablerMinxin:Load(chatFrame)
     self:SetNormalTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]])
     self:GetNormalTexture():SetDesaturated(true)
     self:SetHighlightTexture([[Interface\AddOns\Emoji-Core\Media\keyboard_enabler.png]], "ADD")
-    self:SetPoint("BOTTOMRIGHT", editBox, "TOPRIGHT", -11, -5)
+    self:SetPoint("BOTTOMRIGHT", editBox, "TOPRIGHT", -17, -5)
 
     self:SetScript("OnClick", self.OnClick)
     self:SetScript("OnEnter", self.OnEnter)
