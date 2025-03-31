@@ -26,7 +26,50 @@ do
         'INSTANCE_CHAT_LEADER'
     }
 
+    -- 修复国服特供bug
+    -- 当在公会频道发送含有“QQ”的字符串时，会自动额外发送一个“1”
+    -- 后续国服修复后，这里需移除
+    local qqBugMessages = { Size = 0 }
+
+    local function sendQQMessage(chatFrame, text, params)
+        local qqBugMessages = chatFrame.QQBugMessages
+        local size = qqBugMessages.Size
+        for i = 1, size do
+            local text = qqBugMessages[i]
+            if size == 1 or text ~= "1" then
+                ChatFrame_MessageEventHandler(chatFrame, "CHAT_MSG_GUILD", text .. "_QQFixed", unpack(params))
+            end
+        end
+    end
+
+    local function fixQQAutoSendInChinese(chatFrame, text, ...)
+        if not chatFrame.QQBugMessages then
+            chatFrame.QQBugMessages = { Size = 0}
+        end
+
+        local _, _, _, _, _, _, _, _, _, _, guid = ...
+        local now = GetTime()
+        local qqBugMessages = chatFrame.QQBugMessages
+
+        if qqBugMessages.Time ~= now then
+            qqBugMessages.Size = 0
+        end
+
+        if (text == "1" or text:find("QQ")) and not text:find("_QQFixed$") and guid == UnitGUID("player") then
+            qqBugMessages.Time = GetTime()
+            qqBugMessages.Size = qqBugMessages.Size + 1
+            qqBugMessages[qqBugMessages.Size] = text
+            RunNextFrame(GenerateClosure(sendQQMessage, chatFrame, text, { ... }))
+            return true
+        end
+    end
+    
     local function replaceEmojiToIcon(chatFrame, event, text, ...)
+        if event == "CHAT_MSG_GUILD" and fixQQAutoSendInChinese(chatFrame, text, ...) then return true end
+        if event == "CHAT_MSG_GUILD" and text:find("_QQFixed$") then
+            text = text:sub(1, -9)
+        end
+
         return false, addon:ReplaceEmojiToIcon(text), ...
     end
 
