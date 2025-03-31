@@ -35,19 +35,19 @@ do
         local qqBugMessages = chatFrame.QQBugMessages
         local size = qqBugMessages.Size
         for i = 1, size do
-            local text = qqBugMessages[i]
+            local text, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17 = unpack(qqBugMessages[i])
             if size == 1 or text ~= "1" then
-                ChatFrame_MessageEventHandler(chatFrame, "CHAT_MSG_GUILD", text .. "_QQFixed", unpack(params))
+                ChatFrame_MessageEventHandler(chatFrame, "CHAT_MSG_GUILD", text .. "_QQFixed", arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17)
             end
         end
     end
 
-    local function fixQQAutoSendInChinese(chatFrame, text, ...)
+    local function fixQQAutoSendInChinese(chatFrame, ...)
         if not chatFrame.QQBugMessages then
             chatFrame.QQBugMessages = { Size = 0}
         end
 
-        local _, _, _, _, _, _, _, _, _, _, guid = ...
+        local text, _, _, _, _, _, _, _, _, _, _, guid = ...
         local now = GetTime()
         local qqBugMessages = chatFrame.QQBugMessages
 
@@ -58,8 +58,8 @@ do
         if (text == "1" or text:find("QQ")) and not text:find("_QQFixed$") and guid == UnitGUID("player") then
             qqBugMessages.Time = GetTime()
             qqBugMessages.Size = qqBugMessages.Size + 1
-            qqBugMessages[qqBugMessages.Size] = text
-            RunNextFrame(GenerateClosure(sendQQMessage, chatFrame, text, { ... }))
+            qqBugMessages[qqBugMessages.Size] = { ... }
+            RunNextFrame(GenerateClosure(sendQQMessage, chatFrame))
             return true
         end
     end
