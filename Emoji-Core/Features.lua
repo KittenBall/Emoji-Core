@@ -40,7 +40,7 @@ do
         for i = 1, size do
             local text, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17 = unpack(qqBugMessages[i])
             if size == 1 or text ~= "1" then
-                ChatFrame_MessageEventHandler(chatFrame, event, text .. "_QQFixed", arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17)
+                chatFrame:MessageEventHandler(event, text .. "_QQFixed", arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17)
             end
         end
     end
