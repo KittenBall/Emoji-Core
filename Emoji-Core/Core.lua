@@ -616,3 +616,17 @@ function addon:WrapperShortcodeWithDelimiter(shortcode, shortcodeDelimiter)
     end
 end
 
+-- 插件限制是否激活
+if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+    addon.IsAddOnRestrictionActive = function()
+        for _, v in pairs(Enum.AddOnRestrictionType) do
+            if C_RestrictedActions.GetAddOnRestrictionState(v) ~= Enum.AddOnRestrictionState.Inactive then
+                 return true
+            end
+        end
+        return false
+    end
+else
+    addon.IsAddOnRestrictionActive = function() return false end
+end
+

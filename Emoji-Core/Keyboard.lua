@@ -1083,7 +1083,7 @@ function KeyboardDialog:HandleEmojiPressed(data)
     local chatFrame = self.ChatFrame
     local shortcode = addon:WrapperShortcodeWithDelimiter(emoji.Shortcodes[1], "all")
 
-    local editBox = chatFrame.editBox or ChatEdit_GetActiveWindow or ChatEdit_ChooseBoxForSend
+    local editBox = chatFrame.editBox or ChatEdit_GetActiveWindow or ChatEdit_ChooseBoxForSend(chatFrame)
 
     if editBox and not editBox:IsShown() then
         ChatFrame_OpenChat((editBox:GetText() or "") .. shortcode, chatFrame)
@@ -1280,11 +1280,27 @@ function KeyboardEnablerMinxin:Load(chatFrame)
     self:SetScript("OnClick", self.OnClick)
     self:SetScript("OnEnter", self.OnEnter)
     self:SetScript("OnLeave", self.OnLeave)
+    self:SetScript("OnEvent", self.UpdateWhenAddOnRestrictionChanged)
+    self:RegisterEvent("ADDON_RESTRICTION_STATE_CHANGED")
 
     editBox:HookScript("OnEditFocusGained", OnEditBoxFocusGained)
     editBox:HookScript("OnEditFocusLost", OnEditBoxFocusLost)
 
     self:FadeIfPossible()
+    self:UpdateWhenAddOnRestrictionChanged()
+end
+
+function KeyboardEnablerMinxin:UpdateWhenAddOnRestrictionChanged()
+    if addon:IsAddOnRestrictionActive() then
+        self:Hide()
+
+        local chatFrame = self.ChatFrame
+        if KeyboardDialog.Loaded and KeyboardDialog:IsAttached(chatFrame) then
+            KeyboardDialog:Detach(chatFrame)
+        end
+    else
+        self:Show()
+    end
 end
 
 function KeyboardEnablerMinxin:OnClick()

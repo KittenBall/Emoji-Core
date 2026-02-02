@@ -63,6 +63,20 @@ do
     end
 end
 
+function AutoCompleteFrame:UpdateWhenAddOnRestrictionChanged(event)
+    if event ~= "ADDON_RESTRICTION_STATE_CHANGED" then return end
+    if addon:IsAddOnRestrictionActive() then
+        self.IsAddOnRestrictionActive = true
+        self:Hide()
+    else
+        self.IsAddOnRestrictionActive = false
+        self:Show()
+    end
+end
+
+AutoCompleteFrame:HookScript("OnEvent", AutoCompleteFrame.UpdateWhenAddOnRestrictionChanged)
+AutoCompleteFrame:RegisterEvent("ADDON_RESTRICTION_STATE_CHANGED")
+
 -- 计算高度
 function AutoCompleteFrame:CalcHeight(itemCount)
     return itemCount * 35 + 32
@@ -545,10 +559,14 @@ local function OnEditBoxChar(self, char)
 end
 
 local function OnEditBoxEscapePressed(self)
-    if AutoCompleteFrame:OnEditBoxEscapePressed(self) then
-        return
+    if AutoCompleteFrame.IsAddOnRestrictionActive then
+        self:OldOnEscapePressed()
+    else
+        if AutoCompleteFrame:OnEditBoxEscapePressed(self) then
+            return
+        end
+        self:OldOnEscapePressed()
     end
-    self:OldOnEscapePressed()
 end
 
 local function HookEditBoxOnEscapePressed(self)
@@ -557,19 +575,30 @@ local function HookEditBoxOnEscapePressed(self)
     self:SetScript("OnEscapePressed", OnEditBoxEscapePressed)
 end
 
+local function wrapHookScript(owner, script, handler)
+    owner:HookScript(script, function(...)
+        if AutoCompleteFrame.IsAddOnRestrictionActive then
+            return
+        else
+            handler(...)
+        end
+    end)
+end
+
 -- 为editbox添加emoji自动补全功能
 function addon:EnableEmojiCompleterForEditBox(editBox)
     if editBox.emojiCompleterEnabled then
         return
     end
 
-    editBox:HookScript("OnTextChanged", OnEditBoxTextChanged)
-    editBox:HookScript("OnUpdate", OnEditBoxUpdate)
-    editBox:HookScript("OnTabPressed", OnEditBoxTabPressed)
-    editBox:HookScript("OnArrowPressed", OnEditBoxArrowPressed)
-    editBox:HookScript("OnEditFocusLost", OnEditBoxFocusLost)
-    editBox:HookScript("OnSpacePressed", OnEditBoxSpacePressed)
-    editBox:HookScript("OnChar", OnEditBoxChar)
+    wrapHookScript(editBox, "OnTextChanged", OnEditBoxTextChanged)
+    wrapHookScript(editBox, "OnUpdate", OnEditBoxUpdate)
+    wrapHookScript(editBox, "OnTabPressed", OnEditBoxTabPressed)
+    wrapHookScript(editBox, "OnArrowPressed", OnEditBoxArrowPressed)
+    wrapHookScript(editBox, "OnEditFocusLost", OnEditBoxFocusLost)
+    wrapHookScript(editBox, "OnSpacePressed", OnEditBoxSpacePressed)
+    wrapHookScript(editBox, "OnChar", OnEditBoxChar)
     HookEditBoxOnEscapePressed(editBox)
+    AutoCompleteFrame:UpdateWhenAddOnRestrictionChanged()
     editBox.emojiCompleterEnabled = true
 end
