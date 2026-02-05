@@ -67,10 +67,10 @@ function AutoCompleteFrame:UpdateWhenAddOnRestrictionChanged(event)
     if event ~= "ADDON_RESTRICTION_STATE_CHANGED" then return end
     if addon:IsAddOnRestrictionActive() then
         self.IsAddOnRestrictionActive = true
-        self:Hide()
+        self:Reset()
+        self:Detach()
     else
         self.IsAddOnRestrictionActive = false
-        self:Show()
     end
 end
 
