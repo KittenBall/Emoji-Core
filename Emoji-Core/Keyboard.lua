@@ -1280,18 +1280,18 @@ function KeyboardEnablerMinxin:Load(chatFrame)
     self:SetScript("OnClick", self.OnClick)
     self:SetScript("OnEnter", self.OnEnter)
     self:SetScript("OnLeave", self.OnLeave)
-    self:SetScript("OnEvent", self.UpdateWhenAddOnRestrictionChanged)
-    self:RegisterEvent("ADDON_RESTRICTION_STATE_CHANGED")
+    addon:RegisterAddonChatRestrictionUpdateEvent(function()
+        self:UpdateWhenAddOnChatRestrictionChanged()
+    end)
 
     editBox:HookScript("OnEditFocusGained", OnEditBoxFocusGained)
     editBox:HookScript("OnEditFocusLost", OnEditBoxFocusLost)
 
     self:FadeIfPossible()
-    self:UpdateWhenAddOnRestrictionChanged()
 end
 
-function KeyboardEnablerMinxin:UpdateWhenAddOnRestrictionChanged()
-    if addon:IsAddOnRestrictionActive() then
+function KeyboardEnablerMinxin:UpdateWhenAddOnChatRestrictionChanged()
+    if addon:IsAddOnChatRestrictionActive() then
         self:Hide()
 
         local chatFrame = self.ChatFrame

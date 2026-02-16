@@ -63,19 +63,12 @@ do
     end
 end
 
-function AutoCompleteFrame:UpdateWhenAddOnRestrictionChanged(event)
-    if event ~= "ADDON_RESTRICTION_STATE_CHANGED" then return end
-    if addon:IsAddOnRestrictionActive() then
-        self.IsAddOnRestrictionActive = true
+function AutoCompleteFrame:UpdateWhenAddOnChatRestrictionChanged()
+    if addon:IsAddOnChatRestrictionActive() then
         self:Reset()
         self:Detach()
-    else
-        self.IsAddOnRestrictionActive = false
     end
 end
-
-AutoCompleteFrame:HookScript("OnEvent", AutoCompleteFrame.UpdateWhenAddOnRestrictionChanged)
-AutoCompleteFrame:RegisterEvent("ADDON_RESTRICTION_STATE_CHANGED")
 
 -- 计算高度
 function AutoCompleteFrame:CalcHeight(itemCount)
@@ -559,7 +552,7 @@ local function OnEditBoxChar(self, char)
 end
 
 local function OnEditBoxEscapePressed(self)
-    if AutoCompleteFrame.IsAddOnRestrictionActive then
+    if addon:IsAddOnChatRestrictionActive() then
         self:OldOnEscapePressed()
     else
         if AutoCompleteFrame:OnEditBoxEscapePressed(self) then
@@ -577,7 +570,7 @@ end
 
 local function wrapHookScript(owner, script, handler)
     owner:HookScript(script, function(...)
-        if AutoCompleteFrame.IsAddOnRestrictionActive then
+        if addon:IsAddOnChatRestrictionActive() then
             return
         else
             handler(...)
@@ -599,6 +592,6 @@ function addon:EnableEmojiCompleterForEditBox(editBox)
     wrapHookScript(editBox, "OnSpacePressed", OnEditBoxSpacePressed)
     wrapHookScript(editBox, "OnChar", OnEditBoxChar)
     HookEditBoxOnEscapePressed(editBox)
-    AutoCompleteFrame:UpdateWhenAddOnRestrictionChanged()
+    addon:RegisterAddonChatRestrictionUpdateEvent(function() AutoCompleteFrame:UpdateWhenAddOnChatRestrictionChanged() end)
     editBox.emojiCompleterEnabled = true
 end

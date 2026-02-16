@@ -618,15 +618,56 @@ end
 
 -- 插件限制是否激活
 if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
-    addon.IsAddOnRestrictionActive = function()
-        for _, v in pairs(Enum.AddOnRestrictionType) do
+    local addOnChatRestrictionTypes = {
+        Enum.AddOnRestrictionType.Encounter,
+        Enum.AddOnRestrictionType.ChallengeMode,
+        Enum.AddOnRestrictionType.PvPMatch,
+    }
+
+    local addOnChatRestrictionStateUpdateListener = {}
+    local addonChatRestrictionActive = false
+
+    local function checkAddOnChatRestrictionState()
+        for _, v in pairs(addOnChatRestrictionTypes) do
             if C_RestrictedActions.GetAddOnRestrictionState(v) ~= Enum.AddOnRestrictionState.Inactive then
                  return true
             end
         end
         return false
     end
+
+    local function updateAddOnChatRestrictionState()
+        addonChatRestrictionActive = checkAddOnChatRestrictionState()
+        for callback, _ in pairs(addOnChatRestrictionStateUpdateListener) do
+            callback()
+        end
+    end
+
+    updateAddOnChatRestrictionState()
+
+    EventRegistry:RegisterFrameEventAndCallback("ADDON_RESTRICTION_STATE_CHANGED", updateAddOnChatRestrictionState)
+
+    function addon:IsAddOnChatRestrictionActive()
+        return addonChatRestrictionActive
+    end
+
+    function addon:RegisterAddonChatRestrictionUpdateEvent(callback)
+        addOnChatRestrictionStateUpdateListener[callback] = true
+        callback()
+    end
+
+    function addon:UnregisterAddonChatRestrictionUpdateEvent(callback)
+        addOnChatRestrictionStateUpdateListener[callback] = nil
+    end
 else
-    addon.IsAddOnRestrictionActive = function() return false end
+    function addon:IsAddOnChatRestrictionActive()
+        return false
+    end
+
+    function addon:RegisterAddonChatRestrictionUpdateEvent(callback)
+    end
+
+    function addon:UnregisterAddonChatRestrictionUpdateEvent(callback)
+    end
 end
 

@@ -88,7 +88,7 @@ do
 
     local function enableOrDisableEmojis()
         for _, msgType in ipairs(CHAT_MSG_TYPES) do
-            if addon:IsAddOnRestrictionActive() then
+            if addon:IsAddOnChatRestrictionActive() then
                 ChatFrame_RemoveMessageEventFilter('CHAT_MSG_' .. msgType, replaceEmojiToIcon)
             else
                 ChatFrame_AddMessageEventFilter('CHAT_MSG_' .. msgType, replaceEmojiToIcon)
@@ -96,7 +96,7 @@ do
         end
     end
 
-    EventRegistry:RegisterFrameEventAndCallback("ADDON_RESTRICTION_STATE_CHANGED", enableOrDisableEmojis)
+    addon:RegisterAddonChatRestrictionUpdateEvent(enableOrDisableEmojis)
     EventRegistry:RegisterFrameEventAndCallback("PLAYER_ENTERING_WORLD", enableOrDisableEmojis)
 end
 
@@ -206,7 +206,7 @@ do
 		local chatBubblesParty = C_CVar.GetCVarBool("chatBubblesParty")
         local isInInstance = IsInInstance()
 
-        if isInInstance or addon.IsAddOnRestrictionActive() then
+        if isInInstance or addon.IsAddOnChatRestrictionActive() then
             stopChatBubbleTask()
             EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_YELL", startChatBubbleTask)
             EventRegistry:UnregisterFrameEventAndCallback("CHAT_MSG_SAY", startChatBubbleTask)
@@ -239,7 +239,7 @@ do
         end
     end
 
-    EventRegistry:RegisterFrameEventAndCallback("ADDON_RESTRICTION_STATE_CHANGED", enableOrDisableChatBubble)
+    addon:RegisterAddonChatRestrictionUpdateEvent(enableOrDisableChatBubble)
     EventRegistry:RegisterFrameEventAndCallback("PLAYER_ENTERING_WORLD", enableOrDisableChatBubble)
     EventRegistry:RegisterFrameEventAndCallback("CVAR_UPDATE", onCVarUpdate)
 end
